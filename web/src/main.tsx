@@ -14,6 +14,8 @@ import { NewTestPage } from "./pages/NewTestPage";
 import { TestPage } from "./pages/test/TestPage";
 import { TestsPage } from "./pages/TestsPage";
 import { SettingsPage } from "./pages/SettingsPage";
+import { ReviewPage } from "./pages/review/ReviewPage";
+import { BatchReviewPage } from "./pages/review/BatchReviewPage";
 import "./styles.css";
 
 function App() {
@@ -44,6 +46,8 @@ function App() {
         <Route path="tests/new" element={<NewTestPage />} />
         <Route path="tests/:id" element={<TestPage />} />
         <Route path="settings" element={<SettingsPage />} />
+        <Route path="review" element={<ReviewPage />} />
+        <Route path="review/batch" element={<BatchReviewPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

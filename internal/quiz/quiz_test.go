@@ -317,9 +317,8 @@ func TestFlagAndRevisionAndHistoryProtection(t *testing.T) {
 
 	// Edit the question after the test was created: the answer records the
 	// revision actually seen.
-	in := content.QuestionInput{Stem: q.Stem + " (corregida)", Options: q.Options, Correct: q.Correct, Origin: q.Origin,
-		Author: q.Author, SourceID: q.SourceID, SourceRef: q.SourceRef, SourceQuote: q.SourceQuote, Status: q.Status,
-		TopicIDs: q.TopicIDs}
+	in := q.Input()
+	in.Stem += " (corregida)"
 	if err := f.content.UpdateQuestion(ctx, qid, in); err != nil {
 		t.Fatal(err)
 	}

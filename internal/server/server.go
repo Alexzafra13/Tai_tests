@@ -48,6 +48,7 @@ func (s *Server) Handler() http.Handler {
 	private.HandleFunc("GET /api/auth/me", s.handleMe)
 	s.contentRoutes(private)
 	s.quizRoutes(private)
+	s.reviewRoutes(private)
 	private.HandleFunc("/api/", func(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusNotFound, "not found")
 	})

@@ -961,3 +961,103 @@ span.nav-cell {
 .score-card p {
   margin: 0.25rem 0;
 }
+
+/* Review */
+.review-card {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.review-card .stem,
+.review-card .options {
+  margin: 0;
+}
+
+.flag-note {
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: var(--warn-bg);
+  color: var(--warn-text);
+}
+
+.flag-note p {
+  margin: 0.25rem 0 0;
+}
+
+.explanation {
+  margin: 0;
+}
+
+.source-box {
+  display: grid;
+  gap: 0.375rem;
+}
+
+.excerpt {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+mark {
+  background: color-mix(in srgb, var(--primary) 22%, transparent);
+  color: inherit;
+  padding: 0 0.125rem;
+  border-radius: 3px;
+}
+
+.review-topics {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.review-topics summary {
+  cursor: pointer;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.review-actions button {
+  flex: 1;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.toast {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: calc(var(--nav-height) + 1rem + env(safe-area-inset-bottom));
+  max-width: 38rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: var(--text);
+  color: var(--bg);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 0.25);
+  z-index: 10;
+}
+
+.toast .link {
+  color: var(--bg);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.batch-toolbar {
+  margin: 0.75rem 0 0.5rem;
+}
+
+.batch-row .check > span {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 0;
+}

@@ -82,6 +82,20 @@ comandos o del futuro pipeline de IA:
   opciones o la respuesta correcta, sube su número de revisión y cada intento
   guarda la revisión que viste.
 
+## Cola de revisión
+
+La pestaña **Revisión** reúne lo que aún no sale en los tests: borradores
+(importados o generados) y preguntas marcadas como dudosas durante un test,
+estas primero. Cada pregunta se muestra con su respuesta, la fuente y la cita
+**resaltada dentro del texto de la ley**. Acciones: **Aceptar** (publica y
+quita la marca de dudosa; si no tiene tema se asigna ahí mismo),
+**Descartar**, **Saltar** y editar en el formulario completo. Aceptar y
+descartar se pueden **deshacer** durante unos segundos.
+
+**Aceptar en bloque** sirve para exámenes importados: lista los borradores
+de una fuente, preselecciona los que se pueden publicar tal cual y valida
+cada uno por separado (los que fallan quedan en la cola con su motivo).
+
 ## Cargar el temario y las fuentes
 
 El temario se define en `data/syllabus.json` (formato en
@@ -181,7 +195,7 @@ Ver [`.env.example`](.env.example).
 1. ✅ Esqueleto: Go + SQLite + migraciones, SPA embebida, login, Docker.
 2. ✅ Temario y modelo de preguntas; alta y edición manual.
 3. ✅ Tests (práctica y examen) y registro de intentos.
-4. Cola de revisión.
+4. ✅ Cola de revisión.
 5. Importador de exámenes del INAP y modo simulacro.
 6. Generación del bloque legal con validación.
 7. FSRS, falladas, estadísticas y búsqueda.

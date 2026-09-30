@@ -36,3 +36,27 @@ func TestNormalizePunctuation(t *testing.T) {
 		t.Errorf("Normalize = %q, want %q", got, want)
 	}
 }
+
+func TestLocate(t *testing.T) {
+	ex, ok := Locate(article, "Este plazo no podrá exceder de seis meses", 40)
+	if !ok {
+		t.Fatal("quote not located")
+	}
+	if ex.Match != "Este plazo no podrá exceder de seis meses" {
+		t.Errorf("match = %q", ex.Match)
+	}
+	if ex.Before != "del correspondiente procedimiento. " || !ex.ClippedStart {
+		t.Errorf("before = %q clipped=%v", ex.Before, ex.ClippedStart)
+	}
+	if ex.After != " salvo que una norma con rango de Ley" || !ex.ClippedEnd {
+		t.Errorf("after = %q clipped=%v", ex.After, ex.ClippedEnd)
+	}
+
+	ex, ok = Locate(article, "Artículo 21. Obligación de resolver.", 1000)
+	if !ok || ex.Before != "" || ex.ClippedStart || ex.ClippedEnd {
+		t.Errorf("whole-text window: %+v", ex)
+	}
+	if _, ok := Locate(article, "no existe en el texto", 10); ok {
+		t.Error("missing quote located")
+	}
+}

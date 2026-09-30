@@ -133,7 +133,13 @@ export function Runner({ initial, onFinished }: { initial: Test; onFinished: () 
 
       <article className="question">
         <p className="stem">{item.stem}</p>
-        <Options item={item} disabled={busy || practiceDone} onChoose={choose} />
+        <Options
+          options={item.options}
+          chosen={item.chosen}
+          correct={item.solution?.correct}
+          disabled={busy || practiceDone}
+          onChoose={choose}
+        />
         {item.solution && <SolutionBox solution={item.solution} chosen={item.chosen} />}
         <FlagControl
           key={item.position}

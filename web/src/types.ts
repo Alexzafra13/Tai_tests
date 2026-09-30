@@ -119,6 +119,26 @@ export const authorLabel: Record<Author, string> = {
 
 export const optionLetters = ["A", "B", "C", "D"] as const;
 
+// --- Review queue (internal/content/review.go) ---
+
+export type ReviewKind = "" | "flagged" | "drafts";
+
+export type Excerpt = {
+  before: string;
+  match: string;
+  after: string;
+  clipped_start: boolean;
+  clipped_end: boolean;
+};
+
+export type ReviewItem = Question & { excerpt: Excerpt | null };
+
+export type ReviewCounts = { flagged: number; drafts: number; total: number };
+
+export type ReviewState = { status: Status; flagged: boolean; flag_note: string };
+
+export type BatchResult = { id: number; ok: boolean; errors?: Record<string, string> };
+
 // --- Tests (internal/quiz) ---
 
 export type TestMode = "practice" | "exam";

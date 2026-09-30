@@ -304,10 +304,26 @@ const questionColumns = `q.id, q.stem, q.option_a, q.option_b, q.option_c, q.opt
 	q.origin, q.author, q.source_id, s.title, q.source_ref, q.source_quote, q.status, q.annulled, q.fixed_order,
 	q.flagged, q.flag_note, q.revision, q.created_at, q.updated_at`
 
-func scanQuestion(row interface{ Scan(...any) error }, q *Question) error {
-	return row.Scan(&q.ID, &q.Stem, &q.Options[0], &q.Options[1], &q.Options[2], &q.Options[3], &q.Correct,
+// questionFields returns scan destinations matching questionColumns, so
+// queries can select extra columns after them.
+func questionFields(q *Question) []any {
+	return []any{&q.ID, &q.Stem, &q.Options[0], &q.Options[1], &q.Options[2], &q.Options[3], &q.Correct,
 		&q.Explanation, &q.Origin, &q.Author, &q.SourceID, &q.SourceTitle, &q.SourceRef, &q.SourceQuote,
-		&q.Status, &q.Annulled, &q.FixedOrder, &q.Flagged, &q.FlagNote, &q.Revision, &q.CreatedAt, &q.UpdatedAt)
+		&q.Status, &q.Annulled, &q.FixedOrder, &q.Flagged, &q.FlagNote, &q.Revision, &q.CreatedAt, &q.UpdatedAt}
+}
+
+func scanQuestion(row interface{ Scan(...any) error }, q *Question) error {
+	return row.Scan(questionFields(q)...)
+}
+
+// Input returns the editable fields of the question, to modify and save.
+func (q Question) Input() QuestionInput {
+	return QuestionInput{
+		Stem: q.Stem, Options: q.Options, Correct: q.Correct, Explanation: q.Explanation,
+		Origin: q.Origin, Author: q.Author, SourceID: q.SourceID, SourceRef: q.SourceRef,
+		SourceQuote: q.SourceQuote, Status: q.Status, Annulled: q.Annulled, FixedOrder: q.FixedOrder,
+		Flagged: q.Flagged, FlagNote: q.FlagNote, TopicIDs: q.TopicIDs,
+	}
 }
 
 func (s *Store) Question(ctx context.Context, id int64) (Question, error) {

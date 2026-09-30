@@ -2,27 +2,30 @@ import { useState } from "react";
 import { api, errorMessage } from "../api";
 import { optionLetters, originLabel, type Solution, type TestItem } from "../types";
 
-// Options renders the four answers as large tap targets. With a solution it
-// colours the correct option and a wrong choice; otherwise it shows the
-// current selection.
+// Options renders the four answers as large tap targets. When the correct
+// option is known it is coloured, along with a wrong choice; otherwise the
+// current selection is shown.
 export function Options({
-  item,
+  options,
+  chosen = null,
+  correct,
   disabled,
   onChoose,
 }: {
-  item: TestItem;
+  options: readonly string[];
+  chosen?: number | null;
+  correct?: number;
   disabled?: boolean;
   onChoose?: (i: number) => void;
 }) {
-  const sol = item.solution;
   return (
     <ol className="options">
-      {item.options.map((text, i) => {
+      {options.map((text, i) => {
         let cls = "option";
-        if (sol) {
-          if (i === sol.correct) cls += " correct";
-          else if (i === item.chosen) cls += " wrong";
-        } else if (i === item.chosen) {
+        if (correct !== undefined) {
+          if (i === correct) cls += " correct";
+          else if (i === chosen) cls += " wrong";
+        } else if (i === chosen) {
           cls += " selected";
         }
         return (

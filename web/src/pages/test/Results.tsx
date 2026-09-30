@@ -84,7 +84,7 @@ export function Results({ test }: { test: Test }) {
               <span className="muted">{it.position + 1}. </span>
               {it.stem}
             </p>
-            <Options item={it} />
+            <Options options={it.options} chosen={it.chosen} correct={it.solution?.correct} />
             {it.solution && <SolutionBox solution={it.solution} chosen={it.chosen} />}
             <div className="review-links">
               {it.flagged && <span className="badge warn">Dudosa</span>}
