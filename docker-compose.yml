@@ -1,0 +1,16 @@
+services:
+  tai:
+    build: .
+    image: tai:latest
+    container_name: tai
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      TAI_DB_PATH: /data/tai.db
+    ports:
+      - "8080:8080"
+    volumes:
+      - tai-data:/data
+
+volumes:
+  tai-data:
