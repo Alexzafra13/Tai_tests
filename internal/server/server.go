@@ -11,31 +11,46 @@ import (
 	"time"
 
 	"github.com/alexzafra13/tai_tests/internal/auth"
+	"github.com/alexzafra13/tai_tests/internal/content"
 )
+
+type Deps struct {
+	Auth         *auth.Service
+	Content      *content.Store
+	CookieSecure bool
+	Static       fs.FS
+	Log          *slog.Logger
+}
 
 type Server struct {
 	auth         *auth.Service
+	content      *content.Store
 	cookieSecure bool
 	static       fs.FS
 	log          *slog.Logger
 }
 
-func New(a *auth.Service, cookieSecure bool, static fs.FS, log *slog.Logger) *Server {
-	return &Server{auth: a, cookieSecure: cookieSecure, static: static, log: log}
+func New(d Deps) *Server {
+	return &Server{auth: d.Auth, content: d.Content, cookieSecure: d.CookieSecure, static: d.Static, log: d.Log}
 }
 
 func (s *Server) Handler() http.Handler {
-	api := http.NewServeMux()
-	api.HandleFunc("GET /api/health", s.handleHealth)
-	api.HandleFunc("POST /api/auth/login", s.handleLogin)
-	api.HandleFunc("POST /api/auth/logout", s.handleLogout)
-	api.Handle("GET /api/auth/me", s.requireAuth(http.HandlerFunc(s.handleMe)))
-	api.HandleFunc("/api/", func(w http.ResponseWriter, r *http.Request) {
+	// Everything under /api/ requires a session except these routes.
+	public := http.NewServeMux()
+	public.HandleFunc("GET /api/health", s.handleHealth)
+	public.HandleFunc("POST /api/auth/login", s.handleLogin)
+	public.HandleFunc("POST /api/auth/logout", s.handleLogout)
+
+	private := http.NewServeMux()
+	private.HandleFunc("GET /api/auth/me", s.handleMe)
+	s.contentRoutes(private)
+	private.HandleFunc("/api/", func(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusNotFound, "not found")
 	})
+	public.Handle("/api/", s.requireAuth(private))
 
 	root := http.NewServeMux()
-	root.Handle("/api/", api)
+	root.Handle("/api/", public)
 	root.Handle("/", spaHandler(s.static))
 	return securityHeaders(root)
 }

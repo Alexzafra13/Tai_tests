@@ -1,0 +1,21 @@
+{
+  "name": "EJEMPLO - sustituir por el temario de la convocatoria",
+  "reference": "BOE-A-XXXX-XXXXX",
+  "blocks": [
+    {
+      "code": "B1",
+      "name": "Bloque I - nombre tal como aparece en el BOE",
+      "topics": [
+        { "code": "B1-T01", "number": 1, "title": "Título literal del tema 1 según el BOE" },
+        { "code": "B1-T02", "number": 2, "title": "Título literal del tema 2 según el BOE" }
+      ]
+    },
+    {
+      "code": "B2",
+      "name": "Bloque II - nombre tal como aparece en el BOE",
+      "topics": [
+        { "code": "B2-T01", "number": 1, "title": "Título literal del tema 1 según el BOE" }
+      ]
+    }
+  ]
+}

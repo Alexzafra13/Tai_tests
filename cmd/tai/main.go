@@ -4,6 +4,7 @@ package main
 
 import (
 	"context"
+	"database/sql"
 	"fmt"
 	"log/slog"
 	"os"
@@ -12,6 +13,7 @@ import (
 
 	"github.com/alexzafra13/tai_tests/internal/auth"
 	"github.com/alexzafra13/tai_tests/internal/config"
+	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/db"
 	"github.com/alexzafra13/tai_tests/internal/server"
 	"github.com/alexzafra13/tai_tests/web"
@@ -23,9 +25,13 @@ var version = "dev"
 const usage = `Usage: tai <command>
 
 Commands:
-  serve     Run migrations and start the web server
-  migrate   Apply pending database migrations
-  version   Print the version
+  serve          Run migrations and start the web server
+  migrate        Apply pending database migrations
+  load-syllabus  Load or update the syllabus from a JSON file
+  add-source     Add a source document (law, technical doc, exam)
+  version        Print the version
+
+Run "tai <command> -h" for the flags of a command.
 
 Configuration is read from environment variables; see .env.example.
 `
@@ -46,6 +52,10 @@ func main() {
 		err = runServe(ctx, log)
 	case "migrate":
 		err = runMigrate(ctx, log)
+	case "load-syllabus":
+		err = runLoadSyllabus(ctx, log, os.Args[2:])
+	case "add-source":
+		err = runAddSource(ctx, log, os.Args[2:])
 	case "version":
 		fmt.Println(version)
 	case "help", "-h", "--help":
@@ -61,20 +71,33 @@ func main() {
 }
 
 func runMigrate(ctx context.Context, log *slog.Logger) error {
-	cfg, err := config.Load()
+	d, err := openDB(ctx, log)
 	if err != nil {
 		return err
+	}
+	return d.Close()
+}
+
+// openDB loads the config, opens the database and applies pending
+// migrations, so every subcommand works on an up-to-date schema.
+func openDB(ctx context.Context, log *slog.Logger) (*sql.DB, error) {
+	cfg, err := config.Load()
+	if err != nil {
+		return nil, err
 	}
 	d, err := db.Open(cfg.DBPath)
 	if err != nil {
-		return err
+		return nil, err
 	}
-	defer d.Close()
 	applied, err := db.Migrate(ctx, d)
 	for _, name := range applied {
 		log.Info("applied migration", "name", name)
 	}
-	return err
+	if err != nil {
+		d.Close()
+		return nil, err
+	}
+	return d, nil
 }
 
 func runServe(ctx context.Context, log *slog.Logger) error {
@@ -85,21 +108,19 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 	if err := cfg.RequireServe(); err != nil {
 		return err
 	}
-
-	d, err := db.Open(cfg.DBPath)
+	d, err := openDB(ctx, log)
 	if err != nil {
 		return err
 	}
 	defer d.Close()
-	applied, err := db.Migrate(ctx, d)
-	if err != nil {
-		return err
-	}
-	for _, name := range applied {
-		log.Info("applied migration", "name", name)
-	}
 
-	srv := server.New(auth.NewService(d, cfg.Password, cfg.SessionTTL), cfg.CookieSecure, web.Dist(), log)
+	srv := server.New(server.Deps{
+		Auth:         auth.NewService(d, cfg.Password, cfg.SessionTTL),
+		Content:      content.NewStore(d),
+		CookieSecure: cfg.CookieSecure,
+		Static:       web.Dist(),
+		Log:          log,
+	})
 	log.Info("starting tai", "version", version, "db", cfg.DBPath)
 	return server.Run(ctx, cfg.Addr, srv.Handler(), log)
 }

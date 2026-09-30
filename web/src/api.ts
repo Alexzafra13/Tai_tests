@@ -1,7 +1,10 @@
+export type FieldErrors = Record<string, string>;
+
 export class ApiError extends Error {
   constructor(
     public status: number,
     message: string,
+    public fields: FieldErrors = {},
   ) {
     super(message);
   }
@@ -20,7 +23,11 @@ export async function api<T>(path: string, init: { method?: string; body?: unkno
 
   const data = await res.json().catch(() => null);
   if (!res.ok) {
-    throw new ApiError(res.status, data?.error ?? `Error ${res.status}`);
+    throw new ApiError(res.status, data?.error ?? `Error ${res.status}`, data?.fields ?? {});
   }
   return data as T;
+}
+
+export function errorMessage(err: unknown): string {
+  return err instanceof Error ? err.message : "Error inesperado";
 }

@@ -24,8 +24,52 @@ internal/config/       variables de entorno
 internal/db/           apertura de SQLite y migrador
 internal/db/migrations/  migraciones SQL versionadas (NNNN_nombre.sql)
 internal/auth/         login de un solo usuario y sesiones
+internal/content/      temario, fuentes y preguntas con sus reglas de validación
+internal/textmatch/    comprobación de citas literales (normaliza espacios y tipografía)
 internal/server/       API HTTP y servidor de la SPA
 web/                   frontend (Vite); web/dist se embebe en el binario
+data/                  syllabus.example.json (formato del temario)
+```
+
+## Reglas de contenido
+
+Se aplican en el backend al guardar, vengan de la interfaz, de la línea de
+comandos o del futuro pipeline de IA:
+
+- Toda pregunta tiene **fuente** (`source_id`) y **referencia** (año y nº de
+  pregunta, artículo…).
+- El origen fija el tipo de fuente: `official` → examen INAP, `law` → ley,
+  `technical` → documentación técnica.
+- Las preguntas `law` y `technical` necesitan una **cita literal** de al menos
+  20 caracteres que **aparezca en el texto completo de la fuente**. Solo se
+  normalizan espacios, saltos de línea, comillas y guiones tipográficos;
+  nunca palabras ni mayúsculas.
+- Para publicar una pregunta hace falta al menos un tema.
+- No se puede modificar el texto de una fuente si alguna cita de sus
+  preguntas deja de aparecer en él, ni borrar una fuente con preguntas.
+
+## Cargar el temario y las fuentes
+
+El temario se define en `data/syllabus.json` (formato en
+[`data/syllabus.example.json`](data/syllabus.example.json)). Cada bloque y
+tema tiene un `code` estable: al recargar el fichero se actualizan títulos y
+orden, y los temas que desaparezcan se desactivan sin perder sus preguntas.
+
+```sh
+# En local
+go run ./cmd/tai load-syllabus -file data/syllabus.json
+
+# Con Docker (el fichero se pasa por la entrada estándar)
+docker compose exec -T tai tai load-syllabus -file - < data/syllabus.json
+```
+
+Las fuentes se pueden crear desde la interfaz (Fuentes → Nueva) o, para
+textos largos, desde la línea de comandos:
+
+```sh
+docker compose exec -T tai tai add-source -kind law \
+  -title "Ley 39/2015, del Procedimiento Administrativo Común" \
+  -ref BOE-A-2015-10565 -version 2024-01-01 -text - < ley39.txt
 ```
 
 ## Desarrollo local
@@ -101,7 +145,7 @@ Ver [`.env.example`](.env.example).
 ## Hoja de ruta
 
 1. ✅ Esqueleto: Go + SQLite + migraciones, SPA embebida, login, Docker.
-2. Temario y modelo de preguntas; alta y edición manual.
+2. ✅ Temario y modelo de preguntas; alta y edición manual.
 3. Tests (práctica y examen) y registro de intentos.
 4. Cola de revisión.
 5. Importador de exámenes del INAP y modo simulacro.

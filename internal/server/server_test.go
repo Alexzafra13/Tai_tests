@@ -13,6 +13,7 @@ import (
 	"time"
 
 	"github.com/alexzafra13/tai_tests/internal/auth"
+	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/db"
 )
 
@@ -31,7 +32,12 @@ func newTestServer(t *testing.T) (*httptest.Server, *http.Client) {
 		"assets/app.js": {Data: []byte("console.log(1)")},
 		"manifest.json": {Data: []byte("{}")},
 	}
-	s := New(auth.NewService(d, "secret-password", time.Hour), false, static, slog.New(slog.DiscardHandler))
+	s := New(Deps{
+		Auth:    auth.NewService(d, "secret-password", time.Hour),
+		Content: content.NewStore(d),
+		Static:  static,
+		Log:     slog.New(slog.DiscardHandler),
+	})
 	ts := httptest.NewServer(s.Handler())
 	t.Cleanup(ts.Close)
 
@@ -112,7 +118,19 @@ func TestSPARouting(t *testing.T) {
 		t.Errorf("asset Cache-Control = %q, want immutable", cc)
 	}
 
+	// Unknown API routes don't reveal anything before login.
+	if resp, _ := get(t, c, ts.URL+"/api/unknown"); resp.StatusCode != http.StatusUnauthorized {
+		t.Fatalf("unknown api route before login: %d, want 401", resp.StatusCode)
+	}
+	login(t, c, ts.URL)
 	if resp, _ := get(t, c, ts.URL+"/api/unknown"); resp.StatusCode != http.StatusNotFound {
 		t.Fatalf("unknown api route: %d, want 404", resp.StatusCode)
+	}
+}
+
+func login(t *testing.T, c *http.Client, base string) {
+	t.Helper()
+	if resp := post(t, c, base+"/api/auth/login", `{"password":"secret-password"}`); resp.StatusCode != http.StatusOK {
+		t.Fatalf("login: %d", resp.StatusCode)
 	}
 }
