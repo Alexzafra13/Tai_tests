@@ -11,6 +11,7 @@ import {
   type Block,
   type Origin,
   type Question,
+  questionInput,
   type QuestionInput,
   type Source,
   type Status,
@@ -32,6 +33,7 @@ const empty: QuestionInput = {
   source_quote: "",
   status: "published",
   annulled: false,
+  fixed_order: false,
   flagged: false,
   flag_note: "",
   topic_ids: [],
@@ -51,10 +53,7 @@ export function QuestionEditPage() {
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
-    if (existing.data) {
-      const { id: _id, source_title: _t, ...input } = existing.data;
-      setForm(input);
-    }
+    if (existing.data) setForm(questionInput(existing.data));
   }, [existing.data]);
 
   const set = <K extends keyof QuestionInput>(key: K, value: QuestionInput[K]) =>
@@ -268,6 +267,16 @@ export function QuestionEditPage() {
         <label className="check">
           <input type="checkbox" checked={form.annulled} onChange={(e) => set("annulled", e.target.checked)} />
           Anulada en el examen oficial
+        </label>
+        <label className="check">
+          <input type="checkbox" checked={form.fixed_order} onChange={(e) => set("fixed_order", e.target.checked)} />
+          <span>
+            No barajar las opciones
+            <span className="hint">
+              {" "}
+              · Ya se detecta solo cuando una opción nombra letras («A y B») o dice «todas/ninguna de las anteriores».
+            </span>
+          </span>
         </label>
         <label className="check">
           <input type="checkbox" checked={form.flagged} onChange={(e) => set("flagged", e.target.checked)} />

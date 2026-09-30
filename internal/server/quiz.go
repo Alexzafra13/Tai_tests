@@ -16,6 +16,22 @@ func (s *Server) quizRoutes(mux *http.ServeMux) {
 	mux.HandleFunc("POST /api/tests/{id}/finish", s.handleFinish)
 	mux.HandleFunc("POST /api/tests/{id}/abandon", s.handleAbandon)
 	mux.HandleFunc("POST /api/tests/{id}/flag", s.handleFlag)
+
+	mux.HandleFunc("GET /api/settings/scoring", s.handleGetScoring)
+	mux.HandleFunc("PUT /api/settings/scoring", s.handleSetScoring)
+}
+
+func (s *Server) handleGetScoring(w http.ResponseWriter, r *http.Request) {
+	sc, err := s.quiz.Scoring(r.Context())
+	s.respond(w, sc, err)
+}
+
+func (s *Server) handleSetScoring(w http.ResponseWriter, r *http.Request) {
+	var sc quiz.ScoringSettings
+	if !decode(w, r, &sc) {
+		return
+	}
+	s.respondNoContent(w, s.quiz.SetScoring(r.Context(), sc))
 }
 
 func (s *Server) handleListTests(w http.ResponseWriter, r *http.Request) {

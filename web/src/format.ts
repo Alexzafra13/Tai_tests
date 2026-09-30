@@ -15,6 +15,6 @@ export function formatClock(totalSec: number): string {
   return h > 0 ? `${h}:${String(m).padStart(2, "0")}:${ss}` : `${m}:${ss}`;
 }
 
-export function formatScore(score: number): string {
-  return score.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+export function formatScore(score: number, decimals = 2): string {
+  return score.toLocaleString("es-ES", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
 }

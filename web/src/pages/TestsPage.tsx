@@ -46,7 +46,7 @@ export function TestRow({ test: t }: { test: TestSummary }) {
         {t.status === "in_progress" && <span className="badge warn">En curso</span>}
         {t.status === "abandoned" && <span className="badge">Abandonado</span>}
         {t.status === "finished" && t.score !== null && (
-          <strong className={t.score >= 5 ? "ok" : "error"}>{formatScore(t.score)}</strong>
+          <strong className={t.passed ? "ok" : "error"}>{formatScore(t.score)}</strong>
         )}
       </div>
     </Link>

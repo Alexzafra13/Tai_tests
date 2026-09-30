@@ -9,6 +9,7 @@ import {
   type Block,
   type CreateTestInput,
   type Origin,
+  type ScoringSettings,
   type Source,
   type TestFilters,
   type TestMode,
@@ -31,8 +32,9 @@ const defaults: CreateTestInput = {
   time_limit_min: minutesFor(25),
 };
 
-// The last configuration is remembered on this device only.
-function loadSaved(): CreateTestInput {
+// The last configuration is remembered on this device only. Returns null
+// when there is none, so the scoring defaults from the settings apply.
+function loadSaved(): CreateTestInput | null {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "null");
     if (saved && typeof saved === "object") {
@@ -41,14 +43,20 @@ function loadSaved(): CreateTestInput {
   } catch {
     // Storage unavailable or corrupt: start from defaults.
   }
-  return defaults;
+  return null;
 }
 
 export function NewTestPage() {
   const navigate = useNavigate();
   const { data: blocks } = useResource<Block[]>("/syllabus");
   const { data: sources } = useResource<Source[]>("/sources");
-  const [form, setForm] = useState<CreateTestInput>(loadSaved);
+  const [saved] = useState(loadSaved);
+  const [form, setForm] = useState<CreateTestInput>(saved ?? defaults);
+  const scoring = useResource<ScoringSettings>(saved ? null : "/settings/scoring");
+  useEffect(() => {
+    const penalty = scoring.data?.default_penalty;
+    if (penalty !== undefined) setForm((f) => ({ ...f, penalty }));
+  }, [scoring.data]);
   const [timed, setTimed] = useState(form.time_limit_min > 0);
   const [available, setAvailable] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);

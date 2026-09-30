@@ -938,3 +938,26 @@ span.nav-cell {
   align-items: center;
   justify-content: flex-end;
 }
+
+.topbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.topbar-links .link {
+  padding: 0.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.score-max {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.score-card p {
+  margin: 0.25rem 0;
+}

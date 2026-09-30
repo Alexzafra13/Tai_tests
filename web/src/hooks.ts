@@ -50,3 +50,18 @@ export function useDebounced<T>(value: T, delay: number): T {
   }, [value, delay]);
   return debounced;
 }
+
+// useCountdown ticks down from a number of seconds given by the server. It
+// anchors on a local deadline so a phone waking from sleep shows the right
+// time. Returns undefined when there is no limit.
+export function useCountdown(initialSec: number | undefined): number | undefined {
+  const [deadline] = useState(() => (initialSec === undefined ? undefined : Date.now() + initialSec * 1000));
+  const [now, setNow] = useState(Date.now());
+  useEffect(() => {
+    if (deadline === undefined) return;
+    const id = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(id);
+  }, [deadline]);
+  if (deadline === undefined) return undefined;
+  return Math.max(0, Math.round((deadline - now) / 1000));
+}

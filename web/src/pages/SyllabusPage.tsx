@@ -8,7 +8,12 @@ export function SyllabusPage() {
 
   return (
     <>
-      <h2>Temario</h2>
+      <div className="page-head">
+        <h2>Temario</h2>
+        <Link to="/sources" className="link">
+          Fuentes
+        </Link>
+      </div>
       <ErrorBox message={error} />
       {loading && <Loading />}
       {blocks?.length === 0 && (

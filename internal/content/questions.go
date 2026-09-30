@@ -70,6 +70,7 @@ type Question struct {
 	SourceQuote string    `json:"source_quote"`
 	Status      Status    `json:"status"`
 	Annulled    bool      `json:"annulled"`
+	FixedOrder  bool      `json:"fixed_order"`
 	Flagged     bool      `json:"flagged"`
 	FlagNote    string    `json:"flag_note"`
 	TopicIDs    []int64   `json:"topic_ids"`
@@ -90,9 +91,11 @@ type QuestionInput struct {
 	SourceQuote string    `json:"source_quote"`
 	Status      Status    `json:"status"`
 	Annulled    bool      `json:"annulled"`
-	Flagged     bool      `json:"flagged"`
-	FlagNote    string    `json:"flag_note"`
-	TopicIDs    []int64   `json:"topic_ids"`
+	// FixedOrder keeps the options in their original order in tests.
+	FixedOrder bool    `json:"fixed_order"`
+	Flagged    bool    `json:"flagged"`
+	FlagNote   string  `json:"flag_note"`
+	TopicIDs   []int64 `json:"topic_ids"`
 }
 
 func (in *QuestionInput) normalize() {
@@ -220,12 +223,12 @@ func (s *Store) CreateQuestion(ctx context.Context, in QuestionInput) (int64, er
 	now := s.timestamp()
 	var id int64
 	err = tx.QueryRowContext(ctx, `INSERT INTO questions (stem, option_a, option_b, option_c, option_d, correct,
-		explanation, origin, author, source_id, source_ref, source_quote, status, annulled, flagged, flag_note,
-		created_at, updated_at)
-		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
+		explanation, origin, author, source_id, source_ref, source_quote, status, annulled, fixed_order, flagged,
+		flag_note, created_at, updated_at)
+		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
 		in.Stem, in.Options[0], in.Options[1], in.Options[2], in.Options[3], in.Correct,
 		in.Explanation, in.Origin, in.Author, in.SourceID, in.SourceRef, in.SourceQuote, in.Status,
-		boolInt(in.Annulled), boolInt(in.Flagged), in.FlagNote, now, now).Scan(&id)
+		boolInt(in.Annulled), boolInt(in.FixedOrder), boolInt(in.Flagged), in.FlagNote, now, now).Scan(&id)
 	if err != nil {
 		return 0, err
 	}
@@ -253,11 +256,12 @@ func (s *Store) UpdateQuestion(ctx context.Context, id int64, in QuestionInput) 
 			OR option_d <> ?5 OR correct <> ?6),
 		stem = ?1, option_a = ?2, option_b = ?3, option_c = ?4, option_d = ?5, correct = ?6,
 		explanation = ?7, origin = ?8, author = ?9, source_id = ?10, source_ref = ?11,
-		source_quote = ?12, status = ?13, annulled = ?14, flagged = ?15, flag_note = ?16, updated_at = ?17
-		WHERE id = ?18`,
+		source_quote = ?12, status = ?13, annulled = ?14, flagged = ?15, flag_note = ?16, updated_at = ?17,
+		fixed_order = ?18
+		WHERE id = ?19`,
 		in.Stem, in.Options[0], in.Options[1], in.Options[2], in.Options[3], in.Correct,
 		in.Explanation, in.Origin, in.Author, in.SourceID, in.SourceRef, in.SourceQuote, in.Status,
-		boolInt(in.Annulled), boolInt(in.Flagged), in.FlagNote, s.timestamp(), id)
+		boolInt(in.Annulled), boolInt(in.Flagged), in.FlagNote, s.timestamp(), boolInt(in.FixedOrder), id)
 	if err != nil {
 		return err
 	}
@@ -297,13 +301,13 @@ func (s *Store) DeleteQuestion(ctx context.Context, id int64) error {
 }
 
 const questionColumns = `q.id, q.stem, q.option_a, q.option_b, q.option_c, q.option_d, q.correct, q.explanation,
-	q.origin, q.author, q.source_id, s.title, q.source_ref, q.source_quote, q.status, q.annulled, q.flagged,
-	q.flag_note, q.revision, q.created_at, q.updated_at`
+	q.origin, q.author, q.source_id, s.title, q.source_ref, q.source_quote, q.status, q.annulled, q.fixed_order,
+	q.flagged, q.flag_note, q.revision, q.created_at, q.updated_at`
 
 func scanQuestion(row interface{ Scan(...any) error }, q *Question) error {
 	return row.Scan(&q.ID, &q.Stem, &q.Options[0], &q.Options[1], &q.Options[2], &q.Options[3], &q.Correct,
 		&q.Explanation, &q.Origin, &q.Author, &q.SourceID, &q.SourceTitle, &q.SourceRef, &q.SourceQuote,
-		&q.Status, &q.Annulled, &q.Flagged, &q.FlagNote, &q.Revision, &q.CreatedAt, &q.UpdatedAt)
+		&q.Status, &q.Annulled, &q.FixedOrder, &q.Flagged, &q.FlagNote, &q.Revision, &q.CreatedAt, &q.UpdatedAt)
 }
 
 func (s *Store) Question(ctx context.Context, id int64) (Question, error) {

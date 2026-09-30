@@ -25,7 +25,8 @@ internal/db/           apertura de SQLite y migrador
 internal/db/migrations/  migraciones SQL versionadas (NNNN_nombre.sql)
 internal/auth/         login de un solo usuario y sesiones
 internal/content/      temario, fuentes y preguntas con sus reglas de validación
-internal/quiz/         sesiones de test, intentos y cálculo de nota
+internal/quiz/         sesiones de test: creación, respuestas, historial, nota y barajado
+internal/settings/     ajustes del usuario (clave → JSON)
 internal/textmatch/    comprobación de citas literales (normaliza espacios y tipografía)
 internal/server/       API HTTP y servidor de la SPA
 web/                   frontend (Vite); web/dist se embebe en el binario
@@ -61,9 +62,20 @@ comandos o del futuro pipeline de IA:
   bloquea el móvil, el test se retoma donde estaba. El reloj de un examen
   sigue corriendo, como en el examen real; si vuelves pasado el límite, el
   examen se corrige a la hora límite.
-- **Nota** sobre 10: `(aciertos − fallos × penalización) / preguntas × 10`,
-  con la penalización configurable (0, 1/4, 1/3, 1/2). El resultado muestra
-  también la nota sin penalización, para ver cuánto te cuestan los fallos.
+- **Nota** en la escala de la convocatoria:
+  `(aciertos − fallos × penalización) / preguntas × puntuación máxima`, con
+  aprobado. Puntuación máxima, aprobado y penalización por defecto se
+  configuran en **Ajustes** (por defecto, provisionalmente: sobre 100,
+  aprobado en 50 y −1/3 por fallo). Cada test guarda sus netas, así que al
+  cambiar la escala se recalculan también los resultados anteriores. El
+  resultado muestra la nota sin penalización, para ver cuánto cuestan los
+  fallos.
+- **Opciones barajadas** en cada test (el orden se guarda, así que al
+  retomar un test las ves igual). No se mueve nada que pueda romper la
+  pregunta: si alguna opción nombra letras («A y B son correctas», «solo la
+  A») la pregunta mantiene su orden, y las opciones del tipo «todas/ninguna
+  de las anteriores» se quedan en su sitio. Cada pregunta tiene además la
+  casilla «No barajar las opciones».
 - Desde el resultado puedes **repetir las falladas** en un test de práctica.
 - Las preguntas con respuestas no se pueden borrar: se marcan como
   **descartadas** para no perder el historial. Si editas el enunciado, las

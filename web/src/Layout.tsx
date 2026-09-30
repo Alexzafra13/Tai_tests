@@ -1,11 +1,10 @@
-import { NavLink, Outlet } from "react-router";
+import { Link, NavLink, Outlet } from "react-router";
 import { useAuth } from "./auth";
 
 const nav = [
   { to: "/", label: "Inicio", end: true },
   { to: "/tests", label: "Tests" },
   { to: "/questions", label: "Preguntas" },
-  { to: "/sources", label: "Fuentes" },
   { to: "/syllabus", label: "Temario" },
 ];
 
@@ -16,9 +15,14 @@ export function Layout() {
     <div className="app">
       <header className="topbar">
         <span className="brand">TAI · Estudio</span>
-        <button className="link" onClick={() => logout()}>
-          Salir
-        </button>
+        <span className="topbar-links">
+          <Link to="/settings" className="link">
+            Ajustes
+          </Link>
+          <button className="link" onClick={() => logout()}>
+            Salir
+          </button>
+        </span>
       </header>
       <main className="content">
         <Outlet />

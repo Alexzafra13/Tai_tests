@@ -11,8 +11,9 @@ import { SourcesPage } from "./pages/SourcesPage";
 import { SourceEditPage } from "./pages/SourceEditPage";
 import { SyllabusPage } from "./pages/SyllabusPage";
 import { NewTestPage } from "./pages/NewTestPage";
-import { TestPage } from "./pages/TestPage";
+import { TestPage } from "./pages/test/TestPage";
 import { TestsPage } from "./pages/TestsPage";
+import { SettingsPage } from "./pages/SettingsPage";
 import "./styles.css";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="tests" element={<TestsPage />} />
         <Route path="tests/new" element={<NewTestPage />} />
         <Route path="tests/:id" element={<TestPage />} />
+        <Route path="settings" element={<SettingsPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

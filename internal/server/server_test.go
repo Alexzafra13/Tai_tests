@@ -16,6 +16,7 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/db"
 	"github.com/alexzafra13/tai_tests/internal/quiz"
+	"github.com/alexzafra13/tai_tests/internal/settings"
 )
 
 func newTestServer(t *testing.T) (*httptest.Server, *http.Client) {
@@ -36,7 +37,7 @@ func newTestServer(t *testing.T) (*httptest.Server, *http.Client) {
 	s := New(Deps{
 		Auth:    auth.NewService(d, "secret-password", time.Hour),
 		Content: content.NewStore(d),
-		Quiz:    quiz.NewStore(d),
+		Quiz:    quiz.NewStore(d, settings.NewStore(d)),
 		Static:  static,
 		Log:     slog.New(slog.DiscardHandler),
 	})

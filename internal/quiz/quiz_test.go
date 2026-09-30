@@ -11,6 +11,7 @@ import (
 
 	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/db"
+	"github.com/alexzafra13/tai_tests/internal/settings"
 )
 
 type fixture struct {
@@ -40,8 +41,11 @@ func newFixture(t *testing.T) *fixture {
 	if _, err := db.Migrate(ctx, d); err != nil {
 		t.Fatal(err)
 	}
-	f := &fixture{db: d, quiz: NewStore(d), content: content.NewStore(d), now: time.Date(2026, 5, 23, 10, 0, 0, 0, time.UTC)}
+	f := &fixture{db: d, quiz: NewStore(d, settings.NewStore(d)), content: content.NewStore(d), now: time.Date(2026, 5, 23, 10, 0, 0, 0, time.UTC)}
 	f.quiz.now = func() time.Time { return f.now }
+	// Keep options in their original order so tests can rely on B being
+	// correct; shuffling has its own tests.
+	f.quiz.shuffle = func(int, func(i, j int)) {}
 
 	syl, _ := content.ParseSyllabus(strings.NewReader(`{"blocks":[
 		{"code":"B1","name":"Uno","topics":[{"code":"B1-T01","title":"a"},{"code":"B1-T02","title":"b"}]},
@@ -228,9 +232,9 @@ func TestExamHidesUntilFinishAndScores(t *testing.T) {
 	if r.Correct != 3 || r.Wrong != 1 || r.Blank != 1 {
 		t.Fatalf("result = %+v, want 3/1/1", r)
 	}
-	// (3 - 1/3) / 5 * 10 = 5.33
-	if r.Score != 5.33 {
-		t.Errorf("score = %v, want 5.33", r.Score)
+	// (3 - 1/3) / 5 on the default scale of 100 = 53.33, above the pass mark.
+	if r.Score != 53.33 || !r.Passed {
+		t.Errorf("score = %v passed = %v, want 53.33 passed", r.Score, r.Passed)
 	}
 
 	test, _ = f.quiz.Get(ctx, id)
@@ -337,5 +341,66 @@ func TestCreateValidation(t *testing.T) {
 	var v content.ValidationError
 	if !errors.As(err, &v) || v["mode"] == "" || v["count"] == "" || v["penalty"] == "" {
 		t.Fatalf("err = %v", err)
+	}
+}
+
+func TestShuffledOptionsMapToOriginal(t *testing.T) {
+	ctx := context.Background()
+	f := newFixture(t)
+	f.quiz.shuffle = reverse // options "a b c d" are shown as "d c b a"
+	id, err := f.quiz.Create(ctx, CreateInput{Mode: ModePractice, Count: 1, Filters: Filters{Origins: []content.Origin{content.OriginLaw}}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	test, _ := f.quiz.Get(ctx, id)
+	if test.Items[0].Options != [4]string{"d", "c", "b", "a"} {
+		t.Fatalf("shown options = %v", test.Items[0].Options)
+	}
+
+	// The correct answer is original B, now shown third (index 2).
+	sol, err := f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(2)})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if sol.Correct != 2 || !*sol.IsCorrect {
+		t.Fatalf("solution = %+v, want correct shown at 2", sol)
+	}
+	var stored int
+	f.db.QueryRow(`SELECT chosen FROM attempts WHERE test_id = ?`, id).Scan(&stored)
+	if stored != 1 {
+		t.Errorf("stored chosen = %d, want original index 1", stored)
+	}
+	test, _ = f.quiz.Get(ctx, id)
+	if *test.Items[0].Chosen != 2 || test.Items[0].Solution.Correct != 2 {
+		t.Errorf("reloaded item = %+v", test.Items[0])
+	}
+}
+
+func TestScoringSettings(t *testing.T) {
+	ctx := context.Background()
+	f := newFixture(t)
+	sc, err := f.quiz.Scoring(ctx)
+	if err != nil || sc != DefaultScoring {
+		t.Fatalf("default scoring = %+v, %v", sc, err)
+	}
+	if err := f.quiz.SetScoring(ctx, ScoringSettings{Scale: Scale{Max: 10, PassMark: 20}}); err == nil {
+		t.Error("pass mark above max accepted")
+	}
+
+	id, _ := f.quiz.Create(ctx, CreateInput{Mode: ModeExam, Count: 2, Penalty: 0})
+	f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(1)})
+	f.quiz.Finish(ctx, id)
+
+	// Changing the scale re-expresses past results.
+	if err := f.quiz.SetScoring(ctx, ScoringSettings{Scale: Scale{Max: 10, PassMark: 6}, DefaultPenalty: 0.25}); err != nil {
+		t.Fatal(err)
+	}
+	test, _ := f.quiz.Get(ctx, id)
+	if test.Result.Score != 5 || test.Result.Max != 10 || test.Result.Passed {
+		t.Errorf("result on new scale = %+v", test.Result)
+	}
+	list, _ := f.quiz.List(ctx, StatusFinished, 5)
+	if *list[0].Score != 5 || list[0].Passed {
+		t.Errorf("summary on new scale = %+v", list[0])
 	}
 }

@@ -51,6 +51,7 @@ export type Question = {
   source_quote: string;
   status: Status;
   annulled: boolean;
+  fixed_order: boolean;
   flagged: boolean;
   flag_note: string;
   topic_ids: number[];
@@ -58,6 +59,29 @@ export type Question = {
 };
 
 export type QuestionInput = Omit<Question, "id" | "source_title" | "revision">;
+
+// questionInput picks the editable fields of a question. The API rejects
+// unknown fields, so read-only ones (id, revision, timestamps) must not be
+// sent back.
+export function questionInput(q: Question): QuestionInput {
+  return {
+    stem: q.stem,
+    options: q.options,
+    correct: q.correct,
+    explanation: q.explanation,
+    origin: q.origin,
+    author: q.author,
+    source_id: q.source_id,
+    source_ref: q.source_ref,
+    source_quote: q.source_quote,
+    status: q.status,
+    annulled: q.annulled,
+    fixed_order: q.fixed_order,
+    flagged: q.flagged,
+    flag_note: q.flag_note,
+    topic_ids: q.topic_ids,
+  };
+}
 
 export type Page<T> = { items: T[]; total: number };
 
@@ -146,8 +170,12 @@ export type TestResult = {
   blank: number;
   penalty: number;
   net: number;
+  ratio: number;
   score: number;
   score_no_penalty: number;
+  max: number;
+  pass_mark: number;
+  passed: boolean;
 };
 
 export type Test = {
@@ -176,6 +204,13 @@ export type TestSummary = {
   correct: number;
   wrong: number;
   score: number | null;
+  passed: boolean;
+};
+
+export type ScoringSettings = {
+  max: number;
+  pass_mark: number;
+  default_penalty: number;
 };
 
 export const modeLabel: Record<TestMode, string> = {
