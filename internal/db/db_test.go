@@ -77,3 +77,53 @@ func TestFTS5WithDiacriticFolding(t *testing.T) {
 		t.Errorf("accent-insensitive match returned %d rows, want 1", n)
 	}
 }
+
+// Migration 0003 rebuilds the questions table; child rows in
+// question_topics must survive (a DROP TABLE with foreign keys on would
+// cascade-delete them).
+func TestRebuildKeepsChildRows(t *testing.T) {
+	ctx := context.Background()
+	d, err := Open(filepath.Join(t.TempDir(), "test.db"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer d.Close()
+
+	if _, err := migrateTo(ctx, d, 2); err != nil {
+		t.Fatal(err)
+	}
+	for _, stmt := range []string{
+		`INSERT INTO blocks (id, code, name, position) VALUES (1, 'B1', 'b', 0)`,
+		`INSERT INTO topics (id, block_id, code, number, title, position) VALUES (1, 1, 'T1', 1, 't', 0)`,
+		`INSERT INTO sources (id, kind, title, created_at, updated_at) VALUES (1, 'inap_exam', 'e', '', '')`,
+		`INSERT INTO questions (id, stem, option_a, option_b, option_c, option_d, correct, origin, author,
+			source_id, source_ref, created_at, updated_at) VALUES (7, 's', 'a', 'b', 'c', 'd', 0, 'official', 'import', 1, '2024 · 1', '', '')`,
+		`INSERT INTO question_topics (question_id, topic_id) VALUES (7, 1)`,
+	} {
+		if _, err := d.Exec(stmt); err != nil {
+			t.Fatalf("%s: %v", stmt, err)
+		}
+	}
+
+	if _, err := Migrate(ctx, d); err != nil {
+		t.Fatal(err)
+	}
+	var links, revision int
+	if err := d.QueryRow(`SELECT count(*) FROM question_topics WHERE question_id = 7`).Scan(&links); err != nil {
+		t.Fatal(err)
+	}
+	if links != 1 {
+		t.Fatalf("question_topics rows after rebuild = %d, want 1", links)
+	}
+	if err := d.QueryRow(`SELECT revision FROM questions WHERE id = 7`).Scan(&revision); err != nil || revision != 1 {
+		t.Fatalf("revision = %d, %v", revision, err)
+	}
+	var fk int
+	d.QueryRow(`PRAGMA foreign_keys`).Scan(&fk)
+	if fk != 1 {
+		t.Errorf("foreign_keys left off after rebuild")
+	}
+	if _, err := d.Exec(`UPDATE questions SET status = 'discarded' WHERE id = 7`); err != nil {
+		t.Errorf("discarded status rejected: %v", err)
+	}
+}

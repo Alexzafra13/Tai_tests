@@ -88,6 +88,11 @@ func loadMigrations() ([]migration, error) {
 // Migrate applies pending migrations in order, each in its own transaction,
 // and returns the names of the ones applied.
 func Migrate(ctx context.Context, db *sql.DB) ([]string, error) {
+	return migrateTo(ctx, db, 0)
+}
+
+// migrateTo applies pending migrations up to version max (0 = all).
+func migrateTo(ctx context.Context, db *sql.DB, max int) ([]string, error) {
 	if _, err := db.ExecContext(ctx, `CREATE TABLE IF NOT EXISTS schema_migrations (
 		version    INTEGER PRIMARY KEY,
 		name       TEXT NOT NULL,
@@ -108,7 +113,7 @@ func Migrate(ctx context.Context, db *sql.DB) ([]string, error) {
 
 	var applied []string
 	for _, m := range ms {
-		if m.version <= current {
+		if m.version <= current || (max > 0 && m.version > max) {
 			continue
 		}
 		if err := apply(ctx, db, m); err != nil {
@@ -119,14 +124,46 @@ func Migrate(ctx context.Context, db *sql.DB) ([]string, error) {
 	return applied, nil
 }
 
+// rebuildMarker at the top of a migration declares that it rebuilds tables
+// (the only way to change a CHECK constraint in SQLite). Foreign keys must be
+// off while the old table is dropped, or ON DELETE CASCADE would wipe the
+// child rows; they are verified before committing.
+const rebuildMarker = "-- migrate:rebuild"
+
 func apply(ctx context.Context, db *sql.DB, m migration) error {
-	tx, err := db.BeginTx(ctx, nil)
+	conn, err := db.Conn(ctx)
+	if err != nil {
+		return err
+	}
+	defer conn.Close()
+
+	rebuild := strings.HasPrefix(m.sql, rebuildMarker)
+	if rebuild {
+		// PRAGMA foreign_keys is a no-op inside a transaction.
+		if _, err := conn.ExecContext(ctx, `PRAGMA foreign_keys = OFF`); err != nil {
+			return err
+		}
+		defer conn.ExecContext(context.Background(), `PRAGMA foreign_keys = ON`)
+	}
+
+	tx, err := conn.BeginTx(ctx, nil)
 	if err != nil {
 		return err
 	}
 	defer tx.Rollback()
 	if _, err := tx.ExecContext(ctx, m.sql); err != nil {
 		return err
+	}
+	if rebuild {
+		rows, err := tx.QueryContext(ctx, `PRAGMA foreign_key_check`)
+		if err != nil {
+			return err
+		}
+		broken := rows.Next()
+		rows.Close()
+		if broken {
+			return fmt.Errorf("foreign key violations after rebuild")
+		}
 	}
 	if _, err := tx.ExecContext(ctx, `INSERT INTO schema_migrations (version, name) VALUES (?, ?)`, m.version, m.name); err != nil {
 		return err

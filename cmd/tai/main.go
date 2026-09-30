@@ -15,6 +15,7 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/config"
 	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/db"
+	"github.com/alexzafra13/tai_tests/internal/quiz"
 	"github.com/alexzafra13/tai_tests/internal/server"
 	"github.com/alexzafra13/tai_tests/web"
 )
@@ -117,6 +118,7 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 	srv := server.New(server.Deps{
 		Auth:         auth.NewService(d, cfg.Password, cfg.SessionTTL),
 		Content:      content.NewStore(d),
+		Quiz:         quiz.NewStore(d),
 		CookieSecure: cfg.CookieSecure,
 		Static:       web.Dist(),
 		Log:          log,

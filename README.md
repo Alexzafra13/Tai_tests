@@ -25,6 +25,7 @@ internal/db/           apertura de SQLite y migrador
 internal/db/migrations/  migraciones SQL versionadas (NNNN_nombre.sql)
 internal/auth/         login de un solo usuario y sesiones
 internal/content/      temario, fuentes y preguntas con sus reglas de validación
+internal/quiz/         sesiones de test, intentos y cálculo de nota
 internal/textmatch/    comprobación de citas literales (normaliza espacios y tipografía)
 internal/server/       API HTTP y servidor de la SPA
 web/                   frontend (Vite); web/dist se embebe en el binario
@@ -47,6 +48,27 @@ comandos o del futuro pipeline de IA:
 - Para publicar una pregunta hace falta al menos un tema.
 - No se puede modificar el texto de una fuente si alguna cita de sus
   preguntas deja de aparecer en él, ni borrar una fuente con preguntas.
+
+## Tests
+
+- **Práctica:** corrección inmediata con explicación, fuente y cita tras cada
+  pregunta.
+- **Examen:** sin corrección hasta entregar. Las respuestas se pueden cambiar;
+  pulsar otra vez la opción marcada la deja en blanco. Tiempo límite opcional
+  (por defecto 1,2 min por pregunta, como el examen real).
+- Solo entran preguntas **publicadas y no anuladas**.
+- Cada respuesta se guarda al momento en el servidor: si cierras la app o se
+  bloquea el móvil, el test se retoma donde estaba. El reloj de un examen
+  sigue corriendo, como en el examen real; si vuelves pasado el límite, el
+  examen se corrige a la hora límite.
+- **Nota** sobre 10: `(aciertos − fallos × penalización) / preguntas × 10`,
+  con la penalización configurable (0, 1/4, 1/3, 1/2). El resultado muestra
+  también la nota sin penalización, para ver cuánto te cuestan los fallos.
+- Desde el resultado puedes **repetir las falladas** en un test de práctica.
+- Las preguntas con respuestas no se pueden borrar: se marcan como
+  **descartadas** para no perder el historial. Si editas el enunciado, las
+  opciones o la respuesta correcta, sube su número de revisión y cada intento
+  guarda la revisión que viste.
 
 ## Cargar el temario y las fuentes
 
@@ -146,7 +168,7 @@ Ver [`.env.example`](.env.example).
 
 1. ✅ Esqueleto: Go + SQLite + migraciones, SPA embebida, login, Docker.
 2. ✅ Temario y modelo de preguntas; alta y edición manual.
-3. Tests (práctica y examen) y registro de intentos.
+3. ✅ Tests (práctica y examen) y registro de intentos.
 4. Cola de revisión.
 5. Importador de exámenes del INAP y modo simulacro.
 6. Generación del bloque legal con validación.

@@ -10,6 +10,9 @@ import { QuestionEditPage } from "./pages/QuestionEditPage";
 import { SourcesPage } from "./pages/SourcesPage";
 import { SourceEditPage } from "./pages/SourceEditPage";
 import { SyllabusPage } from "./pages/SyllabusPage";
+import { NewTestPage } from "./pages/NewTestPage";
+import { TestPage } from "./pages/TestPage";
+import { TestsPage } from "./pages/TestsPage";
 import "./styles.css";
 
 function App() {
@@ -36,6 +39,9 @@ function App() {
         <Route path="sources/new" element={<SourceEditPage />} />
         <Route path="sources/:id" element={<SourceEditPage />} />
         <Route path="syllabus" element={<SyllabusPage />} />
+        <Route path="tests" element={<TestsPage />} />
+        <Route path="tests/new" element={<NewTestPage />} />
+        <Route path="tests/:id" element={<TestPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

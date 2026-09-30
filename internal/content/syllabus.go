@@ -161,7 +161,7 @@ func (s *Store) Syllabus(ctx context.Context) ([]Block, error) {
 		FROM blocks b
 		JOIN topics t ON t.block_id = b.id AND t.active = 1
 		LEFT JOIN question_topics qt ON qt.topic_id = t.id
-		LEFT JOIN questions q ON q.id = qt.question_id
+		LEFT JOIN questions q ON q.id = qt.question_id AND q.status <> 'discarded'
 		WHERE b.active = 1
 		GROUP BY t.id
 		ORDER BY b.position, t.position`)

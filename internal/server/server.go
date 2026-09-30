@@ -12,11 +12,13 @@ import (
 
 	"github.com/alexzafra13/tai_tests/internal/auth"
 	"github.com/alexzafra13/tai_tests/internal/content"
+	"github.com/alexzafra13/tai_tests/internal/quiz"
 )
 
 type Deps struct {
 	Auth         *auth.Service
 	Content      *content.Store
+	Quiz         *quiz.Store
 	CookieSecure bool
 	Static       fs.FS
 	Log          *slog.Logger
@@ -25,13 +27,14 @@ type Deps struct {
 type Server struct {
 	auth         *auth.Service
 	content      *content.Store
+	quiz         *quiz.Store
 	cookieSecure bool
 	static       fs.FS
 	log          *slog.Logger
 }
 
 func New(d Deps) *Server {
-	return &Server{auth: d.Auth, content: d.Content, cookieSecure: d.CookieSecure, static: d.Static, log: d.Log}
+	return &Server{auth: d.Auth, content: d.Content, quiz: d.Quiz, cookieSecure: d.CookieSecure, static: d.Static, log: d.Log}
 }
 
 func (s *Server) Handler() http.Handler {
@@ -44,6 +47,7 @@ func (s *Server) Handler() http.Handler {
 	private := http.NewServeMux()
 	private.HandleFunc("GET /api/auth/me", s.handleMe)
 	s.contentRoutes(private)
+	s.quizRoutes(private)
 	private.HandleFunc("/api/", func(w http.ResponseWriter, r *http.Request) {
 		writeError(w, http.StatusNotFound, "not found")
 	})

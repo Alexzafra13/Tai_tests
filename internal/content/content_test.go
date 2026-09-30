@@ -250,3 +250,40 @@ func TestDuplicateSourceReference(t *testing.T) {
 	_, err := f.s.CreateSource(context.Background(), SourceInput{Kind: KindLaw, Title: "Otra", Reference: "BOE-A-2015-10565"})
 	fieldErr(t, err, "reference")
 }
+
+func TestRevisionBumpsOnlyOnContentChange(t *testing.T) {
+	ctx := context.Background()
+	f := newFixture(t)
+	in := f.lawQuestion()
+	id, err := f.s.CreateQuestion(ctx, in)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	in.Explanation = "Artículo 21.2 de la Ley 39/2015."
+	if err := f.s.UpdateQuestion(ctx, id, in); err != nil {
+		t.Fatal(err)
+	}
+	if q, _ := f.s.Question(ctx, id); q.Revision != 1 {
+		t.Errorf("revision after explanation edit = %d, want 1", q.Revision)
+	}
+
+	in.Options[3] = "Cuatro meses"
+	if err := f.s.UpdateQuestion(ctx, id, in); err != nil {
+		t.Fatal(err)
+	}
+	if q, _ := f.s.Question(ctx, id); q.Revision != 2 {
+		t.Errorf("revision after option edit = %d, want 2", q.Revision)
+	}
+
+	in.Status = StatusDiscarded
+	if err := f.s.UpdateQuestion(ctx, id, in); err != nil {
+		t.Fatal(err)
+	}
+	if page, _ := f.s.ListQuestions(ctx, QuestionFilter{}); page.Total != 0 {
+		t.Errorf("discarded question listed by default")
+	}
+	if page, _ := f.s.ListQuestions(ctx, QuestionFilter{Status: StatusDiscarded}); page.Total != 1 {
+		t.Errorf("discarded filter: total = %d, want 1", page.Total)
+	}
+}

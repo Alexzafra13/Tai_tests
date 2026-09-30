@@ -17,6 +17,10 @@ var ErrNotFound = errors.New("not found")
 // ErrInUse is returned when deleting a record that others still reference.
 var ErrInUse = errors.New("in use")
 
+// ErrHasHistory is returned when deleting a question that has been
+// answered; it should be discarded instead so stats keep its attempts.
+var ErrHasHistory = errors.New("question has answer history")
+
 // ValidationError maps field names to human-readable (Spanish) messages
 // shown next to the form fields.
 type ValidationError map[string]string
