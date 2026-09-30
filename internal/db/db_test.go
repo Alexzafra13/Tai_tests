@@ -127,3 +127,53 @@ func TestRebuildKeepsChildRows(t *testing.T) {
 		t.Errorf("discarded status rejected: %v", err)
 	}
 }
+
+// Migration 0005 introduces users: existing tests and doubt flags must end
+// up owned by the first administrator, with attempts intact.
+func TestUsersMigrationKeepsData(t *testing.T) {
+	ctx := context.Background()
+	d, err := Open(filepath.Join(t.TempDir(), "test.db"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer d.Close()
+
+	if _, err := migrateTo(ctx, d, 4); err != nil {
+		t.Fatal(err)
+	}
+	for _, stmt := range []string{
+		`INSERT INTO sources (id, kind, title, created_at, updated_at) VALUES (1, 'inap_exam', 'e', '', '')`,
+		`INSERT INTO questions (id, stem, option_a, option_b, option_c, option_d, correct, origin, author, source_id,
+			source_ref, status, flagged, flag_note, created_at, updated_at)
+			VALUES (7, 's', 'a', 'b', 'c', 'd', 0, 'official', 'import', 1, '2024 · 1', 'published', 1, 'revisar', '', 'T')`,
+		`INSERT INTO tests (id, mode, penalty, started_at) VALUES (3, 'exam', 0.25, 'S')`,
+		`INSERT INTO attempts (test_id, position, question_id, revision, chosen, is_correct) VALUES (3, 0, 7, 1, 0, 1)`,
+	} {
+		if _, err := d.Exec(stmt); err != nil {
+			t.Fatalf("%s: %v", stmt, err)
+		}
+	}
+
+	if _, err := Migrate(ctx, d); err != nil {
+		t.Fatal(err)
+	}
+	var owner, attempts int
+	d.QueryRow(`SELECT user_id FROM tests WHERE id = 3`).Scan(&owner)
+	d.QueryRow(`SELECT count(*) FROM attempts WHERE test_id = 3`).Scan(&attempts)
+	if owner != 1 || attempts != 1 {
+		t.Errorf("test owner = %d, attempts = %d; want 1, 1", owner, attempts)
+	}
+	var note string
+	var reporter int
+	if err := d.QueryRow(`SELECT user_id, note FROM question_reports WHERE question_id = 7 AND resolved_at = ''`).Scan(&reporter, &note); err != nil || reporter != 1 || note != "revisar" {
+		t.Errorf("migrated report: user %d note %q err %v", reporter, note, err)
+	}
+	if _, err := d.Exec(`SELECT flagged FROM questions`); err == nil {
+		t.Error("questions.flagged still exists")
+	}
+	var role, hash string
+	d.QueryRow(`SELECT role, password_hash FROM users WHERE id = 1`).Scan(&role, &hash)
+	if role != "admin" || hash != "" {
+		t.Errorf("placeholder admin: role %q hash %q", role, hash)
+	}
+}

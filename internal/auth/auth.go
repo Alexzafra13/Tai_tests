@@ -1,90 +1,99 @@
-// Package auth implements single-user password login with server-side
-// sessions stored in SQLite.
+// Package auth handles login sessions: it checks credentials through the
+// users store, issues session cookies stored in SQLite, and tells request
+// handlers who is calling.
 package auth
 
 import (
 	"context"
 	"crypto/rand"
 	"crypto/sha256"
-	"crypto/subtle"
 	"database/sql"
 	"encoding/base64"
 	"encoding/hex"
 	"errors"
-	"sync"
+	"strings"
 	"time"
+
+	"github.com/alexzafra13/tai_tests/internal/users"
 )
 
 const CookieName = "tai_session"
 
 var (
-	ErrBadPassword = errors.New("incorrect password")
-	ErrRateLimited = errors.New("too many failed attempts")
+	ErrBadCredentials = errors.New("incorrect username or password")
+	ErrRateLimited    = errors.New("too many failed attempts")
+	ErrWrongPassword  = errors.New("current password is wrong")
 )
 
 const timeFormat = "2006-01-02T15:04:05.000Z"
 
 type Service struct {
-	db       *sql.DB
-	password [32]byte
-	ttl      time.Duration
-	limiter  *limiter
-	now      func() time.Time
+	db      *sql.DB
+	users   *users.Store
+	ttl     time.Duration
+	limiter *limiter
+	now     func() time.Time
 }
 
-func NewService(db *sql.DB, password string, ttl time.Duration) *Service {
-	return &Service{
-		db:       db,
-		password: sha256.Sum256([]byte(password)),
-		ttl:      ttl,
-		limiter:  newLimiter(10, 15*time.Minute),
-		now:      time.Now,
-	}
+func NewService(db *sql.DB, us *users.Store, ttl time.Duration) *Service {
+	return &Service{db: db, users: us, ttl: ttl, limiter: newLimiter(10, 15*time.Minute), now: time.Now}
 }
 
-// Login checks the password and, if correct, creates a session and returns
-// its token. Failed attempts are rate limited globally: there is only one
-// account, so per-client limits would add nothing but complexity.
-func (s *Service) Login(ctx context.Context, password string) (token string, expires time.Time, err error) {
+type Session struct {
+	Token   string
+	Expires time.Time
+	User    users.User
+}
+
+// Login checks the credentials and opens a session. Failed attempts are
+// limited per username, so guessing one account's password cannot lock the
+// others out.
+func (s *Service) Login(ctx context.Context, username, password string) (Session, error) {
 	now := s.now()
-	if !s.limiter.allow(now) {
-		return "", time.Time{}, ErrRateLimited
+	key := strings.ToLower(strings.TrimSpace(username))
+	if !s.limiter.allow(key, now) {
+		return Session{}, ErrRateLimited
 	}
-	// Comparing fixed-size hashes keeps the comparison constant-time
-	// regardless of input length.
-	got := sha256.Sum256([]byte(password))
-	if subtle.ConstantTimeCompare(got[:], s.password[:]) != 1 {
-		s.limiter.fail(now)
-		return "", time.Time{}, ErrBadPassword
+	u, err := s.users.Authenticate(ctx, username, password)
+	if errors.Is(err, users.ErrBadCredentials) {
+		s.limiter.fail(key, now)
+		return Session{}, ErrBadCredentials
+	} else if err != nil {
+		return Session{}, err
 	}
-	s.limiter.reset()
+	s.limiter.reset(key)
 
-	raw := make([]byte, 32)
-	if _, err := rand.Read(raw); err != nil {
-		return "", time.Time{}, err
+	token, err := newToken()
+	if err != nil {
+		return Session{}, err
 	}
-	token = base64.RawURLEncoding.EncodeToString(raw)
-	expires = now.Add(s.ttl).UTC()
-
+	expires := now.Add(s.ttl).UTC()
 	if _, err := s.db.ExecContext(ctx, `DELETE FROM sessions WHERE expires_at <= ?`, now.UTC().Format(timeFormat)); err != nil {
-		return "", time.Time{}, err
+		return Session{}, err
 	}
-	if _, err := s.db.ExecContext(ctx, `INSERT INTO sessions (token_hash, expires_at) VALUES (?, ?)`,
-		hashToken(token), expires.Format(timeFormat)); err != nil {
-		return "", time.Time{}, err
+	if _, err := s.db.ExecContext(ctx, `INSERT INTO sessions (token_hash, user_id, expires_at) VALUES (?, ?, ?)`,
+		hashToken(token), u.ID, expires.Format(timeFormat)); err != nil {
+		return Session{}, err
 	}
-	return token, expires, nil
+	return Session{Token: token, Expires: expires, User: u}, nil
 }
 
-// Valid reports whether token belongs to an unexpired session.
-func (s *Service) Valid(ctx context.Context, token string) (bool, error) {
+// UserForToken returns the user of an unexpired session. Deactivated
+// accounts lose access immediately, even with an open session.
+func (s *Service) UserForToken(ctx context.Context, token string) (users.User, bool, error) {
 	if token == "" {
-		return false, nil
+		return users.User{}, false, nil
 	}
-	var n int
-	err := s.db.QueryRowContext(ctx, `SELECT count(*) FROM sessions WHERE token_hash = ? AND expires_at > ?`,
-		hashToken(token), s.now().UTC().Format(timeFormat)).Scan(&n)
-	return n == 1, err
+	var u users.User
+	err := s.db.QueryRowContext(ctx, `SELECT u.id, u.username, u.display_name, u.role, u.active, u.created_at
+		FROM sessions s JOIN users u ON u.id = s.user_id
+		WHERE s.token_hash = ? AND s.expires_at > ? AND u.active = 1`,
+		hashToken(token), s.now().UTC().Format(timeFormat)).
+		Scan(&u.ID, &u.Username, &u.DisplayName, &u.Role, &u.Active, &u.CreatedAt)
+	if errors.Is(err, sql.ErrNoRows) {
+		return u, false, nil
+	}
+	return u, err == nil, err
 }
 
 func (s *Service) Logout(ctx context.Context, token string) error {
@@ -92,46 +101,55 @@ func (s *Service) Logout(ctx context.Context, token string) error {
 	return err
 }
 
+// ChangePassword changes the caller's own password after checking the
+// current one, and closes their other sessions.
+func (s *Service) ChangePassword(ctx context.Context, userID int64, currentToken, current, next string) error {
+	ok, err := s.users.CheckPassword(ctx, userID, current)
+	if err != nil {
+		return err
+	}
+	if !ok {
+		return ErrWrongPassword
+	}
+	if err := s.users.SetPassword(ctx, userID, next); err != nil {
+		return err
+	}
+	_, err = s.db.ExecContext(ctx, `DELETE FROM sessions WHERE user_id = ? AND token_hash <> ?`, userID, hashToken(currentToken))
+	return err
+}
+
+// EndSessions closes all sessions of a user, e.g. after an administrator
+// resets their password.
+func (s *Service) EndSessions(ctx context.Context, userID int64) error {
+	_, err := s.db.ExecContext(ctx, `DELETE FROM sessions WHERE user_id = ?`, userID)
+	return err
+}
+
+func newToken() (string, error) {
+	raw := make([]byte, 32)
+	if _, err := rand.Read(raw); err != nil {
+		return "", err
+	}
+	return base64.RawURLEncoding.EncodeToString(raw), nil
+}
+
 func hashToken(token string) string {
 	h := sha256.Sum256([]byte(token))
 	return hex.EncodeToString(h[:])
 }
 
-// limiter allows at most max failures within window.
-type limiter struct {
-	mu       sync.Mutex
-	max      int
-	window   time.Duration
-	failures []time.Time
+// --- Request context ---------------------------------------------------------
+
+type ctxKey struct{}
+
+// WithUser returns a context carrying the authenticated user.
+func WithUser(ctx context.Context, u users.User) context.Context {
+	return context.WithValue(ctx, ctxKey{}, u)
 }
 
-func newLimiter(max int, window time.Duration) *limiter {
-	return &limiter{max: max, window: window}
-}
-
-func (l *limiter) prune(now time.Time) {
-	i := 0
-	for i < len(l.failures) && now.Sub(l.failures[i]) >= l.window {
-		i++
-	}
-	l.failures = l.failures[i:]
-}
-
-func (l *limiter) allow(now time.Time) bool {
-	l.mu.Lock()
-	defer l.mu.Unlock()
-	l.prune(now)
-	return len(l.failures) < l.max
-}
-
-func (l *limiter) fail(now time.Time) {
-	l.mu.Lock()
-	defer l.mu.Unlock()
-	l.failures = append(l.failures, now)
-}
-
-func (l *limiter) reset() {
-	l.mu.Lock()
-	defer l.mu.Unlock()
-	l.failures = nil
+// CurrentUser returns the authenticated user of a request. Handlers behind
+// the auth middleware can rely on it being set.
+func CurrentUser(ctx context.Context) users.User {
+	u, _ := ctx.Value(ctxKey{}).(users.User)
+	return u
 }

@@ -18,6 +18,7 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/quiz"
 	"github.com/alexzafra13/tai_tests/internal/server"
 	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/users"
 	"github.com/alexzafra13/tai_tests/web"
 )
 
@@ -31,6 +32,7 @@ Commands:
   migrate        Apply pending database migrations
   load-syllabus  Load or update the syllabus from a JSON file
   add-source     Add a source document (law, technical doc, exam)
+  user           Manage accounts: user list | user add | user passwd
   version        Print the version
 
 Run "tai <command> -h" for the flags of a command.
@@ -58,6 +60,8 @@ func main() {
 		err = runLoadSyllabus(ctx, log, os.Args[2:])
 	case "add-source":
 		err = runAddSource(ctx, log, os.Args[2:])
+	case "user":
+		err = runUser(ctx, log, os.Args[2:])
 	case "version":
 		fmt.Println(version)
 	case "help", "-h", "--help":
@@ -107,17 +111,24 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 	if err != nil {
 		return err
 	}
-	if err := cfg.RequireServe(); err != nil {
-		return err
-	}
 	d, err := openDB(ctx, log)
 	if err != nil {
 		return err
 	}
 	defer d.Close()
 
+	us := users.NewStore(d)
+	created, err := us.EnsureAdmin(ctx, cfg.AdminUser, cfg.AdminPassword)
+	if err != nil {
+		return err
+	}
+	if created {
+		log.Info("administrator account ready; manage accounts from the app from now on", "username", cfg.AdminUser)
+	}
+
 	srv := server.New(server.Deps{
-		Auth:         auth.NewService(d, cfg.Password, cfg.SessionTTL),
+		Auth:         auth.NewService(d, us, cfg.SessionTTL),
+		Users:        us,
 		Content:      content.NewStore(d),
 		Quiz:         quiz.NewStore(d, settings.NewStore(d)),
 		CookieSecure: cfg.CookieSecure,

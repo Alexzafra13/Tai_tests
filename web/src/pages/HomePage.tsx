@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import { useAuth } from "../auth";
 import { useResource } from "../hooks";
 import type { Page, Question, ReviewCounts, TestSummary } from "../types";
 import { TestRow } from "./TestsPage";
@@ -9,51 +10,21 @@ const upcoming = [
 ];
 
 export function HomePage() {
+  const { user, isAdmin } = useAuth();
   const inProgress = useResource<TestSummary[]>("/tests?status=in_progress&limit=3");
   const recent = useResource<TestSummary[]>("/tests?status=finished&limit=3");
-  const published = useResource<Page<Question>>("/questions?status=published&limit=1");
-  const review = useResource<ReviewCounts>("/review/counts");
 
   return (
     <>
-      <h2>Inicio</h2>
+      <h2>Hola, {user?.display_name || user?.username}</h2>
 
-      {inProgress.data && inProgress.data.length > 0 && (
-        <section className="home-section">
-          <h3>Continuar</h3>
-          <ul className="list">
-            {inProgress.data.map((t) => (
-              <li key={t.id}>
-                <TestRow test={t} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <TestList title="Continuar" tests={inProgress.data} />
 
       <ul className="tiles">
         <li>
           <Link to="/tests/new" className="card tile primary-tile">
             <strong>Nuevo test</strong>
-            <span>{published.data ? `${published.data.total} preguntas publicadas` : "Práctica o examen"}</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/review" className="card tile">
-            <strong>Revisión</strong>
-            <span className="muted">
-              {review.data
-                ? review.data.total === 0
-                  ? "Nada pendiente"
-                  : `${review.data.total} pendientes · ${review.data.flagged} dudosas`
-                : "Borradores y dudosas"}
-            </span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/questions/new" className="card tile">
-            <strong>Nueva pregunta</strong>
-            <span className="muted">Alta manual con fuente y cita verificada</span>
+            <span>Práctica o examen</span>
           </Link>
         </li>
         {upcoming.map((s) => (
@@ -65,18 +36,64 @@ export function HomePage() {
         ))}
       </ul>
 
-      {recent.data && recent.data.length > 0 && (
-        <section className="home-section">
-          <h3>Últimos resultados</h3>
-          <ul className="list">
-            {recent.data.map((t) => (
-              <li key={t.id}>
-                <TestRow test={t} />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {isAdmin && <AdminTiles />}
+
+      <TestList title="Últimos resultados" tests={recent.data} />
     </>
+  );
+}
+
+function TestList({ title, tests }: { title: string; tests: TestSummary[] | undefined }) {
+  if (!tests || tests.length === 0) return null;
+  return (
+    <section className="home-section">
+      <h3>{title}</h3>
+      <ul className="list">
+        {tests.map((t) => (
+          <li key={t.id}>
+            <TestRow test={t} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+// AdminTiles is only rendered for administrators, so these admin-only
+// endpoints are never requested by other users.
+function AdminTiles() {
+  const review = useResource<ReviewCounts>("/review/counts");
+  const published = useResource<Page<Question>>("/questions?status=published&limit=1");
+
+  let reviewText = "Borradores y dudas";
+  if (review.data) {
+    reviewText =
+      review.data.total === 0 ? "Nada pendiente" : `${review.data.total} pendientes · ${review.data.reported} dudosas`;
+  }
+
+  return (
+    <section className="home-section">
+      <h3>Administración</h3>
+      <ul className="tiles">
+        <li>
+          <Link to="/review" className="card tile">
+            <strong>Revisión</strong>
+            <span className="muted">{reviewText}</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/questions" className="card tile">
+            <strong>Preguntas</strong>
+            <span className="muted">{published.data ? `${published.data.total} publicadas` : "Banco de preguntas"}</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/users" className="card tile">
+            <strong>Usuarios</strong>
+            <span className="muted">Cuentas y permisos</span>
+          </Link>
+        </li>
+      </ul>
+    </section>
   );
 }

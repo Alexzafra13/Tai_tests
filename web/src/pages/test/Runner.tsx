@@ -5,7 +5,7 @@ import { useCountdown } from "../../hooks";
 import { formatClock } from "../../format";
 import { modeLabel, type Solution, type Test, type TestItem } from "../../types";
 import { ErrorBox } from "../../components/Form";
-import { FlagControl, Options, SolutionBox } from "../../components/QuestionView";
+import { Options, ReportControl, SolutionBox } from "../../components/QuestionView";
 import { Navigator } from "./Navigator";
 
 // Runner shows one question at a time. Every answer is saved immediately,
@@ -141,11 +141,11 @@ export function Runner({ initial, onFinished }: { initial: Test; onFinished: () 
           onChoose={choose}
         />
         {item.solution && <SolutionBox solution={item.solution} chosen={item.chosen} />}
-        <FlagControl
+        <ReportControl
           key={item.position}
           testId={test.id}
           item={item}
-          onChange={(flagged, note) => updateItem(item.position, { flagged, flag_note: note })}
+          onChange={(reported, note) => updateItem(item.position, { reported, report_note: note })}
         />
       </article>
 

@@ -6,23 +6,6 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/content"
 )
 
-func (s *Server) contentRoutes(mux *http.ServeMux) {
-	mux.HandleFunc("GET /api/syllabus", s.handleSyllabus)
-
-	mux.HandleFunc("GET /api/sources", s.handleListSources)
-	mux.HandleFunc("POST /api/sources", s.handleCreateSource)
-	mux.HandleFunc("GET /api/sources/{id}", s.handleGetSource)
-	mux.HandleFunc("PUT /api/sources/{id}", s.handleUpdateSource)
-	mux.HandleFunc("DELETE /api/sources/{id}", s.handleDeleteSource)
-	mux.HandleFunc("POST /api/sources/{id}/check-quote", s.handleCheckQuote)
-
-	mux.HandleFunc("GET /api/questions", s.handleListQuestions)
-	mux.HandleFunc("POST /api/questions", s.handleCreateQuestion)
-	mux.HandleFunc("GET /api/questions/{id}", s.handleGetQuestion)
-	mux.HandleFunc("PUT /api/questions/{id}", s.handleUpdateQuestion)
-	mux.HandleFunc("DELETE /api/questions/{id}", s.handleDeleteQuestion)
-}
-
 func (s *Server) handleSyllabus(w http.ResponseWriter, r *http.Request) {
 	blocks, err := s.content.Syllabus(r.Context())
 	s.respond(w, blocks, err)
@@ -98,9 +81,9 @@ func (s *Server) handleListQuestions(w http.ResponseWriter, r *http.Request) {
 		Limit:    int(queryInt(q.Get("limit"))),
 		Offset:   int(queryInt(q.Get("offset"))),
 	}
-	if v := q.Get("flagged"); v != "" {
+	if v := q.Get("reported"); v != "" {
 		b := v == "1" || v == "true"
-		f.Flagged = &b
+		f.Reported = &b
 	}
 	page, err := s.content.ListQuestions(r.Context(), f)
 	s.respond(w, page, err)

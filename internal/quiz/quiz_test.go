@@ -9,13 +9,17 @@ import (
 	"testing"
 	"time"
 
+	"github.com/alexzafra13/tai_tests/internal/validate"
+
 	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/db"
 	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/users"
 )
 
 type fixture struct {
 	db      *sql.DB
+	user    int64 // the user taking the tests
 	quiz    *Store
 	content *content.Store
 	topics  []int64 // B1-T01, B1-T02, B2-T01
@@ -46,6 +50,7 @@ func newFixture(t *testing.T) *fixture {
 	// Keep options in their original order so tests can rely on B being
 	// correct; shuffling has its own tests.
 	f.quiz.shuffle = func(int, func(i, j int)) {}
+	f.user = 1 // the administrator created by the migrations
 
 	syl, _ := content.ParseSyllabus(strings.NewReader(`{"blocks":[
 		{"code":"B1","name":"Uno","topics":[{"code":"B1-T01","title":"a"},{"code":"B1-T02","title":"b"}]},
@@ -112,11 +117,11 @@ func TestOnlyPublishedNotAnnulledQuestions(t *testing.T) {
 	if err != nil || n != 5 {
 		t.Fatalf("Available = %d, %v; want 5", n, err)
 	}
-	id, err := f.quiz.Create(ctx, CreateInput{Mode: ModePractice, Count: 50, Penalty: 1.0 / 3})
+	id, err := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModePractice, Count: 50, Penalty: 1.0 / 3})
 	if err != nil {
 		t.Fatal(err)
 	}
-	test, _ := f.quiz.Get(ctx, id)
+	test, _ := f.quiz.Get(ctx, f.user, id)
 	if len(test.Items) != 5 {
 		t.Fatalf("items = %d, want 5", len(test.Items))
 	}
@@ -152,7 +157,7 @@ func TestFilters(t *testing.T) {
 		})
 	}
 
-	_, err := f.quiz.Create(ctx, CreateInput{Mode: ModeExam, Count: 10, Filters: Filters{TopicIDs: []int64{f.topics[1]}}})
+	_, err := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: 10, Filters: Filters{TopicIDs: []int64{f.topics[1]}}})
 	if !errors.Is(err, ErrNoQuestions) {
 		t.Errorf("empty selection: err = %v, want ErrNoQuestions", err)
 	}
@@ -161,29 +166,29 @@ func TestFilters(t *testing.T) {
 func TestPracticeRevealsAfterEachAnswer(t *testing.T) {
 	ctx := context.Background()
 	f := newFixture(t)
-	id, err := f.quiz.Create(ctx, CreateInput{Mode: ModePractice, Count: 3, Penalty: 0})
+	id, err := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModePractice, Count: 3, Penalty: 0})
 	if err != nil {
 		t.Fatal(err)
 	}
-	test, _ := f.quiz.Get(ctx, id)
+	test, _ := f.quiz.Get(ctx, f.user, id)
 	for _, it := range test.Items {
 		if it.Solution != nil {
 			t.Fatal("solution shown before answering")
 		}
 	}
 
-	sol, err := f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(1), TimeMs: 4200})
+	sol, err := f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(1), TimeMs: 4200})
 	if err != nil {
 		t.Fatal(err)
 	}
 	if sol == nil || sol.Correct != 1 || sol.IsCorrect == nil || !*sol.IsCorrect || sol.SourceTitle == "" {
 		t.Fatalf("practice feedback = %+v", sol)
 	}
-	if _, err := f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(2)}); !errors.Is(err, ErrAlreadyAnswered) {
+	if _, err := f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(2)}); !errors.Is(err, ErrAlreadyAnswered) {
 		t.Errorf("re-answer: err = %v, want ErrAlreadyAnswered", err)
 	}
 
-	test, _ = f.quiz.Get(ctx, id)
+	test, _ = f.quiz.Get(ctx, f.user, id)
 	if test.Items[0].Solution == nil || test.Items[1].Solution != nil {
 		t.Error("solution should be shown only for the answered question")
 	}
@@ -195,7 +200,7 @@ func TestPracticeRevealsAfterEachAnswer(t *testing.T) {
 func TestExamHidesUntilFinishAndScores(t *testing.T) {
 	ctx := context.Background()
 	f := newFixture(t)
-	id, err := f.quiz.Create(ctx, CreateInput{Mode: ModeExam, Count: 5, Penalty: 1.0 / 3, TimeLimitMin: 10})
+	id, err := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: 5, Penalty: 1.0 / 3, TimeLimitMin: 10})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -207,7 +212,7 @@ func TestExamHidesUntilFinishAndScores(t *testing.T) {
 		chosen *int
 	}{{0, intp(1)}, {1, intp(1)}, {2, intp(0)}, {3, intp(3)}, {3, intp(1)}, {4, intp(2)}, {4, nil}}
 	for _, a := range answers {
-		sol, err := f.quiz.Answer(ctx, id, AnswerInput{Position: a.pos, Chosen: a.chosen})
+		sol, err := f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: a.pos, Chosen: a.chosen})
 		if err != nil {
 			t.Fatal(err)
 		}
@@ -215,7 +220,7 @@ func TestExamHidesUntilFinishAndScores(t *testing.T) {
 			t.Fatal("exam answer leaked the solution")
 		}
 	}
-	test, _ := f.quiz.Get(ctx, id)
+	test, _ := f.quiz.Get(ctx, f.user, id)
 	for _, it := range test.Items {
 		if it.Solution != nil {
 			t.Fatal("exam shows solutions before finishing")
@@ -225,7 +230,7 @@ func TestExamHidesUntilFinishAndScores(t *testing.T) {
 		t.Errorf("remaining = %v, want 600", test.RemainingSec)
 	}
 
-	r, err := f.quiz.Finish(ctx, id)
+	r, err := f.quiz.Finish(ctx, f.user, id)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -237,14 +242,14 @@ func TestExamHidesUntilFinishAndScores(t *testing.T) {
 		t.Errorf("score = %v passed = %v, want 53.33 passed", r.Score, r.Passed)
 	}
 
-	test, _ = f.quiz.Get(ctx, id)
+	test, _ = f.quiz.Get(ctx, f.user, id)
 	if test.Status != StatusFinished || test.Result == nil || test.Items[0].Solution == nil {
 		t.Fatalf("finished test: %+v", test)
 	}
 	if test.Items[4].Solution.IsCorrect != nil {
 		t.Error("blank answer should have nil is_correct")
 	}
-	if _, err := f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(0)}); !errors.Is(err, ErrNotInProgress) {
+	if _, err := f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(0)}); !errors.Is(err, ErrNotInProgress) {
 		t.Errorf("answer after finish: err = %v", err)
 	}
 }
@@ -252,20 +257,20 @@ func TestExamHidesUntilFinishAndScores(t *testing.T) {
 func TestDeadlineFinishesAtDeadline(t *testing.T) {
 	ctx := context.Background()
 	f := newFixture(t)
-	id, err := f.quiz.Create(ctx, CreateInput{Mode: ModeExam, Count: 2, Penalty: 0.25, TimeLimitMin: 30})
+	id, err := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: 2, Penalty: 0.25, TimeLimitMin: 30})
 	if err != nil {
 		t.Fatal(err)
 	}
-	if _, err := f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(1)}); err != nil {
+	if _, err := f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(1)}); err != nil {
 		t.Fatal(err)
 	}
 
 	// The phone was locked and the user came back two hours later.
 	f.now = f.now.Add(2 * time.Hour)
-	if _, err := f.quiz.Answer(ctx, id, AnswerInput{Position: 1, Chosen: intp(1)}); !errors.Is(err, ErrExpired) {
+	if _, err := f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 1, Chosen: intp(1)}); !errors.Is(err, ErrExpired) {
 		t.Fatalf("late answer: err = %v, want ErrExpired", err)
 	}
-	test, err := f.quiz.Get(ctx, id)
+	test, err := f.quiz.Get(ctx, f.user, id)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -280,11 +285,11 @@ func TestDeadlineFinishesAtDeadline(t *testing.T) {
 func TestResumeKeepsOrderAndAnswers(t *testing.T) {
 	ctx := context.Background()
 	f := newFixture(t)
-	id, _ := f.quiz.Create(ctx, CreateInput{Mode: ModeExam, Count: 5, Penalty: 0})
-	first, _ := f.quiz.Get(ctx, id)
-	f.quiz.Answer(ctx, id, AnswerInput{Position: 2, Chosen: intp(3)})
+	id, _ := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: 5, Penalty: 0})
+	first, _ := f.quiz.Get(ctx, f.user, id)
+	f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 2, Chosen: intp(3)})
 
-	again, _ := f.quiz.Get(ctx, id)
+	again, _ := f.quiz.Get(ctx, f.user, id)
 	for i := range first.Items {
 		if first.Items[i].QuestionID != again.Items[i].QuestionID {
 			t.Fatal("question order changed on reload")
@@ -294,7 +299,7 @@ func TestResumeKeepsOrderAndAnswers(t *testing.T) {
 		t.Error("answer lost on reload")
 	}
 
-	list, _ := f.quiz.List(ctx, StatusInProgress, 10)
+	list, _ := f.quiz.List(ctx, f.user, StatusInProgress, 10)
 	if len(list) != 1 || list[0].Answered != 1 || list[0].Total != 5 {
 		t.Errorf("in-progress list = %+v", list)
 	}
@@ -303,17 +308,21 @@ func TestResumeKeepsOrderAndAnswers(t *testing.T) {
 func TestFlagAndRevisionAndHistoryProtection(t *testing.T) {
 	ctx := context.Background()
 	f := newFixture(t)
-	id, _ := f.quiz.Create(ctx, CreateInput{Mode: ModePractice, Count: 1, Filters: Filters{Origins: []content.Origin{content.OriginLaw}}})
-	test, _ := f.quiz.Get(ctx, id)
+	id, _ := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModePractice, Count: 1, Filters: Filters{Origins: []content.Origin{content.OriginLaw}}})
+	test, _ := f.quiz.Get(ctx, f.user, id)
 	qid := test.Items[0].QuestionID
 
-	if err := f.quiz.Flag(ctx, id, FlagInput{Position: 0, Flagged: true, Note: "¿no era el art. 2?"}); err != nil {
+	at, err := f.quiz.QuestionAt(ctx, f.user, id, 0)
+	if err != nil || at != qid {
+		t.Fatalf("QuestionAt = %d, %v; want %d", at, err, qid)
+	}
+	if err := f.content.SetReport(ctx, qid, f.user, true, "¿no era el art. 2?"); err != nil {
 		t.Fatal(err)
 	}
-	q, _ := f.content.Question(ctx, qid)
-	if !q.Flagged || q.FlagNote != "¿no era el art. 2?" {
-		t.Errorf("flag not stored: %+v", q)
+	if test, _ := f.quiz.Get(ctx, f.user, id); !test.Items[0].Reported || test.Items[0].ReportNote != "¿no era el art. 2?" {
+		t.Errorf("report not shown in test: %+v", test.Items[0])
 	}
+	q, _ := f.content.Question(ctx, qid)
 
 	// Edit the question after the test was created: the answer records the
 	// revision actually seen.
@@ -322,7 +331,7 @@ func TestFlagAndRevisionAndHistoryProtection(t *testing.T) {
 	if err := f.content.UpdateQuestion(ctx, qid, in); err != nil {
 		t.Fatal(err)
 	}
-	f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(1)})
+	f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(1)})
 	var revision int
 	f.db.QueryRow(`SELECT revision FROM attempts WHERE test_id = ? AND position = 0`, id).Scan(&revision)
 	if revision != 2 {
@@ -336,8 +345,8 @@ func TestFlagAndRevisionAndHistoryProtection(t *testing.T) {
 
 func TestCreateValidation(t *testing.T) {
 	f := newFixture(t)
-	_, err := f.quiz.Create(context.Background(), CreateInput{Mode: "x", Count: 0, Penalty: 2})
-	var v content.ValidationError
+	_, err := f.quiz.Create(context.Background(), f.user, CreateInput{Mode: "x", Count: 0, Penalty: 2})
+	var v validate.Errors
 	if !errors.As(err, &v) || v["mode"] == "" || v["count"] == "" || v["penalty"] == "" {
 		t.Fatalf("err = %v", err)
 	}
@@ -347,17 +356,17 @@ func TestShuffledOptionsMapToOriginal(t *testing.T) {
 	ctx := context.Background()
 	f := newFixture(t)
 	f.quiz.shuffle = reverse // options "a b c d" are shown as "d c b a"
-	id, err := f.quiz.Create(ctx, CreateInput{Mode: ModePractice, Count: 1, Filters: Filters{Origins: []content.Origin{content.OriginLaw}}})
+	id, err := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModePractice, Count: 1, Filters: Filters{Origins: []content.Origin{content.OriginLaw}}})
 	if err != nil {
 		t.Fatal(err)
 	}
-	test, _ := f.quiz.Get(ctx, id)
+	test, _ := f.quiz.Get(ctx, f.user, id)
 	if test.Items[0].Options != [4]string{"d", "c", "b", "a"} {
 		t.Fatalf("shown options = %v", test.Items[0].Options)
 	}
 
 	// The correct answer is original B, now shown third (index 2).
-	sol, err := f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(2)})
+	sol, err := f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(2)})
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -369,7 +378,7 @@ func TestShuffledOptionsMapToOriginal(t *testing.T) {
 	if stored != 1 {
 		t.Errorf("stored chosen = %d, want original index 1", stored)
 	}
-	test, _ = f.quiz.Get(ctx, id)
+	test, _ = f.quiz.Get(ctx, f.user, id)
 	if *test.Items[0].Chosen != 2 || test.Items[0].Solution.Correct != 2 {
 		t.Errorf("reloaded item = %+v", test.Items[0])
 	}
@@ -386,20 +395,52 @@ func TestScoringSettings(t *testing.T) {
 		t.Error("pass mark above max accepted")
 	}
 
-	id, _ := f.quiz.Create(ctx, CreateInput{Mode: ModeExam, Count: 2, Penalty: 0})
-	f.quiz.Answer(ctx, id, AnswerInput{Position: 0, Chosen: intp(1)})
-	f.quiz.Finish(ctx, id)
+	id, _ := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: 2, Penalty: 0})
+	f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(1)})
+	f.quiz.Finish(ctx, f.user, id)
 
 	// Changing the scale re-expresses past results.
 	if err := f.quiz.SetScoring(ctx, ScoringSettings{Scale: Scale{Max: 10, PassMark: 6}, DefaultPenalty: 0.25}); err != nil {
 		t.Fatal(err)
 	}
-	test, _ := f.quiz.Get(ctx, id)
+	test, _ := f.quiz.Get(ctx, f.user, id)
 	if test.Result.Score != 5 || test.Result.Max != 10 || test.Result.Passed {
 		t.Errorf("result on new scale = %+v", test.Result)
 	}
-	list, _ := f.quiz.List(ctx, StatusFinished, 5)
+	list, _ := f.quiz.List(ctx, f.user, StatusFinished, 5)
 	if *list[0].Score != 5 || list[0].Passed {
 		t.Errorf("summary on new scale = %+v", list[0])
+	}
+}
+
+func TestTestsArePrivateToTheirUser(t *testing.T) {
+	ctx := context.Background()
+	f := newFixture(t)
+	other, err := users.NewStore(f.db).Create(ctx, users.CreateInput{Username: "otra", Password: "otra-password", Role: users.RoleUser})
+	if err != nil {
+		t.Fatal(err)
+	}
+	id, _ := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: 2})
+
+	if _, err := f.quiz.Get(ctx, other, id); !errors.Is(err, ErrNotFound) {
+		t.Errorf("other user reads the test: err = %v", err)
+	}
+	if _, err := f.quiz.Answer(ctx, other, id, AnswerInput{Position: 0, Chosen: intp(1)}); !errors.Is(err, ErrNotFound) {
+		t.Errorf("other user answers: err = %v", err)
+	}
+	if _, err := f.quiz.Finish(ctx, other, id); !errors.Is(err, ErrNotFound) {
+		t.Errorf("other user finishes: err = %v", err)
+	}
+	if err := f.quiz.Abandon(ctx, other, id); !errors.Is(err, ErrNotFound) {
+		t.Errorf("other user abandons: err = %v", err)
+	}
+	if _, err := f.quiz.QuestionAt(ctx, other, id, 0); !errors.Is(err, ErrNotFound) {
+		t.Errorf("other user reads a question position: err = %v", err)
+	}
+	if list, _ := f.quiz.List(ctx, other, "", 10); len(list) != 0 {
+		t.Errorf("other user lists %d tests", len(list))
+	}
+	if list, _ := f.quiz.List(ctx, f.user, "", 10); len(list) != 1 {
+		t.Errorf("owner lists %d tests, want 1", len(list))
 	}
 }

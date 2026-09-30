@@ -6,8 +6,6 @@ package content
 import (
 	"database/sql"
 	"errors"
-	"sort"
-	"strings"
 	"time"
 )
 
@@ -20,30 +18,6 @@ var ErrInUse = errors.New("in use")
 // ErrHasHistory is returned when deleting a question that has been
 // answered; it should be discarded instead so stats keep its attempts.
 var ErrHasHistory = errors.New("question has answer history")
-
-// ValidationError maps field names to human-readable (Spanish) messages
-// shown next to the form fields.
-type ValidationError map[string]string
-
-func (v ValidationError) Error() string {
-	keys := make([]string, 0, len(v))
-	for k := range v {
-		keys = append(keys, k)
-	}
-	sort.Strings(keys)
-	parts := make([]string, len(keys))
-	for i, k := range keys {
-		parts[i] = k + ": " + v[k]
-	}
-	return "validation failed: " + strings.Join(parts, "; ")
-}
-
-func (v ValidationError) orNil() error {
-	if len(v) == 0 {
-		return nil
-	}
-	return v
-}
 
 type Store struct {
 	db  *sql.DB

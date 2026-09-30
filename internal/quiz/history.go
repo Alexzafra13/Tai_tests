@@ -20,8 +20,9 @@ type Summary struct {
 	Passed     bool     `json:"passed"`
 }
 
-// List returns recent tests, newest first, optionally filtered by status.
-func (s *Store) List(ctx context.Context, status Status, limit int) ([]Summary, error) {
+// List returns the user's recent tests, newest first, optionally filtered by
+// status.
+func (s *Store) List(ctx context.Context, userID int64, status Status, limit int) ([]Summary, error) {
 	if limit <= 0 || limit > 100 {
 		limit = 20
 	}
@@ -33,8 +34,8 @@ func (s *Store) List(ctx context.Context, status Status, limit int) ([]Summary, 
 			count(a.position), count(a.chosen), count(CASE WHEN a.is_correct = 1 THEN 1 END),
 			count(CASE WHEN a.is_correct = 0 THEN 1 END)
 		FROM tests t JOIN attempts a ON a.test_id = t.id
-		WHERE ? = '' OR t.status = ?
-		GROUP BY t.id ORDER BY t.id DESC LIMIT ?`, status, status, limit)
+		WHERE t.user_id = ? AND (? = '' OR t.status = ?)
+		GROUP BY t.id ORDER BY t.id DESC LIMIT ?`, userID, status, status, limit)
 	if err != nil {
 		return nil, err
 	}

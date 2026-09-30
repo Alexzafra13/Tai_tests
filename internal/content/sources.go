@@ -8,6 +8,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/alexzafra13/tai_tests/internal/validate"
+
 	"github.com/alexzafra13/tai_tests/internal/textmatch"
 )
 
@@ -55,7 +57,7 @@ func (in *SourceInput) normalize() {
 }
 
 func (in SourceInput) validate() error {
-	v := ValidationError{}
+	v := validate.Errors{}
 	if !in.Kind.valid() {
 		v["kind"] = "Tipo de fuente no válido"
 	}
@@ -70,7 +72,7 @@ func (in SourceInput) validate() error {
 	if in.URL != "" && !strings.HasPrefix(in.URL, "https://") && !strings.HasPrefix(in.URL, "http://") {
 		v["url"] = "La URL debe empezar por http:// o https://"
 	}
-	return v.orNil()
+	return v.Err()
 }
 
 const sourceColumns = `s.id, s.kind, s.title, s.reference, s.url, s.version_date, s.full_text <> '',
@@ -169,14 +171,14 @@ func (s *Store) UpdateSource(ctx context.Context, id int64, in SourceInput) erro
 	if err := rows.Err(); err != nil {
 		return err
 	}
-	v := ValidationError{}
+	v := validate.Errors{}
 	if total > 0 && oldKind != in.Kind {
 		v["kind"] = "No se puede cambiar el tipo de una fuente con preguntas"
 	}
 	if broken > 0 {
 		v["full_text"] = pluralize(broken, "pregunta cita", "preguntas citan") + " texto que ya no aparece en esta versión"
 	}
-	if err := v.orNil(); err != nil {
+	if err := v.Err(); err != nil {
 		return err
 	}
 
@@ -217,7 +219,7 @@ func (s *Store) CheckQuote(ctx context.Context, sourceID int64, quote string) (b
 
 func mapSourceErr(err error) error {
 	if err != nil && isConstraint(err, "UNIQUE") {
-		return ValidationError{"reference": "Ya existe una fuente de este tipo con esa referencia"}
+		return validate.Errors{"reference": "Ya existe una fuente de este tipo con esa referencia"}
 	}
 	return err
 }

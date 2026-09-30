@@ -18,7 +18,7 @@ test:
 
 # Development: run both in separate terminals, then open http://localhost:5173
 dev-api:
-	TAI_PASSWORD=$${TAI_PASSWORD:-devpassword} TAI_DB_PATH=$${TAI_DB_PATH:-tai.db} go run ./cmd/tai serve
+	TAI_ADMIN_PASSWORD=$${TAI_ADMIN_PASSWORD:-devpassword} TAI_DB_PATH=$${TAI_DB_PATH:-tai.db} go run ./cmd/tai serve
 
 dev-web:
 	cd web && npm run dev

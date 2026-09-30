@@ -2,7 +2,10 @@ module github.com/alexzafra13/tai_tests
 
 go 1.26.0
 
-require modernc.org/sqlite v1.60.1
+require (
+	golang.org/x/crypto v0.57.0
+	modernc.org/sqlite v1.60.1
+)
 
 require (
 	github.com/dustin/go-humanize v1.0.1 // indirect

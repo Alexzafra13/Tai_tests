@@ -8,7 +8,7 @@ export function Navigator({ test, current, onGo }: { test: Test; current: number
         let cls = "nav-cell";
         if (it.solution) cls += it.solution.is_correct ? " is-correct" : " is-wrong";
         else if (it.chosen !== null) cls += " is-answered";
-        if (it.flagged) cls += " is-flagged";
+        if (it.reported) cls += " is-flagged";
         if (i === current) cls += " is-current";
         return (
           <button key={i} type="button" className={cls} onClick={() => onGo(i)}>

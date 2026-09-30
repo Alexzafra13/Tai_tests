@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useSearchParams } from "react-router";
 import { api, errorMessage } from "../api";
 import { useDebounced, useResource } from "../hooks";
 import {
@@ -50,8 +50,14 @@ export function NewTestPage() {
   const navigate = useNavigate();
   const { data: blocks } = useResource<Block[]>("/syllabus");
   const { data: sources } = useResource<Source[]>("/sources");
+  const [params] = useSearchParams();
   const [saved] = useState(loadSaved);
-  const [form, setForm] = useState<CreateTestInput>(saved ?? defaults);
+  // ?topic=ID (from the syllabus) starts a test on that topic only.
+  const [form, setForm] = useState<CreateTestInput>(() => {
+    const base = saved ?? defaults;
+    const topic = Number(params.get("topic"));
+    return topic ? { ...base, filters: { ...emptyFilters, topic_ids: [topic] } } : base;
+  });
   const scoring = useResource<ScoringSettings>(saved ? null : "/settings/scoring");
   useEffect(() => {
     const penalty = scoring.data?.default_penalty;

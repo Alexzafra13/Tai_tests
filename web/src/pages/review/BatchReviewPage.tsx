@@ -18,7 +18,7 @@ export function BatchReviewPage() {
   const [busy, setBusy] = useState(false);
 
   const items = queue.data?.items ?? [];
-  const ready = (it: ReviewItem) => it.topic_ids.length > 0 && !it.flagged;
+  const ready = (it: ReviewItem) => it.topic_ids.length > 0 && it.reports.length === 0;
 
   // Preselect everything that can be accepted as is.
   useEffect(() => {
@@ -116,7 +116,7 @@ export function BatchReviewPage() {
                   <span className="muted">
                     {" · "}
                     {it.source_ref}
-                    {!ready(it) && (it.flagged ? " · dudosa" : " · sin tema")}
+                    {!ready(it) && (it.reports.length > 0 ? " · dudosa" : " · sin tema")}
                   </span>
                 </span>
               </span>

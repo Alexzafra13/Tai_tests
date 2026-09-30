@@ -1,10 +1,13 @@
 import { useEffect, useState, type FormEvent } from "react";
-import { api, ApiError, errorMessage, type FieldErrors } from "../api";
-import { useResource } from "../hooks";
-import { penaltyOptions, type ScoringSettings } from "../types";
-import { ErrorBox, Field, Loading } from "../components/Form";
+import { api, ApiError, errorMessage, type FieldErrors } from "../../api";
+import { useResource } from "../../hooks";
+import { formatScore } from "../../format";
+import { penaltyLabel, penaltyOptions, type ScoringSettings } from "../../types";
+import { ErrorBox, Field, Loading } from "../../components/Form";
 
-export function SettingsPage() {
+// ScoringSection shows how marks are computed. Administrators can change
+// the rules; everyone else sees them read-only.
+export function ScoringSection({ editable }: { editable: boolean }) {
   const saved = useResource<ScoringSettings>("/settings/scoring");
   const [form, setForm] = useState<ScoringSettings>();
   const [fields, setFields] = useState<FieldErrors>({});
@@ -15,7 +18,22 @@ export function SettingsPage() {
     if (saved.data) setForm(saved.data);
   }, [saved.data]);
 
-  if (saved.loading || !form) return <Loading />;
+  if (saved.error) return <ErrorBox message={saved.error} />;
+  if (!form) return <Loading />;
+
+  if (!editable) {
+    return (
+      <fieldset>
+        <legend>Nota</legend>
+        <p>
+          Sobre <strong>{formatScore(form.max, 0)}</strong> puntos, aprobado en{" "}
+          <strong>{formatScore(form.pass_mark, 0)}</strong>. Penalización habitual:{" "}
+          {penaltyLabel(form.default_penalty)}.
+        </p>
+        <p className="hint">La configura el administrador según las bases de la convocatoria.</p>
+      </fieldset>
+    );
+  }
 
   const set = <K extends keyof ScoringSettings>(key: K, value: ScoringSettings[K]) => {
     setOk(false);
@@ -36,16 +54,14 @@ export function SettingsPage() {
   }
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <h2>Ajustes</h2>
-      <ErrorBox message={error ?? saved.error} />
-      {ok && <p className="ok-box">Guardado. Los resultados anteriores se muestran ya con la nueva escala.</p>}
-
+    <form onSubmit={onSubmit}>
       <fieldset>
         <legend>Nota</legend>
+        <ErrorBox message={error} />
+        {ok && <p className="ok-box">Guardado. Los resultados anteriores se muestran ya con la nueva escala.</p>}
         <p className="hint">
-          Ajústalo a las bases de tu convocatoria. La nota es (aciertos − fallos × penalización) / preguntas × puntuación
-          máxima.
+          Ajústalo a las bases de la convocatoria. La nota es (aciertos − fallos × penalización) / preguntas ×
+          puntuación máxima. Se aplica a todos los usuarios.
         </p>
         <Field label="Puntuación máxima" htmlFor="max" error={fields.max}>
           <input
@@ -80,13 +96,12 @@ export function SettingsPage() {
             ))}
           </select>
         </Field>
+        <div className="actions">
+          <button className="primary" type="submit">
+            Guardar nota
+          </button>
+        </div>
       </fieldset>
-
-      <div className="actions">
-        <button className="primary" type="submit">
-          Guardar
-        </button>
-      </div>
     </form>
   );
 }

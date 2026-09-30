@@ -14,7 +14,7 @@ export function QuestionsPage() {
   const offset = Number(params.get("offset") ?? 0);
 
   const query = new URLSearchParams();
-  for (const key of ["status", "origin", "topic", "block", "flagged"]) {
+  for (const key of ["status", "origin", "topic", "block", "reported"]) {
     const v = params.get(key);
     if (v) query.set(key, v);
   }
@@ -95,7 +95,7 @@ export function QuestionsPage() {
                 <span className={`badge status-${q.status}`}>{statusLabel[q.status]}</span>
                 <span className="badge">{originLabel[q.origin]}</span>
                 {q.annulled && <span className="badge warn">Anulada</span>}
-                {q.flagged && <span className="badge warn">Dudosa</span>}
+                {q.open_reports > 0 && <span className="badge warn">Dudosa ({q.open_reports})</span>}
                 {q.topic_ids.map((id) => (
                   <span key={id} className="badge outline">
                     {topicCode.get(id) ?? "?"}

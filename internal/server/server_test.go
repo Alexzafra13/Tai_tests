@@ -17,9 +17,23 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/db"
 	"github.com/alexzafra13/tai_tests/internal/quiz"
 	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/users"
 )
 
 func newTestServer(t *testing.T) (*httptest.Server, *http.Client) {
+	t.Helper()
+	env := newTestEnv(t)
+	return env.ts, newClient()
+}
+
+// testEnv is a running server plus direct access to its stores, to seed
+// data that has no endpoint (like the syllabus).
+type testEnv struct {
+	ts      *httptest.Server
+	content *content.Store
+}
+
+func newTestEnv(t *testing.T) testEnv {
 	t.Helper()
 	d, err := db.Open(":memory:")
 	if err != nil {
@@ -34,8 +48,16 @@ func newTestServer(t *testing.T) (*httptest.Server, *http.Client) {
 		"assets/app.js": {Data: []byte("console.log(1)")},
 		"manifest.json": {Data: []byte("{}")},
 	}
+	us := users.NewStore(d)
+	if _, err := us.EnsureAdmin(context.Background(), "admin", "secret-password"); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := us.Create(context.Background(), users.CreateInput{Username: "ana", Password: "ana-password", Role: users.RoleUser}); err != nil {
+		t.Fatal(err)
+	}
 	s := New(Deps{
-		Auth:    auth.NewService(d, "secret-password", time.Hour),
+		Auth:    auth.NewService(d, us, time.Hour),
+		Users:   us,
 		Content: content.NewStore(d),
 		Quiz:    quiz.NewStore(d, settings.NewStore(d)),
 		Static:  static,
@@ -43,9 +65,14 @@ func newTestServer(t *testing.T) (*httptest.Server, *http.Client) {
 	})
 	ts := httptest.NewServer(s.Handler())
 	t.Cleanup(ts.Close)
+	return testEnv{ts: ts, content: content.NewStore(d)}
+}
 
+// newClient returns an HTTP client with its own cookie jar, i.e. its own
+// session.
+func newClient() *http.Client {
 	jar, _ := cookiejar.New(nil)
-	return ts, &http.Client{Jar: jar}
+	return &http.Client{Jar: jar}
 }
 
 func post(t *testing.T, c *http.Client, url, body string) *http.Response {
@@ -75,11 +102,11 @@ func TestAuthFlow(t *testing.T) {
 	if resp, _ := get(t, c, ts.URL+"/api/auth/me"); resp.StatusCode != http.StatusUnauthorized {
 		t.Fatalf("me before login: %d, want 401", resp.StatusCode)
 	}
-	if resp := post(t, c, ts.URL+"/api/auth/login", `{"password":"nope"}`); resp.StatusCode != http.StatusUnauthorized {
+	if resp := post(t, c, ts.URL+"/api/auth/login", `{"username":"admin","password":"nope"}`); resp.StatusCode != http.StatusUnauthorized {
 		t.Fatalf("bad login: %d, want 401", resp.StatusCode)
 	}
 
-	resp := post(t, c, ts.URL+"/api/auth/login", `{"password":"secret-password"}`)
+	resp := post(t, c, ts.URL+"/api/auth/login", `{"username":"admin","password":"secret-password"}`)
 	if resp.StatusCode != http.StatusOK {
 		t.Fatalf("login: %d, want 200", resp.StatusCode)
 	}
@@ -131,9 +158,16 @@ func TestSPARouting(t *testing.T) {
 	}
 }
 
+// login logs c in as the administrator.
 func login(t *testing.T, c *http.Client, base string) {
 	t.Helper()
-	if resp := post(t, c, base+"/api/auth/login", `{"password":"secret-password"}`); resp.StatusCode != http.StatusOK {
-		t.Fatalf("login: %d", resp.StatusCode)
+	loginAs(t, c, base, "admin", "secret-password")
+}
+
+func loginAs(t *testing.T, c *http.Client, base, username, password string) {
+	t.Helper()
+	body := `{"username":"` + username + `","password":"` + password + `"}`
+	if resp := post(t, c, base+"/api/auth/login", body); resp.StatusCode != http.StatusOK {
+		t.Fatalf("login %s: %d", username, resp.StatusCode)
 	}
 }

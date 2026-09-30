@@ -3,7 +3,7 @@ package quiz
 import (
 	"context"
 
-	"github.com/alexzafra13/tai_tests/internal/content"
+	"github.com/alexzafra13/tai_tests/internal/validate"
 )
 
 const scoringKey = "scoring"
@@ -23,7 +23,7 @@ var DefaultScoring = ScoringSettings{
 }
 
 func (s ScoringSettings) validate() error {
-	v := content.ValidationError{}
+	v := validate.Errors{}
 	if s.Max <= 0 || s.Max > 1000 {
 		v["max"] = "La puntuación máxima debe estar entre 1 y 1000"
 	}

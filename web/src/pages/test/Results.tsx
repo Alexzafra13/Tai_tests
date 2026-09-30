@@ -3,27 +3,29 @@ import { Link, useNavigate } from "react-router";
 import { api, errorMessage } from "../../api";
 import { formatScore } from "../../format";
 import { modeLabel, penaltyLabel, type Test, type TestItem, type TestResult } from "../../types";
+import { useAuth } from "../../auth";
 import { ErrorBox } from "../../components/Form";
 import { Options, SolutionBox } from "../../components/QuestionView";
 
-type ResultFilter = "all" | "wrong" | "blank" | "flagged";
+type ResultFilter = "all" | "wrong" | "blank" | "reported";
 
 const filterLabels: Record<ResultFilter, string> = {
   all: "Todas",
   wrong: "Falladas",
   blank: "En blanco",
-  flagged: "Dudosas",
+  reported: "Dudosas",
 };
 
 const matches: Record<ResultFilter, (it: TestItem) => boolean> = {
   all: () => true,
   wrong: (it) => it.solution?.is_correct === false,
   blank: (it) => it.chosen === null,
-  flagged: (it) => it.flagged,
+  reported: (it) => it.reported,
 };
 
 export function Results({ test }: { test: Test }) {
   const navigate = useNavigate();
+  const { isAdmin } = useAuth();
   const [filter, setFilter] = useState<ResultFilter>(test.result && test.result.wrong > 0 ? "wrong" : "all");
   const [error, setError] = useState<string | null>(null);
   const wrongIds = test.items.filter(matches.wrong).map((it) => it.question_id);
@@ -87,10 +89,12 @@ export function Results({ test }: { test: Test }) {
             <Options options={it.options} chosen={it.chosen} correct={it.solution?.correct} />
             {it.solution && <SolutionBox solution={it.solution} chosen={it.chosen} />}
             <div className="review-links">
-              {it.flagged && <span className="badge warn">Dudosa</span>}
-              <Link to={`/questions/${it.question_id}`} className="small">
-                Editar pregunta
-              </Link>
+              {it.reported && <span className="badge warn">Dudosa</span>}
+              {isAdmin && (
+                <Link to={`/questions/${it.question_id}`} className="small">
+                  Editar pregunta
+                </Link>
+              )}
             </div>
           </li>
         ))}

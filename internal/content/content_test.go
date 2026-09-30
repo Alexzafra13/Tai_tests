@@ -6,6 +6,8 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/alexzafra13/tai_tests/internal/validate"
+
 	"github.com/alexzafra13/tai_tests/internal/db"
 )
 
@@ -141,9 +143,9 @@ func (f fixture) lawQuestion() QuestionInput {
 
 func fieldErr(t *testing.T, err error, field string) string {
 	t.Helper()
-	var v ValidationError
+	var v validate.Errors
 	if !errors.As(err, &v) {
-		t.Fatalf("err = %v, want ValidationError", err)
+		t.Fatalf("err = %v, want validate.Errors", err)
 	}
 	msg, ok := v[field]
 	if !ok {

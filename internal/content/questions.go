@@ -8,6 +8,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
+	"github.com/alexzafra13/tai_tests/internal/validate"
+
 	"github.com/alexzafra13/tai_tests/internal/textmatch"
 )
 
@@ -71,12 +73,12 @@ type Question struct {
 	Status      Status    `json:"status"`
 	Annulled    bool      `json:"annulled"`
 	FixedOrder  bool      `json:"fixed_order"`
-	Flagged     bool      `json:"flagged"`
-	FlagNote    string    `json:"flag_note"`
-	TopicIDs    []int64   `json:"topic_ids"`
-	Revision    int       `json:"revision"`
-	CreatedAt   string    `json:"created_at"`
-	UpdatedAt   string    `json:"updated_at"`
+	// OpenReports counts users' unresolved doubts about the question.
+	OpenReports int     `json:"open_reports"`
+	TopicIDs    []int64 `json:"topic_ids"`
+	Revision    int     `json:"revision"`
+	CreatedAt   string  `json:"created_at"`
+	UpdatedAt   string  `json:"updated_at"`
 }
 
 type QuestionInput struct {
@@ -93,8 +95,6 @@ type QuestionInput struct {
 	Annulled    bool      `json:"annulled"`
 	// FixedOrder keeps the options in their original order in tests.
 	FixedOrder bool    `json:"fixed_order"`
-	Flagged    bool    `json:"flagged"`
-	FlagNote   string  `json:"flag_note"`
 	TopicIDs   []int64 `json:"topic_ids"`
 }
 
@@ -106,12 +106,8 @@ func (in *QuestionInput) normalize() {
 	in.Explanation = strings.TrimSpace(in.Explanation)
 	in.SourceRef = strings.TrimSpace(in.SourceRef)
 	in.SourceQuote = strings.TrimSpace(in.SourceQuote)
-	in.FlagNote = strings.TrimSpace(in.FlagNote)
 	if in.Status == "" {
 		in.Status = StatusDraft
-	}
-	if !in.Flagged {
-		in.FlagNote = ""
 	}
 	seen := map[int64]bool{}
 	ids := in.TopicIDs[:0:0]
@@ -128,7 +124,7 @@ func (in *QuestionInput) normalize() {
 // cited source: its kind must match the origin and, when a quote is given,
 // the quote must appear literally in the source text.
 func (in QuestionInput) validate(ctx context.Context, q queryer) error {
-	v := ValidationError{}
+	v := validate.Errors{}
 
 	if in.Stem == "" {
 		v["stem"] = "El enunciado es obligatorio"
@@ -206,7 +202,7 @@ func (in QuestionInput) validate(ctx context.Context, q queryer) error {
 		v["topic_ids"] = "Algún tema no existe"
 	}
 
-	return v.orNil()
+	return v.Err()
 }
 
 func (s *Store) CreateQuestion(ctx context.Context, in QuestionInput) (int64, error) {
@@ -223,12 +219,12 @@ func (s *Store) CreateQuestion(ctx context.Context, in QuestionInput) (int64, er
 	now := s.timestamp()
 	var id int64
 	err = tx.QueryRowContext(ctx, `INSERT INTO questions (stem, option_a, option_b, option_c, option_d, correct,
-		explanation, origin, author, source_id, source_ref, source_quote, status, annulled, fixed_order, flagged,
-		flag_note, created_at, updated_at)
-		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
+		explanation, origin, author, source_id, source_ref, source_quote, status, annulled, fixed_order,
+		created_at, updated_at)
+		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
 		in.Stem, in.Options[0], in.Options[1], in.Options[2], in.Options[3], in.Correct,
 		in.Explanation, in.Origin, in.Author, in.SourceID, in.SourceRef, in.SourceQuote, in.Status,
-		boolInt(in.Annulled), boolInt(in.FixedOrder), boolInt(in.Flagged), in.FlagNote, now, now).Scan(&id)
+		boolInt(in.Annulled), boolInt(in.FixedOrder), now, now).Scan(&id)
 	if err != nil {
 		return 0, err
 	}
@@ -256,12 +252,11 @@ func (s *Store) UpdateQuestion(ctx context.Context, id int64, in QuestionInput) 
 			OR option_d <> ?5 OR correct <> ?6),
 		stem = ?1, option_a = ?2, option_b = ?3, option_c = ?4, option_d = ?5, correct = ?6,
 		explanation = ?7, origin = ?8, author = ?9, source_id = ?10, source_ref = ?11,
-		source_quote = ?12, status = ?13, annulled = ?14, flagged = ?15, flag_note = ?16, updated_at = ?17,
-		fixed_order = ?18
-		WHERE id = ?19`,
+		source_quote = ?12, status = ?13, annulled = ?14, fixed_order = ?15, updated_at = ?16
+		WHERE id = ?17`,
 		in.Stem, in.Options[0], in.Options[1], in.Options[2], in.Options[3], in.Correct,
 		in.Explanation, in.Origin, in.Author, in.SourceID, in.SourceRef, in.SourceQuote, in.Status,
-		boolInt(in.Annulled), boolInt(in.Flagged), in.FlagNote, s.timestamp(), boolInt(in.FixedOrder), id)
+		boolInt(in.Annulled), boolInt(in.FixedOrder), s.timestamp(), id)
 	if err != nil {
 		return err
 	}
@@ -302,14 +297,15 @@ func (s *Store) DeleteQuestion(ctx context.Context, id int64) error {
 
 const questionColumns = `q.id, q.stem, q.option_a, q.option_b, q.option_c, q.option_d, q.correct, q.explanation,
 	q.origin, q.author, q.source_id, s.title, q.source_ref, q.source_quote, q.status, q.annulled, q.fixed_order,
-	q.flagged, q.flag_note, q.revision, q.created_at, q.updated_at`
+	(SELECT count(*) FROM question_reports r WHERE r.question_id = q.id AND r.resolved_at = ''),
+	q.revision, q.created_at, q.updated_at`
 
 // questionFields returns scan destinations matching questionColumns, so
 // queries can select extra columns after them.
 func questionFields(q *Question) []any {
 	return []any{&q.ID, &q.Stem, &q.Options[0], &q.Options[1], &q.Options[2], &q.Options[3], &q.Correct,
 		&q.Explanation, &q.Origin, &q.Author, &q.SourceID, &q.SourceTitle, &q.SourceRef, &q.SourceQuote,
-		&q.Status, &q.Annulled, &q.FixedOrder, &q.Flagged, &q.FlagNote, &q.Revision, &q.CreatedAt, &q.UpdatedAt}
+		&q.Status, &q.Annulled, &q.FixedOrder, &q.OpenReports, &q.Revision, &q.CreatedAt, &q.UpdatedAt}
 }
 
 func scanQuestion(row interface{ Scan(...any) error }, q *Question) error {
@@ -322,7 +318,7 @@ func (q Question) Input() QuestionInput {
 		Stem: q.Stem, Options: q.Options, Correct: q.Correct, Explanation: q.Explanation,
 		Origin: q.Origin, Author: q.Author, SourceID: q.SourceID, SourceRef: q.SourceRef,
 		SourceQuote: q.SourceQuote, Status: q.Status, Annulled: q.Annulled, FixedOrder: q.FixedOrder,
-		Flagged: q.Flagged, FlagNote: q.FlagNote, TopicIDs: q.TopicIDs,
+		TopicIDs: q.TopicIDs,
 	}
 }
 
@@ -347,7 +343,7 @@ type QuestionFilter struct {
 	SourceID int64
 	TopicID  int64
 	BlockID  int64
-	Flagged  *bool
+	Reported *bool  // with (or without) open doubt reports
 	Text     string // substring match on stem and options; FTS5 search comes later
 	Limit    int
 	Offset   int
@@ -384,9 +380,12 @@ func (s *Store) ListQuestions(ctx context.Context, f QuestionFilter) (QuestionPa
 			JOIN topics t ON t.id = qt.topic_id WHERE t.block_id = ?)`)
 		args = append(args, f.BlockID)
 	}
-	if f.Flagged != nil {
-		where = append(where, "q.flagged = ?")
-		args = append(args, boolInt(*f.Flagged))
+	if f.Reported != nil {
+		cond := hasOpenReports
+		if !*f.Reported {
+			cond = "NOT " + cond
+		}
+		where = append(where, cond)
 	}
 	if t := strings.TrimSpace(f.Text); t != "" {
 		like := "%" + escapeLike(t) + "%"
@@ -446,7 +445,6 @@ func (s *Store) topicIDs(ctx context.Context, questionIDs []int64) (map[int64][]
 	if len(questionIDs) == 0 {
 		return out, nil
 	}
-	placeholders := strings.TrimSuffix(strings.Repeat("?,", len(questionIDs)), ",")
 	args := make([]any, len(questionIDs))
 	for i, id := range questionIDs {
 		args[i] = id
@@ -454,7 +452,7 @@ func (s *Store) topicIDs(ctx context.Context, questionIDs []int64) (map[int64][]
 	}
 	rows, err := s.db.QueryContext(ctx, `SELECT qt.question_id, qt.topic_id FROM question_topics qt
 		JOIN topics t ON t.id = qt.topic_id JOIN blocks b ON b.id = t.block_id
-		WHERE qt.question_id IN (`+placeholders+`) ORDER BY b.position, t.position`, args...)
+		WHERE qt.question_id IN (`+placeholders(len(questionIDs))+`) ORDER BY b.position, t.position`, args...)
 	if err != nil {
 		return nil, err
 	}

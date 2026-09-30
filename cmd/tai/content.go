@@ -2,9 +2,7 @@ package main
 
 import (
 	"context"
-	"errors"
 	"flag"
-	"fmt"
 	"io"
 	"log/slog"
 	"os"
@@ -79,14 +77,8 @@ func runAddSource(ctx context.Context, log *slog.Logger, args []string) error {
 	}
 	defer d.Close()
 	id, err := content.NewStore(d).CreateSource(ctx, in)
-	var v content.ValidationError
-	if errors.As(err, &v) {
-		for field, msg := range v {
-			fmt.Fprintf(os.Stderr, "  %s: %s\n", field, msg)
-		}
-	}
 	if err != nil {
-		return err
+		return describe(err)
 	}
 	log.Info("source added", "id", id, "kind", in.Kind, "title", in.Title, "chars", len(in.FullText))
 	return nil

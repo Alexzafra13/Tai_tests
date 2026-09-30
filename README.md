@@ -1,8 +1,8 @@
 # TAI · Estudio
 
-Aplicación web personal para preparar la oposición de **Técnico Auxiliar de
-Informática de la Administración del Estado (TAI, C1)**. Un solo usuario, un
-solo binario y un contenedor.
+Aplicación web para preparar la oposición de **Técnico Auxiliar de
+Informática de la Administración del Estado (TAI, C1)**, con administradores y
+usuarios. Un solo binario y un contenedor.
 
 Principio básico: **nada inventado**. Toda pregunta guarda su fuente
 verificable (examen oficial del INAP, ley del BOE o documentación técnica). La
@@ -23,14 +23,50 @@ cmd/tai/               binario y subcomandos (serve, migrate, version…)
 internal/config/       variables de entorno
 internal/db/           apertura de SQLite y migrador
 internal/db/migrations/  migraciones SQL versionadas (NNNN_nombre.sql)
-internal/auth/         login de un solo usuario y sesiones
+internal/users/        cuentas y roles (admin / usuario), contraseñas con bcrypt
+internal/auth/         login, sesiones y usuario actual de cada petición
+internal/validate/     errores de validación por campo, comunes a todos los paquetes
 internal/content/      temario, fuentes y preguntas con sus reglas de validación
 internal/quiz/         sesiones de test: creación, respuestas, historial, nota y barajado
 internal/settings/     ajustes del usuario (clave → JSON)
 internal/textmatch/    comprobación de citas literales (normaliza espacios y tipografía)
-internal/server/       API HTTP y servidor de la SPA
+internal/server/       API HTTP y servidor de la SPA (routes.go: rutas y permisos)
 web/                   frontend (Vite); web/dist se embebe en el binario
 data/                  syllabus.example.json (formato del temario)
+```
+
+## Usuarios y permisos
+
+No hay registro abierto: el administrador crea las cuentas en **Ajustes →
+Usuarios**.
+
+| | Administrador | Usuario |
+|---|---|---|
+| Tests, resultados, temario, marcar dudas | ✅ | ✅ |
+| Cambiar su propia contraseña | ✅ | ✅ |
+| Preguntas, fuentes, revisión | ✅ | ❌ |
+| Reglas de la nota, cuentas de usuario | ✅ | ❌ |
+
+- Los permisos se comprueban **en el servidor** ruta a ruta
+  (`internal/server/routes.go`); la interfaz solo oculta lo que no se puede
+  usar.
+- Cada test y cada respuesta pertenece a su usuario: nadie ve los tests de
+  otro, tampoco el administrador.
+- Las **dudas** son avisos de cada usuario con su nota. El administrador los ve
+  todos en Revisión, con quién los marcó; aceptar o descartar la pregunta los
+  cierra (y deshacer los reabre).
+- Los intentos fallidos de login se limitan por cuenta (10 cada 15 min).
+  Desactivar una cuenta le quita el acceso al momento; cambiar una contraseña
+  cierra las demás sesiones.
+- Siempre queda al menos un administrador activo.
+
+**Primer arranque:** se crea el administrador con `TAI_ADMIN_USER` y
+`TAI_ADMIN_PASSWORD`. A partir de ahí esas variables no se usan. Si se pierde
+la contraseña del administrador:
+
+```sh
+docker compose exec -T tai tai user passwd -username admin <<< 'nueva-contraseña'
+docker compose exec tai tai user list
 ```
 
 ## Reglas de contenido
@@ -127,7 +163,7 @@ Requisitos: Go 1.26+ y Node 22+.
 ```sh
 cd web && npm ci && cd ..
 
-# Terminal 1: API en :8080 (contraseña por defecto: devpassword)
+# Terminal 1: API en :8080 (usuario admin, contraseña devpassword)
 make dev-api
 
 # Terminal 2: frontend con recarga en caliente en :5173 (redirige /api a :8080)
@@ -147,7 +183,7 @@ make build   # compila el frontend y genera bin/tai con todo embebido
 
 ```sh
 cp .env.example .env
-# Edita .env: como mínimo cambia TAI_PASSWORD
+# Edita .env: como mínimo pon TAI_ADMIN_PASSWORD
 docker compose up -d --build
 ```
 
@@ -182,7 +218,8 @@ Ver [`.env.example`](.env.example).
 
 | Variable | Por defecto | Descripción |
 |---|---|---|
-| `TAI_PASSWORD` | — (obligatoria) | Contraseña de acceso, mínimo 8 caracteres |
+| `TAI_ADMIN_USER` | `admin` | Usuario del primer administrador (solo en el primer arranque) |
+| `TAI_ADMIN_PASSWORD` | — (obligatoria el primer arranque) | Su contraseña, mínimo 8 caracteres |
 | `TAI_ADDR` | `:8080` | Dirección de escucha |
 | `TAI_DB_PATH` | `tai.db` (`/data/tai.db` en Docker) | Ruta de la base de datos |
 | `TAI_COOKIE_SECURE` | `false` | `true` si se sirve por HTTPS |

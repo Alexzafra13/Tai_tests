@@ -6,15 +6,6 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/content"
 )
 
-func (s *Server) reviewRoutes(mux *http.ServeMux) {
-	mux.HandleFunc("GET /api/review", s.handleReviewQueue)
-	mux.HandleFunc("GET /api/review/counts", s.handleReviewCounts)
-	mux.HandleFunc("POST /api/review/accept-batch", s.handleAcceptBatch)
-	mux.HandleFunc("POST /api/review/{id}/accept", s.handleAccept)
-	mux.HandleFunc("POST /api/review/{id}/discard", s.handleDiscard)
-	mux.HandleFunc("POST /api/review/{id}/restore", s.handleRestore)
-}
-
 func (s *Server) handleReviewQueue(w http.ResponseWriter, r *http.Request) {
 	q := r.URL.Query()
 	page, err := s.content.ReviewQueue(r.Context(), content.ReviewKind(q.Get("kind")), queryInt(q.Get("source")),

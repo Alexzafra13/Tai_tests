@@ -7,6 +7,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/alexzafra13/tai_tests/internal/validate"
+
 	"github.com/alexzafra13/tai_tests/internal/content"
 )
 
@@ -38,7 +40,7 @@ type CreateInput struct {
 }
 
 func (in CreateInput) validate() error {
-	v := content.ValidationError{}
+	v := validate.Errors{}
 	if in.Mode != ModePractice && in.Mode != ModeExam {
 		v["mode"] = "Modo no válido"
 	}
@@ -111,7 +113,7 @@ type pick struct {
 // Create draws up to in.Count random eligible questions and fixes both
 // their order and the order of their options, so the test resumes exactly
 // as it was.
-func (s *Store) Create(ctx context.Context, in CreateInput) (int64, error) {
+func (s *Store) Create(ctx context.Context, userID int64, in CreateInput) (int64, error) {
 	if in.Mode == ModePractice {
 		in.TimeLimitMin = 0
 	}
@@ -161,9 +163,9 @@ func (s *Store) Create(ctx context.Context, in CreateInput) (int64, error) {
 		deadline = now.Add(time.Duration(in.TimeLimitMin) * time.Minute).Format(timeFormat)
 	}
 	var id int64
-	err = tx.QueryRowContext(ctx, `INSERT INTO tests (mode, config, penalty, time_limit, started_at, deadline)
-		VALUES (?, ?, ?, ?, ?, ?) RETURNING id`,
-		in.Mode, string(config), in.Penalty, in.TimeLimitMin*60, now.Format(timeFormat), deadline).Scan(&id)
+	err = tx.QueryRowContext(ctx, `INSERT INTO tests (user_id, mode, config, penalty, time_limit, started_at, deadline)
+		VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id`,
+		userID, in.Mode, string(config), in.Penalty, in.TimeLimitMin*60, now.Format(timeFormat), deadline).Scan(&id)
 	if err != nil {
 		return 0, err
 	}

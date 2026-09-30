@@ -2,32 +2,32 @@ package content
 
 import (
 	"context"
-	"database/sql"
 	"errors"
 
 	"github.com/alexzafra13/tai_tests/internal/textmatch"
+	"github.com/alexzafra13/tai_tests/internal/validate"
 )
 
 // The review queue holds what is not ready for tests yet: drafts (imported
-// or generated questions) and questions flagged as doubtful during a test.
-// Flagged ones come first, since they were raised while studying.
+// or generated questions) and questions users reported as doubtful during
+// a test. Reported ones come first, since they were raised while studying.
 
 type ReviewKind string
 
 const (
-	ReviewAll     ReviewKind = ""
-	ReviewFlagged ReviewKind = "flagged"
-	ReviewDrafts  ReviewKind = "drafts"
+	ReviewAll      ReviewKind = ""
+	ReviewReported ReviewKind = "reported"
+	ReviewDrafts   ReviewKind = "drafts"
 )
 
 func (k ReviewKind) where() string {
 	switch k {
-	case ReviewFlagged:
-		return "q.flagged = 1 AND q.status <> 'discarded'"
+	case ReviewReported:
+		return hasOpenReports + " AND q.status <> 'discarded'"
 	case ReviewDrafts:
 		return "q.status IN ('draft', 'reviewed')"
 	default:
-		return "(q.status IN ('draft', 'reviewed') OR q.flagged = 1) AND q.status <> 'discarded'"
+		return "(q.status IN ('draft', 'reviewed') OR " + hasOpenReports + ") AND q.status <> 'discarded'"
 	}
 }
 
@@ -36,6 +36,7 @@ const ExcerptWindow = 300
 
 type ReviewItem struct {
 	Question
+	Reports []Report `json:"reports"`
 	// Excerpt shows the quote inside its source text; nil when there is no
 	// quote or it cannot be found (which validation normally prevents).
 	Excerpt *textmatch.Excerpt `json:"excerpt"`
@@ -47,18 +48,18 @@ type ReviewPage struct {
 }
 
 type ReviewCounts struct {
-	Flagged int `json:"flagged"`
-	Drafts  int `json:"drafts"`
-	Total   int `json:"total"`
+	Reported int `json:"reported"`
+	Drafts   int `json:"drafts"`
+	Total    int `json:"total"`
 }
 
 func (s *Store) ReviewCounts(ctx context.Context) (ReviewCounts, error) {
 	var c ReviewCounts
 	err := s.db.QueryRowContext(ctx, `SELECT
-			count(CASE WHEN `+ReviewFlagged.where()+` THEN 1 END),
+			count(CASE WHEN `+ReviewReported.where()+` THEN 1 END),
 			count(CASE WHEN `+ReviewDrafts.where()+` THEN 1 END),
 			count(CASE WHEN `+ReviewAll.where()+` THEN 1 END)
-		FROM questions q`).Scan(&c.Flagged, &c.Drafts, &c.Total)
+		FROM questions q`).Scan(&c.Reported, &c.Drafts, &c.Total)
 	return c, err
 }
 
@@ -81,7 +82,7 @@ func (s *Store) ReviewQueue(ctx context.Context, kind ReviewKind, sourceID int64
 
 	rows, err := s.db.QueryContext(ctx, `SELECT `+questionColumns+`, s.full_text
 		FROM questions q JOIN sources s ON s.id = q.source_id
-		WHERE `+cond+` ORDER BY q.flagged DESC, q.id LIMIT ? OFFSET ?`, append(args, limit, max(offset, 0))...)
+		WHERE `+cond+` ORDER BY `+hasOpenReports+` DESC, q.id LIMIT ? OFFSET ?`, append(args, limit, max(offset, 0))...)
 	if err != nil {
 		return page, err
 	}
@@ -108,71 +109,83 @@ func (s *Store) ReviewQueue(ctx context.Context, kind ReviewKind, sourceID int64
 	if err != nil {
 		return page, err
 	}
+	reports, err := s.openReports(ctx, ids)
+	if err != nil {
+		return page, err
+	}
 	for i := range page.Items {
 		page.Items[i].TopicIDs = topics[page.Items[i].ID]
+		page.Items[i].Reports = reports[page.Items[i].ID]
 	}
 	return page, nil
 }
 
-// ReviewState is what a review decision changes, returned so the decision
+// ReviewState is what a review decision changed, returned so the decision
 // can be undone.
 type ReviewState struct {
-	Status   Status `json:"status"`
-	Flagged  bool   `json:"flagged"`
-	FlagNote string `json:"flag_note"`
+	Status Status `json:"status"`
+	// ResolvedReports are the reports the decision closed.
+	ResolvedReports []int64 `json:"resolved_reports"`
 }
 
-func (s *Store) reviewState(ctx context.Context, id int64) (ReviewState, error) {
-	var st ReviewState
-	err := s.db.QueryRowContext(ctx, `SELECT status, flagged, flag_note FROM questions WHERE id = ?`, id).
-		Scan(&st.Status, &st.Flagged, &st.FlagNote)
-	if errors.Is(err, sql.ErrNoRows) {
-		return st, ErrNotFound
-	}
-	return st, err
-}
-
-// Accept publishes a question and clears its doubt flag. It goes through
-// the normal validation, so a question without topics or with a quote that
-// is not in its source cannot be published. topicIDs, when given, replace
-// the question's topics first.
+// Accept publishes a question and resolves its reports. It goes through the
+// normal validation, so a question without topics or with a quote that is
+// not in its source cannot be published. topicIDs, when given, replace the
+// question's topics first.
 func (s *Store) Accept(ctx context.Context, id int64, topicIDs []int64) (ReviewState, error) {
 	q, err := s.Question(ctx, id)
 	if err != nil {
 		return ReviewState{}, err
 	}
-	prev := ReviewState{Status: q.Status, Flagged: q.Flagged, FlagNote: q.FlagNote}
 	in := q.Input()
 	if len(topicIDs) > 0 {
 		in.TopicIDs = topicIDs
 	}
-	in.Status, in.Flagged, in.FlagNote = StatusPublished, false, ""
-	return prev, s.UpdateQuestion(ctx, id, in)
+	in.Status = StatusPublished
+	if err := s.UpdateQuestion(ctx, id, in); err != nil {
+		return ReviewState{}, err
+	}
+	resolved, err := s.resolveReports(ctx, id)
+	return ReviewState{Status: q.Status, ResolvedReports: resolved}, err
 }
 
 // Discard takes a question out of tests and of the queue for good, keeping
-// its history. Discarded questions also mark content a re-import should not
-// bring back.
+// its history, and resolves its reports. Discarded questions also mark
+// content a re-import should not bring back.
 func (s *Store) Discard(ctx context.Context, id int64) (ReviewState, error) {
-	prev, err := s.reviewState(ctx, id)
+	q, err := s.Question(ctx, id)
 	if err != nil {
-		return prev, err
+		return ReviewState{}, err
 	}
-	return prev, s.RestoreReview(ctx, id, ReviewState{Status: StatusDiscarded})
+	if err := s.setStatus(ctx, id, StatusDiscarded); err != nil {
+		return ReviewState{}, err
+	}
+	resolved, err := s.resolveReports(ctx, id)
+	return ReviewState{Status: q.Status, ResolvedReports: resolved}, err
 }
 
-// RestoreReview sets a question's review state back, to undo a decision.
+// RestoreReview undoes a decision: it sets the previous status back and
+// reopens the reports the decision resolved.
 func (s *Store) RestoreReview(ctx context.Context, id int64, st ReviewState) error {
-	switch st.Status {
+	if err := s.setStatus(ctx, id, st.Status); err != nil {
+		return err
+	}
+	for _, rid := range st.ResolvedReports {
+		if _, err := s.db.ExecContext(ctx, `UPDATE question_reports SET resolved_at = '' WHERE id = ? AND question_id = ?`,
+			rid, id); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
+func (s *Store) setStatus(ctx context.Context, id int64, st Status) error {
+	switch st {
 	case StatusDraft, StatusReviewed, StatusPublished, StatusDiscarded:
 	default:
-		return ValidationError{"status": "Estado no válido"}
+		return validate.Errors{"status": "Estado no válido"}
 	}
-	if !st.Flagged {
-		st.FlagNote = ""
-	}
-	res, err := s.db.ExecContext(ctx, `UPDATE questions SET status = ?, flagged = ?, flag_note = ?, updated_at = ?
-		WHERE id = ?`, st.Status, boolInt(st.Flagged), st.FlagNote, s.timestamp(), id)
+	res, err := s.db.ExecContext(ctx, `UPDATE questions SET status = ?, updated_at = ? WHERE id = ?`, st, s.timestamp(), id)
 	if err != nil {
 		return err
 	}
@@ -185,7 +198,7 @@ func (s *Store) RestoreReview(ctx context.Context, id int64, st ReviewState) err
 type BatchResult struct {
 	ID     int64           `json:"id"`
 	OK     bool            `json:"ok"`
-	Errors ValidationError `json:"errors,omitempty"`
+	Errors validate.Errors `json:"errors,omitempty"`
 }
 
 // AcceptBatch accepts each question independently: the ones that pass
@@ -194,14 +207,14 @@ func (s *Store) AcceptBatch(ctx context.Context, ids []int64) ([]BatchResult, er
 	out := make([]BatchResult, 0, len(ids))
 	for _, id := range ids {
 		_, err := s.Accept(ctx, id, nil)
-		var v ValidationError
+		var v validate.Errors
 		switch {
 		case err == nil:
 			out = append(out, BatchResult{ID: id, OK: true})
 		case errors.As(err, &v):
 			out = append(out, BatchResult{ID: id, Errors: v})
 		case errors.Is(err, ErrNotFound):
-			out = append(out, BatchResult{ID: id, Errors: ValidationError{"id": "No existe"}})
+			out = append(out, BatchResult{ID: id, Errors: validate.Errors{"id": "No existe"}})
 		default:
 			return out, err
 		}

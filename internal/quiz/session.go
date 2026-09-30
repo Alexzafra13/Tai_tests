@@ -4,8 +4,9 @@ import (
 	"context"
 	"database/sql"
 	"errors"
-	"strings"
 	"time"
+
+	"github.com/alexzafra13/tai_tests/internal/validate"
 
 	"github.com/alexzafra13/tai_tests/internal/content"
 )
@@ -34,9 +35,11 @@ type Item struct {
 	Stem       string    `json:"stem"`
 	Options    [4]string `json:"options"`
 	Chosen     *int      `json:"chosen"`
-	Flagged    bool      `json:"flagged"`
-	FlagNote   string    `json:"flag_note,omitempty"`
-	TimeMs     int       `json:"time_ms"`
+	// Reported tells whether the current user has an open doubt report on
+	// this question, with its note.
+	Reported   bool   `json:"reported"`
+	ReportNote string `json:"report_note,omitempty"`
+	TimeMs     int    `json:"time_ms"`
 	// Solution is only included once it may be shown: in practice mode
 	// after answering, and in any mode once the test is over.
 	Solution *Solution `json:"solution,omitempty"`
@@ -56,15 +59,18 @@ type Solution struct {
 // testRow is a tests row with the stored counts.
 type testRow struct {
 	Test
+	userID                int64
 	correct, wrong, blank int
 }
 
-func (s *Store) loadTest(ctx context.Context, q queryer, id int64) (testRow, error) {
-	var t testRow
+// loadTest reads a test owned by userID. Other users' tests are reported
+// as not found, so their existence is not revealed.
+func (s *Store) loadTest(ctx context.Context, q queryer, userID, id int64) (testRow, error) {
+	t := testRow{userID: userID}
 	err := q.QueryRowContext(ctx, `SELECT id, mode, status, penalty, time_limit, started_at, deadline, finished_at,
 			correct, wrong, blank
-		FROM tests WHERE id = ?`, id).Scan(&t.ID, &t.Mode, &t.Status, &t.Penalty, &t.TimeLimit, &t.StartedAt,
-		&t.Deadline, &t.FinishedAt, &t.correct, &t.wrong, &t.blank)
+		FROM tests WHERE id = ? AND user_id = ?`, id, userID).Scan(&t.ID, &t.Mode, &t.Status, &t.Penalty, &t.TimeLimit,
+		&t.StartedAt, &t.Deadline, &t.FinishedAt, &t.correct, &t.wrong, &t.blank)
 	if errors.Is(err, sql.ErrNoRows) {
 		return t, ErrNotFound
 	}
@@ -82,16 +88,16 @@ func (s *Store) expired(t Test) bool {
 // Get returns the test with its questions. A timed test whose deadline has
 // passed is finished first, so a test abandoned mid-exam scores as if time
 // ran out.
-func (s *Store) Get(ctx context.Context, id int64) (Test, error) {
-	row, err := s.loadTest(ctx, s.db, id)
+func (s *Store) Get(ctx context.Context, userID, id int64) (Test, error) {
+	row, err := s.loadTest(ctx, s.db, userID, id)
 	if err != nil {
 		return Test{}, err
 	}
 	if row.Status == StatusInProgress && s.expired(row.Test) {
-		if _, err := s.Finish(ctx, id); err != nil && !errors.Is(err, ErrNotInProgress) {
+		if _, err := s.Finish(ctx, userID, id); err != nil && !errors.Is(err, ErrNotInProgress) {
 			return Test{}, err
 		}
-		if row, err = s.loadTest(ctx, s.db, id); err != nil {
+		if row, err = s.loadTest(ctx, s.db, userID, id); err != nil {
 			return Test{}, err
 		}
 	}
@@ -112,17 +118,18 @@ func (s *Store) Get(ctx context.Context, id int64) (Test, error) {
 		}
 	}
 
-	t.Items, err = s.items(ctx, t)
+	t.Items, err = s.items(ctx, t, userID)
 	return t, err
 }
 
-func (s *Store) items(ctx context.Context, t Test) ([]Item, error) {
+func (s *Store) items(ctx context.Context, t Test, userID int64) ([]Item, error) {
 	rows, err := s.db.QueryContext(ctx, `SELECT a.position, a.option_order, q.id, q.stem,
 			q.option_a, q.option_b, q.option_c, q.option_d,
-			a.chosen, a.is_correct, a.time_ms, q.flagged, q.flag_note,
+			a.chosen, a.is_correct, a.time_ms, r.id IS NOT NULL, COALESCE(r.note, ''),
 			q.correct, q.explanation, q.origin, s.title, q.source_ref, q.source_quote
 		FROM attempts a JOIN questions q ON q.id = a.question_id JOIN sources s ON s.id = q.source_id
-		WHERE a.test_id = ? ORDER BY a.position`, t.ID)
+		LEFT JOIN question_reports r ON r.question_id = q.id AND r.user_id = ? AND r.resolved_at = ''
+		WHERE a.test_id = ? ORDER BY a.position`, userID, t.ID)
 	if err != nil {
 		return nil, err
 	}
@@ -137,7 +144,7 @@ func (s *Store) items(ctx context.Context, t Test) ([]Item, error) {
 		var sol Solution
 		if err := rows.Scan(&it.Position, &orderStr, &it.QuestionID, &it.Stem,
 			&options[0], &options[1], &options[2], &options[3],
-			&chosen, &isCorrect, &it.TimeMs, &it.Flagged, &it.FlagNote,
+			&chosen, &isCorrect, &it.TimeMs, &it.Reported, &it.ReportNote,
 			&sol.Correct, &sol.Explanation, &sol.Origin, &sol.SourceTitle, &sol.SourceRef, &sol.SourceQuote); err != nil {
 			return nil, err
 		}
@@ -198,9 +205,9 @@ type AnswerInput struct {
 
 // Answer records the answer to one question. In practice mode it returns
 // the solution; in exam mode it returns nil so nothing leaks before the end.
-func (s *Store) Answer(ctx context.Context, testID int64, in AnswerInput) (*Solution, error) {
+func (s *Store) Answer(ctx context.Context, userID, testID int64, in AnswerInput) (*Solution, error) {
 	if in.Chosen != nil && (*in.Chosen < 0 || *in.Chosen > 3) {
-		return nil, content.ValidationError{"chosen": "Opción no válida"}
+		return nil, validate.Errors{"chosen": "Opción no válida"}
 	}
 	tx, err := s.db.BeginTx(ctx, nil)
 	if err != nil {
@@ -208,7 +215,7 @@ func (s *Store) Answer(ctx context.Context, testID int64, in AnswerInput) (*Solu
 	}
 	defer tx.Rollback()
 
-	t, err := s.loadTest(ctx, tx, testID)
+	t, err := s.loadTest(ctx, tx, userID, testID)
 	if err != nil {
 		return nil, err
 	}
@@ -220,7 +227,7 @@ func (s *Store) Answer(ctx context.Context, testID int64, in AnswerInput) (*Solu
 		return nil, ErrExpired
 	}
 	if t.Mode == ModePractice && in.Chosen == nil {
-		return nil, content.ValidationError{"chosen": "Elige una opción"}
+		return nil, validate.Errors{"chosen": "Elige una opción"}
 	}
 
 	var prev sql.NullInt64
@@ -235,7 +242,7 @@ func (s *Store) Answer(ctx context.Context, testID int64, in AnswerInput) (*Solu
 		&questionID, &prev, &orderStr, &sol.Correct, &revision, &sol.Explanation, &sol.Origin,
 		&sol.SourceTitle, &sol.SourceRef, &sol.SourceQuote)
 	if errors.Is(err, sql.ErrNoRows) {
-		return nil, content.ValidationError{"position": "La pregunta no pertenece al test"}
+		return nil, validate.Errors{"position": "La pregunta no pertenece al test"}
 	} else if err != nil {
 		return nil, err
 	}
@@ -274,7 +281,7 @@ func (s *Store) Answer(ctx context.Context, testID int64, in AnswerInput) (*Solu
 
 // Finish closes the test and stores its net ratio. Unanswered questions
 // count as blank.
-func (s *Store) Finish(ctx context.Context, testID int64) (Result, error) {
+func (s *Store) Finish(ctx context.Context, userID, testID int64) (Result, error) {
 	scoring, err := s.Scoring(ctx)
 	if err != nil {
 		return Result{}, err
@@ -285,7 +292,7 @@ func (s *Store) Finish(ctx context.Context, testID int64) (Result, error) {
 	}
 	defer tx.Rollback()
 
-	t, err := s.loadTest(ctx, tx, testID)
+	t, err := s.loadTest(ctx, tx, userID, testID)
 	if err != nil {
 		return Result{}, err
 	}
@@ -318,14 +325,14 @@ func (s *Store) Finish(ctx context.Context, testID int64) (Result, error) {
 
 // Abandon closes a test without scoring it. Answers already given are kept
 // as attempts.
-func (s *Store) Abandon(ctx context.Context, testID int64) error {
+func (s *Store) Abandon(ctx context.Context, userID, testID int64) error {
 	res, err := s.db.ExecContext(ctx, `UPDATE tests SET status = 'abandoned', finished_at = ?
-		WHERE id = ? AND status = 'in_progress'`, s.now().UTC().Format(timeFormat), testID)
+		WHERE id = ? AND user_id = ? AND status = 'in_progress'`, s.now().UTC().Format(timeFormat), testID, userID)
 	if err != nil {
 		return err
 	}
 	if n, _ := res.RowsAffected(); n == 0 {
-		if _, err := s.loadTest(ctx, s.db, testID); err != nil {
+		if _, err := s.loadTest(ctx, s.db, userID, testID); err != nil {
 			return err
 		}
 		return ErrNotInProgress
@@ -333,27 +340,14 @@ func (s *Store) Abandon(ctx context.Context, testID int64) error {
 	return nil
 }
 
-type FlagInput struct {
-	Position int    `json:"position"`
-	Flagged  bool   `json:"flagged"`
-	Note     string `json:"note"`
-}
-
-// Flag marks (or unmarks) the question at a test position as doubtful,
-// which sends it to the review queue.
-func (s *Store) Flag(ctx context.Context, testID int64, in FlagInput) error {
-	note := strings.TrimSpace(in.Note)
-	if !in.Flagged {
-		note = ""
+// QuestionAt returns the question at a position of the user's test, e.g.
+// to report a doubt about it.
+func (s *Store) QuestionAt(ctx context.Context, userID, testID int64, position int) (int64, error) {
+	var id int64
+	err := s.db.QueryRowContext(ctx, `SELECT a.question_id FROM attempts a JOIN tests t ON t.id = a.test_id
+		WHERE a.test_id = ? AND t.user_id = ? AND a.position = ?`, testID, userID, position).Scan(&id)
+	if errors.Is(err, sql.ErrNoRows) {
+		return 0, ErrNotFound
 	}
-	res, err := s.db.ExecContext(ctx, `UPDATE questions SET flagged = ?, flag_note = ?, updated_at = ?
-		WHERE id = (SELECT question_id FROM attempts WHERE test_id = ? AND position = ?)`,
-		boolInt(in.Flagged), note, s.now().UTC().Format(timeFormat), testID, in.Position)
-	if err != nil {
-		return err
-	}
-	if n, _ := res.RowsAffected(); n == 0 {
-		return ErrNotFound
-	}
-	return nil
+	return id, err
 }

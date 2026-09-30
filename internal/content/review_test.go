@@ -19,12 +19,14 @@ func TestReviewQueue(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	flagged := f.lawQuestion()
-	flagged.Flagged, flagged.FlagNote = true, "¿seguro que son seis?"
-	flaggedID, _ := f.s.CreateQuestion(ctx, flagged)
+	flaggedID, _ := f.s.CreateQuestion(ctx, f.lawQuestion())
+	const adminID = 1 // created by the migrations
+	if err := f.s.SetReport(ctx, flaggedID, adminID, true, "¿seguro que son seis?"); err != nil {
+		t.Fatal(err)
+	}
 
 	counts, err := f.s.ReviewCounts(ctx)
-	if err != nil || counts != (ReviewCounts{Flagged: 1, Drafts: 1, Total: 2}) {
+	if err != nil || counts != (ReviewCounts{Reported: 1, Drafts: 1, Total: 2}) {
 		t.Fatalf("counts = %+v, %v", counts, err)
 	}
 
@@ -34,6 +36,9 @@ func TestReviewQueue(t *testing.T) {
 	}
 	if page.Total != 2 || page.Items[0].ID != flaggedID || page.Items[1].ID != draftID {
 		t.Fatalf("queue order: %+v", ids(page))
+	}
+	if r := page.Items[0].Reports; len(r) != 1 || r[0].Note != "¿seguro que son seis?" || r[0].Username != "admin" {
+		t.Errorf("reports = %+v", r)
 	}
 	ex := page.Items[0].Excerpt
 	if ex == nil || ex.Match != "Este plazo no podrá exceder de seis meses" || ex.Before == "" {
@@ -61,17 +66,24 @@ func TestReviewQueue(t *testing.T) {
 		t.Errorf("accepted question = %+v", q)
 	}
 
-	// Accepting a flagged question clears the flag; undo brings it back.
+	// Accepting a reported question resolves the report; undo reopens it.
 	prev, _ = f.s.Accept(ctx, flaggedID, nil)
-	if q, _ := f.s.Question(ctx, flaggedID); q.Flagged {
-		t.Error("flag not cleared on accept")
+	if q, _ := f.s.Question(ctx, flaggedID); q.OpenReports != 0 {
+		t.Error("report not resolved on accept")
 	}
 	if err := f.s.RestoreReview(ctx, flaggedID, prev); err != nil {
 		t.Fatal(err)
 	}
-	if q, _ := f.s.Question(ctx, flaggedID); !q.Flagged || q.FlagNote != "¿seguro que son seis?" {
-		t.Errorf("undo lost the flag: %+v", q)
+	if q, _ := f.s.Question(ctx, flaggedID); q.OpenReports != 1 {
+		t.Errorf("undo did not reopen the report: %+v", q)
 	}
+
+	// Withdrawing a report takes the question out of the queue.
+	f.s.SetReport(ctx, flaggedID, adminID, false, "")
+	if c, _ := f.s.ReviewCounts(ctx); c.Reported != 0 {
+		t.Errorf("withdrawn report still counted: %+v", c)
+	}
+	f.s.SetReport(ctx, flaggedID, adminID, true, "otra vez")
 
 	if _, err := f.s.Discard(ctx, flaggedID); err != nil {
 		t.Fatal(err)

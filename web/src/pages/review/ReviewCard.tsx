@@ -29,10 +29,17 @@ export function ReviewCard({
         {item.annulled && <span className="badge warn">Anulada</span>}
       </div>
 
-      {item.flagged && (
+      {item.reports.length > 0 && (
         <div className="flag-note">
           <strong>⚑ Marcada como dudosa</strong>
-          {item.flag_note && <p>{item.flag_note}</p>}
+          <ul className="report-list">
+            {item.reports.map((r) => (
+              <li key={r.id}>
+                <span className="small">{r.username}</span>
+                {r.note && <p>{r.note}</p>}
+              </li>
+            ))}
+          </ul>
         </div>
       )}
 

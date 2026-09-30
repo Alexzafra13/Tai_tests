@@ -38,7 +38,7 @@ func TestReviewAPI(t *testing.T) {
 	if status := doJSON(t, c, "POST", ts.URL+"/api/review/1/discard", nil, &dec); status != http.StatusOK || dec.Previous.Status != "draft" {
 		t.Fatalf("discard: %d %+v", status, dec)
 	}
-	if status := doJSON(t, c, "POST", ts.URL+"/api/review/1/restore", map[string]any{"status": "draft", "flagged": false, "flag_note": ""}, nil); status != http.StatusNoContent {
+	if status := doJSON(t, c, "POST", ts.URL+"/api/review/1/restore", map[string]any{"status": "draft", "resolved_reports": []int64{}}, nil); status != http.StatusNoContent {
 		t.Fatalf("restore: %d", status)
 	}
 	doJSON(t, c, "GET", ts.URL+"/api/review/counts", nil, &counts)

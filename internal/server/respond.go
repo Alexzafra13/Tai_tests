@@ -6,6 +6,11 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/alexzafra13/tai_tests/internal/auth"
+	"github.com/alexzafra13/tai_tests/internal/quiz"
+	"github.com/alexzafra13/tai_tests/internal/users"
+	"github.com/alexzafra13/tai_tests/internal/validate"
+
 	"github.com/alexzafra13/tai_tests/internal/content"
 )
 
@@ -60,23 +65,62 @@ func (s *Server) respondNoContent(w http.ResponseWriter, err error) {
 	w.WriteHeader(http.StatusNoContent)
 }
 
-// writeErr maps domain errors to HTTP responses. Validation errors carry
-// per-field messages the forms display inline.
+// errorResponses maps domain errors to HTTP responses (Spanish messages
+// shown to the user). Validation errors are handled separately because they
+// carry per-field messages.
+var errorResponses = []struct {
+	err     error
+	status  int
+	message string
+}{
+	{content.ErrNotFound, http.StatusNotFound, "No encontrado"},
+	{content.ErrHasHistory, http.StatusConflict, "Esta pregunta ya tiene respuestas: márcala como descartada en lugar de borrarla"},
+	{content.ErrInUse, http.StatusConflict, "No se puede borrar: hay preguntas que dependen de este elemento"},
+	{quiz.ErrNotFound, http.StatusNotFound, "Test no encontrado"},
+	{quiz.ErrNotInProgress, http.StatusConflict, "El test ya ha terminado"},
+	{quiz.ErrExpired, http.StatusConflict, "Se ha agotado el tiempo"},
+	{quiz.ErrAlreadyAnswered, http.StatusConflict, "Esta pregunta ya está respondida"},
+	{quiz.ErrNoQuestions, http.StatusUnprocessableEntity, "No hay preguntas publicadas con esos filtros"},
+	{users.ErrNotFound, http.StatusNotFound, "Usuario no encontrado"},
+	{users.ErrLastAdmin, http.StatusConflict, "Tiene que quedar al menos un administrador activo"},
+	{auth.ErrBadCredentials, http.StatusUnauthorized, "Usuario o contraseña incorrectos"},
+	{auth.ErrRateLimited, http.StatusTooManyRequests, "Demasiados intentos fallidos. Espera unos minutos."},
+}
+
+// writeErr turns an error into a response: validation errors become 422
+// with the field messages the forms display inline, known domain errors use
+// errorResponses, and anything else is logged as an internal error.
 func (s *Server) writeErr(w http.ResponseWriter, err error) {
-	if quizError(w, err) {
+	var v validate.Errors
+	if errors.As(err, &v) {
+		writeJSON(w, http.StatusUnprocessableEntity, map[string]any{"error": "Revisa los campos marcados", "fields": v})
 		return
 	}
-	var v content.ValidationError
-	switch {
-	case errors.As(err, &v):
-		writeJSON(w, http.StatusUnprocessableEntity, map[string]any{"error": "Revisa los campos marcados", "fields": v})
-	case errors.Is(err, content.ErrNotFound):
-		writeError(w, http.StatusNotFound, "No encontrado")
-	case errors.Is(err, content.ErrHasHistory):
-		writeError(w, http.StatusConflict, "Esta pregunta ya tiene respuestas: márcala como descartada en lugar de borrarla")
-	case errors.Is(err, content.ErrInUse):
-		writeError(w, http.StatusConflict, "No se puede borrar: hay preguntas que dependen de este elemento")
-	default:
-		s.internalError(w, err)
+	if errors.Is(err, auth.ErrWrongPassword) {
+		writeJSON(w, http.StatusUnprocessableEntity, map[string]any{"error": "Revisa los campos marcados",
+			"fields": validate.Errors{"current_password": "La contraseña actual no es correcta"}})
+		return
 	}
+	for _, e := range errorResponses {
+		if errors.Is(err, e.err) {
+			writeError(w, e.status, e.message)
+			return
+		}
+	}
+	s.internalError(w, err)
+}
+
+func (s *Server) internalError(w http.ResponseWriter, err error) {
+	s.log.Error("request failed", "err", err)
+	writeError(w, http.StatusInternalServerError, "internal error")
+}
+
+func writeJSON(w http.ResponseWriter, status int, v any) {
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(status)
+	json.NewEncoder(w).Encode(v)
+}
+
+func writeError(w http.ResponseWriter, status int, msg string) {
+	writeJSON(w, status, map[string]string{"error": msg})
 }

@@ -9,7 +9,7 @@ import { ReviewCard } from "./ReviewCard";
 
 const tabs: { kind: ReviewKind; label: string; count: (c: ReviewCounts) => number }[] = [
   { kind: "", label: "Todas", count: (c) => c.total },
-  { kind: "flagged", label: "Dudosas", count: (c) => c.flagged },
+  { kind: "reported", label: "Dudosas", count: (c) => c.reported },
   { kind: "drafts", label: "Borradores", count: (c) => c.drafts },
 ];
 

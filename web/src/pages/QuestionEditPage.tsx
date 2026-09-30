@@ -34,8 +34,6 @@ const empty: QuestionInput = {
   status: "published",
   annulled: false,
   fixed_order: false,
-  flagged: false,
-  flag_note: "",
   topic_ids: [],
 };
 
@@ -135,7 +133,17 @@ export function QuestionEditPage() {
           Cancelar
         </button>
       </div>
-      {id && <p className="muted small">Autor: {authorLabel[form.author]}</p>}
+      {id && (
+        <p className="muted small">
+          Autor: {authorLabel[form.author]}
+          {existing.data && existing.data.open_reports > 0 && (
+            <>
+              {" · "}
+              <Link to="/review">{existing.data.open_reports} dudas abiertas en Revisión</Link>
+            </>
+          )}
+        </p>
+      )}
       <ErrorBox message={error} />
       {saved && <p className="ok-box">{saved}</p>}
 
@@ -278,15 +286,6 @@ export function QuestionEditPage() {
             </span>
           </span>
         </label>
-        <label className="check">
-          <input type="checkbox" checked={form.flagged} onChange={(e) => set("flagged", e.target.checked)} />
-          Marcada como dudosa
-        </label>
-        {form.flagged && (
-          <Field label="Nota" htmlFor="flag_note">
-            <textarea id="flag_note" rows={2} value={form.flag_note} onChange={(e) => set("flag_note", e.target.value)} />
-          </Field>
-        )}
       </fieldset>
 
       <div className="actions sticky">

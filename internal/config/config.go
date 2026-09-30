@@ -10,20 +10,23 @@ import (
 )
 
 type Config struct {
-	Addr         string
-	DBPath       string
-	Password     string
-	CookieSecure bool
-	SessionTTL   time.Duration
+	Addr   string
+	DBPath string
+	// AdminUser and AdminPassword create the first administrator on first
+	// start; afterwards accounts are managed from the app.
+	AdminUser     string
+	AdminPassword string
+	CookieSecure  bool
+	SessionTTL    time.Duration
 }
 
-// Load reads the configuration shared by all subcommands. It does not
-// validate settings that only some subcommands need (see RequireServe).
+// Load reads the configuration shared by all subcommands.
 func Load() (Config, error) {
 	c := Config{
-		Addr:     env("TAI_ADDR", ":8080"),
-		DBPath:   env("TAI_DB_PATH", "tai.db"),
-		Password: os.Getenv("TAI_PASSWORD"),
+		Addr:          env("TAI_ADDR", ":8080"),
+		DBPath:        env("TAI_DB_PATH", "tai.db"),
+		AdminUser:     env("TAI_ADMIN_USER", "admin"),
+		AdminPassword: os.Getenv("TAI_ADMIN_PASSWORD"),
 	}
 
 	var err error
@@ -37,14 +40,6 @@ func Load() (Config, error) {
 		return c, errors.New("TAI_SESSION_TTL must be positive")
 	}
 	return c, nil
-}
-
-// RequireServe validates the settings needed to run the HTTP server.
-func (c Config) RequireServe() error {
-	if len(c.Password) < 8 {
-		return errors.New("TAI_PASSWORD must be set and at least 8 characters long")
-	}
-	return nil
 }
 
 func env(key, def string) string {
