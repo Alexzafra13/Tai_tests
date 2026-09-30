@@ -5,6 +5,7 @@ import (
 	"time"
 
 	"github.com/alexzafra13/tai_tests/internal/auth"
+	"github.com/alexzafra13/tai_tests/internal/users"
 )
 
 func (s *Server) handleHealth(w http.ResponseWriter, r *http.Request) {
@@ -71,4 +72,33 @@ func (s *Server) setSessionCookie(w http.ResponseWriter, token string, expires t
 		c.MaxAge = -1
 	}
 	http.SetCookie(w, c)
+}
+
+// handleSetupStatus tells the app whether to show the first-run setup
+// screen (no administrator can log in yet).
+func (s *Server) handleSetupStatus(w http.ResponseWriter, r *http.Request) {
+	need, err := s.users.NeedsSetup(r.Context())
+	s.respond(w, map[string]bool{"needed": need}, err)
+}
+
+// handleSetup creates the first administrator and logs them in. It only
+// works once: afterwards it answers 409.
+func (s *Server) handleSetup(w http.ResponseWriter, r *http.Request) {
+	var in users.SetupInput
+	if !decode(w, r, &in) {
+		return
+	}
+	u, err := s.users.Setup(r.Context(), in)
+	if err != nil {
+		s.writeErr(w, err)
+		return
+	}
+	sess, err := s.auth.OpenSession(r.Context(), u)
+	if err != nil {
+		s.internalError(w, err)
+		return
+	}
+	s.log.Info("first administrator created", "username", u.Username)
+	s.setSessionCookie(w, sess.Token, sess.Expires)
+	writeJSON(w, http.StatusOK, u)
 }

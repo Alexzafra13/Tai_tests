@@ -4,6 +4,7 @@ import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router";
 import { AuthProvider, useAuth } from "./auth";
 import { Layout } from "./Layout";
 import { LoginPage } from "./pages/LoginPage";
+import { SetupPage } from "./pages/SetupPage";
 import { HomePage } from "./pages/HomePage";
 import { QuestionsPage } from "./pages/QuestionsPage";
 import { QuestionEditPage } from "./pages/QuestionEditPage";
@@ -31,6 +32,9 @@ function App() {
 
   if (status === "loading") {
     return <div className="center muted">Cargando…</div>;
+  }
+  if (status === "setup") {
+    return <SetupPage />;
   }
   if (status === "out") {
     return (

@@ -26,8 +26,12 @@ func TestEnsureAdminOnFirstStart(t *testing.T) {
 	ctx := context.Background()
 	s := newStore(t)
 
-	if _, err := s.EnsureAdmin(ctx, "admin", ""); err == nil {
-		t.Fatal("first start without password should fail")
+	// Without a password, setup is left to the app.
+	if created, err := s.EnsureAdmin(ctx, "admin", ""); err != nil || created {
+		t.Fatalf("EnsureAdmin without password = %v, %v", created, err)
+	}
+	if need, _ := s.NeedsSetup(ctx); !need {
+		t.Fatal("fresh install should need setup")
 	}
 	created, err := s.EnsureAdmin(ctx, "Alex", "first-password")
 	if err != nil || !created {
@@ -109,5 +113,24 @@ func TestCannotRemoveLastAdmin(t *testing.T) {
 	}
 	if u, _ := s.Get(ctx, id); !u.IsAdmin() {
 		t.Error("second admin lost role")
+	}
+}
+
+func TestSetupOnlyOnce(t *testing.T) {
+	ctx := context.Background()
+	s := newStore(t)
+
+	if _, err := s.Setup(ctx, SetupInput{Username: "x", Password: "short"}); err == nil {
+		t.Fatal("invalid setup accepted")
+	}
+	u, err := s.Setup(ctx, SetupInput{Username: "alex", DisplayName: "Alex", Password: "alex-password"})
+	if err != nil || !u.IsAdmin() || u.ID != 1 || u.DisplayName != "Alex" {
+		t.Fatalf("setup = %+v, %v", u, err)
+	}
+	if need, _ := s.NeedsSetup(ctx); need {
+		t.Error("still needs setup after it")
+	}
+	if _, err := s.Setup(ctx, SetupInput{Username: "intruder", Password: "intruder-password"}); !errors.Is(err, ErrAlreadySetUp) {
+		t.Fatalf("second setup: err = %v, want ErrAlreadySetUp", err)
 	}
 }

@@ -123,7 +123,12 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 		return err
 	}
 	if created {
-		log.Info("administrator account ready; manage accounts from the app from now on", "username", cfg.AdminUser)
+		log.Info("administrator created from TAI_ADMIN_USER / TAI_ADMIN_PASSWORD", "username", cfg.AdminUser)
+	}
+	if need, err := us.NeedsSetup(ctx); err != nil {
+		return err
+	} else if need {
+		log.Info("first start: open the app in a browser to create the administrator account", "addr", cfg.Addr)
 	}
 
 	srv := server.New(server.Deps{

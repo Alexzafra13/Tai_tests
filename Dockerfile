@@ -1,7 +1,11 @@
 # syntax=docker/dockerfile:1
 
+# Multi-platform: the frontend and the Go binary are built on the build
+# machine (BUILDPLATFORM) and Go cross-compiles for the target, so arm64
+# images (e.g. a Raspberry Pi) build fast without emulation.
+
 # 1. Frontend
-FROM node:22-alpine AS web
+FROM --platform=$BUILDPLATFORM node:22-alpine AS web
 WORKDIR /src/web
 COPY web/package.json web/package-lock.json ./
 RUN npm ci
@@ -9,14 +13,15 @@ COPY web/ ./
 RUN npm run build
 
 # 2. Go binary (pure Go, no CGO) with the frontend embedded
-FROM golang:1.26-alpine AS build
+FROM --platform=$BUILDPLATFORM golang:1.26-alpine AS build
 WORKDIR /src
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
 COPY --from=web /src/web/dist ./web/dist
-ARG VERSION=dev
-RUN CGO_ENABLED=0 go build -trimpath -ldflags "-s -w -X main.version=${VERSION}" -o /out/tai ./cmd/tai
+ARG TARGETOS TARGETARCH VERSION=dev
+RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH \
+    go build -trimpath -ldflags "-s -w -X main.version=${VERSION}" -o /out/tai ./cmd/tai
 
 # 3. Runtime: poppler-utils provides pdftotext for the INAP importer
 FROM alpine:3.22

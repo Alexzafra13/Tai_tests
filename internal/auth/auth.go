@@ -62,7 +62,13 @@ func (s *Service) Login(ctx context.Context, username, password string) (Session
 		return Session{}, err
 	}
 	s.limiter.reset(key)
+	return s.OpenSession(ctx, u)
+}
 
+// OpenSession starts a session for an already authenticated user, e.g.
+// right after the first-run setup.
+func (s *Service) OpenSession(ctx context.Context, u users.User) (Session, error) {
+	now := s.now()
 	token, err := newToken()
 	if err != nil {
 		return Session{}, err

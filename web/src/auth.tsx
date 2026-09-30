@@ -2,13 +2,18 @@ import { createContext, useCallback, useContext, useEffect, useState, type React
 import { api, ApiError } from "./api";
 import type { User } from "./types";
 
+// status "setup" means a fresh install with no administrator yet: the app
+// shows the first-run setup screen instead of the login.
 type AuthState = {
-  status: "loading" | "in" | "out";
+  status: "loading" | "setup" | "in" | "out";
   user: User | null;
   isAdmin: boolean;
   login: (username: string, password: string) => Promise<void>;
+  setup: (input: SetupInput) => Promise<void>;
   logout: () => Promise<void>;
 };
+
+export type SetupInput = { username: string; display_name: string; password: string };
 
 const AuthContext = createContext<AuthState | null>(null);
 
@@ -22,14 +27,21 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         setUser(u);
         setStatus("in");
       })
-      .catch((err) => {
+      .catch(async (err) => {
         if (!(err instanceof ApiError && err.status === 401)) console.error(err);
-        setStatus("out");
+        const setup = await api<{ needed: boolean }>("/setup").catch(() => ({ needed: false }));
+        setStatus(setup.needed ? "setup" : "out");
       });
   }, []);
 
   const login = useCallback(async (username: string, password: string) => {
     const u = await api<User>("/auth/login", { method: "POST", body: { username, password } });
+    setUser(u);
+    setStatus("in");
+  }, []);
+
+  const setup = useCallback(async (input: SetupInput) => {
+    const u = await api<User>("/setup", { method: "POST", body: input });
     setUser(u);
     setStatus("in");
   }, []);
@@ -41,7 +53,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ status, user, isAdmin: user?.role === "admin", login, logout }}>
+    <AuthContext.Provider value={{ status, user, isAdmin: user?.role === "admin", login, setup, logout }}>
       {children}
     </AuthContext.Provider>
   );

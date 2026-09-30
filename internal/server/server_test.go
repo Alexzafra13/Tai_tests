@@ -33,7 +33,22 @@ type testEnv struct {
 	content *content.Store
 }
 
+// newTestEnv returns a server with an administrator ("admin",
+// "secret-password") and a user ("ana", "ana-password").
 func newTestEnv(t *testing.T) testEnv {
+	t.Helper()
+	env, us := newBareEnv(t)
+	if _, err := us.EnsureAdmin(context.Background(), "admin", "secret-password"); err != nil {
+		t.Fatal(err)
+	}
+	if _, err := us.Create(context.Background(), users.CreateInput{Username: "ana", Password: "ana-password", Role: users.RoleUser}); err != nil {
+		t.Fatal(err)
+	}
+	return env
+}
+
+// newBareEnv returns a server on a fresh database, as on first start.
+func newBareEnv(t *testing.T) (testEnv, *users.Store) {
 	t.Helper()
 	d, err := db.Open(":memory:")
 	if err != nil {
@@ -49,12 +64,6 @@ func newTestEnv(t *testing.T) testEnv {
 		"manifest.json": {Data: []byte("{}")},
 	}
 	us := users.NewStore(d)
-	if _, err := us.EnsureAdmin(context.Background(), "admin", "secret-password"); err != nil {
-		t.Fatal(err)
-	}
-	if _, err := us.Create(context.Background(), users.CreateInput{Username: "ana", Password: "ana-password", Role: users.RoleUser}); err != nil {
-		t.Fatal(err)
-	}
 	s := New(Deps{
 		Auth:    auth.NewService(d, us, time.Hour),
 		Users:   us,
@@ -65,7 +74,7 @@ func newTestEnv(t *testing.T) testEnv {
 	})
 	ts := httptest.NewServer(s.Handler())
 	t.Cleanup(ts.Close)
-	return testEnv{ts: ts, content: content.NewStore(d)}
+	return testEnv{ts: ts, content: content.NewStore(d)}, us
 }
 
 // newClient returns an HTTP client with its own cookie jar, i.e. its own

@@ -177,8 +177,8 @@ func (s *Store) Update(ctx context.Context, id int64, in UpdateInput) error {
 }
 
 func requireActiveAdmin(ctx context.Context, tx *sql.Tx) error {
-	var n int
-	if err := tx.QueryRowContext(ctx, `SELECT count(*) FROM users WHERE role = 'admin' AND active = 1 AND password_hash <> ''`).Scan(&n); err != nil {
+	n, err := usableAdmins(ctx, tx)
+	if err != nil {
 		return err
 	}
 	if n == 0 {
@@ -239,50 +239,6 @@ func (s *Store) CheckPassword(ctx context.Context, id int64, password string) (b
 		return false, err
 	}
 	return hash != "" && bcrypt.CompareHashAndPassword([]byte(hash), []byte(password)) == nil, nil
-}
-
-// EnsureAdmin makes sure an administrator can log in. On first start it
-// gives the administrator created by the migrations its username and
-// password (or creates one); afterwards it does nothing, and accounts are
-// managed from the app.
-func (s *Store) EnsureAdmin(ctx context.Context, username, password string) (bool, error) {
-	var usable int
-	if err := s.db.QueryRowContext(ctx, `SELECT count(*) FROM users WHERE role = 'admin' AND active = 1 AND password_hash <> ''`).Scan(&usable); err != nil {
-		return false, err
-	}
-	if usable > 0 {
-		return false, nil
-	}
-	if password == "" {
-		return false, errors.New("no administrator can log in: set TAI_ADMIN_PASSWORD for the first start")
-	}
-	username = normalizeUsername(username)
-	if username == "" {
-		username = "admin"
-	}
-
-	var placeholder int64
-	err := s.db.QueryRowContext(ctx, `SELECT id FROM users WHERE role = 'admin' ORDER BY id LIMIT 1`).Scan(&placeholder)
-	if errors.Is(err, sql.ErrNoRows) {
-		_, err := s.Create(ctx, CreateInput{Username: username, Password: password, Role: RoleAdmin})
-		return err == nil, err
-	} else if err != nil {
-		return false, err
-	}
-
-	v := validate.Errors{}
-	if !usernamePattern.MatchString(username) {
-		v["username"] = "TAI_ADMIN_USER no es un nombre de usuario válido"
-	}
-	validatePassword(v, "password", password)
-	if err := v.Err(); err != nil {
-		return false, err
-	}
-	if _, err := s.db.ExecContext(ctx, `UPDATE users SET username = ?, active = 1, updated_at = ? WHERE id = ?`,
-		username, s.timestamp(), placeholder); err != nil {
-		return false, err
-	}
-	return true, s.SetPassword(ctx, placeholder, password)
 }
 
 func hashPassword(password string) (string, error) {

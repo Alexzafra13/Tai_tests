@@ -83,6 +83,7 @@ var errorResponses = []struct {
 	{quiz.ErrNoQuestions, http.StatusUnprocessableEntity, "No hay preguntas publicadas con esos filtros"},
 	{users.ErrNotFound, http.StatusNotFound, "Usuario no encontrado"},
 	{users.ErrLastAdmin, http.StatusConflict, "Tiene que quedar al menos un administrador activo"},
+	{users.ErrAlreadySetUp, http.StatusConflict, "La aplicación ya está configurada: inicia sesión"},
 	{auth.ErrBadCredentials, http.StatusUnauthorized, "Usuario o contraseña incorrectos"},
 	{auth.ErrRateLimited, http.StatusTooManyRequests, "Demasiados intentos fallidos. Espera unos minutos."},
 }

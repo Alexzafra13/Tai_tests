@@ -12,6 +12,8 @@ func (s *Server) routes(mux *http.ServeMux) {
 	mux.HandleFunc("GET /api/health", s.handleHealth)
 	mux.HandleFunc("POST /api/auth/login", s.handleLogin)
 	mux.HandleFunc("POST /api/auth/logout", s.handleLogout)
+	mux.HandleFunc("GET /api/setup", s.handleSetupStatus)
+	mux.HandleFunc("POST /api/setup", s.handleSetup)
 
 	// Any logged-in user: their account, studying and reporting doubts.
 	mux.Handle("GET /api/auth/me", user(s.handleMe))
