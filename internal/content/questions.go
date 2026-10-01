@@ -344,7 +344,7 @@ type QuestionFilter struct {
 	TopicID  int64
 	BlockID  int64
 	Reported *bool  // with (or without) open doubt reports
-	Text     string // substring match on stem and options; FTS5 search comes later
+	Text     string // words to find in stem, options, explanation or reference (see ftsQuery)
 	Limit    int
 	Offset   int
 }
@@ -387,13 +387,9 @@ func (s *Store) ListQuestions(ctx context.Context, f QuestionFilter) (QuestionPa
 		}
 		where = append(where, cond)
 	}
-	if t := strings.TrimSpace(f.Text); t != "" {
-		like := "%" + escapeLike(t) + "%"
-		where = append(where, `(q.stem LIKE ? ESCAPE '\' OR q.option_a LIKE ? ESCAPE '\' OR q.option_b LIKE ? ESCAPE '\'
-			OR q.option_c LIKE ? ESCAPE '\' OR q.option_d LIKE ? ESCAPE '\' OR q.source_ref LIKE ? ESCAPE '\')`)
-		for range 6 {
-			args = append(args, like)
-		}
+	if match := ftsQuery(f.Text); match != "" {
+		where = append(where, matchesText)
+		args = append(args, match)
 	}
 	cond := ""
 	if len(where) > 0 {
@@ -465,8 +461,4 @@ func (s *Store) topicIDs(ctx context.Context, questionIDs []int64) (map[int64][]
 		out[qid] = append(out[qid], tid)
 	}
 	return out, rows.Err()
-}
-
-func escapeLike(s string) string {
-	return strings.NewReplacer(`\`, `\\`, `%`, `\%`, `_`, `\_`).Replace(s)
 }

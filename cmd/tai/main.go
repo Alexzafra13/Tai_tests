@@ -18,6 +18,8 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/quiz"
 	"github.com/alexzafra13/tai_tests/internal/server"
 	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/srs"
+	"github.com/alexzafra13/tai_tests/internal/stats"
 	"github.com/alexzafra13/tai_tests/internal/users"
 	"github.com/alexzafra13/tai_tests/web"
 )
@@ -131,11 +133,14 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 		log.Info("first start: open the app in a browser to create the administrator account", "addr", cfg.Addr)
 	}
 
+	sr := srs.NewStore(d)
 	srv := server.New(server.Deps{
 		Auth:         auth.NewService(d, us, cfg.SessionTTL),
 		Users:        us,
 		Content:      content.NewStore(d),
-		Quiz:         quiz.NewStore(d, settings.NewStore(d)),
+		Quiz:         quiz.NewStore(d, settings.NewStore(d), sr),
+		SRS:          sr,
+		Stats:        stats.NewStore(d),
 		CookieSecure: cfg.CookieSecure,
 		Static:       web.Dist(),
 		Log:          log,

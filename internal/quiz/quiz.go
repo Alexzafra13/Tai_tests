@@ -4,9 +4,13 @@
 // Every test belongs to a user; all operations take the user's id and never
 // reach other users' tests.
 //
+// Answers feed the spaced-repetition schedule (package srs), and tests can
+// draw from it: the questions due for review, or the ones last failed.
+//
 // Files: create.go builds tests from filters, session.go answers and
-// finishes them, history.go lists them, score.go and scoring.go compute and
-// configure marks, shuffle.go orders the options.
+// finishes them, review.go feeds the schedule, history.go lists tests,
+// score.go and scoring.go compute and configure marks, shuffle.go orders the
+// options.
 package quiz
 
 import (
@@ -17,6 +21,7 @@ import (
 	"time"
 
 	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/srs"
 )
 
 type Mode string
@@ -49,13 +54,14 @@ var (
 type Store struct {
 	db       *sql.DB
 	settings *settings.Store
+	srs      *srs.Store
 	now      func() time.Time
 	// shuffle orders options; replaced in tests for determinism.
 	shuffle func(n int, swap func(i, j int))
 }
 
-func NewStore(db *sql.DB, st *settings.Store) *Store {
-	return &Store{db: db, settings: st, now: time.Now, shuffle: randomShuffle}
+func NewStore(db *sql.DB, st *settings.Store, sr *srs.Store) *Store {
+	return &Store{db: db, settings: st, srs: sr, now: time.Now, shuffle: randomShuffle}
 }
 
 const timeFormat = "2006-01-02T15:04:05.000Z"

@@ -1,24 +1,43 @@
-import { Link } from "react-router";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router";
+import { errorMessage } from "../api";
 import { useAuth } from "../auth";
+import { ErrorBox } from "../components/Form";
 import { useResource } from "../hooks";
-import type { Page, Question, ReviewCounts, TestSummary } from "../types";
+import type { Page, Question, ReviewCounts, StudySummary, TestFilters, TestSummary } from "../types";
+import { QUICK_COUNT, startPractice } from "./test/start";
 import { TestRow } from "./TestsPage";
-
-const upcoming = [
-  { title: "Repaso", desc: "Repetición espaciada y preguntas falladas" },
-  { title: "Estadísticas", desc: "Aciertos por bloque y tema" },
-];
 
 export function HomePage() {
   const { user, isAdmin } = useAuth();
   const inProgress = useResource<TestSummary[]>("/tests?status=in_progress&limit=3");
   const recent = useResource<TestSummary[]>("/tests?status=finished&limit=3");
+  const study = useResource<StudySummary>("/study/summary");
+  const navigate = useNavigate();
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  // One tap starts a short practice test on what is pending.
+  async function quickTest(filters: Partial<TestFilters>, pending: number) {
+    setBusy(true);
+    setError(null);
+    try {
+      navigate(`/tests/${await startPractice(filters, Math.min(pending, QUICK_COUNT))}`);
+    } catch (err) {
+      setError(errorMessage(err));
+      setBusy(false);
+    }
+  }
+
+  const due = study.data?.review.due ?? 0;
+  const failed = study.data?.failed ?? 0;
 
   return (
     <>
       <h2>Hola, {user?.display_name || user?.username}</h2>
 
       <TestList title="Continuar" tests={inProgress.data} />
+      <ErrorBox message={error} />
 
       <ul className="tiles">
         <li>
@@ -27,13 +46,30 @@ export function HomePage() {
             <span>Práctica o examen</span>
           </Link>
         </li>
-        {upcoming.map((s) => (
-          <li key={s.title} className="card tile disabled">
-            <strong>{s.title}</strong>
-            <span className="muted">{s.desc}</span>
-            <span className="badge">Próximamente</span>
-          </li>
-        ))}
+        <li>
+          <button className="card tile" disabled={busy || due === 0} onClick={() => quickTest({ due: true }, due)}>
+            <strong>Repaso de hoy</strong>
+            <span className="muted">{due > 0 ? `${due} por repasar` : study.data ? "Al día" : "Repetición espaciada"}</span>
+          </button>
+        </li>
+        <li>
+          <button className="card tile" disabled={busy || failed === 0} onClick={() => quickTest({ failed: true }, failed)}>
+            <strong>Falladas</strong>
+            <span className="muted">{failed > 0 ? `${failed} por corregir` : "Ninguna pendiente"}</span>
+          </button>
+        </li>
+        <li>
+          <Link to="/stats" className="card tile">
+            <strong>Estadísticas</strong>
+            <span className="muted">Aciertos por tema y progreso</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/search" className="card tile">
+            <strong>Buscar</strong>
+            <span className="muted">En todas las preguntas</span>
+          </Link>
+        </li>
       </ul>
 
       {isAdmin && <AdminTiles />}

@@ -86,6 +86,8 @@ internal/auth/         login, sesiones y usuario actual de cada petición
 internal/validate/     errores de validación por campo, comunes a todos los paquetes
 internal/content/      temario, fuentes y preguntas con sus reglas de validación
 internal/quiz/         sesiones de test: creación, respuestas, historial, nota y barajado
+internal/srs/          repetición espaciada (FSRS): cuándo repasar cada pregunta
+internal/stats/        estadísticas por usuario: aciertos, temas, progreso diario
 internal/settings/     ajustes del usuario (clave → JSON)
 internal/textmatch/    comprobación de citas literales (normaliza espacios y tipografía)
 internal/server/       API HTTP y servidor de la SPA (routes.go: rutas y permisos)
@@ -101,6 +103,7 @@ Usuarios**.
 | | Administrador | Usuario |
 |---|---|---|
 | Tests, resultados, temario, marcar dudas | ✅ | ✅ |
+| Repaso, falladas, estadísticas, búsqueda | ✅ | ✅ |
 | Cambiar su propia contraseña | ✅ | ✅ |
 | Preguntas, fuentes, revisión | ✅ | ❌ |
 | Reglas de la nota, cuentas de usuario | ✅ | ❌ |
@@ -177,6 +180,26 @@ comandos o del futuro pipeline de IA:
   opciones o la respuesta correcta, sube su número de revisión y cada intento
   guarda la revisión que viste.
 
+## Repaso, falladas, estadísticas y búsqueda
+
+- **Repaso de hoy** (repetición espaciada con FSRS): cada respuesta programa
+  cuándo vuelve a salir esa pregunta. Fallar o dejar en blanco → pronto;
+  acertar → cada vez más tarde; acertar en menos de 5 s → más tarde aún;
+  acertar una pregunta que marcaste como dudosa → antes de lo normal. En
+  inicio, un toque abre un test de práctica con lo que toca hoy (hasta 20).
+- **Falladas:** las preguntas cuya última respuesta fue un fallo. Al
+  acertarlas salen de la lista.
+- Las dos opciones están también en **Nuevo test → Selección**, combinables
+  con temas y origen.
+- **Estadísticas:** respondidas, porcentaje de aciertos, días de estudio,
+  preguntas dominadas (próximo repaso a tres semanas o más), actividad de los
+  últimos 30 días y aciertos por tema, ordenables por temario, por los más
+  flojos o por los más preguntados en exámenes oficiales, con acceso directo
+  a practicar cada tema. Cada usuario ve solo lo suyo.
+- **Buscar:** en enunciados, opciones, explicaciones y referencias de las
+  preguntas publicadas, sin importar tildes («proteccion» encuentra
+  «protección»). La respuesta se oculta hasta pulsar «Ver respuesta».
+
 ## Cola de revisión
 
 La pestaña **Revisión** reúne lo que aún no sale en los tests: borradores
@@ -246,5 +269,5 @@ make build   # compila el frontend y genera bin/tai con todo embebido
 4. ✅ Cola de revisión.
 5. Importador de exámenes del INAP y modo simulacro.
 6. Generación del bloque legal con validación.
-7. FSRS, falladas, estadísticas y búsqueda.
+7. ✅ FSRS, falladas, estadísticas y búsqueda.
 8. Generación del bloque técnico, PWA y pulido.

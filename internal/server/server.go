@@ -2,7 +2,7 @@
 //
 // routes.go is the single table of endpoints and who may call them; the
 // handlers live in one file per area (account, users, content, quiz,
-// review) and share the helpers in respond.go.
+// review, study) and share the helpers in respond.go.
 package server
 
 import (
@@ -15,6 +15,8 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/auth"
 	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/quiz"
+	"github.com/alexzafra13/tai_tests/internal/srs"
+	"github.com/alexzafra13/tai_tests/internal/stats"
 	"github.com/alexzafra13/tai_tests/internal/users"
 )
 
@@ -23,6 +25,8 @@ type Deps struct {
 	Users        *users.Store
 	Content      *content.Store
 	Quiz         *quiz.Store
+	SRS          *srs.Store
+	Stats        *stats.Store
 	CookieSecure bool
 	Static       fs.FS
 	Log          *slog.Logger
@@ -33,6 +37,8 @@ type Server struct {
 	users        *users.Store
 	content      *content.Store
 	quiz         *quiz.Store
+	srs          *srs.Store
+	stats        *stats.Store
 	cookieSecure bool
 	static       fs.FS
 	log          *slog.Logger
@@ -44,6 +50,8 @@ func New(d Deps) *Server {
 		users:        d.Users,
 		content:      d.Content,
 		quiz:         d.Quiz,
+		srs:          d.SRS,
+		stats:        d.Stats,
 		cookieSecure: d.CookieSecure,
 		static:       d.Static,
 		log:          d.Log,

@@ -16,13 +16,12 @@ import {
 } from "../types";
 import { ErrorBox, Field } from "../components/Form";
 import { TopicPicker } from "../components/TopicPicker";
+import { emptyFilters } from "./test/start";
 
 const STORAGE_KEY = "tai.newTest";
 const countPresets = [10, 25, 50, 100];
 // The real exam allows about 1.2 minutes per question (100 in 120 min).
 const minutesFor = (count: number) => Math.max(1, Math.round(count * 1.2));
-
-const emptyFilters: TestFilters = { topic_ids: [], block_ids: [], source_ids: [], origins: [], question_ids: [] };
 
 const defaults: CreateTestInput = {
   mode: "practice",
@@ -32,13 +31,25 @@ const defaults: CreateTestInput = {
   time_limit_min: minutesFor(25),
 };
 
-// The last configuration is remembered on this device only. Returns null
-// when there is none, so the scoring defaults from the settings apply.
+// Which questions to draw from, on top of the other filters. Maps to the
+// due/failed filters; ?set=due|failed preselects one.
+type Selection = "all" | "due" | "failed";
+const selectionLabel: Record<Selection, string> = { all: "Todas", due: "Repaso de hoy", failed: "Falladas" };
+const selectionHint: Record<Selection, string> = {
+  all: "Preguntas al azar.",
+  due: "Las que te toca repasar hoy según tus respuestas anteriores (repetición espaciada).",
+  failed: "Las que fallaste la última vez que te salieron.",
+};
+const selectionOf = (f: TestFilters): Selection => (f.due ? "due" : f.failed ? "failed" : "all");
+
+// The last configuration is remembered on this device only (without the
+// review selection, which changes every day). Returns null when there is
+// none, so the scoring defaults from the settings apply.
 function loadSaved(): CreateTestInput | null {
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "null");
     if (saved && typeof saved === "object") {
-      return { ...defaults, ...saved, filters: { ...emptyFilters, ...saved.filters, question_ids: [] } };
+      return { ...defaults, ...saved, filters: { ...emptyFilters, ...saved.filters, question_ids: [], due: false, failed: false } };
     }
   } catch {
     // Storage unavailable or corrupt: start from defaults.
@@ -56,7 +67,9 @@ export function NewTestPage() {
   const [form, setForm] = useState<CreateTestInput>(() => {
     const base = saved ?? defaults;
     const topic = Number(params.get("topic"));
-    return topic ? { ...base, filters: { ...emptyFilters, topic_ids: [topic] } } : base;
+    const set = params.get("set");
+    const filters = topic ? { ...emptyFilters, topic_ids: [topic] } : base.filters;
+    return { ...base, filters: { ...filters, due: set === "due", failed: set === "failed" } };
   });
   const scoring = useResource<ScoringSettings>(saved ? null : "/settings/scoring");
   useEffect(() => {
@@ -195,6 +208,21 @@ export function NewTestPage() {
 
       <fieldset>
         <legend>Qué preguntas</legend>
+        <Field label="Selección">
+          <div className="segmented">
+            {(Object.keys(selectionLabel) as Selection[]).map((sel) => (
+              <button
+                key={sel}
+                type="button"
+                className={selectionOf(form.filters) === sel ? "active" : ""}
+                onClick={() => setFilters({ due: sel === "due", failed: sel === "failed" })}
+              >
+                {selectionLabel[sel]}
+              </button>
+            ))}
+          </div>
+        </Field>
+        <p className="hint">{selectionHint[selectionOf(form.filters)]}</p>
         <Field label="Temas" hint="Sin seleccionar = todo el temario">
           {blocks && (
             <TopicPicker

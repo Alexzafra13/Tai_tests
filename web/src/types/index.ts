@@ -3,3 +3,4 @@ export * from "./content";
 export * from "./review";
 export * from "./quiz";
 export * from "./users";
+export * from "./study";

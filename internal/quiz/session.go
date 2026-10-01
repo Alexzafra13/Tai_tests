@@ -273,7 +273,11 @@ func (s *Store) Answer(ctx context.Context, userID, testID int64, in AnswerInput
 		return nil, err
 	}
 	if t.Mode == ModeExam {
+		// Exam answers can still change; they are scheduled on finish.
 		return nil, nil
+	}
+	if err := s.schedule(ctx, userID, questionID, sol.IsCorrect, in.TimeMs); err != nil {
+		return nil, err
 	}
 	sol.TopicIDs, err = s.topicIDs(ctx, questionID)
 	return &sol, err
@@ -320,7 +324,15 @@ func (s *Store) Finish(ctx context.Context, userID, testID int64) (Result, error
 		finishedAt.Format(timeFormat), correct, wrong, blank, r.Ratio, testID); err != nil {
 		return Result{}, err
 	}
-	return r, tx.Commit()
+	if err := tx.Commit(); err != nil {
+		return Result{}, err
+	}
+	if t.Mode == ModeExam {
+		if err := s.scheduleExam(ctx, userID, testID); err != nil {
+			return Result{}, err
+		}
+	}
+	return r, nil
 }
 
 // Abandon closes a test without scoring it. Answers already given are kept
