@@ -1,0 +1,11 @@
+# Build output
+/bin/
+web/node_modules/
+web/dist/*
+!web/dist/.gitkeep
+
+# Local data and secrets
+*.db
+*.db-shm
+*.db-wal
+.env

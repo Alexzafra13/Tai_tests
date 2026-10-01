@@ -1,0 +1,145 @@
+// Command tai is the TAI study app: HTTP server plus content pipeline
+// subcommands.
+package main
+
+import (
+	"context"
+	"database/sql"
+	"fmt"
+	"log/slog"
+	"os"
+	"os/signal"
+	"syscall"
+
+	"github.com/alexzafra13/tai_tests/internal/auth"
+	"github.com/alexzafra13/tai_tests/internal/config"
+	"github.com/alexzafra13/tai_tests/internal/content"
+	"github.com/alexzafra13/tai_tests/internal/db"
+	"github.com/alexzafra13/tai_tests/internal/quiz"
+	"github.com/alexzafra13/tai_tests/internal/server"
+	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/users"
+	"github.com/alexzafra13/tai_tests/web"
+)
+
+// version is set at build time with -ldflags "-X main.version=...".
+var version = "dev"
+
+const usage = `Usage: tai <command>
+
+Commands:
+  serve          Run migrations and start the web server
+  migrate        Apply pending database migrations
+  load-syllabus  Load or update the syllabus from a JSON file
+  add-source     Add a source document (law, technical doc, exam)
+  user           Manage accounts: user list | user add | user passwd
+  version        Print the version
+
+Run "tai <command> -h" for the flags of a command.
+
+Configuration is read from environment variables; see .env.example.
+`
+
+func main() {
+	if len(os.Args) < 2 {
+		fmt.Fprint(os.Stderr, usage)
+		os.Exit(2)
+	}
+
+	log := slog.New(slog.NewTextHandler(os.Stderr, nil))
+	ctx, stop := signal.NotifyContext(context.Background(), os.Interrupt, syscall.SIGTERM)
+	defer stop()
+
+	var err error
+	switch os.Args[1] {
+	case "serve":
+		err = runServe(ctx, log)
+	case "migrate":
+		err = runMigrate(ctx, log)
+	case "load-syllabus":
+		err = runLoadSyllabus(ctx, log, os.Args[2:])
+	case "add-source":
+		err = runAddSource(ctx, log, os.Args[2:])
+	case "user":
+		err = runUser(ctx, log, os.Args[2:])
+	case "version":
+		fmt.Println(version)
+	case "help", "-h", "--help":
+		fmt.Print(usage)
+	default:
+		fmt.Fprintf(os.Stderr, "unknown command %q\n\n%s", os.Args[1], usage)
+		os.Exit(2)
+	}
+	if err != nil {
+		log.Error(os.Args[1]+" failed", "err", err)
+		os.Exit(1)
+	}
+}
+
+func runMigrate(ctx context.Context, log *slog.Logger) error {
+	d, err := openDB(ctx, log)
+	if err != nil {
+		return err
+	}
+	return d.Close()
+}
+
+// openDB loads the config, opens the database and applies pending
+// migrations, so every subcommand works on an up-to-date schema.
+func openDB(ctx context.Context, log *slog.Logger) (*sql.DB, error) {
+	cfg, err := config.Load()
+	if err != nil {
+		return nil, err
+	}
+	d, err := db.Open(cfg.DBPath)
+	if err != nil {
+		return nil, err
+	}
+	applied, err := db.Migrate(ctx, d)
+	for _, name := range applied {
+		log.Info("applied migration", "name", name)
+	}
+	if err != nil {
+		d.Close()
+		return nil, err
+	}
+	return d, nil
+}
+
+func runServe(ctx context.Context, log *slog.Logger) error {
+	cfg, err := config.Load()
+	if err != nil {
+		return err
+	}
+	d, err := openDB(ctx, log)
+	if err != nil {
+		return err
+	}
+	defer d.Close()
+
+	us := users.NewStore(d)
+	created, err := us.EnsureAdmin(ctx, cfg.AdminUser, cfg.AdminPassword)
+	if err != nil {
+		return err
+	}
+	if created {
+		log.Info("administrator created from TAI_ADMIN_USER / TAI_ADMIN_PASSWORD", "username", cfg.AdminUser)
+	}
+	if need, err := us.NeedsSetup(ctx); err != nil {
+		return err
+	} else if need {
+		log.Info("first start: open the app in a browser to create the administrator account", "addr", cfg.Addr)
+	}
+
+	srv := server.New(server.Deps{
+		Auth:         auth.NewService(d, us, cfg.SessionTTL),
+		Users:        us,
+		Content:      content.NewStore(d),
+		Quiz:         quiz.NewStore(d, settings.NewStore(d)),
+		CookieSecure: cfg.CookieSecure,
+		Static:       web.Dist(),
+		Log:          log,
+	})
+	log.Info("starting tai", "version", version, "db", cfg.DBPath)
+	return server.Run(ctx, cfg.Addr, srv.Handler(), log)
+}
