@@ -9,3 +9,6 @@ web/dist/*
 *.db-shm
 *.db-wal
 .env
+
+# Downloaded official documents (exam PDFs, BOE texts)
+/data/raw/
