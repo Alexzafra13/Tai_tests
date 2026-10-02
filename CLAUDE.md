@@ -42,6 +42,10 @@ hace la app; aquí van las reglas para cambiarla.
   (lo completa `vite.config.ts`). Nunca debe cachear `/api`: los datos son
   de cada usuario y tienen que estar al día.
 
+## Cargar contenido
+
+Temario, exámenes del INAP y leyes: sigue `docs/importar-contenido.md`.
+
 ## Comentarios
 
 Solo los necesarios: el porqué, una regla de negocio, una trampa o un
