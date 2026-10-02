@@ -1,6 +1,5 @@
-// Package auth handles login sessions: it checks credentials through the
-// users store, issues session cookies stored in SQLite, and tells request
-// handlers who is calling.
+// Package auth handles login sessions: it checks credentials, stores
+// session tokens (hashed) in SQLite and exposes the current user to handlers.
 package auth
 
 import (
@@ -11,8 +10,9 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"errors"
-	"strings"
 	"time"
+
+	"github.com/alexzafra13/tai_tests/internal/db"
 
 	"github.com/alexzafra13/tai_tests/internal/users"
 )
@@ -24,8 +24,6 @@ var (
 	ErrRateLimited    = errors.New("too many failed attempts")
 	ErrWrongPassword  = errors.New("current password is wrong")
 )
-
-const timeFormat = "2006-01-02T15:04:05.000Z"
 
 type Service struct {
 	db      *sql.DB
@@ -50,7 +48,7 @@ type Session struct {
 // others out.
 func (s *Service) Login(ctx context.Context, username, password string) (Session, error) {
 	now := s.now()
-	key := strings.ToLower(strings.TrimSpace(username))
+	key := users.NormalizeUsername(username)
 	if !s.limiter.allow(key, now) {
 		return Session{}, ErrRateLimited
 	}
@@ -74,11 +72,11 @@ func (s *Service) OpenSession(ctx context.Context, u users.User) (Session, error
 		return Session{}, err
 	}
 	expires := now.Add(s.ttl).UTC()
-	if _, err := s.db.ExecContext(ctx, `DELETE FROM sessions WHERE expires_at <= ?`, now.UTC().Format(timeFormat)); err != nil {
+	if _, err := s.db.ExecContext(ctx, `DELETE FROM sessions WHERE expires_at <= ?`, db.Timestamp(now)); err != nil {
 		return Session{}, err
 	}
 	if _, err := s.db.ExecContext(ctx, `INSERT INTO sessions (token_hash, user_id, expires_at) VALUES (?, ?, ?)`,
-		hashToken(token), u.ID, expires.Format(timeFormat)); err != nil {
+		hashToken(token), u.ID, db.Timestamp(expires)); err != nil {
 		return Session{}, err
 	}
 	return Session{Token: token, Expires: expires, User: u}, nil
@@ -90,14 +88,17 @@ func (s *Service) UserForToken(ctx context.Context, token string) (users.User, b
 	if token == "" {
 		return users.User{}, false, nil
 	}
-	var u users.User
-	err := s.db.QueryRowContext(ctx, `SELECT u.id, u.username, u.display_name, u.role, u.active, u.created_at
-		FROM sessions s JOIN users u ON u.id = s.user_id
-		WHERE s.token_hash = ? AND s.expires_at > ? AND u.active = 1`,
-		hashToken(token), s.now().UTC().Format(timeFormat)).
-		Scan(&u.ID, &u.Username, &u.DisplayName, &u.Role, &u.Active, &u.CreatedAt)
+	var userID int64
+	err := s.db.QueryRowContext(ctx, `SELECT user_id FROM sessions WHERE token_hash = ? AND expires_at > ?`,
+		hashToken(token), db.Timestamp(s.now())).Scan(&userID)
 	if errors.Is(err, sql.ErrNoRows) {
-		return u, false, nil
+		return users.User{}, false, nil
+	} else if err != nil {
+		return users.User{}, false, err
+	}
+	u, err := s.users.Get(ctx, userID)
+	if errors.Is(err, users.ErrNotFound) || (err == nil && !u.Active) {
+		return users.User{}, false, nil
 	}
 	return u, err == nil, err
 }
@@ -144,11 +145,8 @@ func hashToken(token string) string {
 	return hex.EncodeToString(h[:])
 }
 
-// --- Request context ---------------------------------------------------------
-
 type ctxKey struct{}
 
-// WithUser returns a context carrying the authenticated user.
 func WithUser(ctx context.Context, u users.User) context.Context {
 	return context.WithValue(ctx, ctxKey{}, u)
 }

@@ -6,6 +6,8 @@ import (
 	"errors"
 	"time"
 
+	"github.com/alexzafra13/tai_tests/internal/db"
+
 	"github.com/alexzafra13/tai_tests/internal/validate"
 
 	"github.com/alexzafra13/tai_tests/internal/content"
@@ -56,7 +58,6 @@ type Solution struct {
 	TopicIDs    []int64        `json:"topic_ids"`
 }
 
-// testRow is a tests row with the stored counts.
 type testRow struct {
 	Test
 	userID                int64
@@ -81,7 +82,7 @@ func (s *Store) expired(t Test) bool {
 	if t.Deadline == "" {
 		return false
 	}
-	d, err := time.Parse(timeFormat, t.Deadline)
+	d, err := time.Parse(db.TimeFormat, t.Deadline)
 	return err == nil && !s.now().Before(d)
 }
 
@@ -112,7 +113,7 @@ func (s *Store) Get(ctx context.Context, userID, id int64) (Test, error) {
 		r := Score(row.correct, row.wrong, row.blank, t.Penalty, scoring.Scale)
 		t.Result = &r
 	case t.Status == StatusInProgress && t.Deadline != "":
-		if d, err := time.Parse(timeFormat, t.Deadline); err == nil {
+		if d, err := time.Parse(db.TimeFormat, t.Deadline); err == nil {
 			rem := max(0, int(d.Sub(s.now()).Seconds()))
 			t.RemainingSec = &rem
 		}
@@ -169,15 +170,35 @@ func (s *Store) items(ctx context.Context, t Test, userID int64) ([]Item, error)
 	}
 	rows.Close()
 
+	topics, err := s.testTopicIDs(ctx, t.ID)
+	if err != nil {
+		return nil, err
+	}
 	for i := range items {
-		if items[i].Solution == nil {
-			continue
-		}
-		if items[i].Solution.TopicIDs, err = s.topicIDs(ctx, items[i].QuestionID); err != nil {
-			return nil, err
+		if items[i].Solution != nil {
+			items[i].Solution.TopicIDs = append([]int64{}, topics[items[i].QuestionID]...)
 		}
 	}
 	return items, nil
+}
+
+// testTopicIDs returns the topics of every question in a test, in one query.
+func (s *Store) testTopicIDs(ctx context.Context, testID int64) (map[int64][]int64, error) {
+	rows, err := s.db.QueryContext(ctx, `SELECT qt.question_id, qt.topic_id FROM question_topics qt
+		WHERE qt.question_id IN (SELECT question_id FROM attempts WHERE test_id = ?)`, testID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	out := map[int64][]int64{}
+	for rows.Next() {
+		var qid, tid int64
+		if err := rows.Scan(&qid, &tid); err != nil {
+			return nil, err
+		}
+		out[qid] = append(out[qid], tid)
+	}
+	return out, rows.Err()
 }
 
 func (s *Store) topicIDs(ctx context.Context, questionID int64) ([]int64, error) {
@@ -250,6 +271,9 @@ func (s *Store) Answer(ctx context.Context, userID, testID int64, in AnswerInput
 		return nil, ErrAlreadyAnswered
 	}
 
+	// Time on a question is capped at an hour: a test left open overnight
+	// would otherwise count as one very slow answer.
+	spent := max(0, min(in.TimeMs, 3_600_000))
 	order := parseOptionOrder(orderStr)
 	var chosenOrig, isCorrect any
 	answeredAt := ""
@@ -258,7 +282,7 @@ func (s *Store) Answer(ctx context.Context, userID, testID int64, in AnswerInput
 		ok := orig == sol.Correct
 		sol.IsCorrect = &ok
 		chosenOrig, isCorrect = orig, boolInt(ok)
-		answeredAt = s.now().UTC().Format(timeFormat)
+		answeredAt = db.Timestamp(s.now())
 	}
 	sol.Correct = order.toDisplay(sol.Correct)
 
@@ -266,7 +290,7 @@ func (s *Store) Answer(ctx context.Context, userID, testID int64, in AnswerInput
 	// edited since the test was created.
 	if _, err := tx.ExecContext(ctx, `UPDATE attempts SET chosen = ?, is_correct = ?, answered_at = ?, revision = ?,
 			time_ms = time_ms + ? WHERE test_id = ? AND position = ?`,
-		chosenOrig, isCorrect, answeredAt, revision, max(0, min(in.TimeMs, 3_600_000)), testID, in.Position); err != nil {
+		chosenOrig, isCorrect, answeredAt, revision, spent, testID, in.Position); err != nil {
 		return nil, err
 	}
 	if err := tx.Commit(); err != nil {
@@ -276,7 +300,7 @@ func (s *Store) Answer(ctx context.Context, userID, testID int64, in AnswerInput
 		// Exam answers can still change; they are scheduled on finish.
 		return nil, nil
 	}
-	if err := s.schedule(ctx, userID, questionID, sol.IsCorrect, in.TimeMs); err != nil {
+	if err := s.schedule(ctx, userID, questionID, sol.IsCorrect, spent); err != nil {
 		return nil, err
 	}
 	sol.TopicIDs, err = s.topicIDs(ctx, questionID)
@@ -317,11 +341,11 @@ func (s *Store) Finish(ctx context.Context, userID, testID int64) (Result, error
 	finishedAt := s.now().UTC()
 	if s.expired(t.Test) {
 		// Time ran out while away: the test ended at the deadline.
-		finishedAt, _ = time.Parse(timeFormat, t.Deadline)
+		finishedAt, _ = time.Parse(db.TimeFormat, t.Deadline)
 	}
 	if _, err := tx.ExecContext(ctx, `UPDATE tests SET status = 'finished', finished_at = ?, correct = ?, wrong = ?,
 			blank = ?, score = ? WHERE id = ?`,
-		finishedAt.Format(timeFormat), correct, wrong, blank, r.Ratio, testID); err != nil {
+		db.Timestamp(finishedAt), correct, wrong, blank, r.Ratio, testID); err != nil {
 		return Result{}, err
 	}
 	if err := tx.Commit(); err != nil {
@@ -339,7 +363,7 @@ func (s *Store) Finish(ctx context.Context, userID, testID int64) (Result, error
 // as attempts.
 func (s *Store) Abandon(ctx context.Context, userID, testID int64) error {
 	res, err := s.db.ExecContext(ctx, `UPDATE tests SET status = 'abandoned', finished_at = ?
-		WHERE id = ? AND user_id = ? AND status = 'in_progress'`, s.now().UTC().Format(timeFormat), testID, userID)
+		WHERE id = ? AND user_id = ? AND status = 'in_progress'`, db.Timestamp(s.now()), testID, userID)
 	if err != nil {
 		return err
 	}

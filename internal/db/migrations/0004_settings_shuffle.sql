@@ -13,6 +13,6 @@ ALTER TABLE questions ADD COLUMN fixed_order INTEGER NOT NULL DEFAULT 0 CHECK (f
 -- was the original option 2 (C). chosen always stores the original index.
 ALTER TABLE attempts ADD COLUMN option_order TEXT NOT NULL DEFAULT '0123';
 
--- tests.score now stores the net ratio (net / total, at most 1) instead of a
--- 0-10 mark, so the display scale can be changed in the settings.
+-- tests.score changes from a 0-10 mark to the net ratio (net / total, at
+-- most 1), so the display scale can be changed in the settings.
 UPDATE tests SET score = score / 10 WHERE score IS NOT NULL;

@@ -1,13 +1,9 @@
-/* Global styles. Everything is in cascade layers so that, whatever their
-   specificity or bundle order, element defaults (base) never override a
-   component, and page styles always win over shared components:
-
+/* All CSS lives in cascade layers, so precedence depends on the layer, not on
+   specificity or bundle order: base < components < pages.
      base        tokens.css, base.css
      components  layout.css, ui.css, forms.css, components/*.css
      pages       pages/**.css, imported by the page that uses them
-
-   Each file repeats the order statement, so it holds even if a page's CSS
-   is bundled before this file. */
+   Every file repeats the order line in case it is bundled before this one. */
 @layer base, components, pages;
 
 @import "./tokens.css";

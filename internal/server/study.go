@@ -9,7 +9,7 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/stats"
 )
 
-// studySummary is what the home screen needs to suggest what to do next.
+// studySummary is what to study next: the home screen's main cards.
 type studySummary struct {
 	Review srs.Summary `json:"review"`
 	// Failed counts questions whose last answer was wrong.
@@ -24,11 +24,6 @@ func (s *Server) studySummary(r *http.Request) (studySummary, error) {
 	}
 	sum.Failed, err = s.quiz.Available(r.Context(), userID(r), quiz.Filters{Failed: true})
 	return sum, err
-}
-
-func (s *Server) handleStudySummary(w http.ResponseWriter, r *http.Request) {
-	sum, err := s.studySummary(r)
-	s.respond(w, sum, err)
 }
 
 // defaultZone is used when the browser does not send a valid time zone.

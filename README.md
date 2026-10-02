@@ -98,7 +98,7 @@ Con `docker run` el volumen se llama `tai-data` en vez de `tai_tai-data`.
 ```
 cmd/tai/               binario y subcomandos (serve, migrate, version…)
 internal/config/       variables de entorno
-internal/db/           apertura de SQLite y migrador
+internal/db/           apertura de SQLite, migrador, formato de fechas y errores de restricción
 internal/db/migrations/  migraciones SQL versionadas (NNNN_nombre.sql)
 internal/users/        cuentas y roles (admin / usuario), contraseñas con bcrypt
 internal/auth/         login, sesiones y usuario actual de cada petición
@@ -111,6 +111,10 @@ internal/settings/     ajustes del usuario (clave → JSON)
 internal/textmatch/    comprobación de citas literales (normaliza espacios y tipografía)
 internal/server/       API HTTP y servidor de la SPA (routes.go: rutas y permisos)
 web/                   frontend (Vite); web/dist se embebe en el binario
+web/src/styles/        tokens de diseño y estilos comunes (capas CSS: base, components, pages)
+web/src/components/    piezas compartidas (opciones de pregunta, formularios, cita literal…)
+web/src/pages/         una pantalla por fichero o carpeta, con su CSS al lado
+web/src/types/         espejo de los tipos JSON de la API, un fichero por área
 data/                  syllabus.example.json (formato del temario)
 ```
 

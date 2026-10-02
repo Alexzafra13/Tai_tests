@@ -2,7 +2,10 @@ package content
 
 import (
 	"context"
+	"database/sql"
 	"strings"
+
+	"github.com/alexzafra13/tai_tests/internal/db"
 )
 
 // A report is a user's doubt about a question ("I think the answer is
@@ -32,7 +35,7 @@ func (s *Store) SetReport(ctx context.Context, questionID, userID int64, open bo
 		VALUES (?, ?, ?, ?)
 		ON CONFLICT (question_id, user_id) WHERE resolved_at = '' DO UPDATE SET note = excluded.note`,
 		questionID, userID, strings.TrimSpace(note), s.timestamp())
-	if isConstraint(err, "FOREIGN KEY") {
+	if db.IsForeignKey(err) {
 		return ErrNotFound
 	}
 	return err
@@ -70,8 +73,8 @@ func (s *Store) openReports(ctx context.Context, questionIDs []int64) (map[int64
 
 // resolveReports closes the open reports of a question and returns their
 // ids, so the decision can be undone.
-func (s *Store) resolveReports(ctx context.Context, questionID int64) ([]int64, error) {
-	rows, err := s.db.QueryContext(ctx, `UPDATE question_reports SET resolved_at = ?
+func (s *Store) resolveReports(ctx context.Context, tx *sql.Tx, questionID int64) ([]int64, error) {
+	rows, err := tx.QueryContext(ctx, `UPDATE question_reports SET resolved_at = ?
 		WHERE question_id = ? AND resolved_at = '' RETURNING id`, s.timestamp(), questionID)
 	if err != nil {
 		return nil, err

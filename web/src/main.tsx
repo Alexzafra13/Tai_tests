@@ -9,7 +9,7 @@ import { AuthProvider, useAuth } from "./auth";
 import { Layout } from "./Layout";
 import { LoginPage } from "./pages/LoginPage";
 import { SetupPage } from "./pages/SetupPage";
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "./pages/home/HomePage";
 import { QuestionsPage } from "./pages/QuestionsPage";
 import { QuestionEditPage } from "./pages/QuestionEditPage";
 import { SourcesPage } from "./pages/SourcesPage";

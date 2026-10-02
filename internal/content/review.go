@@ -2,6 +2,7 @@ package content
 
 import (
 	"context"
+	"database/sql"
 	"errors"
 
 	"github.com/alexzafra13/tai_tests/internal/textmatch"
@@ -31,7 +32,8 @@ func (k ReviewKind) where() string {
 	}
 }
 
-// ExcerptWindow is how much source text is shown around a quote.
+// ExcerptWindow is how many characters of source text are shown on each side
+// of a quote.
 const ExcerptWindow = 300
 
 type ReviewItem struct {
@@ -142,50 +144,57 @@ func (s *Store) Accept(ctx context.Context, id int64, topicIDs []int64) (ReviewS
 		in.TopicIDs = topicIDs
 	}
 	in.Status = StatusPublished
-	if err := s.UpdateQuestion(ctx, id, in); err != nil {
-		return ReviewState{}, err
-	}
-	resolved, err := s.resolveReports(ctx, id)
-	return ReviewState{Status: q.Status, ResolvedReports: resolved}, err
+	return s.decide(ctx, q, func(tx *sql.Tx) error { return s.updateQuestion(ctx, tx, id, in) })
 }
 
 // Discard takes a question out of tests and of the queue for good, keeping
-// its history, and resolves its reports. Discarded questions also mark
-// content a re-import should not bring back.
+// its history, and resolves its reports.
 func (s *Store) Discard(ctx context.Context, id int64) (ReviewState, error) {
 	q, err := s.Question(ctx, id)
 	if err != nil {
 		return ReviewState{}, err
 	}
-	if err := s.setStatus(ctx, id, StatusDiscarded); err != nil {
-		return ReviewState{}, err
-	}
-	resolved, err := s.resolveReports(ctx, id)
-	return ReviewState{Status: q.Status, ResolvedReports: resolved}, err
+	return s.decide(ctx, q, func(tx *sql.Tx) error { return s.setStatus(ctx, tx, id, StatusDiscarded) })
+}
+
+// decide applies a review decision and resolves the question's reports in
+// one transaction, so a question is never published with its doubts still
+// open (or the reverse).
+func (s *Store) decide(ctx context.Context, q Question, change func(*sql.Tx) error) (ReviewState, error) {
+	st := ReviewState{Status: q.Status}
+	err := s.inTx(ctx, func(tx *sql.Tx) error {
+		if err := change(tx); err != nil {
+			return err
+		}
+		var err error
+		st.ResolvedReports, err = s.resolveReports(ctx, tx, q.ID)
+		return err
+	})
+	return st, err
 }
 
 // RestoreReview undoes a decision: it sets the previous status back and
 // reopens the reports the decision resolved.
 func (s *Store) RestoreReview(ctx context.Context, id int64, st ReviewState) error {
-	if err := s.setStatus(ctx, id, st.Status); err != nil {
-		return err
-	}
-	for _, rid := range st.ResolvedReports {
-		if _, err := s.db.ExecContext(ctx, `UPDATE question_reports SET resolved_at = '' WHERE id = ? AND question_id = ?`,
-			rid, id); err != nil {
+	return s.inTx(ctx, func(tx *sql.Tx) error {
+		if err := s.setStatus(ctx, tx, id, st.Status); err != nil {
 			return err
 		}
-	}
-	return nil
+		for _, rid := range st.ResolvedReports {
+			if _, err := tx.ExecContext(ctx, `UPDATE question_reports SET resolved_at = '' WHERE id = ? AND question_id = ?`,
+				rid, id); err != nil {
+				return err
+			}
+		}
+		return nil
+	})
 }
 
-func (s *Store) setStatus(ctx context.Context, id int64, st Status) error {
-	switch st {
-	case StatusDraft, StatusReviewed, StatusPublished, StatusDiscarded:
-	default:
+func (s *Store) setStatus(ctx context.Context, tx *sql.Tx, id int64, st Status) error {
+	if !st.valid() {
 		return validate.Errors{"status": "Estado no válido"}
 	}
-	res, err := s.db.ExecContext(ctx, `UPDATE questions SET status = ?, updated_at = ? WHERE id = ?`, st, s.timestamp(), id)
+	res, err := tx.ExecContext(ctx, `UPDATE questions SET status = ?, updated_at = ? WHERE id = ?`, st, s.timestamp(), id)
 	if err != nil {
 		return err
 	}

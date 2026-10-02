@@ -12,6 +12,8 @@ import (
 	"time"
 	"unicode/utf8"
 
+	"github.com/alexzafra13/tai_tests/internal/db"
+
 	"golang.org/x/crypto/bcrypt"
 
 	"github.com/alexzafra13/tai_tests/internal/validate"
@@ -57,12 +59,13 @@ func NewStore(db *sql.DB) *Store {
 	return &Store{db: db, now: time.Now}
 }
 
-func (s *Store) timestamp() string { return s.now().UTC().Format("2006-01-02T15:04:05.000Z") }
+func (s *Store) timestamp() string { return db.Timestamp(s.now()) }
 
 const userColumns = `id, username, display_name, role, active, created_at`
 
-func scanUser(row interface{ Scan(...any) error }, u *User) error {
-	return row.Scan(&u.ID, &u.Username, &u.DisplayName, &u.Role, &u.Active, &u.CreatedAt)
+// scanUser reads userColumns into u, then any extra columns into extra.
+func scanUser(row interface{ Scan(...any) error }, u *User, extra ...any) error {
+	return row.Scan(append([]any{&u.ID, &u.Username, &u.DisplayName, &u.Role, &u.Active, &u.CreatedAt}, extra...)...)
 }
 
 func (s *Store) Get(ctx context.Context, id int64) (User, error) {
@@ -77,7 +80,7 @@ func (s *Store) Get(ctx context.Context, id int64) (User, error) {
 func (s *Store) GetByUsername(ctx context.Context, username string) (User, error) {
 	var u User
 	err := scanUser(s.db.QueryRowContext(ctx, `SELECT `+userColumns+` FROM users WHERE username = ?`,
-		normalizeUsername(username)), &u)
+		NormalizeUsername(username)), &u)
 	if errors.Is(err, sql.ErrNoRows) {
 		return u, ErrNotFound
 	}
@@ -108,7 +111,17 @@ type CreateInput struct {
 	Role        Role   `json:"role"`
 }
 
-func normalizeUsername(u string) string { return strings.ToLower(strings.TrimSpace(u)) }
+// NormalizeUsername is the stored form of a username: usernames are
+// case-insensitive and ignore surrounding spaces.
+func NormalizeUsername(u string) string { return strings.ToLower(strings.TrimSpace(u)) }
+
+func validateUsername(v validate.Errors, username string) {
+	if !usernamePattern.MatchString(username) {
+		v["username"] = "Entre 3 y 32 caracteres: letras minúsculas, números, punto, guion o guion bajo"
+	}
+}
+
+func usernameTaken() error { return validate.Errors{"username": "Ya existe un usuario con ese nombre"} }
 
 func validatePassword(v validate.Errors, field, password string) {
 	if utf8.RuneCountInString(password) < MinPasswordLength {
@@ -117,12 +130,10 @@ func validatePassword(v validate.Errors, field, password string) {
 }
 
 func (s *Store) Create(ctx context.Context, in CreateInput) (int64, error) {
-	in.Username = normalizeUsername(in.Username)
+	in.Username = NormalizeUsername(in.Username)
 	in.DisplayName = strings.TrimSpace(in.DisplayName)
 	v := validate.Errors{}
-	if !usernamePattern.MatchString(in.Username) {
-		v["username"] = "Entre 3 y 32 caracteres: letras minúsculas, números, punto, guion o guion bajo"
-	}
+	validateUsername(v, in.Username)
 	if !in.Role.valid() {
 		v["role"] = "Rol no válido"
 	}
@@ -138,8 +149,8 @@ func (s *Store) Create(ctx context.Context, in CreateInput) (int64, error) {
 	var id int64
 	err = s.db.QueryRowContext(ctx, `INSERT INTO users (username, display_name, password_hash, role, created_at, updated_at)
 		VALUES (?, ?, ?, ?, ?, ?) RETURNING id`, in.Username, in.DisplayName, hash, in.Role, now, now).Scan(&id)
-	if err != nil && strings.Contains(err.Error(), "UNIQUE constraint failed") {
-		return 0, validate.Errors{"username": "Ya existe un usuario con ese nombre"}
+	if db.IsUnique(err) {
+		return 0, usernameTaken()
 	}
 	return id, err
 }
@@ -211,12 +222,13 @@ func (s *Store) SetPassword(ctx context.Context, id int64, password string) erro
 // login attempt takes the same time whether or not the account exists.
 var dummyHash, _ = bcrypt.GenerateFromPassword([]byte("timing-equalizer"), bcrypt.DefaultCost)
 
-// Authenticate returns the active user matching the credentials.
+// Authenticate returns the active user matching the credentials. Accounts
+// without a password (the admin row created by migrations) never match.
 func (s *Store) Authenticate(ctx context.Context, username, password string) (User, error) {
 	var u User
 	var hash string
-	err := s.db.QueryRowContext(ctx, `SELECT `+userColumns+`, password_hash FROM users WHERE username = ?`,
-		normalizeUsername(username)).Scan(&u.ID, &u.Username, &u.DisplayName, &u.Role, &u.Active, &u.CreatedAt, &hash)
+	err := scanUser(s.db.QueryRowContext(ctx, `SELECT `+userColumns+`, password_hash FROM users WHERE username = ?`,
+		NormalizeUsername(username)), &u, &hash)
 	if errors.Is(err, sql.ErrNoRows) || (err == nil && hash == "") {
 		bcrypt.CompareHashAndPassword(dummyHash, []byte(password))
 		return User{}, ErrBadCredentials
@@ -229,7 +241,6 @@ func (s *Store) Authenticate(ctx context.Context, username, password string) (Us
 	return u, nil
 }
 
-// CheckPassword reports whether password is the user's current one.
 func (s *Store) CheckPassword(ctx context.Context, id int64, password string) (bool, error) {
 	var hash string
 	err := s.db.QueryRowContext(ctx, `SELECT password_hash FROM users WHERE id = ?`, id).Scan(&hash)

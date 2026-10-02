@@ -7,8 +7,6 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/quiz"
 )
 
-// All test handlers act on the caller's own tests.
-
 func userID(r *http.Request) int64 { return auth.CurrentUser(r.Context()).ID }
 
 func (s *Server) handleListTests(w http.ResponseWriter, r *http.Request) {

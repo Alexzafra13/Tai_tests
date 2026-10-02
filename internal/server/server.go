@@ -1,8 +1,5 @@
-// Package server wires the HTTP API and the embedded single-page app.
-//
-// routes.go is the single table of endpoints and who may call them; the
-// handlers live in one file per area (account, users, content, quiz,
-// review, study) and share the helpers in respond.go.
+// Package server serves the HTTP API and the embedded single-page app.
+// routes.go lists every endpoint and the role it requires.
 package server
 
 import (

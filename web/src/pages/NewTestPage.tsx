@@ -16,6 +16,7 @@ import {
 } from "../types";
 import { ErrorBox, Field } from "../components/Form";
 import { TopicPicker } from "../components/TopicPicker";
+import { loadPref, savePref } from "../storage";
 import { emptyFilters } from "./test/start";
 
 const STORAGE_KEY = "tai.newTest";
@@ -47,12 +48,12 @@ const selectionOf = (f: TestFilters): Selection => (f.due ? "due" : f.failed ? "
 // none, so the scoring defaults from the settings apply.
 function loadSaved(): CreateTestInput | null {
   try {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? "null");
+    const saved = JSON.parse(loadPref(STORAGE_KEY) ?? "null");
     if (saved && typeof saved === "object") {
       return { ...defaults, ...saved, filters: { ...emptyFilters, ...saved.filters, question_ids: [], due: false, failed: false } };
     }
   } catch {
-    // Storage unavailable or corrupt: start from defaults.
+    // Corrupt value: start from defaults.
   }
   return null;
 }
@@ -112,11 +113,7 @@ export function NewTestPage() {
       ...form,
       time_limit_min: form.mode === "exam" && timed ? form.time_limit_min : 0,
     };
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(body));
-    } catch {
-      // Not critical.
-    }
+    savePref(STORAGE_KEY, JSON.stringify(body));
     try {
       const { id } = await api<{ id: number }>("/tests", { method: "POST", body });
       navigate(`/tests/${id}`, { replace: true });

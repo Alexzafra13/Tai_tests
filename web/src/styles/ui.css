@@ -99,16 +99,6 @@
     font-weight: 600;
   }
 
-  .card.primary-tile {
-    background: var(--primary);
-    color: var(--primary-text);
-  }
-
-  .card.primary-tile .muted {
-    color: inherit;
-    opacity: 0.75;
-  }
-
   a.tile:active,
   button.tile:not(:disabled):active,
   a.row:active,

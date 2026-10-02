@@ -1,8 +1,8 @@
 @layer base, components, pages;
 
 @layer pages {
-  /* Runner. While answering, the navigation bar is hidden (focus mode) and
-     the action bar sits at the bottom of the screen. */
+  /* Runner: hide the bottom navigation while answering; the action bar takes
+     its place. */
 
   .app:has(.runner) .bottomnav {
     display: none;

@@ -17,7 +17,8 @@ CREATE TABLE users (
 INSERT INTO users (id, username, role, created_at, updated_at)
 VALUES (1, 'admin', 'admin', strftime('%Y-%m-%dT%H:%M:%fZ', 'now'), strftime('%Y-%m-%dT%H:%M:%fZ', 'now'));
 
--- Sessions now belong to a user; old single-user sessions are dropped (log in again).
+-- Sessions belong to a user; existing single-user sessions are dropped, so
+-- everyone must log in again.
 DROP TABLE sessions;
 CREATE TABLE sessions (
     token_hash TEXT PRIMARY KEY,

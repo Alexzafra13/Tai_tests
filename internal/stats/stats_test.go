@@ -129,13 +129,14 @@ func TestDaysUseLocalTimeZone(t *testing.T) {
 		t.Fatal(err)
 	}
 	s := NewStore(d)
-	// 2 October, 00:30 in Madrid (CEST, UTC+2) is still 1 October in UTC.
 	s.now = func() time.Time { return time.Date(2026, 10, 2, 9, 0, 0, 0, madrid) }
 
 	id, _ := q.Create(ctx, 1, quiz.CreateInput{Mode: quiz.ModePractice, Count: 2})
 	one := 1
 	q.Answer(ctx, 1, id, quiz.AnswerInput{Position: 0, Chosen: &one})
 	q.Answer(ctx, 1, id, quiz.AnswerInput{Position: 1, Chosen: &one})
+	// Madrid is UTC+2 in October: 22:30Z on 1 October is already 2 October
+	// there, while 21:30Z is still 1 October.
 	if _, err := d.Exec(`UPDATE attempts SET answered_at = CASE position
 		WHEN 0 THEN '2026-10-01T22:30:00.000Z' ELSE '2026-10-01T21:30:00.000Z' END`); err != nil {
 		t.Fatal(err)

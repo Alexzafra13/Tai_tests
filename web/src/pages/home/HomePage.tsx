@@ -1,21 +1,14 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router";
-import { errorMessage } from "../api";
-import { useAuth } from "../auth";
-import { ErrorBox } from "../components/Form";
-import { useResource } from "../hooks";
-import {
-  modeLabel,
-  type Page,
-  type Question,
-  type ReviewCounts,
-  type Stats,
-  type TestFilters,
-  type TestSummary,
-  type TopicStats,
-} from "../types";
-import { QUICK_COUNT, startPractice } from "./test/start";
-import { TestRow } from "./TestsPage";
+import { errorMessage } from "../../api";
+import { useAuth } from "../../auth";
+import { ErrorBox } from "../../components/Form";
+import { useResource } from "../../hooks";
+import { modeLabel, type Stats, type TestFilters, type TestSummary } from "../../types";
+import { QUICK_COUNT, startPractice } from "../test/start";
+import { TestRow } from "../TestsPage";
+import { AdminTiles } from "./AdminTiles";
+import { BlockProgress } from "./BlockProgress";
 import "./home.css";
 
 const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -39,7 +32,6 @@ export function HomePage() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // One tap starts a short practice test on what is pending.
   async function quickTest(filters: Partial<TestFilters>, pending: number) {
     setBusy(true);
     setError(null);
@@ -138,47 +130,6 @@ export function HomePage() {
   );
 }
 
-const roman = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
-
-// BlockProgress shows accuracy per syllabus block, a summary of the
-// statistics page.
-function BlockProgress({ topics }: { topics: TopicStats[] }) {
-  const blocks: { id: number; name: string; answered: number; correct: number }[] = [];
-  for (const t of topics) {
-    let b = blocks.find((x) => x.id === t.block_id);
-    if (!b) blocks.push((b = { id: t.block_id, name: t.block_name, answered: 0, correct: 0 }));
-    b.answered += t.answered;
-    b.correct += t.correct;
-  }
-  if (blocks.length === 0) return null;
-
-  return (
-    <section className="home-section">
-      <div className="section-head">
-        <h3>Por bloque</h3>
-        <Link to="/stats" className="small">
-          Ver progreso
-        </Link>
-      </div>
-      <ul className="blocks">
-        {blocks.map((b, i) => {
-          const pct = b.answered > 0 ? Math.round((b.correct / b.answered) * 100) : null;
-          return (
-            <li key={b.id} className="blk">
-              <span className="blk-n">{roman[i] ?? i + 1}</span>
-              <span className="blk-t">{b.name}</span>
-              <span className="blk-p">{pct === null ? "—" : `${pct} %`}</span>
-              <span className="bar" role="img" aria-label={pct === null ? "Sin responder" : `${pct} % de aciertos`}>
-                {pct !== null && <i style={{ width: `${pct}%` }} />}
-              </span>
-            </li>
-          );
-        })}
-      </ul>
-    </section>
-  );
-}
-
 function TestList({ title, tests }: { title: string; tests: TestSummary[] | undefined }) {
   if (!tests || tests.length === 0) return null;
   return (
@@ -195,59 +146,6 @@ function TestList({ title, tests }: { title: string; tests: TestSummary[] | unde
             <TestRow test={t} />
           </li>
         ))}
-      </ul>
-    </section>
-  );
-}
-
-// AdminTiles is only rendered for administrators, so these admin-only
-// endpoints are never requested by other users.
-function AdminTiles() {
-  const review = useResource<ReviewCounts>("/review/counts");
-  const published = useResource<Page<Question>>("/questions?status=published&limit=1");
-
-  let reviewText = "Borradores y dudas";
-  if (review.data) {
-    reviewText =
-      review.data.total === 0 ? "Nada pendiente" : `${review.data.total} pendientes · ${review.data.reported} dudosas`;
-  }
-
-  return (
-    <section className="home-section">
-      <h3>Administración</h3>
-      <ul className="tiles">
-        <li>
-          <Link to="/review" className="card tile">
-            <strong>Revisión</strong>
-            <span className="muted small">{reviewText}</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/questions" className="card tile">
-            <strong>Preguntas</strong>
-            <span className="muted small">
-              {published.data ? `${published.data.total} publicadas` : "Banco de preguntas"}
-            </span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/stats" className="card tile">
-            <strong>Progreso</strong>
-            <span className="muted small">Tus estadísticas</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/search" className="card tile">
-            <strong>Buscar</strong>
-            <span className="muted small">En todas las preguntas</span>
-          </Link>
-        </li>
-        <li>
-          <Link to="/users" className="card tile">
-            <strong>Usuarios</strong>
-            <span className="muted small">Cuentas y permisos</span>
-          </Link>
-        </li>
       </ul>
     </section>
   );

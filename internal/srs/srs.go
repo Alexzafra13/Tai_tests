@@ -1,7 +1,6 @@
-// Package srs schedules spaced repetition with FSRS. Each user has one card
-// per question they have answered; every answer reschedules it. The rating
-// FSRS needs is derived from the answer itself, so studying never asks
-// "how well did you know it?".
+// Package srs schedules spaced repetition with FSRS: one card per user and
+// answered question, rescheduled on every answer. The FSRS rating is derived
+// from the answer (see RatingFor), so the user is never asked to self-grade.
 package srs
 
 import (
@@ -10,6 +9,8 @@ import (
 	"encoding/json"
 	"errors"
 	"time"
+
+	"github.com/alexzafra13/tai_tests/internal/db"
 
 	fsrs "github.com/open-spaced-repetition/go-fsrs/v3"
 )
@@ -24,8 +25,8 @@ const (
 	Easy  = fsrs.Easy
 )
 
-// QuickAnswer is the time under which a correct answer counts as easy.
-const QuickAnswer = 5 * time.Second
+// quickAnswer is the time under which a correct answer counts as easy.
+const quickAnswer = 5 * time.Second
 
 // RatingFor maps an answer to a rating: wrong or blank is Again, correct
 // but reported as doubtful is Hard, correct and quick is Easy, any other
@@ -36,14 +37,12 @@ func RatingFor(correct *bool, spent time.Duration, doubtful bool) Rating {
 		return Again
 	case doubtful:
 		return Hard
-	case spent > 0 && spent < QuickAnswer:
+	case spent > 0 && spent < quickAnswer:
 		return Easy
 	default:
 		return Good
 	}
 }
-
-const timeFormat = "2006-01-02T15:04:05.000Z"
 
 type Store struct {
 	db        *sql.DB
@@ -51,14 +50,14 @@ type Store struct {
 }
 
 func NewStore(db *sql.DB) *Store {
-	return &Store{db: db, scheduler: fsrs.NewFSRS(Parameters())}
+	return &Store{db: db, scheduler: fsrs.NewFSRS(parameters())}
 }
 
 // Parameters are the FSRS defaults with intervals in whole days: the
 // short-term learning steps (minutes) suit flashcards, not test questions,
 // where a failed question can be retried at once from the results. Fuzz
 // spreads due dates so reviews do not pile up on the same day.
-func Parameters() fsrs.Parameters {
+func parameters() fsrs.Parameters {
 	p := fsrs.DefaultParam()
 	p.EnableShortTerm = false
 	p.EnableFuzz = true
@@ -91,8 +90,8 @@ func (s *Store) Record(ctx context.Context, userID, questionID int64, rating Rat
 		VALUES (?, ?, ?, ?, ?, ?, ?, ?)
 		ON CONFLICT (user_id, question_id) DO UPDATE SET due = excluded.due, card = excluded.card, reps = excluded.reps,
 			lapses = excluded.lapses, last_rating = excluded.last_rating, updated_at = excluded.updated_at`,
-		userID, questionID, next.Due.UTC().Format(timeFormat), string(b), next.Reps, next.Lapses, int(rating),
-		at.UTC().Format(timeFormat))
+		userID, questionID, db.Timestamp(next.Due), string(b), next.Reps, next.Lapses, int(rating),
+		db.Timestamp(at))
 	return err
 }
 
@@ -100,7 +99,7 @@ func (s *Store) Record(ctx context.Context, userID, questionID int64, rating Rat
 // whose card is due for the user at the given time, with its arguments.
 func DueCondition(userID int64, now time.Time) (string, []any) {
 	return `q.id IN (SELECT question_id FROM review_cards WHERE user_id = ? AND due <= ?)`,
-		[]any{userID, now.UTC().Format(timeFormat)}
+		[]any{userID, db.Timestamp(now)}
 }
 
 // DueOrder orders questions by how overdue their card is (most first).
@@ -127,7 +126,7 @@ func (s *Store) Summary(ctx context.Context, userID int64, now time.Time) (Summa
 			count(CASE WHEN c.due >= ? THEN 1 END)
 		FROM review_cards c JOIN questions q ON q.id = c.question_id
 		WHERE c.user_id = ? AND q.status = 'published' AND q.annulled = 0`,
-		at.Format(timeFormat), at.Add(21*24*time.Hour).Format(timeFormat), userID).
+		db.Timestamp(at), db.Timestamp(at.Add(21*24*time.Hour)), userID).
 		Scan(&sm.Due, &sm.Tracked, &sm.Mastered)
 	return sm, err
 }

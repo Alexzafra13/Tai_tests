@@ -1,7 +1,11 @@
 @layer base, components, pages;
 
 @layer pages {
-  /* Users */
+  .badge.role-admin {
+    background: color-mix(in srgb, var(--primary) 22%, transparent);
+    color: var(--accent-ink);
+  }
+
   .user-card {
     padding: 0;
   }

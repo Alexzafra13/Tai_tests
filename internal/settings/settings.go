@@ -8,6 +8,8 @@ import (
 	"encoding/json"
 	"errors"
 	"time"
+
+	"github.com/alexzafra13/tai_tests/internal/db"
 )
 
 type Store struct {
@@ -39,6 +41,6 @@ func (s *Store) Set(ctx context.Context, key string, v any) error {
 	}
 	_, err = s.db.ExecContext(ctx, `INSERT INTO settings (key, value, updated_at) VALUES (?, ?, ?)
 		ON CONFLICT (key) DO UPDATE SET value = excluded.value, updated_at = excluded.updated_at`,
-		key, string(raw), s.now().UTC().Format(time.RFC3339))
+		key, string(raw), db.Timestamp(s.now()))
 	return err
 }

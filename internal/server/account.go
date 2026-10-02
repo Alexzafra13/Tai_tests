@@ -75,10 +75,9 @@ func (s *Server) setSessionCookie(w http.ResponseWriter, r *http.Request, token 
 	http.SetCookie(w, c)
 }
 
-// isHTTPS reports whether the browser reached the app over HTTPS, directly
-// or through a proxy (Caddy, Nginx, Tailscale serve...) that says so. Only
-// then is the cookie marked Secure; on plain http on the LAN it would never
-// be sent. A spoofed header can only make the sender's own cookie stricter.
+// isHTTPS decides the cookie's Secure flag: a Secure cookie is never sent over
+// plain http on the LAN. X-Forwarded-Proto covers reverse proxies (Caddy,
+// Nginx); spoofing it only makes the sender's own cookie stricter.
 func isHTTPS(r *http.Request) bool {
 	return r.TLS != nil || strings.EqualFold(r.Header.Get("X-Forwarded-Proto"), "https")
 }

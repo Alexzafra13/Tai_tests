@@ -32,7 +32,6 @@ func (s *Server) routes(mux *http.ServeMux) {
 	mux.Handle("POST /api/tests/{id}/abandon", user(s.handleAbandon))
 	mux.Handle("POST /api/tests/{id}/report", user(s.handleReport))
 
-	mux.Handle("GET /api/study/summary", user(s.handleStudySummary))
 	mux.Handle("GET /api/stats", user(s.handleStats))
 	mux.Handle("GET /api/search", user(s.handleSearch))
 

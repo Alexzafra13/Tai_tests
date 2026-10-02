@@ -20,7 +20,7 @@ import (
 
 type fixture struct {
 	db      *sql.DB
-	user    int64 // the user taking the tests
+	user    int64
 	quiz    *Store
 	content *content.Store
 	topics  []int64 // B1-T01, B1-T02, B2-T01

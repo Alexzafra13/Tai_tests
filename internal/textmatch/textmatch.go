@@ -1,8 +1,6 @@
-// Package textmatch checks that quoted fragments appear literally in a source
-// text. It is the guard behind the "nothing made up" rule: a question's
-// source_quote must be found in its source after normalizing only
-// presentation differences (whitespace and typographic punctuation), never
-// wording or case.
+// Package textmatch checks that a question's source_quote appears literally in
+// its source text ("nothing made up"). Only whitespace and typographic
+// punctuation are normalized, never wording or case.
 package textmatch
 
 import (
@@ -58,7 +56,7 @@ type Excerpt struct {
 	Before string `json:"before"`
 	Match  string `json:"match"`
 	After  string `json:"after"`
-	// Clipped tells whether the context was cut at either end.
+	// ClippedStart and ClippedEnd report whether the context was cut at that end.
 	ClippedStart bool `json:"clipped_start"`
 	ClippedEnd   bool `json:"clipped_end"`
 }
@@ -71,7 +69,7 @@ func Locate(text, quote string, window int) (Excerpt, bool) {
 	if q == "" {
 		return Excerpt{}, false
 	}
-	// Index on runes so the window never splits a character.
+	// Work in rune offsets so the window never splits a character.
 	byteIdx := strings.Index(string(t), q)
 	if byteIdx < 0 {
 		return Excerpt{}, false

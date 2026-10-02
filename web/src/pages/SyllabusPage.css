@@ -1,7 +1,6 @@
 @layer base, components, pages;
 
 @layer pages {
-  /* Syllabus */
   .block {
     margin-bottom: 0.75rem;
   }

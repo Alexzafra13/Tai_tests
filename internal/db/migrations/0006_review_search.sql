@@ -17,8 +17,7 @@ CREATE INDEX review_cards_due ON review_cards (user_id, due);
 
 -- Full-text search over questions, accent-insensitive ("proteccion" finds
 -- "protección"). Kept in sync by triggers; rowid is the question id.
--- Note: a migration that rebuilds the questions table must recreate these
--- triggers.
+-- A migration that rebuilds the questions table must recreate these triggers.
 CREATE VIRTUAL TABLE questions_fts USING fts5(
     stem, options, explanation, source_ref,
     tokenize = 'unicode61 remove_diacritics 2'

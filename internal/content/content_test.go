@@ -66,7 +66,7 @@ func TestSyllabusReloadKeepsIDsAndDeactivates(t *testing.T) {
 	}
 	firstID := before[0].Topics[0].ID
 
-	// New call: topic B1-T02 disappears, B1-T01 is renamed.
+	// Syllabus of a later exam call: B1-T02 is dropped and B1-T01 renamed.
 	f, err := ParseSyllabus(strings.NewReader(`{"name":"v2","reference":"","blocks":[
 		{"code":"B1","name":"Bloque uno","topics":[{"code":"B1-T01","number":1,"title":"Tema uno (nuevo)"}]},
 		{"code":"B2","name":"Bloque dos","topics":[{"code":"B2-T01","number":1,"title":"Tema tres"}]}]}`))

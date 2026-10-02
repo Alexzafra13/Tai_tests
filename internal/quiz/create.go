@@ -7,6 +7,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/alexzafra13/tai_tests/internal/db"
+
 	"github.com/alexzafra13/tai_tests/internal/validate"
 
 	"github.com/alexzafra13/tai_tests/internal/content"
@@ -189,12 +191,12 @@ func (s *Store) Create(ctx context.Context, userID int64, in CreateInput) (int64
 	now := s.now().UTC()
 	deadline := ""
 	if in.TimeLimitMin > 0 {
-		deadline = now.Add(time.Duration(in.TimeLimitMin) * time.Minute).Format(timeFormat)
+		deadline = db.Timestamp(now.Add(time.Duration(in.TimeLimitMin) * time.Minute))
 	}
 	var id int64
 	err = tx.QueryRowContext(ctx, `INSERT INTO tests (user_id, mode, config, penalty, time_limit, started_at, deadline)
 		VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id`,
-		userID, in.Mode, string(config), in.Penalty, in.TimeLimitMin*60, now.Format(timeFormat), deadline).Scan(&id)
+		userID, in.Mode, string(config), in.Penalty, in.TimeLimitMin*60, db.Timestamp(now), deadline).Scan(&id)
 	if err != nil {
 		return 0, err
 	}

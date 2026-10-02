@@ -9,14 +9,9 @@ func TestStudyEndpoints(t *testing.T) {
 	ts, c := newTestServer(t)
 	login(t, c, ts.URL)
 
-	var sum struct {
-		Review struct{ Due, Tracked int }
-		Failed int
-	}
-	if status := doJSON(t, c, "GET", ts.URL+"/api/study/summary", nil, &sum); status != http.StatusOK || sum.Review.Tracked != 0 {
-		t.Fatalf("summary: %d %+v", status, sum)
-	}
 	var st struct {
+		Review   struct{ Due, Tracked int }
+		Failed   int
 		Overview struct{ Answered int }
 		Timeline []struct{ Date string }
 		Topics   []any

@@ -8,15 +8,14 @@ import (
 
 const scoringKey = "scoring"
 
-// ScoringSettings are the user's scoring rules.
 type ScoringSettings struct {
 	Scale
 	// DefaultPenalty pre-fills the penalty when creating a test.
 	DefaultPenalty float64 `json:"default_penalty"`
 }
 
-// DefaultScoring is provisional until checked against the bases of the
-// call: points out of 100, pass mark at half, and -1/3 per wrong answer.
+// DefaultScoring is provisional until checked against the official exam
+// rules: 100 points, pass mark 50, each wrong answer costs 1/3 of a right one.
 var DefaultScoring = ScoringSettings{
 	Scale:          Scale{Max: 100, PassMark: 50},
 	DefaultPenalty: 1.0 / 3,

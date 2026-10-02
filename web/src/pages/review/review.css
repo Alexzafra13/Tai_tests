@@ -1,7 +1,6 @@
 @layer base, components, pages;
 
 @layer pages {
-  /* Review */
   .review-card {
     display: grid;
     gap: 0.75rem;

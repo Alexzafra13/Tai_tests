@@ -2,9 +2,9 @@ package quiz
 
 import "math"
 
-// Scale expresses scores the way the call does, e.g. out of 100 points with
-// a pass mark. It only changes how results are shown: tests store the net
-// ratio, so changing the scale re-expresses past results too.
+// Scale is how the official exam expresses marks, e.g. out of 100 with a
+// pass mark of 50. Tests store only the ratio, so changing the scale also
+// re-expresses past results.
 type Scale struct {
 	Max      float64 `json:"max"`
 	PassMark float64 `json:"pass_mark"`
