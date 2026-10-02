@@ -1,4 +1,4 @@
-# TAI · Estudio
+# TAI Go
 
 Aplicación web para preparar la oposición de **Técnico Auxiliar de
 Informática de la Administración del Estado (TAI, C1)**, con administradores y

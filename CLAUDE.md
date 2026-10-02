@@ -1,4 +1,4 @@
-# TAI · Estudio — guía para trabajar en el repo
+# TAI Go — guía para trabajar en el repo
 
 App web para preparar la oposición TAI (C1). Go + SQLite en el servidor,
 React + TypeScript en el cliente, todo en un binario. El README explica qué

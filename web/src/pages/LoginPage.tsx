@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import { useAuth } from "../auth";
 import { errorMessage } from "../api";
 import "./auth.css";
+import { Brand } from "../components/Brand";
 
 export function LoginPage() {
   const { login } = useAuth();
@@ -26,7 +27,7 @@ export function LoginPage() {
     <div className="center">
       <form className="card login" onSubmit={onSubmit}>
         <h1 className="login-brand">
-          TAI<span>Estudio</span>
+          <Brand large />
         </h1>
         <p className="muted login-tag">Tu repaso diario para la oposición.</p>
         <label htmlFor="username">Usuario</label>
