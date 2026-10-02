@@ -6,25 +6,24 @@ generales del proyecto están en `CLAUDE.md`.
 
 ## Dónde trabajar
 
-**Claude Code en tu PC**, dentro de una copia del repositorio. Así tiene
-internet sin restricciones (INAP, BOE), puede descargar los PDF y deja todo
-en tu disco.
+**Recomendado: Claude Code en la web** (claude.ai/code), en este mismo
+repositorio. No hay que instalar nada: el entorno ya trae Go, Node y git, y
+la sesión instala `pdftotext` sola (`apt-get install -y poppler-utils`).
 
-Requisitos: `git`, Go 1.26+, Node 22+ y `pdftotext` (paquete *poppler*):
+Lo único que hace falta, una vez: permitir en la red del entorno los
+dominios del BOE y del INAP. En la sesión, menú del entorno en la barra de
+título → **Edit** → **Network access**, y añadir a los dominios permitidos:
 
-- macOS: `brew install poppler`
-- Ubuntu/Debian o WSL: `sudo apt install poppler-utils`
-- Windows sin WSL: pide a Claude Code que lo instale o usa WSL.
-
-```sh
-git clone https://github.com/Alexzafra13/Tai_tests.git
-cd Tai_tests
-git checkout -b contenido-real
-claude
+```
+boe.es
+www.boe.es
+sede.inap.gob.es
+www.inap.es
 ```
 
-Si prefieres Claude Code en la web, el entorno necesita red hacia `boe.es`,
-`www.boe.es`, `sede.inap.gob.es` y `www.inap.es`.
+Alternativa: Claude Code en tu PC, en una copia del repositorio. Necesita
+`git`, Go 1.26+, Node 22+ y `pdftotext` (macOS: `brew install poppler`;
+Ubuntu/WSL: `sudo apt install poppler-utils`).
 
 ## Reglas de esta tarea
 
