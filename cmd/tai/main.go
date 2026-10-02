@@ -10,7 +10,8 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-	// Time zone data inside the binary, so TAI_TZ works on minimal images.
+
+	// Time zone data inside the binary: statistics use each browser's zone.
 	_ "time/tzdata"
 
 	"github.com/alexzafra13/tai_tests/internal/auth"
@@ -41,7 +42,8 @@ Commands:
 
 Run "tai <command> -h" for the flags of a command.
 
-Configuration is read from environment variables; see .env.example.
+Nothing needs configuring. Optional environment variables: TAI_ADDR,
+TAI_DB_PATH, TAI_SESSION_TTL, TAI_ADMIN_USER and TAI_ADMIN_PASSWORD.
 `
 
 func main() {
@@ -137,15 +139,14 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 
 	sr := srs.NewStore(d)
 	srv := server.New(server.Deps{
-		Auth:         auth.NewService(d, us, cfg.SessionTTL),
-		Users:        us,
-		Content:      content.NewStore(d),
-		Quiz:         quiz.NewStore(d, settings.NewStore(d), sr),
-		SRS:          sr,
-		Stats:        stats.NewStore(d, cfg.Location),
-		CookieSecure: cfg.CookieSecure,
-		Static:       web.Dist(),
-		Log:          log,
+		Auth:    auth.NewService(d, us, cfg.SessionTTL),
+		Users:   us,
+		Content: content.NewStore(d),
+		Quiz:    quiz.NewStore(d, settings.NewStore(d), sr),
+		SRS:     sr,
+		Stats:   stats.NewStore(d),
+		Static:  web.Dist(),
+		Log:     log,
 	})
 	log.Info("starting tai", "version", version, "db", cfg.DBPath)
 	return server.Run(ctx, cfg.Addr, srv.Handler(), log)

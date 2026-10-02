@@ -46,7 +46,7 @@ func setup(t *testing.T) (*sql.DB, *quiz.Store, *Store, []int64) {
 			t.Fatal(err)
 		}
 	}
-	return d, quiz.NewStore(d, settings.NewStore(d), srs.NewStore(d)), NewStore(d, time.UTC), topics
+	return d, quiz.NewStore(d, settings.NewStore(d), srs.NewStore(d)), NewStore(d), topics
 }
 
 func TestOverviewAndTopics(t *testing.T) {
@@ -68,7 +68,7 @@ func TestOverviewAndTopics(t *testing.T) {
 	eid, _ := q.Create(ctx, user, quiz.CreateInput{Mode: quiz.ModeExam, Count: 1, Filters: quiz.Filters{TopicIDs: []int64{topics[1]}}})
 	q.Finish(ctx, user, eid)
 
-	o, err := s.Overview(ctx, user)
+	o, err := s.Overview(ctx, user, time.UTC)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -91,7 +91,7 @@ func TestOverviewAndTopics(t *testing.T) {
 	}
 
 	// Another user has no results.
-	if o, _ := s.Overview(ctx, 2); o.Answered != 0 {
+	if o, _ := s.Overview(ctx, 2, time.UTC); o.Answered != 0 {
 		t.Errorf("other user's overview = %+v", o)
 	}
 }
@@ -105,7 +105,7 @@ func TestTimelineHasEveryDay(t *testing.T) {
 	one := 1
 	q.Answer(ctx, 1, id, quiz.AnswerInput{Position: 0, Chosen: &one})
 
-	days, err := s.Timeline(ctx, 1, 7)
+	days, err := s.Timeline(ctx, 1, 7, time.UTC)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -128,7 +128,7 @@ func TestDaysUseLocalTimeZone(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	s := NewStore(d, madrid)
+	s := NewStore(d)
 	// 2 October, 00:30 in Madrid (CEST, UTC+2) is still 1 October in UTC.
 	s.now = func() time.Time { return time.Date(2026, 10, 2, 9, 0, 0, 0, madrid) }
 
@@ -141,7 +141,7 @@ func TestDaysUseLocalTimeZone(t *testing.T) {
 		t.Fatal(err)
 	}
 
-	days, err := s.Timeline(ctx, 1, 2)
+	days, err := s.Timeline(ctx, 1, 2, madrid)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -149,7 +149,7 @@ func TestDaysUseLocalTimeZone(t *testing.T) {
 	if len(days) != 2 || days[0] != want[0] || days[1] != want[1] {
 		t.Errorf("timeline = %+v, want %+v", days, want)
 	}
-	if o, _ := s.Overview(ctx, 1); o.StudyDays != 2 {
+	if o, _ := s.Overview(ctx, 1, madrid); o.StudyDays != 2 {
 		t.Errorf("study days = %d, want 2", o.StudyDays)
 	}
 }

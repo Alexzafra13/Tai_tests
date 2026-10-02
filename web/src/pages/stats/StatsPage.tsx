@@ -5,8 +5,11 @@ import { ActivityChart } from "./ActivityChart";
 import { TopicTable } from "./TopicTable";
 import "./stats.css";
 
+// Days are counted in this device's time zone, so nothing has to be set up.
+const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
 export function StatsPage() {
-  const { data, error } = useResource<Stats>("/stats");
+  const { data, error } = useResource<Stats>(`/stats?tz=${encodeURIComponent(zone)}`);
 
   return (
     <>

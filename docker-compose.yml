@@ -1,18 +1,17 @@
 # Start with:  docker compose up -d   then open http://<server>:8080
 # Update with: docker compose pull && docker compose up -d
 #
-# No configuration is required: on first start the app asks you to create
-# the administrator. Optional settings go in a .env file (see .env.example).
+# Nothing to configure: on first start the app asks you to create the
+# administrator, HTTPS behind a proxy and each user's time zone are detected
+# on their own, and everything else is set from the app.
 services:
   tai:
     image: ghcr.io/alexzafra13/tai_tests:latest
     container_name: tai
     restart: unless-stopped
-    env_file:
-      - path: .env
-        required: false
     ports:
-      - "${TAI_PORT:-8080}:8080"
+      # To use another port change the first number, e.g. "9000:8080".
+      - "8080:8080"
     volumes:
       - tai-data:/data
 

@@ -9,19 +9,16 @@ import (
 	"time"
 )
 
-// Store reads statistics. Days are calendar days in loc, so an answer at
-// 23:30 in Madrid counts for that day, not for the next one in UTC.
+// Store reads statistics. Days are calendar days in the caller's time zone
+// (the browser's), so an answer at 23:30 in Madrid counts for that day, not
+// for the next one in UTC.
 type Store struct {
 	db  *sql.DB
-	loc *time.Location
 	now func() time.Time
 }
 
-func NewStore(db *sql.DB, loc *time.Location) *Store {
-	if loc == nil {
-		loc = time.UTC
-	}
-	return &Store{db: db, loc: loc, now: time.Now}
+func NewStore(db *sql.DB) *Store {
+	return &Store{db: db, now: time.Now}
 }
 
 const dateFormat = "2006-01-02"
@@ -47,7 +44,7 @@ type Overview struct {
 	StudyDays int `json:"study_days"`
 }
 
-func (s *Store) Overview(ctx context.Context, userID int64) (Overview, error) {
+func (s *Store) Overview(ctx context.Context, userID int64, loc *time.Location) (Overview, error) {
 	var o Overview
 	err := s.db.QueryRowContext(ctx, `SELECT count(*),
 			count(CASE WHEN a.is_correct = 1 THEN 1 END),
@@ -62,7 +59,7 @@ func (s *Store) Overview(ctx context.Context, userID int64) (Overview, error) {
 	if err != nil {
 		return o, err
 	}
-	days, err := s.days(ctx, userID, time.Time{})
+	days, err := s.days(ctx, userID, time.Time{}, loc)
 	o.StudyDays = len(days)
 	return o, err
 }
@@ -116,7 +113,7 @@ func (s *Store) Topics(ctx context.Context, userID int64) ([]TopicStats, error) 
 	return out, rows.Err()
 }
 
-// Day is the user's activity on one calendar day in the store's time zone.
+// Day is the user's activity on one calendar day.
 type Day struct {
 	Date     string `json:"date"` // YYYY-MM-DD
 	Answered int    `json:"answered"`
@@ -125,15 +122,15 @@ type Day struct {
 
 // Timeline returns one entry per day for the last days days, oldest first,
 // including days without activity so charts have a continuous axis.
-func (s *Store) Timeline(ctx context.Context, userID int64, days int) ([]Day, error) {
+func (s *Store) Timeline(ctx context.Context, userID int64, days int, loc *time.Location) ([]Day, error) {
 	if days <= 0 || days > 365 {
 		days = 30
 	}
-	now := s.now().In(s.loc)
-	today := time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, s.loc)
+	now := s.now().In(loc)
+	today := time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, loc)
 	from := today.AddDate(0, 0, -(days - 1))
 
-	byDay, err := s.days(ctx, userID, from)
+	byDay, err := s.days(ctx, userID, from, loc)
 	if err != nil {
 		return nil, err
 	}
@@ -146,9 +143,9 @@ func (s *Store) Timeline(ctx context.Context, userID int64, days int) ([]Day, er
 	return out, nil
 }
 
-// days returns the user's activity per local day since from (the zero time
-// for all of it), keyed by date.
-func (s *Store) days(ctx context.Context, userID int64, from time.Time) (map[string]Day, error) {
+// days returns the user's activity per day in loc since from (the zero
+// time for all of it), keyed by date.
+func (s *Store) days(ctx context.Context, userID int64, from time.Time, loc *time.Location) (map[string]Day, error) {
 	fromHour := ""
 	if !from.IsZero() {
 		fromHour = from.UTC().Format("2006-01-02T15")
@@ -172,7 +169,7 @@ func (s *Store) days(ctx context.Context, userID int64, from time.Time) (map[str
 		if err != nil {
 			return nil, err
 		}
-		key := t.In(s.loc).Format(dateFormat)
+		key := t.In(loc).Format(dateFormat)
 		d := out[key]
 		d.Answered += answered
 		d.Correct += correct

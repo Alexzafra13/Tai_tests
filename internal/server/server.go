@@ -21,40 +21,37 @@ import (
 )
 
 type Deps struct {
-	Auth         *auth.Service
-	Users        *users.Store
-	Content      *content.Store
-	Quiz         *quiz.Store
-	SRS          *srs.Store
-	Stats        *stats.Store
-	CookieSecure bool
-	Static       fs.FS
-	Log          *slog.Logger
+	Auth    *auth.Service
+	Users   *users.Store
+	Content *content.Store
+	Quiz    *quiz.Store
+	SRS     *srs.Store
+	Stats   *stats.Store
+	Static  fs.FS
+	Log     *slog.Logger
 }
 
 type Server struct {
-	auth         *auth.Service
-	users        *users.Store
-	content      *content.Store
-	quiz         *quiz.Store
-	srs          *srs.Store
-	stats        *stats.Store
-	cookieSecure bool
-	static       fs.FS
-	log          *slog.Logger
+	auth    *auth.Service
+	users   *users.Store
+	content *content.Store
+	quiz    *quiz.Store
+	srs     *srs.Store
+	stats   *stats.Store
+	static  fs.FS
+	log     *slog.Logger
 }
 
 func New(d Deps) *Server {
 	return &Server{
-		auth:         d.Auth,
-		users:        d.Users,
-		content:      d.Content,
-		quiz:         d.Quiz,
-		srs:          d.SRS,
-		stats:        d.Stats,
-		cookieSecure: d.CookieSecure,
-		static:       d.Static,
-		log:          d.Log,
+		auth:    d.Auth,
+		users:   d.Users,
+		content: d.Content,
+		quiz:    d.Quiz,
+		srs:     d.SRS,
+		stats:   d.Stats,
+		static:  d.Static,
+		log:     d.Log,
 	}
 }
 

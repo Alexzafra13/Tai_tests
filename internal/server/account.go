@@ -2,6 +2,7 @@ package server
 
 import (
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/alexzafra13/tai_tests/internal/auth"
@@ -25,7 +26,7 @@ func (s *Server) handleLogin(w http.ResponseWriter, r *http.Request) {
 		s.writeErr(w, err)
 		return
 	}
-	s.setSessionCookie(w, sess.Token, sess.Expires)
+	s.setSessionCookie(w, r, sess.Token, sess.Expires)
 	writeJSON(w, http.StatusOK, sess.User)
 }
 
@@ -36,7 +37,7 @@ func (s *Server) handleLogout(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	s.setSessionCookie(w, "", time.Time{})
+	s.setSessionCookie(w, r, "", time.Time{})
 	w.WriteHeader(http.StatusNoContent)
 }
 
@@ -58,20 +59,28 @@ func (s *Server) handleChangePassword(w http.ResponseWriter, r *http.Request) {
 }
 
 // setSessionCookie sets the session cookie, or clears it when token is empty.
-func (s *Server) setSessionCookie(w http.ResponseWriter, token string, expires time.Time) {
+func (s *Server) setSessionCookie(w http.ResponseWriter, r *http.Request, token string, expires time.Time) {
 	c := &http.Cookie{
 		Name:     auth.CookieName,
 		Value:    token,
 		Path:     "/",
 		Expires:  expires,
 		HttpOnly: true,
-		Secure:   s.cookieSecure,
+		Secure:   isHTTPS(r),
 		SameSite: http.SameSiteStrictMode,
 	}
 	if token == "" {
 		c.MaxAge = -1
 	}
 	http.SetCookie(w, c)
+}
+
+// isHTTPS reports whether the browser reached the app over HTTPS, directly
+// or through a proxy (Caddy, Nginx, Tailscale serve...) that says so. Only
+// then is the cookie marked Secure; on plain http on the LAN it would never
+// be sent. A spoofed header can only make the sender's own cookie stricter.
+func isHTTPS(r *http.Request) bool {
+	return r.TLS != nil || strings.EqualFold(r.Header.Get("X-Forwarded-Proto"), "https")
 }
 
 // handleSetupStatus tells the app whether to show the first-run setup
@@ -99,6 +108,6 @@ func (s *Server) handleSetup(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	s.log.Info("first administrator created", "username", u.Username)
-	s.setSessionCookie(w, sess.Token, sess.Expires)
+	s.setSessionCookie(w, r, sess.Token, sess.Expires)
 	writeJSON(w, http.StatusOK, u)
 }

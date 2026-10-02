@@ -31,8 +31,33 @@ func (s *Server) handleStudySummary(w http.ResponseWriter, r *http.Request) {
 	s.respond(w, sum, err)
 }
 
+// defaultZone is used when the browser does not send a valid time zone.
+// The app is for a Spanish exam, so Madrid is the sensible guess.
+var defaultZone = mustLoadLocation("Europe/Madrid")
+
+func mustLoadLocation(name string) *time.Location {
+	loc, err := time.LoadLocation(name)
+	if err != nil {
+		panic(err)
+	}
+	return loc
+}
+
+// clientZone is the caller's time zone from ?tz= (the app sends the
+// browser's, e.g. "Atlantic/Canary"), so nothing has to be configured.
+func clientZone(r *http.Request) *time.Location {
+	if name := r.URL.Query().Get("tz"); name != "" {
+		if loc, err := time.LoadLocation(name); err == nil {
+			return loc
+		}
+	}
+	return defaultZone
+}
+
 // handleStats returns everything the statistics page shows, for the caller.
+// Days are calendar days in the caller's time zone.
 func (s *Server) handleStats(w http.ResponseWriter, r *http.Request) {
+	loc := clientZone(r)
 	var out struct {
 		studySummary
 		Overview stats.Overview     `json:"overview"`
@@ -44,7 +69,7 @@ func (s *Server) handleStats(w http.ResponseWriter, r *http.Request) {
 		s.writeErr(w, err)
 		return
 	}
-	if out.Overview, err = s.stats.Overview(r.Context(), userID(r)); err != nil {
+	if out.Overview, err = s.stats.Overview(r.Context(), userID(r), loc); err != nil {
 		s.writeErr(w, err)
 		return
 	}
@@ -52,7 +77,7 @@ func (s *Server) handleStats(w http.ResponseWriter, r *http.Request) {
 		s.writeErr(w, err)
 		return
 	}
-	out.Timeline, err = s.stats.Timeline(r.Context(), userID(r), 30)
+	out.Timeline, err = s.stats.Timeline(r.Context(), userID(r), 30, loc)
 	s.respond(w, out, err)
 }
 
