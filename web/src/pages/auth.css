@@ -1,6 +1,24 @@
 @layer base, components, pages;
 
 @layer pages {
+  .login-brand {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  .login-brand span {
+    margin-left: 0.5rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--muted);
+  }
+
+  .login-tag {
+    margin: 0 0 0.75rem;
+  }
+
   .login {
     width: 100%;
     max-width: 22rem;

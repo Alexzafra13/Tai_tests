@@ -1,48 +1,80 @@
-/* Design tokens: colours, radii and sizes, light and dark. */
+/* Design tokens for the "Lámpara de estudio" look: warm dark by default,
+   a warm paper variant for daylight, amber as the single accent.
+   The theme is html[data-theme] = dark | light | auto (see theme.ts). */
 @layer base, components, pages;
 
 @layer base {
   :root {
-    --bg: #f6f7f9;
-    --surface: #ffffff;
-    --text: #111827;
-    --muted: #6b7280;
-    --border: #e5e7eb;
-    --primary: #1d4ed8;
-    --primary-text: #ffffff;
-    --danger: #b91c1c;
-    --ok: #15803d;
-    --warn-bg: #fef3c7;
-    --warn-text: #92400e;
-    /* Chart series, validated for colour-blind separation on both surfaces. */
-    --series-1: #2a78d6;
-    --series-2: #eb6834;
-    --radius: 12px;
-    --nav-height: 56px;
-    color-scheme: light dark;
-    font-family:
-      system-ui,
-      -apple-system,
-      "Segoe UI",
-      Roboto,
-      sans-serif;
+    --font-ui: "Figtree Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+    /* Reading face: question stems, quotes from the law, headings, big numbers. */
+    --font-read: "Literata Variable", Georgia, "Times New Roman", serif;
+
+    --radius-sm: 10px;
+    --radius: 14px;
+    --radius-lg: 20px;
+    --nav-height: 58px;
+
+    color-scheme: dark;
+    --bg: #111318;
+    --surface: #1a1d24;
+    /* Raised elements on a surface: inputs, chips, secondary buttons. */
+    --surface-2: #232731;
+    --border: #2b2f39;
+    --text: #ece6da;
+    --muted: #9a958b;
+    /* Amber fills (primary buttons, bars) and amber as text on surfaces. */
+    --primary: #f0b03f;
+    --primary-text: #1b1407;
+    --accent-ink: #f0b03f;
+    --ok: #6cc58f;
+    --danger: #f07a6a;
+    --warn-bg: #3a2e16;
+    --warn-text: #f3c669;
+    /* Chart series (validated for colour-blind separation on --surface). */
+    --series-1: #c4861a;
+    --series-2: #7f8fdc;
+
+    font-family: var(--font-ui);
     line-height: 1.5;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0f1115;
-      --surface: #181b21;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --border: #2a2f38;
-      --primary: #3b82f6;
-      --danger: #f87171;
-      --ok: #4ade80;
-      --warn-bg: #422006;
-      --warn-text: #fcd34d;
-      --series-1: #3987e5;
-      --series-2: #d95926;
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #f3eee5;
+    --surface: #fffaf2;
+    --surface-2: #ebe4d6;
+    --border: #e0d6c4;
+    --text: #1f1b16;
+    --muted: #6b6357;
+    --primary: #e9a634;
+    --primary-text: #241806;
+    --accent-ink: #8a5a00;
+    --ok: #2e7d4f;
+    --danger: #b8392b;
+    --warn-bg: #fbe8c2;
+    --warn-text: #74470a;
+    --series-1: #b37400;
+    --series-2: #4a5fc1;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root[data-theme="auto"] {
+      color-scheme: light;
+      --bg: #f3eee5;
+      --surface: #fffaf2;
+      --surface-2: #ebe4d6;
+      --border: #e0d6c4;
+      --text: #1f1b16;
+      --muted: #6b6357;
+      --primary: #e9a634;
+      --primary-text: #241806;
+      --accent-ink: #8a5a00;
+      --ok: #2e7d4f;
+      --danger: #b8392b;
+      --warn-bg: #fbe8c2;
+      --warn-text: #74470a;
+      --series-1: #b37400;
+      --series-2: #4a5fc1;
     }
   }
 }

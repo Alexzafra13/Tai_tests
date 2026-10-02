@@ -1,3 +1,6 @@
+import "@fontsource-variable/figtree";
+import "@fontsource-variable/literata";
+import "@fontsource-variable/literata/wght-italic.css";
 import "./styles/index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
@@ -21,6 +24,9 @@ import { ReviewPage } from "./pages/review/ReviewPage";
 import { BatchReviewPage } from "./pages/review/BatchReviewPage";
 import { StatsPage } from "./pages/stats/StatsPage";
 import { SearchPage } from "./pages/SearchPage";
+import { applyTheme, savedTheme } from "./theme";
+
+applyTheme(savedTheme());
 
 // AdminOnly hides administration screens from other users. The server
 // enforces the same rules; this only avoids showing pages that would fail.

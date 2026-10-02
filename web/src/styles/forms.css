@@ -2,23 +2,26 @@
 @layer base, components, pages;
 
 @layer components {
-  /* Forms */
   .form fieldset {
     /* Fieldsets default to min-width: min-content, which lets a long <select>
        option push the form wider than the phone screen. */
     min-width: 0;
     margin: 0 0 1rem;
-    padding: 1rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
+    padding: 1.125rem;
+    border: 0;
+    border-radius: var(--radius-lg);
     background: var(--surface);
     display: grid;
     gap: 1rem;
   }
 
   .form legend {
-    padding: 0 0.25rem;
-    font-weight: 700;
+    float: left;
+    width: 100%;
+    padding: 0;
+    font-family: var(--font-read);
+    font-size: 1.125rem;
+    font-weight: 500;
   }
 
   .form > .field {
@@ -33,7 +36,8 @@
 
   .field > label {
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
+    color: var(--muted);
   }
 
   .field.has-error input,
@@ -45,6 +49,7 @@
   .hint {
     font-size: 0.85rem;
     color: var(--muted);
+    margin: 0;
   }
 
   .field .error,
@@ -58,11 +63,11 @@
     gap: 0.25rem 0.5rem;
     align-items: start;
     padding: 0.25rem;
-    border-radius: 10px;
+    border-radius: var(--radius);
   }
 
   .option-edit.is-correct {
-    background: color-mix(in srgb, var(--ok) 15%, transparent);
+    background: color-mix(in srgb, var(--ok) 14%, transparent);
   }
 
   .option-edit .error {
@@ -73,7 +78,7 @@
     display: flex;
     align-items: center;
     gap: 0.375rem;
-    min-height: 44px;
+    min-height: 46px;
     padding: 0 0.25rem;
     font-weight: 700;
   }
@@ -84,6 +89,7 @@
     width: 1.25rem;
     height: 1.25rem;
     margin: 0;
+    padding: 0;
     accent-color: var(--primary);
   }
 
@@ -100,9 +106,9 @@
   }
 
   .topic-picker details {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius);
+    background: var(--surface-2);
+    padding: 0.5rem 0.875rem;
   }
 
   .topic-picker summary {

@@ -103,7 +103,7 @@ export function ReviewPage() {
               </button>
             </>
           ) : (
-            <p>Nada pendiente de revisar. 🎉</p>
+            <p>Nada pendiente de revisar.</p>
           )}
         </div>
       )}

@@ -1,4 +1,4 @@
-/* App shell: top bar, content column, bottom navigation. */
+/* App shell: top bar, content column, floating bottom navigation. */
 @layer base, components, pages;
 
 @layer components {
@@ -7,41 +7,67 @@
   }
 
   .topbar {
-    position: sticky;
-    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
-    padding-top: max(0.5rem, env(safe-area-inset-top));
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0.875rem 1.25rem 0.25rem;
+    padding-top: max(0.875rem, env(safe-area-inset-top));
   }
 
   .brand {
     font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .brand span {
+    margin-left: 0.375rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--muted);
+  }
+
+  /* The avatar opens Ajustes (account, theme, log out). */
+  .avatar {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--surface-2);
+    color: var(--accent-ink);
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 
   .content {
     max-width: 40rem;
     margin: 0 auto;
-    padding: 1rem;
-    padding-bottom: calc(
-      var(--nav-height) + 2rem + env(safe-area-inset-bottom)
-    );
+    padding: 0.75rem 1.25rem;
+    padding-bottom: calc(var(--nav-height) + 2.5rem + env(safe-area-inset-bottom));
   }
 
-  /* Bottom navigation: thumb-reachable on phones. */
+  /* Floating pill: thumb-reachable on phones, never touches the screen edge. */
   .bottomnav {
     position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: calc(0.75rem + env(safe-area-inset-bottom));
+    max-width: 38rem;
+    margin: 0 auto;
     display: flex;
-    height: calc(var(--nav-height) + env(safe-area-inset-bottom));
-    padding-bottom: env(safe-area-inset-bottom);
-    background: var(--surface);
-    border-top: 1px solid var(--border);
+    height: var(--nav-height);
+    padding: 0 0.25rem;
+    border-radius: var(--radius-lg);
+    background: color-mix(in srgb, var(--surface-2) 92%, transparent);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.28);
+    z-index: 5;
   }
 
   .bottomnav a {
@@ -50,13 +76,12 @@
     place-items: center;
     color: var(--muted);
     text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 
   .bottomnav a.active {
-    color: var(--primary);
-    font-weight: 700;
+    color: var(--accent-ink);
   }
 
   .page-head {
@@ -72,19 +97,6 @@
   }
 
   .home-section {
-    margin: 1.25rem 0;
-  }
-
-  .topbar-links {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  .topbar-links .link {
-    padding: 0.5rem;
-    line-height: 1.5;
-    font-size: 1rem;
-    text-decoration: none;
+    margin: 1.75rem 0;
   }
 }

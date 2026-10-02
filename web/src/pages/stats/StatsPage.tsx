@@ -13,7 +13,7 @@ export function StatsPage() {
 
   return (
     <>
-      <h2>Estadísticas</h2>
+      <h2>Progreso</h2>
       <ErrorBox message={error} />
       {data && (
         <>
