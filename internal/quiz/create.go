@@ -7,9 +7,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/alexzafra13/tai_tests/internal/db"
+
 	"github.com/alexzafra13/tai_tests/internal/validate"
 
 	"github.com/alexzafra13/tai_tests/internal/content"
+	"github.com/alexzafra13/tai_tests/internal/srs"
 )
 
 const (
@@ -28,6 +31,12 @@ type Filters struct {
 	// QuestionIDs restricts the test to specific questions, e.g. to retry
 	// the ones failed in a previous test.
 	QuestionIDs []int64 `json:"question_ids"`
+	// Due limits the test to the user's questions due for review, most
+	// overdue first.
+	Due bool `json:"due"`
+	// Failed limits the test to questions whose last answer by the user was
+	// wrong.
+	Failed bool `json:"failed"`
 }
 
 type CreateInput struct {
@@ -59,11 +68,27 @@ func (in CreateInput) validate() error {
 	return v
 }
 
+// failedCondition matches questions whose most recent answer by the user
+// was wrong.
+const failedCondition = `q.id IN (SELECT a.question_id FROM attempts a JOIN tests t ON t.id = a.test_id
+	WHERE t.user_id = ? AND a.answered_at <> '' GROUP BY a.question_id
+	HAVING max(a.answered_at) = max(CASE WHEN a.is_correct = 0 THEN a.answered_at END))`
+
 // eligibleWhere builds the condition for questions that may appear in a
-// test: published, not annulled, and matching the filters.
-func eligibleWhere(f Filters) (string, []any) {
+// test for the user: published, not annulled, and matching the filters.
+func (s *Store) eligibleWhere(userID int64, f Filters) (string, []any) {
 	where := []string{"q.status = 'published'", "q.annulled = 0"}
 	var args []any
+
+	if f.Due {
+		cond, a := srs.DueCondition(userID, s.now())
+		where = append(where, cond)
+		args = append(args, a...)
+	}
+	if f.Failed {
+		where = append(where, failedCondition)
+		args = append(args, userID)
+	}
 
 	var scope []string
 	if len(f.TopicIDs) > 0 {
@@ -96,8 +121,8 @@ func eligibleWhere(f Filters) (string, []any) {
 }
 
 // Available counts the questions a test with these filters can draw from.
-func (s *Store) Available(ctx context.Context, f Filters) (int, error) {
-	cond, args := eligibleWhere(f)
+func (s *Store) Available(ctx context.Context, userID int64, f Filters) (int, error) {
+	cond, args := s.eligibleWhere(userID, f)
 	var n int
 	err := s.db.QueryRowContext(ctx, `SELECT count(*) FROM questions q WHERE `+cond, args...).Scan(&n)
 	return n, err
@@ -134,9 +159,15 @@ func (s *Store) Create(ctx context.Context, userID int64, in CreateInput) (int64
 	}
 	defer tx.Rollback()
 
-	cond, args := eligibleWhere(in.Filters)
+	cond, args := s.eligibleWhere(userID, in.Filters)
+	order := "random()"
+	if in.Filters.Due {
+		var orderArgs []any
+		order, orderArgs = srs.DueOrder(userID)
+		args = append(args, orderArgs...)
+	}
 	rows, err := tx.QueryContext(ctx, `SELECT q.id, q.revision, q.option_a, q.option_b, q.option_c, q.option_d, q.fixed_order
-		FROM questions q WHERE `+cond+` ORDER BY random() LIMIT ?`, append(args, in.Count)...)
+		FROM questions q WHERE `+cond+` ORDER BY `+order+` LIMIT ?`, append(args, in.Count)...)
 	if err != nil {
 		return 0, err
 	}
@@ -160,12 +191,12 @@ func (s *Store) Create(ctx context.Context, userID int64, in CreateInput) (int64
 	now := s.now().UTC()
 	deadline := ""
 	if in.TimeLimitMin > 0 {
-		deadline = now.Add(time.Duration(in.TimeLimitMin) * time.Minute).Format(timeFormat)
+		deadline = db.Timestamp(now.Add(time.Duration(in.TimeLimitMin) * time.Minute))
 	}
 	var id int64
 	err = tx.QueryRowContext(ctx, `INSERT INTO tests (user_id, mode, config, penalty, time_limit, started_at, deadline)
 		VALUES (?, ?, ?, ?, ?, ?, ?) RETURNING id`,
-		userID, in.Mode, string(config), in.Penalty, in.TimeLimitMin*60, now.Format(timeFormat), deadline).Scan(&id)
+		userID, in.Mode, string(config), in.Penalty, in.TimeLimitMin*60, db.Timestamp(now), deadline).Scan(&id)
 	if err != nil {
 		return 0, err
 	}

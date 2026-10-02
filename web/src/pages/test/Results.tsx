@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router";
-import { api, errorMessage } from "../../api";
+import { errorMessage } from "../../api";
+import { startPractice } from "./start";
 import { formatScore } from "../../format";
 import { modeLabel, penaltyLabel, type Test, type TestItem, type TestResult } from "../../types";
 import { useAuth } from "../../auth";
@@ -32,16 +33,7 @@ export function Results({ test }: { test: Test }) {
 
   async function retryWrong() {
     try {
-      const { id } = await api<{ id: number }>("/tests", {
-        method: "POST",
-        body: {
-          mode: "practice",
-          count: wrongIds.length,
-          penalty: test.penalty,
-          time_limit_min: 0,
-          filters: { topic_ids: [], block_ids: [], source_ids: [], origins: [], question_ids: wrongIds },
-        },
-      });
+      const id = await startPractice({ question_ids: wrongIds }, wrongIds.length, test.penalty);
       navigate(`/tests/${id}`);
     } catch (err) {
       setError(errorMessage(err));

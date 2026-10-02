@@ -1,0 +1,28 @@
+@layer base, components, pages;
+
+@layer components {
+  .toast {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: calc(var(--nav-height) + 1rem + env(safe-area-inset-bottom));
+    max-width: 38rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    background: var(--text);
+    color: var(--bg);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 0.25);
+    z-index: 10;
+  }
+
+  .toast .link {
+    color: var(--bg);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}

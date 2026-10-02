@@ -6,16 +6,15 @@ import (
 	"errors"
 	"strings"
 
+	"github.com/alexzafra13/tai_tests/internal/db"
+
 	"github.com/alexzafra13/tai_tests/internal/validate"
 )
 
-// First administrator. A fresh install has no administrator that can log
-// in (migrations create one without a password so existing data has an
-// owner). Until one is set up, the app shows a setup screen; alternatively
-// TAI_ADMIN_USER / TAI_ADMIN_PASSWORD set it up on start.
+// The migrations create an admin row without a password so existing data
+// has an owner. Until it gets one, via the setup screen or
+// TAI_ADMIN_USER / TAI_ADMIN_PASSWORD, nobody can log in as administrator.
 
-// ErrAlreadySetUp is returned when setup is attempted after an
-// administrator already exists.
 var ErrAlreadySetUp = errors.New("an administrator already exists")
 
 // NeedsSetup reports whether no administrator can log in yet.
@@ -42,12 +41,10 @@ type SetupInput struct {
 // true, and checks it inside the transaction so two concurrent requests
 // cannot both succeed.
 func (s *Store) Setup(ctx context.Context, in SetupInput) (User, error) {
-	in.Username = normalizeUsername(in.Username)
+	in.Username = NormalizeUsername(in.Username)
 	in.DisplayName = strings.TrimSpace(in.DisplayName)
 	v := validate.Errors{}
-	if !usernamePattern.MatchString(in.Username) {
-		v["username"] = "Entre 3 y 32 caracteres: letras minúsculas, números, punto, guion o guion bajo"
-	}
+	validateUsername(v, in.Username)
 	validatePassword(v, "password", in.Password)
 	if err := v.Err(); err != nil {
 		return User{}, err
@@ -82,8 +79,8 @@ func (s *Store) Setup(ctx context.Context, in SetupInput) (User, error) {
 			updated_at = ? WHERE id = ?`, in.Username, in.DisplayName, hash, now, id)
 	}
 	if err != nil {
-		if strings.Contains(err.Error(), "UNIQUE constraint failed") {
-			return User{}, validate.Errors{"username": "Ya existe un usuario con ese nombre"}
+		if db.IsUnique(err) {
+			return User{}, usernameTaken()
 		}
 		return User{}, err
 	}

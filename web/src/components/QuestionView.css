@@ -1,0 +1,129 @@
+@layer base, components, pages;
+
+@layer components {
+  .question .stem,
+  .review-item .stem {
+    margin: 0.75rem 0 1.25rem;
+    font-family: var(--font-read);
+    font-size: 1.35rem;
+    line-height: 1.4;
+    white-space: pre-line;
+  }
+
+  .options {
+    list-style: none;
+    margin: 0 0 1rem;
+    padding: 0;
+    display: grid;
+    gap: 0.625rem;
+  }
+
+  button.option {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.875rem;
+    min-height: 58px;
+    padding: 0.75rem 0.875rem;
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    background: var(--surface);
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.4;
+    transition: border-color 0.15s, background-color 0.15s;
+  }
+
+  button.option:disabled {
+    opacity: 1;
+    cursor: default;
+  }
+
+  button.option:not(:disabled):hover {
+    border-color: var(--border);
+  }
+
+  .option .letter {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--surface-2);
+    color: var(--muted);
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  button.option.selected {
+    border-color: var(--primary);
+  }
+
+  button.option.selected .letter {
+    background: var(--primary);
+    color: var(--primary-text);
+  }
+
+  button.option.correct {
+    border-color: var(--ok);
+    background: color-mix(in srgb, var(--ok) 9%, var(--surface));
+  }
+
+  button.option.correct .letter {
+    background: var(--ok);
+    color: var(--bg);
+  }
+
+  button.option.wrong {
+    border-color: var(--danger);
+    background: color-mix(in srgb, var(--danger) 9%, var(--surface));
+  }
+
+  button.option.wrong .letter {
+    background: var(--danger);
+    color: var(--bg);
+  }
+
+  .solution {
+    display: grid;
+    gap: 0.625rem;
+    margin-bottom: 1rem;
+    padding: 1rem 1.125rem;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+  }
+
+  .solution p {
+    margin: 0;
+  }
+
+  .source {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  /* The quote first, then where it comes from. */
+  .source > .muted {
+    order: 2;
+  }
+
+  button.flag {
+    min-height: 40px;
+    font-size: 0.875rem;
+    color: var(--muted);
+    background: none;
+    padding: 0 0.75rem;
+  }
+
+  button.flag.active {
+    background: var(--warn-bg);
+    color: var(--warn-text);
+  }
+
+  .flag-editor {
+    display: grid;
+    gap: 0.5rem;
+  }
+}

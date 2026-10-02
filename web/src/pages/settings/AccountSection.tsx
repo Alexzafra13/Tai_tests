@@ -4,7 +4,6 @@ import { useAuth } from "../../auth";
 import { roleLabel } from "../../types";
 import { ErrorBox, Field } from "../../components/Form";
 
-// AccountSection shows who is logged in and lets them change their password.
 export function AccountSection() {
   const { user } = useAuth();
   const [current, setCurrent] = useState("");

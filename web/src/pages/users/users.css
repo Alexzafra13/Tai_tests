@@ -1,0 +1,31 @@
+@layer base, components, pages;
+
+@layer pages {
+  .badge.role-admin {
+    background: color-mix(in srgb, var(--primary) 22%, transparent);
+    color: var(--accent-ink);
+  }
+
+  .user-card {
+    padding: 0;
+  }
+
+  button.user-summary {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 0;
+    background: none;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .user-edit {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0 1rem 1rem;
+  }
+}

@@ -17,6 +17,8 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/db"
 	"github.com/alexzafra13/tai_tests/internal/quiz"
 	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/srs"
+	"github.com/alexzafra13/tai_tests/internal/stats"
 	"github.com/alexzafra13/tai_tests/internal/users"
 )
 
@@ -68,7 +70,9 @@ func newBareEnv(t *testing.T) (testEnv, *users.Store) {
 		Auth:    auth.NewService(d, us, time.Hour),
 		Users:   us,
 		Content: content.NewStore(d),
-		Quiz:    quiz.NewStore(d, settings.NewStore(d)),
+		Quiz:    quiz.NewStore(d, settings.NewStore(d), srs.NewStore(d)),
+		SRS:     srs.NewStore(d),
+		Stats:   stats.NewStore(d),
 		Static:  static,
 		Log:     slog.New(slog.DiscardHandler),
 	})

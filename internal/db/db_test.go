@@ -54,8 +54,8 @@ func TestPragmas(t *testing.T) {
 	}
 }
 
-// Search (phase 7) depends on FTS5 with accent folding; make sure the
-// pure-Go driver ships it.
+// Question search depends on FTS5 with accent folding; make sure the pure-Go
+// driver ships it.
 func TestFTS5WithDiacriticFolding(t *testing.T) {
 	d, err := Open(":memory:")
 	if err != nil {

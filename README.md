@@ -10,7 +10,13 @@ IA solo transforma textos aportados y todo lo que genera pasa por revisión.
 
 ## Instalación rápida
 
-Solo hace falta Docker (con Compose 2.24 o posterior). En el servidor:
+Solo hace falta Docker. En el servidor, un solo comando:
+
+```sh
+docker run -d --name tai --restart unless-stopped -p 8080:8080 -v tai-data:/data ghcr.io/alexzafra13/tai_tests:latest
+```
+
+O, si prefieres Compose (más cómodo para actualizar):
 
 ```sh
 curl -O https://raw.githubusercontent.com/alexzafra13/Tai_tests/main/docker-compose.yml
@@ -21,7 +27,9 @@ Abre `http://<tu-servidor>:8080`: la primera vez aparece la pantalla
 **Bienvenido** para crear la cuenta de administrador. No hay que configurar
 nada más; el resto (usuarios, nota, temario…) se gestiona desde la app.
 
-- **Actualizar:** `docker compose pull && docker compose up -d`.
+- **Actualizar:** `docker compose pull && docker compose up -d` (con
+  `docker run`: `docker pull`, `docker rm -f tai` y el mismo `docker run`;
+  los datos siguen en el volumen).
 - **Datos:** todo vive en el volumen `tai-data` (`/data/tai.db`). Las
   migraciones se aplican solas al arrancar.
 - **Imagen:** GitHub la compila automáticamente para amd64 y arm64 (sirve en un
@@ -32,18 +40,27 @@ nada más; el resto (usuarios, nota, temario…) se gestiona desde la app.
 - **Compilar desde el código** en vez de descargar la imagen:
   `docker compose -f docker-compose.yml -f docker-compose.build.yml up -d --build`.
 
-### Configuración opcional
+### No hay nada que configurar
 
-Nada es obligatorio. Para cambiar algo, crea un `.env` junto al
-`docker-compose.yml` (ver [`.env.example`](.env.example)):
+No hace falta ningún `.env`. La app detecta sola lo que antes había que
+ajustar:
 
-| Variable | Por defecto | Para qué |
-|---|---|---|
-| `TAI_PORT` | `8080` | Puerto en el servidor |
-| `TAI_COOKIE_SECURE` | `false` | `true` si se sirve por HTTPS |
-| `TAI_SESSION_TTL` | `720h` | Duración de la sesión |
-| `TAI_ADMIN_USER` / `TAI_ADMIN_PASSWORD` | — | Crear el administrador sin la pantalla de bienvenida (instalaciones sin navegador). Se ignoran si ya existe |
-| `TAI_ADDR` / `TAI_DB_PATH` | `:8080` / `tai.db` | Solo al ejecutar el binario fuera de Docker |
+- **HTTPS:** si llegas por HTTPS (directo o a través de Caddy, Nginx Proxy
+  Manager, `tailscale serve`…), la cookie de sesión se marca como segura; por
+  `http` en casa funciona igual.
+- **Zona horaria:** las estadísticas cuentan los días en la hora del
+  dispositivo de cada usuario (Península, Canarias o donde estés).
+- **Administrador:** se crea en la pantalla de bienvenida.
+
+Lo único que podrías querer cambiar es el **puerto**: en
+`docker-compose.yml`, cambia el primer número de `"8080:8080"` (por
+ejemplo `"9000:8080"`).
+
+Para casos especiales (sin navegador, fuera de Docker) siguen existiendo
+variables de entorno opcionales: `TAI_ADMIN_USER` / `TAI_ADMIN_PASSWORD`
+crean el administrador sin pantalla de bienvenida, `TAI_SESSION_TTL`
+(por defecto `720h`) es la duración de la sesión y `TAI_ADDR` /
+`TAI_DB_PATH` sirven al ejecutar el binario directamente.
 
 ### Acceso desde el móvil fuera de casa
 
@@ -53,7 +70,7 @@ No expongas el puerto directamente a internet. Opciones recomendadas:
   `tailscale serve` obtienes además HTTPS.
 - Un **proxy inverso con HTTPS** (Caddy, Nginx Proxy Manager…).
 
-Si la app se sirve por HTTPS, pon `TAI_COOKIE_SECURE=true`.
+Con HTTPS no hay que tocar nada: la app lo detecta.
 
 ### Copias de seguridad
 
@@ -65,6 +82,8 @@ docker compose stop
 docker run --rm -v tai_tai-data:/data -v "$PWD":/backup alpine cp /data/tai.db /backup/
 docker compose start
 ```
+
+Con `docker run` el volumen se llama `tai-data` en vez de `tai_tai-data`.
 
 ## Stack
 
@@ -79,17 +98,23 @@ docker compose start
 ```
 cmd/tai/               binario y subcomandos (serve, migrate, version…)
 internal/config/       variables de entorno
-internal/db/           apertura de SQLite y migrador
+internal/db/           apertura de SQLite, migrador, formato de fechas y errores de restricción
 internal/db/migrations/  migraciones SQL versionadas (NNNN_nombre.sql)
 internal/users/        cuentas y roles (admin / usuario), contraseñas con bcrypt
 internal/auth/         login, sesiones y usuario actual de cada petición
 internal/validate/     errores de validación por campo, comunes a todos los paquetes
 internal/content/      temario, fuentes y preguntas con sus reglas de validación
 internal/quiz/         sesiones de test: creación, respuestas, historial, nota y barajado
+internal/srs/          repetición espaciada (FSRS): cuándo repasar cada pregunta
+internal/stats/        estadísticas por usuario: aciertos, temas, progreso diario
 internal/settings/     ajustes del usuario (clave → JSON)
 internal/textmatch/    comprobación de citas literales (normaliza espacios y tipografía)
 internal/server/       API HTTP y servidor de la SPA (routes.go: rutas y permisos)
 web/                   frontend (Vite); web/dist se embebe en el binario
+web/src/styles/        tokens de diseño y estilos comunes (capas CSS: base, components, pages)
+web/src/components/    piezas compartidas (opciones de pregunta, formularios, cita literal…)
+web/src/pages/         una pantalla por fichero o carpeta, con su CSS al lado
+web/src/types/         espejo de los tipos JSON de la API, un fichero por área
 data/                  syllabus.example.json (formato del temario)
 ```
 
@@ -101,6 +126,7 @@ Usuarios**.
 | | Administrador | Usuario |
 |---|---|---|
 | Tests, resultados, temario, marcar dudas | ✅ | ✅ |
+| Repaso, falladas, estadísticas, búsqueda | ✅ | ✅ |
 | Cambiar su propia contraseña | ✅ | ✅ |
 | Preguntas, fuentes, revisión | ✅ | ❌ |
 | Reglas de la nota, cuentas de usuario | ✅ | ❌ |
@@ -177,6 +203,26 @@ comandos o del futuro pipeline de IA:
   opciones o la respuesta correcta, sube su número de revisión y cada intento
   guarda la revisión que viste.
 
+## Repaso, falladas, estadísticas y búsqueda
+
+- **Repaso de hoy** (repetición espaciada con FSRS): cada respuesta programa
+  cuándo vuelve a salir esa pregunta. Fallar o dejar en blanco → pronto;
+  acertar → cada vez más tarde; acertar en menos de 5 s → más tarde aún;
+  acertar una pregunta que marcaste como dudosa → antes de lo normal. En
+  inicio, un toque abre un test de práctica con lo que toca hoy (hasta 20).
+- **Falladas:** las preguntas cuya última respuesta fue un fallo. Al
+  acertarlas salen de la lista.
+- Las dos opciones están también en **Nuevo test → Selección**, combinables
+  con temas y origen.
+- **Estadísticas:** respondidas, porcentaje de aciertos, días de estudio,
+  preguntas dominadas (próximo repaso a tres semanas o más), actividad de los
+  últimos 30 días y aciertos por tema, ordenables por temario, por los más
+  flojos o por los más preguntados en exámenes oficiales, con acceso directo
+  a practicar cada tema. Cada usuario ve solo lo suyo.
+- **Buscar:** en enunciados, opciones, explicaciones y referencias de las
+  preguntas publicadas, sin importar tildes («proteccion» encuentra
+  «protección»). La respuesta se oculta hasta pulsar «Ver respuesta».
+
 ## Cola de revisión
 
 La pestaña **Revisión** reúne lo que aún no sale en los tests: borradores
@@ -246,5 +292,5 @@ make build   # compila el frontend y genera bin/tai con todo embebido
 4. ✅ Cola de revisión.
 5. Importador de exámenes del INAP y modo simulacro.
 6. Generación del bloque legal con validación.
-7. FSRS, falladas, estadísticas y búsqueda.
+7. ✅ FSRS, falladas, estadísticas y búsqueda.
 8. Generación del bloque técnico, PWA y pulido.

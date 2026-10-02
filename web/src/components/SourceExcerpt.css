@@ -1,0 +1,16 @@
+@layer base, components, pages;
+
+@layer components {
+  .excerpt {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  mark {
+    background: color-mix(in srgb, var(--primary) 22%, transparent);
+    color: inherit;
+    padding: 0 0.125rem;
+    border-radius: 3px;
+  }
+}

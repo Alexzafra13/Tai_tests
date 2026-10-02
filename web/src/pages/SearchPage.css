@@ -1,0 +1,23 @@
+@layer base, components, pages;
+
+@layer pages {
+  .search-results {
+    margin-top: 1rem;
+  }
+
+  .search-hit {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .search-hit .stem {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .search-hit button.link {
+    align-self: flex-start;
+    padding-left: 0;
+  }
+}

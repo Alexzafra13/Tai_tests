@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { api, errorMessage } from "../api";
 import { optionLetters, originLabel, type Solution, type TestItem } from "../types";
+import "./QuestionView.css";
 
-// Options renders the four answers as large tap targets. When the correct
-// option is known it is coloured, along with a wrong choice; otherwise the
-// current selection is shown.
+// Options renders the four answers as large tap targets. Once `correct` is
+// known it marks the correct option and a wrong choice; before that, only
+// the selection.
 export function Options({
   options,
   chosen = null,

@@ -1,0 +1,76 @@
+@layer base, components, pages;
+
+@layer pages {
+  .review-card {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+  }
+
+  .review-card .stem,
+  .review-card .options {
+    margin: 0;
+  }
+
+  .flag-note {
+    padding: 0.75rem;
+    border-radius: 10px;
+    background: var(--warn-bg);
+    color: var(--warn-text);
+  }
+
+  .flag-note p {
+    margin: 0.25rem 0 0;
+  }
+
+  .explanation {
+    margin: 0;
+  }
+
+  .source-box {
+    display: grid;
+    gap: 0.375rem;
+  }
+
+  .review-topics {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .review-topics summary {
+    cursor: pointer;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+
+  .review-actions button {
+    flex: 1;
+  }
+
+  .empty {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .batch-toolbar {
+    margin: 0.75rem 0 0.5rem;
+  }
+
+  .batch-row .check > span {
+    display: grid;
+    gap: 0.25rem;
+    min-width: 0;
+  }
+
+  .report-list {
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.375rem;
+  }
+
+  .report-list p {
+    margin: 0;
+  }
+}

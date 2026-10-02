@@ -8,6 +8,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
+	"github.com/alexzafra13/tai_tests/internal/db"
+
 	"github.com/alexzafra13/tai_tests/internal/validate"
 
 	"github.com/alexzafra13/tai_tests/internal/textmatch"
@@ -52,6 +54,12 @@ const (
 	// history; questions that were never answered can be deleted instead.
 	StatusDiscarded Status = "discarded"
 )
+
+func (a Author) valid() bool { return a == AuthorManual || a == AuthorAI || a == AuthorImport }
+
+func (st Status) valid() bool {
+	return st == StatusDraft || st == StatusReviewed || st == StatusPublished || st == StatusDiscarded
+}
 
 // MinQuoteLength is the minimum length (in characters, after
 // normalization) of a source quote, so that trivial fragments like "la
@@ -149,14 +157,10 @@ func (in QuestionInput) validate(ctx context.Context, q queryer) error {
 	if !ok {
 		v["origin"] = "Origen no válido"
 	}
-	switch in.Author {
-	case AuthorManual, AuthorAI, AuthorImport:
-	default:
+	if !in.Author.valid() {
 		v["author"] = "Autor no válido"
 	}
-	switch in.Status {
-	case StatusDraft, StatusReviewed, StatusPublished, StatusDiscarded:
-	default:
+	if !in.Status.valid() {
 		v["status"] = "Estado no válido"
 	}
 	if in.Status == StatusPublished && len(in.TopicIDs) == 0 {
@@ -196,13 +200,33 @@ func (in QuestionInput) validate(ctx context.Context, q queryer) error {
 		}
 	}
 
-	if missing, err := topicsMissing(ctx, q, in.TopicIDs); err != nil {
+	if ok, err := topicsExist(ctx, q, in.TopicIDs); err != nil {
 		return err
-	} else if len(missing) > 0 {
+	} else if !ok {
 		v["topic_ids"] = "Algún tema no existe"
 	}
 
 	return v.Err()
+}
+
+type queryer interface {
+	QueryRowContext(ctx context.Context, query string, args ...any) *sql.Row
+}
+
+// topicsExist reports whether every id is a topic. Inactive topics count,
+// so questions on a topic dropped from the syllabus stay editable.
+func topicsExist(ctx context.Context, q queryer, ids []int64) (bool, error) {
+	if len(ids) == 0 {
+		return true, nil
+	}
+	args := make([]any, len(ids))
+	for i, id := range ids {
+		args[i] = id
+	}
+	var found int
+	err := q.QueryRowContext(ctx, `SELECT count(*) FROM topics WHERE id IN (`+placeholders(len(ids))+`)`, args...).
+		Scan(&found)
+	return found == len(ids), err
 }
 
 func (s *Store) CreateQuestion(ctx context.Context, in QuestionInput) (int64, error) {
@@ -235,12 +259,11 @@ func (s *Store) CreateQuestion(ctx context.Context, in QuestionInput) (int64, er
 }
 
 func (s *Store) UpdateQuestion(ctx context.Context, id int64, in QuestionInput) error {
+	return s.inTx(ctx, func(tx *sql.Tx) error { return s.updateQuestion(ctx, tx, id, in) })
+}
+
+func (s *Store) updateQuestion(ctx context.Context, tx *sql.Tx, id int64, in QuestionInput) error {
 	in.normalize()
-	tx, err := s.db.BeginTx(ctx, nil)
-	if err != nil {
-		return err
-	}
-	defer tx.Rollback()
 	if err := in.validate(ctx, tx); err != nil {
 		return err
 	}
@@ -266,10 +289,7 @@ func (s *Store) UpdateQuestion(ctx context.Context, id int64, in QuestionInput) 
 	if _, err := tx.ExecContext(ctx, `DELETE FROM question_topics WHERE question_id = ?`, id); err != nil {
 		return err
 	}
-	if err := setTopics(ctx, tx, id, in.TopicIDs); err != nil {
-		return err
-	}
-	return tx.Commit()
+	return setTopics(ctx, tx, id, in.TopicIDs)
 }
 
 func setTopics(ctx context.Context, tx *sql.Tx, questionID int64, topicIDs []int64) error {
@@ -284,7 +304,7 @@ func setTopics(ctx context.Context, tx *sql.Tx, questionID int64, topicIDs []int
 func (s *Store) DeleteQuestion(ctx context.Context, id int64) error {
 	res, err := s.db.ExecContext(ctx, `DELETE FROM questions WHERE id = ?`, id)
 	if err != nil {
-		if isConstraint(err, "FOREIGN KEY") {
+		if db.IsForeignKey(err) {
 			return ErrHasHistory
 		}
 		return err
@@ -344,7 +364,7 @@ type QuestionFilter struct {
 	TopicID  int64
 	BlockID  int64
 	Reported *bool  // with (or without) open doubt reports
-	Text     string // substring match on stem and options; FTS5 search comes later
+	Text     string // words to find in stem, options, explanation or reference (see ftsQuery)
 	Limit    int
 	Offset   int
 }
@@ -387,13 +407,9 @@ func (s *Store) ListQuestions(ctx context.Context, f QuestionFilter) (QuestionPa
 		}
 		where = append(where, cond)
 	}
-	if t := strings.TrimSpace(f.Text); t != "" {
-		like := "%" + escapeLike(t) + "%"
-		where = append(where, `(q.stem LIKE ? ESCAPE '\' OR q.option_a LIKE ? ESCAPE '\' OR q.option_b LIKE ? ESCAPE '\'
-			OR q.option_c LIKE ? ESCAPE '\' OR q.option_d LIKE ? ESCAPE '\' OR q.source_ref LIKE ? ESCAPE '\')`)
-		for range 6 {
-			args = append(args, like)
-		}
+	if match := ftsQuery(f.Text); match != "" {
+		where = append(where, matchesText)
+		args = append(args, match)
 	}
 	cond := ""
 	if len(where) > 0 {
@@ -465,8 +481,4 @@ func (s *Store) topicIDs(ctx context.Context, questionIDs []int64) (map[int64][]
 		out[qid] = append(out[qid], tid)
 	}
 	return out, rows.Err()
-}
-
-func escapeLike(s string) string {
-	return strings.NewReplacer(`\`, `\\`, `%`, `\%`, `_`, `\_`).Replace(s)
 }

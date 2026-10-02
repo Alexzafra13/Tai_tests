@@ -30,7 +30,7 @@ func TestContains(t *testing.T) {
 }
 
 func TestNormalizePunctuation(t *testing.T) {
-	got := Normalize("«Ley 39/2015» – “procedimiento” – art.­ 21…")
+	got := Normalize("«Ley 39/2015» – “procedimiento” – art.\u00ad 21…")
 	want := `"Ley 39/2015" - "procedimiento" - art. 21...`
 	if got != want {
 		t.Errorf("Normalize = %q, want %q", got, want)

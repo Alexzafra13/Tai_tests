@@ -14,12 +14,13 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/db"
 	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/srs"
 	"github.com/alexzafra13/tai_tests/internal/users"
 )
 
 type fixture struct {
 	db      *sql.DB
-	user    int64 // the user taking the tests
+	user    int64
 	quiz    *Store
 	content *content.Store
 	topics  []int64 // B1-T01, B1-T02, B2-T01
@@ -45,7 +46,7 @@ func newFixture(t *testing.T) *fixture {
 	if _, err := db.Migrate(ctx, d); err != nil {
 		t.Fatal(err)
 	}
-	f := &fixture{db: d, quiz: NewStore(d, settings.NewStore(d)), content: content.NewStore(d), now: time.Date(2026, 5, 23, 10, 0, 0, 0, time.UTC)}
+	f := &fixture{db: d, quiz: NewStore(d, settings.NewStore(d), srs.NewStore(d)), content: content.NewStore(d), now: time.Date(2026, 5, 23, 10, 0, 0, 0, time.UTC)}
 	f.quiz.now = func() time.Time { return f.now }
 	// Keep options in their original order so tests can rely on B being
 	// correct; shuffling has its own tests.
@@ -113,7 +114,7 @@ func TestOnlyPublishedNotAnnulledQuestions(t *testing.T) {
 	ctx := context.Background()
 	f := newFixture(t)
 
-	n, err := f.quiz.Available(ctx, Filters{})
+	n, err := f.quiz.Available(ctx, f.user, Filters{})
 	if err != nil || n != 5 {
 		t.Fatalf("Available = %d, %v; want 5", n, err)
 	}
@@ -151,7 +152,7 @@ func TestFilters(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if n, err := f.quiz.Available(ctx, tt.filters); err != nil || n != tt.want {
+			if n, err := f.quiz.Available(ctx, f.user, tt.filters); err != nil || n != tt.want {
 				t.Errorf("Available = %d, %v; want %d", n, err, tt.want)
 			}
 		})
@@ -442,5 +443,77 @@ func TestTestsArePrivateToTheirUser(t *testing.T) {
 	}
 	if list, _ := f.quiz.List(ctx, f.user, "", 10); len(list) != 1 {
 		t.Errorf("owner lists %d tests, want 1", len(list))
+	}
+}
+
+// Answers feed the review schedule: a failed practice question becomes due
+// for review shortly after, and shows up in "failed" until answered right.
+func TestReviewAndFailedFilters(t *testing.T) {
+	ctx := context.Background()
+	f := newFixture(t)
+	none := func(fl Filters) int {
+		n, err := f.quiz.Available(ctx, f.user, fl)
+		if err != nil {
+			t.Fatal(err)
+		}
+		return n
+	}
+	if none(Filters{Due: true}) != 0 || none(Filters{Failed: true}) != 0 {
+		t.Fatal("new user has due or failed questions")
+	}
+
+	id, _ := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModePractice, Count: 2, Filters: Filters{Origins: []content.Origin{content.OriginLaw}}})
+	f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(0), TimeMs: 20000}) // wrong
+	f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 1, Chosen: intp(1), TimeMs: 20000}) // right
+
+	if n := none(Filters{Failed: true}); n != 1 {
+		t.Errorf("failed = %d, want 1", n)
+	}
+	if n := none(Filters{Due: true}); n != 0 {
+		t.Errorf("due right away = %d, want 0", n)
+	}
+	f.now = f.now.Add(26 * time.Hour)
+	if n := none(Filters{Due: true}); n != 1 {
+		t.Errorf("due next day = %d, want 1 (the failed one)", n)
+	}
+
+	// A review test draws exactly the due question; answering it right
+	// takes it out of both lists.
+	rid, err := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModePractice, Count: 10, Filters: Filters{Due: true}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	review, _ := f.quiz.Get(ctx, f.user, rid)
+	if len(review.Items) != 1 {
+		t.Fatalf("review test has %d questions, want 1", len(review.Items))
+	}
+	f.quiz.Answer(ctx, f.user, rid, AnswerInput{Position: 0, Chosen: intp(1), TimeMs: 20000})
+	if n := none(Filters{Failed: true}); n != 0 {
+		t.Errorf("failed after answering right = %d, want 0", n)
+	}
+	if n := none(Filters{Due: true}); n != 0 {
+		t.Errorf("due right after reviewing = %d, want 0", n)
+	}
+}
+
+func TestExamBlanksAreScheduledOnFinish(t *testing.T) {
+	ctx := context.Background()
+	f := newFixture(t)
+	id, _ := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: 2, Filters: Filters{Origins: []content.Origin{content.OriginLaw}}})
+	f.quiz.Answer(ctx, f.user, id, AnswerInput{Position: 0, Chosen: intp(1)})
+
+	var cards int
+	f.db.QueryRow(`SELECT count(*) FROM review_cards`).Scan(&cards)
+	if cards != 0 {
+		t.Fatalf("exam answers scheduled before finishing: %d cards", cards)
+	}
+	f.quiz.Finish(ctx, f.user, id)
+	f.db.QueryRow(`SELECT count(*) FROM review_cards`).Scan(&cards)
+	if cards != 2 {
+		t.Fatalf("cards after finish = %d, want 2 (answered and blank)", cards)
+	}
+	f.now = f.now.Add(26 * time.Hour)
+	if n, _ := f.quiz.Available(ctx, f.user, Filters{Due: true}); n != 1 {
+		t.Errorf("due next day after exam = %d, want 1 (the blank one)", n)
 	}
 }

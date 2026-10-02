@@ -45,7 +45,7 @@ export function UserCard({ user, isSelf, onChange }: { user: User; isSelf: boole
           </span>
         </span>
         <span className="meta">
-          <span className={user.role === "admin" ? "badge status-reviewed" : "badge"}>{roleLabel[user.role]}</span>
+          <span className={user.role === "admin" ? "badge role-admin" : "badge"}>{roleLabel[user.role]}</span>
           {!user.active && <span className="badge warn">Desactivado</span>}
         </span>
       </button>

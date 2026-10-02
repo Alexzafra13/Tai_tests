@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	"strconv"
 	"time"
 )
 
@@ -16,7 +15,6 @@ type Config struct {
 	// start; afterwards accounts are managed from the app.
 	AdminUser     string
 	AdminPassword string
-	CookieSecure  bool
 	SessionTTL    time.Duration
 }
 
@@ -30,15 +28,13 @@ func Load() (Config, error) {
 	}
 
 	var err error
-	if c.CookieSecure, err = strconv.ParseBool(env("TAI_COOKIE_SECURE", "false")); err != nil {
-		return c, fmt.Errorf("TAI_COOKIE_SECURE: %w", err)
-	}
 	if c.SessionTTL, err = time.ParseDuration(env("TAI_SESSION_TTL", "720h")); err != nil {
 		return c, fmt.Errorf("TAI_SESSION_TTL: %w", err)
 	}
 	if c.SessionTTL <= 0 {
 		return c, errors.New("TAI_SESSION_TTL must be positive")
 	}
+
 	return c, nil
 }
 

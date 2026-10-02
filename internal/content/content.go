@@ -4,12 +4,14 @@
 package content
 
 import (
+	"context"
 	"database/sql"
 	"errors"
 	"time"
+
+	"github.com/alexzafra13/tai_tests/internal/db"
 )
 
-// ErrNotFound is returned when a requested record does not exist.
 var ErrNotFound = errors.New("not found")
 
 // ErrInUse is returned when deleting a record that others still reference.
@@ -28,10 +30,19 @@ func NewStore(db *sql.DB) *Store {
 	return &Store{db: db, now: time.Now}
 }
 
-const timeFormat = "2006-01-02T15:04:05.000Z"
+func (s *Store) timestamp() string { return db.Timestamp(s.now()) }
 
-func (s *Store) timestamp() string {
-	return s.now().UTC().Format(timeFormat)
+// inTx runs fn in a transaction that is committed only if fn succeeds.
+func (s *Store) inTx(ctx context.Context, fn func(*sql.Tx) error) error {
+	tx, err := s.db.BeginTx(ctx, nil)
+	if err != nil {
+		return err
+	}
+	defer tx.Rollback()
+	if err := fn(tx); err != nil {
+		return err
+	}
+	return tx.Commit()
 }
 
 func boolInt(b bool) int {

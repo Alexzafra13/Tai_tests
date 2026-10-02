@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useAuth } from "../auth";
 import { errorMessage } from "../api";
+import "./auth.css";
 
 export function LoginPage() {
   const { login } = useAuth();
@@ -24,7 +25,10 @@ export function LoginPage() {
   return (
     <div className="center">
       <form className="card login" onSubmit={onSubmit}>
-        <h1>TAI · Estudio</h1>
+        <h1 className="login-brand">
+          TAI<span>Estudio</span>
+        </h1>
+        <p className="muted login-tag">Tu repaso diario para la oposición.</p>
         <label htmlFor="username">Usuario</label>
         <input
           id="username"

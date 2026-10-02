@@ -4,6 +4,7 @@ import type { Test } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
 import { Runner } from "./Runner";
 import { Results } from "./Results";
+import "./test.css";
 
 // TestPage shows a test in progress, or its results once it is over.
 export function TestPage() {

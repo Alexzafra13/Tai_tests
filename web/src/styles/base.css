@@ -1,0 +1,159 @@
+/* Element defaults and utility classes. Lowest layer: never beats a component. */
+@layer base, components, pages;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-read);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.005em;
+  }
+
+  h1 {
+    margin: 0 0 1rem;
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    margin: 0 0 1rem;
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    margin: 0 0 0.625rem;
+    font-size: 1.125rem;
+  }
+
+  a {
+    color: var(--accent-ink);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .small {
+    font-size: 0.85rem;
+  }
+
+  .ok {
+    color: var(--ok);
+  }
+
+  .error {
+    color: var(--danger);
+    margin: 0;
+  }
+
+  .center {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    min-width: 0;
+    font: inherit;
+    /* 16px avoids iOS zooming into the field on focus. */
+    font-size: 16px;
+    padding: 0.75rem 0.875rem;
+    border: 1.5px solid transparent;
+    border-radius: var(--radius-sm);
+    background: var(--surface-2);
+    color: var(--text);
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--muted);
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 3rem;
+  }
+
+  select {
+    min-height: 46px;
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .button,
+  button:not(.link) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    min-height: 46px;
+    padding: 0 1.125rem;
+    border: 0;
+    border-radius: var(--radius);
+    background: var(--surface-2);
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0.125rem 0 0.125rem 0.875rem;
+    border-left: 2px solid var(--primary);
+    font-family: var(--font-read);
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  code,
+  pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+  }
+
+  pre {
+    overflow-x: auto;
+    padding: 0.75rem;
+    background: var(--surface-2);
+    border-radius: var(--radius-sm);
+  }
+}

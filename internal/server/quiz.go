@@ -7,8 +7,6 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/quiz"
 )
 
-// All test handlers act on the caller's own tests.
-
 func userID(r *http.Request) int64 { return auth.CurrentUser(r.Context()).ID }
 
 func (s *Server) handleListTests(w http.ResponseWriter, r *http.Request) {
@@ -22,7 +20,7 @@ func (s *Server) handleAvailable(w http.ResponseWriter, r *http.Request) {
 	if !decode(w, r, &f) {
 		return
 	}
-	n, err := s.quiz.Available(r.Context(), f)
+	n, err := s.quiz.Available(r.Context(), userID(r), f)
 	s.respond(w, map[string]int{"available": n}, err)
 }
 

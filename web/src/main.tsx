@@ -1,3 +1,7 @@
+import "@fontsource-variable/figtree";
+import "@fontsource-variable/literata";
+import "@fontsource-variable/literata/wght-italic.css";
+import "./styles/index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router";
@@ -5,7 +9,7 @@ import { AuthProvider, useAuth } from "./auth";
 import { Layout } from "./Layout";
 import { LoginPage } from "./pages/LoginPage";
 import { SetupPage } from "./pages/SetupPage";
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "./pages/home/HomePage";
 import { QuestionsPage } from "./pages/QuestionsPage";
 import { QuestionEditPage } from "./pages/QuestionEditPage";
 import { SourcesPage } from "./pages/SourcesPage";
@@ -18,7 +22,11 @@ import { SettingsPage } from "./pages/settings/SettingsPage";
 import { UsersPage } from "./pages/users/UsersPage";
 import { ReviewPage } from "./pages/review/ReviewPage";
 import { BatchReviewPage } from "./pages/review/BatchReviewPage";
-import "./styles.css";
+import { StatsPage } from "./pages/stats/StatsPage";
+import { SearchPage } from "./pages/SearchPage";
+import { applyTheme, savedTheme } from "./theme";
+
+applyTheme(savedTheme());
 
 // AdminOnly hides administration screens from other users. The server
 // enforces the same rules; this only avoids showing pages that would fail.
@@ -51,6 +59,8 @@ function App() {
         <Route path="tests/new" element={<NewTestPage />} />
         <Route path="tests/:id" element={<TestPage />} />
         <Route path="syllabus" element={<SyllabusPage />} />
+        <Route path="stats" element={<StatsPage />} />
+        <Route path="search" element={<SearchPage />} />
         <Route path="settings" element={<SettingsPage />} />
 
         <Route element={<AdminOnly />}>

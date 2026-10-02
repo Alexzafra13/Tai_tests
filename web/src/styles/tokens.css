@@ -1,0 +1,79 @@
+/* Dark theme by default, light variant, amber as the only accent colour.
+   Selected by html[data-theme] = dark | light | auto (see theme.ts). */
+@layer base, components, pages;
+
+@layer base {
+  :root {
+    --font-ui: "Figtree Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+    /* Reading face: question stems, quotes from the law, headings, big numbers. */
+    --font-read: "Literata Variable", Georgia, "Times New Roman", serif;
+
+    --radius-sm: 10px;
+    --radius: 14px;
+    --radius-lg: 20px;
+    --nav-height: 58px;
+
+    color-scheme: dark;
+    --bg: #111318;
+    --surface: #1a1d24;
+    /* Raised elements on a surface: inputs, chips, secondary buttons. */
+    --surface-2: #232731;
+    --border: #2b2f39;
+    --text: #ece6da;
+    --muted: #9a958b;
+    /* Amber fills (primary buttons, bars) and amber as text on surfaces. */
+    --primary: #f0b03f;
+    --primary-text: #1b1407;
+    --accent-ink: #f0b03f;
+    --ok: #6cc58f;
+    --danger: #f07a6a;
+    --warn-bg: #3a2e16;
+    --warn-text: #f3c669;
+    /* Chart series (validated for colour-blind separation on --surface). */
+    --series-1: #c4861a;
+    --series-2: #7f8fdc;
+
+    font-family: var(--font-ui);
+    line-height: 1.5;
+  }
+
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #f3eee5;
+    --surface: #fffaf2;
+    --surface-2: #ebe4d6;
+    --border: #e0d6c4;
+    --text: #1f1b16;
+    --muted: #6b6357;
+    --primary: #e9a634;
+    --primary-text: #241806;
+    --accent-ink: #8a5a00;
+    --ok: #2e7d4f;
+    --danger: #b8392b;
+    --warn-bg: #fbe8c2;
+    --warn-text: #74470a;
+    --series-1: #b37400;
+    --series-2: #4a5fc1;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root[data-theme="auto"] {
+      color-scheme: light;
+      --bg: #f3eee5;
+      --surface: #fffaf2;
+      --surface-2: #ebe4d6;
+      --border: #e0d6c4;
+      --text: #1f1b16;
+      --muted: #6b6357;
+      --primary: #e9a634;
+      --primary-text: #241806;
+      --accent-ink: #8a5a00;
+      --ok: #2e7d4f;
+      --danger: #b8392b;
+      --warn-bg: #fbe8c2;
+      --warn-text: #74470a;
+      --series-1: #b37400;
+      --series-2: #4a5fc1;
+    }
+  }
+}

@@ -2,7 +2,6 @@ package content
 
 import (
 	"context"
-	"database/sql"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -184,24 +183,4 @@ func (s *Store) Syllabus(ctx context.Context) ([]Block, error) {
 		last.Topics = append(last.Topics, t)
 	}
 	return blocks, rows.Err()
-}
-
-// topicsMissing returns the ids that do not match any topic. Inactive topics
-// count as existing so old questions stay editable.
-func topicsMissing(ctx context.Context, q queryer, ids []int64) ([]int64, error) {
-	var missing []int64
-	for _, id := range ids {
-		var one int
-		err := q.QueryRowContext(ctx, `SELECT 1 FROM topics WHERE id = ?`, id).Scan(&one)
-		if err == sql.ErrNoRows {
-			missing = append(missing, id)
-		} else if err != nil {
-			return nil, err
-		}
-	}
-	return missing, nil
-}
-
-type queryer interface {
-	QueryRowContext(ctx context.Context, query string, args ...any) *sql.Row
 }

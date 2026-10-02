@@ -3,6 +3,7 @@ import { useAuth } from "../auth";
 import { useResource } from "../hooks";
 import type { Block } from "../types";
 import { ErrorBox, Loading } from "../components/Form";
+import "./SyllabusPage.css";
 
 // SyllabusPage lists blocks and topics. Tapping a topic starts a test on it;
 // administrators go to the topic's questions instead and see draft counts.

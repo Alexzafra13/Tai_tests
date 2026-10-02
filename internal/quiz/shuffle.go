@@ -51,7 +51,6 @@ func newOptionOrder(options [4]string, fixed bool, shuffle func(n int, swap func
 
 func randomShuffle(n int, swap func(i, j int)) { rand.Shuffle(n, swap) }
 
-// display returns the options in the order they are shown.
 func (o optionOrder) display(options [4]string) [4]string {
 	var out [4]string
 	for i, orig := range o {
@@ -70,7 +69,6 @@ func (o optionOrder) toDisplay(orig int) int {
 	return orig
 }
 
-// toOriginal converts a display position to the original option index.
 func (o optionOrder) toOriginal(pos int) int { return o[pos] }
 
 func (o optionOrder) String() string {

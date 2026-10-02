@@ -11,6 +11,9 @@ import (
 	"os/signal"
 	"syscall"
 
+	// Time zone data inside the binary: statistics use each browser's zone.
+	_ "time/tzdata"
+
 	"github.com/alexzafra13/tai_tests/internal/auth"
 	"github.com/alexzafra13/tai_tests/internal/config"
 	"github.com/alexzafra13/tai_tests/internal/content"
@@ -18,6 +21,8 @@ import (
 	"github.com/alexzafra13/tai_tests/internal/quiz"
 	"github.com/alexzafra13/tai_tests/internal/server"
 	"github.com/alexzafra13/tai_tests/internal/settings"
+	"github.com/alexzafra13/tai_tests/internal/srs"
+	"github.com/alexzafra13/tai_tests/internal/stats"
 	"github.com/alexzafra13/tai_tests/internal/users"
 	"github.com/alexzafra13/tai_tests/web"
 )
@@ -37,7 +42,8 @@ Commands:
 
 Run "tai <command> -h" for the flags of a command.
 
-Configuration is read from environment variables; see .env.example.
+Nothing needs configuring. Optional environment variables: TAI_ADDR,
+TAI_DB_PATH, TAI_SESSION_TTL, TAI_ADMIN_USER and TAI_ADMIN_PASSWORD.
 `
 
 func main() {
@@ -131,14 +137,16 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 		log.Info("first start: open the app in a browser to create the administrator account", "addr", cfg.Addr)
 	}
 
+	sr := srs.NewStore(d)
 	srv := server.New(server.Deps{
-		Auth:         auth.NewService(d, us, cfg.SessionTTL),
-		Users:        us,
-		Content:      content.NewStore(d),
-		Quiz:         quiz.NewStore(d, settings.NewStore(d)),
-		CookieSecure: cfg.CookieSecure,
-		Static:       web.Dist(),
-		Log:          log,
+		Auth:    auth.NewService(d, us, cfg.SessionTTL),
+		Users:   us,
+		Content: content.NewStore(d),
+		Quiz:    quiz.NewStore(d, settings.NewStore(d), sr),
+		SRS:     sr,
+		Stats:   stats.NewStore(d),
+		Static:  web.Dist(),
+		Log:     log,
 	})
 	log.Info("starting tai", "version", version, "db", cfg.DBPath)
 	return server.Run(ctx, cfg.Addr, srv.Handler(), log)

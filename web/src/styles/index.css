@@ -1,0 +1,13 @@
+/* All CSS lives in cascade layers, so precedence depends on the layer, not on
+   specificity or bundle order: base < components < pages.
+     base        tokens.css, base.css
+     components  layout.css, ui.css, forms.css, components/*.css
+     pages       pages/**.css, imported by the page that uses them
+   Every file repeats the order line in case it is bundled before this one. */
+@layer base, components, pages;
+
+@import "./tokens.css";
+@import "./base.css";
+@import "./layout.css";
+@import "./ui.css";
+@import "./forms.css";

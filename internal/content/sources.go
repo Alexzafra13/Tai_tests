@@ -8,6 +8,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/alexzafra13/tai_tests/internal/db"
+
 	"github.com/alexzafra13/tai_tests/internal/validate"
 
 	"github.com/alexzafra13/tai_tests/internal/textmatch"
@@ -194,7 +196,7 @@ func (s *Store) UpdateSource(ctx context.Context, id int64, in SourceInput) erro
 func (s *Store) DeleteSource(ctx context.Context, id int64) error {
 	res, err := s.db.ExecContext(ctx, `DELETE FROM sources WHERE id = ?`, id)
 	if err != nil {
-		if isConstraint(err, "FOREIGN KEY") {
+		if db.IsForeignKey(err) {
 			return ErrInUse
 		}
 		return err
@@ -218,14 +220,10 @@ func (s *Store) CheckQuote(ctx context.Context, sourceID int64, quote string) (b
 }
 
 func mapSourceErr(err error) error {
-	if err != nil && isConstraint(err, "UNIQUE") {
+	if db.IsUnique(err) {
 		return validate.Errors{"reference": "Ya existe una fuente de este tipo con esa referencia"}
 	}
 	return err
-}
-
-func isConstraint(err error, kind string) bool {
-	return err != nil && strings.Contains(err.Error(), kind+" constraint failed")
 }
 
 func pluralize(n int, one, many string) string {

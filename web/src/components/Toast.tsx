@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "./Toast.css";
 
 export type ToastMessage = { text: string; actionLabel?: string; onAction?: () => void };
 

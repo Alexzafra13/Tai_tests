@@ -5,6 +5,7 @@ import type { User } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
 import { NewUserForm } from "./NewUserForm";
 import { UserCard } from "./UserCard";
+import "./users.css";
 
 export function UsersPage() {
   const { user: me } = useAuth();

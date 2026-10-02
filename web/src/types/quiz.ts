@@ -11,6 +11,10 @@ export type TestFilters = {
   source_ids: number[];
   origins: Origin[];
   question_ids: number[];
+  // due: only questions due for spaced-repetition review today.
+  due?: boolean;
+  // failed: only questions whose last answer was wrong.
+  failed?: boolean;
 };
 
 export type CreateTestInput = {
