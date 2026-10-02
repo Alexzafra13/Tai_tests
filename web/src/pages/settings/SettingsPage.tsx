@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { useAuth } from "../../auth";
 import { AccountSection } from "./AccountSection";
 import { AppearanceSection } from "./AppearanceSection";
+import { InstallSection } from "./InstallSection";
 import { ScoringSection } from "./ScoringSection";
 
 export function SettingsPage() {
@@ -11,6 +12,7 @@ export function SettingsPage() {
       <h2>Ajustes</h2>
       <AccountSection />
       <AppearanceSection />
+      <InstallSection />
       <ScoringSection editable={isAdmin} />
       {isAdmin && (
         <fieldset>

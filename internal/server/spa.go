@@ -3,10 +3,16 @@ package server
 import (
 	"errors"
 	"io/fs"
+	"mime"
 	"net/http"
 	"path"
 	"strings"
 )
+
+func init() {
+	// Not in Go's table; without it the manifest would go out as text/plain.
+	mime.AddExtensionType(".webmanifest", "application/manifest+json")
+}
 
 // spaHandler serves the built frontend. Existing files are served as-is;
 // any other path gets index.html so client-side routes work on reload.
@@ -25,6 +31,7 @@ func spaHandler(static fs.FS) http.Handler {
 					// Vite fingerprints everything under assets/.
 					w.Header().Set("Cache-Control", "public, max-age=31536000, immutable")
 				} else {
+					// Includes sw.js: browsers must see a new version right away.
 					w.Header().Set("Cache-Control", "no-cache")
 				}
 				files.ServeHTTP(w, r)
