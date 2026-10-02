@@ -33,9 +33,6 @@ for i, ch in enumerate("ABCD"):
     parts.append(glyph(ch, cx, cy, dark if on else ink))
 
 svg = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">'
-       '<defs><radialGradient id="g"><stop offset="0" stop-color="#f0b03f" stop-opacity=".3"/>'
-       '<stop offset="1" stop-color="#f0b03f" stop-opacity="0"/></radialGradient></defs>'
-       '<rect width="512" height="512" rx="112" fill="#111318"/>'
-       '<circle cx="256" cy="256" r="236" fill="url(#g)"/>' + "".join(parts) + '</svg>\n')
+       '<rect width="512" height="512" rx="112" fill="#111318"/>' + "".join(parts) + '</svg>\n')
 open("public/icon.svg", "w").write(svg)
 print(len(svg), "bytes")
