@@ -24,10 +24,10 @@ export function ActivityChart({ days }: { days: StatsDay[] }) {
   return (
     <figure className="chart">
       <figcaption className="chart-head">
-        <span className="legend">
+        <span className="chart-legend">
           <span className="swatch series-1" /> Aciertos
         </span>
-        <span className="legend">
+        <span className="chart-legend">
           <span className="swatch series-2" /> Fallos y en blanco
         </span>
       </figcaption>

@@ -3,6 +3,7 @@ import { useResource } from "../../hooks";
 import type { Stats } from "../../types";
 import { ActivityChart } from "./ActivityChart";
 import { TopicTable } from "./TopicTable";
+import "./stats.css";
 
 export function StatsPage() {
   const { data, error } = useResource<Stats>("/stats");

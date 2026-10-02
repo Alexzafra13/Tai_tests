@@ -6,6 +6,7 @@ import type { Block, Page, ReviewCounts, ReviewItem, ReviewKind, ReviewState } f
 import { ErrorBox, Loading } from "../../components/Form";
 import { Toast, type ToastMessage } from "../../components/Toast";
 import { ReviewCard } from "./ReviewCard";
+import "./review.css";
 
 const tabs: { kind: ReviewKind; label: string; count: (c: ReviewCounts) => number }[] = [
   { kind: "", label: "Todas", count: (c) => c.total },

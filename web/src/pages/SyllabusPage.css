@@ -1,0 +1,43 @@
+@layer base, components, pages;
+
+@layer pages {
+  /* Syllabus */
+  .block {
+    margin-bottom: 0.75rem;
+  }
+
+  .block summary {
+    cursor: pointer;
+  }
+
+  .topic-list {
+    list-style: none;
+    margin: 0.75rem 0 0;
+    padding: 0;
+  }
+
+  .topic-list a {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    padding: 0.625rem 0;
+    border-top: 1px solid var(--border);
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .topic-num {
+    color: var(--muted);
+    min-width: 1.75rem;
+  }
+
+  .topic-title {
+    flex: 1;
+  }
+
+  .count {
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+}

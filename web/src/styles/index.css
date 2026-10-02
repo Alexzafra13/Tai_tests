@@ -1,0 +1,17 @@
+/* Global styles. Everything is in cascade layers so that, whatever their
+   specificity or bundle order, element defaults (base) never override a
+   component, and page styles always win over shared components:
+
+     base        tokens.css, base.css
+     components  layout.css, ui.css, forms.css, components/*.css
+     pages       pages/**.css, imported by the page that uses them
+
+   Each file repeats the order statement, so it holds even if a page's CSS
+   is bundled before this file. */
+@layer base, components, pages;
+
+@import "./tokens.css";
+@import "./base.css";
+@import "./layout.css";
+@import "./ui.css";
+@import "./forms.css";

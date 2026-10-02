@@ -1,3 +1,4 @@
+import "./styles/index.css";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router";
@@ -20,7 +21,6 @@ import { ReviewPage } from "./pages/review/ReviewPage";
 import { BatchReviewPage } from "./pages/review/BatchReviewPage";
 import { StatsPage } from "./pages/stats/StatsPage";
 import { SearchPage } from "./pages/SearchPage";
-import "./styles.css";
 
 // AdminOnly hides administration screens from other users. The server
 // enforces the same rules; this only avoids showing pages that would fail.

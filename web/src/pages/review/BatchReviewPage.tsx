@@ -4,6 +4,7 @@ import { api, errorMessage } from "../../api";
 import { useResource } from "../../hooks";
 import { optionLetters, type BatchResult, type Page, type ReviewItem, type Source } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
+import "./review.css";
 
 // BatchReviewPage accepts many drafts at once, e.g. a whole imported exam.
 // Each question is still validated on its own; failures are listed with

@@ -1,0 +1,129 @@
+/* Element defaults and utility classes. Lowest layer: never beats a component. */
+@layer base, components, pages;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1,
+  h2 {
+    margin: 0 0 1rem;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .center {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    min-width: 0;
+    font: inherit;
+    /* 16px avoids iOS zooming into the field on focus. */
+    font-size: 16px;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+  }
+
+  button {
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .error {
+    color: var(--danger);
+    margin: 0;
+  }
+
+  a {
+    color: var(--primary);
+  }
+
+  .small {
+    font-size: 0.85rem;
+  }
+
+  code,
+  pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+  }
+
+  .button,
+  button:not(.link) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0 1rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 3rem;
+  }
+
+  select {
+    min-height: 44px;
+  }
+
+  .ok {
+    color: var(--ok);
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0.5rem 0.75rem;
+    border-left: 3px solid var(--primary);
+    background: var(--bg);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  pre {
+    overflow-x: auto;
+    padding: 0.75rem;
+    background: var(--bg);
+    border-radius: 8px;
+  }
+}

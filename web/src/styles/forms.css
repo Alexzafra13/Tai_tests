@@ -1,0 +1,122 @@
+/* Forms: fieldsets, fields, checkboxes and pickers. */
+@layer base, components, pages;
+
+@layer components {
+  /* Forms */
+  .form fieldset {
+    /* Fieldsets default to min-width: min-content, which lets a long <select>
+       option push the form wider than the phone screen. */
+    min-width: 0;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    display: grid;
+    gap: 1rem;
+  }
+
+  .form legend {
+    padding: 0 0.25rem;
+    font-weight: 700;
+  }
+
+  .form > .field {
+    margin-bottom: 1rem;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .field > label {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+
+  .field.has-error input,
+  .field.has-error select,
+  .field.has-error textarea {
+    border-color: var(--danger);
+  }
+
+  .hint {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .field .error,
+  .option-edit .error {
+    font-size: 0.85rem;
+  }
+
+  .option-edit {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.25rem 0.5rem;
+    align-items: start;
+    padding: 0.25rem;
+    border-radius: 10px;
+  }
+
+  .option-edit.is-correct {
+    background: color-mix(in srgb, var(--ok) 15%, transparent);
+  }
+
+  .option-edit .error {
+    grid-column: 2;
+  }
+
+  .option-radio {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    min-height: 44px;
+    padding: 0 0.25rem;
+    font-weight: 700;
+  }
+
+  .option-radio input,
+  .check input {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    accent-color: var(--primary);
+  }
+
+  .check {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.375rem 0;
+  }
+
+  .topic-picker {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .topic-picker details {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .topic-picker summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    min-height: 36px;
+  }
+
+  .form fieldset > a {
+    display: block;
+    padding: 0.25rem 0;
+  }
+}

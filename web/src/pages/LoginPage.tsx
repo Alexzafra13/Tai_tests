@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useAuth } from "../auth";
 import { errorMessage } from "../api";
+import "./auth.css";
 
 export function LoginPage() {
   const { login } = useAuth();

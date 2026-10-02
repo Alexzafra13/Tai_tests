@@ -4,6 +4,7 @@ import { ErrorBox } from "../components/Form";
 import { Options } from "../components/QuestionView";
 import { useDebounced, useResource } from "../hooks";
 import { originLabel, type SearchHit } from "../types";
+import "./SearchPage.css";
 
 // SearchPage finds published questions by any word of the stem, options,
 // explanation or reference, ignoring accents. The query lives in the URL so

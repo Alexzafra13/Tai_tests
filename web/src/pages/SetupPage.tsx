@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import { ApiError, errorMessage, type FieldErrors } from "../api";
 import { useAuth, type SetupInput } from "../auth";
 import { Field } from "../components/Form";
+import "./auth.css";
 
 // SetupPage is shown once, on a fresh install, to create the first
 // administrator. Everything else is configured from the app afterwards.
