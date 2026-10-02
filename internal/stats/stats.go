@@ -9,19 +9,33 @@ import (
 	"time"
 )
 
+// Store reads statistics. Days are calendar days in loc, so an answer at
+// 23:30 in Madrid counts for that day, not for the next one in UTC.
 type Store struct {
 	db  *sql.DB
+	loc *time.Location
 	now func() time.Time
 }
 
-func NewStore(db *sql.DB) *Store {
-	return &Store{db: db, now: time.Now}
+func NewStore(db *sql.DB, loc *time.Location) *Store {
+	if loc == nil {
+		loc = time.UTC
+	}
+	return &Store{db: db, loc: loc, now: time.Now}
 }
+
+const dateFormat = "2006-01-02"
 
 // answered is the set of a user's answered attempts (blank answers in
 // finished exams included: they count as not known).
 const answered = `attempts a JOIN tests t ON t.id = a.test_id
 	WHERE t.user_id = ? AND (a.answered_at <> '' OR (t.status = 'finished' AND t.mode = 'exam'))`
+
+// answeredHour is the UTC hour ("YYYY-MM-DDTHH") an answer counts for: when
+// it was given or, for blanks in an exam, when the exam was finished.
+// Grouping by hour in SQL and converting to local days in Go is exact for
+// time zones with whole-hour offsets (all of Spain's).
+const answeredHour = `substr(CASE WHEN a.answered_at <> '' THEN a.answered_at ELSE t.finished_at END, 1, 13)`
 
 type Overview struct {
 	Answered      int `json:"answered"`
@@ -38,14 +52,18 @@ func (s *Store) Overview(ctx context.Context, userID int64) (Overview, error) {
 	err := s.db.QueryRowContext(ctx, `SELECT count(*),
 			count(CASE WHEN a.is_correct = 1 THEN 1 END),
 			count(CASE WHEN a.is_correct = 0 THEN 1 END),
-			count(CASE WHEN a.chosen IS NULL THEN 1 END),
-			count(DISTINCT substr(CASE WHEN a.answered_at <> '' THEN a.answered_at ELSE t.finished_at END, 1, 10))
-		FROM `+answered, userID).Scan(&o.Answered, &o.Correct, &o.Wrong, &o.Blank, &o.StudyDays)
+			count(CASE WHEN a.chosen IS NULL THEN 1 END)
+		FROM `+answered, userID).Scan(&o.Answered, &o.Correct, &o.Wrong, &o.Blank)
 	if err != nil {
 		return o, err
 	}
 	err = s.db.QueryRowContext(ctx, `SELECT count(*) FROM tests WHERE user_id = ? AND status = 'finished'`, userID).
 		Scan(&o.TestsFinished)
+	if err != nil {
+		return o, err
+	}
+	days, err := s.days(ctx, userID, time.Time{})
+	o.StudyDays = len(days)
 	return o, err
 }
 
@@ -98,7 +116,7 @@ func (s *Store) Topics(ctx context.Context, userID int64) ([]TopicStats, error) 
 	return out, rows.Err()
 }
 
-// Day is the user's activity on one calendar day (UTC).
+// Day is the user's activity on one calendar day in the store's time zone.
 type Day struct {
 	Date     string `json:"date"` // YYYY-MM-DD
 	Answered int    `json:"answered"`
@@ -111,37 +129,54 @@ func (s *Store) Timeline(ctx context.Context, userID int64, days int) ([]Day, er
 	if days <= 0 || days > 365 {
 		days = 30
 	}
-	today := s.now().UTC().Truncate(24 * time.Hour)
+	now := s.now().In(s.loc)
+	today := time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, s.loc)
 	from := today.AddDate(0, 0, -(days - 1))
 
-	rows, err := s.db.QueryContext(ctx, `SELECT substr(CASE WHEN a.answered_at <> '' THEN a.answered_at ELSE t.finished_at END, 1, 10) AS day,
+	byDay, err := s.days(ctx, userID, from)
+	if err != nil {
+		return nil, err
+	}
+	out := make([]Day, 0, days)
+	for d := from; !d.After(today); d = d.AddDate(0, 0, 1) {
+		day := byDay[d.Format(dateFormat)]
+		day.Date = d.Format(dateFormat)
+		out = append(out, day)
+	}
+	return out, nil
+}
+
+// days returns the user's activity per local day since from (the zero time
+// for all of it), keyed by date.
+func (s *Store) days(ctx context.Context, userID int64, from time.Time) (map[string]Day, error) {
+	fromHour := ""
+	if !from.IsZero() {
+		fromHour = from.UTC().Format("2006-01-02T15")
+	}
+	rows, err := s.db.QueryContext(ctx, `SELECT `+answeredHour+` AS hour,
 			count(*), count(CASE WHEN a.is_correct = 1 THEN 1 END)
-		FROM `+answered+` AND day >= ?
-		GROUP BY day`, userID, from.Format("2006-01-02"))
+		FROM `+answered+` AND hour >= ?
+		GROUP BY hour`, userID, fromHour)
 	if err != nil {
 		return nil, err
 	}
 	defer rows.Close()
-	byDay := map[string]Day{}
+	out := map[string]Day{}
 	for rows.Next() {
-		var d Day
-		if err := rows.Scan(&d.Date, &d.Answered, &d.Correct); err != nil {
+		var hour string
+		var answered, correct int
+		if err := rows.Scan(&hour, &answered, &correct); err != nil {
 			return nil, err
 		}
-		byDay[d.Date] = d
-	}
-	if err := rows.Err(); err != nil {
-		return nil, err
-	}
-
-	out := make([]Day, 0, days)
-	for d := from; !d.After(today); d = d.AddDate(0, 0, 1) {
-		key := d.Format("2006-01-02")
-		day, ok := byDay[key]
-		if !ok {
-			day = Day{Date: key}
+		t, err := time.ParseInLocation("2006-01-02T15", hour, time.UTC)
+		if err != nil {
+			return nil, err
 		}
-		out = append(out, day)
+		key := t.In(s.loc).Format(dateFormat)
+		d := out[key]
+		d.Answered += answered
+		d.Correct += correct
+		out[key] = d
 	}
-	return out, nil
+	return out, rows.Err()
 }

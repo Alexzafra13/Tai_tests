@@ -72,7 +72,7 @@ func newBareEnv(t *testing.T) (testEnv, *users.Store) {
 		Content: content.NewStore(d),
 		Quiz:    quiz.NewStore(d, settings.NewStore(d), srs.NewStore(d)),
 		SRS:     srs.NewStore(d),
-		Stats:   stats.NewStore(d),
+		Stats:   stats.NewStore(d, time.UTC),
 		Static:  static,
 		Log:     slog.New(slog.DiscardHandler),
 	})

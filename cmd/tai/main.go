@@ -10,6 +10,8 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
+	// Time zone data inside the binary, so TAI_TZ works on minimal images.
+	_ "time/tzdata"
 
 	"github.com/alexzafra13/tai_tests/internal/auth"
 	"github.com/alexzafra13/tai_tests/internal/config"
@@ -140,7 +142,7 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 		Content:      content.NewStore(d),
 		Quiz:         quiz.NewStore(d, settings.NewStore(d), sr),
 		SRS:          sr,
-		Stats:        stats.NewStore(d),
+		Stats:        stats.NewStore(d, cfg.Location),
 		CookieSecure: cfg.CookieSecure,
 		Static:       web.Dist(),
 		Log:          log,

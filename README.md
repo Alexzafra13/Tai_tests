@@ -42,6 +42,7 @@ Nada es obligatorio. Para cambiar algo, crea un `.env` junto al
 | `TAI_PORT` | `8080` | Puerto en el servidor |
 | `TAI_COOKIE_SECURE` | `false` | `true` si se sirve por HTTPS |
 | `TAI_SESSION_TTL` | `720h` | Duración de la sesión |
+| `TAI_TZ` | `Europe/Madrid` | Zona horaria de los días en estadísticas (`Atlantic/Canary` en Canarias) |
 | `TAI_ADMIN_USER` / `TAI_ADMIN_PASSWORD` | — | Crear el administrador sin la pantalla de bienvenida (instalaciones sin navegador). Se ignoran si ya existe |
 | `TAI_ADDR` / `TAI_DB_PATH` | `:8080` / `tai.db` | Solo al ejecutar el binario fuera de Docker |
 

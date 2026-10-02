@@ -46,7 +46,7 @@ func setup(t *testing.T) (*sql.DB, *quiz.Store, *Store, []int64) {
 			t.Fatal(err)
 		}
 	}
-	return d, quiz.NewStore(d, settings.NewStore(d), srs.NewStore(d)), NewStore(d), topics
+	return d, quiz.NewStore(d, settings.NewStore(d), srs.NewStore(d)), NewStore(d, time.UTC), topics
 }
 
 func TestOverviewAndTopics(t *testing.T) {
@@ -118,5 +118,38 @@ func TestTimelineHasEveryDay(t *testing.T) {
 	}
 	if days[0].Answered != 0 {
 		t.Errorf("a week ago = %+v, want empty", days[0])
+	}
+}
+
+func TestDaysUseLocalTimeZone(t *testing.T) {
+	ctx := context.Background()
+	d, q, _, _ := setup(t)
+	madrid, err := time.LoadLocation("Europe/Madrid")
+	if err != nil {
+		t.Fatal(err)
+	}
+	s := NewStore(d, madrid)
+	// 2 October, 00:30 in Madrid (CEST, UTC+2) is still 1 October in UTC.
+	s.now = func() time.Time { return time.Date(2026, 10, 2, 9, 0, 0, 0, madrid) }
+
+	id, _ := q.Create(ctx, 1, quiz.CreateInput{Mode: quiz.ModePractice, Count: 2})
+	one := 1
+	q.Answer(ctx, 1, id, quiz.AnswerInput{Position: 0, Chosen: &one})
+	q.Answer(ctx, 1, id, quiz.AnswerInput{Position: 1, Chosen: &one})
+	if _, err := d.Exec(`UPDATE attempts SET answered_at = CASE position
+		WHEN 0 THEN '2026-10-01T22:30:00.000Z' ELSE '2026-10-01T21:30:00.000Z' END`); err != nil {
+		t.Fatal(err)
+	}
+
+	days, err := s.Timeline(ctx, 1, 2)
+	if err != nil {
+		t.Fatal(err)
+	}
+	want := []Day{{Date: "2026-10-01", Answered: 1, Correct: 1}, {Date: "2026-10-02", Answered: 1, Correct: 1}}
+	if len(days) != 2 || days[0] != want[0] || days[1] != want[1] {
+		t.Errorf("timeline = %+v, want %+v", days, want)
+	}
+	if o, _ := s.Overview(ctx, 1); o.StudyDays != 2 {
+		t.Errorf("study days = %d, want 2", o.StudyDays)
 	}
 }

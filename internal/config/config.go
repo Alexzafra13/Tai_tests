@@ -18,6 +18,8 @@ type Config struct {
 	AdminPassword string
 	CookieSecure  bool
 	SessionTTL    time.Duration
+	// Location is the time zone that defines a "day" in statistics.
+	Location *time.Location
 }
 
 // Load reads the configuration shared by all subcommands.
@@ -38,6 +40,9 @@ func Load() (Config, error) {
 	}
 	if c.SessionTTL <= 0 {
 		return c, errors.New("TAI_SESSION_TTL must be positive")
+	}
+	if c.Location, err = time.LoadLocation(env("TAI_TZ", "Europe/Madrid")); err != nil {
+		return c, fmt.Errorf("TAI_TZ: %w", err)
 	}
 	return c, nil
 }
