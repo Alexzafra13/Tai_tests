@@ -3,9 +3,11 @@ import { api, ApiError } from "./api";
 import type { User } from "./types";
 
 // status "setup" means a fresh install with no administrator yet: the app
-// shows the first-run setup screen instead of the login.
+// shows the first-run setup screen instead of the login. "offline" means
+// the server could not be reached, which says nothing about the session.
 type AuthState = {
-  status: "loading" | "setup" | "in" | "out";
+  status: "loading" | "setup" | "in" | "out" | "offline";
+  retry: () => void;
   user: User | null;
   isAdmin: boolean;
   login: (username: string, password: string) => Promise<void>;
@@ -21,18 +23,31 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [status, setStatus] = useState<AuthState["status"]>("loading");
 
-  useEffect(() => {
+  const check = useCallback(() => {
     api<User>("/auth/me")
       .then((u) => {
         setUser(u);
         setStatus("in");
       })
       .catch(async (err) => {
+        if (err instanceof ApiError && err.status === 0) {
+          setStatus("offline");
+          return;
+        }
         if (!(err instanceof ApiError && err.status === 401)) console.error(err);
         const setup = await api<{ needed: boolean }>("/setup").catch(() => ({ needed: false }));
         setStatus(setup.needed ? "setup" : "out");
       });
   }, []);
+
+  useEffect(check, [check]);
+
+  // Opened without a connection: try again as soon as it comes back.
+  useEffect(() => {
+    if (status !== "offline") return;
+    window.addEventListener("online", check);
+    return () => window.removeEventListener("online", check);
+  }, [status, check]);
 
   const login = useCallback(async (username: string, password: string) => {
     const u = await api<User>("/auth/login", { method: "POST", body: { username, password } });
@@ -53,7 +68,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <AuthContext.Provider value={{ status, user, isAdmin: user?.role === "admin", login, setup, logout }}>
+    <AuthContext.Provider value={{ status, retry: check, user, isAdmin: user?.role === "admin", login, setup, logout }}>
       {children}
     </AuthContext.Provider>
   );

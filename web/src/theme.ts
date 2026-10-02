@@ -17,4 +17,14 @@ export function savedTheme(): Theme {
 export function applyTheme(theme: Theme) {
   document.documentElement.dataset.theme = theme;
   savePref(KEY, theme);
+  syncThemeColor();
 }
+
+// The browser and system bars (and the installed app's title bar) take the
+// page background, including when "auto" follows a system change.
+function syncThemeColor() {
+  const bg = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", bg || "#111318");
+}
+
+window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", syncThemeColor);

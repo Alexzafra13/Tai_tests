@@ -1,4 +1,4 @@
-# TAI · Estudio — guía para trabajar en el repo
+# TAI Go — guía para trabajar en el repo
 
 App web para preparar la oposición TAI (C1). Go + SQLite en el servidor,
 React + TypeScript en el cliente, todo en un binario. El README explica qué
@@ -38,6 +38,9 @@ hace la app; aquí van las reglas para cambiarla.
   `@layer base, components, pages;` y los de una pantalla van junto a ella.
 - Colores solo con los tokens de `web/src/styles/tokens.css` (tema oscuro
   por defecto, claro y automático).
+- App instalable: el service worker sale de la plantilla `web/sw.js`
+  (lo completa `vite.config.ts`). Nunca debe cachear `/api`: los datos son
+  de cada usuario y tienen que estar al día.
 
 ## Comentarios
 

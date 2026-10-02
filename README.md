@@ -1,4 +1,4 @@
-# TAI · Estudio
+# TAI Go
 
 Aplicación web para preparar la oposición de **Técnico Auxiliar de
 Informática de la Administración del Estado (TAI, C1)**, con administradores y
@@ -61,6 +61,21 @@ variables de entorno opcionales: `TAI_ADMIN_USER` / `TAI_ADMIN_PASSWORD`
 crean el administrador sin pantalla de bienvenida, `TAI_SESSION_TTL`
 (por defecto `720h`) es la duración de la sesión y `TAI_ADDR` /
 `TAI_DB_PATH` sirven al ejecutar el binario directamente.
+
+### Instalarla como app en el móvil
+
+La app se puede instalar: icono en la pantalla de inicio, pantalla completa
+y arranque instantáneo. En **Ajustes → Instalar la app** se explica cómo en
+cada dispositivo (en Android y en el PC aparece el botón **Instalar**).
+
+- **Android y PC** solo permiten instalarla si la app se abre por **HTTPS**
+  (ver el apartado siguiente). Por `http://` en casa funciona igual en el
+  navegador, pero sin instalar.
+- **iPhone/iPad:** en Safari, Compartir → *Añadir a pantalla de inicio*.
+- Sin conexión la app abre y lo indica; las respuestas necesitan el
+  servidor, así que no se guardan hasta que vuelve la red.
+- Al actualizar el servidor, la app avisa con **Actualizar**; un test a
+  medias continúa donde estaba.
 
 ### Acceso desde el móvil fuera de casa
 
@@ -293,4 +308,4 @@ make build   # compila el frontend y genera bin/tai con todo embebido
 5. Importador de exámenes del INAP y modo simulacro.
 6. Generación del bloque legal con validación.
 7. ✅ FSRS, falladas, estadísticas y búsqueda.
-8. Generación del bloque técnico, PWA y pulido.
+8. Generación del bloque técnico y pulido (✅ app instalable).

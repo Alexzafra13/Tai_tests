@@ -1,0 +1,42 @@
+@layer base, components, pages;
+
+@layer components {
+  .offline-bar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    padding: 0.5rem 1rem;
+    padding-top: max(0.5rem, env(safe-area-inset-top));
+    background: var(--warn-bg);
+    color: var(--warn-text);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /* Above the floating navigation, so it never hides the bar's buttons. */
+  .update-bar {
+    position: fixed;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: calc(var(--nav-height) + 1.5rem + env(safe-area-inset-bottom));
+    max-width: 38rem;
+    margin: 0 auto;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.625rem 0.625rem 0.625rem 1rem;
+    border-radius: var(--radius);
+    background: var(--text);
+    color: var(--bg);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 0.3);
+    font-size: 0.9rem;
+  }
+
+  .update-bar .link {
+    color: var(--bg);
+    text-decoration: underline;
+  }
+}

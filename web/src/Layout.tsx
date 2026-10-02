@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router";
 import { useAuth } from "./auth";
+import { Brand } from "./components/Brand";
 
 type NavItem = { to: string; label: string; end?: boolean };
 
@@ -27,8 +28,8 @@ export function Layout() {
   return (
     <div className="app">
       <header className="topbar">
-        <Link to="/" className="brand">
-          TAI<span>Estudio</span>
+        <Link to="/" className="brand" aria-label="TAI Go · Inicio">
+          <Brand />
         </Link>
         <Link to="/settings" className="avatar" title={`${name} · Ajustes`} aria-label="Ajustes">
           {name.slice(0, 1)}

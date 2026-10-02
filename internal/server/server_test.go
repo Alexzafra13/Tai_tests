@@ -61,9 +61,10 @@ func newBareEnv(t *testing.T) (testEnv, *users.Store) {
 		t.Fatal(err)
 	}
 	static := fstest.MapFS{
-		"index.html":    {Data: []byte("<!doctype html><title>TAI</title>")},
-		"assets/app.js": {Data: []byte("console.log(1)")},
-		"manifest.json": {Data: []byte("{}")},
+		"index.html":           {Data: []byte("<!doctype html><title>TAI</title>")},
+		"assets/app.js":        {Data: []byte("console.log(1)")},
+		"manifest.webmanifest": {Data: []byte("{}")},
+		"sw.js":                {Data: []byte("self.addEventListener('fetch', () => {})")},
 	}
 	us := users.NewStore(d)
 	s := New(Deps{
@@ -159,6 +160,15 @@ func TestSPARouting(t *testing.T) {
 	}
 	if cc := resp.Header.Get("Cache-Control"); !strings.Contains(cc, "immutable") {
 		t.Errorf("asset Cache-Control = %q, want immutable", cc)
+	}
+
+	// Installable app files: right type, and never cached stale.
+	for file, ctype := range map[string]string{"/manifest.webmanifest": "application/manifest+json", "/sw.js": "text/javascript"} {
+		resp, _ := get(t, c, ts.URL+file)
+		if resp.StatusCode != http.StatusOK || !strings.HasPrefix(resp.Header.Get("Content-Type"), ctype) ||
+			resp.Header.Get("Cache-Control") != "no-cache" {
+			t.Errorf("%s: %d %q %q", file, resp.StatusCode, resp.Header.Get("Content-Type"), resp.Header.Get("Cache-Control"))
+		}
 	}
 
 	// Unknown API routes don't reveal anything before login.

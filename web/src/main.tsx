@@ -24,9 +24,12 @@ import { ReviewPage } from "./pages/review/ReviewPage";
 import { BatchReviewPage } from "./pages/review/BatchReviewPage";
 import { StatsPage } from "./pages/stats/StatsPage";
 import { SearchPage } from "./pages/SearchPage";
+import { AppNotices } from "./components/AppNotices";
+import { startPWA } from "./pwa";
 import { applyTheme, savedTheme } from "./theme";
 
 applyTheme(savedTheme());
+startPWA();
 
 // AdminOnly hides administration screens from other users. The server
 // enforces the same rules; this only avoids showing pages that would fail.
@@ -36,10 +39,26 @@ function AdminOnly() {
 }
 
 function App() {
-  const { status } = useAuth();
+  const { status, retry } = useAuth();
 
   if (status === "loading") {
     return <div className="center muted">Cargando…</div>;
+  }
+  if (status === "offline") {
+    return (
+      <div className="center">
+        <div className="card login">
+          <h1>Sin conexión</h1>
+          <p className="muted">
+            No se puede contactar con el servidor de la app. Comprueba la conexión del móvil o que el servidor esté
+            encendido.
+          </p>
+          <button className="primary" onClick={retry}>
+            Reintentar
+          </button>
+        </div>
+      </div>
+    );
   }
   if (status === "setup") {
     return <SetupPage />;
@@ -85,6 +104,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <AuthProvider>
+        <AppNotices />
         <App />
       </AuthProvider>
     </BrowserRouter>

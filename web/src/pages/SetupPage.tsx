@@ -35,7 +35,7 @@ export function SetupPage() {
   return (
     <div className="center">
       <form className="card login setup" onSubmit={onSubmit}>
-        <h1>Bienvenido</h1>
+        <h1>Bienvenido a TAI Go</h1>
         <p className="muted">
           Es la primera vez que se abre esta instalación. Crea la cuenta de administrador: con ella darás de alta al resto
           de usuarios y gestionarás el contenido.
