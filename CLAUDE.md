@@ -18,6 +18,8 @@ hace la app; aquí van las reglas para cambiarla.
   marcadas `"status": "published"` con sus temas, solo si se han
   comprobado contra el cuestionario y la plantilla definitiva. Las que
   dependen de una figura que no se reproduce se quedan sin publicar.
+- Los textos para estudiar (`data/laws`) son el texto consolidado del BOE
+  literal, en la redacción vigente cada día: no se resumen ni se reescriben.
 - Permisos en el servidor, ruta a ruta, en `internal/server/routes.go`.
 
 ## Idiomas

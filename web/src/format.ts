@@ -18,3 +18,12 @@ export function formatClock(totalSec: number): string {
 export function formatScore(score: number, decimals = 2): string {
   return score.toLocaleString("es-ES", { minimumFractionDigits: decimals, maximumFractionDigits: decimals });
 }
+
+const dayFmt = new Intl.DateTimeFormat("es-ES", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+
+// formatDay renders a calendar date (YYYY-MM-DD) such as "23 de octubre de 2026".
+export function formatDay(day: string | undefined): string {
+  if (!day) return "";
+  const d = new Date(`${day}T00:00:00Z`);
+  return Number.isNaN(d.getTime()) ? day : dayFmt.format(d);
+}
