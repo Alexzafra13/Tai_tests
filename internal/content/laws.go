@@ -598,7 +598,8 @@ type sectionRef struct {
 // for the laws this installation has.
 func (s *Store) questionSections(ctx context.Context) (map[int64][]sectionRef, error) {
 	rows, err := s.db.QueryContext(ctx, `SELECT qs.question_id, s.id, qs.block_id FROM question_sections qs
-		JOIN sources s ON s.kind = 'law' AND s.reference = qs.law_reference ORDER BY qs.question_id, qs.position`)
+		JOIN sources s ON s.kind = 'law' AND s.reference = qs.law_reference
+		WHERE qs.url = '' ORDER BY qs.question_id, qs.position`)
 	if err != nil {
 		return nil, err
 	}
@@ -773,8 +774,10 @@ func questionStem(stem string) string {
 	return stem
 }
 
-// ArticleLink points from a question to an article of a law it cites.
+// ArticleLink points from a question to an article of a law it cites or,
+// with URL, to an official page outside the laws (Law holds its title).
 type ArticleLink struct {
+	URL      string `json:"url,omitempty"`
 	SourceID int64  `json:"source_id"`
 	Law      string `json:"law"` // short name: "Ley 39/2015"
 	BlockID  string `json:"block_id"`
@@ -872,7 +875,14 @@ func (s *Store) QuestionArticles(ctx context.Context, ids []int64) (map[int64][]
 		}
 		out[qid] = append(out[qid], l)
 	}
+	pages, err := s.questionPages(ctx, ids)
+	if err != nil {
+		return nil, err
+	}
 	for _, qid := range ids {
+		if len(pages[qid]) > 0 {
+			out[qid] = append(out[qid], pages[qid]...)
+		}
 		for _, r := range linked[qid] {
 			idx, err := index(r.sourceID)
 			if err != nil {
@@ -895,7 +905,13 @@ func (s *Store) QuestionArticles(ctx context.Context, ids []int64) (map[int64][]
 		}
 	}
 	for _, links := range out {
-		sort.Slice(links, func(i, j int) bool {
+		sort.SliceStable(links, func(i, j int) bool {
+			if (links[i].URL == "") != (links[j].URL == "") {
+				return links[i].URL == "" // laws before other pages
+			}
+			if links[i].URL != "" {
+				return false
+			}
 			if links[i].Law != links[j].Law {
 				return links[i].Law < links[j].Law
 			}
@@ -903,6 +919,32 @@ func (s *Store) QuestionArticles(ctx context.Context, ids []int64) (map[int64][]
 		})
 	}
 	return out, nil
+}
+
+// questionPages returns the official pages outside the laws that the bank
+// links each question to.
+func (s *Store) questionPages(ctx context.Context, ids []int64) (map[int64][]ArticleLink, error) {
+	args := make([]any, len(ids))
+	for i, id := range ids {
+		args[i] = id
+	}
+	rows, err := s.db.QueryContext(ctx, `SELECT question_id, title, url FROM question_sections
+		WHERE url <> '' AND question_id IN (`+placeholders(len(ids))+`) ORDER BY question_id, position`, args...)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	out := map[int64][]ArticleLink{}
+	for rows.Next() {
+		var qid int64
+		var l ArticleLink
+		if err := rows.Scan(&qid, &l.Law, &l.URL); err != nil {
+			return nil, err
+		}
+		l.pos = -1
+		out[qid] = append(out[qid], l)
+	}
+	return out, rows.Err()
 }
 
 type lawArticle struct {

@@ -57,11 +57,14 @@ type BankQuestion struct {
 	Articles []BankArticle `json:"articles,omitempty"`
 }
 
-// BankArticle points to a section of a bundled law; an empty Section
-// points to the law as a whole.
+// BankArticle points to a section of a bundled law (an empty Section
+// points to the law as a whole) or, for questions no law answers, to the
+// official page that does (Title and URL).
 type BankArticle struct {
-	Law     string `json:"law"`
+	Law     string `json:"law,omitempty"`
 	Section string `json:"section,omitempty"`
+	Title   string `json:"title,omitempty"`
+	URL     string `json:"url,omitempty"`
 }
 
 // CorrectIndex converts a letter (a-d) to an option index.
@@ -119,8 +122,10 @@ func ParseBankFile(b []byte) (BankFile, error) {
 			return f, fmt.Errorf("bank: question %s: status must be empty or published", q.Key)
 		}
 		for _, a := range q.Articles {
-			if a.Law == "" {
-				return f, fmt.Errorf("bank: question %s: an article needs its law", q.Key)
+			law := a.Law != "" && a.Title == "" && a.URL == ""
+			page := a.Law == "" && a.Section == "" && a.Title != "" && strings.HasPrefix(a.URL, "https://")
+			if !law && !page {
+				return f, fmt.Errorf("bank: question %s: an article is a law and section, or a title and https url", q.Key)
 			}
 		}
 	}
@@ -185,8 +190,8 @@ func linkBankArticles(ctx context.Context, tx *sql.Tx, f BankFile) error {
 			return err
 		}
 		for i, a := range q.Articles {
-			if _, err := tx.ExecContext(ctx, `INSERT INTO question_sections (question_id, position, law_reference, block_id)
-				VALUES (?, ?, ?, ?)`, id, i, a.Law, a.Section); err != nil {
+			if _, err := tx.ExecContext(ctx, `INSERT INTO question_sections (question_id, position, law_reference, block_id,
+				title, url) VALUES (?, ?, ?, ?, ?, ?)`, id, i, a.Law, a.Section, a.Title, a.URL); err != nil {
 				return err
 			}
 		}
