@@ -346,26 +346,61 @@ func (s *Store) StudyTopic(ctx context.Context, topicID int64, today time.Time) 
 	if err := rows.Err(); err != nil {
 		return st, err
 	}
+	cites, err := s.lawCitations(ctx)
+	if err != nil {
+		return st, err
+	}
 	for i := range st.Laws {
-		text, err := s.LawText(ctx, st.Laws[i].SourceID, topicID, today)
+		l := &st.Laws[i]
+		l.Parts = []string{}
+		secs, err := s.lawOutline(ctx, l.SourceID, today)
 		if err != nil {
 			return st, err
 		}
-		st.Laws[i].Parts = []string{}
-		if parts[i] != "" {
-			for _, sec := range text.Sections {
-				if sec.Kind == SectionHeading && sec.Level == text.topLevel {
-					st.Laws[i].Parts = append(st.Laws[i].Parts, sec.Title)
-				}
+		keep := selectParts(secs, parts[i])
+		top := 0
+		for j, sec := range secs {
+			if keep[j] && sec.Kind == SectionHeading && (top == 0 || sec.Level < top) {
+				top = sec.Level
 			}
 		}
-		for _, sec := range text.Sections {
-			if len(sec.Questions) > 0 {
-				st.Laws[i].CitedArticles++
+		for j, sec := range secs {
+			switch {
+			case !keep[j]:
+			case sec.Kind == SectionHeading && sec.Level == top && parts[i] != "":
+				l.Parts = append(l.Parts, sec.Title)
+			case sec.Kind == SectionArticle && sec.Body != "" && cites[l.SourceID] != nil &&
+				len(cites[l.SourceID].byArticle[articleKey(sec.Title)]) > 0:
+				l.CitedArticles++
 			}
 		}
 	}
 	return st, nil
+}
+
+// lawOutline returns the sections of a law in force on today without their
+// text: Body is only non-empty for sections that have one.
+func (s *Store) lawOutline(ctx context.Context, sourceID int64, today time.Time) ([]LawSection, error) {
+	rows, err := s.db.QueryContext(ctx, `SELECT block_id, kind, level, title, CASE WHEN body <> '' THEN '-' ELSE '' END,
+		upcoming_date, upcoming_title, CASE WHEN upcoming_body <> '' THEN '-' ELSE '' END
+		FROM law_sections WHERE source_id = ? ORDER BY position`, sourceID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var out []LawSection
+	for rows.Next() {
+		var sec LawSection
+		var up LawChange
+		if err := rows.Scan(&sec.ID, &sec.Kind, &sec.Level, &sec.Title, &sec.Body, &up.Date, &up.Title, &up.Body); err != nil {
+			return nil, err
+		}
+		if up.Date != "" {
+			sec.Upcoming = &up
+		}
+		out = append(out, sec.inForce(today))
+	}
+	return out, rows.Err()
 }
 
 // QuestionBrief is an official question shown next to the article it cites.
@@ -534,81 +569,95 @@ var articleRef = regexp.MustCompile(`(?i)\bart(?:[íi]culos?|\.)\s+(\d+)(?:\s*(b
 // "art. 62") is attributed to the nearest alias; questions citing no
 // single article of the law go to general.
 func (s *Store) lawQuestions(ctx context.Context, sourceID int64) (map[string][]QuestionBrief, []QuestionBrief, error) {
-	aliases, err := s.lawAliases(ctx)
+	all, err := s.lawCitations(ctx)
 	if err != nil {
 		return nil, nil, err
 	}
-	mine := aliases[sourceID]
-	if len(mine) == 0 {
+	c := all[sourceID]
+	if c == nil {
 		return nil, []QuestionBrief{}, nil
+	}
+	return c.byArticle, c.general, nil
+}
+
+type lawCites struct {
+	byArticle map[string][]QuestionBrief
+	general   []QuestionBrief
+}
+
+// lawCitations finds, in one pass over the published questions, the
+// questions of every law (see lawQuestions).
+func (s *Store) lawCitations(ctx context.Context) (map[int64]*lawCites, error) {
+	aliases, err := s.lawAliases(ctx)
+	if err != nil || len(aliases) == 0 {
+		return nil, err
 	}
 	rows, err := s.db.QueryContext(ctx, `SELECT id, source_ref, stem, option_a, option_b, option_c, option_d, correct
 		FROM questions WHERE status = 'published' AND annulled = 0 ORDER BY source_ref`)
 	if err != nil {
-		return nil, nil, err
+		return nil, err
 	}
 	defer rows.Close()
-	byArticle := map[string][]QuestionBrief{}
-	general := []QuestionBrief{}
+	out := map[int64]*lawCites{}
 	for rows.Next() {
 		var q QuestionBrief
 		if err := rows.Scan(&q.ID, &q.SourceRef, &q.Stem, &q.Options[0], &q.Options[1], &q.Options[2], &q.Options[3],
 			&q.Correct); err != nil {
-			return nil, nil, err
+			return nil, err
 		}
 		q.Stem = questionStem(q.Stem)
 		// Wrong options name laws and articles on purpose: only the stem
 		// and the right answer count.
-		articles, named := citedArticles(q.Stem, q.Options[q.Correct], sourceID, aliases)
-		if !named {
-			continue
-		}
-		if len(articles) == 0 {
-			general = append(general, q)
-		}
-		for _, a := range articles {
-			byArticle[a] = append(byArticle[a], q)
+		byLaw, named := stemCitations(q.Stem, aliases)
+		for law, res := range aliases {
+			if !named[law] && !res[0].MatchString(q.Options[q.Correct]) {
+				continue
+			}
+			c := out[law]
+			if c == nil {
+				c = &lawCites{byArticle: map[string][]QuestionBrief{}, general: []QuestionBrief{}}
+				out[law] = c
+			}
+			if len(byLaw[law]) == 0 {
+				c.general = append(c.general, q)
+			}
+			for _, a := range byLaw[law] {
+				c.byArticle[a] = append(c.byArticle[a], q)
+			}
 		}
 	}
-	return byArticle, general, rows.Err()
+	return out, rows.Err()
 }
 
-// lawAliases returns, by law, patterns matching its aliases as whole words
-// (case-sensitive, so "CE" is not any "ce").
+// lawAliases returns, by law, a pattern matching any of its aliases as a
+// whole word (case-sensitive, so "CE" is not any "ce").
 func (s *Store) lawAliases(ctx context.Context) (map[int64][]*regexp.Regexp, error) {
-	rows, err := s.db.QueryContext(ctx, `SELECT source_id, alias FROM law_aliases`)
+	rows, err := s.db.QueryContext(ctx, `SELECT source_id, alias FROM law_aliases ORDER BY length(alias) DESC`)
 	if err != nil {
 		return nil, err
 	}
 	defer rows.Close()
-	out := map[int64][]*regexp.Regexp{}
+	names := map[int64][]string{}
 	for rows.Next() {
 		var id int64
 		var a string
 		if err := rows.Scan(&id, &a); err != nil {
 			return nil, err
 		}
-		re, err := regexp.Compile(`(^|[^\p{L}\d/])` + regexp.QuoteMeta(a) + `($|[^\p{L}\d/])`)
+		names[id] = append(names[id], regexp.QuoteMeta(a))
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	out := map[int64][]*regexp.Regexp{}
+	for id, ns := range names {
+		re, err := regexp.Compile(`(^|[^\p{L}\d/])(?:` + strings.Join(ns, "|") + `)($|[^\p{L}\d/])`)
 		if err != nil {
 			return nil, err
 		}
-		out[id] = append(out[id], re)
+		out[id] = []*regexp.Regexp{re}
 	}
-	return out, rows.Err()
-}
-
-// citedArticles returns the keys (see articleKey) of the articles of law
-// the stem cites, and whether the stem or the answer name law at all.
-func citedArticles(stem, answer string, law int64, aliases map[int64][]*regexp.Regexp) ([]string, bool) {
-	byLaw, named := stemCitations(stem, aliases)
-	ok := named[law]
-	for _, re := range aliases[law] {
-		ok = ok || re.MatchString(answer)
-	}
-	if !ok {
-		return nil, false
-	}
-	return byLaw[law], true
+	return out, nil
 }
 
 // stemCitations returns, by law, the keys of the articles the stem cites
