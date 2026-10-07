@@ -1,0 +1,1638 @@
+{
+  "source": {
+    "kind": "inap_exam",
+    "title": "TAI ingreso libre · OEP 2023-2024 · ejercicio único (modelo A)",
+    "reference": "INAP-TAI-L-OEP2024",
+    "url": "https://sede.inap.gob.es/es/procedimientos-y-servicios/seleccion/procesos-selectivos-de-cuerpos-y-escalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado/ctaiae-ingreso-libre-oferta-de-empleo-publico-2023-y-2024"
+  },
+  "questions": [
+    {
+      "key": "P-1",
+      "source_ref": "OEP 2024 · nº 1",
+      "stem": "¿Cuál de los siguientes derechos recogidos en el Capítulo Segundo del Título I de la Constitución Española NO forma parte de los Derechos Fundamentales y Libertades Públicas (Artículos 15 a 29)?",
+      "options": [
+        "Derecho a sindicarse libremente.",
+        "Derecho a la propiedad privada.",
+        "Derecho a la producción y creación literaria, artística, científica y técnica.",
+        "Derecho a elegir libremente su residencia."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-2",
+      "source_ref": "OEP 2024 · nº 2",
+      "stem": "Según el Título I, Capítulo Cuarto, “De las garantías de las libertades y derechos fundamentales” de la Constitución Española de 1978, señale la opción correcta:",
+      "options": [
+        "Los derechos y libertades reconocidos no vinculan a todas las Administraciones Públicas.",
+        "Sólo por ley orgánica podrá regularse el ejercicio de tales derechos y libertades.",
+        "Una ley orgánica regulará la institución del Defensor del Pueblo.",
+        "El reconocimiento, el respeto y la protección de los principios reconocidos en el Capítulo tercero, informará la judicialización positiva, la práctica legislativa y la actuación de los poderes públicos."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-3",
+      "source_ref": "OEP 2024 · nº 3",
+      "stem": "Señale la respuesta INCORRECTA de acuerdo con el Título II, artículo 62 de la Constitución Española de 1978. Corresponde al Rey:",
+      "options": [
+        "Convocar a referéndum en los casos previstos en la Constitución, previa autorización de las Cortes Generales.",
+        "Convocar y disolver las Cortes Generales y convocar elecciones en los términos previstos en la Constitución.",
+        "Proponer el candidato a Presidente de Gobierno y, en su caso, nombrarlo, así como poner fin a sus funciones en los términos previstos en la Constitución.",
+        "Nombrar y separar a los miembros del Gobierno, a propuesta de su Presidente."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-4",
+      "source_ref": "OEP 2024 · nº 4",
+      "stem": "¿Quién puede ser elegido Defensor del Pueblo, según la Ley Orgánica 3/1981, de 6 de abril?",
+      "options": [
+        "Cualquier Magistrado elegido por las Cortes Generales.",
+        "Cualquier Senador elegido por las Cortes Generales.",
+        "Cualquier persona que se encuentre en el pleno disfrute de sus derechos civiles.",
+        "Cualquier español mayor de edad que se encuentre en el pleno disfrute de sus derechos civiles y políticos."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-5",
+      "source_ref": "OEP 2024 · nº 5",
+      "stem": "Según el artículo 71 de la Constitución Española de 1978, ¿quién es el competente en las causas contra Diputados y Senadores?",
+      "options": [
+        "Sala de lo Penal del Tribunal Constitucional.",
+        "Sala de lo Contencioso Administrativo del Tribunal Supremo.",
+        "Sala de lo Penal del Tribunal Supremo.",
+        "Sala de lo Civil del Tribunal Supremo."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-6",
+      "source_ref": "OEP 2024 · nº 6",
+      "stem": "Según el Título III \"De las Cortes Generales\" de la Constitución Española de 1978, las Cámaras podrán:",
+      "options": [
+        "Recibir peticiones individuales y colectivas, siempre por escrito, quedando prohibida la presentación directa por manifestaciones ciudadanas.",
+        "Delegar en las Comisiones Legislativas Permanentes la aprobación de proyectos o proposiciones de ley relativas a los Presupuestos Generales del Estado.",
+        "Reunirse en sesión extraordinaria a petición de la mayoría simple de los miembros de cualquiera de las Cámaras.",
+        "Nombrar conjuntamente Comisiones de Investigación sobre asuntos de interés público. Sus conclusiones serán vinculantes para los Tribunales."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-7",
+      "source_ref": "OEP 2024 · nº 7",
+      "stem": "Según lo establecido en el artículo 159 de la Constitución Española de 1978, los miembros del Tribunal Constitucional serán designados por períodos de:",
+      "options": [
+        "9 años y se renovarán por terceras partes cada 3.",
+        "9 años y se renovarán por terceras partes cada 2.",
+        "6 años y se renovarán por terceras partes cada 3.",
+        "6 años y se renovarán por terceras partes cada 2."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-8",
+      "source_ref": "OEP 2024 · nº 8",
+      "stem": "El Gobierno se rige, en su organización y funcionamiento, entre otras, por la Ley:",
+      "options": [
+        "Ley 50/1997, de 27 de noviembre.",
+        "Ley 50/1999, de 26 de noviembre.",
+        "Ley 50/1996, de 28 de noviembre.",
+        "Ley 50/1998, de 29 de noviembre."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-9",
+      "source_ref": "OEP 2024 · nº 9",
+      "stem": "La Constitución Española de 1978 en su artículo 113 establece que:",
+      "options": [
+        "El Congreso de los Diputados puede exigir la responsabilidad jurídica del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.",
+        "El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría simple de la moción de censura.",
+        "El Congreso de los Diputados puede exigir la responsabilidad civil del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.",
+        "El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría absoluta de la moción de censura."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-10",
+      "source_ref": "OEP 2024 · nº 10",
+      "stem": "Señale la respuesta INCORRECTA sobre el uso obligatorio de firma requerida a los interesados por parte de las Administraciones Públicas que recoge el artículo 11 de Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas:",
+      "options": [
+        "Conocer el estado de la tramitación.",
+        "Desistir de acciones.",
+        "Presentar declaraciones responsables o comunicaciones.",
+        "Formular solicitudes."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-11",
+      "source_ref": "OEP 2024 · nº 11",
+      "stem": "Tal y como se recoge en la Resolución de 14 de diciembre de 2015, de la Dirección de Tecnologías de la Información y las Comunicaciones, por la que se establecen las prescripciones técnicas necesarias para el desarrollo y aplicación del sistema Cl@ve, señale la respuesta correcta:",
+      "options": [
+        "Es un sistema que está dirigido a los ciudadanos que cumplan con los requisitos indicados en las Prescripciones Técnicas.",
+        "Ofrece tres niveles de garantía de registro asociados a la forma y a las garantías que ofrezca la comunicación de la información de registro por parte del ciudadano.",
+        "Proporcionará a los usuarios tres modalidades de identificación electrónica basadas en el uso de claves concertadas.",
+        "Permitirá también el acceso a servicios de firma electrónica, en particular, a servicios de firma de documentos electrónicos mediante certificados electrónicos centralizados."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-12",
+      "source_ref": "OEP 2024 · nº 12",
+      "stem": "Señale la respuesta correcta sobre la solicitud de acceso a la información pública que recoge el artículo 17 de la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno:",
+      "options": [
+        "Sólo se podrá presentar en castellano.",
+        "Es obligatorio indicar una dirección de contacto electrónica, a efectos de comunicaciones.",
+        "Deberá dirigirse al titular del órgano administrativo o entidad que posea la información.",
+        "Deberá motivarse."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-13",
+      "source_ref": "OEP 2024 · nº 13",
+      "stem": "Indique la respuesta correcta sobre la vigencia que tienen los certificados electrónicos reconocidos incorporados al documento nacional de identidad, según la legislación vigente:",
+      "options": [
+        "No podrá ser superior a tres años.",
+        "No podrá ser superior a cuatro años.",
+        "No podrá ser superior a cinco años.",
+        "No podrá ser superior a seis años."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-14",
+      "source_ref": "OEP 2024 · nº 14",
+      "stem": "La Ley 56/2007, de 28 de diciembre, de Medidas de Impulso de la Sociedad de la Información, ¿qué establece sobre la factura electrónica en el artículo 1?",
+      "options": [
+        "Los formatos estructurados de las facturas electrónicas permitirán su visualización y emisión en las distintas lenguas oficiales existentes y en inglés, con la finalidad de garantizar los derechos de los usuarios nacionales y extranjeros.",
+        "Los formatos estructurados de las facturas electrónicas permitirán su visualización y emisión en las distintas lenguas oficiales existentes, con la finalidad de garantizar los derechos de los usuarios.",
+        "No trata en ningún artículo sobre la factura electrónica.",
+        "La factura electrónica solo se utilizará en contratación, estando excluida de la justificación de ayudas y subvenciones."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-15",
+      "source_ref": "OEP 2024 · nº 15",
+      "stem": "¿Qué principio relativo al tratamiento de datos personales definido en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos) se refiere a que los datos serán adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados?",
+      "options": [
+        "Limitación de la finalidad.",
+        "Exactitud.",
+        "Minimización de datos.",
+        "Adecuación de datos."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-16",
+      "source_ref": "OEP 2024 · nº 16",
+      "stem": "Señale la respuesta correcta respecto a las notificaciones según la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas:",
+      "options": [
+        "Toda notificación deberá ser cursada dentro del plazo de quince días a partir de la fecha en que el acto haya sido dictado.",
+        "Cuando los interesados en un procedimiento sean desconocidos, se ignore el lugar de la notificación o bien, intentada ésta, no se hubiese podido practicar, la notificación se hará por medio de un anuncio publicado en el BOE.",
+        "Las notificaciones se practicarán preferentemente en papel y, en todo caso, cuando el interesado resulte obligado a recibirlas por esta vía.",
+        "Cuando la notificación se practique en el domicilio del interesado, de no hallarse presente éste en el momento de entregarse la notificación, podrá hacerse cargo de ella cualquier persona mayor de dieciséis años que se encuentre en el domicilio y haga constar su identidad."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-17",
+      "source_ref": "OEP 2024 · nº 17",
+      "stem": "De acuerdo con el Real Decreto 203/2021, de 30 de marzo, por el que se aprueba el Reglamento de actuación y funcionamiento del sector público por medios electrónicos, ¿cuál de las siguientes opciones forma parte del contenido mínimo que debe contener una sede electrónica?",
+      "options": [
+        "Relación de los canales de acceso electrónico a dicha sede como instrumento de comunicación para los ciudadanos.",
+        "Relación de los Puntos de Acceso General electrónicos que la referencian directa o indirectamente.",
+        "Normativa reguladora del Registro al que se acceda a través de la sede electrónica.",
+        "Enlace directo al Boletín Oficial correspondiente."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-18",
+      "source_ref": "OEP 2024 · nº 18",
+      "stem": "Marque la respuesta correcta relacionada con el nodo eIDAS español:",
+      "options": [
+        "Para las Administraciones Públicas, la integración con el nodo eIDAS español se realiza a través de @Firma.",
+        "Permite el reconocimiento de identidades en soportes físicos emitidas por otros países.",
+        "Facilita la aceptación del DNI electrónico en servicios de Administración Electrónica de otras administraciones integrantes de la OCDE.",
+        "Utiliza un sistema de intercambio de mensajes conforme al estándar SAML 2.0."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-19",
+      "source_ref": "OEP 2024 · nº 19",
+      "stem": "¿Qué es la taxonomía de Flynn?",
+      "options": [
+        "Una clasificación de patrones de diseño para objetos de software, centrados en su creación, relación e interacción.",
+        "Una clasificación para las computadoras con arquitectura paralela atendiendo al flujo de datos e instrucciones en un sistema.",
+        "Una clasificación que pretende clarificar los diferentes tipos de tecnologías, técnicas y mecanismos que abarca el concepto abstracto de “Inteligencia Artificial”.",
+        "Una clasificación de los tipos de controladores (drivers) JDBC."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-20",
+      "source_ref": "OEP 2024 · nº 20",
+      "stem": "Indique, de las siguientes palabras, cuál indica además un número hexadecimal válido:",
+      "options": [
+        "EBOCA",
+        "BECADAS",
+        "ACCEDA",
+        "CEGADA"
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-21",
+      "source_ref": "OEP 2024 · nº 21",
+      "stem": "Señale cuál de las siguientes es un formato de interfaz SSD:",
+      "options": [
+        "HHP",
+        "MMVe",
+        "MMD",
+        "M.2"
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-22",
+      "source_ref": "OEP 2024 · nº 22",
+      "stem": "Un controlador de dispositivo periférico:",
+      "options": [
+        "Es el componente electrónico de la unidad de entrada y salida.",
+        "Es el componente mecánico de la unidad de entrada y salida.",
+        "Es la interfaz entre el adaptador y la unidad de entrada y salida.",
+        "Es la interfaz entre la tarjeta controladora y el cable de conexión."
+      ],
+      "correct": "a",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a)."
+    },
+    {
+      "key": "P-23",
+      "source_ref": "OEP 2024 · nº 23",
+      "stem": "Con respecto a los árboles 2-3-4, señale la respuesta correcta:",
+      "options": [
+        "Cumple las propiedades del árbol binario de búsqueda.",
+        "Las hojas pueden estar a distinto nivel.",
+        "Los nodos pueden tener 2, 3 o 4 hijos (2-nodo, 3-nodo o 4-nodo).",
+        "Las reestructuraciones se realizan desde las hojas hacia la raíz."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-24",
+      "source_ref": "OEP 2024 · nº 24",
+      "stem": "Señale la respuesta correcta referente al tipo abstracto de datos (TAD) Cola:",
+      "options": [
+        "Basada en el principio LIFO (last-in, first-out).",
+        "Es un tipo especial de lista en la que se pueden insertar y eliminar por cualquier extremo.",
+        "Cada nodo tiene dos enlaces, uno al nodo siguiente, y otro al anterior.",
+        "Se pude implementar usando una estructura dinámica."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-25",
+      "source_ref": "OEP 2024 · nº 25",
+      "stem": "Señale la respuesta INCORRECTA acerca de los tipos abstractos de datos (TAD):",
+      "options": [
+        "Es una colección de propiedades y operaciones que se definen mediante una especificación que es independiente de cualquier representación.",
+        "Nos permiten diseñar nuestros propios tipos para encapsular lógica algorítmica y proveer abstracción a las capas de software de más alto nivel.",
+        "Se pueden escribir usando lenguaje natural, usando pseudo-código o incluso algún lenguaje de programación.",
+        "En JAVA, una estructura de datos (interface) debe implementar todas las operaciones definidas en su TAD (class)."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-26",
+      "source_ref": "OEP 2024 · nº 26",
+      "stem": "¿Cuál es la función del kernel en un sistema operativo Unix/Linux?",
+      "options": [
+        "Gestionar la interfaz gráfica.",
+        "Controlar los procesos, la memoria y la administración de dispositivos.",
+        "Proveer servicios de red como TCP/IP.",
+        "Facilitar la comunicación entre usuarios a través de terminales."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-27",
+      "source_ref": "OEP 2024 · nº 27",
+      "stem": "Señale la respuesta INCORRECTA. Android NDK:",
+      "options": [
+        "Es un conjunto de herramientas que permiten implementar partes de las aplicaciones de Android mediante C y C++.",
+        "Genera librerías binarias para cada arquitectura de procesador que se pueden invocar desde Java por medio de JNI (Java Native Interface).",
+        "Se recomienda su uso con aplicaciones intensivas a nivel computacional, como juegos o simulaciones físicas.",
+        "No permite la reutilización de código, no pudiendo usar bibliotecas de otros desarrolladores."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-28",
+      "source_ref": "OEP 2024 · nº 28",
+      "stem": "¿Cuál es la característica diferenciadora de las claves foráneas en una base de datos relacional?",
+      "options": [
+        "Un atributo que no tiene relación con otras tablas.",
+        "Un atributo que referencia la clave primaria de otra tabla.",
+        "Un atributo que puede tener valores duplicados. de datos.",
+        "Un atributo que se utiliza solo para consultas."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-29",
+      "source_ref": "OEP 2024 · nº 29",
+      "stem": "¿Cuál de los siguientes es un Sistema de Gestión de Bases de Datos Orientadas a Objetos (SGDBOO)?",
+      "options": [
+        "Cézanne.",
+        "Picasso.",
+        "Matisse.",
+        "Rembrandt."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-30",
+      "source_ref": "OEP 2024 · nº 30",
+      "stem": "¿Qué es el lenguaje OQL en el contexto de las bases de datos orientadas a objetos?",
+      "options": [
+        "OQL no es un lenguaje en el contexto de las bases de datos orientadas a objetos.",
+        "Un lenguaje de definición de datos.",
+        "Un lenguaje de consulta de datos.",
+        "Un lenguaje de manipulación de datos."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-31",
+      "source_ref": "OEP 2024 · nº 31",
+      "stem": "De acuerdo con Métrica v3, en el Modelo Entidad/Relación Extendido, ¿cuál es el término que representa la participación en la relación de cada una de las entidades afectadas?",
+      "options": [
+        "Atributo.",
+        "Cardinalidad.",
+        "Tipo de Correspondencia.",
+        "Dominio."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-32",
+      "source_ref": "OEP 2024 · nº 32",
+      "stem": "Señale la respuesta correcta sobre la normalización de bases de datos en Métrica v3:",
+      "options": [
+        "Un atributo tiene dependencia funcional completa de otro si, y sólo si, depende de él a través de otro atributo.",
+        "Una entidad está en 1FN si tiene grupos repetitivos, es decir, un atributo puede tomar varios valores de un dominio simple.",
+        "Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas tienen dependencia funcional completa respecto de éstas.",
+        "Una relación en 3FN estará también en 2FN, pero no en 1FN."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-33",
+      "source_ref": "OEP 2024 · nº 33",
+      "stem": "Señale, de entre las siguientes opciones, el mecanismo en el Modelo Entidad/Relación Extendido que recoge Métrica v3 consistente en relacionar dos tipos de entidades que normalmente son de dominios independientes, pero coyunturalmente se asocian:",
+      "options": [
+        "Asociación.",
+        "Generalización.",
+        "PERT.",
+        "Regresión."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-34",
+      "source_ref": "OEP 2024 · nº 34",
+      "stem": "Para las variables a=1, b=2, c=3, d=1 ¿cuál es la operación lógica que da un resultado true?",
+      "options": [
+        "((a\u003eb) or (a\u003cc)) and ((a==c) or (a\u003e=b))",
+        "((a\u003e=b) or (a\u003cd)) and ((a\u003e=d) or (c\u003ed))",
+        "Not (a==c) and (c\u003eb)",
+        "Not (a\u003e=d) and not (c\u003e=b)"
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-35",
+      "source_ref": "OEP 2024 · nº 35",
+      "stem": "Señale la respuesta correcta en relación con las funciones y los procedimientos:",
+      "options": [
+        "Una llamada a un procedimiento puede aparecer como operando de una expresión.",
+        "El paso de parámetros por referencia envía una copia del valor que tenga el parámetro real, por lo que no se podrá alterar el contenido de la variable.",
+        "Los parámetros por referencia se pueden emplear como parámetros de entrada/salida.",
+        "Todo procedimiento debe ejecutar una sentencia de return."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-36",
+      "source_ref": "OEP 2024 · nº 36",
+      "stem": "Suponga el siguiente programa escrito en un lenguaje de programación estándar:\ninteger x=0; while x\u003c100 do (x=x+1; print x; x=x-1;)",
+      "options": [
+        "Este programa imprime los números enteros del 1 al 100.",
+        "Este programa imprime los números impares del 1 al 100.",
+        "Este programa imprime los números pares del 1 al 100.",
+        "Este programa es un bucle infinito."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-37",
+      "source_ref": "OEP 2024 · nº 37",
+      "stem": "Referente a los comandos DML del lenguaje SQL, señale la respuesta correcta:",
+      "options": [
+        "DML es acrónimo de Data Manager Language.",
+        "Permiten crear nuevas bases de datos, añadiendo y eliminando elementos.",
+        "El comando TRUNCATE es un comando DML.",
+        "El comando SELECT es un comando DML."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-38",
+      "source_ref": "OEP 2024 · nº 38",
+      "stem": "Referente al comando DROP de SQL, es correcto decir:",
+      "options": [
+        "Es un comando DCL.",
+        "Puede ser ejecutado por disparadores (triggers).",
+        "Se utiliza para eliminar la estructura de una tabla junto con cualquier dato almacenado en ella.",
+        "Utiliza WHERE para condiciones de filtrado."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-39",
+      "source_ref": "OEP 2024 · nº 39",
+      "stem": "Señale la respuesta INCORRECTA referente a los disparadores o triggers de una base de datos:",
+      "options": [
+        "Son procedimientos que se ejecutan o activan cada vez que ocurre un evento determinado sobre una tabla determinada.",
+        "Los eventos que se pueden asociar a la ejecución de un trigger son: INSERT, UPDATE, DELETE.",
+        "Puede decidirse que se activen antes o después de un evento determinado.",
+        "Un error durante la ejecución de cualquier trigger no cancela automáticamente la operación que lo disparó, la cancelación hay que programarla."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-40",
+      "source_ref": "OEP 2024 · nº 40",
+      "stem": "En diseño y programación orientada a objetos, una relación de generalización entre clases:",
+      "options": [
+        "Implica que la subclase hereda las propiedades, el comportamiento y las relaciones de la superclase, a la vez que puede añadir sus propias propiedades, relaciones y comportamiento.",
+        "Describe un conjunto de enlaces, que definen las interconexiones semánticas entre las instancias de las clases que participan en la relación.",
+        "Asume una subordinación conceptual del tipo “todo/parte”, o bien “tiene un”.",
+        "Se representa mediante una línea discontinua que une la superclase y subclase con un rectángulo al lado de la superclase."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-41",
+      "source_ref": "OEP 2024 · nº 41",
+      "stem": "Señale la respuesta INCORRECTA respecto al Lenguaje de Modelado Unificado (UML):",
+      "options": [
+        "Es un lenguaje basado en diagramas para la especificación, visualización, construcción y documentación de cualquier sistema software.",
+        "Es independiente de las metodologías de análisis y diseño y de los lenguajes de programación que se utilicen en la construcción del software.",
+        "Se basa en el paradigma de la orientación a objetos.",
+        "Muestra únicamente el modelado estático de un sistema software, que puede utilizarse en las diferentes fases de su ciclo de desarrollo."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-42",
+      "source_ref": "OEP 2024 · nº 42",
+      "stem": "Señale la respuesta INCORRECTA. El patrón de diseño “Composite”:",
+      "options": [
+        "Es un patrón de diseño estructural que permite componer objetos en estructuras de árbol.",
+        "Sirve para construir objetos complejos a partir de otros más simples y similares entre sí.",
+        "Simplifica el tratamiento de los objetos creados que, al poseer de una interfaz común, se tratan todos de la misma manera.",
+        "Se recomienda su uso cuando se quiere añadir responsabilidades a objetos concretos de manera dinámica y transparente y sin afectar a otros objetos."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-43",
+      "source_ref": "OEP 2024 · nº 43",
+      "stem": "¿Qué es .NET MAUI?",
+      "options": [
+        ".NET MAUI es un marco multiplataforma para crear aplicaciones móviles y de escritorio nativas con C# y XAML.",
+        "Es una plataforma para desarrollar aplicaciones en Java.",
+        "Es una herramienta de pruebas automatizadas.",
+        "Es una plataforma para desarrollar aplicaciones móviles que se puede ejecutar en sistema Android solamente."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-44",
+      "source_ref": "OEP 2024 · nº 44",
+      "stem": "En el ámbito de ASP.NET Core, señale la respuesta correcta respecto a Razor:",
+      "options": [
+        "Razor es la sintaxis de plantillas utilizada en ASP.NET Core para crear vistas dinámicas en aplicaciones web.",
+        "Es uno de los lenguajes de programación que se utilizan con ASP.NET Core.",
+        "Razor se ejecuta directamente en el navegador del cliente.",
+        "Razor utiliza el @símbolo para realizar la transición de C# a HTML."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-45",
+      "source_ref": "OEP 2024 · nº 45",
+      "stem": "La persistencia en Jakarta EE se gestiona principalmente a través de la especificación Jakarta Persistence API (JPA). Indique la respuesta correcta:",
+      "options": [
+        "Una de sus ventajas es que no necesita utilizar un proveedor de JPA.",
+        "El lenguaje de consulta similar a SQL pero orientado a objetos de JPA es JPSQL.",
+        "Normalmente, una entidad representa una tabla en una base de datos relacional y cada instancia de la entidad corresponde a una fila de esa tabla.",
+        "JPA no permite definir relaciones entre entidades del tipo uno a muchos."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-46",
+      "source_ref": "OEP 2024 · nº 46",
+      "stem": "¿Cuál es una característica de los sistemas distribuidos?",
+      "options": [
+        "Falta de transparencia: un nodo no puede acceder a otros nodos del sistema y comunicarse con ellos.",
+        "Procesamiento independiente: varias máquinas no pueden procesar la misma función a la vez.",
+        "Escalabilidad: la capacidad computacional y de procesamiento puede escalarse hacia arriba según sea necesario cuando se añaden máquinas adicionales.",
+        "Comunicación diferencial: usan nodos distintos para comunicarse y sincronizarse a través de redes independientes entre sí."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-47",
+      "source_ref": "OEP 2024 · nº 47",
+      "stem": "Señale la opción correcta sobre la arquitectura de servicios web REST:",
+      "options": [
+        "En la arquitectura REST, el servicio no almacena información sobre el estado del cliente entre peticiones.",
+        "El uso de identificadores está basado en SOA.",
+        "En la arquitectura REST, la interfaz para acceder a los recursos expuestos puede ser HTTP o FTP.",
+        "Es una arquitectura no orientada a recursos."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-48",
+      "source_ref": "OEP 2024 · nº 48",
+      "stem": "¿Cuál de las siguientes es una diferencia entre HTML y XHTML?",
+      "options": [
+        "HTML exige que las etiquetas se escriban en minúscula, mientras que XHTML no.",
+        "XHTML permite que haya elementos no vacíos sin cerrar, mientras que HTML no.",
+        "En HTML es obligatorio que los valores de los atributos vayan entre comillas, mientras que en XHTML no.",
+        "En XHTML es obligatoria la presencia del elemento \u003chead\u003e."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-49",
+      "source_ref": "OEP 2024 · nº 49",
+      "stem": "¿Qué evento de HTML utilizaría para producir un efecto al situar el puntero del ratón sobre un elemento?",
+      "options": [
+        "onclick.",
+        "onmouseover.",
+        "onmousedown.",
+        "onmouseout."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-50",
+      "source_ref": "OEP 2024 · nº 50",
+      "stem": "Con respecto a las solicitudes de información accesible y quejas, el Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público establece que:",
+      "options": [
+        "Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de veinte días naturales.",
+        "Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de veinte días hábiles.",
+        "Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de diez días naturales.",
+        "Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de diez días hábiles."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-51",
+      "source_ref": "OEP 2024 · nº 51",
+      "stem": "En relación a los principios del Diseño Universal, señale cuál es uno de ellos:",
+      "options": [
+        "Seguridad.",
+        "Información operable.",
+        "Robustez.",
+        "Alto esfuerzo físico."
+      ],
+      "correct": "a",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a)."
+    },
+    {
+      "key": "P-52",
+      "source_ref": "OEP 2024 · nº 52",
+      "stem": "Señale la respuesta correcta referente al término ATAG:",
+      "options": [
+        "Son Pautas de Accesibilidad que explican cómo hacer que el contenido web sea más accesible para las personas con discapacidades.",
+        "Es una Suite que define una forma de hacer que el contenido web y las aplicaciones web sean más accesibles para las personas con discapacidades.",
+        "Son Pautas de Accesibilidad que explican cómo hacer que los agentes de usuario sean accesibles para las personas con discapacidades.",
+        "Son un conjunto de normas que deben cumplir las herramientas de autor para ser accesibles y generar contenidos también accesibles."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-53",
+      "source_ref": "OEP 2024 · nº 53",
+      "stem": "¿Cuál de las siguientes opciones se utilizan para el control de versiones?",
+      "options": [
+        "Mercurial, CVS y Selenium.",
+        "GitLab, GitHub y Apache Subversion.",
+        "SVN, Git y Cucumber.",
+        "Selenium, Cucumber y GitLab."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-54",
+      "source_ref": "OEP 2024 · nº 54",
+      "stem": "Según establece Métrica V3, en la construcción de un sistema de información, las pruebas que permiten verificar que los componentes o subsistemas interactúan correctamente a través de sus interfaces, tanto internas como externas, cubren la funcionalidad establecida y se ajustan a los requisitos especificados en las verificaciones correspondientes son:",
+      "options": [
+        "Pruebas unitarias.",
+        "Pruebas de integración.",
+        "Pruebas del sistema.",
+        "Pruebas de migración."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-55",
+      "source_ref": "OEP 2024 · nº 55",
+      "stem": "¿Cuál de los siguientes conceptos permite que un proceso ejecute múltiples tareas de manera simultánea o concurrente en un sistema operativo?",
+      "options": [
+        "Segmentación.",
+        "Paginación.",
+        "Prepaging.",
+        "Hilos."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-56",
+      "source_ref": "OEP 2024 · nº 56",
+      "stem": "El comando sfc /scannow:",
+      "options": [
+        "Examina todos los archivos de sistema protegidos y reemplaza los archivos dañados con una copia en caché.",
+        "Rrepara el entorno de arranque ubicado en la partición del sistema.",
+        "Muestra o establece la directiva de red de área de almacenamiento (sanSAN) para el sistema operativo.",
+        "Analizar uno o varios servidores con una directiva generada por SCW."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-57",
+      "source_ref": "OEP 2024 · nº 57",
+      "stem": "¿Cuánta carga útil puede almacenar un jumboframe?",
+      "options": [
+        "7.000 bytes.",
+        "1.500 bytes.",
+        "9.000 bytes.",
+        "10.000 bytes."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-58",
+      "source_ref": "OEP 2024 · nº 58",
+      "stem": "¿Qué protocolo hay que utilizar para obtener una dirección física a partir de una dirección lógica?",
+      "options": [
+        "RARP.",
+        "NAT.",
+        "ARP.",
+        "PAT."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-59",
+      "source_ref": "OEP 2024 · nº 59",
+      "stem": "¿Qué topología de red consiste en conectar todos los nodos directamente a un nodo central?",
+      "options": [
+        "Estrella.",
+        "Anillo.",
+        "Bus.",
+        "Árbol."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-60",
+      "source_ref": "OEP 2024 · nº 60",
+      "stem": "La regla 3-2-1 de las copias de seguridad consiste en:",
+      "options": [
+        "Conservar 3 copias de los datos, en 2 medios diferentes con 1 copia almacenada en un lugar externo a la organización.",
+        "Conservar 3 copias de los datos, en 2 medios iguales con 1 copia almacenada en un lugar externo a la organización.",
+        "Conservar 3 copias de los datos, en 2 medios iguales con 1 copia almacenada en un lugar interno a la organización.",
+        "Conservar 3 copias de los datos, en 2 medios diferentes con 1 copia almacenada en un lugar interno a la organización."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-61",
+      "source_ref": "OEP 2024 · nº 61",
+      "stem": "Señale la respuesta correcta referente a los sistemas de almacenamiento SAN y NAS:",
+      "options": [
+        "SAN es más económico y fácil de configurar.",
+        "SAN es el acrónimo de Storage Attached Network.",
+        "NAS es un dispositivo de almacenamiento compartido basado en archivos.",
+        "NAS es el acrónimo de Network Area Storage."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-62",
+      "source_ref": "OEP 2024 · nº 62",
+      "stem": "Señale la respuesta correcta:",
+      "options": [
+        "Los backups utilizan poca capacidad de almacenamiento.",
+        "Los backups son manuales, los snapshots son programables.",
+        "Los backups pueden almacenarse en localizaciones y medios distintos.",
+        "Los backups son una representación instantánea del estado de un sistema en un momento específico."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-63",
+      "source_ref": "OEP 2024 · nº 63",
+      "stem": "¿Cuál es una ventaja del uso del protocolo IMAP en lugar de POP3?",
+      "options": [
+        "Permite visualizar los correos directamente en el servidor sin descargarlos.",
+        "Es más sencillo que POP3.",
+        "No requiere autenticación.",
+        "Descarga los correos automáticamente del servidor."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-64",
+      "source_ref": "OEP 2024 · nº 64",
+      "stem": "Señale cuáles de las siguientes son tecnologías relacionadas con la contenerización y la gestión de contenedores:",
+      "options": [
+        "Docker, Containerd y Podman.",
+        "Docker, CRI-O y nginx.",
+        "Podman, Kubernetes y Ubuntu.",
+        "Docker, Kubernetes y Debian."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-65",
+      "source_ref": "OEP 2024 · nº 65",
+      "stem": "Indique la respuesta INCORRECTA respecto a PoE (Power over Ethernet):",
+      "options": [
+        "Power over Ethernet (PoE) es una tecnología que permite que los conmutadores de red transmitan energía y datos a través de un cable Ethernet simultáneamente.",
+        "Existen dos tipos: PoE activo y PoE pasivo.",
+        "PoE pasivo no se adhiere a ningún estándar IEEE.",
+        "El último estándar de PoE activo es el IEEE 802.3at."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-66",
+      "source_ref": "OEP 2024 · nº 66",
+      "stem": "La norma IEEE 802.11 se refiere a:",
+      "options": [
+        "Redes inalámbricas.",
+        "Redes de área metropolitana.",
+        "Redes integradas para voz y datos.",
+        "Seguridad de red."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-67",
+      "source_ref": "OEP 2024 · nº 67",
+      "stem": "¿Cuál de las siguientes es una herramienta de ticketing para la gestión de incidentes de seguridad en las entidades del ámbito de aplicación del Esquema Nacional de Seguridad?",
+      "options": [
+        "ATENEA.",
+        "MONICA.",
+        "LUCIA.",
+        "INES."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-68",
+      "source_ref": "OEP 2024 · nº 68",
+      "stem": "Indique la respuesta correcta sobre el formato de firma digital CAdES:",
+      "options": [
+        "Es apropiado para firmar ficheros grandes, especialmente si la firma contiene el documento original.",
+        "Es el formato de firma que utiliza Microsoft Office.",
+        "El resultado es un fichero de texto XML. No es adecuado cuando el fichero original es muy grande.",
+        "Es el formato más adecuado cuando el documento original es un PDF."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-69",
+      "source_ref": "OEP 2024 · nº 69",
+      "stem": "Indique la respuesta correcta sobre tipos de ataque a un sistema de información:",
+      "options": [
+        "El sniffing es la generación de tráfico utilizando un origen falseado.",
+        "El spoofing es la captura del tráfico que circula por una red.",
+        "Denegacion de servicio distribuida (DDoS) es un ataque a varios objetivos desde un solo punto, con la finalidad de degradar total o parcialmente los servicios prestados por esos recursos a sus usuarios legítimos.",
+        "El barrido (“escaneo”) de puertos es un ataque que trata de obtener información básica acerca de qué servicios se ofrecen en un determinado sistema, así como otros detalles técnicos del mismo."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-70",
+      "source_ref": "OEP 2024 · nº 70",
+      "stem": "¿Cuál de las siguientes categorías de cable Ethernet tiene 10.000 Mbps como tope de velocidad de transferencia?",
+      "options": [
+        "Categoría 6A.",
+        "Categoría 8.",
+        "Categoría 6.",
+        "Categoría 5E."
+      ],
+      "correct": "a",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a)."
+    },
+    {
+      "key": "P-71",
+      "source_ref": "OEP 2024 · nº 71",
+      "stem": "Señale cuál de las siguientes tecnologías NO es una tecnología LPWAN:",
+      "options": [
+        "LoRaWAN.",
+        "Bluetooth LE.",
+        "SigFox.",
+        "NB-IoT."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-72",
+      "source_ref": "OEP 2024 · nº 72",
+      "stem": "¿Cuál de las siguientes respuestas es correcta respecto al modelo OSI de ISO?",
+      "options": [
+        "Las capas o niveles del modelo OSI son: Física, de red, de transporte, de sesión, de presentación y de aplicación.",
+        "La versión actual del estándar OSI es la ISO/IEC 7498-1:1994.",
+        "La capa de transporte se ocupa, entre otros, de aspectos como el enrutamiento, el reenvío y el direccionamiento a través de una red.",
+        "La capa de sesión a menudo se divide en dos subcapas: la capa de control de acceso a los medios (MAC) y la capa de control de enlace lógico (LLC)."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-73",
+      "source_ref": "OEP 2024 · nº 73",
+      "stem": "¿Cuál es la respuesta correcta con respecto modelo TCP/IP?",
+      "options": [
+        "La arquitectura TCP/IP tiene cinco capas o niveles: Acceso a red, Internet, Transporte, Sesión y Aplicación.",
+        "TCP y UDP son protocolos de la capa de Internet.",
+        "Telnet es un protocolo de la capa de sesión.",
+        "ICMP es un protocolo de la capa de Internet."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-74",
+      "source_ref": "OEP 2024 · nº 74",
+      "stem": "Relativa al direccionamiento IPv4, indique la respuesta INCORRECTA:",
+      "options": [
+        "La dirección 172.16.52.63 es una dirección de clase B.",
+        "Las direcciones 192.168.123.71 y 192.168.123.133 con máscara de subred 255.255.255.192 se encuentran en la misma red.",
+        "Las redes de clase A usan una máscara de subred predeterminada de 255.0.0.0.",
+        "En las redes clase C se permite direccionar 254 equipos como máximo."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-75",
+      "source_ref": "OEP 2024 · nº 75",
+      "stem": "¿Qué código de respuesta HTTP se devuelve si el usuario que hace la petición NO tiene autorización para obtener la información?",
+      "options": [
+        "401",
+        "403",
+        "405",
+        "407"
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-76",
+      "source_ref": "OEP 2024 · nº 76",
+      "stem": "Indique la respuesta correcta sobre el IETF (Internet Engineering Task Force):",
+      "options": [
+        "Es un organismo creador de estándares en Internet.",
+        "Es responsable de las funciones administrativas relacionadas con la raíz del sistema de nombres de dominio (DNS), el direccionamiento del protocolo de Internet y otros recursos del protocolo de Internet.",
+        "Es responsable de administrar y supervisar la coordinación del sistema de nombres de dominio (DNS) de Internet y sus identificadores únicos, como las direcciones de protocolo de Internet (IP).",
+        "Es el Foro de Gobernanza de Internet."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-77",
+      "source_ref": "OEP 2024 · nº 77",
+      "stem": "Sobre tipos de transferencia de archivos en el servicio FTP (File Transfer Protocol), es CORRECTO decir que:",
+      "options": [
+        "El tipo ASCII es adecuado para transferir archivos de texto plano.",
+        "El tipo Multimedia es adecuado para transferir imágenes y archivos de audio.",
+        "El tipo Binario solo es adecuado para transferir ficheros ejecutables para PC.",
+        "El tipo ASCII es adecuado para transferir páginas HTML y las imágenes que puedan contener."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-78",
+      "source_ref": "OEP 2024 · nº 78",
+      "stem": "¿Cuál de los siguientes ataques consiste en suplantar a una entidad legítima por medio de llamadas telefónicas?",
+      "options": [
+        "Pharming.",
+        "Smishing.",
+        "Vishing.",
+        "Whaling."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-79",
+      "source_ref": "OEP 2024 · nº 79",
+      "stem": "La creación de un señuelo atractivo para potenciales atacantes con el objetivo de aprender sus ataques y poder prevenirlos o defenderlos en el futuro se hace mediante un:",
+      "options": [
+        "IPS.",
+        "SIEM.",
+        "IDS.",
+        "Honeypot."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "P-80",
+      "source_ref": "OEP 2024 · nº 80",
+      "stem": "La herramienta del CCN que proporciona visibilidad y control sobre la red es:",
+      "options": [
+        "CARMEN.",
+        "EMMA.",
+        "MONICA.",
+        "OLVIDO."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "P-R1",
+      "source_ref": "OEP 2024 · reserva nº 1",
+      "stem": "Señale cuál es una resolución válida para una pantalla:",
+      "options": [
+        "8K UHD - 7680 x 3840 píxeles.",
+        "Ultra HD - 4320 x 1280 píxeles.",
+        "WQHD - 2560 x 1440 píxeles.",
+        "HD - 1920 × 1080 píxeles."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "P-R2",
+      "source_ref": "OEP 2024 · reserva nº 2",
+      "stem": "¿Cuál es un tipo de panel de una pantalla LCD?",
+      "options": [
+        "IPS (In-Plane Switching).",
+        "VN (Vertical Nematic).",
+        "TA (Twisted Alignment).",
+        "PSI (Plane Switching Input)."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-R3",
+      "source_ref": "OEP 2024 · reserva nº 3",
+      "stem": "El protocolo de IEEE para Rapid Spanning Tree Protocol es:",
+      "options": [
+        "802.1w.",
+        "802.1Q.",
+        "802.1D.",
+        "802.1aq."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-R4",
+      "source_ref": "OEP 2024 · reserva nº 4",
+      "stem": "En CSS3, ¿cuál de las siguientes unidades de medida NO es relativa?",
+      "options": [
+        "Q",
+        "vw",
+        "ex",
+        "ch"
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "P-R5",
+      "source_ref": "OEP 2024 · reserva nº 5",
+      "stem": "Señale la respuesta correcta:",
+      "options": [
+        "Xcode es un IDE que contiene herramientas destinadas exclusivamente al desarrollo software para iOS.",
+        "Xcode Cloud no existe.",
+        "SwiftUI es un framework que facilita la creación de aplicaciones para cualquier dispositivo Apple.",
+        "iOS SDK permite el desarrollo de aplicaciones para macOS, iOS, watchOS y tvOS."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SI-1",
+      "source_ref": "OEP 2024 · Supuesto I · nº 1",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué elemento HTML utilizaría para impedir que el e-mail exceda los 100 caracteres cuando el interesado lo cumplimente?",
+      "options": [
+        "\u003cinput type=''email'' id=''email'' name=''email'' size=''100''\u003e",
+        "\u003cinput type=''email'' id=''email'' name=''email'' max=''100''\u003e",
+        "\u003cinput type=''email'' id=''email'' name=''email'' maxlength=''100''\u003e",
+        "\u003cinput type=''email'' id=''email'' name=''email'' length=''100''\u003e"
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SI-2",
+      "source_ref": "OEP 2024 · Supuesto I · nº 2",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué ORM podría utilizar, en función de la solución de backend escogida?",
+      "options": [
+        "JPA en .NET e Hibernate en Java.",
+        "Hibernate en .NET y Entity Framework en Java.",
+        "Entity Framework en .NET e Hibernate en Java.",
+        "Spring Data en .NET e Hibernate en Java."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SI-3",
+      "source_ref": "OEP 2024 · Supuesto I · nº 3",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué sentencia habría que ejecutar si se quiere añadir un nuevo registro a la tabla “CuerpoBecado”?",
+      "options": [
+        "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI, 'Técnico Auxiliar de Informática');",
+        "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES (TAI, Técnico Auxiliar de Informática);",
+        "INSERT TO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');",
+        "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');"
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SI-4",
+      "source_ref": "OEP 2024 · Supuesto I · nº 4",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué tipo de correspondencia hay entre las tablas “SolicitudBeca” y “FicheroAdjunto”?",
+      "options": [
+        "Un registro de SolicitudBeca puede tener N registros de FicheroAdjunto.",
+        "Un registro de SolicitudBeca puede tener como máximo un registro de FicheroAdjunto.",
+        "N registros de SolicitudBeca pueden tener M registros de FicheroAdjunto.",
+        "Un registro de SolicitudBeca puede tener cero o como máximo un registro de FicheroAdjunto."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-5",
+      "source_ref": "OEP 2024 · Supuesto I · nº 5",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nA este sistema le es de aplicación la normativa vigente de accesibilidad de sitios web. ¿Qué herramienta automatizada utilizaría para probar que la aplicación cumple con los estándares de accesibilidad?",
+      "options": [
+        "QualWeb.",
+        "Equal Automatic Checker.",
+        "AccSite.",
+        "Shovel."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-6",
+      "source_ref": "OEP 2024 · Supuesto I · nº 6",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl formulario de solicitud será extenso y tendrá muchas consultas de datos. ¿Qué utilizaría para renderizar la página en el servidor?",
+      "options": [
+        "Server Sent Events.",
+        "Ajax.",
+        "WebSocket.",
+        "Server Side Rendering."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SI-7",
+      "source_ref": "OEP 2024 · Supuesto I · nº 7",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl proceso de presentación de solicitud implica la autenticación del usuario, la firma de la solicitud, el guardado en base de datos, la generación de un asiento registral y la generación de un justificante de presentación. ¿Qué diagrama UML utilizaría para representar las acciones implicadas en este flujo?",
+      "options": [
+        "Diagrama de paquetes.",
+        "Diagrama de objetos.",
+        "Diagrama de secuencia.",
+        "Diagrama de Entidad/Relación."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SI-8",
+      "source_ref": "OEP 2024 · Supuesto I · nº 8",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn caso de utilizar Java para el backend, ¿qué tecnología puede utilizar para generar un cliente de servicios web?",
+      "options": [
+        "Apache Flink.",
+        "Apache Xalan.",
+        "Apache Xerces.",
+        "Apache CXF."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SI-9",
+      "source_ref": "OEP 2024 · Supuesto I · nº 9",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn un entorno de desarrollo Java, ¿qué utilizaría para mapear elementos XML a clases?",
+      "options": [
+        "JAXB.",
+        "JPA.",
+        "JAXR.",
+        "JAX-RS."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-10",
+      "source_ref": "OEP 2024 · Supuesto I · nº 10",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEstá escogiendo herramientas que le permitan analizar y mejorar la calidad del código. ¿Cuál de las siguientes NO le será de ayuda?",
+      "options": [
+        "SonarQube.",
+        "Un linter de JavaScript.",
+        "PMD.",
+        "Mercurial."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SI-11",
+      "source_ref": "OEP 2024 · Supuesto I · nº 11",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nNecesita controlar el plazo de presentación de solicitudes. Suponiendo que utiliza Java en el backend, ¿qué clase nativa de Java puede utilizar para trabajar con una fecha y hora simultáneamente?",
+      "options": [
+        "LocalDateTime.",
+        "LocalDate.",
+        "LocalTime.",
+        "OffsetTime."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-12",
+      "source_ref": "OEP 2024 · Supuesto I · nº 12",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nPara que la aplicación de gestión pueda interactuar con esta aplicación, se va a exponer una capa de servicios web. ¿Cuál de las siguientes opciones NO es válida para documentar dichos servicios?",
+      "options": [
+        "RAML.",
+        "REST.",
+        "WSDL.",
+        "OpenAPI/Swagger."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SI-13",
+      "source_ref": "OEP 2024 · Supuesto I · nº 13",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe desea añadir una tabla “Subsanacion” con las columnas numéricas IdSubsanacion e IdSolicitudBeca y la columna alfanumérica de 2000 caracteres TextoFundamento. ¿Cuál de las siguientes sentencias sería la correcta?",
+      "options": [
+        "CREATE TABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));",
+        "CREATE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));",
+        "CREATE NEW TABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));",
+        "CREATE TABLE Subsanacion AS (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-14",
+      "source_ref": "OEP 2024 · Supuesto I · nº 14",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe espera un alto volumen de concurrencia en el sistema. ¿Qué nivel de aislamiento de base de datos debería configurar para que no se produzcan lecturas sucias ni lecturas no repetibles, pero sí lecturas fantasmas?",
+      "options": [
+        "Serializable.",
+        "Read committed.",
+        "Read uncommited.",
+        "Repeatable read."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SI-15",
+      "source_ref": "OEP 2024 · Supuesto I · nº 15",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe ha determinado que es necesaria la integración de la aplicación con GEISER, cuyos servicios web son de naturaleza SOAP. ¿Con qué firmará las peticiones generadas por la aplicación?",
+      "options": [
+        "WS-Security.",
+        "SAML.",
+        "JWT.",
+        "XML-Encryption."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-16",
+      "source_ref": "OEP 2024 · Supuesto I · nº 16",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe quiere utilizar la librería iText de .NET para generar un documento PDF que sirva como justificante de presentación al interesado. ¿Con qué comando instalaría el paquete NuGet?",
+      "options": [
+        "dotnet add package iText.",
+        "dotnet install package iText.",
+        "dotnet add iText.",
+        "dotnet install iText."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-17",
+      "source_ref": "OEP 2024 · Supuesto I · nº 17",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSegún “Técnicas y Practicas” de Métrica v3, si se quisiera optimizar el modelo físico de datos para reducir o simplificar el número de accesos a la base de datos, ¿cuál de las siguientes acciones se aplicaría?",
+      "options": [
+        "Combinar entidades si los accesos son frecuentes en transacciones distintas.",
+        "Eliminar entidades.",
+        "Introducir elementos redundantes.",
+        "Normalizar las tablas en Forma Normal de Boyce-Codd (FNBC)."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SI-18",
+      "source_ref": "OEP 2024 · Supuesto I · nº 18",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSuponiendo que se utilizara la metodología ágil SCRUM, si durante un sprint, se da cuenta de que se está aplicando una mala práctica que puede enlentecer el proyecto, ¿en qué reunión comentará esa mala práctica, para buscar la mejora continua y evitar aplicarla en los siguientes sprints?",
+      "options": [
+        "En la Daily Scrum.",
+        "En la Sprint Retrospective.",
+        "En la Sprint Planning.",
+        "En la Sprint Review."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SI-19",
+      "source_ref": "OEP 2024 · Supuesto I · nº 19",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nTambién el sistema se integrará con la PID (Plataforma de Intermediación de Datos), cuya plataforma actual se define como una arquitectura orientada a servicios (SOA). ¿Cuáles son los componentes principales de esta arquitectura?",
+      "options": [
+        "Servicio, Proveedor de servicios, Consumidor de servicios y Orquestador de servicios.",
+        "Servicio, Proveedor de servicios, Consumidor de servicios y Depurador de servicios.",
+        "Servicio, Proveedor de servicios, Consumidor de servicios y Comparador de servicios.",
+        "Servicio, Proveedor de servicios, Consumidor de servicios y Registro de servicios."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SI-20",
+      "source_ref": "OEP 2024 · Supuesto I · nº 20",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nTras estudiar varias opciones se ha decidido utilizar .NET con C# para desarrollar el backend, ¿cómo puede indicar la opcionalidad de un tipo de dato?",
+      "options": [
+        "int? Telefono",
+        "int|null Telefono",
+        "int:null Telefono",
+        "int ?? Telefono"
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-R1",
+      "source_ref": "OEP 2024 · Supuesto I · reserva nº 1",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nPara diseñar el estilo de los campos de entrada obligatorios del formulario de solicitud se va a hacer uso del siguiente selector CSS: “input:required”. ¿Cuál es su especificidad?",
+      "options": [
+        "1-1-0.",
+        "0-1-1.",
+        "1-0-1.",
+        "1-0-0."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SI-R2",
+      "source_ref": "OEP 2024 · Supuesto I · reserva nº 2",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe quiere facilitar el uso de herramientas de asistencia en la página. ¿Qué atributo utilizaría para indicar que un elemento se actualizará?",
+      "options": [
+        "aria-live.",
+        "aria-cheked.",
+        "aria-flowto.",
+        "aria-valuenow."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SI-R3",
+      "source_ref": "OEP 2024 · Supuesto I · reserva nº 3",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nPara resolver una incidencia, necesita saber qué ficheros adjuntos de la solicitud del interesado con DNI 00000000T para el año 2024 no son PDF. ¿Cómo los obtendría?",
+      "options": [
+        "SELECT * FROM FicheroAdjunto WHERE Denominacion LIKE '%.pdf' AND IdSolicitudBeca = (SELECT IdSolicitudBeca FROM SolicitudBeca WHERE AñoConvocatoria = 2024 AND IdInteresado = (SELECT IdInteresado WHERE DocumentoIdentidad = '00000000T'));",
+        "SELECT * FROM FicheroAdjunto WHERE Denominacion NOT LIKE '%.pdf' AND IdSolicitudBeca = (SELECT IdSolicitudBeca FROM SolicitudBeca WHERE AñoConvocatoria = 2024 AND IdInteresado = (SELECT IdInteresado FROM Interesado));",
+        "SELECT * FROM FicheroAdjunto WHERE Denominacion NOT LIKE '%.pdf' AND IdSolicitudBeca = (SELECT IdSolicitudBeca FROM SolicitudBeca WHERE AñoConvocatoria = 2024 AND IdInteresado = (SELECT IdInteresado FROM Interesado WHERE DocumentoIdentidad = '00000000T'))",
+        "SELECT * FROM FicheroAdjunto WHERE Denominacion NOT LIKE 'pdf' AND IdSolicitudBeca = (SELECT IdSolicitudBeca FROM SolicitudBeca WHERE AñoConvocatoria = 2024 AND IdInteresado = (SELECT IdInteresado FROM Interesado WHERE DocumentoIdentidad = '00000000T'));"
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SI-R4",
+      "source_ref": "OEP 2024 · Supuesto I · reserva nº 4",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué tendrá que configurar en el backend si quiere restringir que las únicas peticiones HTTP de origen cruzado iniciadas desde scripts que se acepten procedan del frontend?",
+      "options": [
+        "HSTS.",
+        "CSP.",
+        "TLS.",
+        "CORS."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SI-R5",
+      "source_ref": "OEP 2024 · Supuesto I · reserva nº 5",
+      "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nQuiere facilitar la incorporación de otros desarrolladores al proyecto y para ello, en el repositorio de código, va a crear un fichero en el que incluirá, entre otra información, el propósito del proyecto y cómo arrancarlo localmente. Esa información se incluirá en el fichero:",
+      "options": [
+        "CODEOWNERS.",
+        "README.MD.",
+        "LICENSE.",
+        "CITATION."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SII-1",
+      "source_ref": "OEP 2024 · Supuesto II · nº 1",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\n¿Cuántas direcciones hay disponibles para hosts en la subred del organismo?",
+      "options": [
+        "4094",
+        "65534",
+        "4096",
+        "65536"
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-2",
+      "source_ref": "OEP 2024 · Supuesto II · nº 2",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nAl arrancar el servidor donde se aloja la web de profesores, aparecen errores en la partición sda8. ¿Qué comando hay que usar para reparar de forma automática los errores en el sistema de ficheros correspondiente, que no ha podido montarse?",
+      "options": [
+        "mount –T /dev/sda8",
+        "fsck -y /dev/sda8",
+        "fsck -m /dev/sda8",
+        "checkdisk /dev/sda8"
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SII-3",
+      "source_ref": "OEP 2024 · Supuesto II · nº 3",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nAnalizando la seguridad del sistema, surge la duda de si abrir o no el puerto 80 en un servidor web expuesto mediante HTTPS. El Centro Criptológico Nacional recomienda:",
+      "options": [
+        "Exhibir una web estática en el puerto 80 indicando que esa no es la web actual.",
+        "Cambiar el puerto HTTPS al 8892.",
+        "Utilizar un analizador de peticiones en las cabeceras HTTP en el puerto 80.",
+        "Disponer del puerto TCP/80, configurando el servidor web para que lleve a cabo una redirección automática de HTTP a HTTPS."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SII-4",
+      "source_ref": "OEP 2024 · Supuesto II · nº 4",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nEl CPD donde está alojado el sistema tiene una puerta cuyo control de acceso es con tarjeta inteligente y PIN, que sólo conocen los operadores. Hace dos días, se supo que alguien no autorizado había entrado esperando agazapado a que alguien autorizado entrase, pasando detrás de él sin que éste advirtiera que tenía a un intruso detrás. Este incidente de ingeniería social en seguridad física se conoce con el nombre de:",
+      "options": [
+        "Tailgating o piggybacking.",
+        "Quid pro quo.",
+        "Pretexto.",
+        "Disrupción."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-5",
+      "source_ref": "OEP 2024 · Supuesto II · nº 5",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nEl organismo tiene, para controlar la seguridad física del CPD, un circuito cerrado de televisión con cámaras que usa una red coaxial y se necesita interconectar esta red a la red local Ethernet para poder monitorizarlas. ¿Con qué dispositivo de red puede hacerlo?",
+      "options": [
+        "Un cortafuegos (firewall).",
+        "Una pasarela (gateway).",
+        "Un conmutador (switch).",
+        "Un repetidor (repeater)."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SII-6",
+      "source_ref": "OEP 2024 · Supuesto II · nº 6",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nEn el sistema se utilizan los protocolos DNS y FTP seguro. De acuerdo con el modelo TCP/IP, estos protocolos se diferencian en que:",
+      "options": [
+        "DNS es un protocolo de usuario y FTP es un protocolo de soporte.",
+        "DNS es siempre un protocolo orientado a la conexión mientras que FTP no.",
+        "No existe diferencia entre ambos protocolos, ambos son protocolos de soporte.",
+        "FTP es un protocolo de usuario y DNS es un protocolo de soporte."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SII-7",
+      "source_ref": "OEP 2024 · Supuesto II · nº 7",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nEn un switch Cisco que hay en la organización, se ejecuta el comando “switchport access vlan 1”. Esto permitirá:",
+      "options": [
+        "Asignar un puerto a la VLAN 1.",
+        "Asignar el puerto 1 del switch a la VLAN donde estamos situados en la consola del switch.",
+        "Visualizar todos los hosts asignados a la VLAN 1.",
+        "Asignar todos los hosts conectados a cualquier puerto del switch a la VLAN 1."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-8",
+      "source_ref": "OEP 2024 · Supuesto II · nº 8",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nLa base de datos se ha corrompido y además, los usuarios no pueden acceder a la información. Se tiene toda la información de cómo se produjo el incidente y cuál es la persona que lo ha causado y por qué, pero, este incidente, ¿a qué dimensión o dimensiones de la seguridad afecta?",
+      "options": [
+        "A la disponibilidad porque no está accesible la base de datos y la integridad porque el fichero de la base de datos está corrupto.",
+        "A la confidencialidad porque los datos, una vez dañados, pueden ser accesibles por cualquiera.",
+        "Sólo a la disponibilidad porque la base de datos está temporalmente fuera de servicio hasta que se repare si es posible el fichero donde se aloja.",
+        "A la trazabilidad, porque no podremos averiguar lo que ha pasado por mucho que nos esforcemos, la seguridad es así."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-9",
+      "source_ref": "OEP 2024 · Supuesto II · nº 9",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nLa red de área local está implementada con Gigabit Ethernet y, al conectar un nuevo dispositivo a la red, en su tarjeta, parpadea una luz de color naranja. ¿A qué puede deberse?",
+      "options": [
+        "A que está mal configurada la VLAN donde está ubicado el dispositivo.",
+        "A que la tarjeta de red del dispositivo transmite a menor velocidad de la que permite la red.",
+        "A que la tarjeta de red está estropeada y no hay conexión entre el dispositivo y la red.",
+        "A que el cable del dispositivo es coaxial y no Ethernet."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SII-10",
+      "source_ref": "OEP 2024 · Supuesto II · nº 10",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nNos anuncian que hay una vulnerabilidad que afecta a una determinada versión del kernel de Linux Ubuntu. ¿Con qué comando podemos saber qué versión del kernel tiene nuestro sistema operativo Ubuntu?",
+      "options": [
+        "sudo dpkg -i linux*.deb",
+        "uname -r",
+        "uname -o",
+        "kexec -l"
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SII-11",
+      "source_ref": "OEP 2024 · Supuesto II · nº 11",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nPara descargar algunos ficheros del servidor BIBLIOTECA, los administradores están sopesando entre el uso de SFTP y FTPS. Indique, de las siguientes afirmaciones, la INCORRECTA:",
+      "options": [
+        "SFTP usa típicamente el puerto 22 de SSH mientras que FTPS usa el puerto en el que tengamos definido el protocolo SSL/TLS.",
+        "SFTP usa autenticación con certificado (clave pública) mientras que FTPS usa autenticación con usuario y contraseña.",
+        "FTPS usa dos puertos, uno para los comandos y otro para descargarse los datos mientras que SFTP usa el mismo puerto para ambas tareas.",
+        "FTPS no contiene comandos estandarizados para manipular directorios o listar atributos, mientras que SFTP sí."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SII-12",
+      "source_ref": "OEP 2024 · Supuesto II · nº 12",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nPara la detección de malware complejo y movimiento lateral relacionado con APTs (Advanced Persistent Threats), se ha instalado en los PC de los profesores, la solución del CCN, CLAUDIA. ¿Cómo define el Centro Criptológico Nacional una APT?",
+      "options": [
+        "Es un tipo de ransomware como, por ejemplo, WannaCry, que te cifra los archivos del PC y se requiere la clave de descifrado a cambio del pago de un rescate.",
+        "Es un ataque de suplantación de identidad de un usuario corriente en un organismo para después mediante escalada de privilegios obtener las credenciales de un alto cargo de la empresa u organización.",
+        "Es un ataque selectivo de ciberespionaje o cibersabotaje llevado a cabo bajo el auspicio o la dirección de un país u organización adversaria, por razones que van más allá de las meramente financieras/delictivas o de protesta política.",
+        "Es un ataque masivo a una organización ocurrido por un fallo que no se había advertido hasta ese momento y, por tanto, no se cuenta con la salvaguarda o parche para prevenirlo."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SII-13",
+      "source_ref": "OEP 2024 · Supuesto II · nº 13",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nPara mejorar la escalabilidad del sistema, está estudiando implantar una arquitectura de microservicios con Kubernetes. ¿Qué protocolos para servicios pueden utilizarse con Kubernetes?",
+      "options": [
+        "SCTP, TCP (por defecto) y UDP.",
+        "HTTP (por defecto), HTTPS y FTP.",
+        "SSH, SFTP (por defecto) y UDP.",
+        "UDP (por defecto) y TCP."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-14",
+      "source_ref": "OEP 2024 · Supuesto II · nº 14",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nPara poder atender las llamadas de las guardias de sistemas, se han comprado veinte móviles. Su responsable le pide realizar el enrolamiento de estos móviles, pero, ¿en qué consiste esta tarea?",
+      "options": [
+        "Emparejar, en el sistema MDM (Mobile Device Management) de la organización, a cada usuario con su móvil.",
+        "Dar de alta en una base de datos de administración todos los dispositivos móviles.",
+        "Insertar la tarjeta SIM correspondiente a cada móvil.",
+        "Formatear a fábrica todos los dispositivos móviles."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-15",
+      "source_ref": "OEP 2024 · Supuesto II · nº 15",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nSe está instalando la nueva climatización del CPD y se plantea utilizar una toma derivada de la climatización del resto del edificio. ¿Cuál es la razón principal por la que NO se aconseja hacer eso?",
+      "options": [
+        "Porque la humedad recomendada para un CPD es mucho menor que la recomendada para las personas.",
+        "Porque la temperatura recomendada para un CPD es mucho mayor que la recomendada para las personas.",
+        "Porque el filtro de impurezas y polvo para las personas es mucho más sensible que lo que se recomienda para un CPD.",
+        "Porque el aire acondicionado para un CPD siempre debe provenir del techo y para las personas puede provenir lateralmente."
+      ],
+      "correct": "a",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a)."
+    },
+    {
+      "key": "SII-16",
+      "source_ref": "OEP 2024 · Supuesto II · nº 16",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nSe ha descargado del sitio web del CCN-CERT una herramienta de antimalware y justo debajo aparece un hash de comprobación. ¿Qué tipo de medida de seguridad es este hash en este contexto?",
+      "options": [
+        "Una medida antimalware, pues el hash aplicado al fichero descargado nos sanitiza el fichero y ya se puede usar sin problemas, pues está limpio de malware, lo cual en una herramienta antimalware es altamente necesario.",
+        "Una medida para asegurar la integridad del fichero de descarga, pues si al calcular nosotros el hash del fichero descargado no coincide con el que nos aparece en la página del CCN, el fichero descargado no sería válido para su uso.",
+        "El hash es la firma del CCN como autoridad de certificación de productos que garantiza que el software descargado es apto para ser usado en sistemas categorizados como de nivel ALTO o incluso en sistemas clasificados como reservado nacional.",
+        "El hash es la firma del CCN de la página web donde se presenta la herramienta que estamos intentando descargar y es una medida para evitar que los hackers puedan manipular la página y subir otro fichero en vez del que se pretende descargar."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SII-17",
+      "source_ref": "OEP 2024 · Supuesto II · nº 17",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nSe ha implantado una solución VoIP que usa el protocolo SIP pero, al establecer sesiones con usuarios de fuera del organismo, la llamada se corta o congela y después, se restablece. Este problema no sucede en sesiones entre usuarios internos del organismo, ¿por qué puede ser?",
+      "options": [
+        "Se están usando incorrectamente los códecs.",
+        "La salida a Internet está empleando NAT.",
+        "El tráfico entre origen y destino está interceptado en el cortafuegos de Internet.",
+        "La CPU del ordenador es insuficiente y provoca estos problemas."
+      ],
+      "correct": "b"
+    },
+    {
+      "key": "SII-18",
+      "source_ref": "OEP 2024 · Supuesto II · nº 18",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nSe ha instalado un servidor de correo con Postfix y se está decidiendo si utilizar POP3 o IMAP en los clientes de correo. ¿Cuál de las siguientes opciones es INCORRECTA?",
+      "options": [
+        "Con IMAP, los mensajes se almacenan en un servidor remoto y los usuarios pueden iniciar sesión en varios clientes de correo electrónico y leer los mismos mensajes.",
+        "POP3 solo admite la sincronización de correo unidireccional, lo que solo permite a los usuarios descargar correos electrónicos desde un servidor a un cliente.",
+        "Con IMAP, el correo enviado y recibido se almacena en el servidor hasta que el usuario lo elimina permanentemente.",
+        "Con POP3, si los usuarios organizan sus correos electrónicos en un dispositivo mediante carpetas, ya no tendrán que hacerlo en el resto de dispositivos porque se replica la organización en carpetas."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SII-19",
+      "source_ref": "OEP 2024 · Supuesto II · nº 19",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nSe necesita saber los usuarios que acceden a la base de datos de la biblioteca y desde qué host o IP. Para averiguarlo, en la consola de administración de la base de datos, ejecutará el comando:",
+      "options": [
+        "SELECT * FROM all_users",
+        "mysql\u003e SELECT user FROM mysql.user",
+        "mysql\u003e SELECT user,host FROM mysql.user",
+        "sudo mysql -u root -p"
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SII-20",
+      "source_ref": "OEP 2024 · Supuesto II · nº 20",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nSe quiere aplicar políticas de seguridad al grupo de usuarios Profesores utilizando Directorio Activo y GPOs. Una buena práctica es definir primero:",
+      "options": [
+        "Una Unidad Organizativa (OU) para el grupo de usuarios Profesores.",
+        "Las ACLs (Access Control Lists) que tendrán las GPO del grupo de usuarios Profesores.",
+        "Un nuevo bosque de Directorio Activo.",
+        "Relaciones de confianza entre el Directorio Activo actual y el dominio de seguridad del grupo de usuarios Profesores."
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-R1",
+      "source_ref": "OEP 2024 · Supuesto II · reserva nº 1",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nComo administrador de correo, quiere cambiar el mensaje HELO que aparece cuando se establecen conexiones al servidor SMTP. Actualmente aparece el nombre del servidor, pero quiere que muestre \"CORREOBIBLIOTECA\" y además, que el cambio se aplique en todos los servidores SMTP que existan, no solo en aquel en el que está trabajando. ¿Cómo lo haría?",
+      "options": [
+        "Editando el parámetro $client en el fichero /etc/postfix/main.cf y reiniciando posteriormente el servidor Postfix.",
+        "Accediendo al servidor SMTP y ejecutando EHLO -name CORREOBIBLIOTECA en la consola.",
+        "Editando el parámetro smtp_helo en el fichero /etc/postfix/master.cf y reiniciando posteriormente el servidor Postfix.",
+        "Editando el parámetro $helo_name en /etc/postfix/main.cf y reiniciando posteriormente el servidor Postfix."
+      ],
+      "correct": "d"
+    },
+    {
+      "key": "SII-R2",
+      "source_ref": "OEP 2024 · Supuesto II · reserva nº 2",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nComo no hay suficientes tomas Ethernet en la zona física donde están los profesores, se va a instalar una red WiFi con protocolo WPA3-Enterprise. En este caso, para acceder a la red WiFi habrá que utilizar:",
+      "options": [
+        "Una contraseña de 64 bits.",
+        "Una contraseña de 128 bits.",
+        "Un servidor RADIUS o cualquier solución que permita EAP-TLS.",
+        "Una contraseña de 192 bits usando el algoritmo GMCP-256."
+      ],
+      "correct": "c"
+    },
+    {
+      "key": "SII-R3",
+      "source_ref": "OEP 2024 · Supuesto II · reserva nº 3",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nEn la base de datos MySQL de Profesores, nos piden que añadamos una tabla de los profesores para el curso de INGLES BASICO, que se llamará \"ProfesoresIngles\" con sus nombres y apellidos. Para ello, y tras acceder como root a MYSQL, ingresaremos el comando:",
+      "options": [
+        "CREATE TABLE ProfesoresIngles (id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(30), apellido1 VARCHAR(30), apellido2 VARCHAR(30));",
+        "CREATE TABLE ProfesoresIngles KEY id, nombre, apellidos;",
+        "CREAR TABLA ProfesoresIngles KEY apellidos, nombre;",
+        "CREATE TABLE ProfesoresIngles (nombre, apellido);"
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-R4",
+      "source_ref": "OEP 2024 · Supuesto II · reserva nº 4",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nHa instalado el servicio Nagios para monitorizar los servidores y servicios en su sistema y quiere monitorizar, además, la URL de profesores (https://profesores.es), pero antes quiere comprobar que este servicio está configurado correctamente. Para ello, utilizará el comando:",
+      "options": [
+        "nagios –v /usr/local/nagios/etc/nagios.cfg",
+        "/mnt/nagios –check",
+        "systemctl status nagios",
+        "https://profesores.es nagios"
+      ],
+      "correct": "a"
+    },
+    {
+      "key": "SII-R5",
+      "source_ref": "OEP 2024 · Supuesto II · reserva nº 5",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nSe ha instalado un servidor web con HTTPS y certificado SSL de servidor para proteger la conexión entre los clientes y el servidor, para lo cual la conexión usará TLS. Según las recomendaciones del Centro Criptológico Nacional, ¿cuál es la versión mínima y la recomendada a usar en TLS?",
+      "options": [
+        "La versión mínima aceptable es la 1.1 y se recomienda usar esa misma versión 1.1",
+        "La versión mínima aceptable es la 1.0 y se recomienda usar 1.1",
+        "La versión mínima aceptable es la 1.2 y se recomienda usar la 1.3",
+        "La versión mínima aceptable es la 1.1 y se recomienda usar la 1.3"
+      ],
+      "correct": "c"
+    }
+  ]
+}

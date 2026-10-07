@@ -55,40 +55,39 @@ aprobar y penalización por error) y ponerlo como valor por defecto en
 `internal/quiz/scoring.go`, citando el apartado de las bases en el comentario.
 En una instalación ya en marcha se cambia en Ajustes → Nota.
 
-### 3. Importador de exámenes del INAP
+### 3. Exámenes del INAP
 
-Es código nuevo (fase 5 de la hoja de ruta). Comando propuesto:
+Están en la sede electrónica del INAP: Procedimientos y servicios →
+Selección → Cuerpo de Técnicos Auxiliares de Informática, una página por
+proceso selectivo, con el cuestionario y las plantillas de respuestas.
 
-```sh
-tai import-exam -title "TAI ingreso libre · OEP 2024" -ref "OEP-2024-LI" \
-  -questions data/raw/inap/2024/cuestionario.pdf \
-  -answers data/raw/inap/2024/plantilla-definitiva.pdf
-```
+1. Descargar a `data/raw/inap/<año>/` el cuestionario, la plantilla
+   **definitiva** y la provisional (solo sirve para dar respuesta a las
+   anuladas). Si el proceso aún no tiene definitiva, esperar.
+2. Convertirlo en un fichero del banco:
 
-Qué debe hacer:
+   ```sh
+   go run ./cmd/tai import-exam -title "TAI ingreso libre · OEP 2024 · ejercicio único (modelo A)" \
+     -ref INAP-TAI-L-OEP2024 -label "OEP 2024" -url <página del proceso> \
+     -questions data/raw/inap/2024/cuestionario-A.pdf \
+     -answers data/raw/inap/2024/plantilla-definitiva-A.pdf \
+     -provisional data/raw/inap/2024/plantilla-provisional-A.pdf \
+     -out data/bank/inap-tai-l-oep2024.json
+   ```
 
-- Crear (o reutilizar) la fuente de tipo `inap_exam` con título, referencia
-  y URL de descarga.
-- Extraer las preguntas con `pdftotext -layout`: enunciado y cuatro
-  opciones. Cruzarlas con la plantilla para la respuesta correcta y las
-  anuladas.
-- Guardar cada una con `origin = official`, `author = import`,
-  `status = draft` y `source_ref` como `2024 · nº 37`, usando
-  `content.Store.CreateQuestion`, para que pasen las mismas validaciones
-  que todo lo demás.
-- Ser **idempotente**: la clave es fuente + número de pregunta. Al
-  reimportar no duplica, y nunca resucita una pregunta descartada.
-- Terminar con un informe: importadas, ya existentes y con problemas (por
-  qué y qué número).
-- Tests con un fragmento de texto de muestra del PDF real.
+   Lee el cuestionario con `pdftotext -layout` (primera parte, supuestos I
+   y II y sus preguntas de reserva), lo cruza con las plantillas y escribe
+   `data/bank/<ref>.json`. Al final informa de lo que no ha podido leer, con
+   el número de pregunta. La `-ref` no se cambia nunca: identifica las
+   preguntas del examen en todas las instalaciones.
+3. Revisar el JSON (enunciados, opciones y letras) y `make test`: un test
+   carga todo el banco y exige que cada pregunta pase la validación.
+4. Subirlo. Al arrancar, cada instalación añade como borrador lo que aún no
+   tiene.
 
-Los exámenes están en la sede electrónica del INAP, en el proceso selectivo
-del cuerpo TAI de cada año: el cuestionario y la plantilla de respuestas.
-Empezar por los más recientes. Si la web es difícil de recorrer, descargar
-los PDF a mano a `data/raw/inap/<año>/` y seguir desde ahí.
-
-En Docker, el contenedor ya trae `pdftotext`; los PDF se pasan con un
-volumen o `docker compose cp`.
+Hecho: OEP 2019, 2022 y 2024 (ingreso libre). Pendiente: la OEP 2025, que
+solo tiene plantilla provisional, y la OEP 2018, cuyo cuestionario está
+escaneado (sin texto: habría que pasar OCR y revisarlo a mano).
 
 ### 4. Revisar y publicar
 
@@ -98,13 +97,9 @@ proponerlo según el temario, pero se confirma en la revisión.
 
 ### 5. Banco de preguntas incluido en la app
 
-Para que cualquier instalación nueva empiece con contenido:
-
-- Exportar las preguntas publicadas y sus fuentes a `data/bank/` (JSON,
-  un fichero por fuente, con clave estable por pregunta).
-- Incluir `data/bank/` en el binario con `embed` y cargarlo al arrancar,
-  de forma idempotente: añade lo que falta y respeta lo descartado o
-  editado en esa instalación.
+Hecho: `data/bank/` va en el binario y se carga al arrancar (ver el paso 3).
+Pendiente: exportar al banco los temas asignados en la revisión, para que
+las instalaciones nuevas reciban las preguntas ya clasificadas.
 
 ### 6. Leyes del temario
 

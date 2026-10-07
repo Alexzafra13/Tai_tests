@@ -230,19 +230,23 @@ func topicsExist(ctx context.Context, q queryer, ids []int64) (bool, error) {
 }
 
 func (s *Store) CreateQuestion(ctx context.Context, in QuestionInput) (int64, error) {
+	var id int64
+	err := s.inTx(ctx, func(tx *sql.Tx) (err error) {
+		id, err = s.createQuestion(ctx, tx, in)
+		return err
+	})
+	return id, err
+}
+
+func (s *Store) createQuestion(ctx context.Context, tx *sql.Tx, in QuestionInput) (int64, error) {
 	in.normalize()
-	tx, err := s.db.BeginTx(ctx, nil)
-	if err != nil {
-		return 0, err
-	}
-	defer tx.Rollback()
 	if err := in.validate(ctx, tx); err != nil {
 		return 0, err
 	}
 
 	now := s.timestamp()
 	var id int64
-	err = tx.QueryRowContext(ctx, `INSERT INTO questions (stem, option_a, option_b, option_c, option_d, correct,
+	err := tx.QueryRowContext(ctx, `INSERT INTO questions (stem, option_a, option_b, option_c, option_d, correct,
 		explanation, origin, author, source_id, source_ref, source_quote, status, annulled, fixed_order,
 		created_at, updated_at)
 		VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id`,
@@ -252,10 +256,7 @@ func (s *Store) CreateQuestion(ctx context.Context, in QuestionInput) (int64, er
 	if err != nil {
 		return 0, err
 	}
-	if err := setTopics(ctx, tx, id, in.TopicIDs); err != nil {
-		return 0, err
-	}
-	return id, tx.Commit()
+	return id, setTopics(ctx, tx, id, in.TopicIDs)
 }
 
 func (s *Store) UpdateQuestion(ctx context.Context, id int64, in QuestionInput) error {

@@ -118,7 +118,8 @@ internal/db/migrations/  migraciones SQL versionadas (NNNN_nombre.sql)
 internal/users/        cuentas y roles (admin / usuario), contraseñas con bcrypt
 internal/auth/         login, sesiones y usuario actual de cada petición
 internal/validate/     errores de validación por campo, comunes a todos los paquetes
-internal/content/      temario, fuentes y preguntas con sus reglas de validación
+internal/content/      temario, fuentes, preguntas con sus reglas de validación y banco incluido
+internal/content/examtext/  lectura del texto de los PDF del INAP (cuestionario y plantillas)
 internal/quiz/         sesiones de test: creación, respuestas, historial, nota y barajado
 internal/srs/          repetición espaciada (FSRS): cuándo repasar cada pregunta
 internal/stats/        estadísticas por usuario: aciertos, temas, progreso diario
@@ -131,6 +132,7 @@ web/src/components/    piezas compartidas (opciones de pregunta, formularios, ci
 web/src/pages/         una pantalla por fichero o carpeta, con su CSS al lado
 web/src/types/         espejo de los tipos JSON de la API, un fichero por área
 data/                  syllabus.example.json (formato del temario)
+data/bank/             banco de preguntas oficiales incluido en el binario (un JSON por examen)
 ```
 
 ## Usuarios y permisos
@@ -276,6 +278,38 @@ docker compose exec -T tai tai add-source -kind law \
   -ref BOE-A-2015-10565 -version 2024-01-01 -text - < ley39.txt
 ```
 
+## Banco de preguntas incluido
+
+`data/bank/` guarda los exámenes oficiales del INAP ya convertidos, un
+fichero JSON por examen, y va dentro del binario. Al arrancar, la app añade
+como **borrador** las preguntas que esa instalación aún no tiene, para
+revisarlas en **Revisión → Aceptar en bloque** (necesitan un tema para
+publicarse). Cada pregunta tiene una clave estable dentro de su examen
+(`P-37`, `SI-R2`…): lo ya cargado no se vuelve a cargar, aunque se haya
+editado, descartado o borrado.
+
+Incluye los cuestionarios de ingreso libre de las OEP 2019, 2022 y 2024
+(135 preguntas cada uno: 80 + 5 de reserva y dos supuestos de 20 + 5),
+con la respuesta de la plantilla **definitiva**. Las anuladas van marcadas
+(no salen en los tests) con la respuesta que daba la provisional. En los
+supuestos, cada pregunta lleva delante el enunciado del caso; si el original
+tenía figuras, se avisa de que no se reproducen.
+
+Para añadir un examen, con los PDF descargados de la sede del INAP:
+
+```sh
+go run ./cmd/tai import-exam -title "TAI ingreso libre · OEP 2024 · ejercicio único (modelo A)" \
+  -ref INAP-TAI-L-OEP2024 -label "OEP 2024" -url <página del proceso> \
+  -questions data/raw/inap/2024/cuestionario-A.pdf \
+  -answers data/raw/inap/2024/plantilla-definitiva-A.pdf \
+  -provisional data/raw/inap/2024/plantilla-provisional-A.pdf \
+  -out data/bank/inap-tai-l-oep2024.json
+```
+
+Necesita `pdftotext` y `pdfimages` (poppler-utils). Escribe el fichero,
+informa de lo que no ha podido leer y `make test` comprueba que todo el
+banco pasa la validación.
+
 ## Desarrollo local
 
 Requisitos: Go 1.26+ y Node 22+.
@@ -305,7 +339,7 @@ make build   # compila el frontend y genera bin/tai con todo embebido
 2. ✅ Temario y modelo de preguntas; alta y edición manual.
 3. ✅ Tests (práctica y examen) y registro de intentos.
 4. ✅ Cola de revisión.
-5. Importador de exámenes del INAP y modo simulacro.
+5. Importador de exámenes del INAP (✅ banco con OEP 2019, 2022 y 2024) y modo simulacro.
 6. Generación del bloque legal con validación.
 7. ✅ FSRS, falladas, estadísticas y búsqueda.
 8. Generación del bloque técnico y pulido (✅ app instalable).
