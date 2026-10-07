@@ -23,6 +23,7 @@ func (s *Server) routes(mux *http.ServeMux) {
 	mux.Handle("GET /api/study/topics/{id}", user(s.handleStudyTopic))
 	mux.Handle("GET /api/laws/{id}", user(s.handleLawText))
 	mux.Handle("GET /api/sources", user(s.handleListSources))
+	mux.Handle("GET /api/exams", user(s.handleExams))
 	mux.Handle("GET /api/settings/scoring", user(s.handleGetScoring))
 
 	mux.Handle("GET /api/tests", user(s.handleListTests))

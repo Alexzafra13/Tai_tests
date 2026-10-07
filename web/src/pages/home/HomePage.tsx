@@ -121,6 +121,16 @@ export function HomePage() {
         </Link>
       )}
 
+      <Link to="/exams" className="card resume home-exams">
+        <span>
+          <span className="eyebrow">Exámenes oficiales</span>
+          <span className="resume-title">Haz un examen del INAP completo</span>
+        </span>
+        <span className="resume-count" aria-hidden>
+          ›
+        </span>
+      </Link>
+
       {stats.data && <BlockProgress topics={stats.data.topics} />}
 
       {isAdmin && <AdminTiles />}

@@ -113,6 +113,10 @@
     gap: 1rem;
   }
 
+  .home-exams {
+    margin-top: 0.625rem;
+  }
+
   .resume-title {
     display: block;
     margin-top: 0.125rem;

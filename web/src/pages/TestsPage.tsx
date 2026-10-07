@@ -11,9 +11,14 @@ export function TestsPage() {
     <>
       <div className="page-head">
         <h2>Tests</h2>
-        <Link className="button primary small" to="/tests/new">
-          Nuevo
-        </Link>
+        <div className="actions">
+          <Link className="button small" to="/exams">
+            Exámenes oficiales
+          </Link>
+          <Link className="button primary small" to="/tests/new">
+            Nuevo
+          </Link>
+        </div>
       </div>
       <ErrorBox message={error} />
       {loading && <Loading />}

@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"sort"
 	"strings"
 	"time"
 
@@ -31,6 +32,9 @@ type Filters struct {
 	// QuestionIDs restricts the test to specific questions, e.g. to retry
 	// the ones failed in a previous test.
 	QuestionIDs []int64 `json:"question_ids"`
+	// Ordered keeps the order of QuestionIDs instead of shuffling, e.g. to
+	// take an official exam as it was set.
+	Ordered bool `json:"ordered"`
 	// Due limits the test to the user's questions due for review, most
 	// overdue first.
 	Due bool `json:"due"`
@@ -58,6 +62,9 @@ func (in CreateInput) validate() error {
 	}
 	if in.Penalty < 0 || in.Penalty > 1 {
 		v["penalty"] = "La penalización debe estar entre 0 y 1"
+	}
+	if in.Filters.Ordered && len(in.Filters.QuestionIDs) == 0 {
+		v["filters"] = "Indica las preguntas y su orden"
 	}
 	if in.TimeLimitMin < 0 || in.TimeLimitMin > MaxTimeLimitMin {
 		v["time_limit_min"] = fmt.Sprintf("Entre 0 y %d minutos", MaxTimeLimitMin)
@@ -165,6 +172,8 @@ func (s *Store) Create(ctx context.Context, userID int64, in CreateInput) (int64
 		var orderArgs []any
 		order, orderArgs = srs.DueOrder(userID)
 		args = append(args, orderArgs...)
+	} else if in.Filters.Ordered {
+		order = "q.id"
 	}
 	rows, err := tx.QueryContext(ctx, `SELECT q.id, q.revision, q.option_a, q.option_b, q.option_c, q.option_d, q.fixed_order
 		FROM questions q WHERE `+cond+` ORDER BY `+order+` LIMIT ?`, append(args, in.Count)...)
@@ -186,6 +195,15 @@ func (s *Store) Create(ctx context.Context, userID int64, in CreateInput) (int64
 	}
 	if len(picks) == 0 {
 		return 0, ErrNoQuestions
+	}
+	if in.Filters.Ordered {
+		position := map[int64]int{}
+		for i, id := range in.Filters.QuestionIDs {
+			if _, seen := position[id]; !seen {
+				position[id] = i
+			}
+		}
+		sort.SliceStable(picks, func(i, j int) bool { return position[picks[i].id] < position[picks[j].id] })
 	}
 
 	now := s.now().UTC()

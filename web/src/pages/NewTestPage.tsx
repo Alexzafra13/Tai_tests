@@ -17,19 +17,17 @@ import {
 import { ErrorBox, Field } from "../components/Form";
 import { TopicPicker } from "../components/TopicPicker";
 import { loadPref, savePref } from "../storage";
-import { emptyFilters } from "./test/start";
+import { emptyFilters, examMinutes } from "./test/start";
 
 const STORAGE_KEY = "tai.newTest";
 const countPresets = [10, 25, 50, 100];
-// The real exam allows about 1.2 minutes per question (100 in 120 min).
-const minutesFor = (count: number) => Math.max(1, Math.round(count * 1.2));
 
 const defaults: CreateTestInput = {
   mode: "practice",
   filters: emptyFilters,
   count: 25,
   penalty: 1 / 3,
-  time_limit_min: minutesFor(25),
+  time_limit_min: examMinutes(25),
 };
 
 // Which questions to draw from, on top of the other filters. Maps to the
@@ -96,7 +94,7 @@ export function NewTestPage() {
   const setFilters = (patch: Partial<TestFilters>) => setForm((f) => ({ ...f, filters: { ...f.filters, ...patch } }));
 
   function setCount(count: number) {
-    setForm((f) => ({ ...f, count, time_limit_min: minutesFor(count) }));
+    setForm((f) => ({ ...f, count, time_limit_min: examMinutes(count) }));
   }
 
   function toggle<T>(list: T[], value: T): T[] {

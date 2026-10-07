@@ -42,7 +42,7 @@ func TestUserCannotReachAdminEndpoints(t *testing.T) {
 		}
 	}
 
-	for _, path := range []string{"/api/syllabus", "/api/sources", "/api/tests", "/api/settings/scoring"} {
+	for _, path := range []string{"/api/syllabus", "/api/sources", "/api/exams", "/api/tests", "/api/settings/scoring"} {
 		if status := doJSON(t, ana, "GET", ts.URL+path, nil, nil); status != http.StatusOK {
 			t.Errorf("GET %s as user: %d, want 200", path, status)
 		}
