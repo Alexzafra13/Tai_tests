@@ -16,7 +16,11 @@
         "Derecho a la producción y creación literaria, artística, científica y técnica.",
         "Derecho a elegir libremente su residencia."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-2",
@@ -28,7 +32,11 @@
         "Una ley orgánica regulará la institución del Defensor del Pueblo.",
         "El reconocimiento, el respeto y la protección de los principios reconocidos en el Capítulo tercero, informará la judicialización positiva, la práctica legislativa y la actuación de los poderes públicos."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-3",
@@ -40,7 +48,11 @@
         "Proponer el candidato a Presidente de Gobierno y, en su caso, nombrarlo, así como poner fin a sus funciones en los términos previstos en la Constitución.",
         "Nombrar y separar a los miembros del Gobierno, a propuesta de su Presidente."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-4",
@@ -52,7 +64,11 @@
         "Cualquier persona que se encuentre en el pleno disfrute de sus derechos civiles.",
         "Cualquier español mayor de edad que se encuentre en el pleno disfrute de sus derechos civiles y políticos."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-5",
@@ -64,7 +80,11 @@
         "Sala de lo Penal del Tribunal Supremo.",
         "Sala de lo Civil del Tribunal Supremo."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-6",
@@ -76,7 +96,11 @@
         "Reunirse en sesión extraordinaria a petición de la mayoría simple de los miembros de cualquiera de las Cámaras.",
         "Nombrar conjuntamente Comisiones de Investigación sobre asuntos de interés público. Sus conclusiones serán vinculantes para los Tribunales."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-7",
@@ -88,7 +112,11 @@
         "6 años y se renovarán por terceras partes cada 3.",
         "6 años y se renovarán por terceras partes cada 2."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-8",
@@ -100,7 +128,11 @@
         "Ley 50/1996, de 28 de noviembre.",
         "Ley 50/1998, de 29 de noviembre."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-9",
@@ -112,7 +144,11 @@
         "El Congreso de los Diputados puede exigir la responsabilidad civil del Gobierno mediante la adopción por mayoría absoluta de la moción de censura.",
         "El Congreso de los Diputados puede exigir la responsabilidad política del Gobierno mediante la adopción por mayoría absoluta de la moción de censura."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-10",
@@ -124,7 +160,11 @@
         "Presentar declaraciones responsables o comunicaciones.",
         "Formular solicitudes."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-11",
@@ -136,7 +176,11 @@
         "Proporcionará a los usuarios tres modalidades de identificación electrónica basadas en el uso de claves concertadas.",
         "Permitirá también el acceso a servicios de firma electrónica, en particular, a servicios de firma de documentos electrónicos mediante certificados electrónicos centralizados."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-12",
@@ -148,7 +192,11 @@
         "Deberá dirigirse al titular del órgano administrativo o entidad que posea la información.",
         "Deberá motivarse."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-13",
@@ -160,7 +208,11 @@
         "No podrá ser superior a cinco años.",
         "No podrá ser superior a seis años."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-14",
@@ -172,7 +224,11 @@
         "No trata en ningún artículo sobre la factura electrónica.",
         "La factura electrónica solo se utilizará en contratación, estando excluida de la justificación de ayudas y subvenciones."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-15",
@@ -184,7 +240,11 @@
         "Minimización de datos.",
         "Adecuación de datos."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-16",
@@ -196,7 +256,11 @@
         "Las notificaciones se practicarán preferentemente en papel y, en todo caso, cuando el interesado resulte obligado a recibirlas por esta vía.",
         "Cuando la notificación se practique en el domicilio del interesado, de no hallarse presente éste en el momento de entregarse la notificación, podrá hacerse cargo de ella cualquier persona mayor de dieciséis años que se encuentre en el domicilio y haga constar su identidad."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-17",
@@ -208,7 +272,11 @@
         "Normativa reguladora del Registro al que se acceda a través de la sede electrónica.",
         "Enlace directo al Boletín Oficial correspondiente."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-18",
@@ -220,7 +288,11 @@
         "Facilita la aceptación del DNI electrónico en servicios de Administración Electrónica de otras administraciones integrantes de la OCDE.",
         "Utiliza un sistema de intercambio de mensajes conforme al estándar SAML 2.0."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-19",
@@ -232,7 +304,11 @@
         "Una clasificación que pretende clarificar los diferentes tipos de tecnologías, técnicas y mecanismos que abarca el concepto abstracto de “Inteligencia Artificial”.",
         "Una clasificación de los tipos de controladores (drivers) JDBC."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-20",
@@ -244,7 +320,11 @@
         "ACCEDA",
         "CEGADA"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-21",
@@ -256,7 +336,11 @@
         "MMD",
         "M.2"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-22",
@@ -270,7 +354,11 @@
       ],
       "correct": "a",
       "annulled": true,
-      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a)."
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a).",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-23",
@@ -282,7 +370,11 @@
         "Los nodos pueden tener 2, 3 o 4 hijos (2-nodo, 3-nodo o 4-nodo).",
         "Las reestructuraciones se realizan desde las hojas hacia la raíz."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-24",
@@ -294,7 +386,11 @@
         "Cada nodo tiene dos enlaces, uno al nodo siguiente, y otro al anterior.",
         "Se pude implementar usando una estructura dinámica."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-25",
@@ -306,7 +402,11 @@
         "Se pueden escribir usando lenguaje natural, usando pseudo-código o incluso algún lenguaje de programación.",
         "En JAVA, una estructura de datos (interface) debe implementar todas las operaciones definidas en su TAD (class)."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-26",
@@ -318,7 +418,11 @@
         "Proveer servicios de red como TCP/IP.",
         "Facilitar la comunicación entre usuarios a través de terminales."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-27",
@@ -330,7 +434,11 @@
         "Se recomienda su uso con aplicaciones intensivas a nivel computacional, como juegos o simulaciones físicas.",
         "No permite la reutilización de código, no pudiendo usar bibliotecas de otros desarrolladores."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-28",
@@ -342,7 +450,11 @@
         "Un atributo que puede tener valores duplicados. de datos.",
         "Un atributo que se utiliza solo para consultas."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-29",
@@ -354,7 +466,11 @@
         "Matisse.",
         "Rembrandt."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-30",
@@ -366,7 +482,11 @@
         "Un lenguaje de consulta de datos.",
         "Un lenguaje de manipulación de datos."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-31",
@@ -378,7 +498,11 @@
         "Tipo de Correspondencia.",
         "Dominio."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-32",
@@ -390,7 +514,11 @@
         "Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas tienen dependencia funcional completa respecto de éstas.",
         "Una relación en 3FN estará también en 2FN, pero no en 1FN."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-33",
@@ -402,19 +530,27 @@
         "PERT.",
         "Regresión."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-34",
       "source_ref": "OEP 2024 · nº 34",
       "stem": "Para las variables a=1, b=2, c=3, d=1 ¿cuál es la operación lógica que da un resultado true?",
       "options": [
-        "((a\u003eb) or (a\u003cc)) and ((a==c) or (a\u003e=b))",
-        "((a\u003e=b) or (a\u003cd)) and ((a\u003e=d) or (c\u003ed))",
-        "Not (a==c) and (c\u003eb)",
-        "Not (a\u003e=d) and not (c\u003e=b)"
+        "((a>b) or (a<c)) and ((a==c) or (a>=b))",
+        "((a>=b) or (a<d)) and ((a>=d) or (c>d))",
+        "Not (a==c) and (c>b)",
+        "Not (a>=d) and not (c>=b)"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-35",
@@ -426,19 +562,27 @@
         "Los parámetros por referencia se pueden emplear como parámetros de entrada/salida.",
         "Todo procedimiento debe ejecutar una sentencia de return."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-36",
       "source_ref": "OEP 2024 · nº 36",
-      "stem": "Suponga el siguiente programa escrito en un lenguaje de programación estándar:\ninteger x=0; while x\u003c100 do (x=x+1; print x; x=x-1;)",
+      "stem": "Suponga el siguiente programa escrito en un lenguaje de programación estándar:\ninteger x=0; while x<100 do (x=x+1; print x; x=x-1;)",
       "options": [
         "Este programa imprime los números enteros del 1 al 100.",
         "Este programa imprime los números impares del 1 al 100.",
         "Este programa imprime los números pares del 1 al 100.",
         "Este programa es un bucle infinito."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-37",
@@ -450,7 +594,11 @@
         "El comando TRUNCATE es un comando DML.",
         "El comando SELECT es un comando DML."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-38",
@@ -462,7 +610,11 @@
         "Se utiliza para eliminar la estructura de una tabla junto con cualquier dato almacenado en ella.",
         "Utiliza WHERE para condiciones de filtrado."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-39",
@@ -474,7 +626,11 @@
         "Puede decidirse que se activen antes o después de un evento determinado.",
         "Un error durante la ejecución de cualquier trigger no cancela automáticamente la operación que lo disparó, la cancelación hay que programarla."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-40",
@@ -486,7 +642,11 @@
         "Asume una subordinación conceptual del tipo “todo/parte”, o bien “tiene un”.",
         "Se representa mediante una línea discontinua que une la superclase y subclase con un rectángulo al lado de la superclase."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-41",
@@ -498,7 +658,11 @@
         "Se basa en el paradigma de la orientación a objetos.",
         "Muestra únicamente el modelado estático de un sistema software, que puede utilizarse en las diferentes fases de su ciclo de desarrollo."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-42",
@@ -510,7 +674,11 @@
         "Simplifica el tratamiento de los objetos creados que, al poseer de una interfaz común, se tratan todos de la misma manera.",
         "Se recomienda su uso cuando se quiere añadir responsabilidades a objetos concretos de manera dinámica y transparente y sin afectar a otros objetos."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-43",
@@ -522,7 +690,11 @@
         "Es una herramienta de pruebas automatizadas.",
         "Es una plataforma para desarrollar aplicaciones móviles que se puede ejecutar en sistema Android solamente."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-44",
@@ -534,7 +706,11 @@
         "Razor se ejecuta directamente en el navegador del cliente.",
         "Razor utiliza el @símbolo para realizar la transición de C# a HTML."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-45",
@@ -546,7 +722,11 @@
         "Normalmente, una entidad representa una tabla en una base de datos relacional y cada instancia de la entidad corresponde a una fila de esa tabla.",
         "JPA no permite definir relaciones entre entidades del tipo uno a muchos."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-46",
@@ -558,7 +738,11 @@
         "Escalabilidad: la capacidad computacional y de procesamiento puede escalarse hacia arriba según sea necesario cuando se añaden máquinas adicionales.",
         "Comunicación diferencial: usan nodos distintos para comunicarse y sincronizarse a través de redes independientes entre sí."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-47",
@@ -570,7 +754,11 @@
         "En la arquitectura REST, la interfaz para acceder a los recursos expuestos puede ser HTTP o FTP.",
         "Es una arquitectura no orientada a recursos."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-48",
@@ -580,9 +768,13 @@
         "HTML exige que las etiquetas se escriban en minúscula, mientras que XHTML no.",
         "XHTML permite que haya elementos no vacíos sin cerrar, mientras que HTML no.",
         "En HTML es obligatorio que los valores de los atributos vayan entre comillas, mientras que en XHTML no.",
-        "En XHTML es obligatoria la presencia del elemento \u003chead\u003e."
+        "En XHTML es obligatoria la presencia del elemento <head>."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-49",
@@ -594,7 +786,11 @@
         "onmousedown.",
         "onmouseout."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-50",
@@ -606,7 +802,11 @@
         "Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de diez días naturales.",
         "Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de diez días hábiles."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-51",
@@ -620,7 +820,11 @@
       ],
       "correct": "a",
       "annulled": true,
-      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a)."
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a).",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-52",
@@ -632,7 +836,11 @@
         "Son Pautas de Accesibilidad que explican cómo hacer que los agentes de usuario sean accesibles para las personas con discapacidades.",
         "Son un conjunto de normas que deben cumplir las herramientas de autor para ser accesibles y generar contenidos también accesibles."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-53",
@@ -644,7 +852,11 @@
         "SVN, Git y Cucumber.",
         "Selenium, Cucumber y GitLab."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-54",
@@ -656,7 +868,11 @@
         "Pruebas del sistema.",
         "Pruebas de migración."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-55",
@@ -668,7 +884,11 @@
         "Prepaging.",
         "Hilos."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-56",
@@ -680,7 +900,11 @@
         "Muestra o establece la directiva de red de área de almacenamiento (sanSAN) para el sistema operativo.",
         "Analizar uno o varios servidores con una directiva generada por SCW."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-57",
@@ -692,7 +916,11 @@
         "9.000 bytes.",
         "10.000 bytes."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
     },
     {
       "key": "P-58",
@@ -704,7 +932,11 @@
         "ARP.",
         "PAT."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-59",
@@ -716,7 +948,11 @@
         "Bus.",
         "Árbol."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
     },
     {
       "key": "P-60",
@@ -728,7 +964,11 @@
         "Conservar 3 copias de los datos, en 2 medios iguales con 1 copia almacenada en un lugar interno a la organización.",
         "Conservar 3 copias de los datos, en 2 medios diferentes con 1 copia almacenada en un lugar interno a la organización."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-61",
@@ -740,7 +980,11 @@
         "NAS es un dispositivo de almacenamiento compartido basado en archivos.",
         "NAS es el acrónimo de Network Area Storage."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-62",
@@ -752,7 +996,11 @@
         "Los backups pueden almacenarse en localizaciones y medios distintos.",
         "Los backups son una representación instantánea del estado de un sistema en un momento específico."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-63",
@@ -764,7 +1012,11 @@
         "No requiere autenticación.",
         "Descarga los correos automáticamente del servidor."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-64",
@@ -776,7 +1028,11 @@
         "Podman, Kubernetes y Ubuntu.",
         "Docker, Kubernetes y Debian."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-65",
@@ -788,7 +1044,11 @@
         "PoE pasivo no se adhiere a ningún estándar IEEE.",
         "El último estándar de PoE activo es el IEEE 802.3at."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
     },
     {
       "key": "P-66",
@@ -800,7 +1060,11 @@
         "Redes integradas para voz y datos.",
         "Seguridad de red."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-67",
@@ -812,7 +1076,11 @@
         "LUCIA.",
         "INES."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-68",
@@ -824,7 +1092,11 @@
         "El resultado es un fichero de texto XML. No es adecuado cuando el fichero original es muy grande.",
         "Es el formato más adecuado cuando el documento original es un PDF."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-69",
@@ -836,7 +1108,11 @@
         "Denegacion de servicio distribuida (DDoS) es un ataque a varios objetivos desde un solo punto, con la finalidad de degradar total o parcialmente los servicios prestados por esos recursos a sus usuarios legítimos.",
         "El barrido (“escaneo”) de puertos es un ataque que trata de obtener información básica acerca de qué servicios se ofrecen en un determinado sistema, así como otros detalles técnicos del mismo."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-70",
@@ -850,7 +1126,11 @@
       ],
       "correct": "a",
       "annulled": true,
-      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a)."
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a).",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-71",
@@ -862,7 +1142,11 @@
         "SigFox.",
         "NB-IoT."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-72",
@@ -874,7 +1158,11 @@
         "La capa de transporte se ocupa, entre otros, de aspectos como el enrutamiento, el reenvío y el direccionamiento a través de una red.",
         "La capa de sesión a menudo se divide en dos subcapas: la capa de control de acceso a los medios (MAC) y la capa de control de enlace lógico (LLC)."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-73",
@@ -886,7 +1174,11 @@
         "Telnet es un protocolo de la capa de sesión.",
         "ICMP es un protocolo de la capa de Internet."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-74",
@@ -898,7 +1190,11 @@
         "Las redes de clase A usan una máscara de subred predeterminada de 255.0.0.0.",
         "En las redes clase C se permite direccionar 254 equipos como máximo."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-75",
@@ -910,7 +1206,11 @@
         "405",
         "407"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-76",
@@ -922,7 +1222,11 @@
         "Es responsable de administrar y supervisar la coordinación del sistema de nombres de dominio (DNS) de Internet y sus identificadores únicos, como las direcciones de protocolo de Internet (IP).",
         "Es el Foro de Gobernanza de Internet."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-77",
@@ -934,7 +1238,11 @@
         "El tipo Binario solo es adecuado para transferir ficheros ejecutables para PC.",
         "El tipo ASCII es adecuado para transferir páginas HTML y las imágenes que puedan contener."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-78",
@@ -946,7 +1254,11 @@
         "Vishing.",
         "Whaling."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-79",
@@ -958,7 +1270,11 @@
         "IDS.",
         "Honeypot."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-80",
@@ -970,7 +1286,11 @@
         "MONICA.",
         "OLVIDO."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R1",
@@ -982,7 +1302,11 @@
         "WQHD - 2560 x 1440 píxeles.",
         "HD - 1920 × 1080 píxeles."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R2",
@@ -994,7 +1318,11 @@
         "TA (Twisted Alignment).",
         "PSI (Plane Switching Input)."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R3",
@@ -1006,7 +1334,11 @@
         "802.1D.",
         "802.1aq."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R4",
@@ -1018,7 +1350,11 @@
         "ex",
         "ch"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R5",
@@ -1030,19 +1366,27 @@
         "SwiftUI es un framework que facilita la creación de aplicaciones para cualquier dispositivo Apple.",
         "iOS SDK permite el desarrollo de aplicaciones para macOS, iOS, watchOS y tvOS."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-1",
       "source_ref": "OEP 2024 · Supuesto I · nº 1",
       "stem": "El organismo en el que usted presta servicios es el órgano competente para la concesión de unas becas para personas opositoras y, por tanto, ha surgido la necesidad de desarrollar un sistema de información que cubra todas las fases que se producen en la concesión de las becas.\n\nA continuación, se expone parte del modelo de datos del sistema, donde los atributos señalados en negrita son claves primarias y los señalados en cursiva, claves foráneas:\n\nEl sistema, en su parte frontend, permitirá la firma y presentación de solicitudes, subsanaciones y alegaciones por parte de los interesados una vez se autentiquen. También permitirá la descarga de los distintos listados que se publiquen por parte de los empleados públicos del organismo que tramita estas becas.\n\nPor otra parte, el backend dará el servicio necesario al frontend y, además, permitirá a los empleados públicos del organismo, desde una aplicación de gestión, visualizar la información y documentación de las solicitudes, subsanaciones y alegaciones presentadas, así como la publicación de los listados mencionados anteriormente.\n\nPara el desarrollo del frontend se utilizará un framework de desarrollo web con JavaScript, HTML5 y CSS3, mientras que el backend podrá desarrollarse con .NET o Java, dependiendo de la experiencia y conocimientos de los desarrolladores del organismo.\n\nTambién se ha decidido usar GitHub (plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git) para poder compartir el trabajo entre los desarrolladores en la cual se puede almacenar, compartir y trabajar de forma conjunta en el código. De esta forma se permite seguir y administrar los cambios en el código a lo largo del tiempo.\n\nAdicionalmente, se utilizará un gestor documental para la gestión de la documentación aportada en cada uno de los trámites por los interesados, así como los respectivos servicios del Catálogo de Servicios de Administración Digital que puedan reutilizarse.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué elemento HTML utilizaría para impedir que el e-mail exceda los 100 caracteres cuando el interesado lo cumplimente?",
       "options": [
-        "\u003cinput type=''email'' id=''email'' name=''email'' size=''100''\u003e",
-        "\u003cinput type=''email'' id=''email'' name=''email'' max=''100''\u003e",
-        "\u003cinput type=''email'' id=''email'' name=''email'' maxlength=''100''\u003e",
-        "\u003cinput type=''email'' id=''email'' name=''email'' length=''100''\u003e"
+        "<input type=''email'' id=''email'' name=''email'' size=''100''>",
+        "<input type=''email'' id=''email'' name=''email'' max=''100''>",
+        "<input type=''email'' id=''email'' name=''email'' maxlength=''100''>",
+        "<input type=''email'' id=''email'' name=''email'' length=''100''>"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-2",
@@ -1054,7 +1398,11 @@
         "Entity Framework en .NET e Hibernate en Java.",
         "Spring Data en .NET e Hibernate en Java."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-3",
@@ -1066,7 +1414,11 @@
         "INSERT TO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');",
         "INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-4",
@@ -1078,7 +1430,10 @@
         "N registros de SolicitudBeca pueden tener M registros de FicheroAdjunto.",
         "Un registro de SolicitudBeca puede tener cero o como máximo un registro de FicheroAdjunto."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T01"
+      ]
     },
     {
       "key": "SI-5",
@@ -1090,7 +1445,11 @@
         "AccSite.",
         "Shovel."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-6",
@@ -1102,7 +1461,11 @@
         "WebSocket.",
         "Server Side Rendering."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-7",
@@ -1114,7 +1477,11 @@
         "Diagrama de secuencia.",
         "Diagrama de Entidad/Relación."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-8",
@@ -1126,7 +1493,11 @@
         "Apache Xerces.",
         "Apache CXF."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-9",
@@ -1138,7 +1509,11 @@
         "JAXR.",
         "JAX-RS."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-10",
@@ -1150,7 +1525,11 @@
         "PMD.",
         "Mercurial."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-11",
@@ -1162,7 +1541,11 @@
         "LocalTime.",
         "OffsetTime."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-12",
@@ -1174,7 +1557,11 @@
         "WSDL.",
         "OpenAPI/Swagger."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-13",
@@ -1186,7 +1573,11 @@
         "CREATE NEW TABLE Subsanacion (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));",
         "CREATE TABLE Subsanacion AS (IdSubsanacion bigint, IdSolicitudBeca bigint, TextoFundamento varchar(2000));"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-14",
@@ -1198,7 +1589,11 @@
         "Read uncommited.",
         "Repeatable read."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-15",
@@ -1210,7 +1605,11 @@
         "JWT.",
         "XML-Encryption."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-16",
@@ -1222,7 +1621,11 @@
         "dotnet add iText.",
         "dotnet install iText."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-17",
@@ -1234,7 +1637,11 @@
         "Introducir elementos redundantes.",
         "Normalizar las tablas en Forma Normal de Boyce-Codd (FNBC)."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-18",
@@ -1246,7 +1653,11 @@
         "En la Sprint Planning.",
         "En la Sprint Review."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-19",
@@ -1258,7 +1669,11 @@
         "Servicio, Proveedor de servicios, Consumidor de servicios y Comparador de servicios.",
         "Servicio, Proveedor de servicios, Consumidor de servicios y Registro de servicios."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-20",
@@ -1270,7 +1685,11 @@
         "int:null Telefono",
         "int ?? Telefono"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R1",
@@ -1282,7 +1701,11 @@
         "1-0-1.",
         "1-0-0."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R2",
@@ -1294,7 +1717,11 @@
         "aria-flowto.",
         "aria-valuenow."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R3",
@@ -1306,7 +1733,11 @@
         "SELECT * FROM FicheroAdjunto WHERE Denominacion NOT LIKE '%.pdf' AND IdSolicitudBeca = (SELECT IdSolicitudBeca FROM SolicitudBeca WHERE AñoConvocatoria = 2024 AND IdInteresado = (SELECT IdInteresado FROM Interesado WHERE DocumentoIdentidad = '00000000T'))",
         "SELECT * FROM FicheroAdjunto WHERE Denominacion NOT LIKE 'pdf' AND IdSolicitudBeca = (SELECT IdSolicitudBeca FROM SolicitudBeca WHERE AñoConvocatoria = 2024 AND IdInteresado = (SELECT IdInteresado FROM Interesado WHERE DocumentoIdentidad = '00000000T'));"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R4",
@@ -1318,7 +1749,11 @@
         "TLS.",
         "CORS."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R5",
@@ -1330,7 +1765,11 @@
         "LICENSE.",
         "CITATION."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-1",
@@ -1342,7 +1781,11 @@
         "4096",
         "65536"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-2",
@@ -1354,7 +1797,11 @@
         "fsck -m /dev/sda8",
         "checkdisk /dev/sda8"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-3",
@@ -1366,7 +1813,11 @@
         "Utilizar un analizador de peticiones en las cabeceras HTTP en el puerto 80.",
         "Disponer del puerto TCP/80, configurando el servidor web para que lleve a cabo una redirección automática de HTTP a HTTPS."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-4",
@@ -1378,7 +1829,11 @@
         "Pretexto.",
         "Disrupción."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-5",
@@ -1390,7 +1845,11 @@
         "Un conmutador (switch).",
         "Un repetidor (repeater)."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-6",
@@ -1402,7 +1861,11 @@
         "No existe diferencia entre ambos protocolos, ambos son protocolos de soporte.",
         "FTP es un protocolo de usuario y DNS es un protocolo de soporte."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-7",
@@ -1414,7 +1877,11 @@
         "Visualizar todos los hosts asignados a la VLAN 1.",
         "Asignar todos los hosts conectados a cualquier puerto del switch a la VLAN 1."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-8",
@@ -1426,7 +1893,11 @@
         "Sólo a la disponibilidad porque la base de datos está temporalmente fuera de servicio hasta que se repare si es posible el fichero donde se aloja.",
         "A la trazabilidad, porque no podremos averiguar lo que ha pasado por mucho que nos esforcemos, la seguridad es así."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-9",
@@ -1438,7 +1909,11 @@
         "A que la tarjeta de red está estropeada y no hay conexión entre el dispositivo y la red.",
         "A que el cable del dispositivo es coaxial y no Ethernet."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-10",
@@ -1450,7 +1925,11 @@
         "uname -o",
         "kexec -l"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-11",
@@ -1462,7 +1941,11 @@
         "FTPS usa dos puertos, uno para los comandos y otro para descargarse los datos mientras que SFTP usa el mismo puerto para ambas tareas.",
         "FTPS no contiene comandos estandarizados para manipular directorios o listar atributos, mientras que SFTP sí."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-12",
@@ -1474,7 +1957,11 @@
         "Es un ataque selectivo de ciberespionaje o cibersabotaje llevado a cabo bajo el auspicio o la dirección de un país u organización adversaria, por razones que van más allá de las meramente financieras/delictivas o de protesta política.",
         "Es un ataque masivo a una organización ocurrido por un fallo que no se había advertido hasta ese momento y, por tanto, no se cuenta con la salvaguarda o parche para prevenirlo."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-13",
@@ -1486,7 +1973,11 @@
         "SSH, SFTP (por defecto) y UDP.",
         "UDP (por defecto) y TCP."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-14",
@@ -1498,7 +1989,11 @@
         "Insertar la tarjeta SIM correspondiente a cada móvil.",
         "Formatear a fábrica todos los dispositivos móviles."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-15",
@@ -1512,7 +2007,11 @@
       ],
       "correct": "a",
       "annulled": true,
-      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a)."
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a).",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-16",
@@ -1524,7 +2023,11 @@
         "El hash es la firma del CCN como autoridad de certificación de productos que garantiza que el software descargado es apto para ser usado en sistemas categorizados como de nivel ALTO o incluso en sistemas clasificados como reservado nacional.",
         "El hash es la firma del CCN de la página web donde se presenta la herramienta que estamos intentando descargar y es una medida para evitar que los hackers puedan manipular la página y subir otro fichero en vez del que se pretende descargar."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-17",
@@ -1536,7 +2039,11 @@
         "El tráfico entre origen y destino está interceptado en el cortafuegos de Internet.",
         "La CPU del ordenador es insuficiente y provoca estos problemas."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-18",
@@ -1548,7 +2055,11 @@
         "Con IMAP, el correo enviado y recibido se almacena en el servidor hasta que el usuario lo elimina permanentemente.",
         "Con POP3, si los usuarios organizan sus correos electrónicos en un dispositivo mediante carpetas, ya no tendrán que hacerlo en el resto de dispositivos porque se replica la organización en carpetas."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-19",
@@ -1556,11 +2067,15 @@
       "stem": "El Ministerio de Educación, Formación Profesional y Deportes tiene una red asignada en el Plan de Direccionamiento de la AGE 10.9.0.0/16 y ha creado un organismo para la enseñanza online de formadores, OEOF (en adelante nos referiremos en este supuesto sólo como “organismo”), al que le ha correspondido la última de las subredes de las 16 en las que se ha dividido la red ministerial.\n\nEl sistema de enseñanza online de formadores se fundamenta en un servidor de formación accesible también desde Internet en la URL https://www.profesores.es. Los servidores de este sistema (web, http, DNS, DHCP, LDAP), se van a instalar con sistema operativo Linux Ubuntu. El portal web está montado usando Apache Tomcat.\n\nEl certificado del portal (SSL) estará asociado al dominio profesores.es. Para poder gestionar el correo de los profesores, se ha instalado un servidor de correo con tecnología Postfix.\n\nLos DNS se han instalado usando el software BIND así como la asignación dinámica de direcciones IP mediante DHCP.\n\nHay un servidor llamado BIBLIOTECA que contiene un compendio de documentos e información de utilidad para los profesores. El acceso está permitido por RDP. En los elementos de configuración está permitido el acceso remoto para todos los usuarios que en el Directorio Activo estén en el Grupo de Profesores. El resto no podrán conectarse. No hay elementos de red que impidan la conexión libre por el puerto RDP 389 a dicho servidor, desde su misma VLAN.\n\nLa base de datos de la biblioteca es MySQL.\n\nAdemás, sobre servidores Ubuntu, se han instalado herramientas de detección de vulnerabilidades (Tenable Nessus y Nmap) y de monitorización de sistemas y de aplicaciones web (Nagios).\n\nLos usuarios de la red (profesores) usan escritorios virtuales.\n\nLos switches para configurar las VLANs son CISCO (usan sistema operativo Cisco IOS).\n\nEl CPD principal del organismo tiene un respaldo en un CPD secundario, pero no está configurado como activo-activo y los cambios de los servicios tienen que pasarse manualmente. Tiene redundancia de componentes y de suministro eléctrico y de red. El CPD es TIER III.\n\nSalvo que se indique lo contrario en el enunciado, se supone que usted posee permisos de administrador.\n\nSe necesita saber los usuarios que acceden a la base de datos de la biblioteca y desde qué host o IP. Para averiguarlo, en la consola de administración de la base de datos, ejecutará el comando:",
       "options": [
         "SELECT * FROM all_users",
-        "mysql\u003e SELECT user FROM mysql.user",
-        "mysql\u003e SELECT user,host FROM mysql.user",
+        "mysql> SELECT user FROM mysql.user",
+        "mysql> SELECT user,host FROM mysql.user",
         "sudo mysql -u root -p"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-20",
@@ -1572,7 +2087,11 @@
         "Un nuevo bosque de Directorio Activo.",
         "Relaciones de confianza entre el Directorio Activo actual y el dominio de seguridad del grupo de usuarios Profesores."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R1",
@@ -1584,7 +2103,11 @@
         "Editando el parámetro smtp_helo en el fichero /etc/postfix/master.cf y reiniciando posteriormente el servidor Postfix.",
         "Editando el parámetro $helo_name en /etc/postfix/main.cf y reiniciando posteriormente el servidor Postfix."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R2",
@@ -1596,7 +2119,11 @@
         "Un servidor RADIUS o cualquier solución que permita EAP-TLS.",
         "Una contraseña de 192 bits usando el algoritmo GMCP-256."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R3",
@@ -1608,7 +2135,11 @@
         "CREAR TABLA ProfesoresIngles KEY apellidos, nombre;",
         "CREATE TABLE ProfesoresIngles (nombre, apellido);"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R4",
@@ -1620,7 +2151,11 @@
         "systemctl status nagios",
         "https://profesores.es nagios"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R5",
@@ -1632,7 +2167,11 @@
         "La versión mínima aceptable es la 1.2 y se recomienda usar la 1.3",
         "La versión mínima aceptable es la 1.1 y se recomienda usar la 1.3"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     }
   ]
 }

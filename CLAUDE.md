@@ -14,6 +14,10 @@ hace la app; aquí van las reglas para cambiarla.
   añadas caminos que se lo salten.
 - La IA solo transforma textos aportados, y lo que genera entra como
   borrador (`status = draft`) para pasar por Revisión.
+- Excepción: las preguntas oficiales del banco (`data/bank`) pueden ir
+  marcadas `"status": "published"` con sus temas, solo si se han
+  comprobado contra el cuestionario y la plantilla definitiva. Las que
+  dependen de una figura que no se reproduce se quedan sin publicar.
 - Permisos en el servidor, ruta a ruta, en `internal/server/routes.go`.
 
 ## Idiomas

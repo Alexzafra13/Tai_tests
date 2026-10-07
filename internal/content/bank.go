@@ -19,6 +19,10 @@ import (
 // Loading is idempotent: each question has a stable key within its source,
 // and bank_entries remembers which keys were loaded, so questions the
 // installation edited, discarded or deleted are never brought back.
+//
+// A bank question arrives published only when the file says so (it was
+// checked against the exam and its definitive answer key) and its topics
+// exist in the installation's syllabus; otherwise it waits in Review.
 
 type BankFile struct {
 	Source    BankSource     `json:"source"`
@@ -43,6 +47,10 @@ type BankQuestion struct {
 	Annulled    bool   `json:"annulled,omitempty"`
 	FixedOrder  bool   `json:"fixed_order,omitempty"`
 	Explanation string `json:"explanation,omitempty"`
+	// Topics are syllabus topic codes (B1-T01…).
+	Topics []string `json:"topics,omitempty"`
+	// Status is "published" for checked questions; empty means draft.
+	Status Status `json:"status,omitempty"`
 }
 
 // CorrectIndex converts a letter (a-d) to an option index.
@@ -96,6 +104,9 @@ func ParseBankFile(b []byte) (BankFile, error) {
 		if _, ok := CorrectIndex(q.Correct); !ok {
 			return f, fmt.Errorf("bank: question %s: correct must be a letter a-d", q.Key)
 		}
+		if q.Status != "" && q.Status != StatusPublished {
+			return f, fmt.Errorf("bank: question %s: status must be empty or published", q.Key)
+		}
 	}
 	return f, nil
 }
@@ -117,14 +128,15 @@ type BankProblem struct {
 }
 
 type BankResult struct {
-	Added    int
-	Existing int
-	Problems []BankProblem
+	Added     int
+	Published int // of those added
+	Existing  int
+	Problems  []BankProblem
 }
 
-// LoadBank adds the bank questions this installation has not loaded yet,
-// as drafts to go through Review. Questions that fail validation are
-// reported and retried on the next load.
+// LoadBank adds the bank questions this installation has not loaded yet.
+// Questions that fail validation are reported and retried on the next
+// load.
 func (s *Store) LoadBank(ctx context.Context, files []BankFile) (BankResult, error) {
 	var res BankResult
 	for _, f := range files {
@@ -171,15 +183,31 @@ func (s *Store) loadBankFile(ctx context.Context, tx *sql.Tx, f BankFile, res *B
 	if err != nil {
 		return err
 	}
+	topics, err := topicsByCode(ctx, tx)
+	if err != nil {
+		return err
+	}
 	origin, _ := originFor(f.Source.Kind)
 	now := s.timestamp()
 	for _, q := range pending {
 		correct, _ := CorrectIndex(q.Correct)
-		_, err := s.createQuestion(ctx, tx, QuestionInput{
+		in := QuestionInput{
 			Stem: q.Stem, Options: q.Options, Correct: correct, Explanation: q.Explanation,
 			Origin: origin, Author: AuthorImport, SourceID: sourceID, SourceRef: q.SourceRef,
 			Status: StatusDraft, Annulled: q.Annulled, FixedOrder: q.FixedOrder,
-		})
+		}
+		complete := len(q.Topics) > 0
+		for _, code := range q.Topics {
+			if id, ok := topics[code]; ok {
+				in.TopicIDs = append(in.TopicIDs, id)
+			} else {
+				complete = false
+			}
+		}
+		if q.Status == StatusPublished && complete {
+			in.Status = StatusPublished
+		}
+		_, err := s.createQuestion(ctx, tx, in)
 		var verr validate.Errors
 		if errors.As(err, &verr) {
 			res.Problems = append(res.Problems, BankProblem{f.Source.Reference, q.Key, verr.Error()})
@@ -192,8 +220,29 @@ func (s *Store) loadBankFile(ctx context.Context, tx *sql.Tx, f BankFile, res *B
 			return err
 		}
 		res.Added++
+		if in.Status == StatusPublished {
+			res.Published++
+		}
 	}
 	return nil
+}
+
+func topicsByCode(ctx context.Context, tx *sql.Tx) (map[string]int64, error) {
+	rows, err := tx.QueryContext(ctx, `SELECT code, id FROM topics`)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	out := map[string]int64{}
+	for rows.Next() {
+		var code string
+		var id int64
+		if err := rows.Scan(&code, &id); err != nil {
+			return nil, err
+		}
+		out[code] = id
+	}
+	return out, rows.Err()
 }
 
 // bankSource returns the source with the bank file's kind and reference,

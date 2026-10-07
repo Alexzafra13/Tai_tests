@@ -57,19 +57,26 @@ func runImportExam(ctx context.Context, log *slog.Logger, args []string) error {
 	qs, buildProblems := examtext.Build(exam)
 	problems = append(problems, buildProblems...)
 
+	kept, err := keepReview(*out, qs)
+	if err != nil {
+		return err
+	}
 	f := content.BankFile{
 		Source:    content.BankSource{Kind: content.KindINAPExam, Title: *title, Reference: *ref, URL: *url},
 		Questions: qs,
 	}
-	b, err := json.MarshalIndent(f, "", "  ")
-	if err != nil {
+	var buf bytes.Buffer
+	enc := json.NewEncoder(&buf)
+	enc.SetEscapeHTML(false) // keep code such as <input> readable
+	enc.SetIndent("", "  ")
+	if err := enc.Encode(f); err != nil {
 		return err
 	}
 	// Check the result the way the server will read it.
-	if _, err := content.ParseBankFile(b); err != nil {
+	if _, err := content.ParseBankFile(buf.Bytes()); err != nil {
 		return err
 	}
-	if err := os.WriteFile(*out, append(b, '\n'), 0o644); err != nil {
+	if err := os.WriteFile(*out, buf.Bytes(), 0o644); err != nil {
 		return err
 	}
 
@@ -79,11 +86,41 @@ func runImportExam(ctx context.Context, log *slog.Logger, args []string) error {
 			annulled++
 		}
 	}
-	log.Info("bank file written", "file", *out, "questions", len(qs), "annulled", annulled, "problems", len(problems))
+	log.Info("bank file written", "file", *out, "questions", len(qs), "annulled", annulled,
+		"review_kept", kept, "problems", len(problems))
 	for _, p := range problems {
 		fmt.Fprintln(os.Stderr, "  problema:", p)
 	}
 	return nil
+}
+
+// keepReview copies topics and status from the bank file being replaced
+// to the questions whose text and answer did not change, so re-importing an
+// exam keeps its review. It returns how many were kept.
+func keepReview(path string, qs []content.BankQuestion) (int, error) {
+	b, err := os.ReadFile(path)
+	if errors.Is(err, os.ErrNotExist) {
+		return 0, nil
+	} else if err != nil {
+		return 0, err
+	}
+	old, err := content.ParseBankFile(b)
+	if err != nil {
+		return 0, fmt.Errorf("%s: %w", path, err)
+	}
+	byKey := map[string]content.BankQuestion{}
+	for _, q := range old.Questions {
+		byKey[q.Key] = q
+	}
+	kept := 0
+	for i, q := range qs {
+		o, ok := byKey[q.Key]
+		if ok && o.Stem == q.Stem && o.Options == q.Options && o.Correct == q.Correct && o.Annulled == q.Annulled {
+			qs[i].Topics, qs[i].Status = o.Topics, o.Status
+			kept++
+		}
+	}
+	return kept, nil
 }
 
 func pdfText(ctx context.Context, path string) (string, error) {

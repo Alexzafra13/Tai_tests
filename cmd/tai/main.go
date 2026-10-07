@@ -162,8 +162,25 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 }
 
 // loadBank adds the bundled official questions this installation does not
-// have yet; they arrive as drafts for Review.
+// have yet. A new installation first gets the bundled syllabus, so checked
+// questions can arrive published with their topics.
 func loadBank(ctx context.Context, log *slog.Logger, cs *content.Store) error {
+	blocks, err := cs.Syllabus(ctx)
+	if err != nil {
+		return err
+	}
+	if len(blocks) == 0 {
+		f, err := content.ParseSyllabus(data.Syllabus())
+		if err != nil {
+			return err
+		}
+		res, err := cs.LoadSyllabus(ctx, f)
+		if err != nil {
+			return err
+		}
+		log.Info("syllabus loaded", "name", f.Name, "blocks", res.Blocks, "topics", res.Topics)
+	}
+
 	files, err := content.ReadBank(data.Bank())
 	if err != nil {
 		return err
@@ -176,7 +193,8 @@ func loadBank(ctx context.Context, log *slog.Logger, cs *content.Store) error {
 		log.Warn("bank question not loaded", "source", p.Source, "key", p.Key, "reason", p.Reason)
 	}
 	if res.Added > 0 {
-		log.Info("question bank loaded: new drafts waiting in Review", "added", res.Added)
+		log.Info("question bank loaded", "added", res.Added, "published", res.Published,
+			"drafts_for_review", res.Added-res.Published)
 	}
 	return nil
 }

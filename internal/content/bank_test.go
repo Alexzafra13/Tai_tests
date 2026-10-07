@@ -120,3 +120,44 @@ func TestParseBankFileRejects(t *testing.T) {
 		}
 	}
 }
+
+func TestLoadBankPublishesCheckedQuestions(t *testing.T) {
+	ctx := context.Background()
+	s := newStore(t)
+	loadTestSyllabus(t, s)
+	files, err := ReadBank(fstest.MapFS{"x.json": {Data: []byte(`{
+  "source": {"kind": "inap_exam", "title": "Examen", "reference": "REF"},
+  "questions": [
+    {"key": "1", "source_ref": "nº 1", "stem": "¿Una?", "options": ["A", "B", "C", "D"], "correct": "a",
+      "topics": ["B1-T01"], "status": "published"},
+    {"key": "2", "source_ref": "nº 2", "stem": "¿Dos?", "options": ["A", "B", "C", "D"], "correct": "a",
+      "topics": ["B9-T99"], "status": "published"},
+    {"key": "3", "source_ref": "nº 3", "stem": "¿Tres?", "options": ["A", "B", "C", "D"], "correct": "a",
+      "topics": ["B1-T02"]}
+  ]}`)}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	res, err := s.LoadBank(ctx, files)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Added != 3 || res.Published != 1 {
+		t.Fatalf("result %+v", res)
+	}
+	page, _ := s.ListQuestions(ctx, QuestionFilter{})
+	got := map[string]Question{}
+	for _, q := range page.Items {
+		got[q.SourceRef] = q
+	}
+	// Unknown topic codes or no published status: the question waits in Review.
+	if q := got["nº 1"]; q.Status != StatusPublished || len(q.TopicIDs) != 1 {
+		t.Errorf("checked question %+v", q)
+	}
+	if q := got["nº 2"]; q.Status != StatusDraft || len(q.TopicIDs) != 0 {
+		t.Errorf("unknown topic %+v", q)
+	}
+	if q := got["nº 3"]; q.Status != StatusDraft || len(q.TopicIDs) != 1 {
+		t.Errorf("unchecked question %+v", q)
+	}
+}

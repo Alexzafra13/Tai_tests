@@ -16,7 +16,11 @@
         "Mediante ley podrán eliminarse los deberes de los ciudadanos en los casos de grave riesgo, catástrofe o calamidad pública.",
         "Mediante ley podrán regularse los deberes de los ciudadanos en los casos de grave riesgo, catástrofe o calamidad pública."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-2",
@@ -28,7 +32,11 @@
         "Al titular del Ministerio de la Presidencia.",
         "Al Presidente de la Mesa del Congreso."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-3",
@@ -40,7 +48,11 @@
         "Dieciséis miembros nombrados por el Rey; de ellos, cuatro serán a propuesta del Congreso por mayoría de tres quintos de sus miembros.",
         "Dieciséis miembros nombrados por el Rey; de ellos, tres serán a propuesta del Congreso por mayoría de tres quintos de sus miembros."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-4",
@@ -52,7 +64,11 @@
         "De un mínimo de 300 y de un máximo de 350.",
         "De un mínimo de 350 y de un máximo de 400."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-5",
@@ -64,7 +80,11 @@
         "Al menos la décima parte de cada una de las Cámaras.",
         "Al menos 20 Diputados y 20 Senadores."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-6",
@@ -76,7 +96,11 @@
         "Aguas residuales y saneamiento.",
         "Trabajo decente y crecimiento económico."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-7",
@@ -88,7 +112,11 @@
         "Un representante del Defensor del Pueblo.",
         "Un representante de la Autoridad Independiente de Responsabilidad Fiscal."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-8",
@@ -100,7 +128,11 @@
         "Título VIII.",
         "Título X."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-9",
@@ -112,7 +144,11 @@
         "Eficacia, jerarquía, descentralización, concentración y coordinación, con sometimiento pleno al ordenamiento jurídico.",
         "Eficacia, jerarquía, descentralización, desconcentración y cooperación, con sometimiento pleno a la Ley y al Derecho."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-10",
@@ -124,7 +160,11 @@
         "Una Ley Ordinaria.",
         "Un Decreto Legislativo."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-11",
@@ -136,7 +176,11 @@
         "Establecer medidas cautelares de protección frente al acoso sexual.",
         "Establecer medidas efectivas para eliminar cualquier discriminación retributiva, directa o indirecta, por razón de sexo."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-12",
@@ -148,7 +192,11 @@
         "Discriminación por asociación en razón de sexo.",
         "Discriminación maternal por razón de sexo."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-13",
@@ -160,7 +208,11 @@
         "Grado III. Dependencia total: cuando la persona necesita ayuda para realizar varias actividades básicas de la vida diaria varias veces al día y, por su pérdida total de autonomía necesita el apoyo indispensable y continuo de otra persona o tiene necesidades de apoyo generalizado para su autonomía personal.",
         "Grado IV. Dependencia máxima: cuando la persona necesita constantemente ayuda para realizar cualquier actividad básica de la vida diaria."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-14",
@@ -172,7 +224,11 @@
         "Actualmente, los certificados electrónicos de Autenticación y de Firma Electrónica que contiene tienen un plazo de validez de 24 meses.",
         "El PIN debe tener un mínimo de 8 caracteres y un máximo de 12."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-15",
@@ -184,7 +240,11 @@
         "12",
         "10"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-16",
@@ -196,7 +256,11 @@
         "ElGamal, algoritmo de hash MD5 y cifrado simétrico Triple DES.",
         "RSA, algoritmo de hash SHA-256 y cifrado simétrico Triple DES y AES."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-17",
@@ -208,7 +272,11 @@
         "Las sanciones por importe igual o inferior a 40.000 euros, prescriben en el plazo de dos años",
         "Las sanciones por importe igual o inferior a 40.000 euros, prescriben en el plazo de tres años."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-18",
@@ -220,7 +288,11 @@
         "Se aplica al tratamiento de datos personales efectuado por una persona física en el ejercicio de actividades exclusivamente personales o domésticas.",
         "Se aplica al tratamiento total de datos personales."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-19",
@@ -232,7 +304,11 @@
         "Cifrado.",
         "Firma electrónica."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-20",
@@ -244,7 +320,11 @@
         "Días naturales, contados a partir del día siguiente a aquel que tenga la notificación o publicación del acto de que se trate.",
         "Días naturales, contados a partir del mismo día a aquel que tenga la notificación o publicación del acto de que se trate."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-21",
@@ -256,7 +336,11 @@
         "Evaluación organizativa, Evaluación semántica y Evaluación temporal.",
         "Marco organizativo, Marco operacional y Medidas técnicas."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-22",
@@ -268,7 +352,11 @@
         "Protocolo de gestión de recursos de la Administración.",
         "Expediente Electrónico."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-23",
@@ -280,7 +368,11 @@
         "Es una herramienta basada en un Sistema de Información Territorial (GIS), que ofrece las funcionalidades necesarias para facilitar la gestión de la información de las Administraciones Públicas mediante la georreferenciación.",
         "Es una herramienta que ofrece el Observatorio de Accesibilidad Web para realizar el servicio de diagnóstico en línea para las Administraciones Públicas."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B1-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-24",
@@ -292,7 +384,11 @@
         "NEDAES",
         "NOMINAe"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B1-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-25",
@@ -304,7 +400,11 @@
         "Una arquitectura de almacenamiento de información basada en redes de comunicaciones de fibra óptica.",
         "Una arquitectura de computación cuántica."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-26",
@@ -316,7 +416,11 @@
         "Hasta 40 Gbps.",
         "Hasta 50 Gbps."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-27",
@@ -328,7 +432,11 @@
         "Thunderbolt",
         "RISC"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-28",
@@ -340,7 +448,11 @@
         "Solid State Drive. Es un dispositivo de almacenamiento de datos que utiliza memoria no volátil.",
         "Solid State Device. Es un dispositivo de almacenamiento de datos que utiliza memoria volátil."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-29",
@@ -352,7 +464,11 @@
         "Nuevo códec de vídeo.",
         "Nuevo estándar de seguridad para WiFi 6."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-30",
@@ -364,7 +480,11 @@
         "Postorden",
         "Reorden"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-31",
@@ -376,7 +496,11 @@
         "/dev",
         "/etc"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-32",
@@ -388,7 +512,11 @@
         "Acceso de lectura y escritura al propietario, acceso de lectura al grupo, y ningún acceso al resto de usuarios.",
         "Acceso de lectura y escritura al propietario, acceso de ejecución al grupo, y ningún acceso al resto de usuarios."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-33",
@@ -400,7 +528,11 @@
         "NHibernate",
         "Hibernate"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-34",
@@ -412,7 +544,11 @@
         "Dependencia de la distribución. Que la base de datos se almacene o gestione de forma distribuida en varios servidores afecta al uso de la misma y a la programación de las aplicaciones de usuario.",
         "Catálogo dinámico en línea basado en el modelo relacional. El sistema debe soportar un catálogo en línea, el catálogo relacional, que da acceso a la estructura de la base de datos y que debe ser accesible a los usuarios autorizados."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-35",
@@ -424,7 +560,11 @@
         "Flujo de control: representa el flujo entre dos procesos de control.",
         "Flujo de datos: representa el movimiento de los datos, y establece la comunicación entre dos almacenes."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-36",
@@ -436,7 +576,11 @@
         "Está en 2FN y no existen relaciones de dependencia de reunión no triviales que no se generen desde las claves.",
         "Está en 2FN y los atributos que no forman parte de ninguna clave dependen de la clave principal."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-37",
@@ -448,7 +592,11 @@
         "Un atributo depende funcionalmente de otro si, y sólo si, depende de él a través de otro atributo.",
         "Un atributo X sólo puede tomar un único valor de dominio simple."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-38",
@@ -460,7 +608,11 @@
         "Se ejecuta una vez antes de evaluar la condición del bucle.",
         "Se ejecuta una sola vez siempre y cuando sea verdadera la condición del bucle."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-39",
@@ -472,7 +624,11 @@
         "Node js fue construido con el motor de java jre 1.9",
         "Bootstrap es una herramienta de desarrollo que permite realizar test de los servicios REST, aislando al programador del front-end."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-40",
@@ -484,7 +640,11 @@
         "No puede ser extendida por subclases.",
         "No existe el modificador abstract en Java."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-41",
@@ -496,7 +656,11 @@
         "Mediante la cláusula 'implements'.",
         "En Java no es posible declarar una clase con más de un interface."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-42",
@@ -508,7 +672,11 @@
         "CREATE TRIGGER Validar_salario IN Empleados BEFORE UPDATE OF Salario",
         "CREATE TRIGGER Validar_salario BEFORE UPDATE OF Salario ON Empleados"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-43",
@@ -520,7 +688,11 @@
         "Usar los comandos GRANT para dar permisos adecuados de administrador DBA sobre las tablas.",
         "Utilizar la sentencia RECOVERPOINT y así definir un punto de salvaguarda dentro de una transacción."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-44",
@@ -532,7 +704,11 @@
         "Proporciona un sustituto o representante de otro objeto para controlar el acceso a éste.",
         "Proporciona un modo de acceder secuencialmente a los elementos de un objeto agregado sin exponer su representación interna."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-45",
@@ -544,7 +720,11 @@
         "Un tipo de asociación entre elementos estructurales es la dispersión.",
         "La agregación es un tipo de asociación entre elementos estructurales que representa una clase que es parte de otra."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-46",
@@ -556,7 +736,11 @@
         "3",
         "5"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-47",
@@ -568,7 +752,11 @@
         "Una implementación de .Net.",
         "Un entorno de ejecución."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-48",
@@ -580,7 +768,11 @@
         "JNI",
         "JPaX"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-49",
@@ -592,7 +784,11 @@
         "Son admitidos los formatos XML y JSON para la transmisión o recepción de datos.",
         "Usa la especificación UDDI para publicar y encontrar información sobre los servicios web expuestos."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-50",
@@ -604,7 +800,11 @@
         "Es un framework de desarrollo de aplicaciones web basado en el patrón MVC.",
         "Es un servicio de .NET."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-51",
@@ -616,19 +816,27 @@
         "El bloque debe estar delimitado por corchetes ()",
         "Cada línea del bloque debe estar precedida por el mismo número de espacios en blanco, con la misma sangría."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-52",
       "source_ref": "OEP 2019 · nº 52",
       "stem": "En el lenguaje XML, ¿cuál de las siguientes sentencias sería correcta para añadir comentarios?",
       "options": [
-        "\u003c-- Aquí va el comentario /--\u003e",
-        "\u003c Aquí va el comentario !\u003e",
-        "\u003c!-- Aquí va el comentario --\u003e",
-        "\u003c--! Aquí va el comentario --\u003e"
+        "<-- Aquí va el comentario /-->",
+        "< Aquí va el comentario !>",
+        "<!-- Aquí va el comentario -->",
+        "<--! Aquí va el comentario -->"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-53",
@@ -640,7 +848,11 @@
         "La primera revisión de accesibilidad deberá haberse realizado en el caso de las aplicaciones móviles, antes de dos años desde la entrada en vigor de este real decreto.",
         "La entidad obligada deberá responder a la persona interesada sobre las solicitudes de información accesible y quejas, en el plazo de veinte días hábiles."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-54",
@@ -652,7 +864,11 @@
         "Proporcionar alternativas textuales para todo contenido no textual de modo que se pueda convertir a otros formatos que las personas necesiten, tales como textos ampliados, braille, voz, símbolos o en un lenguaje más simple.",
         "Proporcionar alternativas para los medios tempodependientes."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-55",
@@ -664,7 +880,11 @@
         "Pruebas de rendimiento.",
         "Pruebas de tiempo."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-56",
@@ -676,7 +896,11 @@
         "La acción de descargar la rama de trabajo del repositorio central.",
         "La acción de almacenar una nueva instantánea (snapshot) del estado del proyecto en el historial de GIT."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-57",
@@ -688,7 +912,11 @@
         "JMeter",
         "Foglight"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-58",
@@ -700,7 +928,11 @@
         "nmap",
         "traceroute"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-59",
@@ -712,7 +944,11 @@
         "apt full-upgrade",
         "apt list"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-60",
@@ -724,7 +960,11 @@
         "Es una tecnología que permite agregar discos físicos en caliente a las cabinas de la SAN de forma ligera.",
         "Es un método por el que se asigna todo el espacio virtualizado disponible y se va a reduciendo (shrinking) a medida que el cliente lo descarta."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-61",
@@ -736,7 +976,11 @@
         "RAID 4",
         "RAID 5"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "P-62",
@@ -748,7 +992,11 @@
         "SMTP se usa desde el ordenador del usuario de origen al servidor de correo electrónico en el origen, así como desde el servidor de origen al servidor de destino. POP3 o IMAP se usan desde el servidor de correo en el destino hasta el ordenador del destinatario, para enviarle el mensaje cuando se conecte.",
         "POP3 o IMAP se usan desde el ordenador del usuario de origen al servidor de correo electrónico en el origen, así como desde el servidor de origen al servidor de destino. SMTP se usa desde el servidor de correo en el destino hasta el ordenador del destinatario, para enviarle el mensaje cuando se conecte."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-63",
@@ -760,7 +1008,11 @@
         "Coordinación y orquestación.",
         "Gestión y orquestación."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "P-64",
@@ -772,7 +1024,11 @@
         "Net start",
         "Net start all"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-65",
@@ -784,7 +1040,11 @@
         "SNMP v4",
         "SNMP v5"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-66",
@@ -796,7 +1056,11 @@
         "La aplicación cifra el resumen del documento a firmar obteniendo a su vez otro documento electrónico que corresponde con la firma electrónica.",
         "Para cifrar el resumen, la aplicación utiliza la clave privada."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-67",
@@ -808,7 +1072,11 @@
         "Es una colección de mejores prácticas de gestión de servicios de tecnologías de la información.",
         "Es una metodología de análisis y gestión de riesgos de los sistemas de información."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-68",
@@ -820,7 +1088,11 @@
         "TLS 1.4",
         "SSL 3.0"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-69",
@@ -832,7 +1104,11 @@
         "ECDSA",
         "ElGamal"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-70",
@@ -844,7 +1120,11 @@
         "El protocolo WPA3 surge, entre otros, a raiz del ataque KRACK, mejorando la modalidad de cifrado WPA2-PSK (AES).",
         "La frecuencia de 5 GHz tiene menor alcance que la de 2,4 GHz."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-71",
@@ -856,7 +1136,11 @@
         "802.11ac wave 2",
         "802.11az"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-72",
@@ -868,7 +1152,11 @@
         "FE00::/8",
         "FE80::/10"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-73",
@@ -880,7 +1168,11 @@
         "IS-IS",
         "OLSR"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-74",
@@ -892,7 +1184,11 @@
         "502",
         "503"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-75",
@@ -904,7 +1200,11 @@
         "MX",
         "SOA"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "P-76",
@@ -916,7 +1216,11 @@
         "COBO",
         "CYOD"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "P-77",
@@ -928,7 +1232,11 @@
         "CLARA",
         "REYES"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-78",
@@ -940,7 +1248,11 @@
         "L2TP (Layer Two Tunneling Protocol).",
         "P2TP (Point two Tunneling Protocol)."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "P-79",
@@ -952,7 +1264,11 @@
         "Es un grupo de Piconets.",
         "Es la red utilizada para interconectar CubeSATs."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "P-80",
@@ -964,7 +1280,11 @@
         "TCP trabaja con un flujo de bytes.",
         "UDP es un protocolo sin conexión."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R1",
@@ -976,7 +1296,11 @@
         "Es un tipo de arquitectura Von Neumann.",
         "Tiene tres espacios de memoria separados, uno para datos, otro para instrucciones y otro para la memoria no volátil."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R2",
@@ -988,7 +1312,11 @@
         "Una aplicación de código abierto que ofrece la Administración General del Estado para que facilitar la visualización de contenidos multimedia.",
         "Una aplicación para móviles que ofrece la Agencia Estatal de Administración Tributaria para generar y presentar la declaración de la renta."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R3",
@@ -1000,7 +1328,11 @@
         "Permitir ejecutar muchas veces una sentencia SQL.",
         "Administrar el consumo de memoria que utilizan los objetos creados."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R4",
@@ -1012,7 +1344,11 @@
         "Tres niveles, siendo TIER I el de menor disponibilidad y TIER III el de mayor.",
         "Cuatro niveles, siendo TIER I el de menor disponibilidad y TIER IV el de mayor."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "P-R5",
@@ -1024,55 +1360,75 @@
         "Es débilmente tipado.",
         "Está basado en prototipos."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-1",
       "source_ref": "OEP 2019 · Supuesto I · nº 1",
       "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nSe necesita presentar una estadística utilizando HTML5 mediante una tabla en la que una de sus columnas contendrá la descripción de cada Proceso Selectivo. Suponiendo que a dicha columna la denominamos \"Proceso\", ¿qué etiqueta deberá utilizar para definir la celda de encabezado de la tabla para dicha columna, con un formato de letra diferenciado?",
       "options": [
-        "\u003cth\u003eProceso\u003c/th\u003e",
-        "\u003ctableheader\u003eProceso\u003c/tableheader\u003e",
-        "\u003ctheader\u003eProceso\u003c/theader\u003e",
-        "\u003ctableh\u003eProceso\u003c/tableh\u003e"
+        "<th>Proceso</th>",
+        "<tableheader>Proceso</tableheader>",
+        "<theader>Proceso</theader>",
+        "<tableh>Proceso</tableh>"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-2",
       "source_ref": "OEP 2019 · Supuesto I · nº 2",
       "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nLe indican que debe presentar también una lista de opositores con las notas correspondientes a los dos primeros ejercicios. Las notas se representarán como una lista anidada para cada opositor, debiendo ser el resultado a obtener:\n• Opositor\n◦ Nota 1\n◦ Nota 2\n¿Cuál es el código HTML5 correcto si presentamos un solo opositor?",
       "options": [
-        "\u003cul\u003e\u003cli\u003eOpositor\u003cul\u003e\u003cli\u003eNota 1\u003c/li\u003e\u003cli\u003eNota 2\u003c/li\u003e\u003c/ul\u003e\u003c/li\u003e\u003c/ul\u003e",
-        "\u003cul\u003e\u003cli\u003eOpositor\u003c/li\u003e\u003c/ul\u003e\u003cul\u003e\u003cli\u003eNota 1\u003c/li\u003e\u003cli\u003eNota 2\u003c/li\u003e\u003c/ul\u003e",
-        "\u003cul\u003e\u003cli1\u003eOpositor\u003c/li1\u003e\u003cli2\u003eNota 1\u003c/li2\u003e\u003cli2\u003eNota 2\u003c/li2\u003e\u003c/ul\u003e",
-        "\u003cul\u003e\u003cli\u003eOpositor\u003cli\u003eNota 1\u003c/li\u003e\u003cli\u003eNota 2\u003c/li\u003e\u003c/li\u003e\u003c/ul\u003e"
+        "<ul><li>Opositor<ul><li>Nota 1</li><li>Nota 2</li></ul></li></ul>",
+        "<ul><li>Opositor</li></ul><ul><li>Nota 1</li><li>Nota 2</li></ul>",
+        "<ul><li1>Opositor</li1><li2>Nota 1</li2><li2>Nota 2</li2></ul>",
+        "<ul><li>Opositor<li>Nota 1</li><li>Nota 2</li></li></ul>"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-3",
       "source_ref": "OEP 2019 · Supuesto I · nº 3",
-      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nEn el formulario web de inscripción se le pide forzar a la introducción del nombre del opositor como campo obligatorio. Para desarrollar esta petición, de entre las siguientes opciones de código, ¿cuál debería utilizar para incorporarlo en el fragmento de código marcado como [---------------------------------------] ?\n\u003cform\u003e\n\u003clabel for=\"username\"\u003eNombre de Opositor:\u003c/label\u003e\n[---------------------------------------]\n\u003cinput type=\"submit\" value=\"Confirmar\"/\u003e\n\u003c/form\u003e",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nEn el formulario web de inscripción se le pide forzar a la introducción del nombre del opositor como campo obligatorio. Para desarrollar esta petición, de entre las siguientes opciones de código, ¿cuál debería utilizar para incorporarlo en el fragmento de código marcado como [---------------------------------------] ?\n<form>\n<label for=\"username\">Nombre de Opositor:</label>\n[---------------------------------------]\n<input type=\"submit\" value=\"Confirmar\"/>\n</form>",
       "options": [
-        "\u003cinput type=\"text\" name=\"username\" required/\u003e",
-        "\u003cinput type=\"text\" name=\"username\" enforced/\u003e",
-        "\u003cinput type=\"text\" name=\"username\" mandatory/\u003e",
-        "\u003cinput type=\"text\" name=\"username\" compulsory/\u003e"
+        "<input type=\"text\" name=\"username\" required/>",
+        "<input type=\"text\" name=\"username\" enforced/>",
+        "<input type=\"text\" name=\"username\" mandatory/>",
+        "<input type=\"text\" name=\"username\" compulsory/>"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-4",
       "source_ref": "OEP 2019 · Supuesto I · nº 4",
-      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nEn la página web a la que accederán los aspirantes, se quiere aplicar el color verde a todos los elementos que tengan etiqueta \u003ca\u003e que sean hijos de un elemento con etiqueta \u003cli\u003e ¿Cuál es el código CSS adecuado?",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nEn la página web a la que accederán los aspirantes, se quiere aplicar el color verde a todos los elementos que tengan etiqueta <a> que sean hijos de un elemento con etiqueta <li> ¿Cuál es el código CSS adecuado?",
       "options": [
         "li.a {color: green;}",
-        "li\u003ea {color: green;}",
+        "li>a {color: green;}",
         "li#a {color: green;}",
         "li_a {color: green;}"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-5",
@@ -1084,19 +1440,27 @@
         "div#principal {display: flex-container;}",
         "div#principal {display:flexible;}"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-6",
       "source_ref": "OEP 2019 · Supuesto I · nº 6",
       "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nSe han detectado varios errores en la exportación a XML de los diferentes listados de notas y le solicitan su ayuda. Sin tener en cuenta si la información está bien representada, ¿cuál de los siguientes XML está bien formado?",
       "options": [
-        "\u003cOpositor\u003eWinston Churchill\u003cNota1\u003e95\u003c/nota1\u003e\u003cNota2\u003e65\u003c/nota2\u003e\u003c/opositor\u003e",
-        "\u003cOpositor\u003eWinston Churchill\u003cNota1\u003e95\u003c/Nota1\u003e\u003cNota2\u003e65\u003c/Opositor\u003e\u003c/Nota2\u003e",
-        "\u003cOpositor\u003eWinston Churchill\u003cNota1/\u003e95\u003cNota2/\u003e65\u003c/Opositor\u003e",
-        "\u003cOpositor\u003eWinston Churchill\u003cNota1\u003e95\u003c/\u003e\u003cNota2\u003e65\u003c/\u003e\u003c/\u003e"
+        "<Opositor>Winston Churchill<Nota1>95</nota1><Nota2>65</nota2></opositor>",
+        "<Opositor>Winston Churchill<Nota1>95</Nota1><Nota2>65</Opositor></Nota2>",
+        "<Opositor>Winston Churchill<Nota1/>95<Nota2/>65</Opositor>",
+        "<Opositor>Winston Churchill<Nota1>95</><Nota2>65</></>"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-7",
@@ -1108,19 +1472,27 @@
         "{nombre: \"Juana\", apellido: \"Ruiz\"}",
         "{nombre: \"Juana\"; apellido: \"Ruiz\"}"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-8",
       "source_ref": "OEP 2019 · Supuesto I · nº 8",
-      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nDentro de las tecnologías para el desarrollo web utilizadas en su unidad, se contempla utilizar javascript. ¿Qué valor devuelve la siguiente función javascript?\nFunction prueba() {\nvar i = 1;\nvar j = 0;\nwhile (i \u003c 7) {\nj += i;\ni += 2; }\nreturn j; }",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nDentro de las tecnologías para el desarrollo web utilizadas en su unidad, se contempla utilizar javascript. ¿Qué valor devuelve la siguiente función javascript?\nFunction prueba() {\nvar i = 1;\nvar j = 0;\nwhile (i < 7) {\nj += i;\ni += 2; }\nreturn j; }",
       "options": [
         "2",
         "9",
         "6",
         "0"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-9",
@@ -1132,7 +1504,11 @@
         "notaSegundoEjercicio = opositor.Key[notas].Value[1]",
         "notaSegundoEjercicio = opositor(notas(2))"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-10",
@@ -1144,7 +1520,11 @@
         "Mahotas",
         "Openpyxl"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-11",
@@ -1156,7 +1536,11 @@
         "StringBuilder",
         "StringCreator"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-12",
@@ -1168,7 +1552,11 @@
         "private class Ejercicio",
         "immutable class Ejercicio"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-13",
@@ -1180,7 +1568,11 @@
         "dispose (SqlConnection conn = new SqlConnection(connString)) {conn.Open();}",
         "internal (SqlConnection conn = new SqlConnection(connString)) {conn.Open();}"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-14",
@@ -1192,7 +1584,11 @@
         "int[] arrayEnteros = new[] {1, 2, 3};",
         "int arrayEnteros[] = new {1, 2, 3};"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-15",
@@ -1204,7 +1600,11 @@
         "En tercera forma normal.",
         "No está en ninguna forma normal."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-16",
@@ -1216,19 +1616,27 @@
         "SELECT IdProceso, SWITCH IdFormaAcceso ('L' = 'Ingreso Libre', 'P' = 'Promocion Interna') AS FormaAcceso FROM Proceso",
         "SELECT IdProceso, IIF(IdFormaAcceso, 'L' = 'Ingreso Libre', 'P' = 'Promocion Interna') AS FormaAcceso FROM Proceso"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-17",
       "source_ref": "OEP 2019 · Supuesto I · nº 17",
       "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nTambién le consultan sobre la sentencia SQL a utilizar para obtener el listado del identificador de los opositores (IdOpositor) que tienen más de una entrada en la tabla Solicitud.",
       "options": [
-        "SELECT IdOpositor, COUNT(IdSolicitud) AS NumeroSolicitudes FROM Solicitud GROUP BY IdOpositor WHERE NumeroSolicitudes \u003e 1",
-        "SELECT IdOpositor, IdSolicitud FROM Solicitud WHERE COUNT(IdSolicitud) \u003e 1",
-        "SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud WHERE COUNT(IdSolicitud) \u003e 1 GROUP BY IdOpositor",
-        "SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud GROUP BY IdOpositor HAVING COUNT(IdSolicitud) \u003e 1"
+        "SELECT IdOpositor, COUNT(IdSolicitud) AS NumeroSolicitudes FROM Solicitud GROUP BY IdOpositor WHERE NumeroSolicitudes > 1",
+        "SELECT IdOpositor, IdSolicitud FROM Solicitud WHERE COUNT(IdSolicitud) > 1",
+        "SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud WHERE COUNT(IdSolicitud) > 1 GROUP BY IdOpositor",
+        "SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud GROUP BY IdOpositor HAVING COUNT(IdSolicitud) > 1"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-18",
@@ -1240,7 +1648,11 @@
         "UPDATE TABLE Ejercicio (Duracion = Duracion + 10%)",
         "UPDATE SET Duracion *= 1.10 FROM Ejercicio"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-19",
@@ -1252,7 +1664,11 @@
         "SELECT * FROM Opositor WHERE DNI LIKE '3%'",
         "SELECT DNI(3*) FROM Opositor"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-20",
@@ -1264,19 +1680,27 @@
         "git status",
         "git log"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R1",
       "source_ref": "OEP 2019 · Supuesto I · reserva nº 1",
-      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nDentro del código de la página web a la que acceden los opositores, se encuentra el siguiente código HTML:\n\u003chtml\u003e\u003cbody\u003e\u003ch1 id=\"titulo\"\u003ePrimer ejercicio TAI\u003c/h1\u003e\u003c/body\u003e\u003c/html\u003e\n¿Cuál es el código javascript para obtener la cadena \"Primer ejercicio TAI\"?",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nDentro del código de la página web a la que acceden los opositores, se encuentra el siguiente código HTML:\n<html><body><h1 id=\"titulo\">Primer ejercicio TAI</h1></body></html>\n¿Cuál es el código javascript para obtener la cadena \"Primer ejercicio TAI\"?",
       "options": [
         "var titulo = document.getElementById(\"titulo\").firstChild.nodeValue;",
         "var titulo = document.titulo.InnerHTML;",
         "var titulo = document.getElement(\"h1\").InnerText;",
         "var titulo = document.children[0].getValue();"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R2",
@@ -1288,7 +1712,11 @@
         "Animacion y efectos gráficos.",
         "Funciones matemáticas y tratamiento de cadenas."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R3",
@@ -1300,19 +1728,27 @@
         "Pip",
         "Numpy"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R4",
       "source_ref": "OEP 2019 · Supuesto I · reserva nº 4",
-      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nSe ha realizado un vídeo explicativo para los opositores y se ha publicado en una página web. ¿Qué mostrará el siguiente fragmento de código en un navegador que soporte HTML5?:\n\u003cvideo width=\"320\" height=\"240\" controls\u003e\u003csource src=\"movie.mp4\" type=\"video/mp4\"\u003e\u003csource src=\"movie.ogg\" type=\"video/ogg\"\u003eNo soportado\u003c/video\u003e",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL. Como metodología de base el organismo aplica Métrica v3.\n\nSe ha realizado un vídeo explicativo para los opositores y se ha publicado en una página web. ¿Qué mostrará el siguiente fragmento de código en un navegador que soporte HTML5?:\n<video width=\"320\" height=\"240\" controls><source src=\"movie.mp4\" type=\"video/mp4\"><source src=\"movie.ogg\" type=\"video/ogg\">No soportado</video>",
       "options": [
         "Se mostrarán los dos vídeos \"movie.mp4\" y \"movie.ogg\".",
         "Se mostrará el mensaje \"No soportado\" en todos los casos.",
         "Se mostrará el vídeo \"movie.mp4\" si el navegador soporta el formato mp4.",
         "No se mostrará nada porque el código no está bien formado."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SI-R5",
@@ -1324,7 +1760,11 @@
         "Malware attack.",
         "SQL Injection."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-1",
@@ -1336,7 +1776,11 @@
         "25",
         "23"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-2",
@@ -1348,7 +1792,11 @@
         "Clase C.",
         "Clase D."
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-3",
@@ -1360,7 +1808,11 @@
         "32",
         "256"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-4",
@@ -1372,7 +1824,11 @@
         "10.0.3.0 - 10.0.3.255",
         "10.0.0.1 - 10.0.7.254"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-5",
@@ -1384,7 +1840,11 @@
         "cat /etc/redhat-release",
         "mv /etc/redhat-release"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-6",
@@ -1396,7 +1856,11 @@
         "route -static add -net 10.0.5.0/24 -gateway 10.0.5.150",
         "route add -static -net 10.0.5.0/24 -gateway 10.0.5.150"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-7",
@@ -1408,7 +1872,11 @@
         "/etc/shadow",
         "/etc/groups"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-8",
@@ -1420,7 +1888,11 @@
         "SELECT * FROM V$VERSIONDB",
         "SELECT * FROM V$VERSIONTABLE"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-9",
@@ -1432,7 +1904,11 @@
         "tar -xzf /home/opositor/temas/ TEMAS.tar.gz",
         "tar -cjf /home/opositor/temas/ TEMAS.tar.gz"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-10",
@@ -1444,7 +1920,11 @@
         "net local admin",
         "net localgroup administradores"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-11",
@@ -1456,7 +1936,11 @@
         "net config",
         "net accounts"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-12",
@@ -1468,7 +1952,11 @@
         "24 TB",
         "30 TB"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-13",
@@ -1480,7 +1968,11 @@
         "start docker SW2008",
         "docker start run SW2008"
       ],
-      "correct": "a"
+      "correct": "a",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-14",
@@ -1492,7 +1984,11 @@
         "docker list",
         "docker list-container -all"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-15",
@@ -1504,7 +2000,11 @@
         "Si, mediante PoE IEEE 802.3bt",
         "Si, mediante PoE IEEE 802.3dt"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-16",
@@ -1516,7 +2016,11 @@
         "Categoría 7A.",
         "Categoría 8."
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-17",
@@ -1528,7 +2032,11 @@
         "netsh advfirewall set allprofiles state online",
         "netsh advfirewall set allprofiles on"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-18",
@@ -1540,7 +2048,11 @@
         "NBA",
         "HIPS"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-19",
@@ -1552,7 +2064,11 @@
         "443",
         "425"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-20",
@@ -1564,7 +2080,11 @@
         "ipconfig /cleardns",
         "ifconfig /cleardns"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R1",
@@ -1576,7 +2096,11 @@
         "netsh advfirewall firewall add rule name= \"Inventariado\" dir=in action=allow protocol=TCP localport=4433",
         "netsh advfirewall firewall new rule name= \"Inventariado\" dir=in action=allow protocol=TCP localport=4433"
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R2",
@@ -1588,7 +2112,11 @@
         "nc -v 422 10.0.4.22",
         "nc -v 10.0.4.22:422"
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R3",
@@ -1600,7 +2128,11 @@
         "La clave privada.",
         "La clave de sesión."
       ],
-      "correct": "b"
+      "correct": "b",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R4",
@@ -1612,7 +2144,11 @@
         "Al menos 4 discos duros.",
         "Es indiferente."
       ],
-      "correct": "c"
+      "correct": "c",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
     },
     {
       "key": "SII-R5",
@@ -1624,7 +2160,11 @@
         "69",
         "22"
       ],
-      "correct": "d"
+      "correct": "d",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
     }
   ]
 }

@@ -46,7 +46,10 @@ Ubuntu/WSL: `sudo apt install poppler-utils`).
 2. Pasarlo **literalmente** a `data/syllabus.json` con el formato de
    `data/syllabus.example.json`. Los `code` (B1-T01…) son estables: al
    recargar se actualizan títulos y los temas que desaparecen se desactivan.
-3. Cargarlo: `go run ./cmd/tai load-syllabus -file data/syllabus.json`.
+3. Va dentro del binario: una instalación sin temario lo carga al
+   arrancar. En una ya en marcha: `go run ./cmd/tai load-syllabus -file data/syllabus.json`.
+
+Hecho: convocatoria 2025 (BOE-A-2025-26262, anexo V), 4 bloques y 33 temas.
 
 ### 2. Nota de la convocatoria
 
@@ -80,12 +83,18 @@ proceso selectivo, con el cuestionario y las plantillas de respuestas.
    `data/bank/<ref>.json`. Al final informa de lo que no ha podido leer, con
    el número de pregunta. La `-ref` no se cambia nunca: identifica las
    preguntas del examen en todas las instalaciones.
-3. Revisar el JSON (enunciados, opciones y letras) y `make test`: un test
-   carga todo el banco y exige que cada pregunta pase la validación.
-4. Subirlo. Al arrancar, cada instalación añade como borrador lo que aún no
-   tiene.
+3. Comprobar cada pregunta contra el PDF (enunciado, opciones y letra de
+   cada opción) y las respuestas contra la plantilla definitiva. A las
+   comprobadas, ponerles `topics` (códigos de `data/syllabus.json`) y
+   `"status": "published"`; las que dependen de una figura que no se
+   reproduce se dejan sin estado, para Revisión. Al reimportar, se conserva
+   en las preguntas que no cambian.
+4. `make test`: un test carga todo el banco con el temario incluido y exige
+   que cada pregunta pase la validación y que las comprobadas se publiquen.
+5. Subirlo. Al arrancar, cada instalación añade lo que aún no tiene.
 
-Hecho: OEP 2019, 2022 y 2024 (ingreso libre). Pendiente: la OEP 2025, que
+Hecho: OEP 2019, 2022 y 2024 (ingreso libre), 403 publicadas y 2 en
+Revisión. Pendiente: la OEP 2025, que
 solo tiene plantilla provisional, y la OEP 2018, cuyo cuestionario está
 escaneado (sin texto: habría que pasar OCR y revisarlo a mano).
 
@@ -97,9 +106,8 @@ proponerlo según el temario, pero se confirma en la revisión.
 
 ### 5. Banco de preguntas incluido en la app
 
-Hecho: `data/bank/` va en el binario y se carga al arrancar (ver el paso 3).
-Pendiente: exportar al banco los temas asignados en la revisión, para que
-las instalaciones nuevas reciban las preguntas ya clasificadas.
+Hecho: `data/bank/` va en el binario y se carga al arrancar (ver el paso 3),
+con los temas asignados.
 
 ### 6. Leyes del temario
 
