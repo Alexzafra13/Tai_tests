@@ -24,6 +24,7 @@ import { ReviewPage } from "./pages/review/ReviewPage";
 import { BatchReviewPage } from "./pages/review/BatchReviewPage";
 import { StatsPage } from "./pages/stats/StatsPage";
 import { SearchPage } from "./pages/SearchPage";
+import { ExamsPage } from "./pages/exams/ExamsPage";
 import { AppNotices } from "./components/AppNotices";
 import { startPWA } from "./pwa";
 import { applyTheme, savedTheme } from "./theme";
@@ -77,6 +78,7 @@ function App() {
         <Route path="tests" element={<TestsPage />} />
         <Route path="tests/new" element={<NewTestPage />} />
         <Route path="tests/:id" element={<TestPage />} />
+        <Route path="exams" element={<ExamsPage />} />
         <Route path="syllabus" element={<SyllabusPage />} />
         <Route path="stats" element={<StatsPage />} />
         <Route path="search" element={<SearchPage />} />

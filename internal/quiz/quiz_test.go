@@ -306,6 +306,32 @@ func TestResumeKeepsOrderAndAnswers(t *testing.T) {
 	}
 }
 
+func TestOrderedKeepsQuestionOrder(t *testing.T) {
+	ctx := context.Background()
+	f := newFixture(t)
+	// 6 is a draft: skipped, the rest keep the order given.
+	want := []int64{5, 2, 6, 4, 1}
+	id, err := f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: len(want),
+		Filters: Filters{QuestionIDs: want, Ordered: true}})
+	if err != nil {
+		t.Fatal(err)
+	}
+	test, _ := f.quiz.Get(ctx, f.user, id)
+	var got []int64
+	for _, it := range test.Items {
+		got = append(got, it.QuestionID)
+	}
+	if fmt.Sprint(got) != "[5 2 4 1]" {
+		t.Errorf("order = %v, want [5 2 4 1]", got)
+	}
+
+	_, err = f.quiz.Create(ctx, f.user, CreateInput{Mode: ModeExam, Count: 5, Filters: Filters{Ordered: true}})
+	var verr validate.Errors
+	if !errors.As(err, &verr) {
+		t.Errorf("ordered without questions: err = %v, want a validation error", err)
+	}
+}
+
 func TestFlagAndRevisionAndHistoryProtection(t *testing.T) {
 	ctx := context.Background()
 	f := newFixture(t)

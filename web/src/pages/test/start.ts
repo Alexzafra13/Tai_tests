@@ -11,6 +11,9 @@ export const emptyFilters: TestFilters = {
   failed: false,
 };
 
+// The real exam allows about 1.2 minutes per question (100 in 120 min).
+export const examMinutes = (count: number) => Math.max(1, Math.round(count * 1.2));
+
 // QUICK_COUNT is the size of one-tap review tests: short enough for a break.
 export const QUICK_COUNT = 20;
 

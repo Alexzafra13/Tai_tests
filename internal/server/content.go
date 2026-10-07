@@ -16,6 +16,11 @@ func (s *Server) handleListSources(w http.ResponseWriter, r *http.Request) {
 	s.respond(w, list, err)
 }
 
+func (s *Server) handleExams(w http.ResponseWriter, r *http.Request) {
+	list, err := s.content.Exams(r.Context())
+	s.respond(w, list, err)
+}
+
 func (s *Server) handleGetSource(w http.ResponseWriter, r *http.Request) {
 	id, ok := pathID(w, r)
 	if !ok {

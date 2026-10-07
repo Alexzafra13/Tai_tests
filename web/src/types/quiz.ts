@@ -11,6 +11,8 @@ export type TestFilters = {
   source_ids: number[];
   origins: Origin[];
   question_ids: number[];
+  // ordered: keep the order of question_ids instead of shuffling.
+  ordered?: boolean;
   // due: only questions due for spaced-repetition review today.
   due?: boolean;
   // failed: only questions whose last answer was wrong.
@@ -114,3 +116,23 @@ export const penaltyOptions = [
 export function penaltyLabel(p: number): string {
   return penaltyOptions.find((o) => Math.abs(o.value - p) < 1e-6)?.label ?? `−${p.toFixed(2)} por error`;
 }
+
+// An official exam split as the candidate takes it (internal/content/exams.go).
+export type ExamPart = {
+  name: string;
+  // case: a practical case; only one of them is answered.
+  case: boolean;
+  question_ids: number[];
+  // replaced: questions left out (annulled, unpublished) and taken over by reserves.
+  replaced: number;
+  // missing: those left out with no reserve to take over.
+  missing: number;
+};
+
+export type Exam = {
+  id: number;
+  title: string;
+  reference: string;
+  url: string;
+  parts: ExamPart[];
+};
