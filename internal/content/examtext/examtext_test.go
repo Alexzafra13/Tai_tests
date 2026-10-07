@@ -155,6 +155,16 @@ func TestParseAnswerKey(t *testing.T) {
 	}
 }
 
+func TestParseAnswerKeyModifiedAnswer(t *testing.T) {
+	key, err := ParseAnswerKey("Primera parte\n1.    b\n2.    d MODIFICADA\n3.    a\n")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if key[Slot{PartGeneral, false, 2}] != 3 || key[Slot{PartGeneral, false, 3}] != 0 {
+		t.Errorf("key %v", key)
+	}
+}
+
 func TestParseAnswerKeyNeedsEveryAnswer(t *testing.T) {
 	_, err := ParseAnswerKey("Primera parte\n1.  b\n2.\n")
 	if err == nil || !strings.Contains(err.Error(), "P-2") {
@@ -196,6 +206,26 @@ func TestBuild(t *testing.T) {
 	if !strings.HasPrefix(q.Stem, "El organismo") || !strings.Contains(q.Stem, FiguresNote) ||
 		!strings.HasSuffix(q.Stem, "exceda los 100 caracteres?") {
 		t.Errorf("case question stem %q", q.Stem)
+	}
+}
+
+func TestBuildNotesTextDiagram(t *testing.T) {
+	b, _ := ParseBooklet(`SUPUESTO I
+A continuación se muestra un diagrama simplificado de clases:
+
+                                Solicitud                                                    Opositor
+                               +IdSolicitud                 Presentada por                   +IdOpositor
+                               +IdOpositor              1..N                      1          +NIF
+
+1. ¿Pregunta?
+ a) Uno
+ b) Dos
+ c) Tres
+ d) Cuatro
+`)
+	qs, _ := Build(Exam{Booklet: b, Final: AnswerKey{{PartCaseI, false, 1}: 0}, Label: "X"})
+	if len(qs) != 1 || !strings.Contains(qs[0].Stem, DiagramNote) {
+		t.Fatalf("questions %+v", qs)
 	}
 }
 

@@ -65,12 +65,13 @@ func TestExamsReplaceUnavailableWithReserves(t *testing.T) {
 		for _, id := range p.QuestionIDs {
 			keys = append(keys, stems[id])
 		}
-		got = append(got, fmt.Sprintf("%s case=%v %v replaced=%d missing=%d", p.Name, p.Case, keys, p.Replaced, p.Missing))
+		got = append(got, fmt.Sprintf("%s case=%v %v replaced=%d missing=%d annulled=%d unpublished=%d",
+			p.Name, p.Case, keys, p.Replaced, p.Missing, p.Annulled, p.Unpublished))
 	}
 	want := []string{
-		"Primera parte case=false [P-1 P-3 P-R1] replaced=1 missing=0",
-		"Supuesto I case=true [SI-2] replaced=0 missing=1",
-		"Supuesto II case=true [SII-1] replaced=0 missing=0",
+		"Primera parte case=false [P-1 P-3 P-R1] replaced=1 missing=0 annulled=1 unpublished=0",
+		"Supuesto I case=true [SI-2] replaced=0 missing=1 annulled=0 unpublished=1",
+		"Supuesto II case=true [SII-1] replaced=0 missing=0 annulled=0 unpublished=0",
 	}
 	if strings.Join(got, "\n") != strings.Join(want, "\n") {
 		t.Errorf("parts:\n%s\nwant:\n%s", strings.Join(got, "\n"), strings.Join(want, "\n"))

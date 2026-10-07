@@ -2,6 +2,7 @@ package examtext
 
 import (
 	"fmt"
+	"regexp"
 	"slices"
 
 	"github.com/alexzafra13/tai_tests/internal/content"
@@ -10,6 +11,14 @@ import (
 // FiguresNote is added to a practical case whose pages have images: the
 // text extraction keeps the words but not diagrams or screenshots.
 const FiguresNote = "(El enunciado original incluye figuras que no se reproducen aquí.)"
+
+// DiagramNote is added to a practical case with a diagram drawn as text,
+// whose words come out of order.
+const DiagramNote = "(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)"
+
+// textDiagram spots the leftovers of a class or entity diagram drawn with
+// text: attribute markers ("+IdSolicitud") and multiplicities ("1..N").
+var textDiagram = regexp.MustCompile(`(?m)(^|\s)\+[A-Z]\w+.*\b[01]\.\.[1N*]\b|\b[01]\.\.[1N*]\b.*(^|\s)\+[A-Z]\w+`)
 
 // Exam is what Build needs to turn a booklet into bank questions.
 type Exam struct {
@@ -33,8 +42,12 @@ func Build(e Exam) ([]content.BankQuestion, []Problem) {
 	seen := map[Slot]bool{}
 	for _, part := range e.Booklet.Parts {
 		context := part.Case
-		if context != "" && slices.ContainsFunc(part.CasePages, func(p int) bool { return e.ImagePages[p] }) {
+		switch {
+		case context == "":
+		case slices.ContainsFunc(part.CasePages, func(p int) bool { return e.ImagePages[p] }):
 			context += "\n\n" + FiguresNote
+		case textDiagram.MatchString(context):
+			context += "\n\n" + DiagramNote
 		}
 		for _, q := range part.Questions {
 			seen[q.Slot] = true

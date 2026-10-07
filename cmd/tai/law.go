@@ -31,38 +31,89 @@ func runFetchLaw(ctx context.Context, log *slog.Logger, args []string) error {
 		fs.Usage()
 		return fmt.Errorf("-ref is required")
 	}
+	_, err := fetchLaw(ctx, log, *ref, strings.Split(*alias, ","), *dir)
+	return err
+}
 
-	metaJSON, err := httpGet(ctx, lawtext.MetadataURL(*ref), "application/json")
+// runRefreshLaws downloads again every law of data/laws, keeping the
+// names given with -alias, so the bundled texts follow the BOE. A
+// scheduled workflow runs it and proposes the changes.
+func runRefreshLaws(ctx context.Context, log *slog.Logger, args []string) error {
+	fs := flag.NewFlagSet("refresh-laws", flag.ExitOnError)
+	dir := fs.String("dir", "data/laws", "directory of the law files")
+	fs.Parse(args)
+	names, err := filepath.Glob(filepath.Join(*dir, "*.json"))
 	if err != nil {
 		return err
+	}
+	changed := 0
+	for _, name := range names {
+		if filepath.Base(name) == "topics.json" {
+			continue
+		}
+		b, err := os.ReadFile(name)
+		if err != nil {
+			return err
+		}
+		var old content.LawFile
+		if err := json.Unmarshal(b, &old); err != nil {
+			return fmt.Errorf("%s: %w", name, err)
+		}
+		derived := map[string]bool{}
+		for _, a := range lawtext.Aliases(old.Title, nil) {
+			derived[a] = true
+		}
+		var extra []string
+		for _, a := range old.Aliases {
+			if !derived[a] {
+				extra = append(extra, a)
+			}
+		}
+		updated, err := fetchLaw(ctx, log, old.Reference, extra, *dir)
+		if err != nil {
+			return err
+		}
+		if !bytes.Equal(updated, b) {
+			changed++
+		}
+	}
+	log.Info("laws refreshed", "laws", len(names)-1, "changed", changed)
+	return nil
+}
+
+// fetchLaw writes the law's file in dir and returns its content.
+func fetchLaw(ctx context.Context, log *slog.Logger, ref string, extraAliases []string, dir string) ([]byte, error) {
+	metaJSON, err := httpGet(ctx, lawtext.MetadataURL(ref), "application/json")
+	if err != nil {
+		return nil, err
 	}
 	meta, err := lawtext.ParseMetadata(metaJSON)
 	if err != nil {
-		return fmt.Errorf("%s: %w", *ref, err)
+		return nil, fmt.Errorf("%s: %w", ref, err)
 	}
-	textXML, err := httpGet(ctx, lawtext.TextURL(*ref), "application/xml")
+	textXML, err := httpGet(ctx, lawtext.TextURL(ref), "application/xml")
 	if err != nil {
-		return err
+		return nil, err
 	}
 	sections, err := lawtext.ParseText(textXML, time.Now())
 	if err != nil {
-		return fmt.Errorf("%s: %w", *ref, err)
+		return nil, fmt.Errorf("%s: %w", ref, err)
 	}
 
 	law := content.LawFile{
-		Reference: *ref, Title: meta.Title, URL: lawtext.PageURL(*ref), VersionDate: meta.VersionDate,
-		Aliases: lawtext.Aliases(meta.Title, strings.Split(*alias, ",")), Sections: sections,
+		Reference: ref, Title: meta.Title, URL: lawtext.PageURL(ref), VersionDate: meta.VersionDate,
+		Aliases: lawtext.Aliases(meta.Title, extraAliases), Sections: sections,
 	}
 	var buf bytes.Buffer
 	enc := json.NewEncoder(&buf)
 	enc.SetEscapeHTML(false)
 	enc.SetIndent("", " ")
 	if err := enc.Encode(law); err != nil {
-		return err
+		return nil, err
 	}
-	out := filepath.Join(*dir, *ref+".json")
+	out := filepath.Join(dir, ref+".json")
 	if err := os.WriteFile(out, buf.Bytes(), 0o644); err != nil {
-		return err
+		return nil, err
 	}
 
 	articles, upcoming := 0, 0
@@ -76,7 +127,7 @@ func runFetchLaw(ctx context.Context, log *slog.Logger, args []string) error {
 	}
 	log.Info("law written", "file", out, "title", meta.Title, "version", meta.VersionDate,
 		"sections", len(sections), "articles", articles, "changes_pending", upcoming)
-	return nil
+	return buf.Bytes(), nil
 }
 
 func httpGet(ctx context.Context, url, accept string) ([]byte, error) {

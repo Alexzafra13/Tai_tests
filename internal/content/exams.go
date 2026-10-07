@@ -30,6 +30,11 @@ type ExamPart struct {
 	QuestionIDs []int64 `json:"question_ids"`
 	// Replaced counts the questions left out and taken over by reserves.
 	Replaced int `json:"replaced"`
+	// Annulled and Unpublished say why questions were left out: annulled by
+	// the INAP's answer key, or not published in this installation (such as
+	// those that need a figure the text cannot show).
+	Annulled    int `json:"annulled"`
+	Unpublished int `json:"unpublished"`
 	// Missing counts those left out with no reserve to take over.
 	Missing int `json:"missing"`
 }
@@ -46,13 +51,14 @@ type examQuestion struct {
 	reserve  bool
 	number   int
 	eligible bool
+	annulled bool
 }
 
 // Exams returns the official exams that have at least one question a test
 // can include.
 func (s *Store) Exams(ctx context.Context) ([]Exam, error) {
 	rows, err := s.db.QueryContext(ctx, `SELECT s.id, s.title, s.reference, s.url, q.id, q.source_ref,
-			q.status = 'published' AND q.annulled = 0
+			q.status = 'published' AND q.annulled = 0, q.annulled
 		FROM sources s JOIN questions q ON q.source_id = s.id
 		WHERE s.kind = ? ORDER BY s.reference DESC, q.id`, KindINAPExam)
 	if err != nil {
@@ -65,7 +71,7 @@ func (s *Store) Exams(ctx context.Context) ([]Exam, error) {
 		var e Exam
 		var q examQuestion
 		var ref string
-		if err := rows.Scan(&e.ID, &e.Title, &e.Reference, &e.URL, &q.id, &ref, &q.eligible); err != nil {
+		if err := rows.Scan(&e.ID, &e.Title, &e.Reference, &e.URL, &q.id, &ref, &q.eligible, &q.annulled); err != nil {
 			return nil, err
 		}
 		m := examRef.FindStringSubmatch(ref)
@@ -122,6 +128,11 @@ func examParts(qs []examQuestion) []ExamPart {
 				p.QuestionIDs = append(p.QuestionIDs, q.id)
 			case !q.reserve:
 				p.Missing++
+				if q.annulled {
+					p.Annulled++
+				} else {
+					p.Unpublished++
+				}
 			case q.eligible && p.Missing > 0:
 				p.QuestionIDs = append(p.QuestionIDs, q.id)
 				p.Missing--

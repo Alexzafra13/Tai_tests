@@ -37,6 +37,7 @@ func (s *Server) routes(mux *http.ServeMux) {
 
 	mux.Handle("GET /api/stats", user(s.handleStats))
 	mux.Handle("GET /api/search", user(s.handleSearch))
+	mux.Handle("GET /api/search/{id}", user(s.handleStudyQuestion))
 
 	// Administrators: content, review, scoring rules and accounts.
 	mux.Handle("POST /api/sources", admin(s.handleCreateSource))

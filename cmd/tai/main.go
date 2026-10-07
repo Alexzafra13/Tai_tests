@@ -40,6 +40,7 @@ Commands:
   add-source     Add a source document (law, technical doc, exam)
   import-exam    Write a question bank file from an INAP exam (PDFs)
   fetch-law      Download a law's consolidated text from the BOE (data/laws)
+  refresh-laws   Download again every law of data/laws
   user           Manage accounts: user list | user add | user passwd
   version        Print the version
 
@@ -73,6 +74,8 @@ func main() {
 		err = runImportExam(ctx, log, os.Args[2:])
 	case "fetch-law":
 		err = runFetchLaw(ctx, log, os.Args[2:])
+	case "refresh-laws":
+		err = runRefreshLaws(ctx, log, os.Args[2:])
 	case "user":
 		err = runUser(ctx, log, os.Args[2:])
 	case "version":

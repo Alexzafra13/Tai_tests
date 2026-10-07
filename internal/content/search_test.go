@@ -2,6 +2,7 @@ package content
 
 import (
 	"context"
+	"errors"
 	"testing"
 )
 
@@ -54,5 +55,34 @@ func TestSearch(t *testing.T) {
 	}
 	if page, _ := f.s.ListQuestions(ctx, QuestionFilter{Text: "notificación"}); page.Total != 1 {
 		t.Errorf("admin list text search total = %d, want 1 (the draft)", page.Total)
+	}
+}
+
+func TestPublishedQuestion(t *testing.T) {
+	ctx := context.Background()
+	f := newFixture(t)
+	pub := f.lawQuestion()
+	pubID, err := f.s.CreateQuestion(ctx, pub)
+	if err != nil {
+		t.Fatal(err)
+	}
+	q, err := f.s.PublishedQuestion(ctx, pubID)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if q.Stem != pub.Stem || q.SourceKind != KindLaw || q.SourceTitle != "Ley 39/2015" {
+		t.Errorf("PublishedQuestion = %+v", q)
+	}
+	if len(q.Topics) != len(pub.TopicIDs) || q.Topics[0].ID != pub.TopicIDs[0] {
+		t.Errorf("topics = %+v, want %v", q.Topics, pub.TopicIDs)
+	}
+
+	draft := f.lawQuestion()
+	draft.Status = StatusDraft
+	draftID, _ := f.s.CreateQuestion(ctx, draft)
+	for _, id := range []int64{draftID, 9999} {
+		if _, err := f.s.PublishedQuestion(ctx, id); !errors.Is(err, ErrNotFound) {
+			t.Errorf("PublishedQuestion(%d) err = %v, want ErrNotFound", id, err)
+		}
 	}
 }

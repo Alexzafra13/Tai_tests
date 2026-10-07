@@ -15,10 +15,11 @@ const Annulled = -1
 type AnswerKey map[Slot]int
 
 var (
-	keyPart    = regexp.MustCompile(`(?i)^(primera parte|supuesto (i|ii))$`)
-	keyNumber  = regexp.MustCompile(`^(\d{1,2})\.$`)
-	keyAnswer  = regexp.MustCompile(`^([a-dA-D]|ANULADA)$`)
-	keyNumAnsw = regexp.MustCompile(`^(\d{1,2})\.\s+([a-dA-D]|ANULADA)$`)
+	keyPart   = regexp.MustCompile(`(?i)^(primera parte|supuesto (i|ii))$`)
+	keyNumber = regexp.MustCompile(`^(\d{1,2})\.$`)
+	// The final key may flag an answer changed after appeals: "d MODIFICADA".
+	keyAnswer  = regexp.MustCompile(`^([a-dA-D]|ANULADA)(?:\s+\(?MODIFICADA\)?)?$`)
+	keyNumAnsw = regexp.MustCompile(`^(\d{1,2})\.\s+([a-dA-D]|ANULADA)(?:\s+\(?MODIFICADA\)?)?$`)
 )
 
 // ParseAnswerKey reads an answer key extracted with pdftotext -layout.
@@ -93,7 +94,7 @@ func ParseAnswerKey(text string) (AnswerKey, error) {
 		case keyNumber.MatchString(line):
 			err = number(keyNumber.FindStringSubmatch(line)[1])
 		case keyAnswer.MatchString(line):
-			err = answer(line)
+			err = answer(keyAnswer.FindStringSubmatch(line)[1])
 		}
 		if err != nil {
 			return nil, err

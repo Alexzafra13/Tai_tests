@@ -13,11 +13,55 @@
 
   .search-hit .stem {
     margin: 0;
+    color: inherit;
     font-weight: 600;
+  }
+
+  .search-hit .stem:hover {
+    color: var(--accent-ink);
   }
 
   .search-hit button.link {
     align-self: flex-start;
     padding-left: 0;
+  }
+
+  .study-question .stem {
+    margin-top: 0.25rem;
+  }
+
+  .study-question > button.link {
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .study-question-source {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .study-question-source h3,
+  .study-question-source p {
+    margin: 0;
+  }
+
+  .study-question-source h3 {
+    font-size: 1rem;
+  }
+
+  .study-question-topics {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .study-question-topics li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
   }
 }

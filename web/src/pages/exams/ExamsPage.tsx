@@ -41,8 +41,9 @@ function ExamCard({ exam, penalty }: { exam: Exam; penalty: number }) {
 
   const parts = [...first, ...cases.filter((p) => p.name === caseName)];
   const ids = parts.flatMap((p) => p.question_ids);
-  const replaced = sum(parts, (p) => p.replaced);
   const missing = sum(parts, (p) => p.missing);
+  const annulled = sum(parts, (p) => p.annulled);
+  const unpublished = sum(parts, (p) => p.unpublished);
 
   async function start(mode: TestMode) {
     setBusy(true);
@@ -91,8 +92,7 @@ function ExamCard({ exam, penalty }: { exam: Exam; penalty: number }) {
       )}
       <p className="hint">
         {ids.length} preguntas · {examMinutes(ids.length)} min
-        {replaced > 0 && ` · ${replaced} ${replaced === 1 ? "sustituida" : "sustituidas"} por reservas`}
-        {missing > 0 && ` · ${missing} sin poder responder`}
+        {leftOut(annulled, unpublished, missing)}
       </p>
       <div className="actions">
         <button className="primary" disabled={busy} onClick={() => start("exam")}>
@@ -112,3 +112,18 @@ function ExamCard({ exam, penalty }: { exam: Exam; penalty: number }) {
 }
 
 const sum = (parts: ExamPart[], f: (p: ExamPart) => number) => parts.reduce((n, p) => n + f(p), 0);
+
+// leftOut explains the questions the exam leaves out and why: annulled by
+// the INAP, or still in review here (they need a figure the app cannot show).
+function leftOut(annulled: number, unpublished: number, missing: number): string {
+  const why = [
+    annulled > 0 && `${annulled} ${annulled === 1 ? "anulada por el INAP" : "anuladas por el INAP"}`,
+    unpublished > 0 && `${unpublished} en revisión`,
+  ].filter(Boolean);
+  if (why.length === 0) return "";
+  const covered = annulled + unpublished - missing;
+  let text = ` · ${why.join(" y ")}`;
+  if (covered > 0) text += missing > 0 ? `; ${covered} con reserva` : ", con reserva";
+  if (missing > 0) text += missing === 1 ? "; 1 sin reserva" : `; ${missing} sin reserva`;
+  return text;
+}
