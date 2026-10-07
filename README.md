@@ -120,6 +120,7 @@ internal/auth/         login, sesiones y usuario actual de cada petición
 internal/validate/     errores de validación por campo, comunes a todos los paquetes
 internal/content/      temario, fuentes, preguntas con sus reglas de validación y banco incluido
 internal/content/examtext/  lectura del texto de los PDF del INAP (cuestionario y plantillas)
+internal/content/lawtext/   lectura de la legislación consolidada de la API del BOE
 internal/quiz/         sesiones de test: creación, respuestas, historial, nota y barajado
 internal/srs/          repetición espaciada (FSRS): cuándo repasar cada pregunta
 internal/stats/        estadísticas por usuario: aciertos, temas, progreso diario
@@ -133,6 +134,7 @@ web/src/pages/         una pantalla por fichero o carpeta, con su CSS al lado
 web/src/types/         espejo de los tipos JSON de la API, un fichero por área
 data/                  syllabus.json (temario oficial, en el binario) y syllabus.example.json (formato)
 data/bank/             banco de preguntas oficiales incluido en el binario (un JSON por examen)
+data/laws/             leyes del temario (texto consolidado del BOE) y su reparto por temas
 ```
 
 ## Usuarios y permisos
@@ -280,6 +282,16 @@ docker compose exec -T tai tai add-source -kind law \
   -ref BOE-A-2015-10565 -version 2024-01-01 -text - < ley39.txt
 ```
 
+## Leyes para estudiar
+
+En **Temario**, los temas con normas tienen el botón **Leyes**: el texto
+consolidado del BOE de cada norma del tema, literal (nada resumido), con
+índice, buscador y la fecha de la versión. Los artículos que han caído en
+exámenes oficiales van marcados, con las preguntas para responderlas allí
+mismo, y se pueden filtrar. Si ya hay publicada una reforma que aún no está
+en vigor, el artículo lo avisa con la nueva redacción y su fecha. Las
+normas están en `data/laws/` (ver `docs/importar-contenido.md`).
+
 ## Banco de preguntas incluido
 
 `data/bank/` guarda los exámenes oficiales del INAP ya convertidos, un
@@ -351,6 +363,7 @@ make build   # compila el frontend y genera bin/tai con todo embebido
 3. ✅ Tests (práctica y examen) y registro de intentos.
 4. ✅ Cola de revisión.
 5. Importador de exámenes del INAP (✅ banco con OEP 2019, 2022 y 2024) y modo simulacro.
+   ✅ Leyes del bloque I para estudiar, con los artículos preguntados en examen.
 6. Generación del bloque legal con validación.
 7. ✅ FSRS, falladas, estadísticas y búsqueda.
 8. Generación del bloque técnico y pulido (✅ app instalable).

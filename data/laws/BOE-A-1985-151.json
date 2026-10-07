@@ -1,0 +1,322 @@
+{
+ "reference": "BOE-A-1985-151",
+ "title": "Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas",
+ "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1985-151",
+ "version_date": "2025-12-16",
+ "aliases": [
+  "Ley 53/1984",
+  "53/1984"
+ ],
+ "sections": [
+  {
+   "id": "preambulo",
+   "kind": "text",
+   "title": "Preámbulo",
+   "body": "JUAN CARLOS I,\n\nREY DE ESPAÑA\n\nA todos los que la presente vieren y entendieren,\n\nSabed: Que las Cortes Generales han aprobado y Yo vengo en sancionar la siguiente Ley:\n\nLa nueva regulación de las incompatibilidades contenida en esta Ley parte, como principio fundamental, de la dedicación del personal al servicio de las Administraciones Públicas a un solo puesto de trabajo, sin más excepciones que las que demande el propio servicio público, respetando el ejercicio de las actividades privadas que no puedan impedir o menoscabar el estricto cumplimiento de sus deberes o comprometer su imparcialidad o independencia.\n\nLa operatividad de un régimen general de incompatibilidades exige, como lo hace la Ley, un planteamiento uniforme entre las distintas Administraciones Públicas que garantice además a los interesados un tratamiento común entre ellas.\n\nLa Ley viene a cumplimentar, en esta materia, el mandato de los artículos 103.3 y 149.1,18, de la Constitución.\n\nPor otra parte, la regulación de esta Ley exige de los servidores públicos un esfuerzo testimonial de ejemplaridad ante los ciudadanos, constituyendo en este sentido un importante avance hacia la solidaridad, la moralización de la vida pública y la eficacia de la Administración."
+  },
+  {
+   "id": "ci",
+   "kind": "heading",
+   "level": 2,
+   "title": "CAPÍTULO I. Principios generales",
+   "body": ""
+  },
+  {
+   "id": "aprimero",
+   "kind": "article",
+   "title": "Artículo primero.",
+   "body": "1. El personal comprendido en el ámbito de aplicación de esta Ley no podrá compatibilizar sus actividades con el desempeño, por sí o mediante sustitución, de un segundo puesto de trabajo, cargo o actividad en el sector público, salvo en los supuestos previstos en la misma.\n\nA los solos efectos de esta Ley se considerará actividad en el sector público la desarrollada por los miembros electivos de las Asambleas Legislativas de las Comunidades Autónomas y de las Corporaciones Locales, por los altos cargos y restante personal de los órganos constitucionales y de todas las Administraciones Públicas, incluida la Administración de Justicia, y de los Entes, Organismo y Empresas de ellas dependientes, entendiéndose comprendidas las Entidades colaboradoras y las concertadas de la Seguridad Social en la prestación sanitaria.\n\n2. Además, no se podrá percibir, salvo en los supuestos previstos en esta Ley, más de una remuneración con cargo a los presupuestos de las Administraciones Públicas y de los Entes, Organismos y Empresas de ellas dependientes o con cargo a los de los órganos constitucionales, o que resulte de la aplicación de arancel ni ejercer opción por percepciones correspondiente a puestos incompatibles.\n\nA los efectos del párrafo anterior, se entenderá por remuneración cualquier derecho de contenido económico derivado, directa o indirectamente, de una prestación o servicio personal, sea su cuantía fija o variable y su devengo periódico u ocasional.\n\n3. En cualquier caso, el desempeño de un puesto de trabajo por el personal incluido en el ámbito de aplicación de esta Ley será incompatible con el ejercicio de cualquier cargo, profesión o actividad, público o privado, que pueda impedir o menoscabar el estricto cumplimiento de sus deberes o comprometer su imparcialidad o independencia."
+  },
+  {
+   "id": "cii",
+   "kind": "heading",
+   "level": 2,
+   "title": "CAPÍTULO II. Ámbito de aplicación",
+   "body": ""
+  },
+  {
+   "id": "asegundo",
+   "kind": "article",
+   "title": "Artículo segundo.",
+   "body": "1. La presente Ley será de aplicación a:\n\na) El personal civil y militar al servicio de la Administración del Estado y de sus Organismos Públicos.\n\nb) El personal al servicio de las Administraciones de las Comunidades Autónomas y de los Organismos de ellas dependientes, así como de sus Asambleas Legislativas y órganos institucionales.\n\nc) El personal al servicio de las Corporaciones Locales y de los Organismos de ellas dependientes.\n\nd) El personal al servicio de Entes y Organismos públicos exceptuados de la aplicación de la Ley de Entidades Estatales Autónomas.\n\ne) El personal que desempeñe funciones públicas y perciba sus retribuciones mediante arancel.\n\nf) El personal al servicio de la Seguridad Social, de sus Entidades Gestoras y de cualquier otra Entidad u Organismo de la misma.\n\ng) El personal al servicio de entidades, corporaciones de derecho público, fundaciones y consorcios cuyos presupuestos se doten ordinariamente en más de un 50 por cien con subvenciones u otros ingresos procedentes de las Administraciones Públicas.\n\nh) El personal que preste servicios en Empresas en que la participación del capital, directa o indirectamente, de las Administraciones Públicas sea superior al 50 por 100.\n\ni) El personal al servicio del Banco de España y de las instituciones financieras públicas.\n\nj) El restante personal al que resulte de aplicación el régimen estatutario de los funcionarios públicos.\n\n2. En el ámbito delimitado en el apartado anterior se entenderá incluido todo el personal, cualquiera que sea la naturaleza jurídica de la relación de empleo.",
+   "notes": "Se modifican las letras a) y g) por la disposición final 3.1 de la Ley 7/2007, de 12 de abril. Ref. BOE-A-2007-7788"
+  },
+  {
+   "id": "ciii",
+   "kind": "heading",
+   "level": 2,
+   "title": "CAPÍTULO III. Actividades públicas",
+   "body": ""
+  },
+  {
+   "id": "atercero",
+   "kind": "article",
+   "title": "Artículo tercero.",
+   "body": "1. El personal comprendido en el ámbito de aplicación de esta Ley sólo podrá desempeñar un segundo puesto de trabajo o actividad en el sector público en los supuestos previstos en la misma para las funciones docente y sanitaria, en los casos a que se refieren los artículo 5.º y 6.º y en los que, por razón de interés público, se determine por el Consejo de Ministros, mediante Real decreto, u órgano de gobierno de la Comunidad Autónoma, en el ámbito de sus respectivas competencias; en este último supuesto la actividad sólo podrá prestarse en régimen laboral, a tiempo parcial y con duración determinada, en las condiciones establecidas por la legislación laboral.\n\nPara el ejercicio de la segunda actividad será indispensable la previa y expresa autorización de compatibilidad, que no supondrá modificación de la jornada de trabajo y horario de los dos puestos y que se condiciona a su estricto cumplimiento en ambos.\n\nEn todo caso la autorización de compatibilidad se efectuará en razón del interés público.\n\n2. El desempeño de un puesto de trabajo en el sector público, delimitado en el párrafo segundo del apartado 1 del artículo primero, es incompatible con la percepción de pensión de jubilación o retiro por Derechos Pasivos o por cualquier régimen de Seguridad Social público y obligatorio.\n\nLa percepción de las pensiones indicadas quedará en suspenso por el tiempo que dure el desempeño de dicho puesto, sin que ello afecte a sus actualizaciones.\n\nPor excepción, en el ámbito laboral, será compatible la pensión de jubilación parcial con un puesto de trabajo a tiempo parcial."
+  },
+  {
+   "id": "acuarto",
+   "kind": "article",
+   "title": "Artículo cuarto.",
+   "body": "1. Podrá autorizarse la compatibilidad, cumplidas las restantes exigencias de esta ley, para el desempeño de un puesto de trabajo en la esfera docente como Profesor universitario asociado en régimen de dedicación no superior a la de tiempo parcial.\n\n2. Al personal docente e investigador de la Universidad podrá autorizarse, cumplidas las restantes exigencias de esta ley, la compatibilidad para el desempeño de un segundo puesto de trabajo en el sector público sanitario o de carácter exclusivamente investigador en centros de investigación del sector público, incluyendo el ejercicio de funciones de dirección científica dentro de un centro o estructura de investigación, dentro del área de especialidad de su departamento universitario, y siempre que los dos puestos vengan reglamentariamente autorizados como de prestación a tiempo parcial.\n\nRecíprocamente, a quienes desempeñen uno de los definidos como segundo puesto en el párrafo anterior, podrá autorizarse la compatibilidad para desempeñar uno de los puestos docentes universitarios a que se hace referencia.\n\nAsimismo a los Profesores titulares de Escuelas Universitarias de Enfermería podrá autorizarse la compatibilidad para el desempeño de un segundo puesto de trabajo en el sector sanitario en los términos y condiciones indicados en los párrafos anteriores.\n\nIgualmente, podrá autorizarse la compatibilidad para el desempeño de un segundo puesto de trabajo o actividad a tiempo parcial en el sector público cultural, cumplidas las restantes exigencias de esta ley, salvo la prohibición establecida en el artículo 16.1, al personal funcionario y laboral de las administraciones locales de las enseñanzas establecidas en el artículo 45 de la Ley Orgánica 2/2006, de 3 de mayo, de Educación y al profesorado perteneciente a los Cuerpos de Catedráticos y Catedráticas y Profesores y Profesoras de Enseñanzas Artísticas Profesionales o de Enseñanzas Artísticas Superiores que preste servicio en los centros públicos que impartan dichas enseñanzas.\n\n3. La dedicación del profesorado universitario será en todo caso compatible con la realización de los trabajos a que se refiere el artículo 11 de la Ley de Reforma Universitaria, en los términos previstos en la misma.\n\n4. Asimismo, podrá autorizarse al profesorado de los Cuerpos de Catedráticos y Profesores de Enseñanza Secundaria, al de Profesores Especialistas en Sectores Singulares de Formación Profesional, al del Cuerpo a extinguir de Profesores Técnicos de Formación Profesional, así como al restante profesorado de formación profesional, sin perjuicio de lo establecido en el artículo 95 de la Ley Orgánica 2/2006 de 3 de mayo, de Educación, la compatibilidad para el desempeño de sus funciones, a tiempo parcial y cumpliendo las restantes exigencias de esta Ley, salvo la prohibición establecida en el artículo 16.1, en los centros de titularidad pública con oferta integrada, impartiendo todas las modalidades del sistema de formación profesional de conformidad con su perfil académico y profesional, y siempre que reúnan los requisitos para impartir los módulos incluidos en los títulos, cursos de especialización, certificados profesionales, certificados de competencia y acreditaciones parciales de competencia correspondientes, así como en acciones formativas de las otras modalidades del ámbito del sistema de la formación profesional.",
+   "notes": "Se modifica el apartado 2 y se añade el 4 por la disposición final 1.1 y 2 de la Ley 1/2024, de 7 de junio. Ref. BOE-A-2024-11613#df Se modifica el apartado 1 por la disposición final 1 de la Ley Orgánica 2/2023, de 22 de marzo. Ref. BOE-A-2023-7500#df Redactada conforme a la corrección de erratas publicada en BOE núm. 87, de 12 de abril de 2023. Ref. BOE-A-2023-9044 Se modifica el párrafo primero del apartado 2 por la disposición final 1.1 de la Ley 14/2011, de 1 de junio. Ref. BOE-A-2011-9617 . Se añade el párrafo 4 al apartado 2 por la disposición adicional 12 de la Ley 13/1996, de 30 de diciembre. Ref. BOE-A-1996-29117"
+  },
+  {
+   "id": "aquinto",
+   "kind": "article",
+   "title": "Artículo quinto.",
+   "body": "1. Por excepción, el personal incluido en el ámbito de aplicación de esta Ley podrá compatibilizar sus actividades con el desempeño de los cargos electivos siguientes:\n\na) Miembros de las Asambleas Legislativas de las Comunidades Autónomas, salvo que perciban retribuciones periódicas por el desempeño de la función o que por las mismas se establezca la incompatibilidad.\n\nb) Miembros de las Corporaciones locales, salvo que desempeñen en las mismas cargos retribuidos en régimen de dedicación exclusiva.\n\n2. En los supuestos comprendidos en este artículo sólo podrá percibirse la retribución correspondiente a una de las dos actividades, sin perjuicio de las dietas, indemnizaciones o asistencias que correspondan por la otra. No obstante, en los supuestos de miembros de las Corporaciones locales en la situación de dedicación parcial a que hace referencia el artículo 75.2 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local, se podrán percibir retribuciones por tal dedicación, siempre que la desempeñen fuera de su jornada de trabajo en la Administración, y sin superar en ningún caso los límites que con carácter general se establezcan, en su caso. La Administración en la que preste sus servicios un miembro de una Corporación local en régimen de dedicación parcial y esta última deberán comunicarse recíprocamente su jornada en cada una de ellas y las retribuciones que perciban, así como cualquier modificación que se produzca en ellas.",
+   "notes": "Se modifica por el art. 39 de la Ley de 14/2000, de 29 de diciembre. Ref. BOE-A-2000-24357"
+  },
+  {
+   "id": "asexto",
+   "kind": "article",
+   "title": "Artículo sexto.",
+   "body": "1. Sin perjuicio de lo previsto en el artículo 4. 3, excepcionalmente podrá autorizarse al personal incluido en el ámbito de esta ley la compatibilidad para el ejercicio de actividades de investigación de carácter no permanente, o de asesoramiento científico o técnico en supuestos concretos, que no correspondan a las funciones del personal adscrito a las respectivas Administraciones Públicas.\n\nDicha excepción se acreditará por la asignación del encargo en concurso público, o por requerir especiales calificaciones que sólo ostenten personas afectadas por el ámbito de aplicación de esta ley.\n\n2. El personal investigador al servicio de los Organismos Públicos de Investigación, de las Universidades públicas y de otras entidades de investigación dependientes de las Administraciones Públicas, podrá ser autorizado a prestar servicios en sociedades creadas o participadas por los mismos en los términos establecidos en esta ley y en la Ley 14/2011, de 1 de junio, de la Ciencia, la Tecnología y la Innovación, por el Ministerio de la Presidencia o por los órganos competentes de las Universidades públicas o de las Administraciones Públicas.»",
+   "notes": "Se modifica por la disposición final 1.2 de la Ley 14/2011, de 1 de junio. Ref. BOE-A-2011-9617 ."
+  },
+  {
+   "id": "aseptimo",
+   "kind": "article",
+   "title": "Artículo séptimo.",
+   "body": "1. Será requisito necesario para autorizar la compatibilidad de actividades públicas el que la cantidad total percibida por ambos puestos o actividades no supere la remuneración prevista en los Presupuestos Generales del Estado para el cargo de Director General, ni supere la correspondiente al principal, estimada en régimen de dedicación ordinaria, incrementada en:\n\n– Un 30 por 100, para los funcionarios del grupo A o personal de nivel equivalente.\n\n– Un 35 por 100, para los funcionarios del grupo B o personal de nivel equivalente.\n\n– Un 40 por 100, para los funcionarios del grupo C o personal de nivel equivalente.\n\n– Un 45 por 100, para los funcionarios del grupo D o personal equivalente.\n\n– Un 50 por 100, para los funcionarios del grupo E o personal equivalente.\n\nLa superación de estos límites, en cómputo anual, requiere en cada caso acuerdo expreso del Gobierno, órgano competente de las Comunidades Autónomas o Pleno de las Corporaciones Locales en base a razones de especial interés para el servicio.\n\n2. Los servicio prestados en el segundo puesto o actividad no se computarán a efectos de trienios ni de derechos pasivos, pudiendo suspenderse la cotización a este último efecto. Las pagas extraordinarias, así como las prestaciones de carácter familiar, sólo podrán percibirse por uno de los puestos, cualquiera que sea su naturaleza.",
+   "notes": "Se deroga el apartado 3 por la disposición derogatoria única.k) del Real Decreto legislativo 1/1994, de 20 de junio. Ref. BOE-A-1994-14960"
+  },
+  {
+   "id": "aoctavo",
+   "kind": "article",
+   "title": "Artículo octavo.",
+   "body": "1. El personal incluido en el ámbito de aplicación de esta Ley que en representación del sector público pertenezca a Consejos de Administración u órganos de gobierno de Entidades o Empresas públicas o privadas, sólo podrá percibir las dietas o indemnizaciones que correspondan por su asistencia a los mismos, ajustándose en su cuantía al régimen general previsto para las Administraciones Públicas. Las cantidades devengadas por cualquier otro concepto serán ingresadas directamente por la Entidad o Empresa en la Tesorería pública que corresponda.\n\nNo se podrá pertenecer a más de dos Consejos de Administración u órganos de gobierno a que se refiere el apartado anterior, salvo que excepcionalmente se autorice para supuestos concretos mediante acuerdo del Gobierno, órgano competente de la Comunidad Autónoma o Pleno de la Corporación Local correspondiente."
+  },
+  {
+   "id": "anoveno",
+   "kind": "article",
+   "title": "Artículo noveno.",
+   "body": "La autorización o denegación de compatibilidad para un segundo puesto o actividad del sector público corresponde al Ministerio de la Presidencia, a propuesta de la Subsecretaría del Departamento correspondiente, al órgano competente de la Comunidad Autónoma o al Pleno de la Corporación Local a que figure adscrito el puesto principal, previo informe, en su caso, de los Directores de los Organismos, Entes y Empresas públicas.\n\nDicha autorización requiere además el previo informe favorable del órgano competente de la Comunidad Autónoma o Pleno de la Corporación Local, conforme a la adscripción del segundo puesto. Si los dos puestos correspondieran a la Administración del Estado, emitirá este informe la Subsecretaría del Departamento al que corresponda el segundo puesto."
+  },
+  {
+   "id": "adiez",
+   "kind": "article",
+   "title": "Artículo diez.",
+   "body": "Quienes accedan por cualquier título a un nuevo puesto del sector público que con arreglo a esta Ley resulte incompatible con el que vinieran desempeñando habrán de optar por uno de ellos dentro del plazo de toma de posesión.\n\nA falta de opción en el plazo señalado se entenderá que optan por el nuevo puesto, pasando a la situación de excedencia voluntaria en los que vinieran desempeñando.\n\nSi se tratara de puestos susceptibles de compatibilidad, previa autorización, deberán instarla en los diez primeros días del aludido plazo de toma de posesión, entendiéndose éste prorrogado en tanto recae resolución."
+  },
+  {
+   "id": "civ",
+   "kind": "heading",
+   "level": 2,
+   "title": "CAPÍTULO IV. Actividades privadas",
+   "body": ""
+  },
+  {
+   "id": "aonce",
+   "kind": "article",
+   "title": "Artículo once.",
+   "body": "1. De acuerdo con lo dispuesto en el artículo 1º,3, de la presente Ley, el personal comprendido en su ámbito de aplicación no podrá ejercer, por sí o mediante sustitución, actividades privadas, incluidas las de carácter profesional, sean por cuenta propia o bajo la dependencia o al servicio de Entidades o particulares que se relacionen directamente con las que desarrolle el Departamento, Organismo o Entidad donde estuviera destinado.\n\nSe exceptúan de dicha prohibición las actividades particulares que, en ejercicio de un derecho legalmente reconocido, realicen para sí los directamente interesados.\n\n2. El Gobierno, por Real Decreto, podrá determinar, con carácter general, las funciones, puestos o colectivos del sector público, incompatibles con determinadas profesiones o actividades privadas, que puedan comprometer la imparcialidad independencia del personal de que se trate, impedir o menoscabar el estricto cumplimiento de sus deberes o perjudicar los intereses generales."
+  },
+  {
+   "id": "adoce",
+   "kind": "article",
+   "title": "Artículo doce.",
+   "body": "1. En todo caso, el personal comprendido en el ámbito de aplicación de esta Ley no podrá ejercer las actividades siguientes:\n\na) El desempeño de actividades privadas, incluidas las de carácter profesional, sea por cuenta propia o bajo la dependencia o al servicio de Entidades o particulares, en los asuntos en que esté interviniendo, haya intervenido en los dos últimos años o tenga que intervenir por razón del puesto público.\n\nSe incluyen en especial en esta incompatibilidad las actividades profesionales prestadas a personas a quienes se esté obligado a atender en el desempeño del puesto público.\n\nb) La pertenencia a Consejos de Administración u órganos rectores de Empresas o Entidades privadas, siempre que la actividad de las mismas esté directamente relacionada con las que gestione el Departamento, Organismo o Entidad en que preste sus servicios el personal afectado.\n\nc) El desempeño, por sí o por persona interpuesta, de cargos de todo orden en Empresas o Sociedades concesionarias, contratistas de obras, servicios o suministros, arrendatarias o administradoras de monopolios, o con participación o aval del sector público, cualquiera que sea la configuración jurídica de aquéllas.\n\nd) La participación superior al 10 por 100 en el capital de las Empresas o Sociedades a que se refiere el párrafo anterior.\n\n2. Las actividades privadas que correspondan a puestos de trabajo que requieran la presencia efectiva del interesado durante un horario igual o superior a la mitad de la jornada semanal ordinaria de trabajo en las Administraciones Públicas sólo podrán autorizarse cuando la actividad pública sea una de las enunciadas en esta Ley como de prestación a tiempo parcial.",
+   "notes": "Véase la disposición adicional 24 de la Ley Orgánica 4/2007, de 12 de abril Ref. BOE-A-2007-7786 , sobre las limitaciones establecidas en el apartado.1 b) y d)."
+  },
+  {
+   "id": "atrece",
+   "kind": "article",
+   "title": "Artículo trece.",
+   "body": "No podrá reconocerse compatibilidad alguna para actividades privadas a quienes se les hubiere autorizado la compatibilidad para un segundo puesto o actividad públicos, siempre que la suma de jornadas de ambos sea igual o superior a la máxima en las Administraciones Públicas."
+  },
+  {
+   "id": "acatorce",
+   "kind": "article",
+   "title": "Artículo catorce.",
+   "body": "El ejercicio de actividades profesionales, laborales, mercantiles o industriales fuera de las Administraciones Públicas requerirá el previo reconocimiento de compatibilidad.\n\nLa resolución motivada reconociendo la compatibilidad o declarando la incompatibilidad, que se dictará en el plazo de dos meses, corresponde al Ministerio de la Presidencia, a propuesta del Subsecretario del Departamento correspondiente; al órgano competente de la Comunidad Autónoma o al Pleno de la Corporación Local, previo informe, en su caso, de los Directores de los Organismos, Entes y Empresas públicas.\n\nLos reconocimientos de compatibilidad no podrán modificar la jornada de trabajo y horario del interesado y quedarán automáticamente sin efecto en caso de cambio de puesto en el sector público.\n\nQuienes se hallen autorizados para el desempeño de un segundo puesto o actividad públicos deberán instar el reconocimiento de compatibilidad con ambos."
+  },
+  {
+   "id": "aquince",
+   "kind": "article",
+   "title": "Artículo quince.",
+   "body": "El personal a que se refiere esta Ley no podrá invocar o hacer uso de su condición pública para el ejercicio de actividad mercantil, industrial o profesional."
+  },
+  {
+   "id": "cv",
+   "kind": "heading",
+   "level": 2,
+   "title": "CAPÍTULO V. Disposiciones comunes",
+   "body": ""
+  },
+  {
+   "id": "adieciseis",
+   "kind": "article",
+   "title": "Artículo dieciséis.",
+   "body": "1. No podrá autorizarse o reconocerse compatibilidad al personal funcionario, al personal eventual y al personal laboral cuando las retribuciones complementarias que tengan derecho a percibir del apartado b) del artículo 24 del presente Estatuto incluyan el factor de incompatibilidad al retribuido por arancel y al personal directivo, incluido el sujeto a la relación laboral de carácter especial de alta dirección.\n\n2. A efectos de lo dispuesto en el presente artículo, la dedicación del profesorado universitario a tiempo completo tiene la consideración de especial dedicación.\n\n3. Se exceptúan de la prohibición enunciada en el apartado 1, las autorizaciones de compatibilidad para ejercer como Profesor universitario asociado en los términos del apartado 1 del artículo 4.º, así como para realizar las actividades de investigación o asesoramiento a que se refiere el artículo 6.º de esta Ley, salvo para el personal docente universitario a tiempo completo.\n\n4. Asimismo, por excepción y sin perjuicio de las limitaciones establecidas en los artículos 1º.3, 11, 12 y 13 de la presente Ley, podrá reconocerse compatibilidad para el ejercicio de actividades privadas al personal que desempeñe puestos de trabajo que comporten la percepción de complementos específicos, o concepto equiparable, cuya cuantía no supere el 30 por 100 de su retribución básica, excluidos los conceptos que tengan su origen en la antigüedad.",
+   "notes": "Téngase en cuenta que esta última actualización del apartado 1 establecida por la disposición final 3 del texto refundido de la Ley del Estatuto Básico del Empleado Público aprobado por Real Decreto Legislativo 5/2015, de 30 de octubre. Ref. BOE-A-2015-11719#dftercera . producirá efectos en cada Administración Pública a partir de la entrada en vigor del capítulo III del título III con la aprobación de las leyes de Función Pública de las Administraciones Públicas que se dicten en desarrollo de este Estatuto, según establece su disposición final 4. Redacción anterior: \"1. No podrá autorizarse o reconocerse compatibilidad alguna al personal que desempeñe puestos que comporten la percepción de complementos específicos o concepto equiparable, y al retribuido por arancel.\"\nSe modifica el apartado 1 por la disposición final 3 del texto refundido de la Ley del Estatuto Básico del Empleado Público aprobado por Real Decreto Legislativo 5/2015, de 30 de octubre. Ref. BOE-A-2015-11719#dftercera . Esta modificación producirá efectos en cada Administración Pública a partir de la entrada en vigor del capítulo III del título III con la aprobación de las leyes de Función Pública de las Administraciones Públicas que se dicten en desarrollo del citado Estatuto, según establece su disposición final 4. Se modifica el apartado 1 por la disposición final 3.2 de la Ley 7/2007, de 12 de abril. Ref. BOE-A-2007-7788 Téngase en cuenta la disposición final 4.2 para su aplicación. Se añade el apartado 4 por el art. 34 de la Ley 31/1991, de 30 de diciembre. Ref. BOE-A-1991-30903"
+  },
+  {
+   "id": "adiecisiete",
+   "kind": "article",
+   "title": "Artículo diecisiete.",
+   "body": "1. Los Delegados del Gobierno en las Comunidades Autónomas, en relación al personal de los servicios periféricos de ámbito regional, y los Gobernadores civiles respecto al de los servicios periféricos provinciales, ejercerán las facultades que esta Ley atribuye a los Subsecretarios de los Departamentos respecto del personal de la Administración Civil del Estado y de sus Organismos autónomos y de la Seguridad Social.\n\n2. Las referencias a las facultades que esta Ley atribuye a las Subsecretarías y órganos competentes de las Comunidades Autónomas se entenderán referidas al Rector de cada Universidad, en relación al personal al servicio de la misma, en el marco del respectivo Estatuto."
+  },
+  {
+   "id": "adieciocho",
+   "kind": "article",
+   "title": "Artículo dieciocho.",
+   "body": "Todas las resoluciones de compatibilidad para desempeñar un segundo puesto o actividad en el sector público o el ejercicio de actividades privadas se inscribirán en los Registros de Personal correspondientes. Este requisito será indispensable, en el primer caso, para que puedan acreditarse haberes a los afectados por dicho puesto o actividad."
+  },
+  {
+   "id": "adiecinueve",
+   "kind": "article",
+   "title": "Artículo diecinueve.",
+   "body": "Quedan exceptuadas del régimen de incompatibilidades de la presente Ley las actividades siguientes:\n\na) Las derivadas de la Administración del patrimonio personal o familiar, sin perjuicio de lo dispuesto en el artículo 12 de la presente Ley.\n\nb) La dirección de seminarios o el dictado de cursos o conferencias en Centros oficiales destinados a la formación de funcionarios o profesorado, cuando no tenga carácter permanente o habitual ni supongan más de setenta y cinco horas al año, así como la preparación para el acceso a la función pública en los casos y forma que reglamentariamente se determine.\n\nc) La participación en Tribunales calificadores de pruebas selectivas para ingreso en las Administraciones Públicas.\n\nd) La participación del personal docente en exámenes, pruebas o evaluaciones distintas de las que habitualmente les correspondan, en la forma reglamentariamente establecida.\n\ne) El ejercicio del cargo de Presidente, Vocal o miembro de Juntas rectoras de Mutualidades o Patronatos de Funcionarios, siempre que no sea retribuido.\n\nf) La producción y creación literaria, artística, científica y técnica, así como las publicaciones derivadas de aquéllas, siempre que no se originen como consecuencia de una relación de empleo o de prestación de servicios.\n\ng) La participación ocasional en coloquios y programas en cualquier medio de comunicación social; y\n\nh) La colaboración y la asistencia ocasional a Congresos, seminarios, conferencias o cursos de carácter profesional."
+  },
+  {
+   "id": "aveinte",
+   "kind": "article",
+   "title": "Artículo veinte.",
+   "body": "1. El incumplimiento de lo dispuesto en los artículos anteriores será sancionado conforme al régimen disciplinario de aplicación, sin perjuicio de la ejecutividad de la incompatibilidad en que se haya incurrido.\n\n2. El ejercicio de cualquier actividad compatible no servirá de excusa al deber de residencia, a la asistencia al lugar de trabajo que requiera su puesto o cargo, ni al atraso, negligencia o descuido en el desempeño de los mismos. Las correspondientes faltas serán calificadas y sancionadas conforme a las normas que se contengan en el régimen disciplinario aplicable, quedando automáticamente revocada la autorización o reconocimiento de compatibilidad si en la resolución correspondiente se califica de falta grave o muy grave.\n\n3. Los órganos a los que competa la dirección, inspección o jefatura de los diversos servicios cuidarán bajo su responsabilidad de prevenir o corregir, en su caso, las incompatibilidades en que pueda incurrir el personal. Corresponde a la Inspección General de Servicios de la Administración Pública, además de su posible intervención directa, la coordinación e impulso de la actuación de los órganos de inspección mencionados en materia de incompatibilidades, dentro del ámbito de la Administración del Estado, sin perjuicio de una recíproca y adecuada colaboración con las inspecciones o unidades de personal correspondiente de las Comunidades Autónomas y de las Corporaciones locales."
+  },
+  {
+   "id": "primera",
+   "kind": "article",
+   "title": "Disposición adicional primera.",
+   "body": "Con la salvedad del artículo 3.º, 2, las situaciones de incompatibilidad que se produzcan por aplicación de esta Ley se entienden con respeto de los derechos consolidados o en trámite de consolidación en materia de Derechos Pasivos o de pensiones de cualquier régimen de Seguridad Social, quedando condicionados, en su caso, a los niveles máximos de percepción o de actualización que puedan establecerse."
+  },
+  {
+   "id": "segunda",
+   "kind": "article",
+   "title": "Disposición adicional segunda.",
+   "body": "Toda modificación del régimen de incompatibilidades de la presente Ley contendrá una redacción completa de las normas afectadas."
+  },
+  {
+   "id": "tercera",
+   "kind": "article",
+   "title": "Disposición adicional tercera.",
+   "body": "El Consejo Superior de la Función Pública informará cada seis meses a las Cortes Generales de las autorizaciones de compatibilidades concedidas en todas las Administraciones Públicas y en los Entes, Organismos y Empresas de ellas dependientes.\n\nA estos efectos, las distintas Administraciones Públicas deberán dar traslado al mencionado Consejo Superior de las autorizaciones de compatibilidad inscritas en sus correspondientes registros."
+  },
+  {
+   "id": "cuarta",
+   "kind": "article",
+   "title": "Disposición adicional cuarta.",
+   "body": "1. Los órganos de la Administración del Estado que reglamentariamente se señalen y los de gobierno de las Comunidades Autónomas podrán determinar, con carácter general, en el ámbito de su competencia, los puestos de trabajo del sector público sanitario susceptibles de prestación a tiempo parcial, en tanto se proceda a la regulación de esta materia por norma con rango de Ley.\n\n2. En tanto se dicta la norma aludida, la dirección de los distintos Centros hospitalarios se desempeñará en régimen de plena dedicación, sin posibilidad de simultanear esta función con alguna otra de carácter público o privado.\n\n3. Los órganos a que se refiere el apartado 1 podrán determinar, asimismo, con carácter general y en el ámbito de su competencia, los puestos de carácter exclusivamente investigador de los Centros públicos de investigación susceptibles de prestación a tiempo parcial."
+  },
+  {
+   "id": "quinta",
+   "kind": "article",
+   "title": "Disposición adicional quinta.",
+   "body": "Se autoriza al Gobierno para adaptar en el plazo de seis meses, a propuesta del Ministerio de Defensa, de acuerdo con el de Interior, por lo que se refiere a la Guardia Civil, las disposiciones de esta Ley a la estructura y funciones específicas de las Fuerzas Armadas."
+  },
+  {
+   "id": "sexta",
+   "kind": "article",
+   "title": "Disposición adicional sexta.",
+   "body": "El Gobierno y los órganos competentes de las Comunidades Autónomas dictarán las normas precisas para la ejecución de la presente Ley, asegurando la necesaria coordinación y uniformidad de criterios y procedimientos."
+  },
+  {
+   "id": "septima",
+   "kind": "article",
+   "title": "Disposición adicional séptima.",
+   "body": "Las nuevas incompatibilidades generadas por virtud de la presente Ley tendrán efectividad en el ámbito docente a partir del 1 de octubre de 1985."
+  },
+  {
+   "id": "octava",
+   "kind": "article",
+   "title": "Disposición adicional octava.",
+   "body": "El régimen de incompatibilidades del personal incluido en el ámbito de aplicación de esta Ley que tenga la condición de Diputado o Senador de las Cortes Generales será el establecido en la futura Ley Electoral, siendo de aplicación entre tanto el régimen vigente en la actualidad."
+  },
+  {
+   "id": "novena",
+   "kind": "article",
+   "title": "Disposición adicional novena.",
+   "body": "La incompatibilidad a que se refiere el artículo 3.2 de esta Ley no será de aplicación a los Profesores universitarios eméritos."
+  },
+  {
+   "id": "primera-2",
+   "kind": "article",
+   "title": "Disposición transitoria primera.",
+   "body": "Al personal que por virtud de la presente Ley incurra en incompatibilidades les serán de aplicación las siguientes normas:\n\na) Cuando la incompatibilidad se produzca por desempeño de más de un puesto en el sector público habrá de optar por uno de ellos en el plazo de tres meses, contados a partir de la entrada en vigor de la presente Ley.\n\nTratándose de funcionarios, a falta de opción en el plazo señalado, se entenderá que optan por el puesto correspondiente al grupo superior, y si lo fuera del mismo, por el de mayor antigüedad.\n\nEn cuanto a todo el personal laboral, así como al no funcionario de la Seguridad Social, se entenderá referida la opción al puesto dotado con mayor retribución básica.\n\nEn ambos casos pasarán a la situación de excedencia en los demás puestos que viniesen ocupando.\n\nb) Si la opción referida se realiza dentro del primer mes y la retribución íntegra del puesto por el que opte no supera la cifra que como retribución mínima se fija en los Presupuestos Generales para el ejercicio 1984, incrementada en un 50 por 100, podrán compatibilizarse el segundo puesto o actividad del sector público que viniera desempeñando en la fecha de entrada en vigor de esta Ley, por un plazo máximo e improrrogable de tres años y en las condiciones previstas en la misma. En el caso de que el puesto compatibilizado correspondiera a contratación temporal, el plazo aludido no podrá exceder además del tiempo que reste en el desempeño del mismo.\n\nLa resolución autorizando o denegando dicha compatibilidad se adoptará dentro de los tres meses siguientes a la entrada en vigor de esta Ley."
+  },
+  {
+   "id": "segunda-2",
+   "kind": "article",
+   "title": "Disposición transitoria segunda.",
+   "body": "(Sin efecto)",
+   "notes": "Se deja sin efecto por el Real Decreto 2005/1986, de 25 de septiembre. Ref. BOE-A-1986-25803"
+  },
+  {
+   "id": "tercera-2",
+   "kind": "article",
+   "title": "Disposición transitoria tercera.",
+   "body": "1. Sin perjuicio de lo dispuesto en los artículos 11 y 12, así como en la disposición transitoria quinta, hasta el 30 de septiembre de 1985 el personal sanitario podrá compatibilizar dos puestos de trabajo en el sector público, si los viniera desempeñando con anterioridad al 1 de enero de 1983, o hubiera obtenido autorización expresa con posterioridad, siempre que no se produzca entre ellos coincidencia de horario y no fueran incompatibles al 1 de enero de 1963, si bien una remuneración lo será en concepto de sueldo y la otra como gratificación, a cuyo efecto deberán formular los afectados la oportuna opción en los términos que reglamentariamente se determinen.\n\nDicha compatibilidad quedará anulada cuando, como consecuencia de reordenación asistencial y racionalización de funciones de cualquiera de los puestos, se aumente su horario hasta alcanzar la jornada ordinaria de las Administraciones Públicas o se establezca el régimen de jornada partida para quienes vinieren desarrollando su actividad en jornada continuada ordinaria, debiendo optar por uno de los puestos en el plazo de tres meses desde la efectividad de la modificación. Si lo hiciere por el puesto reordenado se le garantizará, por el período transitorio aludido, el importe total de retribuciones que viniera percibiendo por los dos puestos compatibilizados.\n\n2. Sin perjuicio asimismo de lo dispuesto en los artículos 11 y 12, a partir de 1 de octubre de 1985 quedarán anuladas todas las compatibilidades aludidas en el apartado anterior cuando con anterioridad uno de los puestos viniera desempeñándose en régimen de jornada ordinaria, debiendo optar por uno de ellos en el plazo de tres meses contado a partir de dicha fecha.\n\nTambién se producirá la citada anulación de compatibilidad cuando, con posterioridad a 1 de octubre de 1985 y en virtud de reordenación, uno de los puestos pasara a ser jornada ordinaria, debiéndose realizar la misma opción en el plazo de tres meses a partir de la efectividad de aquélla, siendo de aplicación desde la fecha citada en primer lugar lo dispuesto en el artículo 13.\n\n3. Realizada cualquiera de las opciones indicadas en esta disposición transitoria se pasará automáticamente en el otro puesto a la situación de excedencia.\n\nA falta de opción en los plazos señalados se entenderá que opta por el puesto de jornada ordinaria, pasando a la situación de excedencia en el otro puesto. Si ambos fueran de jornada ordinaria, por el grupo superior, y si lo fueran del mismo, por el de mayor nivel. En cuanto al personal laboral y al no funcionario de la Seguridad Social se entenderá referida la opción al puesto dotado con mayor retribución básica."
+  },
+  {
+   "id": "cuarta-2",
+   "kind": "article",
+   "title": "Disposición transitoria cuarta.",
+   "body": "En tanto se establece la regulación de los hospitales universitarios, la actividad docente de los Catedráticos y Profesores de Facultades de Medicina y Farmacia y de Escuelas Universitarias de Enfermería no precisarán autorización de compatibilidad para su complementaria actividad asistencial en los centros hospitalarios de la Universidad o concertados con la misma, pudiendo desempeñar dichas actividades, en su conjunto, en régimen de dedicación completa o a tiempo parcial."
+  },
+  {
+   "id": "quinta-2",
+   "kind": "article",
+   "title": "Disposición transitoria quinta.",
+   "body": "Los funcionarios de los Cuerpos Especiales al servicio de la Sanidad Local que deban prestar asistencia sanitaria a los beneficiarios de la Seguridad Social, en las condiciones legalmente establecidas, continuarán prestando las mismas funciones y devengando las remuneraciones que figuran en los Presupuestos del Estado y de la Seguridad Social, en tanto se reestructuran los Cuerpos o funciones aludidos, si bien una remuneración lo será en concepto de sueldo y la otra como gratificación, a cuyo efecto deberán formular los afectados la oportuna opción en los términos que reglamentariamente se determinen.\n\nEn todo caso se les garantizará, a título personal, hasta el 30 de septiembre de 1985, el importe de la media mensual de las retribuciones percibidas en los dos puestos en los doce meses anteriores a la entrada en vigor de esta Ley."
+  },
+  {
+   "id": "sexta-2",
+   "kind": "article",
+   "title": "Disposición transitoria sexta.",
+   "body": "Lo previsto en el artículo 12.2 de esta Ley no será de aplicación a los Farmacéuticos titulares obligados a tener oficina de farmacia abierta en la propia localidad en que ejercen su función."
+  },
+  {
+   "id": "septima-2",
+   "kind": "article",
+   "title": "Disposición transitoria séptima.",
+   "body": "(Derogada)",
+   "notes": "Se deroga por la disposición derogatoria única de la Ley Orgánica 7/1992, de 20 de noviembre. Ref. BOE-A-1992-25817"
+  },
+  {
+   "id": "octava-2",
+   "kind": "article",
+   "title": "Disposición transitoria octava.",
+   "body": "Lo dispuesto en el artículo 3.º, 2, de la presente Ley no será de aplicación, en cuanto a la pensión de retiro, a los funcionarios integrados en las Administraciones Públicas al amparo de las Leyes de 15 de julio de 1952, 28 de diciembre de 1963 y 17 de julio de 1958, salvo cuando en el puesto administrativo que desempeñen perciban el total de retribuciones que al mismo correspondan."
+  },
+  {
+   "id": "novena-2",
+   "kind": "article",
+   "title": "Disposición transitoria novena.",
+   "body": "(Suprimida)",
+   "notes": "Se suprime por el art. 5.9 de la Ley 40/2007, de 4 de diciembre. Ref. BOE-A-2007-20910"
+  },
+  {
+   "id": "dt",
+   "kind": "article",
+   "title": "Disposición transitoria décima. Autorizaciones de compatibilidad concedidas a los Catedráticos y Profesores de Música y Artes Escénicas.",
+   "body": "Las autorizaciones de compatibilidad concedidas a los Catedráticos y Profesores de Música y Artes Escénicas que presten servicio en los Conservatorios Superiores de Música y en los Conservatorios Profesionales de Música se mantendrán vigentes siempre que no se produzcan modificaciones en ninguna de las actividades públicas declaradas compatibles.",
+   "notes": "Se añade por la disposición final 1.3 de la Ley 1/2024, de 7 de junio. Ref. BOE-A-2024-11613#df"
+  },
+  {
+   "id": "primera-3",
+   "kind": "article",
+   "title": "Disposición final primera.",
+   "body": "Las anteriores normas de esta Ley se considerarán bases del régimen estatutario de la función pública, dictadas al amparo del artículo 149.1, 18, de la Constitución, a excepción de las contenidas en los preceptos siguientes: artículo 17.1, disposición adicional quinta y disposición transitoria séptima."
+  },
+  {
+   "id": "segunda-3",
+   "kind": "article",
+   "title": "Disposición final segunda.",
+   "body": "El régimen de incompatibilidades del personal de las Cortes Generales se regulará por el Estatuto al que se refiere el artículo 72.1 de la Constitución, que se ajustará a la presente Ley."
+  },
+  {
+   "id": "tercera-3",
+   "kind": "article",
+   "title": "Disposición final tercera.",
+   "body": "1. En el plazo de tres meses, desde la entrada en vigor de la presente Ley, quedarán sin efecto las autorizaciones de compatibilidad concedidas para el desempeño de cargos, puestos o actividades públicos.\n\nLos susceptibles de autorización con arreglo a esta Ley habrán de ajustarse a lo previsto en ella.\n\nLo dispuesto en los párrafos anteriores de este apartado se entenderá sin perjuicio de lo previsto en la disposición adicional séptima y transitorias tercera, cuarta, quinta y séptima.\n\n2. La adecuación a las normas de esta Ley de los reconocimientos de compatibilidad de actividades privadas, efectuados con anterioridad a su entrada en vigor, se realizará en la forma que reglamentariamente se determine."
+  },
+  {
+   "id": "dd",
+   "kind": "article",
+   "title": "Disposición derogatoria",
+   "body": "Quedan derogadas todas las disposiciones con rango de Ley o inferior, sean de carácter general o especial, en cuanto se opongan a lo dispuesto en la presente Ley, quedando subsistentes las incompatibilidades más rigurosas establecidas para personal determinado de acuerdo con la especial naturaleza de su función."
+  }
+ ]
+}

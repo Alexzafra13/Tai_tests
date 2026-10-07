@@ -12,6 +12,7 @@ export type Topic = {
   title: string;
   questions: number;
   published: number;
+  laws: number;
 };
 
 export type Block = {

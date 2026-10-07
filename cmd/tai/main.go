@@ -39,6 +39,7 @@ Commands:
   load-syllabus  Load or update the syllabus from a JSON file
   add-source     Add a source document (law, technical doc, exam)
   import-exam    Write a question bank file from an INAP exam (PDFs)
+  fetch-law      Download a law's consolidated text from the BOE (data/laws)
   user           Manage accounts: user list | user add | user passwd
   version        Print the version
 
@@ -70,6 +71,8 @@ func main() {
 		err = runAddSource(ctx, log, os.Args[2:])
 	case "import-exam":
 		err = runImportExam(ctx, log, os.Args[2:])
+	case "fetch-law":
+		err = runFetchLaw(ctx, log, os.Args[2:])
 	case "user":
 		err = runUser(ctx, log, os.Args[2:])
 	case "version":
@@ -161,9 +164,10 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 	return server.Run(ctx, cfg.Addr, srv.Handler(), log)
 }
 
-// loadBank adds the bundled official questions this installation does not
-// have yet. A new installation first gets the bundled syllabus, so checked
-// questions can arrive published with their topics.
+// loadBank adds the bundled official content this installation does not
+// have yet. A new installation first gets the bundled syllabus, so the
+// laws can be linked to their topics and checked questions can arrive
+// published with theirs.
 func loadBank(ctx context.Context, log *slog.Logger, cs *content.Store) error {
 	blocks, err := cs.Syllabus(ctx)
 	if err != nil {
@@ -179,6 +183,21 @@ func loadBank(ctx context.Context, log *slog.Logger, cs *content.Store) error {
 			return err
 		}
 		log.Info("syllabus loaded", "name", f.Name, "blocks", res.Blocks, "topics", res.Topics)
+	}
+
+	laws, lawTopics, err := content.ReadLaws(data.Laws())
+	if err != nil {
+		return err
+	}
+	lres, err := cs.LoadLaws(ctx, laws, lawTopics)
+	if err != nil {
+		return err
+	}
+	for _, p := range lres.Problems {
+		log.Warn("law text not updated", "reason", p)
+	}
+	if lres.Added+lres.Updated > 0 {
+		log.Info("laws loaded", "added", lres.Added, "updated", lres.Updated)
 	}
 
 	files, err := content.ReadBank(data.Bank())

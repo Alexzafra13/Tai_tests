@@ -22,6 +22,8 @@ import { SettingsPage } from "./pages/settings/SettingsPage";
 import { UsersPage } from "./pages/users/UsersPage";
 import { ReviewPage } from "./pages/review/ReviewPage";
 import { BatchReviewPage } from "./pages/review/BatchReviewPage";
+import { StudyTopicPage } from "./pages/study/StudyTopicPage";
+import { LawPage } from "./pages/study/LawPage";
 import { StatsPage } from "./pages/stats/StatsPage";
 import { SearchPage } from "./pages/SearchPage";
 import { AppNotices } from "./components/AppNotices";
@@ -78,6 +80,8 @@ function App() {
         <Route path="tests/new" element={<NewTestPage />} />
         <Route path="tests/:id" element={<TestPage />} />
         <Route path="syllabus" element={<SyllabusPage />} />
+        <Route path="study/:topicId" element={<StudyTopicPage />} />
+        <Route path="study/:topicId/laws/:lawId" element={<LawPage />} />
         <Route path="stats" element={<StatsPage />} />
         <Route path="search" element={<SearchPage />} />
         <Route path="settings" element={<SettingsPage />} />

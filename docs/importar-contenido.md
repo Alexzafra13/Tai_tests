@@ -111,13 +111,36 @@ con los temas asignados.
 
 ### 6. Leyes del temario
 
-Añadir como fuentes las leyes que cita el temario, con su **texto
-consolidado del BOE** (referencia BOE-A-…, fecha de la versión):
+Las leyes de cada tema van en `data/laws/`, dentro del binario: un JSON por
+norma con su **texto consolidado del BOE** tal cual, por títulos, capítulos
+y artículos, y `topics.json` con las normas de cada tema (`parts` limita una
+norma a algunos de sus títulos). Al arrancar se cargan como fuentes de tipo
+ley, con su texto completo para validar citas, y se leen en
+**Temario → Leyes**.
 
-```sh
-go run ./cmd/tai add-source -kind law -title "Ley 39/2015, del Procedimiento Administrativo Común" \
-  -ref BOE-A-2015-10565 -version 2024-01-01 -text - < data/raw/boe/ley39.txt
-```
+1. Elegir las normas de un tema por lo que nombra el temario y lo que citan
+   las preguntas oficiales del banco.
+2. Descargarla de la API de datos abiertos del BOE:
+
+   ```sh
+   go run ./cmd/tai fetch-law -ref BOE-A-2015-10565 -alias "LPACAP"
+   ```
+
+   Guarda la redacción vigente de cada artículo y, si ya hay publicada una
+   reforma que entra en vigor más tarde, también esa con su fecha; la app
+   muestra la que toque cada día. Deja fuera lo caducado (capítulos
+   suprimidos) y las firmas. `-alias` añade nombres con que las preguntas
+   citan la norma, además de su número.
+3. Añadirla a `topics.json` y `make test`.
+4. Para actualizar una norma, se vuelve a ejecutar `fetch-law`. Si el texto
+   nuevo deja sin respaldo la cita de alguna pregunta, la instalación
+   conserva el anterior y lo avisa al arrancar.
+
+Hecho: las 22 normas españolas del bloque I (comprobado con la web del BOE:
+el texto de cada artículo coincide). Pendiente: el RGPD y el reglamento
+eIDAS, que solo están completos y vigentes en EUR-Lex (hay que permitir
+`eur-lex.europa.eu` y `publications.europa.eu` en la red del entorno), y
+las Normas Técnicas de Interoperabilidad.
 
 Es la base para generar después preguntas de ley con cita literal (fase 6).
 
