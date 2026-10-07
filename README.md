@@ -13,7 +13,7 @@ IA solo transforma textos aportados y todo lo que genera pasa por revisión.
 Solo hace falta Docker. En el servidor, un solo comando:
 
 ```sh
-docker run -d --name tai --restart unless-stopped -p 8080:8080 -v tai-data:/data ghcr.io/alexzafra13/tai_tests:latest
+docker run -d --name tai --restart unless-stopped -p 9080:8080 -v tai-data:/data ghcr.io/alexzafra13/tai_tests:latest
 ```
 
 O, si prefieres Compose (más cómodo para actualizar):
@@ -23,7 +23,7 @@ curl -O https://raw.githubusercontent.com/alexzafra13/Tai_tests/main/docker-comp
 docker compose up -d
 ```
 
-Abre `http://<tu-servidor>:8080`: la primera vez aparece la pantalla
+Abre `http://<tu-servidor>:9080`: la primera vez aparece la pantalla
 **Bienvenido** para crear la cuenta de administrador. No hay que configurar
 nada más; el resto (usuarios, nota, temario…) se gestiona desde la app.
 
@@ -53,8 +53,9 @@ ajustar:
 - **Administrador:** se crea en la pantalla de bienvenida.
 
 Lo único que podrías querer cambiar es el **puerto**: en
-`docker-compose.yml`, cambia el primer número de `"8080:8080"` (por
-ejemplo `"9000:8080"`).
+`docker-compose.yml`, cambia el primer número de `"9080:8080"` (por
+ejemplo `"9000:8080"`). El segundo, 8080, es el de dentro del contenedor y
+no hay que tocarlo.
 
 Para casos especiales (sin navegador, fuera de Docker) siguen existiendo
 variables de entorno opcionales: `TAI_ADMIN_USER` / `TAI_ADMIN_PASSWORD`

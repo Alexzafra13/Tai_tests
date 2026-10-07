@@ -1,4 +1,4 @@
-# Start with:  docker compose up -d   then open http://<server>:8080
+# Start with:  docker compose up -d   then open http://<server>:9080
 # Update with: docker compose pull && docker compose up -d
 #
 # Nothing to configure: on first start the app asks you to create the
@@ -10,8 +10,9 @@ services:
     container_name: tai
     restart: unless-stopped
     ports:
-      # To use another port change the first number, e.g. "9000:8080".
-      - "8080:8080"
+      # The app listens on 8080 inside the container; 9080 is the server's
+      # port. To use another one change the first number, e.g. "9000:8080".
+      - "9080:8080"
     volumes:
       - tai-data:/data
 
