@@ -220,3 +220,68 @@ func TestQuestionArticlesLinkBack(t *testing.T) {
 		t.Errorf("another law %+v", links[none])
 	}
 }
+
+func TestBankArticlesReplaceCitations(t *testing.T) {
+	ctx := context.Background()
+	s := newStore(t)
+	t1, _ := lawTopicsFor(t, s)
+	topics := LawTopics{"B1-T01": {{Law: "BOE-A-1978-31229"}}}
+	if _, err := s.LoadLaws(ctx, []LawFile{testLaw("2026-05-20")}, topics); err != nil {
+		t.Fatal(err)
+	}
+	file := func(articles []BankArticle) BankFile {
+		return BankFile{Source: BankSource{Kind: KindINAPExam, Title: "Examen", Reference: "EX"}, Questions: []BankQuestion{
+			// The stem cites article 13, but the bank says article 62 answers it.
+			{Key: "1", SourceRef: "nº 1", Stem: "Según el artículo 13 de la CE, ¿a quién corresponde sancionar las leyes?",
+				Options: [4]string{"Al Rey", "B", "C", "D"}, Correct: "a", Topics: []string{"B1-T01"}, Status: StatusPublished,
+				Articles: articles},
+			{Key: "2", SourceRef: "nº 2", Stem: "¿Qué dice la Constitución Española?", Options: [4]string{"A", "B", "C", "D"},
+				Correct: "a", Topics: []string{"B1-T01"}, Status: StatusPublished,
+				Articles: []BankArticle{{Law: "BOE-A-1978-31229"}}},
+		}}
+	}
+	if _, err := s.LoadBank(ctx, []BankFile{file([]BankArticle{{Law: "BOE-A-1978-31229", Section: "a13"}})}); err != nil {
+		t.Fatal(err)
+	}
+	// A later bank changes the article of a question already loaded.
+	if _, err := s.LoadBank(ctx, []BankFile{file([]BankArticle{{Law: "BOE-A-1978-31229", Section: "a62"}})}); err != nil {
+		t.Fatal(err)
+	}
+
+	srcs, _ := s.ListSources(ctx, KindLaw)
+	text, err := s.LawText(ctx, srcs[0].ID, 0, time.Date(2026, 10, 7, 0, 0, 0, 0, time.UTC))
+	if err != nil {
+		t.Fatal(err)
+	}
+	got := map[string][]string{}
+	for _, sec := range text.Sections {
+		for _, q := range sec.Questions {
+			got[sec.ID] = append(got[sec.ID], q.SourceRef)
+		}
+	}
+	if len(got) != 1 || strings.Join(got["a62"], ",") != "nº 1" {
+		t.Errorf("by article %v", got)
+	}
+	if len(text.Questions) != 1 || text.Questions[0].SourceRef != "nº 2" {
+		t.Errorf("general %+v", text.Questions)
+	}
+
+	page, _ := s.ListQuestions(ctx, QuestionFilter{SourceID: 0, Limit: 10})
+	var ids []int64
+	for _, q := range page.Items {
+		ids = append(ids, q.ID)
+	}
+	links, err := s.QuestionArticles(ctx, ids)
+	if err != nil {
+		t.Fatal(err)
+	}
+	var all []string
+	for _, ls := range links {
+		for _, l := range ls {
+			all = append(all, fmt.Sprintf("%s %d", l.BlockID, l.TopicID))
+		}
+	}
+	if strings.Join(all, "|") != fmt.Sprintf("a62 %d", t1) {
+		t.Errorf("links %v", all)
+	}
+}

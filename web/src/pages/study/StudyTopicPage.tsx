@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router";
 import { useResource } from "../../hooks";
 import type { StudyTopic } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
-import { formatDay, lawShortName } from "../../format";
+import { formatDay, lawOrigin, lawShortName } from "../../format";
 import "./study.css";
 
 // StudyTopicPage lists the laws of a topic: the literal consolidated text
@@ -40,7 +40,7 @@ export function StudyTopicPage() {
                   {lawShortName(l.title) && <span className="muted law-meta">{l.title}</span>}
                   {l.parts.length > 0 && <span className="law-parts">{l.parts.join(" · ")}</span>}
                   <span className="muted law-meta">
-                    Texto consolidado del BOE · versión del {formatDay(l.version_date)}
+                    {lawOrigin(l.reference).text} · versión del {formatDay(l.version_date)}
                   </span>
                   {l.cited_articles > 0 && (
                     <span className="badge warn">

@@ -51,6 +51,17 @@ type BankQuestion struct {
 	Topics []string `json:"topics,omitempty"`
 	// Status is "published" for checked questions; empty means draft.
 	Status Status `json:"status,omitempty"`
+	// Articles are the sections of the study texts (data/laws) that answer
+	// the question, checked by hand. They replace the articles the app
+	// would find from the stem.
+	Articles []BankArticle `json:"articles,omitempty"`
+}
+
+// BankArticle points to a section of a bundled law; an empty Section
+// points to the law as a whole.
+type BankArticle struct {
+	Law     string `json:"law"`
+	Section string `json:"section,omitempty"`
 }
 
 // CorrectIndex converts a letter (a-d) to an option index.
@@ -107,6 +118,11 @@ func ParseBankFile(b []byte) (BankFile, error) {
 		if q.Status != "" && q.Status != StatusPublished {
 			return f, fmt.Errorf("bank: question %s: status must be empty or published", q.Key)
 		}
+		for _, a := range q.Articles {
+			if a.Law == "" {
+				return f, fmt.Errorf("bank: question %s: an article needs its law", q.Key)
+			}
+		}
 	}
 	return f, nil
 }
@@ -140,11 +156,42 @@ type BankResult struct {
 func (s *Store) LoadBank(ctx context.Context, files []BankFile) (BankResult, error) {
 	var res BankResult
 	for _, f := range files {
-		if err := s.inTx(ctx, func(tx *sql.Tx) error { return s.loadBankFile(ctx, tx, f, &res) }); err != nil {
+		err := s.inTx(ctx, func(tx *sql.Tx) error {
+			if err := s.loadBankFile(ctx, tx, f, &res); err != nil {
+				return err
+			}
+			return linkBankArticles(ctx, tx, f)
+		})
+		if err != nil {
 			return res, fmt.Errorf("bank %s: %w", f.Source.Reference, err)
 		}
 	}
 	return res, nil
+}
+
+// linkBankArticles stores the articles of the file's questions, also of
+// those loaded by an earlier version, found by their source reference.
+func linkBankArticles(ctx context.Context, tx *sql.Tx, f BankFile) error {
+	for _, q := range f.Questions {
+		var id int64
+		err := tx.QueryRowContext(ctx, `SELECT q.id FROM questions q JOIN sources s ON s.id = q.source_id
+			WHERE s.kind = ? AND s.reference = ? AND q.source_ref = ?`, f.Source.Kind, f.Source.Reference, q.SourceRef).Scan(&id)
+		if errors.Is(err, sql.ErrNoRows) {
+			continue // deleted in this installation
+		} else if err != nil {
+			return err
+		}
+		if _, err := tx.ExecContext(ctx, `DELETE FROM question_sections WHERE question_id = ?`, id); err != nil {
+			return err
+		}
+		for i, a := range q.Articles {
+			if _, err := tx.ExecContext(ctx, `INSERT INTO question_sections (question_id, position, law_reference, block_id)
+				VALUES (?, ?, ?, ?)`, id, i, a.Law, a.Section); err != nil {
+				return err
+			}
+		}
+	}
+	return nil
 }
 
 func (s *Store) loadBankFile(ctx context.Context, tx *sql.Tx, f BankFile, res *BankResult) error {

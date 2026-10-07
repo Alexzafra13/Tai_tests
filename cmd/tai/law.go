@@ -23,7 +23,7 @@ import (
 // start.
 func runFetchLaw(ctx context.Context, log *slog.Logger, args []string) error {
 	fs := flag.NewFlagSet("fetch-law", flag.ExitOnError)
-	ref := fs.String("ref", "", "BOE reference of the law, e.g. BOE-A-2015-10565")
+	ref := fs.String("ref", "", "BOE reference of the law, e.g. BOE-A-2015-10565, or CELEX number of an EU regulation, e.g. 32016R0679")
 	alias := fs.String("alias", "", `extra names questions use for it, comma separated, e.g. "Constitución Española,CE"`)
 	dir := fs.String("dir", "data/laws", "directory of the law files")
 	fs.Parse(args)
@@ -81,29 +81,21 @@ func runRefreshLaws(ctx context.Context, log *slog.Logger, args []string) error 
 	return nil
 }
 
-// fetchLaw writes the law's file in dir and returns its content.
+// fetchLaw writes the law's file in dir and returns its content. ref is a
+// BOE reference or, for an EU regulation, its CELEX number.
 func fetchLaw(ctx context.Context, log *slog.Logger, ref string, extraAliases []string, dir string) ([]byte, error) {
-	metaJSON, err := httpGet(ctx, lawtext.MetadataURL(ref), "application/json")
-	if err != nil {
-		return nil, err
+	var law content.LawFile
+	var err error
+	if lawtext.IsCELEX(ref) {
+		law, err = fetchEURLex(ctx, ref)
+	} else {
+		law, err = fetchBOE(ctx, ref)
 	}
-	meta, err := lawtext.ParseMetadata(metaJSON)
-	if err != nil {
-		return nil, fmt.Errorf("%s: %w", ref, err)
-	}
-	textXML, err := httpGet(ctx, lawtext.TextURL(ref), "application/xml")
-	if err != nil {
-		return nil, err
-	}
-	sections, err := lawtext.ParseText(textXML, time.Now())
 	if err != nil {
 		return nil, fmt.Errorf("%s: %w", ref, err)
 	}
-
-	law := content.LawFile{
-		Reference: ref, Title: meta.Title, URL: lawtext.PageURL(ref), VersionDate: meta.VersionDate,
-		Aliases: lawtext.Aliases(meta.Title, extraAliases), Sections: sections,
-	}
+	law.Aliases = lawtext.Aliases(law.Title, extraAliases)
+	sections := law.Sections
 	var buf bytes.Buffer
 	enc := json.NewEncoder(&buf)
 	enc.SetEscapeHTML(false)
@@ -125,30 +117,98 @@ func fetchLaw(ctx context.Context, log *slog.Logger, ref string, extraAliases []
 			upcoming++
 		}
 	}
-	log.Info("law written", "file", out, "title", meta.Title, "version", meta.VersionDate,
+	log.Info("law written", "file", out, "title", law.Title, "version", law.VersionDate,
 		"sections", len(sections), "articles", articles, "changes_pending", upcoming)
 	return buf.Bytes(), nil
 }
 
+func fetchBOE(ctx context.Context, ref string) (content.LawFile, error) {
+	metaJSON, err := httpGet(ctx, lawtext.MetadataURL(ref), "application/json")
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	meta, err := lawtext.ParseMetadata(metaJSON)
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	textXML, err := httpGet(ctx, lawtext.TextURL(ref), "application/xml")
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	sections, err := lawtext.ParseText(textXML, time.Now())
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	return content.LawFile{Reference: ref, Title: meta.Title, URL: lawtext.PageURL(ref), VersionDate: meta.VersionDate,
+		Sections: sections}, nil
+}
+
+// fetchEURLex takes the latest consolidated version of an EU regulation.
+// EUR-Lex has no future wordings: changes appear once in force.
+func fetchEURLex(ctx context.Context, celex string) (content.LawFile, error) {
+	page, err := httpGet(ctx, lawtext.EURLexVersionsURL(celex), "text/html")
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	version, err := lawtext.LatestEURLexVersion(page, celex)
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	day, err := lawtext.VersionDay(version)
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	text, err := httpGet(ctx, lawtext.EURLexTextURL(celex, version), "text/html")
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	title, sections, err := lawtext.ParseEURLexText(text)
+	if err != nil {
+		return content.LawFile{}, err
+	}
+	return content.LawFile{Reference: celex, Title: title, URL: lawtext.EURLexPageURL(celex), VersionDate: day,
+		Sections: sections}, nil
+}
+
+// httpGet retries a 202 answer: EUR-Lex sends it, with no content, while
+// its bot protection holds requests back.
 func httpGet(ctx context.Context, url, accept string) ([]byte, error) {
+	for wait := 5 * time.Second; ; wait *= 2 {
+		b, status, err := httpGetOnce(ctx, url, accept)
+		if err != nil {
+			return nil, err
+		}
+		switch {
+		case status == http.StatusOK:
+			return b, nil
+		case status == http.StatusAccepted && wait <= time.Minute:
+			select {
+			case <-ctx.Done():
+				return nil, ctx.Err()
+			case <-time.After(wait):
+			}
+		default:
+			return nil, fmt.Errorf("GET %s: %d %s", url, status, http.StatusText(status))
+		}
+	}
+}
+
+func httpGetOnce(ctx context.Context, url, accept string) ([]byte, int, error) {
 	ctx, cancel := context.WithTimeout(ctx, 2*time.Minute)
 	defer cancel()
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
 	if err != nil {
-		return nil, err
+		return nil, 0, err
 	}
 	req.Header.Set("Accept", accept)
 	resp, err := http.DefaultClient.Do(req)
 	if err != nil {
-		return nil, err
+		return nil, 0, err
 	}
 	defer resp.Body.Close()
 	b, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return nil, err
+		return nil, 0, err
 	}
-	if resp.StatusCode != http.StatusOK {
-		return nil, fmt.Errorf("GET %s: %s", url, resp.Status)
-	}
-	return b, nil
+	return b, resp.StatusCode, nil
 }

@@ -107,3 +107,35 @@ func TestLawsLoadCleanly(t *testing.T) {
 		t.Errorf("topics.json names %d topics, %d exist", len(topics), linked)
 	}
 }
+
+// The articles bank questions point to exist in the bundled laws.
+func TestBankArticlesExist(t *testing.T) {
+	files, err := content.ReadBank(data.Bank())
+	if err != nil {
+		t.Fatal(err)
+	}
+	laws, _, err := content.ReadLaws(data.Laws())
+	if err != nil {
+		t.Fatal(err)
+	}
+	sections := map[string]map[string]content.LawSectionKind{}
+	for _, l := range laws {
+		sections[l.Reference] = map[string]content.LawSectionKind{}
+		for _, s := range l.Sections {
+			sections[l.Reference][s.ID] = s.Kind
+		}
+	}
+	for _, f := range files {
+		for _, q := range f.Questions {
+			for _, a := range q.Articles {
+				secs, ok := sections[a.Law]
+				switch {
+				case !ok:
+					t.Errorf("%s %s: unknown law %s", f.Source.Reference, q.Key, a.Law)
+				case a.Section != "" && secs[a.Section] != content.SectionArticle:
+					t.Errorf("%s %s: %s has no article %q", f.Source.Reference, q.Key, a.Law, a.Section)
+				}
+			}
+		}
+	}
+}

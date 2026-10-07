@@ -369,8 +369,7 @@ func (s *Store) StudyTopic(ctx context.Context, topicID int64, today time.Time) 
 			case !keep[j]:
 			case sec.Kind == SectionHeading && sec.Level == top && parts[i] != "":
 				l.Parts = append(l.Parts, sec.Title)
-			case sec.Kind == SectionArticle && sec.Body != "" && cites[l.SourceID] != nil &&
-				len(cites[l.SourceID].byArticle[articleKey(sec.Title)]) > 0:
+			case sec.Body != "" && len(cites[l.SourceID].section(sec)) > 0:
 				l.CitedArticles++
 			}
 		}
@@ -477,7 +476,7 @@ func (s *Store) LawText(ctx context.Context, sourceID, topicID int64, today time
 	}
 
 	keep := selectParts(all, parts)
-	byArticle, general, err := s.lawQuestions(ctx, sourceID)
+	cites, err := s.lawQuestions(ctx, sourceID)
 	if err != nil {
 		return lt, err
 	}
@@ -489,15 +488,13 @@ func (s *Store) LawText(ctx context.Context, sourceID, topicID int64, today time
 			lt.topLevel = sec.Level
 		}
 		ts := LawTextSection{LawSection: sec, Questions: []QuestionBrief{}}
-		if sec.Kind == SectionArticle {
-			if qs := byArticle[articleKey(sec.Title)]; qs != nil {
-				ts.Questions = qs
-			}
+		if qs := cites.section(sec); qs != nil {
+			ts.Questions = qs
 		}
 		lt.Sections = append(lt.Sections, ts)
 	}
-	if topicID == 0 || parts == "" {
-		lt.Questions = general
+	if cites != nil && (topicID == 0 || parts == "") {
+		lt.Questions = cites.general
 	}
 	return lt, nil
 }
@@ -568,28 +565,66 @@ var articleRef = regexp.MustCompile(`(?i)\bart(?:[íi]culos?|\.)\s+(\d+)(?:\s*(b
 // by one of its aliases. An article the stem cites ("artículo 21",
 // "art. 62") is attributed to the nearest alias; questions citing no
 // single article of the law go to general.
-func (s *Store) lawQuestions(ctx context.Context, sourceID int64) (map[string][]QuestionBrief, []QuestionBrief, error) {
+func (s *Store) lawQuestions(ctx context.Context, sourceID int64) (*lawCites, error) {
 	all, err := s.lawCitations(ctx)
 	if err != nil {
-		return nil, nil, err
+		return nil, err
 	}
-	c := all[sourceID]
-	if c == nil {
-		return nil, []QuestionBrief{}, nil
-	}
-	return c.byArticle, c.general, nil
+	return all[sourceID], nil
 }
 
 type lawCites struct {
-	byArticle map[string][]QuestionBrief
+	byArticle map[string][]QuestionBrief // by articleKey, found in the stem
+	byBlock   map[string][]QuestionBrief // by block id, stated by the bank
 	general   []QuestionBrief
 }
 
+// section returns the questions of a section of the law.
+func (c *lawCites) section(sec LawSection) []QuestionBrief {
+	if c == nil || sec.Kind != SectionArticle {
+		return nil
+	}
+	return append(c.byArticle[articleKey(sec.Title)], c.byBlock[sec.ID]...)
+}
+
+// sectionRef is a section a question is linked to by the bank; an empty
+// block id stands for the whole law.
+type sectionRef struct {
+	sourceID int64
+	blockID  string
+}
+
+// questionSections returns the sections the bank links each question to,
+// for the laws this installation has.
+func (s *Store) questionSections(ctx context.Context) (map[int64][]sectionRef, error) {
+	rows, err := s.db.QueryContext(ctx, `SELECT qs.question_id, s.id, qs.block_id FROM question_sections qs
+		JOIN sources s ON s.kind = 'law' AND s.reference = qs.law_reference ORDER BY qs.question_id, qs.position`)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	out := map[int64][]sectionRef{}
+	for rows.Next() {
+		var qid int64
+		var r sectionRef
+		if err := rows.Scan(&qid, &r.sourceID, &r.blockID); err != nil {
+			return nil, err
+		}
+		out[qid] = append(out[qid], r)
+	}
+	return out, rows.Err()
+}
+
 // lawCitations finds, in one pass over the published questions, the
-// questions of every law (see lawQuestions).
+// questions of every law (see lawQuestions). The sections the bank links a
+// question to take the place of those found in its stem.
 func (s *Store) lawCitations(ctx context.Context) (map[int64]*lawCites, error) {
 	aliases, err := s.lawAliases(ctx)
 	if err != nil || len(aliases) == 0 {
+		return nil, err
+	}
+	linked, err := s.questionSections(ctx)
+	if err != nil {
 		return nil, err
 	}
 	rows, err := s.db.QueryContext(ctx, `SELECT id, source_ref, stem, option_a, option_b, option_c, option_d, correct
@@ -599,6 +634,14 @@ func (s *Store) lawCitations(ctx context.Context) (map[int64]*lawCites, error) {
 	}
 	defer rows.Close()
 	out := map[int64]*lawCites{}
+	cites := func(law int64) *lawCites {
+		c := out[law]
+		if c == nil {
+			c = &lawCites{byArticle: map[string][]QuestionBrief{}, byBlock: map[string][]QuestionBrief{}, general: []QuestionBrief{}}
+			out[law] = c
+		}
+		return c
+	}
 	for rows.Next() {
 		var q QuestionBrief
 		if err := rows.Scan(&q.ID, &q.SourceRef, &q.Stem, &q.Options[0], &q.Options[1], &q.Options[2], &q.Options[3],
@@ -606,6 +649,16 @@ func (s *Store) lawCitations(ctx context.Context) (map[int64]*lawCites, error) {
 			return nil, err
 		}
 		q.Stem = questionStem(q.Stem)
+		if refs := linked[q.ID]; len(refs) > 0 {
+			for _, r := range refs {
+				if c := cites(r.sourceID); r.blockID == "" {
+					c.general = append(c.general, q)
+				} else {
+					c.byBlock[r.blockID] = append(c.byBlock[r.blockID], q)
+				}
+			}
+			continue
+		}
 		// Wrong options name laws and articles on purpose: only the stem
 		// and the right answer count.
 		byLaw, named := stemCitations(q.Stem, aliases)
@@ -613,11 +666,7 @@ func (s *Store) lawCitations(ctx context.Context) (map[int64]*lawCites, error) {
 			if !named[law] && !res[0].MatchString(q.Options[q.Correct]) {
 				continue
 			}
-			c := out[law]
-			if c == nil {
-				c = &lawCites{byArticle: map[string][]QuestionBrief{}, general: []QuestionBrief{}}
-				out[law] = c
-			}
+			c := cites(law)
 			if len(byLaw[law]) == 0 {
 				c.general = append(c.general, q)
 			}
@@ -747,6 +796,10 @@ func (s *Store) QuestionArticles(ctx context.Context, ids []int64) (map[int64][]
 	if err != nil || len(aliases) == 0 {
 		return out, err
 	}
+	linked, err := s.questionSections(ctx)
+	if err != nil {
+		return nil, err
+	}
 	args := make([]any, len(ids))
 	for i, id := range ids {
 		args[i] = id
@@ -763,6 +816,9 @@ func (s *Store) QuestionArticles(ctx context.Context, ids []int64) (map[int64][]
 			rows.Close()
 			return nil, err
 		}
+		if len(linked[id]) > 0 {
+			continue
+		}
 		if byLaw, _ := stemCitations(questionStem(stem), aliases); len(byLaw) > 0 {
 			cites[id] = byLaw
 		}
@@ -771,10 +827,6 @@ func (s *Store) QuestionArticles(ctx context.Context, ids []int64) (map[int64][]
 	if err := rows.Err(); err != nil {
 		return nil, err
 	}
-	if len(cites) == 0 {
-		return out, nil
-	}
-
 	qTopics := map[int64]map[int64]bool{}
 	rows, err = s.db.QueryContext(ctx, `SELECT question_id, topic_id FROM question_topics
 		WHERE question_id IN (`+placeholders(len(ids))+`)`, args...)
@@ -798,30 +850,47 @@ func (s *Store) QuestionArticles(ctx context.Context, ids []int64) (map[int64][]
 	}
 
 	laws := map[int64]*lawIndex{}
+	index := func(lawID int64) (*lawIndex, error) {
+		if laws[lawID] == nil {
+			idx, err := s.lawIndex(ctx, lawID)
+			if err != nil {
+				return nil, err
+			}
+			laws[lawID] = idx
+		}
+		return laws[lawID], nil
+	}
+	link := func(qid, lawID int64, a lawArticle, name string) {
+		l := ArticleLink{SourceID: lawID, Law: name, BlockID: a.id, Title: a.title, pos: a.pos}
+		for _, tid := range a.topics {
+			if l.TopicID == 0 || qTopics[qid][tid] {
+				l.TopicID = tid
+			}
+			if qTopics[qid][tid] {
+				break
+			}
+		}
+		out[qid] = append(out[qid], l)
+	}
 	for _, qid := range ids {
+		for _, r := range linked[qid] {
+			idx, err := index(r.sourceID)
+			if err != nil {
+				return nil, err
+			}
+			if a, ok := idx.blocks[r.blockID]; ok {
+				link(qid, r.sourceID, a, idx.name)
+			}
+		}
 		for lawID, keys := range cites[qid] {
-			idx := laws[lawID]
-			if idx == nil {
-				if idx, err = s.lawIndex(ctx, lawID); err != nil {
-					return nil, err
-				}
-				laws[lawID] = idx
+			idx, err := index(lawID)
+			if err != nil {
+				return nil, err
 			}
 			for _, k := range keys {
-				a, ok := idx.articles[k]
-				if !ok {
-					continue
+				if a, ok := idx.articles[k]; ok {
+					link(qid, lawID, a, idx.name)
 				}
-				link := ArticleLink{SourceID: lawID, Law: idx.name, BlockID: a.id, Title: a.title, pos: a.pos}
-				for _, tid := range a.topics {
-					if link.TopicID == 0 || qTopics[qid][tid] {
-						link.TopicID = tid
-					}
-					if qTopics[qid][tid] {
-						break
-					}
-				}
-				out[qid] = append(out[qid], link)
 			}
 		}
 	}
@@ -846,11 +915,12 @@ type lawArticle struct {
 type lawIndex struct {
 	name     string
 	articles map[string]lawArticle // by articleKey
+	blocks   map[string]lawArticle // every article and annex, by block id
 }
 
 // lawIndex reads the articles of a law and the topics that study each one.
 func (s *Store) lawIndex(ctx context.Context, sourceID int64) (*lawIndex, error) {
-	idx := &lawIndex{articles: map[string]lawArticle{}}
+	idx := &lawIndex{articles: map[string]lawArticle{}, blocks: map[string]lawArticle{}}
 	var title string
 	if err := s.db.QueryRowContext(ctx, `SELECT title FROM sources WHERE id = ?`, sourceID).Scan(&title); err != nil {
 		return nil, err
@@ -875,9 +945,14 @@ func (s *Store) lawIndex(ctx context.Context, sourceID int64) (*lawIndex, error)
 		return nil, err
 	}
 	for i, sec := range all {
-		if k := articleKey(sec.Title); sec.Kind == SectionArticle && k != "" {
+		if sec.Kind != SectionArticle {
+			continue
+		}
+		a := lawArticle{id: sec.ID, title: sec.Title, pos: i}
+		idx.blocks[sec.ID] = a
+		if k := articleKey(sec.Title); k != "" {
 			if _, dup := idx.articles[k]; !dup {
-				idx.articles[k] = lawArticle{id: sec.ID, title: sec.Title, pos: i}
+				idx.articles[k] = a
 			}
 		}
 	}
@@ -894,10 +969,12 @@ func (s *Store) lawIndex(ctx context.Context, sourceID int64) (*lawIndex, error)
 			return nil, err
 		}
 		keep := selectParts(all, parts)
-		for k, a := range idx.articles {
-			if keep[a.pos] {
-				a.topics = append(a.topics, tid)
-				idx.articles[k] = a
+		for _, m := range []map[string]lawArticle{idx.articles, idx.blocks} {
+			for k, a := range m {
+				if keep[a.pos] {
+					a.topics = append(a.topics, tid)
+					m[k] = a
+				}
 			}
 		}
 	}
