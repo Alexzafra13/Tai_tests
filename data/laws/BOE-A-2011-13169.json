@@ -1,0 +1,104 @@
+{
+ "reference": "BOE-A-2011-13169",
+ "title": "Resolución de 19 de julio de 2011, de la Secretaría de Estado para la Función Pública, por la que se aprueba la Norma Técnica de Interoperabilidad de Documento Electrónico",
+ "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-13169",
+ "version_date": "2025-12-19",
+ "aliases": [
+  "Norma Técnica de Interoperabilidad de Documento Electrónico",
+  "NTI de Documento Electrónico"
+ ],
+ "sections": [
+  {
+   "id": "preambulo",
+   "kind": "text",
+   "title": "Preámbulo",
+   "body": "El Esquema Nacional de Interoperabilidad se establece en el apartado 1 del artículo 42 de la Ley 11/2007, de 22 de junio, de acceso electrónico de los ciudadanos a los Servicios Públicos. Su finalidad es la creación de las condiciones necesarias para garantizar el adecuado nivel de interoperabilidad técnica, semántica y organizativa de los sistemas y aplicaciones empleados por las Administraciones públicas, que permitan el ejercicio de derechos y el cumplimiento de deberes a través del acceso electrónico a los servicios públicos, a la vez que redunda en beneficio de la eficacia y la eficiencia.\n\nEl Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica establece, en su disposición adicional primera, el desarrollo de la serie de Normas Técnicas de Interoperabilidad que son de obligado cumplimiento por parte de las Administraciones públicas.\n\nLas Normas Técnicas de Interoperabilidad desarrollan aspectos concretos de diversas cuestiones, tales como: documento electrónico, digitalización, expediente electrónico, copiado auténtico y conversión, política de firma, estándares, intermediación de datos, modelos de datos, gestión de documentos electrónicos, conexión a la red de comunicaciones de las Administraciones públicas españolas, modelo de datos para el intercambio de asientos registrales y declaración de conformidad; todos ellos necesarios para asegurar los aspectos más prácticos y operativos de la interoperabilidad entre las Administraciones públicas y con el ciudadano. Estas Normas Técnicas de Interoperabilidad se desarrollarán y perfeccionarán a lo largo del tiempo, en paralelo al progreso de los servicios de Administración Electrónica, de las infraestructuras que los apoyan y de la evolución tecnológica, para dar cumplimiento al mandato del artículo 42.3 de la Ley 11/2007, de 22 de junio.\n\nDentro de este conjunto de Normas Técnicas de Interoperabilidad, las normas relativas al documento electrónico, al expediente electrónico, a la digitalización de documentos en soporte papel, a los procedimientos de copiado auténtico y conversión y a la política de gestión de documentos electrónicos responden a lo previsto en el citado Real Decreto 4/2010, de 8 de enero, sobre interoperabilidad, recuperación y conservación del documento electrónico, a la luz de la necesidad de garantizar todos estos aspectos para el documento electrónico a lo largo del tiempo.\n\nEn particular, la Norma Técnica de Interoperabilidad de Documento electrónico establece los componentes del documento electrónico, incluyendo contenido, firma electrónica y metadatos mínimos obligatorios, y su formato, así como las condiciones para su intercambio y reproducción; para los aspectos relativos a la gestión y conservación de los documentos electrónicos se remite a la Norma Técnica de Interoperabilidad de Política de gestión de documentos electrónicos; finalmente, se incluye en anexo la definición detallada de los metadatos mínimos obligatorios, los esquemas XML para intercambio de documentos y la información básica de firma de documentos electrónicos. En este sentido, la estructura de documento electrónico definida en esta norma permite la utilización de las firmas electrónicas contempladas en la Decisión de la Comisión 2011/130/EU de 25 de febrero de 2011 por la que se establecen los requisitos mínimos para el tratamiento transfronterizo de los documentos firmados electrónicamente por las autoridades competentes en virtud de la Directiva 2006/123/CE del Parlamento Europeo y del Consejo relativa a los servicios en el mercado interior.\n\nLa presente norma técnica se ha elaborado con la participación de todas las Administraciones públicas a las que les es de aplicación, ha sido informada favorablemente por la Comisión Permanente del Consejo Superior de Administración Electrónica y propuesta por el Comité Sectorial de Administración Electrónica.\n\nEn aplicación de lo dispuesto en el apartado 2 de la disposición adicional primera del Real Decreto 4/2010, de 8 de enero,\n\nEsta Secretaría de Estado resuelve:"
+  },
+  {
+   "id": "primero",
+   "kind": "article",
+   "title": "Primero.",
+   "body": "Se aprueba la Norma Técnica de Interoperabilidad de Documento electrónico, cuyo texto se incluye a continuación."
+  },
+  {
+   "id": "segundo",
+   "kind": "article",
+   "title": "Segundo.",
+   "body": "La Norma Técnica de Interoperabilidad de Documento electrónico que se aprueba mediante la presente Resolución se aplicará desde el día siguiente al de su publicación en el «Boletín Oficial del Estado», sin perjuicio de lo dispuesto en la Disposición Transitoria primera del Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica."
+  },
+  {
+   "id": "norma",
+   "kind": "heading",
+   "level": 1,
+   "title": "NORMA TÉCNICA DE INTEROPERABILIDAD DE DOCUMENTO ELECTRÓNICO",
+   "body": ""
+  },
+  {
+   "id": "i",
+   "kind": "article",
+   "title": "",
+   "body": "I. Objeto.\n\nLa Norma Técnica de Interoperabilidad de Documento electrónico tiene por objeto establecer los componentes del documento electrónico, contenido, en su caso, firma electrónica y metadatos, así como la estructura y formato para su intercambio."
+  },
+  {
+   "id": "ii",
+   "kind": "article",
+   "title": "",
+   "body": "II. Ámbito de aplicación.\n\nEsta norma será de aplicación en el ámbito establecido en el artículo 3 del Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica a:\n\na) Documentos administrativos electrónicos.\n\nb) Cualquier otro documento electrónico susceptible de formar parte de un expediente electrónico."
+  },
+  {
+   "id": "iii",
+   "kind": "article",
+   "title": "",
+   "body": "III. Componentes del documento electrónico.\n\nLos componentes de un documento electrónico son:\n\na) Contenido, entendido como conjunto de datos o información del documento.\n\nb) En su caso, firma electrónica.\n\nc) Metadatos del documento electrónico."
+  },
+  {
+   "id": "iv",
+   "kind": "article",
+   "title": "",
+   "body": "IV. Firma del documento electrónico.\n\nLos documentos administrativos electrónicos, y aquellos susceptibles de formar parte de un expediente, tendrán siempre asociada al menos una firma electrónica de acuerdo con la normativa aplicable."
+  },
+  {
+   "id": "v",
+   "kind": "article",
+   "title": "",
+   "body": "V. Metadatos del documento electrónico.\n\nV.1 Los metadatos mínimos obligatorios del documento electrónico:\n\na) Serán los definidos en el anexo I.\n\nb) Estarán presentes en cualquier proceso de intercambio de documentos electrónicos entre órganos de la Administración y Entidades de Derecho Público vinculadas o dependientes de aquélla y con el ciudadano.\n\nc) No serán modificados en ninguna fase posterior del procedimiento administrativo, a excepción de modificaciones necesarias para la corrección de errores u omisiones en el valor inicialmente asignado.\n\nV.2 Se podrán asignar metadatos complementarios para atender a necesidades de descripción específicas.\n\nEstos metadatos complementarios se aplicarán, en su caso, de acuerdo con lo previsto en la Norma Técnica de Interoperabilidad de Política de gestión de documentos electrónicos.\n\nV.3 Cada órgano de la Administración y Entidad de Derecho Público vinculada o dependiente de aquélla implementará en su propio ámbito de actuación los metadatos de los documentos electrónicos para su tratamiento y gestión a nivel interno. Además, garantizará la disponibilidad e integridad de los metadatos de sus documentos electrónicos, manteniendo de manera permanente las relaciones entre el documento y sus metadatos."
+  },
+  {
+   "id": "vi",
+   "kind": "article",
+   "title": "",
+   "body": "VI. Formato de documentos electrónicos.\n\nVI.1 Los ficheros de contenido de los documentos electrónicos se ajustarán a los formatos establecidos en la Norma Técnica de Interoperabilidad de Catálogo de estándares.\n\nVI.2 La elección del formato se realizará conforme a la naturaleza de la información a tratar primando la finalidad para la cual fue definido cada formato.\n\nVI.3 Se podrán utilizar otros formatos cuando existan particularidades que lo justifiquen o sea necesario para asegurar el valor probatorio del documento electrónico y su fiabilidad como evidencia electrónica de las actividades y procedimientos en caso de proceder a su conversión de formato."
+  },
+  {
+   "id": "vii",
+   "kind": "article",
+   "title": "",
+   "body": "VII. Intercambio de documentos electrónicos.\n\nVII.1 Todo documento electrónico objeto de intercambio tendrá los componentes definidos en el apartado III de esta norma.\n\nVII.2 El intercambio de documentos electrónicos se realizará mediante su envío según la estructura definida en el anexo II, sin perjuicio de la aplicación de otras reguladas por su normativa específica.\n\nVII.3 Excepcionalmente, se podrán aplicar otras estructuras para el intercambio de documentos electrónicos entre Administraciones públicas, cuando exista acuerdo previo entre las partes. En cualquier caso, si debe enviarse a un tercero, la estructura utilizada será convertida por el emisor a la estructura definida en el anexo II.\n\nVII.4 Para el intercambio de documentos electrónicos, entre Administraciones públicas, en procesos de actuación automatizada:\n\na) Se utilizará preferentemente la Red de comunicaciones de las Administraciones públicas españolas como medio para la transmisión.\n\nb) Si el documento electrónico forma parte de un asiento registral, éste será tratado como documento adjunto al mensaje de datos de intercambio según lo establecido en la Norma Técnica de Interoperabilidad de Modelo de Datos para el intercambio de asientos entre las Entidades Registrales.\n\nVII.5 En caso de intercambio de documentos electrónicos entre Administraciones públicas que suponga una transferencia de custodia o traspaso de responsabilidad de gestión de documentos que deban conservarse permanentemente, el órgano o entidad trasferidora verificará la autenticidad e integridad del documento en el momento de dicho intercambio."
+  },
+  {
+   "id": "viii",
+   "kind": "article",
+   "title": "",
+   "body": "VIII. Acceso a documentos electrónicos.\n\nCuando las administraciones públicas faciliten el acceso a los documentos electrónicos a través de sus sedes electrónicas o de los canales de comunicación que correspondan en cada caso, se mostrará:\n\na) El contenido del documento electrónico cuando éste sea representable conforme a lo recogido sobre formatos en el apartado VI de esta norma.\n\nb) La información básica de cada una de las firmas del documento definida en el anexo III.\n\nc) Descripción y valor de los metadatos mínimos obligatorios."
+  },
+  {
+   "id": "ani",
+   "kind": "article",
+   "title": "ANEXO I. Metadatos mínimos obligatorios del documento electrónico",
+   "body": "Metadato | Descripción/Condiciones de uso | ¿Repetible? 1 | Tipo | Esquema de valores\nVersión N11 | Identificador normalizado de la versión de la Norma Técnica de Interoperabilidad de Documento electrónico conforme a la cual se estructura el documento electrónico. | 1 | URI | http://administracionelectronica.gob.es/ENI/XSD/v1.0/documento-e\nIdentificador | Identificador normalizado del documento. | 1 | Cadena de caracteres | ES_ <Órgano>_<AAAA>_<ID específico> 2 Ejemplo: ES E00010207 2010 MPR000000000000000000000010207\nÓrgano | Identificador normalizado de la administración generadora del documento o que realiza la captura del mismo. | 1:N | Cadena de caracteres | Código alfanumérico único para cada órgano/unidad/oficina extraído del Directorio Común gestionado por el Ministerio de Política Territorial y Administración Pública.\nFecha de captura | Fecha de alta del documento en el sistema de gestión documental. | 1 | Fecha/hora | Formato: AAAAMMDD T HH:MM:SS <ISO 8601>\nOrigen | Indica si el contenido del documento fue creado por un ciudadano o por una administración. | 1 | Lógico | ‘0’ = Ciudadano ‘1’ = Administración\nEstado de elaboración | Indica la naturaleza del documento. Si es copia, este metadato indica también si se ha realizado una digitalización o conversión de formato en el proceso de generación. | 1 | Cadena de caracteres | – Original (Ley 11/2007 Ad. 30). – Copia electrónica auténtica con cambio de formato (Ley 11/2007Art.30.1). – Copia electrónica auténtica de documento papel (Ley 11/2007 Art.30.2 y 30.3). – Copia electrónica parcial auténtica. Otros.\nNombre de formato | Formato lógico del fichero de contenido del documento electrónico. | 1 | Cadena de caracteres | Valor extraído de la lista de formatos admitidos para ficheros definidos en la Norma Técnica de Interoperabilidad de Catálogo de estándares.\n |  |  |  | Documentos de decisión:\n |  |  |  | – Resolución.\n |  |  |  | – Acuerdo.\n |  |  |  | – Contrato.\n |  |  |  | – Convenio.\n |  |  |  | – Declaración.\n |  |  |  | Documentos de transmisión:\n |  |  |  | – Comunicación.\n |  |  |  | – Notificación.\n |  |  |  | – Publicación.\n |  |  |  | – Acuse de recibo.\nTipo documental | Descripción del tipo documental del documento. | 1 | Cadena de caracteres | Documentos de constancia:\n– Acta.\n– Certificado.\n |  |  |  | – Diligencia.\n |  |  |  | Documentos de juicio:\n |  |  |  | – Informe.\n |  |  |  | Documentos de ciudadano:\n |  |  |  | – Solicitud.\n |  |  |  | – Denuncia.\n |  |  |  | – Alegación.\n |  |  |  | – Recursos.\n |  |  |  | – Comunicación ciudadano.\n |  |  |  | – Factura.\n |  |  |  | – Otros incautados.\n |  |  |  | Otros.\nTipo de firma | Indica el tipo de firma que avala el documento. En caso de firma con certificado, indica el formato de la firma. | 1:N | Cadena de caracteres | – CSV – Formatos de firma electrónica de documentos electrónicos definidos en la Norma Técnica de Interoperabilidad de Política de firma y certificados de la Administración.\nSi «Tipo de firma» = CSV\nValor CSV | Valor del CSV. | 1:N | Cadena de caracteres | NIA\nDefinición generación CSV | Referencia a la Orden, Resolución o documento que define la creación del CSV correspondiente. | 1:N | Cadena de caracteres | Si AGE: Referencia BOE:BOE A YYYY-XXXXX En otro caso, referencia correspondiente.\nSi «Estado de elaboración» =\n– Copia electrónica auténtica con cambio de formato (Ley 11/2007Art.30.1).\n– Copia electrónica parcial auténtica.\nIdentificador de documento origen | Identificador normalizado del documento origen al que corresponde la copia. | 1 | Cadena de caracteres | Si el documento origen es un documento electrónico: ES_<Órgano>_<AAAA>_<ID específico> Ejemplo: ES–E00010207–2010 MPR000000000000000000000010207\n\n1 Nótese que la repetibilidad indicada en la tabla sólo se refiere a los metadatos que acompañan al documento electrónico en un intercambio, sin perjuicio de la posibilidad de asignación de otros metadatos gestionados a nivel interno de cada administración cuyas consideraciones atenderán a la Norma Técnica de Interoperabilidad de Política de gestión de documentos electrónicos.\n\n2 Codificación del Identificador del documento:\n\n<Órgano>: Véase codificación del metadato «Órgano». En caso de más un órgano los nueve caracteres correspondientes serán acordados entre las partes con el fin de asegurarla unicidad del identificador que es su único fin.\n\n<AAAA>: Año de la fecha de captura del documento. (Longitud: 4 caracteres).\n\n<ID específico>: Código alfanumérico que identifica de forma única al documento dentro de los generados por la administración responsable. Cada administración puede diseñar el proceso de generación según sus necesidades, asegurando en cualquier caso su unicidad. Por lo tanto, este ID puede generarse de forma secuencia) o bien, ser una réplica del ID utilizado a nivel interno de la administración. (Longitud: 30 caracteres)."
+  },
+  {
+   "id": "anii",
+   "kind": "heading",
+   "level": 1,
+   "title": "ANEXO II. Esquemas XML para intercambio de documentos electrónicos",
+   "body": ""
+  },
+  {
+   "id": "aniii",
+   "kind": "article",
+   "title": "ANEXO III. Información básica de la firma de documentos electrónicos",
+   "body": "Tipo de firma | Información | Localización\nCSV | Valor del código seguro de verificación. | Metadato del documento electrónico.\nFirma basada en certificados | Validez de la firma. | Según reglas de validación de firma descritas en la Norma Técnica de Interoperabilidad de Política de firma y certificados de la Administración.\nInformación del firmante(s) del documento (persona física, jurídica o sello de órgano). | Propiedades o etiquetas de la firma.\nEmisor del certificado del firmante(s). | Propiedades o etiquetas de la firma.\nFecha y hora de la firma(s). | Propiedades o etiquetas de la firma."
+  }
+ ]
+}

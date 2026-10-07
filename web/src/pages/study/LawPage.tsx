@@ -4,7 +4,7 @@ import { useResource } from "../../hooks";
 import type { LawText, LawTextSection, QuestionBrief } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
 import { Options } from "../../components/QuestionView";
-import { formatDay } from "../../format";
+import { formatDay, lawShortName } from "../../format";
 import "./study.css";
 
 // fold makes searching accent- and case-insensitive ("articulo" finds "Artículo").
@@ -69,7 +69,8 @@ export function LawPage() {
       {loading && <Loading />}
       {law && (
         <>
-          <h3 className="law-heading">{law.title}</h3>
+          <h3 className="law-heading">{lawShortName(law.title) || law.title}</h3>
+          {lawShortName(law.title) && <p className="muted law-source">{law.title}</p>}
           <p className="muted law-source">
             Texto consolidado del BOE ({law.reference}), versión del {formatDay(law.version_date)}.{" "}
             <a href={law.url} target="_blank" rel="noreferrer" className="link">

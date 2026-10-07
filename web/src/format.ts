@@ -27,3 +27,12 @@ export function formatDay(day: string | undefined): string {
   const d = new Date(`${day}T00:00:00Z`);
   return Number.isNaN(d.getTime()) ? day : dayFmt.format(d);
 }
+
+// lawShortName names a law by what it approves when its official title is
+// a resolution or decree "por la que se aprueba…" ("Norma Técnica de
+// Interoperabilidad de Documento Electrónico"); otherwise it returns "".
+export function lawShortName(title: string): string {
+  const m = /, por (?:la|el) que se (?:aprueba|regula) (?:la |el )?(.+)$/.exec(title);
+  if (!m || !/^Resolución/.test(title)) return "";
+  return m[1].charAt(0).toUpperCase() + m[1].slice(1);
+}

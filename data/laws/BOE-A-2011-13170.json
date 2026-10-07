@@ -1,0 +1,86 @@
+{
+ "reference": "BOE-A-2011-13170",
+ "title": "Resolución de 19 de julio de 2011, de la Secretaría de Estado para la Función Pública, por la que se aprueba la Norma Técnica de Interoperabilidad de Expediente Electrónico",
+ "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-13170",
+ "version_date": "2025-12-19",
+ "aliases": [
+  "Norma Técnica de Interoperabilidad de Expediente Electrónico",
+  "NTI de Expediente Electrónico"
+ ],
+ "sections": [
+  {
+   "id": "pr",
+   "kind": "text",
+   "title": "Preámbulo",
+   "body": "El Esquema Nacional de Interoperabilidad se establece en el apartado 1 del artículo 42 de la Ley 11/2007, de 22 de junio, de acceso electrónico de los ciudadanos a los Servicios Públicos. Su finalidad es la creación de las condiciones necesarias para garantizar el adecuado nivel de interoperabilidad técnica, semántica y organizativa de los sistemas y aplicaciones empleados por las Administraciones públicas, que permitan el ejercicio de derechos y el cumplimiento de deberes a través del acceso electrónico a los servicios públicos, a la vez que redunda en beneficio de la eficacia y la eficiencia.\n\nEl Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica establece, en su disposición adicional primera, el desarrollo de la serie de Normas Técnicas de Interoperabilidad que son de obligado cumplimiento por parte de las Administraciones públicas.\n\nLas Normas Técnicas de Interoperabilidad desarrollan aspectos concretos de diversas cuestiones, tales como: documento electrónico, digitalización, expediente electrónico, copiado auténtico y conversión, política de firma, estándares, intermediación de datos, modelos de datos, gestión de documentos electrónicos, conexión a la red de comunicaciones de las Administraciones públicas españolas, modelo de datos para el intercambio de asientos registrales y declaración de conformidad; todos ellos necesarios para asegurar los aspectos más prácticos y operativos de la interoperabilidad entre las Administraciones públicas y con el ciudadano. Estas Normas Técnicas de Interoperabilidad se desarrollarán y perfeccionarán a lo largo del tiempo, en paralelo al progreso de los servicios de Administración Electrónica, de las infraestructuras que los apoyan y de la evolución tecnológica, para dar cumplimiento al mandato del artículo 42.3 de la Ley 11/2007, de 22 de junio.\n\nDentro de este conjunto de Normas Técnicas de Interoperabilidad, las normas relativas al documento electrónico, al expediente electrónico, a la digitalización de documentos en soporte papel, a los procedimientos de copiado auténtico y conversión y a la política de gestión de documentos electrónicos responden a lo previsto en el citado Real Decreto 4/2010, de 8 de enero, sobre interoperabilidad, recuperación y conservación del documento electrónico, a la luz de la necesidad de garantizar todos estos aspectos para el documento electrónico a lo largo del tiempo.\n\nEn particular, la Norma Técnica de Interoperabilidad de Expediente electrónico establece la estructura de los expedientes electrónicos, que incluye documentos electrónicos, índice electrónico, firma electrónica y metadatos mínimos obligatorios, así como las especificaciones para los servicios de remisión y puesta a disposición; para los aspectos relativos a la gestión y conservación de los expedientes electrónicos se remite a la Norma Técnica de Interoperabilidad de Política de gestión de documentos electrónicos; finalmente, se incluye en anexo la definición detallada de los metadatos mínimos obligatorios y los esquemas XML para el intercambio de expedientes electrónicos. En este sentido, la estructura de expediente electrónico definida en esta norma permite la utilización de las firmas electrónicas contempladas en la Decisión de la Comisión 2011/130/EU, de 25 de febrero de 2011, por la que se establecen los requisitos mínimos para el tratamiento transfronterizo de los documentos firmados electrónicamente por las autoridades competentes en virtud de la Directiva 2006/123/CE del Parlamento Europeo y del Consejo relativa a los servicios en el mercado interior.\n\nLa presente norma técnica se ha elaborado con la participación de todas las Administraciones públicas a las que les es de aplicación, ha sido informada favorablemente por la Comisión Permanente del Consejo Superior de Administración Electrónica y propuesta por el Comité Sectorial de Administración Electrónica.\n\nEn aplicación de lo dispuesto en el apartado 2 de la disposición adicional primera del Real Decreto 4/2010, de 8 de enero, esta Secretaría de Estado resuelve:"
+  },
+  {
+   "id": "pr-2",
+   "kind": "article",
+   "title": "Primero.",
+   "body": "Se aprueba la Norma Técnica de Interoperabilidad de Expediente electrónico, cuyo texto se incluye a continuación."
+  },
+  {
+   "id": "se",
+   "kind": "article",
+   "title": "Segundo.",
+   "body": "La Norma Técnica de Interoperabilidad de Expediente electrónico que se aprueba mediante la presente Resolución se aplicará desde el día siguiente al de su publicación en el «Boletín Oficial del Estado», sin perjuicio de lo dispuesto en la Disposición Transitoria primera del Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica."
+  },
+  {
+   "id": "no",
+   "kind": "article",
+   "title": "",
+   "body": "NORMA TÉCNICA DE INTEROPERABILIDAD DE EXPEDIENTE ELECTRÓNICO"
+  },
+  {
+   "id": "i",
+   "kind": "article",
+   "title": "",
+   "body": "I. Objeto.\n\nLa Norma Técnica de Interoperabilidad de Expediente electrónico tiene por objeto establecer la estructura y el formato del expediente electrónico, así como las especificaciones de los servicios de remisión y puesta a disposición."
+  },
+  {
+   "id": "ii",
+   "kind": "article",
+   "title": "",
+   "body": "II. Ámbito de aplicación .\n\nII.1 Esta norma será de aplicación a los expedientes electrónicos en el ámbito establecido en el artículo 3 del Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica.\n\nII.2 Las condiciones establecidas en esta norma se podrán aplicar a otros conjuntos de documentos electrónicos que, habiendo sido creados al margen de un procedimiento reglado, se hubiesen formado mediante agregación, como resultado de una secuencia de actuaciones coherentes que conducen a un resultado específico."
+  },
+  {
+   "id": "ii-2",
+   "kind": "article",
+   "title": "",
+   "body": "III. Componentes del expediente electrónico .\n\nIII.1 Los componentes de un expediente electrónico son:\n\na) Documentos electrónicos, que cumplirán las características de estructura y formato establecidas en la Norma Técnica de Interoperabilidad de Documento electrónico.\n\nLos documentos electrónicos podrán incluirse en un expediente electrónico bien directamente como elementos independientes, bien dentro de una carpeta, entendida ésta como una agrupación de documentos electrónicos creada por un motivo funcional, o bien como parte de otro expediente, anidado en el primero.\n\nb) Índice electrónico, que según lo establecido en el artículo 32.2 de la Ley 11/2007, de 22 de junio, de acceso electrónico de los ciudadanos a los Servicios Públicos, garantizará la integridad del expediente electrónico y permitirá su recuperación siempre que sea preciso.\n\nEl índice electrónico recogerá el conjunto de documentos electrónicos asociados al expediente en un momento dado y, si es el caso, su disposición en carpetas o expedientes.\n\nc) Firma del índice electrónico por la Administración, órgano o entidad actuante de acuerdo con la normativa aplicable.\n\nd) Metadatos del expediente electrónico.\n\nIII.2 La incorporación de un expediente electrónico a un sistema de gestión documental atenderá a lo dispuesto en la Norma Técnica de Interoperabilidad de Documento electrónico y en la Norma Técnica de Interoperabilidad de Política de gestión de documentos electrónicos."
+  },
+  {
+   "id": "iv",
+   "kind": "article",
+   "title": "",
+   "body": "IV. Metadatos del expediente electrónico.\n\nIV.1 Los metadatos mínimos obligatorios del expediente electrónico:\n\na) Serán los definidos en el anexo I.\n\nb) Se asociarán en la formación del expediente para su remisión o puesta a disposición.\n\nc) No serán modificados en ninguna fase posterior del procedimiento administrativo, a excepción de modificaciones necesarias para la corrección de errores u omisiones en el valor inicialmente asignado.\n\nIV.2 Se podrán asignar metadatos complementarios para atender a necesidades de descripción específicas. Estos metadatos complementarios se aplicarán, en su caso, de acuerdo con lo previsto en la Norma Técnica de Interoperabilidad de Política de gestión de documentos electrónicos."
+  },
+  {
+   "id": "v",
+   "kind": "article",
+   "title": "",
+   "body": "V. Intercambio de expedientes electrónicos.\n\nV.1 El intercambio de expedientes electrónicos, a los efectos de remisión y puesta a disposición, se realizará mediante el envío en primer lugar de la estructura definida en el anexo II, sin perjuicio de la aplicación de otras, reguladas por su normativa específica. Tras el envío de dicha estructura, se enviarán cada uno de los documentos electrónicos que componen el expediente, en el orden indicado en el índice y atendiendo a lo establecido en la Norma Técnica de Interoperabilidad de Documento electrónico.\n\nV.2 Excepcionalmente, se podrán aplicar otras estructuras para el intercambio de expedientes electrónicos entre Administraciones públicas, cuando exista acuerdo previo entre las partes. En cualquier caso, si debe enviarse a un tercero, la estructura utilizada será convertida por el emisor a la estructura definida en el anexo II.\n\nV.3 Cuando la naturaleza o la extensión de las pruebas o documentos que forman parte del expediente electrónico no permitan o dificulten notablemente su inclusión en una de las estructuras establecidas, se incorporará al expediente electrónico un documento en el que se especifique cuales son estas pruebas o documentos. Dichas pruebas o documentos serán custodiados por el órgano gestor sin perjuicio, en su caso, de aportación separada cuando así se requiera.\n\nV.4 El índice electrónico de los expedientes objeto de intercambio reflejará, al menos:\n\na) La fecha de generación del índice.\n\nb) Para cada documento electrónico: su identificador, su huella digital, la función resumen utilizada para su obtención, que atenderá a lo establecido en la Norma Técnica de Interoperabilidad de Catálogo de estándares, y, opcionalmente, la fecha de incorporación al expediente y el orden del documento dentro del expediente.\n\nc) Si es el caso, la disposición de los documentos en carpetas y expedientes electrónicos anidados.\n\nV.5 Para el intercambio de expedientes electrónicos, entre Administraciones públicas, en procesos de actuación automatizada:\n\na) Se utilizará preferentemente la Red de comunicaciones de las Administraciones públicas españolas como medio para la transmisión.\n\nb) Si el expediente electrónico forma parte de un asiento registral, éste será tratado como adjunto del mensaje de datos de intercambio según lo establecido en la Norma Técnica de Interoperabilidad de Modelo de Datos para el intercambio de asientos entre las Entidades Registrales.\n\nV.6 En caso de intercambio de expedientes electrónicos entre Administraciones públicas que suponga una transferencia de custodia o traspaso de responsabilidad de gestión de expedientes que deban conservarse permanentemente, el órgano o entidad transferidora verificará la autenticidad e integridad del expediente en el momento de dicho intercambio."
+  },
+  {
+   "id": "an",
+   "kind": "heading",
+   "level": 1,
+   "title": "ANEXOS",
+   "body": ""
+  },
+  {
+   "id": "ai",
+   "kind": "article",
+   "title": "ANEXO I. Metadatos mínimos obligatorios de expedientes electrónicos",
+   "body": "Metadato | Descripción/Condiciones de uso | ¿Repetible?1 F 1 | Tipo | Esquema de valores\nVersión NTI | Identificador normalizado de la versión de la Norma Técnica de Interoperabilidad de Expediente electrónico conforme a la cual se estructura el expediente. | 1 | URI | http://administracionelectronica.gob.es/ENI/XSD/v1.0/expediente-e\nIdentificador | Identificador normalizado del expediente. | 1 | Cadena de caracteres | ES <órganoUU><AAAA> EXP <ID especifico>2F 2 Ejemplo: ES_E00010207_2010_EXP_ MPR000000000000000000000010207\nÓrgano | Identificador normalizado de la administración responsable de la tramitación del procedimiento | 1:N | Cadena de caracteres | Código alfanumérico único para cada órgano/unidad/oficina extraído del Directorio Común gestionado por el Ministerio de Política Territorial y Administración Pública. UEjemploU: E00003901\nFecha Apertura Expediente | Fecha de apertura del expediente | 1 | Fecha/hora | Formato: AAAAMMDD T HH:MM:SS <ISO 8601>\nClasificación | Procedimiento administrativo con el que se relaciona el expediente | 1 | Cadena de caracteres | Esquema de valores normalizado según el Sistema de Información Administrativa (SIA). Si el procedimiento no se encuentra en SIA: <órgano >_PRO_<ID_PRO_especifico>3F 3\nEstado | Estado del expediente en el momento de intercambio. | 1 | Cadena de caracteres | – Abierto – Cerrado – Índice para remisión cerrado.\nInteresado | Identificador del interesado. | 0:N | Cadena de caracteres | a) Si ciudadano o persona jurídica: DNI, NIE, NIF o similar. b) Si administración: <ÓrganoUU>\nTipo de firma | Indica el tipo de firma del índice del expediente | 1:N | Cadena de caracteres | – CSV’ – Formatos de firma electrónica de documentos electrónicos definidos en la Norma Técnica de Interoperabilidad de Política de firma y certificados de la Administración.\nSi “Tipo de firma” = CSV\nValor CSV | Valor del CSV. | 1:N | Cadena de caracteres | N/A\nDefinición generación CSV | Referencia a la Orden, Resolución o documento que define la creación del CSV correspondiente. | 1:N | Cadena de caracteres | Si AGE: Referencia BOE:BOE-A-YYYY-XXXXX En otro caso, referencia correspondiente.\n\n1 Nótese que la repetibilidad indicada en la tabla sólo se refiere a los metadatos que acompañan al expediente electrónico en un intercambio, sin perjuicio de la posibilidad de asignación de otros metadatos gestionados a nivel interno de cada administración cuyas consideraciones atenderán a la Norma Técnica de Interoperabilidad de Política de gestión de documentos electrónicos.\n\n2 Codificación del Identificador del expediente:\n\n<Órgano>: Véase codificación del metadato “Órgano”. En caso de más de un órgano los nueve caracteres correspondientes serán acordados entre las partes con el fin de asegurar la unicidad del identificador que es su único fin.\n\n<AAAA>: Año de la fecha de creación del expediente. (Longitud: 4 caracteres).\n\n<ID_específico>: Código alfanumérico que identifica de forma única al expediente dentro de los generados por la administración responsable. Cada administración puede diseñar el proceso de generación según sus necesidades, asegurando en cualquier caso su unicidad. Por lo tanto, este ID puede generarse de forma secuencial o bien, ser una réplica del ID utilizado a nivel interno de la administración. (Longitud: 30 caracteres).\n\n3 Codificación del metadato Calificación si el procedimiento no existe en SIA:\n\n<Órgano>: Véase codificación del metadato “Órgano”.\n\n<ID_PRO_específico>: Código alfanumérico que identifica de forma única al procedimiento dentro de los propios de la administración. Cada administración puede diseñar el proceso de generación según susnecesidades, asegurando en cualquier caso su unicidad. Por lo tanto, este ID puede generarse de forma secuencial o bien, ser una réplica del ID utilizado a nivel interno de la administración. (Longitud: 30 caracteres)."
+  },
+  {
+   "id": "ai-2",
+   "kind": "heading",
+   "level": 1,
+   "title": "ANEXO II. Esquemas XML para intercambio de expedientes electrónicos",
+   "body": ""
+  }
+ ]
+}

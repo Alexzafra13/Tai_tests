@@ -290,7 +290,10 @@ consolidado del BOE de cada norma del tema, literal (nada resumido), con
 exámenes oficiales van marcados, con las preguntas para responderlas allí
 mismo, y se pueden filtrar. Si ya hay publicada una reforma que aún no está
 en vigor, el artículo lo avisa con la nueva redacción y su fecha. Las
-normas están en `data/laws/` (ver `docs/importar-contenido.md`).
+normas están en `data/laws/` (ver `docs/importar-contenido.md`): las 22
+leyes y reales decretos del bloque I, la LO 10/2022 y las 12 Normas Técnicas
+de Interoperabilidad vigentes. Una tarea mensual de GitHub las descarga de
+nuevo (`tai refresh-laws`) y abre una PR si el BOE ha cambiado algo.
 
 ## Banco de preguntas incluido
 
@@ -304,16 +307,18 @@ pregunta tiene una clave estable dentro de su examen (`P-37`, `SI-R2`…):
 lo ya cargado no se vuelve a cargar, aunque se haya editado, descartado o
 borrado.
 
-Incluye los cuestionarios de ingreso libre de las OEP 2019, 2022 y 2024
-(135 preguntas cada uno: 80 + 5 de reserva y dos supuestos de 20 + 5),
-con la respuesta de la plantilla **definitiva**. Todas se han comprobado
+Incluye siete exámenes con la respuesta de la plantilla **definitiva**: los
+de ingreso libre de las OEP 2019, 2022 y 2024 (135 preguntas cada uno: 80 +
+5 de reserva y dos supuestos de 20 + 5) y los de promoción interna de las
+OEP 2019, 2022, 2024 y 2025 (85 preguntas: 50 + 5 y dos supuestos de 12 +
+3). En total, 745 preguntas, 741 publicadas. Todas se han comprobado
 contra el PDF (enunciado, opciones y letra de cada opción) y las respuestas
 con dos lecturas independientes de la plantilla. Las anuladas van marcadas
 (no salen en los tests) con la respuesta que daba la provisional. En los
 supuestos, cada pregunta lleva delante el enunciado del caso; si el original
-tenía figuras, se avisa de que no se reproducen, y las dos preguntas que
-no se pueden responder sin la figura (OEP 2024 Supuesto I nº 4 y OEP 2022
-Supuesto I nº 1) quedan en Revisión.
+tenía figuras, se avisa de que no se reproducen (o de que el diagrama sale
+desordenado, si estaba dibujado con texto), y las cuatro preguntas que no se
+pueden responder sin la figura quedan en Revisión.
 
 Para añadir un examen, con los PDF descargados de la sede del INAP:
 

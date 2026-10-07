@@ -1,0 +1,67 @@
+{
+ "reference": "BOE-A-2011-13168",
+ "title": "Resolución de 19 de julio de 2011, de la Secretaría de Estado para la Función Pública, por la que se aprueba la Norma Técnica de Interoperabilidad de Digitalización de Documentos",
+ "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-13168",
+ "version_date": "2025-12-19",
+ "aliases": [
+  "Norma Técnica de Interoperabilidad de Digitalización de Documentos",
+  "NTI de Digitalización de Documentos"
+ ],
+ "sections": [
+  {
+   "id": "pr",
+   "kind": "text",
+   "title": "Preámbulo",
+   "body": "El Esquema Nacional de Interoperabilidad se establece en el apartado 1 del artículo 42 de la Ley 11/2007, de 22 de junio, de acceso electrónico de los ciudadanos a los Servicios Públicos. Su finalidad es la creación de las condiciones necesarias para garantizar el adecuado nivel de interoperabilidad técnica, semántica y organizativa de los sistemas y aplicaciones empleados por las Administraciones públicas, que permitan el ejercicio de derechos y el cumplimiento de deberes a través del acceso electrónico a los servicios públicos, a la vez que redunda en beneficio de la eficacia y la eficiencia.\n\nEl Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica establece, en su disposición adicional primera, el desarrollo de la serie de Normas Técnicas de Interoperabilidad que son de obligado cumplimiento por parte de las Administraciones públicas.\n\nLas Normas Técnicas de Interoperabilidad desarrollan aspectos concretos de diversas cuestiones, tales como: documento electrónico, digitalización, expediente electrónico, copiado auténtico y conversión, política de firma, estándares, intermediación de datos, modelos de datos, gestión de documentos electrónicos, conexión a la red de comunicaciones de las Administraciones públicas españolas, modelo de datos para el intercambio de asientos registrales y declaración de conformidad; todos ellos necesarios para asegurar los aspectos más prácticos y operativos de la interoperabilidad entre las Administraciones públicas y con el ciudadano. Estas Normas Técnicas de Interoperabilidad se desarrollarán y perfeccionarán a lo largo del tiempo, en paralelo al progreso de los servicios de Administración Electrónica, de las infraestructuras que los apoyan y de la evolución tecnológica, para dar cumplimiento al mandato del artículo 42.3 de la Ley 11/2007, de 22 de junio.\n\nDentro de este conjunto de Normas Técnicas de Interoperabilidad, las normas relativas al documento electrónico, al expediente electrónico, a la digitalización de documentos en soporte papel, a los procedimientos de copiado auténtico y conversión y a la política de gestión de documentos electrónicos responden a lo previsto en el citado Real Decreto 4/2010, de 8 de enero, sobre interoperabilidad, recuperación y conservación del documento electrónico, a la luz de la necesidad de garantizar todos estos aspectos para el documento electrónico a lo largo del tiempo.\n\nEn particular, la Norma Técnica de Interoperabilidad de Digitalización de Documentos establece los componentes de un documento electrónico digitalizado, incluyendo la imagen electrónica, firma electrónica y metadatos, así como las reglas para la digitalización de documentos en soporte papel por parte de las Administraciones públicas, atendiendo a los formatos, niveles de calidad, condiciones técnicas y estándares aplicables; y para los aspectos relativos a la gestión y conservación de los documentos electrónicos digitalizados se remite a la Norma Técnica de Interoperabilidad de Política de Gestión de Documentos Electrónicos.\n\nLa presente norma técnica se ha elaborado con la participación de todas las Administraciones públicas a las que les es de aplicación, ha sido informada favorablemente por la Comisión Permanente del Consejo Superior de Administración Electrónica y propuesta por el Comité Sectorial de Administración Electrónica.\n\nEn aplicación de lo dispuesto en el apartado 2 de la Disposición adicional primera del Real Decreto 4/2010, de 8 de enero,\n\nEsta Secretaría de Estado resuelve:"
+  },
+  {
+   "id": "pr-2",
+   "kind": "article",
+   "title": "Primero.",
+   "body": "Se aprueba la Norma Técnica de Interoperabilidad de Digitalización de Documentos, cuyo texto se incluye a continuación."
+  },
+  {
+   "id": "se",
+   "kind": "article",
+   "title": "Segundo.",
+   "body": "La Norma Técnica de Interoperabilidad de Digitalización de Documentos que se aprueba mediante la presente Resolución se aplicará desde el día siguiente al de su publicación en el «Boletín Oficial del Estado», sin perjuicio de lo dispuesto en la disposición transitoria primera del Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica."
+  },
+  {
+   "id": "no",
+   "kind": "heading",
+   "level": 1,
+   "title": "NORMA TÉCNICA DE INTEROPERABILIDAD DE DIGITALIZACIÓN DE DOCUMENTOS",
+   "body": ""
+  },
+  {
+   "id": "i",
+   "kind": "article",
+   "title": "",
+   "body": "I. Objeto\n\nLa Norma Técnica de Interoperabilidad de Digitalización de Documentos tiene por objeto establecer los requisitos a cumplir en la digitalización de documentos en soporte papel o en otro soporte no electrónico susceptible de digitalización a través de medios fotoeléctricos."
+  },
+  {
+   "id": "ii",
+   "kind": "article",
+   "title": "",
+   "body": "II. Ámbito de aplicación\n\nEsta norma será de aplicación en la digitalización de documentos en el ámbito establecido en el artículo 3 del Real Decreto 4/2010, de 8 de enero, por el que se regula el Esquema Nacional de Interoperabilidad en el ámbito de la Administración Electrónica."
+  },
+  {
+   "id": "ii-2",
+   "kind": "article",
+   "title": "",
+   "body": "III. Documentos electrónicos digitalizados\n\nIII.1 La digitalización de un documento para la generación de un documento electrónico atenderá a lo dispuesto en la Norma Técnica de Interoperabilidad de Documento Electrónico y estará compuesto por:\n\na) La imagen electrónica que representará el aspecto y contenido del documento en el soporte origen y cumplirá los requisitos establecidos en el apartado IV de esta norma.\n\nb) Los metadatos mínimos obligatorios definidos en la Norma Técnica de Interoperabilidad de Documento Electrónico.\n\nSe podrán asignar metadatos complementarios para atender a necesidades de descripción específicas del proceso de digitalización que se aplicarán, en su caso, de acuerdo con lo previsto en la Norma Técnica de Interoperabilidad de Política de Gestión de Documentos Electrónicos.\n\nc) Si procede, firma de la imagen electrónica de acuerdo con la normativa aplicable.\n\nIII.2 Para que el documento electrónico digitalizado sea copia auténtica del documento origen, se cumplirán, adicionalmente, los requisitos establecidos en la Norma Técnica de Interoperabilidad de Procedimientos de Copiado Auténtico y Conversión entre Documentos Electrónicos."
+  },
+  {
+   "id": "iv",
+   "kind": "article",
+   "title": "",
+   "body": "IV. Requisitos de la imagen electrónica\n\nIV.1 Las imágenes electrónicas aplicarán los formatos establecidos para ficheros de imagen en la Norma Técnica de Interoperabilidad de Catálogo de Estándares.\n\nIV.2 El nivel de resolución mínimo para imágenes electrónicas será de 200 píxeles por pulgada, tanto para imágenes obtenidas en blanco y negro, color o escala de grises.\n\nIV.3 La imagen electrónica será fiel al documento origen, para lo cual:\n\na) Respetará la geometría del documento origen en tamaños y proporciones.\n\nb) No contendrá caracteres o gráficos que no figurasen en el documento origen.\n\nc) Su generación atenderá a lo establecido en el apartado V de esta norma."
+  },
+  {
+   "id": "v",
+   "kind": "article",
+   "title": "",
+   "body": "V. Proceso de digitalización\n\nCon el fin de satisfacer los requisitos establecidos en el apartado IV, la digitalización de un documento:\n\n1. Se realizará a través de un proceso informático en el que, garantizando la integridad de cada uno de los pasos, se realizarán las siguientes tareas:\n\na) Digitalización por un medio fotoeléctrico, de modo que se obtenga una imagen electrónica en la memoria del sistema asociado al dispositivo.\n\nb) Si procede, optimización automática de la imagen electrónica para garantizar su legibilidad, de modo que todo contenido del documento origen pueda apreciarse y sea válido para su gestión (umbralización, reorientación, eliminación de bordes negros, u otros de naturaleza análoga).\n\nc) Asignación de los metadatos al documento electrónico digitalizado según lo dispuesto en el apartado 111.1.\n\nd) Si procede, firma de la imagen electrónica.\n\n2. Contemplará la aplicación de un conjunto de operaciones de mantenimiento preventivo y comprobaciones rutinarias que permitirán garantizar mediante su cumplimiento que, en todo momento, el estado de la aplicación de digitalización y los dispositivos asociados producirán imágenes fieles al documento en soporte papel."
+  }
+ ]
+}

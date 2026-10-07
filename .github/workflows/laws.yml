@@ -1,0 +1,33 @@
+name: Leyes del BOE
+
+# Once a month, download again the bundled laws (data/laws) and propose
+# the changes as a pull request, so the study texts follow the BOE.
+on:
+  schedule:
+    - cron: "17 5 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - run: go run ./cmd/tai refresh-laws
+      - run: go test ./data/
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: laws/refresh
+          commit-message: Refresh the laws from the BOE
+          title: Actualizar las leyes desde el BOE
+          body: |
+            Textos consolidados descargados de nuevo de la API de datos abiertos del BOE (`tai refresh-laws`).
+            Revisa el diff: cambios de redacción, reformas que ya han entrado en vigor o versiones nuevas.
+            Al arrancar, cada instalación aplica la versión nueva salvo que deje sin respaldo la cita de alguna pregunta.
+          delete-branch: true

@@ -93,10 +93,13 @@ proceso selectivo, con el cuestionario y las plantillas de respuestas.
    que cada pregunta pase la validación y que las comprobadas se publiquen.
 5. Subirlo. Al arrancar, cada instalación añade lo que aún no tiene.
 
-Hecho: OEP 2019, 2022 y 2024 (ingreso libre), 403 publicadas y 2 en
-Revisión. Pendiente: la OEP 2025, que
-solo tiene plantilla provisional, y la OEP 2018, cuyo cuestionario está
-escaneado (sin texto: habría que pasar OCR y revisarlo a mano).
+Hecho: ingreso libre OEP 2019, 2022 y 2024, y promoción interna OEP 2019,
+2022, 2024 y 2025: 745 preguntas, 741 publicadas y 4 en Revisión. Las
+respuestas se comprueban con una segunda lectura independiente de la
+plantilla (por coordenadas: `pdftotext -bbox`). Pendiente: ingreso libre
+OEP 2025, que solo tiene plantilla provisional, y la OEP 2018 (ingreso
+libre y promoción interna), cuyos cuestionarios están escaneados (sin
+texto: habría que pasar OCR y revisarlo a mano).
 
 ### 4. Revisar y publicar
 
@@ -132,15 +135,20 @@ ley, con su texto completo para validar citas, y se leen en
    suprimidos) y las firmas. `-alias` añade nombres con que las preguntas
    citan la norma, además de su número.
 3. Añadirla a `topics.json` y `make test`.
-4. Para actualizar una norma, se vuelve a ejecutar `fetch-law`. Si el texto
-   nuevo deja sin respaldo la cita de alguna pregunta, la instalación
-   conserva el anterior y lo avisa al arrancar.
+4. Para actualizar, `go run ./cmd/tai refresh-laws` descarga de nuevo
+   todas (conserva los `-alias`). Lo hace cada mes la tarea
+   `.github/workflows/laws.yml`, que abre una PR con los cambios (en
+   GitHub hay que permitir que Actions cree PR: Settings → Actions →
+   General → *Allow GitHub Actions to create and approve pull requests*).
+   Si el texto nuevo deja sin respaldo la cita de alguna pregunta, la
+   instalación conserva el anterior y lo avisa al arrancar.
 
-Hecho: las 22 normas españolas del bloque I (comprobado con la web del BOE:
-el texto de cada artículo coincide). Pendiente: el RGPD y el reglamento
-eIDAS, que solo están completos y vigentes en EUR-Lex (hay que permitir
-`eur-lex.europa.eu` y `publications.europa.eu` en la red del entorno), y
-las Normas Técnicas de Interoperabilidad.
+Hecho: las 22 normas españolas del bloque I, la LO 10/2022 (tema 5) y las
+12 Normas Técnicas de Interoperabilidad vigentes (tema 8; las dos
+derogadas se dejan fuera). Comprobado con la web del BOE: el texto de cada
+artículo coincide. Pendiente: el RGPD y el reglamento eIDAS, que solo están
+completos y vigentes en EUR-Lex (hay que permitir `eur-lex.europa.eu` y
+`publications.europa.eu` en la red del entorno).
 
 Es la base para generar después preguntas de ley con cita literal (fase 6).
 
