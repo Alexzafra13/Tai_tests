@@ -1,7 +1,7 @@
-name: Leyes del BOE
+name: Leyes del BOE y EUR-Lex
 
 # Once a month, download again the bundled laws (data/laws) and propose
-# the changes as a pull request, so the study texts follow the BOE.
+# the changes as a pull request, so the study texts follow the BOE and EUR-Lex.
 on:
   schedule:
     - cron: "17 5 1 * *"
@@ -24,10 +24,10 @@ jobs:
       - uses: peter-evans/create-pull-request@v7
         with:
           branch: laws/refresh
-          commit-message: Refresh the laws from the BOE
-          title: Actualizar las leyes desde el BOE
+          commit-message: Refresh the laws from the BOE and EUR-Lex
+          title: Actualizar las leyes desde el BOE y EUR-Lex
           body: |
-            Textos consolidados descargados de nuevo de la API de datos abiertos del BOE (`tai refresh-laws`).
+            Textos consolidados descargados de nuevo del BOE y de EUR-Lex (`tai refresh-laws`).
             Revisa el diff: cambios de redacción, reformas que ya han entrado en vigor o versiones nuevas.
             Al arrancar, cada instalación aplica la versión nueva salvo que deje sin respaldo la cita de alguna pregunta.
           delete-branch: true

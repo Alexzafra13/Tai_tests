@@ -124,6 +124,10 @@
     color: var(--muted);
   }
 
+  .article-links a[target="_blank"]::before {
+    content: none;
+  }
+
   button.flag {
     min-height: 40px;
     font-size: 0.875rem;

@@ -968,6 +968,7 @@ func (s *Store) lawIndex(ctx context.Context, sourceID int64) (*lawIndex, error)
 		return nil, err
 	}
 	idx.name, _, _ = strings.Cut(title, ",")
+	idx.name = strings.TrimSuffix(idx.name, " del Parlamento Europeo y del Consejo") // "Reglamento (UE) 2016/679"
 	rows, err := s.db.QueryContext(ctx, `SELECT block_id, kind, level, title FROM law_sections
 		WHERE source_id = ? ORDER BY position`, sourceID)
 	if err != nil {

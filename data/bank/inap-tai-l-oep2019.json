@@ -20,7 +20,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a30"
+        }
+      ]
     },
     {
       "key": "P-2",
@@ -36,7 +42,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a62"
+        }
+      ]
     },
     {
       "key": "P-3",
@@ -52,7 +64,13 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a159"
+        }
+      ]
     },
     {
       "key": "P-4",
@@ -68,7 +86,13 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a68"
+        }
+      ]
     },
     {
       "key": "P-5",
@@ -84,7 +108,13 @@
       "topics": [
         "B1-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a113"
+        }
+      ]
     },
     {
       "key": "P-6",
@@ -100,7 +130,13 @@
       "topics": [
         "B1-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+          "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas"
+        }
+      ]
     },
     {
       "key": "P-7",
@@ -116,7 +152,13 @@
       "topics": [
         "B1-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2013-12887",
+          "section": "a36"
+        }
+      ]
     },
     {
       "key": "P-8",
@@ -132,7 +174,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a137"
+        }
+      ]
     },
     {
       "key": "P-9",
@@ -148,7 +196,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a103"
+        }
+      ]
     },
     {
       "key": "P-10",
@@ -164,7 +218,13 @@
       "topics": [
         "B1-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a82"
+        }
+      ]
     },
     {
       "key": "P-11",
@@ -180,7 +240,13 @@
       "topics": [
         "B1-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2007-6115",
+          "section": "a51"
+        }
+      ]
     },
     {
       "key": "P-12",
@@ -196,7 +262,13 @@
       "topics": [
         "B1-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2007-6115",
+          "section": "a8"
+        }
+      ]
     },
     {
       "key": "P-13",
@@ -212,7 +284,13 @@
       "topics": [
         "B1-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2006-21990",
+          "section": "a26"
+        }
+      ]
     },
     {
       "key": "P-14",
@@ -228,7 +306,17 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2005-21163",
+          "section": "a12"
+        },
+        {
+          "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
+          "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1028"
+        }
+      ]
     },
     {
       "key": "P-15",
@@ -244,7 +332,13 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "España Digital 2025 · Gobierno de España",
+          "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf"
+        }
+      ]
     },
     {
       "key": "P-16",
@@ -276,7 +370,13 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2018-16673",
+          "section": "a7-10"
+        }
+      ]
     },
     {
       "key": "P-18",
@@ -292,7 +392,13 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "32016R0679",
+          "section": "art_2"
+        }
+      ]
     },
     {
       "key": "P-19",
@@ -308,7 +414,13 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2022-7191",
+          "section": "ai-2"
+        }
+      ]
     },
     {
       "key": "P-20",
@@ -324,7 +436,13 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2015-10565",
+          "section": "a30"
+        }
+      ]
     },
     {
       "key": "P-21",
@@ -340,7 +458,13 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+          "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf"
+        }
+      ]
     },
     {
       "key": "P-22",
@@ -356,7 +480,13 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2010-1331",
+          "section": "daprimera"
+        }
+      ]
     },
     {
       "key": "P-23",
@@ -372,7 +502,13 @@
       "topics": [
         "B1-T09"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "eVisor · Centro de Transferencia de Tecnología",
+          "url": "https://administracionelectronica.gob.es/ctt/evisor"
+        }
+      ]
     },
     {
       "key": "P-24",
@@ -388,7 +524,13 @@
       "topics": [
         "B1-T09"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "NEDAES · Centro de Transferencia de Tecnología",
+          "url": "https://administracionelectronica.gob.es/ctt/nedaes"
+        }
+      ]
     },
     {
       "key": "P-25",
@@ -1316,7 +1458,13 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Facilita RGPD · Agencia Española de Protección de Datos",
+          "url": "https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd"
+        }
+      ]
     },
     {
       "key": "P-R3",

@@ -20,7 +20,13 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "32016R0679",
+          "section": "art_5"
+        }
+      ]
     },
     {
       "key": "P-2",
@@ -36,7 +42,13 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "32016R0679",
+          "section": "art_32"
+        }
+      ]
     },
     {
       "key": "P-3",
@@ -52,7 +64,13 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2010-1331",
+          "section": "a6"
+        }
+      ]
     },
     {
       "key": "P-4",
@@ -68,7 +86,13 @@
       "topics": [
         "B1-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+          "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas"
+        }
+      ]
     },
     {
       "key": "P-5",
@@ -84,7 +108,13 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2005-21163",
+          "section": "a12"
+        }
+      ]
     },
     {
       "key": "P-6",
@@ -100,7 +130,13 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2007-22440",
+          "section": "a1"
+        }
+      ]
     },
     {
       "key": "P-7",
@@ -116,7 +152,13 @@
       "topics": [
         "B1-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2013-12887",
+          "section": "a11"
+        }
+      ]
     },
     {
       "key": "P-8",
@@ -132,7 +174,13 @@
       "topics": [
         "B1-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2023-5366",
+          "section": "a4-7"
+        }
+      ]
     },
     {
       "key": "P-9",
@@ -148,7 +196,13 @@
       "topics": [
         "B1-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2013-12632",
+          "section": "a2"
+        }
+      ]
     },
     {
       "key": "P-10",
@@ -164,7 +218,21 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2015-10565",
+          "section": "a44"
+        },
+        {
+          "law": "BOE-A-2015-10565",
+          "section": "a40"
+        },
+        {
+          "law": "BOE-A-2015-10565",
+          "section": "a42"
+        }
+      ]
     },
     {
       "key": "P-11",
@@ -820,7 +888,13 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2018-16673",
+          "section": "a9-8"
+        }
+      ]
     },
     {
       "key": "P-R2",

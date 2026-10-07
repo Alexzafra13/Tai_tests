@@ -97,7 +97,7 @@ export function ArticleLinks({ articles }: { articles: ArticleLink[] }) {
         a.url ? (
           <li key={a.url}>
             <a href={a.url} target="_blank" rel="noreferrer" className="link">
-              {a.law}
+              {a.law} ↗
             </a>
           </li>
         ) : (

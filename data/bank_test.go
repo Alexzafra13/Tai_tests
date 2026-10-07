@@ -108,7 +108,8 @@ func TestLawsLoadCleanly(t *testing.T) {
 	}
 }
 
-// The articles bank questions point to exist in the bundled laws.
+// The articles bank questions point to exist in the bundled laws (links
+// to official pages are checked by hand).
 func TestBankArticlesExist(t *testing.T) {
 	files, err := content.ReadBank(data.Bank())
 	if err != nil {
@@ -130,6 +131,7 @@ func TestBankArticlesExist(t *testing.T) {
 			for _, a := range q.Articles {
 				secs, ok := sections[a.Law]
 				switch {
+				case a.URL != "":
 				case !ok:
 					t.Errorf("%s %s: unknown law %s", f.Source.Reference, q.Key, a.Law)
 				case a.Section != "" && secs[a.Section] != content.SectionArticle:
