@@ -38,6 +38,8 @@ type SearchHit struct {
 	SourceTitle string    `json:"source_title"`
 	SourceRef   string    `json:"source_ref"`
 	SourceQuote string    `json:"source_quote"`
+	// Articles are the law articles the question cites.
+	Articles []ArticleLink `json:"articles"`
 }
 
 // Search finds published, non-annulled questions by text, best matches
@@ -70,5 +72,20 @@ func (s *Store) Search(ctx context.Context, text string, limit int) ([]SearchHit
 		}
 		hits = append(hits, h)
 	}
-	return hits, rows.Err()
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	rows.Close()
+	ids := make([]int64, len(hits))
+	for i, h := range hits {
+		ids[i] = h.ID
+	}
+	links, err := s.QuestionArticles(ctx, ids)
+	if err != nil {
+		return nil, err
+	}
+	for i := range hits {
+		hits[i].Articles = append([]ArticleLink{}, links[hits[i].ID]...)
+	}
+	return hits, nil
 }

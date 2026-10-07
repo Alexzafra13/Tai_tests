@@ -556,10 +556,7 @@ func (s *Store) lawQuestions(ctx context.Context, sourceID int64) (map[string][]
 			&q.Correct); err != nil {
 			return nil, nil, err
 		}
-		// Practical-case questions start with the case statement.
-		if i := strings.LastIndex(q.Stem, "\n\n"); i >= 0 {
-			q.Stem = q.Stem[i+2:]
-		}
+		q.Stem = questionStem(q.Stem)
 		// Wrong options name laws and articles on purpose: only the stem
 		// and the right answer count.
 		articles, named := citedArticles(q.Stem, q.Options[q.Correct], sourceID, aliases)
@@ -602,33 +599,38 @@ func (s *Store) lawAliases(ctx context.Context) (map[int64][]*regexp.Regexp, err
 
 // citedArticles returns the keys (see articleKey) of the articles of law
 // the stem cites, and whether the stem or the answer name law at all.
-// Ranges ("artículos 15 a 29") cite no single article.
 func citedArticles(stem, answer string, law int64, aliases map[int64][]*regexp.Regexp) ([]string, bool) {
-	text := stem
+	byLaw, named := stemCitations(stem, aliases)
+	ok := named[law]
+	for _, re := range aliases[law] {
+		ok = ok || re.MatchString(answer)
+	}
+	if !ok {
+		return nil, false
+	}
+	return byLaw[law], true
+}
+
+// stemCitations returns, by law, the keys of the articles the stem cites
+// (each attributed to the nearest law it names) and the laws it names.
+// Ranges ("artículos 15 a 29") cite no single article.
+func stemCitations(text string, aliases map[int64][]*regexp.Regexp) (map[int64][]string, map[int64]bool) {
 	type mention struct {
 		law int64
 		pos int
 	}
 	var mentions []mention
+	named := map[int64]bool{}
 	for id, as := range aliases {
 		for _, re := range as {
 			for _, m := range re.FindAllStringIndex(text, -1) {
 				mentions = append(mentions, mention{id, m[0]})
+				named[id] = true
 			}
 		}
 	}
-	named := false
-	for _, m := range mentions {
-		named = named || m.law == law
-	}
-	for _, re := range aliases[law] {
-		named = named || re.MatchString(answer)
-	}
-	if !named {
-		return nil, false
-	}
-	seen := map[string]bool{}
-	var out []string
+	out := map[int64][]string{}
+	seen := map[int64]map[string]bool{}
 	for _, m := range articleRef.FindAllStringSubmatchIndex(text, -1) {
 		if articleRange.MatchString(text[m[1]:]) {
 			continue
@@ -643,18 +645,212 @@ func citedArticles(stem, answer string, law int64, aliases map[int64][]*regexp.R
 				best, dist = mn.law, d
 			}
 		}
-		if best != law {
+		if best == 0 {
 			continue
 		}
 		id := text[m[2]:m[3]]
 		if m[4] >= 0 {
 			id += strings.ToLower(text[m[4]:m[5]])
 		}
-		if !seen[id] {
-			seen[id] = true
-			out = append(out, id)
+		if seen[best] == nil {
+			seen[best] = map[string]bool{}
+		}
+		if !seen[best][id] {
+			seen[best][id] = true
+			out[best] = append(out[best], id)
 		}
 	}
-	sort.Strings(out)
-	return out, true
+	for _, ids := range out {
+		sort.Strings(ids)
+	}
+	return out, named
+}
+
+// questionStem drops the statement that opens practical-case questions:
+// only the question itself names the law and article asked.
+func questionStem(stem string) string {
+	if i := strings.LastIndex(stem, "\n\n"); i >= 0 {
+		return stem[i+2:]
+	}
+	return stem
+}
+
+// ArticleLink points from a question to an article of a law it cites.
+type ArticleLink struct {
+	SourceID int64  `json:"source_id"`
+	Law      string `json:"law"` // short name: "Ley 39/2015"
+	BlockID  string `json:"block_id"`
+	Title    string `json:"title"`
+	// TopicID is a topic whose part of the law holds the article, one of
+	// the question's when possible; 0 when no topic studies it.
+	TopicID int64 `json:"topic_id"`
+	pos     int
+}
+
+// QuestionArticles returns, by question id, the articles each question
+// cites, found as LawText finds the questions of an article.
+func (s *Store) QuestionArticles(ctx context.Context, ids []int64) (map[int64][]ArticleLink, error) {
+	out := map[int64][]ArticleLink{}
+	if len(ids) == 0 {
+		return out, nil
+	}
+	aliases, err := s.lawAliases(ctx)
+	if err != nil || len(aliases) == 0 {
+		return out, err
+	}
+	args := make([]any, len(ids))
+	for i, id := range ids {
+		args[i] = id
+	}
+	rows, err := s.db.QueryContext(ctx, `SELECT id, stem FROM questions WHERE id IN (`+placeholders(len(ids))+`)`, args...)
+	if err != nil {
+		return nil, err
+	}
+	cites := map[int64]map[int64][]string{}
+	for rows.Next() {
+		var id int64
+		var stem string
+		if err := rows.Scan(&id, &stem); err != nil {
+			rows.Close()
+			return nil, err
+		}
+		if byLaw, _ := stemCitations(questionStem(stem), aliases); len(byLaw) > 0 {
+			cites[id] = byLaw
+		}
+	}
+	rows.Close()
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	if len(cites) == 0 {
+		return out, nil
+	}
+
+	qTopics := map[int64]map[int64]bool{}
+	rows, err = s.db.QueryContext(ctx, `SELECT question_id, topic_id FROM question_topics
+		WHERE question_id IN (`+placeholders(len(ids))+`)`, args...)
+	if err != nil {
+		return nil, err
+	}
+	for rows.Next() {
+		var qid, tid int64
+		if err := rows.Scan(&qid, &tid); err != nil {
+			rows.Close()
+			return nil, err
+		}
+		if qTopics[qid] == nil {
+			qTopics[qid] = map[int64]bool{}
+		}
+		qTopics[qid][tid] = true
+	}
+	rows.Close()
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+
+	laws := map[int64]*lawIndex{}
+	for _, qid := range ids {
+		for lawID, keys := range cites[qid] {
+			idx := laws[lawID]
+			if idx == nil {
+				if idx, err = s.lawIndex(ctx, lawID); err != nil {
+					return nil, err
+				}
+				laws[lawID] = idx
+			}
+			for _, k := range keys {
+				a, ok := idx.articles[k]
+				if !ok {
+					continue
+				}
+				link := ArticleLink{SourceID: lawID, Law: idx.name, BlockID: a.id, Title: a.title, pos: a.pos}
+				for _, tid := range a.topics {
+					if link.TopicID == 0 || qTopics[qid][tid] {
+						link.TopicID = tid
+					}
+					if qTopics[qid][tid] {
+						break
+					}
+				}
+				out[qid] = append(out[qid], link)
+			}
+		}
+	}
+	for _, links := range out {
+		sort.Slice(links, func(i, j int) bool {
+			if links[i].Law != links[j].Law {
+				return links[i].Law < links[j].Law
+			}
+			return links[i].pos < links[j].pos
+		})
+	}
+	return out, nil
+}
+
+type lawArticle struct {
+	id, title string
+	pos       int
+	// topics study the part of the law that holds the article.
+	topics []int64
+}
+
+type lawIndex struct {
+	name     string
+	articles map[string]lawArticle // by articleKey
+}
+
+// lawIndex reads the articles of a law and the topics that study each one.
+func (s *Store) lawIndex(ctx context.Context, sourceID int64) (*lawIndex, error) {
+	idx := &lawIndex{articles: map[string]lawArticle{}}
+	var title string
+	if err := s.db.QueryRowContext(ctx, `SELECT title FROM sources WHERE id = ?`, sourceID).Scan(&title); err != nil {
+		return nil, err
+	}
+	idx.name, _, _ = strings.Cut(title, ",")
+	rows, err := s.db.QueryContext(ctx, `SELECT block_id, kind, level, title FROM law_sections
+		WHERE source_id = ? ORDER BY position`, sourceID)
+	if err != nil {
+		return nil, err
+	}
+	var all []LawSection
+	for rows.Next() {
+		var sec LawSection
+		if err := rows.Scan(&sec.ID, &sec.Kind, &sec.Level, &sec.Title); err != nil {
+			rows.Close()
+			return nil, err
+		}
+		all = append(all, sec)
+	}
+	rows.Close()
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	for i, sec := range all {
+		if k := articleKey(sec.Title); sec.Kind == SectionArticle && k != "" {
+			if _, dup := idx.articles[k]; !dup {
+				idx.articles[k] = lawArticle{id: sec.ID, title: sec.Title, pos: i}
+			}
+		}
+	}
+
+	rows, err = s.db.QueryContext(ctx, `SELECT topic_id, parts FROM topic_laws WHERE source_id = ? ORDER BY topic_id`, sourceID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var tid int64
+		var parts string
+		if err := rows.Scan(&tid, &parts); err != nil {
+			return nil, err
+		}
+		keep := selectParts(all, parts)
+		for k, a := range idx.articles {
+			if keep[a.pos] {
+				a.topics = append(a.topics, tid)
+				idx.articles[k] = a
+			}
+		}
+	}
+	return idx, rows.Err()
 }

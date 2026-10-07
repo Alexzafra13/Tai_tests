@@ -56,6 +56,8 @@ type Solution struct {
 	SourceRef   string         `json:"source_ref"`
 	SourceQuote string         `json:"source_quote"`
 	TopicIDs    []int64        `json:"topic_ids"`
+	// Articles are the law articles the question cites.
+	Articles []content.ArticleLink `json:"articles"`
 }
 
 type testRow struct {
@@ -174,9 +176,20 @@ func (s *Store) items(ctx context.Context, t Test, userID int64) ([]Item, error)
 	if err != nil {
 		return nil, err
 	}
+	var ids []int64
+	for _, it := range items {
+		if it.Solution != nil {
+			ids = append(ids, it.QuestionID)
+		}
+	}
+	articles, err := s.content.QuestionArticles(ctx, ids)
+	if err != nil {
+		return nil, err
+	}
 	for i := range items {
-		if items[i].Solution != nil {
-			items[i].Solution.TopicIDs = append([]int64{}, topics[items[i].QuestionID]...)
+		if sol := items[i].Solution; sol != nil {
+			sol.TopicIDs = append([]int64{}, topics[items[i].QuestionID]...)
+			sol.Articles = append([]content.ArticleLink{}, articles[items[i].QuestionID]...)
 		}
 	}
 	return items, nil
@@ -303,7 +316,11 @@ func (s *Store) Answer(ctx context.Context, userID, testID int64, in AnswerInput
 	if err := s.schedule(ctx, userID, questionID, sol.IsCorrect, spent); err != nil {
 		return nil, err
 	}
-	sol.TopicIDs, err = s.topicIDs(ctx, questionID)
+	if sol.TopicIDs, err = s.topicIDs(ctx, questionID); err != nil {
+		return nil, err
+	}
+	articles, err := s.content.QuestionArticles(ctx, []int64{questionID})
+	sol.Articles = append([]content.ArticleLink{}, articles[questionID]...)
 	return &sol, err
 }
 

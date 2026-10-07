@@ -8,6 +8,22 @@ export type LawChange = {
   body: string;
 };
 
+// ArticleLink points from a question to an article it cites; topic_id is 0
+// when no topic studies that article.
+export type ArticleLink = {
+  source_id: number;
+  law: string;
+  block_id: string;
+  title: string;
+  topic_id: number;
+};
+
+// articlePath opens the law at the article, within its topic when it has one.
+export function articlePath(a: ArticleLink): string {
+  const law = a.topic_id ? `/study/${a.topic_id}/laws/${a.source_id}` : `/laws/${a.source_id}`;
+  return `${law}#${a.block_id}`;
+}
+
 export type QuestionBrief = {
   id: number;
   source_ref: string;

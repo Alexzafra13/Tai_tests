@@ -2,6 +2,7 @@
 // content search).
 
 import type { Origin } from "./content";
+import type { ArticleLink } from "./laws";
 
 export type ReviewSummary = {
   due: number;
@@ -58,4 +59,5 @@ export type SearchHit = {
   source_title: string;
   source_ref: string;
   source_quote: string;
+  articles: ArticleLink[];
 };

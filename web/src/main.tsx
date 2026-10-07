@@ -84,6 +84,7 @@ function App() {
         <Route path="syllabus" element={<SyllabusPage />} />
         <Route path="study/:topicId" element={<StudyTopicPage />} />
         <Route path="study/:topicId/laws/:lawId" element={<LawPage />} />
+        <Route path="laws/:lawId" element={<LawPage />} />
         <Route path="stats" element={<StatsPage />} />
         <Route path="search" element={<SearchPage />} />
         <Route path="settings" element={<SettingsPage />} />

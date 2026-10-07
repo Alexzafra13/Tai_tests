@@ -119,6 +119,15 @@
     background: var(--surface);
   }
 
+  /* The article a question links to. */
+  .law-article.target {
+    margin: 0 -0.75rem;
+    padding: 0.75rem;
+    border-top-color: transparent;
+    border-radius: var(--radius);
+    box-shadow: inset 0 0 0 2px var(--primary);
+  }
+
   .law-article h5 {
     margin: 0 0 0.5rem;
     font-size: 1rem;

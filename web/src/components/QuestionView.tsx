@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import { api, errorMessage } from "../api";
-import { optionLetters, originLabel, type Solution, type TestItem } from "../types";
+import { articlePath, optionLetters, originLabel, type ArticleLink, type Solution, type TestItem } from "../types";
 import "./QuestionView.css";
 
 // Options renders the four answers as large tap targets. Once `correct` is
@@ -64,7 +65,24 @@ export function SolutionBox({ solution, chosen }: { solution: Solution; chosen: 
         </span>
         {solution.source_quote && <blockquote>{solution.source_quote}</blockquote>}
       </div>
+      <ArticleLinks articles={solution.articles} />
     </div>
+  );
+}
+
+// ArticleLinks opens the law at each article the question asks about.
+export function ArticleLinks({ articles }: { articles: ArticleLink[] }) {
+  if (articles.length === 0) return null;
+  return (
+    <ul className="article-links">
+      {articles.map((a) => (
+        <li key={`${a.source_id}-${a.block_id}`}>
+          <Link to={articlePath(a)} className="link">
+            {a.title.replace(/\.$/, "")} · {a.law}
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }
 
