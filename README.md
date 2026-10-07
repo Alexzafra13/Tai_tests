@@ -118,7 +118,8 @@ internal/db/migrations/  migraciones SQL versionadas (NNNN_nombre.sql)
 internal/users/        cuentas y roles (admin / usuario), contraseñas con bcrypt
 internal/auth/         login, sesiones y usuario actual de cada petición
 internal/validate/     errores de validación por campo, comunes a todos los paquetes
-internal/content/      temario, fuentes y preguntas con sus reglas de validación
+internal/content/      temario, fuentes, preguntas con sus reglas de validación y banco incluido
+internal/content/examtext/  lectura del texto de los PDF del INAP (cuestionario y plantillas)
 internal/quiz/         sesiones de test: creación, respuestas, historial, nota y barajado
 internal/srs/          repetición espaciada (FSRS): cuándo repasar cada pregunta
 internal/stats/        estadísticas por usuario: aciertos, temas, progreso diario
@@ -130,7 +131,8 @@ web/src/styles/        tokens de diseño y estilos comunes (capas CSS: base, com
 web/src/components/    piezas compartidas (opciones de pregunta, formularios, cita literal…)
 web/src/pages/         una pantalla por fichero o carpeta, con su CSS al lado
 web/src/types/         espejo de los tipos JSON de la API, un fichero por área
-data/                  syllabus.example.json (formato del temario)
+data/                  syllabus.json (temario oficial, en el binario) y syllabus.example.json (formato)
+data/bank/             banco de preguntas oficiales incluido en el binario (un JSON por examen)
 ```
 
 ## Usuarios y permisos
@@ -257,7 +259,9 @@ cada uno por separado (los que fallan quedan en la cola con su motivo).
 El temario se define en `data/syllabus.json` (formato en
 [`data/syllabus.example.json`](data/syllabus.example.json)). Cada bloque y
 tema tiene un `code` estable: al recargar el fichero se actualizan títulos y
-orden, y los temas que desaparezcan se desactivan sin perder sus preguntas.
+orden, y los temas que desaparezcan se desactivan sin perder sus preguntas. El
+fichero va dentro del binario: una instalación sin temario lo carga sola al
+arrancar; para actualizar una en marcha se usa `load-syllabus`.
 
 ```sh
 # En local
@@ -275,6 +279,47 @@ docker compose exec -T tai tai add-source -kind law \
   -title "Ley 39/2015, del Procedimiento Administrativo Común" \
   -ref BOE-A-2015-10565 -version 2024-01-01 -text - < ley39.txt
 ```
+
+## Banco de preguntas incluido
+
+`data/bank/` guarda los exámenes oficiales del INAP ya convertidos, un
+fichero JSON por examen, y va dentro del binario junto con el temario
+oficial (`data/syllabus.json`, del BOE-A-2025-26262). Una instalación nueva
+carga el temario y, al arrancar, la app añade las preguntas que aún no
+tiene: **las comprobadas entran publicadas** con su tema y salen en los
+tests desde el primer momento; el resto queda en **Revisión**. Cada
+pregunta tiene una clave estable dentro de su examen (`P-37`, `SI-R2`…):
+lo ya cargado no se vuelve a cargar, aunque se haya editado, descartado o
+borrado.
+
+Incluye los cuestionarios de ingreso libre de las OEP 2019, 2022 y 2024
+(135 preguntas cada uno: 80 + 5 de reserva y dos supuestos de 20 + 5),
+con la respuesta de la plantilla **definitiva**. Todas se han comprobado
+contra el PDF (enunciado, opciones y letra de cada opción) y las respuestas
+con dos lecturas independientes de la plantilla. Las anuladas van marcadas
+(no salen en los tests) con la respuesta que daba la provisional. En los
+supuestos, cada pregunta lleva delante el enunciado del caso; si el original
+tenía figuras, se avisa de que no se reproducen, y las dos preguntas que
+no se pueden responder sin la figura (OEP 2024 Supuesto I nº 4 y OEP 2022
+Supuesto I nº 1) quedan en Revisión.
+
+Para añadir un examen, con los PDF descargados de la sede del INAP:
+
+```sh
+go run ./cmd/tai import-exam -title "TAI ingreso libre · OEP 2024 · ejercicio único (modelo A)" \
+  -ref INAP-TAI-L-OEP2024 -label "OEP 2024" -url <página del proceso> \
+  -questions data/raw/inap/2024/cuestionario-A.pdf \
+  -answers data/raw/inap/2024/plantilla-definitiva-A.pdf \
+  -provisional data/raw/inap/2024/plantilla-provisional-A.pdf \
+  -out data/bank/inap-tai-l-oep2024.json
+```
+
+Necesita `pdftotext` y `pdfimages` (poppler-utils). Escribe el fichero e
+informa de lo que no ha podido leer. Las preguntas nuevas entran como
+borrador; tras comprobarlas, se les ponen `topics` (códigos del temario) y
+`"status": "published"` en el JSON. Al volver a importar un examen se
+conservan para las preguntas que no cambian. `make test` comprueba que todo
+el banco pasa la validación y que las comprobadas se publican.
 
 ## Desarrollo local
 
@@ -305,7 +350,7 @@ make build   # compila el frontend y genera bin/tai con todo embebido
 2. ✅ Temario y modelo de preguntas; alta y edición manual.
 3. ✅ Tests (práctica y examen) y registro de intentos.
 4. ✅ Cola de revisión.
-5. Importador de exámenes del INAP y modo simulacro.
+5. Importador de exámenes del INAP (✅ banco con OEP 2019, 2022 y 2024) y modo simulacro.
 6. Generación del bloque legal con validación.
 7. ✅ FSRS, falladas, estadísticas y búsqueda.
 8. Generación del bloque técnico y pulido (✅ app instalable).

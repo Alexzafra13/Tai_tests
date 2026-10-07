@@ -14,6 +14,7 @@ import (
 	// Time zone data inside the binary: statistics use each browser's zone.
 	_ "time/tzdata"
 
+	"github.com/alexzafra13/tai_tests/data"
 	"github.com/alexzafra13/tai_tests/internal/auth"
 	"github.com/alexzafra13/tai_tests/internal/config"
 	"github.com/alexzafra13/tai_tests/internal/content"
@@ -37,6 +38,7 @@ Commands:
   migrate        Apply pending database migrations
   load-syllabus  Load or update the syllabus from a JSON file
   add-source     Add a source document (law, technical doc, exam)
+  import-exam    Write a question bank file from an INAP exam (PDFs)
   user           Manage accounts: user list | user add | user passwd
   version        Print the version
 
@@ -66,6 +68,8 @@ func main() {
 		err = runLoadSyllabus(ctx, log, os.Args[2:])
 	case "add-source":
 		err = runAddSource(ctx, log, os.Args[2:])
+	case "import-exam":
+		err = runImportExam(ctx, log, os.Args[2:])
 	case "user":
 		err = runUser(ctx, log, os.Args[2:])
 	case "version":
@@ -137,11 +141,16 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 		log.Info("first start: open the app in a browser to create the administrator account", "addr", cfg.Addr)
 	}
 
+	cs := content.NewStore(d)
+	if err := loadBank(ctx, log, cs); err != nil {
+		return err
+	}
+
 	sr := srs.NewStore(d)
 	srv := server.New(server.Deps{
 		Auth:    auth.NewService(d, us, cfg.SessionTTL),
 		Users:   us,
-		Content: content.NewStore(d),
+		Content: cs,
 		Quiz:    quiz.NewStore(d, settings.NewStore(d), sr),
 		SRS:     sr,
 		Stats:   stats.NewStore(d),
@@ -150,4 +159,42 @@ func runServe(ctx context.Context, log *slog.Logger) error {
 	})
 	log.Info("starting tai", "version", version, "db", cfg.DBPath)
 	return server.Run(ctx, cfg.Addr, srv.Handler(), log)
+}
+
+// loadBank adds the bundled official questions this installation does not
+// have yet. A new installation first gets the bundled syllabus, so checked
+// questions can arrive published with their topics.
+func loadBank(ctx context.Context, log *slog.Logger, cs *content.Store) error {
+	blocks, err := cs.Syllabus(ctx)
+	if err != nil {
+		return err
+	}
+	if len(blocks) == 0 {
+		f, err := content.ParseSyllabus(data.Syllabus())
+		if err != nil {
+			return err
+		}
+		res, err := cs.LoadSyllabus(ctx, f)
+		if err != nil {
+			return err
+		}
+		log.Info("syllabus loaded", "name", f.Name, "blocks", res.Blocks, "topics", res.Topics)
+	}
+
+	files, err := content.ReadBank(data.Bank())
+	if err != nil {
+		return err
+	}
+	res, err := cs.LoadBank(ctx, files)
+	if err != nil {
+		return err
+	}
+	for _, p := range res.Problems {
+		log.Warn("bank question not loaded", "source", p.Source, "key", p.Key, "reason", p.Reason)
+	}
+	if res.Added > 0 {
+		log.Info("question bank loaded", "added", res.Added, "published", res.Published,
+			"drafts_for_review", res.Added-res.Published)
+	}
+	return nil
 }

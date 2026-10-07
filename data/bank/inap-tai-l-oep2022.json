@@ -1,0 +1,2181 @@
+{
+  "source": {
+    "kind": "inap_exam",
+    "title": "TAI ingreso libre · OEP 2020-2022 · ejercicio único",
+    "reference": "INAP-TAI-L-OEP2022",
+    "url": "https://sede.inap.gob.es/es/procedimientos-y-servicios/seleccion/procesos-selectivos-de-cuerpos-y-escalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado/ctaiae-ingreso-libre-oferta-de-empleo-publico-2020-2021-y-2022"
+  },
+  "questions": [
+    {
+      "key": "P-1",
+      "source_ref": "OEP 2022 · nº 1",
+      "stem": "De acuerdo con el artículo 64 de la Constitución Española de 1978 (en adelante CE), los actos del Rey, excepto la propuesta y el nombramiento del Presidente del Gobierno, y la disolución de las Cámaras prevista en el artículo 99, serán refrendados por:",
+      "options": [
+        "Los Presidentes del Congreso y el Senado.",
+        "Los Ministros o los Secretarios de Estado en función de la materia.",
+        "El Presidente del Gobierno y, en su caso, por los Presidentes del Congreso y el Senado.",
+        "El Presidente del Gobierno y, en su caso, por los Ministros competentes."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-2",
+      "source_ref": "OEP 2022 · nº 2",
+      "stem": "La suspensión de los derechos y libertades se encuentra regulada en la CE en:",
+      "options": [
+        "En el Capítulo III del Título I.",
+        "En sus artículos 52 y 53.",
+        "En el artículo 58.",
+        "En el Capítulo V del Título I."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-3",
+      "source_ref": "OEP 2022 · nº 3",
+      "stem": "Según el artículo 68 de la CE, ¿cuál es la circunscripción electoral en nuestro sistema electoral?",
+      "options": [
+        "La provincia.",
+        "El municipio.",
+        "La Comunidad Autónoma.",
+        "Distrito Municipal."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-4",
+      "source_ref": "OEP 2022 · nº 4",
+      "stem": "Según el artículo 18 de la ley 50/1997, de 27 de noviembre, del Gobierno que regula el funcionamiento del Consejo de Ministros, ¿quién actúa como Secretario de este órgano colegiado?",
+      "options": [
+        "El Vicepresidente Primero.",
+        "El Ministro portavoz del Gobierno.",
+        "El Ministro de la Presidencia.",
+        "El Ministro de Justicia."
+      ],
+      "correct": "c",
+      "topics": [
+        "B1-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-5",
+      "source_ref": "OEP 2022 · nº 5",
+      "stem": "De acuerdo con el artículo 78 de la CE, expirado el mandato de las Cortes Generales o en caso de disolución de las mismas, las Diputaciones Permanentes seguirán ejerciendo sus funciones hasta:",
+      "options": [
+        "La celebración de las elecciones.",
+        "La proclamación de los resultados electorales definitivos.",
+        "La elección de los nuevos presidentes de cada una de las Cámaras de las Cortes Generales.",
+        "La constitución de las nuevas Cortes Generales."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-6",
+      "source_ref": "OEP 2022 · nº 6",
+      "stem": "Según establece el artículo 24 de la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, el plazo máximo para resolver y notificar la resolución de una reclamación ante el Consejo de Transparencia y Buen Gobierno será de:",
+      "options": [
+        "Un mes, transcurrido el cual, la reclamación se entenderá estimada.",
+        "Un mes, transcurrido el cual, la reclamación se entenderá desestimada.",
+        "Tres meses, transcurrido el cual, la reclamación se entenderá estimada.",
+        "Tres meses, transcurrido el cual, la reclamación se entenderá desestimada."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-7",
+      "source_ref": "OEP 2022 · nº 7",
+      "stem": "Señale cuál de los siguientes NO es un compromiso del IV Plan de Gobierno Abierto de España:",
+      "options": [
+        "Participación de los jóvenes en políticas públicas.",
+        "Protección de denunciantes.",
+        "Huella normativa.",
+        "Reforma del marco regulatorio."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-8",
+      "source_ref": "OEP 2022 · nº 8",
+      "stem": "Conforme establece el artículo 18 de la Ley 53/1984, de 26 de diciembre, de Incompatibilidades del personal al servicio de las Administraciones Públicas, todas las resoluciones de compatibilidad para desempeñar un segundo puesto o actividad en el sector público o el ejercicio de actividades privadas se inscribirán:",
+      "options": [
+        "En el Registro Central de Personal.",
+        "En la Oficina de Conflicto de Intereses.",
+        "En la Unidad de Personal del Ministerio u Organismo correspondiente.",
+        "En los Registros de Personal correspondientes."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-9",
+      "source_ref": "OEP 2022 · nº 9",
+      "stem": "De acuerdo con el artículo 30 de la Ley 39/2006, de 14 de diciembre, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, el grado de dependencia será revisable:",
+      "options": [
+        "A instancia del interesado.",
+        "A instancia de los representantes del interesado.",
+        "De oficio por las Administraciones Públicas competentes.",
+        "Todas las respuestas anteriores son correctas."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-10",
+      "source_ref": "OEP 2022 · nº 10",
+      "stem": "Conforme el artículo 49 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, para impulsar la adopción voluntaria de planes de igualdad, el Gobierno establecerá:",
+      "options": [
+        "Medidas de acción positiva, especialmente dirigidas a las pequeñas y las medianas empresas.",
+        "Medidas de fomento, especialmente dirigidas a las empresas de 50 o más trabajadores.",
+        "Medidas de fomento, especialmente dirigidas a las pequeñas y las medianas empresas.",
+        "Medidas de acción positiva, dirigidas a cualquier empresa, sea de capital público o privado."
+      ],
+      "correct": "c",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-11",
+      "source_ref": "OEP 2022 · nº 11",
+      "stem": "Con carácter general el documento nacional de identidad tendrá un período de validez, a contar desde la fecha de la expedición o de cada una de sus renovaciones, de:",
+      "options": [
+        "Dos años cuando el solicitante no haya cumplido los cinco años de edad.",
+        "Cuatro años, cuando el titular haya cumplido los cinco años de edad y no haya alcanzado los treinta al momento de la expedición o renovación.",
+        "Nueve años, cuando el titular haya cumplido los treinta y no haya alcanzado los setenta.",
+        "Permanente cuando el titular haya cumplido los sesenta años."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-12",
+      "source_ref": "OEP 2022 · nº 12",
+      "stem": "De acuerdo con el artículo 4 de la Ley 6/2020, de 11 de noviembre, reguladora de determinados aspectos de los servicios electrónicos de confianza, el periodo de vigencia de los certificados cualificados:",
+      "options": [
+        "No será superior a 5 años.",
+        "No será superior a 3 años.",
+        "Es ilimitado.",
+        "No será superior a 6 años."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-13",
+      "source_ref": "OEP 2022 · nº 13",
+      "stem": "Indique según el título X de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿cuál de los siguientes NO es un derecho digital?",
+      "options": [
+        "Derecho al testamento digital.",
+        "Derecho al olvido en servicios de redes sociales y servicios equivalentes.",
+        "Derecho a la desconexión digital en el ámbito laboral.",
+        "Derecho a la igualdad y a la no discriminación en el entorno digital."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-14",
+      "source_ref": "OEP 2022 · nº 14",
+      "stem": "Según establece el artículo 34 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, los responsables y encargados de tratamiento comunicarán a la Agencia Española de Protección de Datos, las designaciones, nombramientos y ceses de los delegados de protección de datos en el plazo de:",
+      "options": [
+        "10 días.",
+        "15 días.",
+        "1 mes.",
+        "3 meses."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-15",
+      "source_ref": "OEP 2022 · nº 15",
+      "stem": "Según el Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad, ¿cuál de las siguientes medidas de seguridad afecta a la dimensión de Confidencialidad?",
+      "options": [
+        "Bloqueo de puesto de trabajo.",
+        "Firma electrónica.",
+        "Registro de la actividad.",
+        "Criptografía."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-16",
+      "source_ref": "OEP 2022 · nº 16",
+      "stem": "Señale la respuesta correcta sobre lo que establece la Norma Técnica de Interoperabilidad de Protocolos de Intermediación de Datos:",
+      "options": [
+        "Las tecnologías utilizadas para los intercambios se implementarán en base a estándares según lo establecido en la Norma Técnica de Interoperabilidad de Catálogo de estándares.",
+        "De forma general en servicios de intercambio se utilizará la versión 2.0 del protocolo SCSP (Sustitución de Certificados en Soporte Papel).",
+        "Emisores y Requirentes no mantendrán trazabilidad de los intercambios de datos producidos.",
+        "Los intercambios de información se podrán implementar a través de servicios web."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-17",
+      "source_ref": "OEP 2022 · nº 17",
+      "stem": "Señale qué afirmación es correcta con respecto a las soluciones de Ciberseguridad proporcionadas por el Centro Criptológico Nacional (CCN):",
+      "options": [
+        "CLARA, protección y trazabilidad del dato.",
+        "ELENA, Simulador de Técnicas de Cibervigilancia.",
+        "GLORIA, Gestión de eventos e información de seguridad.",
+        "MONICA, Gestor de logs para responder ante incidentes y amenazas."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-18",
+      "source_ref": "OEP 2022 · nº 18",
+      "stem": "Señale la respuesta correcta referente a los servicios comunes en materia de administración electrónica:",
+      "options": [
+        "SERVINOMINA realiza la gestión completa de las fases de nómina: cálculo, contabilidad y pago.",
+        "CIRCAB poderosa herramienta de trabajo en grupo para intercambio de información y trabajo colaborativo.",
+        "eVISOR permite a un empleado público la consulta de sus nóminas correspondientes a los cinco últimos años.",
+        "ENVIA es una aplicación que hace posible el envío de ficheros de gran volumen entre usuarios."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-19",
+      "source_ref": "OEP 2022 · nº 19",
+      "stem": "La CE regula la institución del Defensor del Pueblo como:",
+      "options": [
+        "Alto comisionado del Congreso de los Diputados.",
+        "Alto comisionado de las Cortes Generales.",
+        "Alto comisionado del Poder judicial.",
+        "Alto comisionado del Gobierno de la nación."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-20",
+      "source_ref": "OEP 2022 · nº 20",
+      "stem": "¿Qué es WCAG?",
+      "options": [
+        "Unas pautas de accesibilidad de contenidos web promovidas por el W3C.",
+        "Una librería de Java EE para la creación de aplicaciones web creada por Oracle.",
+        "Un componente del ecosistema Hadoop para el manejo de Big Data.",
+        "Un framework javascript especialmente indicado para trabajar con bases de datos no relacionales."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-21",
+      "source_ref": "OEP 2022 · nº 21",
+      "stem": "¿Cuál de los siguientes es el nombre de un conector usado para carga y datos creado por el fabricante Apple?",
+      "options": [
+        "USB-Tipo C",
+        "iUSB",
+        "iFirewire",
+        "Lightning"
+      ],
+      "correct": "d",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-22",
+      "source_ref": "OEP 2022 · nº 22",
+      "stem": "Con respecto a las sentencias del lenguaje SQL, indique la respuesta INCORRECTA:",
+      "options": [
+        "Sentencia DELETE sirve para borrar en forma sencilla distintos objetos como por ejemplo base de datos, tablas o índices.",
+        "La sentencia INSERT agrega uno o más registros a una tabla en una base de datos relacional.",
+        "La sentencia UPDATE modifica los valores de un conjunto de registros existentes en una tabla.",
+        "La sentencia GRANT se utiliza para dar permisos a un usuario."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-23",
+      "source_ref": "OEP 2022 · nº 23",
+      "stem": "Cuál de los siguientes son los objetos básicos de Kubernetes:",
+      "options": [
+        "Pod, State, Volume, Namespace.",
+        "Pod, Service, Volume, Namespace.",
+        "Job, Service, Volume, Namespace.",
+        "Job, Pod, Volume, Deployment."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-24",
+      "source_ref": "OEP 2022 · nº 24",
+      "stem": "La ALU es una parte de:",
+      "options": [
+        "La memoria.",
+        "La CPU.",
+        "El bus de operaciones.",
+        "El multiplexor de entrada."
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-25",
+      "source_ref": "OEP 2022 · nº 25",
+      "stem": "Señale la respuesta correcta sobre el modelo CISC:",
+      "options": [
+        "La microprogramación es una característica esencial.",
+        "Plantea un conjunto reducido de instrucciones para reducir el número de ciclos de reloj de ejecución de cada una de ellas.",
+        "Implementa las instrucciones directamente en hardware.",
+        "Está muy extendido en el mercado de procesadores para smartphone y tablets por su bajo consumo y buen rendimiento."
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-26",
+      "source_ref": "OEP 2022 · nº 26",
+      "stem": "En relación con los sistemas RAID señale la respuesta INCORRECTA:",
+      "options": [
+        "El RAID 1+0 exige un mínimo de 4 discos.",
+        "RAID 6 amplía el RAID 5 agregando un bloque de paridad.",
+        "RAID 5 necesitará un mínimo de 3 discos para ser implementado.",
+        "Un RAID 4 distribuye la información a nivel de bloques con dos discos de paridad dedicados."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-27",
+      "source_ref": "OEP 2022 · nº 27",
+      "stem": "¿Cuál de las siguientes es una tecnología de almacenamiento en disco mediante bus serie?",
+      "options": [
+        "SATA",
+        "ATA",
+        "SCSI",
+        "DLT"
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-28",
+      "source_ref": "OEP 2022 · nº 28",
+      "stem": "Respecto a la norma USB indique la respuesta INCORRECTA:",
+      "options": [
+        "USB Type-C es lo mismo que USB 3.1",
+        "La diferencia entre USB 3.1 Gen 1 y USB 3.1 Gen 2 se reduce solamente a la velocidad.",
+        "USB 3.2 permite velocidades de hasta 20 Gbps.",
+        "Los dispositivos USB 2.0 pueden lograr una velocidad de transferencia máxima hasta de 480 Mbps."
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-29",
+      "source_ref": "OEP 2022 · nº 29",
+      "stem": "En teoría de grafos, el algoritmo para la determinación del camino más corto, dado un vértice origen, hacia el resto de los vértices en un grafo que tiene pesos en cada arista se denomina:",
+      "options": [
+        "Algoritmo de Kruskal.",
+        "Algoritmo de Prim.",
+        "Algoritmo de Dijkstra.",
+        "Algoritmo de Floyd-Warshall."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-30",
+      "source_ref": "OEP 2022 · nº 30",
+      "stem": "Con respecto a los estándares PDF, señale que afirmación NO es correcta:",
+      "options": [
+        "PDF/UA Es el estándar global para la accesibilidad de PDF.",
+        "PDF/A proporciona las especificaciones para crear, ver e imprimir documentos digitales para conservarlos a largo plazo.",
+        "PDF/E proporciona especificaciones para crear, ver e imprimir documentos utilizados en flujos de trabajo de ingeniería.",
+        "PDF/I proporciona especificaciones para crear, ver e imprimir páginas finales listas para imprimir o listas para la prensa."
+      ],
+      "correct": "d",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-31",
+      "source_ref": "OEP 2022 · nº 31",
+      "stem": "¿Cuál de las versiones siguientes es la más reciente del sistema operativo macOS?",
+      "options": [
+        "macOS Sierra",
+        "macOS Monterey",
+        "macOS Big Sur",
+        "macOS Ventura"
+      ],
+      "correct": "d",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-32",
+      "source_ref": "OEP 2022 · nº 32",
+      "stem": "Cuál de las siguientes afirmaciones NO es correcta:",
+      "options": [
+        "En Windows de 64 bits, un proceso de 64 bits no puede cargar una biblioteca de vínculos dinámicos (DLL) de 32 bits.",
+        "En Windows de 64 bits, un proceso de 32 bits no puede cargar un archivo DLL de 64 bits.",
+        "En Windows de 64 bits se admiten llamadas a procedimientos remotos (RPC) entre procesos de 64 y 32 bits solo en el mismo equipo.",
+        "En Windows de 64 bits se admiten llamadas a procedimientos remotos (RPC) entre procesos de 64 y 32 bits tanto en el mismo equipo como entre equipos distintos."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-33",
+      "source_ref": "OEP 2022 · nº 33",
+      "stem": "Las bases de datos relacionales ofrecen propiedades ACID. Dicho acrónimo se refiere a:",
+      "options": [
+        "Atomicidad, Consistencia, Aislamiento y Durabilidad.",
+        "Atomicidad, Coherencia, Integridad y Distribución.",
+        "Disponibilidad, Coherencia, Intensidad y Durabilidad.",
+        "Atomicidad, Consistencia, Aislamiento y Disponibilidad."
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-34",
+      "source_ref": "OEP 2022 · nº 34",
+      "stem": "Entre las características obligatorias de un sistema gestor de bases de datos orientadas a objetos, NO se encuentra:",
+      "options": [
+        "Debe permitir construir objetos complejos.",
+        "El conjunto de tipos de datos debe ser fijo, consiguiendo así mayor eficiencia en las búsquedas.",
+        "Todos los objetos deben tener un identificador que sea independiente de los valores de sus atributos.",
+        "El esquema de una BDOO incluye únicamente un conjunto de clases (o de tipos)."
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-35",
+      "source_ref": "OEP 2022 · nº 35",
+      "stem": "Señale qué es el Machine Learning Services para SQL Server:",
+      "options": [
+        "Es un conjunto de tecnologías destinadas a la copia y distribución de datos y objetos de base de datos desde una base de datos a otra, para luego sincronizar ambas bases de datos y mantener su coherencia.",
+        "Es una característica de SQL Server que proporciona la capacidad de ejecutar scripts de Python y R con datos relacionales.",
+        "Es un producto de calidad de datos basado en conocimiento.",
+        "Es el servicio principal para almacenar, procesar y proteger los datos."
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-36",
+      "source_ref": "OEP 2022 · nº 36",
+      "stem": "Señale la respuesta correcta relativa al Modelo Entidad/Relación Extendido según establece METRICA v3:",
+      "options": [
+        "Un atributo se define sobre diversos dominios.",
+        "El dominio no tiene existencia propia y depende de las entidades, las relaciones o los atributos.",
+        "La entidad es aquel objeto, real o abstracto, acerca del cual se desea almacenar información en la base de datos.",
+        "La clave candidata es el conjunto de atributos que garantizan la unicidad de las ocurrencias e identifican la ocurrencia unívocamente."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-37",
+      "source_ref": "OEP 2022 · nº 37",
+      "stem": "La arquitectura ANSI/SPARC define para un sistema de gestión de bases de datos tres niveles de abstracción. Indicar la afirmación INCORRECTA:",
+      "options": [
+        "El nivel externo contiene las vistas externas de la base de datos y permite a cada tipo de usuario ver sólo aquella parte del esquema que le interesa.",
+        "El nivel físico define cómo se almacenan los datos y los métodos de acceso.",
+        "El nivel contextual define el formato de los campos.",
+        "El nivel interno también recibe el nombre de nivel lógico."
+      ],
+      "correct": "c",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la c).",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-38",
+      "source_ref": "OEP 2022 · nº 38",
+      "stem": "Cuál de las siguientes afirmaciones es FALSA:",
+      "options": [
+        "Un intérprete es un programa que ejecuta directamente las instrucciones escritas en un lenguaje de programación dado.",
+        "Un compilador es un programa que transforma el código fuente de un programa a su equivalente en otro lenguaje de programación de más bajo nivel.",
+        "Un transpilador es un programa que hace de intérprete y de compilador al mismo tiempo.",
+        "Un compilador cruzado o cross compiler es un compilador capaz de crear código ejecutable para otra plataforma distinta a aquélla en la que se ejecuta."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-39",
+      "source_ref": "OEP 2022 · nº 39",
+      "stem": "C++ permite especificar más de una función con el mismo nombre en el mismo ámbito. ¿Cómo se denominan estas funciones?",
+      "options": [
+        "Funciones dobles.",
+        "Funciones repetidas.",
+        "Funciones sobrecargadas.",
+        "En C++ no se puede nombrar más de una función con el mismo nombre."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-40",
+      "source_ref": "OEP 2022 · nº 40",
+      "stem": "Indica, de las siguientes afirmaciones, cuál es verdadera:",
+      "options": [
+        "Un array o vector es un tipo de dato estructurado que permite almacenar un conjunto de datos homogéneo donde cada elemento se almacena de forma consecutiva en memoria.",
+        "Bytecode es el código binario obtenido tras el proceso de compilación (Java).",
+        "C++ es un lenguaje de segunda generación.",
+        "En C++ la declaración del array: «int vector2[] = {1,2,3,4,10,9,80,70,19};», es incorrecta."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-41",
+      "source_ref": "OEP 2022 · nº 41",
+      "stem": "Señale la respuesta correcta sobre los tipos de controladores (drivers) JDBC:",
+      "options": [
+        "Los drivers tipo 1 utilizan Java puro para implementar un protocolo de red de proveedores del Sistema Gestor de Base de Datos.",
+        "Los drivers tipo 3 utilizan un protocolo de red y middleware para comunicarse con un servidor.",
+        "Según la tecnología utilizada para conectarse a la base de datos, los drivers JDBC se categorizan en 3 tipos diferentes.",
+        "Los drivers tipo 2 son controladores \"puente\", que utilizan otra tecnología (por ejemplo ODBC) para comunicarse con la base de datos."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-42",
+      "source_ref": "OEP 2022 · nº 42",
+      "stem": "Señale la respuesta INCORRECTA. Los tipos más corrientes de anomalías de base de datos son:",
+      "options": [
+        "Lecturas no repetibles.",
+        "Lecturas hundidas.",
+        "Lecturas sucias.",
+        "Lecturas fantasma."
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-43",
+      "source_ref": "OEP 2022 · nº 43",
+      "stem": "En SQL, ¿cómo se pueden eliminar los datos en una tabla, pero no la propia definición de la tabla?",
+      "options": [
+        "DROP TABLE",
+        "DELETE",
+        "REMOVE",
+        "ERASE"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-44",
+      "source_ref": "OEP 2022 · nº 44",
+      "stem": "¿Cuál de los siguientes términos hace referencia a patrones generales de software para asignación de responsabilidades en el diseño orientado a objetos?",
+      "options": [
+        "OOD",
+        "GRASP",
+        "Booch",
+        "Fan-In & Fan-Out"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-45",
+      "source_ref": "OEP 2022 · nº 45",
+      "stem": "Según METRICA v3, la relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen, es una relación entre clases de tipo:",
+      "options": [
+        "Herencia.",
+        "Composición.",
+        "Asociación.",
+        "Agregación."
+      ],
+      "correct": "d",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la d).",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-46",
+      "source_ref": "OEP 2022 · nº 46",
+      "stem": "Según METRICA v3, ¿cuál es diagrama que describe en detalle un determinado escenario de un caso de uso?",
+      "options": [
+        "Diagrama de Interacción.",
+        "Diagrama de representación.",
+        "Diagrama de flujo de datos.",
+        "Diagrama de casos de uso."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-47",
+      "source_ref": "OEP 2022 · nº 47",
+      "stem": "Indique cuál de las siguientes NO es una librería de Java proporcionada por la Apache Foundation:",
+      "options": [
+        "Log4J",
+        "httpclient",
+        "commons-io",
+        "Mockete"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-48",
+      "source_ref": "OEP 2022 · nº 48",
+      "stem": "Seleccione la respuesta correcta sobre .NET:",
+      "options": [
+        ".NET es un marco multiplataforma gratuito de Google para compilar aplicaciones y servicios en la nube.",
+        ".NET es un proyecto de código abierto.",
+        ".NET sirve exclusivamente para desarrollar aplicaciones móviles.",
+        ".NET admite un amplio rango de lenguajes de programación, a excepción de C#"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-49",
+      "source_ref": "OEP 2022 · nº 49",
+      "stem": "Señale la respuesta INCORRECTA referente al objeto POCO en .NET:",
+      "options": [
+        "Es una estructura de datos de .NET que solo contiene propiedades o campos públicos.",
+        "Es el acrónimo de Plain Old CLR Object.",
+        "No hereda de otra clase o implementa una interfaz.",
+        "Podrá contener miembros como: métodos. eventos y delegados."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-50",
+      "source_ref": "OEP 2022 · nº 50",
+      "stem": "Cuál de las siguientes afirmaciones sobre REST es FALSA:",
+      "options": [
+        "REST es el acrónimo de Representational State Transfer.",
+        "Los objetos en REST siempre se manipulan a partir de la URI.",
+        "URI son las siglas de Unique Resource Identifier.",
+        "Utiliza un protocolo cliente/servidor sin estado."
+      ],
+      "correct": "c",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la c).",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-51",
+      "source_ref": "OEP 2022 · nº 51",
+      "stem": "Señale cuál es un estándar OASIS que define los mecanismos para establecer y compartir contextos de seguridad, y para obtener claves de contextos de seguridad:",
+      "options": [
+        "WS-Addressing",
+        "WS-Federation",
+        "WS-SecureConversation",
+        "WS-Policy"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-52",
+      "source_ref": "OEP 2022 · nº 52",
+      "stem": "Señale la afirmación correcta con respecto a WSIL:",
+      "options": [
+        "Es un método alternativo al descubrimiento de servicios Web.",
+        "Define el modelo de programación y la arquitectura de ejecución para desplegar y buscar servicios Web en el entorno Java EE.",
+        "Define un modo de publicar y encontrar información sobre servicios Web.",
+        "Es una organización diseñada para promover la interoperatividad de servicios Web entre plataformas, sistemas operativos y lenguajes de programación."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-53",
+      "source_ref": "OEP 2022 · nº 53",
+      "stem": "¿Cuál es el motor web desarrollado por The Mozilla Foundation?",
+      "options": [
+        "WebKit",
+        "Firefox",
+        "Gecko",
+        "Edge"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-54",
+      "source_ref": "OEP 2022 · nº 54",
+      "stem": "¿Qué término está relacionado con XML-binary Optimized Packaging (XOP)?",
+      "options": [
+        "Reconstituted XML Infoset",
+        "XOP Header",
+        "XOP Package",
+        "Optimized Document"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-55",
+      "source_ref": "OEP 2022 · nº 55",
+      "stem": "¿Cuál de los siguientes NO es un framework para javascript?",
+      "options": [
+        "Angular",
+        "Bootstrap",
+        "React",
+        "JDBC"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-56",
+      "source_ref": "OEP 2022 · nº 56",
+      "stem": "Para detectar, eliminar y/o mitigar las debilidades de una aplicación se pueden realizar diferentes análisis de seguridad durante el ciclo de vida del desarrollo de software, entre los que NO se encuentra:",
+      "options": [
+        "SAST (Static Application Security Testing).",
+        "S-SDLC (Secure Software Development Liability Control).",
+        "DAST (Dynamic Application Security Testing).",
+        "SCA (Software Composition Analysis)."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-57",
+      "source_ref": "OEP 2022 · nº 57",
+      "stem": "El principio de la accesibilidad web que exige que los componentes y la navegación de la interfaz de usuario se puedan utilizar por cualquier persona usuaria es:",
+      "options": [
+        "La perceptibilidad.",
+        "La comprensibilidad.",
+        "La robustez.",
+        "La operabilidad."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-58",
+      "source_ref": "OEP 2022 · nº 58",
+      "stem": "Según METRICA v3, ¿qué tipo de pruebas son las que tienen como objetivo verificar el correcto ensamblaje entre los distintos componentes para comprobar que interactúan correctamente a través de sus interfaces, cubren la funcionalidad establecida y se ajustan a los requisitos no funcionales especificados?",
+      "options": [
+        "Pruebas del sistema.",
+        "Pruebas de implantación.",
+        "Pruebas de regresión.",
+        "Pruebas de integración."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-59",
+      "source_ref": "OEP 2022 · nº 59",
+      "stem": "Según establece METRICA v3, ¿qué participantes están presentes en la tarea de “Elaboración de los Manuales de Usuario”?",
+      "options": [
+        "Usuarios Expertos.",
+        "Consultor de Sistemas de Información.",
+        "Equipo de Formación.",
+        "Equipo de Proyecto."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-60",
+      "source_ref": "OEP 2022 · nº 60",
+      "stem": "¿Cuál de las siguientes herramientas NO es un software para el control de versiones?",
+      "options": [
+        "JMeter",
+        "Subversion",
+        "Mercurial",
+        "GIT"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-61",
+      "source_ref": "OEP 2022 · nº 61",
+      "stem": "Señale la respuesta INCORRECTA sobre el kernel de un Sistema Operativo:",
+      "options": [
+        "Controla todas las funciones importantes del hardware.",
+        "Se encarga del procesamiento paralelo de tareas (multitasking).",
+        "Es el núcleo del procesador.",
+        "Recibe peticiones de servicio de los procesos y los comunica con el hardware."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-62",
+      "source_ref": "OEP 2022 · nº 62",
+      "stem": "En un sistema UNIX, cuál es la respuesta INCORRECTA:",
+      "options": [
+        "El GID es el número de identificación de grupo.",
+        "El UID es el número de identificación de usuario.",
+        "El administrador del sistema se denomina root.",
+        "El proceso init se refiere al proceso de arranque de un usuario."
+      ],
+      "correct": "d",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-63",
+      "source_ref": "OEP 2022 · nº 63",
+      "stem": "Respecto a la virtualización de máquinas, indique la opción FALSA:",
+      "options": [
+        "Facilita el despliegue de entornos.",
+        "Requiere aumentar la inversión en hardware específico para la virtualización.",
+        "Posibilita la ejecución de varios sistemas operativos en una única máquina física.",
+        "Permite un aprovechamiento mayor de la capacidad del hardware."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-64",
+      "source_ref": "OEP 2022 · nº 64",
+      "stem": "Una copia de seguridad (backup) diferencial:",
+      "options": [
+        "Realiza una copia fiel de los datos, lo que implica que un archivo eliminado en el origen, también se eliminará en la copia de seguridad.",
+        "Partiendo de una copia de backup completa, realiza una copia de todos los datos modificados desde que se hizo ese backup completo.",
+        "Realiza una copia sólo de los datos modificados desde el último backup (sea completo o incremental).",
+        "Realiza una copia integral de los datos, copiando todos los contenidos de los sistemas a mantener."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-65",
+      "source_ref": "OEP 2022 · nº 65",
+      "stem": "¿En qué campo del objeto de Kubernetes hay que incluir los valores que permiten identificar unívocamente al objeto?",
+      "options": [
+        "kind",
+        "spec",
+        "apiVersion",
+        "metadata"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-66",
+      "source_ref": "OEP 2022 · nº 66",
+      "stem": "¿Cuál de los siguientes NO es un protocolo de correo electrónico?",
+      "options": [
+        "IMAP",
+        "SMTP",
+        "Outlook",
+        "POP3"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-67",
+      "source_ref": "OEP 2022 · nº 67",
+      "stem": "De los siguientes protocolos, ¿cuál se utiliza para administrar dispositivos de una red?",
+      "options": [
+        "SMTP",
+        "DNS",
+        "FTP",
+        "CMIP"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-68",
+      "source_ref": "OEP 2022 · nº 68",
+      "stem": "¿Cuál es el comando usado por el administrador SNMP que se utiliza para recuperar datos voluminosos de una tabla MIB grande?",
+      "options": [
+        "GET",
+        "GET BULK",
+        "GET NEXT",
+        "GET RESPONSE"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-69",
+      "source_ref": "OEP 2022 · nº 69",
+      "stem": "¿Qué es ECDSA?",
+      "options": [
+        "Un algoritmo de firma.",
+        "Un estándar estadounidense de cableado.",
+        "Un organismo regulador internacional.",
+        "Un protocolo de nivel de enlace."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-70",
+      "source_ref": "OEP 2022 · nº 70",
+      "stem": "Seleccione la respuesta INCORRECTA sobre la firma electrónica:",
+      "options": [
+        "Se llama Co-firma a la firma múltiple en la que todos los firmantes están al mismo nivel y en la que no importa el orden en el que se firma.",
+        "Cuando se firma en formato XAdES (XML Avanzado), el resultado es un fichero de texto XML.",
+        "En el formato XAdES se habla de firmas despegadas (detached), envolventes (enveloping) y envueltas (enveloped) según en qué sitio del propio fichero de firma se guarde el documento original.",
+        "El formato PAdES (Propietario Avanzado) es el formato propio utilizado por Microsoft Office, si bien existe una implementación abierta que se aplica en Open Office."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-71",
+      "source_ref": "OEP 2022 · nº 71",
+      "stem": "¿Cuál de estos equipos de interconexión trabaja a nivel de red (nivel 3 del modelo OSI)?",
+      "options": [
+        "Enrutadores (Routers).",
+        "Puentes (Bridges).",
+        "Conmutadores (Switches).",
+        "Concentradores (Hubs)."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-72",
+      "source_ref": "OEP 2022 · nº 72",
+      "stem": "Cuál es la respuesta INCORRECTA acerca de la fibra óptica plástica (POF):",
+      "options": [
+        "Está hecha esencialmente de plástico, construida de polimetilmetacrilato envuelto en polímeros fluoruros.",
+        "Permite aprovechar todo el ancho de banda y hacerlo sin pérdidas.",
+        "Ofrece un núcleo conductor menor que el de la fibra tradicional.",
+        "Es muy flexible, lo que hace que se pueda usar sin problema en instalaciones donde los tubos son antiguos."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-73",
+      "source_ref": "OEP 2022 · nº 73",
+      "stem": "¿Cuál es el prefijo de dirección de Multicast en IPv6?",
+      "options": [
+        "::1/128",
+        "224.0.0.0/4",
+        "FF00::/8",
+        "FC00::/7"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-74",
+      "source_ref": "OEP 2022 · nº 74",
+      "stem": "Seleccione la respuesta correcta sobre los niveles y servicios del modelo OSI:",
+      "options": [
+        "El modelo OSI se compone de 7 niveles, pero se pude asimilar a un modelo de referencia simplificado de solamente 2 niveles:\nTCP (Niveles 1 a 4) e IP (Niveles 5, 6 y 7).",
+        "Las entidades en un nivel N+1 ofrecen servicios que son utilizados por las entidades del nivel N.",
+        "Un servicio confirmado utiliza las 4 primitivas de comunicación entre capas: Request, Indication, Response, Confirm.",
+        "Un servicio no confirmado utiliza 3 de las 4 primitivas: Request, Indication, Response."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-75",
+      "source_ref": "OEP 2022 · nº 75",
+      "stem": "¿Cuál de los siguientes organismos está especializado en telecomunicaciones de la Organización de las Naciones Unidas (ONU), encargado de regular las telecomunicaciones a nivel internacional entre las distintas administraciones y empresas operadoras?",
+      "options": [
+        "ICANN",
+        "ITU",
+        "IEEE",
+        "TIA"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-76",
+      "source_ref": "OEP 2022 · nº 76",
+      "stem": "¿Qué parte de un certificado de sitio web necesita un navegador para establecer una conexión segura HTTPS?",
+      "options": [
+        "La clave pública del certificado del sitio web, para que el navegador descifre los mensajes enviados por ese sitio web.",
+        "La clave privada del certificado del sitio web, para que el navegador cifre los mensajes que envía al sitio web.",
+        "Las claves pública y privada del certificado del sitio web, para poder cifrar y descifrar los mensajes que se intercambia con el sitio web.",
+        "Ninguna. Es el sitio web el que debe recibir las claves pública y privada del certificado de la persona que navega."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-77",
+      "source_ref": "OEP 2022 · nº 77",
+      "stem": "¿Qué es un portal cautivo?",
+      "options": [
+        "Un sitio web bloqueado por un ransomware, cuyo acceso no se recupera hasta que se paga un rescate.",
+        "Una página o aplicación web con acceso limitado, generalmente en fase de pruebas como paso previo a ponerse en producción.",
+        "Un sitio web que no cumple los criterios del nivel AA de WCAG.",
+        "Una página web que gestiona el acceso de los usuarios a una red, generalmente inalámbrica."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-78",
+      "source_ref": "OEP 2022 · nº 78",
+      "stem": "Entre los protocolos que puede usar una VPN para proporcionar cifrado NO se encuentra:",
+      "options": [
+        "PPTP/MPPE",
+        "IPSec",
+        "L2TP/IPSec",
+        "KSEC 1.1"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-79",
+      "source_ref": "OEP 2022 · nº 79",
+      "stem": "¿Qué significa CSMA/CD?",
+      "options": [
+        "Acceso múltiple por servicio de portadora y múltiples colisiones.",
+        "Acceso múltiple con detección de portadora y detección de colisiones.",
+        "Acceso único con múltiples colisiones y detección de portadora.",
+        "Acceso único de múltiples portadoras y detección de colisiones."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-80",
+      "source_ref": "OEP 2022 · nº 80",
+      "stem": "¿Qué dispositivo tiene como objetivo principal filtrar el tráfico de una LAN para que el trafico local continúe siendo local pero permitiendo conectividad a otros segmentos?",
+      "options": [
+        "Switch",
+        "Hub",
+        "Router",
+        "Gateway"
+      ],
+      "correct": "b",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la b).",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R1",
+      "source_ref": "OEP 2022 · reserva nº 1",
+      "stem": "¿A qué se corresponden las siglas de Red SOHO?",
+      "options": [
+        "Small Own, Home Own.",
+        "Small Office, Home Own.",
+        "Small Office, Home Office.",
+        "Small Office, House Office."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R2",
+      "source_ref": "OEP 2022 · reserva nº 2",
+      "stem": "Dentro de los dispositivos Android, es posible encontrar un gran número de capas de personalización. Señale cuál NO es una de ellas:",
+      "options": [
+        "MIUI",
+        "PenPoint OS",
+        "One UI",
+        "OriginOS"
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R3",
+      "source_ref": "OEP 2022 · reserva nº 3",
+      "stem": "Señale qué paquete R en SQL Server Machine Learning Services permite realizar transformaciones y manipulaciones de datos, resúmenes estadísticos, visualizaciones y muchas formas de modelado:",
+      "options": [
+        "Revoscalepy",
+        "Microsoftml",
+        "Revoscaler",
+        "SqlRutils"
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R4",
+      "source_ref": "OEP 2022 · reserva nº 4",
+      "stem": "¿Cuál de los siguientes lenguajes está relacionado con el desarrollo en backend?",
+      "options": [
+        "GO",
+        "SASS",
+        "XML",
+        "ANGULAR"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R5",
+      "source_ref": "OEP 2022 · reserva nº 5",
+      "stem": "Indique cuáles son los diferentes tipos de configuración contemplados para WPS:",
+      "options": [
+        "PIN, PBC, USB",
+        "PIN, NFC, USB",
+        "PIN, USB",
+        "PIN, PBC, NFC, USB"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-1",
+      "source_ref": "OEP 2022 · Supuesto I · nº 1",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn el diagrama de clases la relación existente entre “Solicitud Representación” y “Trámite”, ¿qué multiplicidades serían compatibles con los requisitos planteados en el enunciado?",
+      "options": [
+        "‘1’ en el recuadro “SR>T” y ‘1’ en el recuadro “T>SR”.",
+        "‘1’ en el recuadro “SR>T” y ‘0..N’ en el recuadro “T>SR”.",
+        "‘0..N’ en el recuadro “SR>T” y ‘1’ en el recuadro “T>SR”.",
+        "‘1..N’ en el recuadro “SR>T” y ‘0..N’ en el recuadro “T>SR”."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T04"
+      ]
+    },
+    {
+      "key": "SI-2",
+      "source_ref": "OEP 2022 · Supuesto I · nº 2",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn Java SE 17, ¿con qué visibilidad se deben generar los atributos de la clase Data Access Object Solicitudes si se quiere tener acceso directamente desde cualquier otro objeto, sin mediación de métodos?",
+      "options": [
+        "Se usará el modificador \"public\".",
+        "Se usará el modificador \"protected\".",
+        "No se usará ningún modificador.",
+        "Se usará el modificador \"private\"."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-3",
+      "source_ref": "OEP 2022 · Supuesto I · nº 3",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn Java SE 17, ¿cuál de los siguientes tipos de colección no admite duplicados?",
+      "options": [
+        "List",
+        "Stack",
+        "Collection",
+        "Set"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-4",
+      "source_ref": "OEP 2022 · Supuesto I · nº 4",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nPara crear una tabla llamada Usuario, ¿qué sentencia SQL debemos ejecutar?",
+      "options": [
+        "ALTER TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));",
+        "INSERT TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));",
+        "CREATE TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));",
+        "DROP TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-5",
+      "source_ref": "OEP 2022 · Supuesto I · nº 5",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSi fuese el motor de Base de Datos ORACLE, indique cuál de los siguientes es un lenguaje de procedimiento cuya sintaxis permite insertar sentencias SQL y se almacena compilado dentro de la base de datos:",
+      "options": [
+        "TRANSACT SQL",
+        "PL/SQL",
+        "FORTRAN",
+        "COBOL"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-6",
+      "source_ref": "OEP 2022 · Supuesto I · nº 6",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe ha heredado una librería compilada que realiza la conexión a un importante servicio de comprobación de Cl@ve PIN, ¿qué patrón de diseño permite reutilizar este objeto?",
+      "options": [
+        "Adaptador (Adapter)",
+        "Singleton",
+        "Chain of responsibility (Cadena de responsabilidad)",
+        "Iterador (Iterator)"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-7",
+      "source_ref": "OEP 2022 · Supuesto I · nº 7",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nLa última versión del estándar de UML es:",
+      "options": [
+        "2.5",
+        "2.4.1",
+        "2.4",
+        "3.0"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-8",
+      "source_ref": "OEP 2022 · Supuesto I · nº 8",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn UML un diagrama de componentes:",
+      "options": [
+        "Describe la estructura del sistema mostrando las clases del sistema, sus atributos y relaciones entre ellas.",
+        "Describe cómo un sistema de software se divide en componentes y muestra las dependencias entre ellos.",
+        "Sirve para modelar el hardware utilizado en las implementaciones del sistema, los componentes implementados en el hardware y las asociaciones entre componentes en un momento específico.",
+        "Muestra una vista completa o parcial de la estructura de un sistema modelado en un momento específico."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-9",
+      "source_ref": "OEP 2022 · Supuesto I · nº 9",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué framework se puede usar para aplicaciones de escritorio nativas .NET?",
+      "options": [
+        ".NET MAUI",
+        "Blazor Hybrid",
+        "JavaFX",
+        "WebView"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-10",
+      "source_ref": "OEP 2022 · Supuesto I · nº 10",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Cuál es la normativa que define los requisitos de accesibilidad de los sitios web y aplicaciones móviles de los organismos del sector público?",
+      "options": [
+        "Orden Ministerial 1112/2018, de 7 de septiembre.",
+        "Ley Orgánica 1112/2018, de 7 de septiembre.",
+        "Ley 1112/2018, de 7 de septiembre.",
+        "Real Decreto 1112/2018, de 7 de septiembre."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-11",
+      "source_ref": "OEP 2022 · Supuesto I · nº 11",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn nuestra aplicación Java, ¿qué paquetes usaríamos para establecer la conexión a la base de datos de NOTIFICACION?",
+      "options": [
+        "java.database",
+        "javax.naming y javax.sql",
+        "javax.io y javax.servlet",
+        "javax.servlet"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-12",
+      "source_ref": "OEP 2022 · Supuesto I · nº 12",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe quiere desarrollar un microservicio para que el personal funcionario pueda consultar el estado de una notificación enviada. ¿Qué especificación de la comunidad, alineada con Jakarta EE Core Profile, es la indicada para desarrollarlo?",
+      "options": [
+        "Jakarta Authentication",
+        "Jakarta Batch",
+        "Microprofile",
+        "Jakarta Connectors"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-13",
+      "source_ref": "OEP 2022 · Supuesto I · nº 13",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn el equipo de desarrollo se ha decidido usar Selenium WebDriver para:",
+      "options": [
+        "Mejorar la accesibilidad de las páginas web facilitando audios a partir del texto.",
+        "Automatizar la ejecución de pruebas en el navegador.",
+        "Minimizar el tiempo de carga de la página web.",
+        "Diseñar páginas web adaptables."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-14",
+      "source_ref": "OEP 2022 · Supuesto I · nº 14",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Cuál es una herramienta de análisis de seguridad y calidad de código?",
+      "options": [
+        "SonarQube",
+        "SonarCode",
+        "SonarCuality",
+        "SonarSrc"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-15",
+      "source_ref": "OEP 2022 · Supuesto I · nº 15",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Cuál de los siguientes es un protocolo de seguridad usado en las comunicaciones HTTP?",
+      "options": [
+        "TLS",
+        "SSL",
+        "STARTTLS",
+        "WPA2"
+      ],
+      "correct": "a",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a).",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-16",
+      "source_ref": "OEP 2022 · Supuesto I · nº 16",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué tecnología de las siguientes es adecuada para implementar la recepción de notificaciones nativas en los teléfonos inteligentes del representante y del interesado?",
+      "options": [
+        "WebView",
+        "Mobile push",
+        "CDMA",
+        "Wi-Fi"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-17",
+      "source_ref": "OEP 2022 · Supuesto I · nº 17",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Cuál de los siguientes lenguajes de estilos emplearía si le piden modificar el color de un botón en el frontal web?",
+      "options": [
+        "XML",
+        "SGML",
+        "XSL",
+        "CSS"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-18",
+      "source_ref": "OEP 2022 · Supuesto I · nº 18",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Cómo se conoce el conjunto de pautas, componentes y herramientas que respaldan las mejores prácticas de diseño de la interfaz de usuario, perteneciente a Google?",
+      "options": [
+        "WCAG 2.1",
+        "WAI-ARIA",
+        "Material Design",
+        "Inclusive Design"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-19",
+      "source_ref": "OEP 2022 · Supuesto I · nº 19",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿A qué corresponde el ataque conocido por el acrónimo CSRF, que permite al atacante forzar al usuario a ejecutar acciones no deseadas en la aplicación web en la que está actualmente autenticado?",
+      "options": [
+        "Cross Site Request Forgery",
+        "Cross Site Repeat Forgery",
+        "Cross Site Reduction Forgery",
+        "Cross Send Request Forgery"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-20",
+      "source_ref": "OEP 2022 · Supuesto I · nº 20",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSeñale el software que permite automatizar la construcción y despliegue de un proyecto utilizando el concepto de pipelines:",
+      "options": [
+        "Jenkins",
+        "RabbitMQ",
+        "Apache Kafka",
+        "Subversion"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R1",
+      "source_ref": "OEP 2022 · Supuesto I · reserva nº 1",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn JSON, ¿qué valor mostraría la consola si ejecutamos este código: console.log(4 * 3 ** 2)?",
+      "options": [
+        "36",
+        "-1",
+        "24",
+        "Null"
+      ],
+      "correct": "a",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la a).",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R2",
+      "source_ref": "OEP 2022 · Supuesto I · reserva nº 2",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué característica o atributo de seguridad de las cookies, permite que el navegador solo envíe la cookie al servidor si ésta se originó en el mismo sitio web al que estamos intentando contactar?",
+      "options": [
+        "Domain",
+        "SameSite",
+        "Secure",
+        "HttpOnly"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R3",
+      "source_ref": "OEP 2022 · Supuesto I · reserva nº 3",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn PHP, señale qué variable de entorno se puede usar para almacenar datos del inicio de sesión de un usuario:",
+      "options": [
+        "$_SESSION",
+        "$SESSION",
+        "$_GLOBAL",
+        "$GLOBAL"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R4",
+      "source_ref": "OEP 2022 · Supuesto I · reserva nº 4",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué conjunto de herramientas de presentación y comportamiento ofrece componentes para trabajar en la parte dinámica del frontal web HTML?",
+      "options": [
+        "NumPy",
+        "ActiveMQ",
+        "Bootstrap",
+        "TensorFlow"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R5",
+      "source_ref": "OEP 2022 · Supuesto I · reserva nº 5",
+      "stem": "Se va a desarrollar un sistema que permitirá a una persona (interesado) otorgar permiso a otra (representante) para que actúe en su nombre ante la Administración en un determinado trámite. El sistema contará con los siguientes módulos:\n\n• Un frontal web (Punto de Acceso General) que recoge todos los trámites de la Administración y donde el interesado puede otorgar la representación.\n\n• Un proceso que tramita las peticiones de representación, envía notificaciones PUSH a los representantes y recaba los consentimientos producidos.\n\n• Un módulo de gestión para el personal funcionario de atención al público.\n\nCuando el interesado pulse el botón Otorgar representación en un trámite, el sistema generará un enlace único con caducidad, que será enviado por notificación PUSH al representante.\n\nEn el momento en que el representante acceda al enlace tendrá disponible la acción Obtener PIN y deberá usar la aplicación móvil Cl@ve PIN para obtener un PIN válido.\n\nEl funcionario, en el módulo de gestión, podrá comparar el PIN generado para la operación con el que le ofrece el representante, permitiendo el trámite si estos coinciden.\n\nUn interesado podrá solicitar representación para tantos trámites como considere y cada trámite podrá ser solicitado por un número cualquiera de interesados, pero una representación solo es válida para un trámite a la vez. Asimismo, cada representante podrá obtener permisos en cualquier número de trámites.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué método estático usaría para convertir una cadena JSON en un valor u objeto javascript?:",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "let obj = JSON",
+        "let obj = New JSON"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-1",
+      "source_ref": "OEP 2022 · Supuesto II · nº 1",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn los PCs de los usuarios hay que purgar la memoria caché de la resolución DNS. ¿Cuál de los siguientes comandos habría que lanzar desde la consola de PowerShell?",
+      "options": [
+        "ipconfig /dnsflush",
+        "ipconfig /flushdns",
+        "ifconifg --erase dnscache",
+        "ifconifg --clean dnscache"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-2",
+      "source_ref": "OEP 2022 · Supuesto II · nº 2",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn todos los PCs de usuario existe un usuario local llamado Infocentro utilizado para labores de mantenimiento. ¿Qué comando utilizaríamos desde la línea de comandos de Windows PowerShell para ver más información sobre este usuario?",
+      "options": [
+        "net user Infocentro",
+        "netuser Infocentro",
+        "info user Infocentro",
+        "infouser Infocentro"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-3",
+      "source_ref": "OEP 2022 · Supuesto II · nº 3",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn el contexto de la administración del almacenamiento, ¿qué es el “Thin Provisioning”?",
+      "options": [
+        "Es un mecanismo de despliegue de discos en red para clientes ligeros.",
+        "Es una tecnología que permite agregar discos físicos en caliente a las cabinas de la SAN.",
+        "Es un método de virtualización de almacenamiento que permite asignar el espacio de almacenamiento de una manera flexible bajo demanda.",
+        "Es un método por el que se asigna todo el espacio virtualizado disponible y se va a reduciendo (shrinking) a medida que el cliente lo descarta."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-4",
+      "source_ref": "OEP 2022 · Supuesto II · nº 4",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn uno de los servidores de la Subred de Aplicaciones del Modelo B se va a instalar un software de monitorización para Linux. Indique de entre los siguientes, cuál cumpliría esa función:",
+      "options": [
+        "Check_MK",
+        "Reddis",
+        "Jenkins",
+        "Nagstamon"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-5",
+      "source_ref": "OEP 2022 · Supuesto II · nº 5",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué máscara deberá tener la red 10.20.30.0 del modelo A para que haya cuatro subredes como en el Modelo B?",
+      "options": [
+        "255.255.255.194",
+        "255.255.255.192",
+        "255.255.255.196",
+        "255.255.255.190"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-6",
+      "source_ref": "OEP 2022 · Supuesto II · nº 6",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nNecesitamos borrar la caché de las direcciones físicas (Mac Address) en uno de los servidores que ofrece la aplicación de Intranet de la Subred de Aplicaciones del Modelo B. ¿Cuál de los siguientes comandos utilizaría?",
+      "options": [
+        "ip delete cache",
+        "arp -d",
+        "iptables -d mac",
+        "ip flush"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-7",
+      "source_ref": "OEP 2022 · Supuesto II · nº 7",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSi tenemos en cuenta que la primera subred para PCs de Usuario del Modelo B es la 10.20.30.0/26, ¿cuáles son las direcciones de Red y Broadcast?",
+      "options": [
+        "10.20.30.0 y 10.20.30.255",
+        "10.20.30.1 y 10.20.30.62",
+        "10.20.30.0 y 10.20.30.63",
+        "10.20.30.64 y 10.20.30.127"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-8",
+      "source_ref": "OEP 2022 · Supuesto II · nº 8",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nPara optimizar el acceso a Internet, se opta por instalar un servidor proxy-caché que soporte los protocolos HTTP, HTTP/2, HTTPS. ¿Cuál de las siguientes soluciones puede realizar dicha función?",
+      "options": [
+        "INFLUXDB",
+        "GRAFANA",
+        "CHECK_MK",
+        "SQUID"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-9",
+      "source_ref": "OEP 2022 · Supuesto II · nº 9",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nUna vez implementado \"teletrabajo\" mediante VPN, se quiere dotar de mayor seguridad mediante el envío de un código por SMS al teléfono móvil del trabajador. ¿Cómo se denomina a este tipo de validación?",
+      "options": [
+        "Factor electrónico de autenticación.",
+        "Autenticación electrónica de usuarios.",
+        "Doble factor de autenticación.",
+        "Factor único de autenticación."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-10",
+      "source_ref": "OEP 2022 · Supuesto II · nº 10",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn la subred de DMZ del Modelo B se quiere implementar un servicio de correo seguro. Cuáles, de entre los siguientes, son los puertos seguros para los protocolos POP, SMTP e IMAP:",
+      "options": [
+        "POP:993 / SMTP:465 / IMAP:995",
+        "POP:995 / SMTP:495 / IMAP:963",
+        "POP:995 / SMTP:465 / IMAP:993",
+        "POP:965 / SMTP:495 / IMAP:993"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-11",
+      "source_ref": "OEP 2022 · Supuesto II · nº 11",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nPara la aplicacion AutoFirma 1.8.2 de las estaciones de trabajo de la organizacion, ¿qué algoritmo de huella para la firma se permite de los siguientes?",
+      "options": [
+        "ECDSA",
+        "MD5",
+        "SHA384",
+        "DSA"
+      ],
+      "correct": "c",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-12",
+      "source_ref": "OEP 2022 · Supuesto II · nº 12",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn la organización se están planteando instalar puntos de acceso WiFi. ¿Cuál de estos estándares puede funcionar a 2,4 GHz, 5 GHz y 6 GHz?",
+      "options": [
+        "No existe la banda de los 6 GHz",
+        "802.11ax",
+        "802.11ac",
+        "802.11be"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-13",
+      "source_ref": "OEP 2022 · Supuesto II · nº 13",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nDesde su equipo en la subred de PCs de Usuarios del Modelo B y como administrador de los equipos del resto de subredes, necesita conectarse mediante SSH y SCP. ¿Qué puerto o puertos estándares deberían tener abiertos en el firewall para realizar esta labor?",
+      "options": [
+        "Puerto 21 para SSH y 22 para SCP.",
+        "Puerto 22 para SSH y 21 para SCP.",
+        "Puerto 21 tanto para SSH como SCP.",
+        "Puerto 22 tanto para SSH como SCP."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-14",
+      "source_ref": "OEP 2022 · Supuesto II · nº 14",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSi hubiese instalado un IIS, ¿qué comando utilizaría para reiniciarlo?",
+      "options": [
+        "IIS RESET",
+        "IISRESET",
+        "RESET IIS",
+        "RESETIIS"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-15",
+      "source_ref": "OEP 2022 · Supuesto II · nº 15",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn uno de los servidores de la Subred de Aplicaciones del Modelo B se necesita realizar una captura del tráfico que pasa por la interfaz de red eth1 y guardarlo en fichero.out para su posterior análisis, ¿cuál de las siguientes sentencias es la correcta?",
+      "options": [
+        "snoop -d eth1 -w fichero.out",
+        "tcpdump -i any -o fichero.out",
+        "tcpdump -i eth1 -w fichero.out",
+        "snoop -d any -o fichero.out"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-16",
+      "source_ref": "OEP 2022 · Supuesto II · nº 16",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn el servidor de la Subred de Aplicaciones que sirve las páginas de la intranet en el dominio intranet.sgi.es y que utiliza Apache 2.4, quieren servir páginas de otros dominios. ¿Cuál de las siguientes directivas debe utilizar?",
+      "options": [
+        "VirtualMachine",
+        "VirtualDomain",
+        "VirtualHost",
+        "VirtualIp"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-17",
+      "source_ref": "OEP 2022 · Supuesto II · nº 17",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe quiere crear una nueva vLAN en el organismo. ¿Qué opción de las vLAN hace que las tramas Ethernet incorporen la etiqueta \"vLAN ID\"?",
+      "options": [
+        "untagged",
+        "tagged",
+        "id",
+        "trunk"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-18",
+      "source_ref": "OEP 2022 · Supuesto II · nº 18",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nIndique qué herramienta desarrollada por el CCN-CERT, es una plataforma de análisis avanzado de malware:",
+      "options": [
+        "NADA",
+        "CADA",
+        "ADA",
+        "SADA"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-19",
+      "source_ref": "OEP 2022 · Supuesto II · nº 19",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn el clúster de Firewalls del modelo B se quiere implementar un módulo de seguridad para filtrar y monitorear el tráfico HTTP desde Internet a nuestros servidores WEB. ¿Cuál de los siguientes módulos debe implementarse para cumplir esta función?",
+      "options": [
+        "WAT - Web Administration Tool",
+        "WAF - Web Application Firewall",
+        "VFN - Virtual Firewall Network",
+        "WFL7 - Web Firewall Layer 7"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-20",
+      "source_ref": "OEP 2022 · Supuesto II · nº 20",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEn la Subred de PCs de Usuario del Modelo B, los PCs tienen el sistema operativo Windows 10. Necesitamos saber la tabla de enrutamiento de los equipos. ¿Cuál de los siguientes comandos permite ver esa información?",
+      "options": [
+        "route show",
+        "ip route ls",
+        "route print",
+        "ip route print"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R1",
+      "source_ref": "OEP 2022 · Supuesto II · reserva nº 1",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Qué comando muestra información del conjunto resultante de directivas (RSoP) para un usuario y equipo de destino en los equipos Windows 10 de la Subred de PCs de Usuario del Modelo B?",
+      "options": [
+        "gpshow",
+        "gpprint",
+        "gpresult",
+        "gplist"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R2",
+      "source_ref": "OEP 2022 · Supuesto II · reserva nº 2",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nUna vez implementado el acceso telemático a la oficina o \"teletrabajo\" mediante VPN, en relación con esta tecnología, indique en qué RFC está definido el protocolo PPTP:",
+      "options": [
+        "RFC 2661",
+        "RFC 2637",
+        "RFC 1661",
+        "RFC 2472"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R3",
+      "source_ref": "OEP 2022 · Supuesto II · reserva nº 3",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nLos dispositivos de interconexión de redes de nuestro sistema, son compatibles con POE++. Señale la afirmación correcta con respecto a este término:",
+      "options": [
+        "Las siglas corresponden a Power-of-Ethernet.",
+        "Como estándar, recibe la denominación IEEE 802.3at.",
+        "La alimentación real recibida es de 25,50 Watts.",
+        "Se subdivide en dos tipos: Tipo 3 y Tipo 4."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R4",
+      "source_ref": "OEP 2022 · Supuesto II · reserva nº 4",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSi fuese el motor de Base de Datos ORACLE, indique cuál de los siguientes comandos utilizaria para crear una copia de seguridad de la base de datos origen:",
+      "options": [
+        "RMAN",
+        "DUMPALL",
+        "ORACLE_BCK",
+        "COPYDB"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R5",
+      "source_ref": "OEP 2022 · Supuesto II · reserva nº 5",
+      "stem": "La Subdirección General de Informática del Organismo en el que recientemente Vd. ha tomado posesión y a través de su departamento de Sistemas, Comunicaciones y Seguridad, ha decidido acometer un cambio de diseño en la infraestructura de la red informática del departamento y Vd. debe colaborar en su implantación.\n\nSe parte de la situación inicial donde hay una única red con el siguiente direccionamiento IP 10.20.30.0/24 donde residen:\n\n• Los equipos informáticos de los usuarios\n• Las aplicaciones informáticas\n• Las Bases de Datos Oracle y MySql\n• La conexión a Internet del departamento\n\nTodo reside en la misma red según el modelo que llamaremos Modelo A:\n\nDespués de varios estudios se concluye que se debe realizar una segmentación de la red actual en cuatro subredes:\n\n● Primera Subred para los PCs de usuario\n● Segunda Subred para las Bases de Datos\n● Tercera Subred para las Aplicaciones\n● Cuarta Subred para utilizarla como DMZ\n\nSe instalará una pareja de Firewalls o Cortafuegos formando un clúster donde se implementarán las reglas necesarias para las conectividades y encaminamientos entre Subredes.\n\nEl modelo al que llamaremos Modelo B pasa a ser el siguiente:\n\nNota aclaratoria: los PCs de Usuario tienen sistema operativo Windows 10 y tanto los servidores para Aplicaciones, Base de Datos y DMZ tienen sistema operativo Linux RedHat RHEL7.4\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe ha decidido que la última IP válida de host para la Subred de Aplicaciones del Modelo B sea considerada como Puerta de Enlace o Default Gateway. Según este criterio, señale la opción correcta teniendo en cuenta que esta subred tiene el direccionamiento",
+      "options": [
+        "10.20.30.191",
+        "10.20.30.190",
+        "10.20.30.193",
+        "10.20.30.192"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    }
+  ]
+}
