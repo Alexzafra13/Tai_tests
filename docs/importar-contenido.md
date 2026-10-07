@@ -17,8 +17,12 @@ título → **Edit** → **Network access**, y añadir a los dominios permitidos
 ```
 boe.es
 www.boe.es
-sede.inap.gob.es
+inap.es
 www.inap.es
+portal.inap.es
+sede.inap.gob.es
+bci.inap.es
+laadministracionaldia.inap.es
 ```
 
 Alternativa: Claude Code en tu PC, en una copia del repositorio. Necesita
@@ -82,8 +86,33 @@ Qué debe hacer:
   qué y qué número).
 - Tests con un fragmento de texto de muestra del PDF real.
 
-Los exámenes están en la sede electrónica del INAP, en el proceso selectivo
-del cuerpo TAI de cada año: el cuestionario y la plantilla de respuestas.
+Dónde están:
+
+- Página del cuerpo en el INAP, con cada proceso por año (cuestionarios,
+  plantillas y notas de corte):
+  https://www.inap.es/es/seleccion/procesos-selectivos-de-cuerposescalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado
+- Sede electrónica, convocatoria 2025 de ingreso libre:
+  https://sede.inap.gob.es/es/procedimientos-y-servicios/seleccion/procesos-selectivos-de-cuerpos-y-escalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado-ingreso-libre-convocatoria-2025
+- Exámenes antiguos (desde 2008): material del cuerpo en la biblioteca del
+  INAP, `bci.inap.es`.
+- Los PDF suelen estar en `www.inap.es/documents/...`, por ejemplo
+  `Plantilla+Cuestionario_TAI_PI_2024_B_definitiva.pdf`.
+
+Cómo es el examen (ingreso libre), y lo que el importador debe tener en
+cuenta:
+
+- Ejercicio único: un cuestionario de hasta 80 preguntas y un **supuesto
+  práctico** a elegir entre dos (bloques III y IV) de hasta 20 preguntas
+  cada uno. Los supuestos llevan un enunciado común: guardarlo en la
+  explicación o en la referencia de cada pregunta para que se entienda
+  sola.
+- Hay **preguntas de reserva**: se importan con su referencia propia y
+  solo cuentan si la plantilla las usa para sustituir anuladas.
+- Hay **modelos A y B** con las mismas preguntas en otro orden: importar
+  solo uno (el de la plantilla elegida) para no duplicar.
+- **Ingreso libre** (LI) y **promoción interna** (PI) son exámenes
+  distintos; los dos sirven y son oficiales.
+
 Empezar por los más recientes. Si la web es difícil de recorrer, descargar
 los PDF a mano a `data/raw/inap/<año>/` y seguir desde ahí.
 
