@@ -2,6 +2,7 @@ package content
 
 import (
 	"context"
+	"fmt"
 	"strings"
 	"testing"
 	"time"
@@ -167,5 +168,55 @@ func TestLawQuestionsLinkCitedArticles(t *testing.T) {
 	}
 	if strings.Join(general, ",") != "3,4" {
 		t.Errorf("general %v", general)
+	}
+}
+
+func TestQuestionArticlesLinkBack(t *testing.T) {
+	ctx := context.Background()
+	s := newStore(t)
+	t1, t2 := lawTopicsFor(t, s)
+	topics := LawTopics{
+		"B1-T01": {{Law: "BOE-A-1978-31229", Parts: []string{"ti"}}},
+		"B1-T02": {{Law: "BOE-A-1978-31229"}},
+	}
+	if _, err := s.LoadLaws(ctx, []LawFile{testLaw("2026-05-20")}, topics); err != nil {
+		t.Fatal(err)
+	}
+	exam, err := s.CreateSource(ctx, SourceInput{Kind: KindINAPExam, Title: "Examen", Reference: "EX"})
+	if err != nil {
+		t.Fatal(err)
+	}
+	add := func(stem string, topic int64) int64 {
+		t.Helper()
+		id, err := s.CreateQuestion(ctx, QuestionInput{Stem: stem, Options: [4]string{"Uno", "Dos", "Tres", "Cuatro"},
+			Origin: OriginOfficial, Author: AuthorImport, SourceID: exam, SourceRef: "1", Status: StatusPublished,
+			TopicIDs: []int64{topic}})
+		if err != nil {
+			t.Fatal(err)
+		}
+		return id
+	}
+	both := add("Caso práctico: el artículo 99 de la CE no cuenta.\n\nSegún el artículo 62 y el artículo 13 bis de la CE:", t1)
+	title1 := add("Según el artículo 13 de la Constitución Española:", t2)
+	none := add("Según el artículo 13 de la Ley 39/2015:", t1)
+
+	links, err := s.QuestionArticles(ctx, []int64{both, title1, none})
+	if err != nil {
+		t.Fatal(err)
+	}
+	var got []string
+	for _, l := range links[both] {
+		got = append(got, fmt.Sprintf("%s %s %d", l.Law, l.BlockID, l.TopicID))
+	}
+	// Article 62 is outside topic 1's part, so it opens in topic 2; the law
+	// order wins over the order of the stem.
+	if want := fmt.Sprintf("Constitución Española a13-2 %d|Constitución Española a62 %d", t1, t2); strings.Join(got, "|") != want {
+		t.Errorf("practical case %q, want %q", strings.Join(got, "|"), want)
+	}
+	if l := links[title1]; len(l) != 1 || l[0].BlockID != "a13" || l[0].TopicID != t2 || l[0].Title != "Artículo 13" {
+		t.Errorf("question's own topic %+v", l)
+	}
+	if len(links[none]) != 0 {
+		t.Errorf("another law %+v", links[none])
 	}
 }

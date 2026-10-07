@@ -1,6 +1,7 @@
 // Tests, attempts and scoring (internal/quiz).
 
 import type { Origin } from "./content";
+import type { ArticleLink } from "./laws";
 
 export type TestMode = "practice" | "exam";
 export type TestStatus = "in_progress" | "finished" | "abandoned";
@@ -34,6 +35,7 @@ export type Solution = {
   source_ref: string;
   source_quote: string;
   topic_ids: number[];
+  articles: ArticleLink[];
 };
 
 export type TestItem = {

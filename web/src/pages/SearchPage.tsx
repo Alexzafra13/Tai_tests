@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSearchParams } from "react-router";
 import { ErrorBox } from "../components/Form";
-import { Options } from "../components/QuestionView";
+import { ArticleLinks, Options } from "../components/QuestionView";
 import { useDebounced, useResource } from "../hooks";
 import { originLabel, type SearchHit } from "../types";
 import "./SearchPage.css";
@@ -64,6 +64,7 @@ function SearchResult({ hit }: { hit: SearchHit }) {
             </span>
             {hit.source_quote && <blockquote>{hit.source_quote}</blockquote>}
           </div>
+          <ArticleLinks articles={hit.articles} />
         </div>
       ) : (
         <button type="button" className="link" onClick={() => setOpen(true)}>

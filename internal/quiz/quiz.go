@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/alexzafra13/tai_tests/internal/content"
 	"github.com/alexzafra13/tai_tests/internal/settings"
 	"github.com/alexzafra13/tai_tests/internal/srs"
 )
@@ -45,13 +46,15 @@ type Store struct {
 	db       *sql.DB
 	settings *settings.Store
 	srs      *srs.Store
-	now      func() time.Time
+	// content finds the law articles questions cite, for the solutions.
+	content *content.Store
+	now     func() time.Time
 	// shuffle orders options; replaced in tests for determinism.
 	shuffle func(n int, swap func(i, j int))
 }
 
 func NewStore(db *sql.DB, st *settings.Store, sr *srs.Store) *Store {
-	return &Store{db: db, settings: st, srs: sr, now: time.Now, shuffle: randomShuffle}
+	return &Store{db: db, settings: st, srs: sr, content: content.NewStore(db), now: time.Now, shuffle: randomShuffle}
 }
 
 type queryer interface {

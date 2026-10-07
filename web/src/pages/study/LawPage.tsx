@@ -1,5 +1,5 @@
-import { useMemo, useState } from "react";
-import { Link, useParams } from "react-router";
+import { useEffect, useMemo, useState } from "react";
+import { Link, useLocation, useNavigate, useParams } from "react-router";
 import { useResource } from "../../hooks";
 import type { LawText, LawTextSection, QuestionBrief } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
@@ -16,12 +16,24 @@ function fold(s: string): string {
 }
 
 // LawPage shows a law as published by the BOE, limited to the part of the
-// topic, with the official questions next to the articles they cite.
+// topic when there is one, with the official questions next to the articles
+// they cite. A #block in the URL (from a question) opens at that article.
 export function LawPage() {
   const { topicId, lawId } = useParams();
-  const { data: law, error, loading } = useResource<LawText>(`/laws/${lawId}?topic=${topicId}`);
+  const { hash, key } = useLocation();
+  const navigate = useNavigate();
+  const { data: law, error, loading } = useResource<LawText>(
+    topicId ? `/laws/${lawId}?topic=${topicId}` : `/laws/${lawId}`,
+  );
   const [query, setQuery] = useState("");
   const [onlyAsked, setOnlyAsked] = useState(false);
+  const target = decodeURIComponent(hash.slice(1));
+  // key is "default" when the page was opened directly, with nothing to go back to.
+  const fromQuestion = target !== "" && key !== "default";
+
+  useEffect(() => {
+    if (law && target) document.getElementById(target)?.scrollIntoView();
+  }, [law, target]);
 
   const visible = useMemo(() => {
     if (!law) return [];
@@ -43,9 +55,15 @@ export function LawPage() {
     <>
       <div className="page-head">
         <h2>Estudiar</h2>
-        <Link to={`/study/${topicId}`} className="link">
-          Volver al tema
-        </Link>
+        {fromQuestion ? (
+          <button type="button" className="link" onClick={() => navigate(-1)}>
+            Volver a la pregunta
+          </button>
+        ) : (
+          <Link to={topicId ? `/study/${topicId}` : "/syllabus"} className="link">
+            {topicId ? "Volver al tema" : "Temario"}
+          </Link>
+        )}
       </div>
       <ErrorBox message={error} />
       {loading && <Loading />}
@@ -113,7 +131,7 @@ export function LawPage() {
           {filtering && <p className="muted">{visible.length === 1 ? "1 resultado" : `${visible.length} resultados`}</p>}
           <div className="law-text">
             {visible.map((s) => (
-              <Section key={s.id} s={s} />
+              <Section key={s.id} s={s} target={s.id === target} />
             ))}
           </div>
         </>
@@ -132,7 +150,7 @@ function Paragraphs({ text }: { text: string }) {
   );
 }
 
-function Section({ s }: { s: LawTextSection }) {
+function Section({ s, target }: { s: LawTextSection; target: boolean }) {
   if (s.kind === "heading") {
     const H = (s.level ?? 1) <= 1 ? "h3" : "h4";
     return (
@@ -150,7 +168,10 @@ function Section({ s }: { s: LawTextSection }) {
     );
   }
   return (
-    <article id={s.id} className={s.questions.length > 0 ? "law-article asked" : "law-article"}>
+    <article
+      id={s.id}
+      className={["law-article", s.questions.length > 0 && "asked", target && "target"].filter(Boolean).join(" ")}
+    >
       <h5>{s.title}</h5>
       {s.body ? <Paragraphs text={s.body} /> : <p className="muted">No está en vigor todavía.</p>}
       {s.upcoming && (
@@ -166,7 +187,7 @@ function Section({ s }: { s: LawTextSection }) {
         </details>
       )}
       {s.questions.length > 0 && (
-        <details className="law-asked">
+        <details className="law-asked" open={target || undefined}>
           <summary>
             Preguntado en {s.questions.length === 1 ? "1 examen" : `${s.questions.length} exámenes`}
           </summary>
