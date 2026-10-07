@@ -1,0 +1,1370 @@
+{
+  "source": {
+    "kind": "inap_exam",
+    "title": "TAI promoción interna · OEP 2019 · ejercicio único",
+    "reference": "INAP-TAI-PI-OEP2019",
+    "url": "https://sede.inap.gob.es/es/procedimientos-y-servicios/seleccion/procesos-selectivos-de-cuerpos-y-escalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado/ctaiae-promocion-interna-oferta-de-empleo-publico-2019"
+  },
+  "questions": [
+    {
+      "key": "P-1",
+      "source_ref": "PI OEP 2019 · nº 1",
+      "stem": "Según el artículo 11 del Real Decreto 1553/2005, por el que se regula la expedición del documento nacional de identidad y sus certificados de firma electrónica, ¿cuáles son todos los tipos de certificados definidos que se incluyen en el chip incorporado a la tarjeta del DNI electrónico?",
+      "options": [
+        "Un certificado reconocido de Autenticación.",
+        "Un certificado reconocido de Firma.",
+        "Certificados reconocidos de Autenticación y de Firma.",
+        "Certificados reconocidos de Autenticación y de Firma, y certificado electrónico de la autoridad emisora."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-2",
+      "source_ref": "PI OEP 2019 · nº 2",
+      "stem": "La nueva Agenda Digital \"España Digital 2025\" recoge un conjunto de medidas, reformas e inversiones. ¿En cuántos ejes se articulan estas medidas?",
+      "options": [
+        "6",
+        "9",
+        "12",
+        "10"
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-3",
+      "source_ref": "PI OEP 2019 · nº 3",
+      "stem": "Con respecto a la prescripción de las sanciones referidas a la Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales, señale cuál de estas afirmaciones es correcta:",
+      "options": [
+        "Las sanciones por importe igual o inferior a 40.000 euros, prescriben en el plazo de diez meses.",
+        "Las sanciones por importe igual o inferior a 40.000 euros, prescriben en el plazo de un año.",
+        "Las sanciones por importe igual o inferior a 40.000 euros, prescriben en el plazo de dos años",
+        "Las sanciones por importe igual o inferior a 40.000 euros, prescriben en el plazo de tres años."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-4",
+      "source_ref": "PI OEP 2019 · nº 4",
+      "stem": "Según la Ley Orgánica 3/2018, de Protección de Datos y garantía de los derechos digitales, en su Título III capítulo II, donde se trata el ejercicio de los derechos en materia de protección de datos, ¿cuál de los siguientes es un derecho que se puede ejercer?",
+      "options": [
+        "Derecho de indemnización.",
+        "Derecho de custodia.",
+        "Derecho de oposición.",
+        "Derecho al cifrado de la información."
+      ],
+      "correct": "c",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-5",
+      "source_ref": "PI OEP 2019 · nº 5",
+      "stem": "La guía de auditoría, que identifica los requisitos a cumplir en conformidad con el Esquema Nacional de Interoperabilidad (ENI), contiene un conjunto de controles apropiados para evaluar el cumplimiento de lo previsto en el ENI, agrupados en tres categorías:",
+      "options": [
+        "Marco organizativo, Marco operacional y Medidas de protección.",
+        "Marco organizativo, Marco semántico y Marco de seguridad.",
+        "Evaluación organizativa, Evaluación semántica y Evaluación temporal.",
+        "Marco organizativo, Marco operacional y Medidas técnicas."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-6",
+      "source_ref": "PI OEP 2019 · nº 6",
+      "stem": "Según el artículo 11 de la Ley 39/2015, del Procedimiento Administrativo Común de las Administraciones Públicas, éstas NO requerirán a los interesados el uso obligatorio de firma para:",
+      "options": [
+        "Formular solicitudes.",
+        "Acceso a notificaciones.",
+        "Interponer recursos.",
+        "Desistir de acciones."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-7",
+      "source_ref": "PI OEP 2019 · nº 7",
+      "stem": "De acuerdo con el artículo 36.2 de la Ley 19/2013, de transparencia, acceso a la información pública y buen gobierno, formará parte de la Comisión de Transparencia y Buen Gobierno:",
+      "options": [
+        "Un experto propuesto por el Consejo de Consumidores y Usuarios.",
+        "Un representante de la Autoridad Independiente de Responsabilidad Fiscal.",
+        "Un representante del Consejo General del Poder Judicial.",
+        "Un experto propuesto por la Federación Española de Municipios y Provincias."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-8",
+      "source_ref": "PI OEP 2019 · nº 8",
+      "stem": "¿Qué número de Objetivos de Desarrollo Sostenible (ODS) se incluyen en la Agenda 2030?",
+      "options": [
+        "15",
+        "12",
+        "16",
+        "17"
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-9",
+      "source_ref": "PI OEP 2019 · nº 9",
+      "stem": "En relación a la Ley Orgánica 3/2007, para la igualdad efectiva de mujeres y hombres. En el caso de las empresas, ¿cuándo se debe elaborar y aplicar un plan de igualdad?",
+      "options": [
+        "Siempre.",
+        "Es voluntario.",
+        "En el caso de las empresas de cincuenta o más trabajadores o, adicionalmente, cuando así se establezca en el convenio colectivo que sea de aplicación en los términos previstos en el mismo.",
+        "Sólo en el caso de las empresas de cincuenta o más trabajadores."
+      ],
+      "correct": "c",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-10",
+      "source_ref": "PI OEP 2019 · nº 10",
+      "stem": "Según el artículo 26 de la Ley 39/2006, de Promoción de la Autonomía Personal y Atención a las personas en situación de dependencia, señale la opción correcta en relación a la clasificación de los grados de dependencia:",
+      "options": [
+        "Grado I. Dependencia moderada: cuando la persona necesita ayuda para realizar varias actividades básicas de la vida diaria, al menos una vez al día o tiene necesidades de apoyo intermitente o limitado para su autonomía personal.",
+        "Grado II. Gran dependencia: cuando la persona necesita ayuda para realizar varias actividades básicas de la vida diaria una o dos veces al día, pero no quiere el apoyo permanente de un cuidador o tiene necesidades de apoyo extenso para su autonomía personal.",
+        "Grado III. Dependencia total: cuando la persona necesita ayuda para realizar varias actividades básicas de la vida diaria varias veces al día y, por su pérdida total de autonomía necesita el apoyo indispensable y continuo de otra persona o tiene necesidades de apoyo generalizado para su autonomía personal.",
+        "Grado IV. Dependencia máxima: cuando la persona necesita constantemente ayuda para realizar cualquier actividad básica de la vida diaria."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-11",
+      "source_ref": "PI OEP 2019 · nº 11",
+      "stem": "¿Cuál de los siguientes es un tipo de almacenamiento de datos volátil?",
+      "options": [
+        "Memoria de acceso aleatorio dinámico.",
+        "Memoria USB.",
+        "Memoria flash.",
+        "Discos ópticos."
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-12",
+      "source_ref": "PI OEP 2019 · nº 12",
+      "stem": "Indique la velocidad máxima de transferencia del USB 4.0:",
+      "options": [
+        "Hasta 20 Gbps.",
+        "Hasta 30 Gbps.",
+        "Hasta 40 Gbps.",
+        "Hasta 50 Gbps."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-13",
+      "source_ref": "PI OEP 2019 · nº 13",
+      "stem": "Si un árbol binario lo recorremos siguiendo el orden siguiente: raíz, subárbol izquierdo, subárbol derecho, ¿cuál de los siguientes tipos de recorrido estamos utilizando?",
+      "options": [
+        "Preorden",
+        "Inorden",
+        "Postorden",
+        "Reorden"
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-14",
+      "source_ref": "PI OEP 2019 · nº 14",
+      "stem": "El algoritmo de ordenación que consiste en comparar pares de elementos adyacentes e intercambiarlos entre sí, si no están en orden, hasta que todo el conjunto de elementos se encuentre ordenado, es conocido como:",
+      "options": [
+        "Selección",
+        "Burbuja",
+        "Inserción",
+        "Quicksort"
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-15",
+      "source_ref": "PI OEP 2019 · nº 15",
+      "stem": "¿En Linux, qué tipo de proceso se corresponde con la característica de que, habiendo concluido, aún está presente en la tabla de procesos?",
+      "options": [
+        "Proceso zombie.",
+        "Proceso perdido.",
+        "Proceso huérfano.",
+        "Proceso demonio."
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-16",
+      "source_ref": "PI OEP 2019 · nº 16",
+      "stem": "En un entorno UNIX, tenemos los permisos \"rwxr-x-r–\" sobre un determinado fichero. ¿Qué acción o acciones puede hacer un usuario del grupo del propietario del fichero?",
+      "options": [
+        "Sólo leer.",
+        "Sólo leer y ejecutar.",
+        "Sólo leer, escribir y ejecutar.",
+        "Sólo ejecutar."
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-17",
+      "source_ref": "PI OEP 2019 · nº 17",
+      "stem": "Entre las restricciones aplicables al modelo relacional de datos, \"la integridad de la entidad\" hace referencia a que:",
+      "options": [
+        "El conjunto de valores que pueden asociarse a esa entidad está acotado.",
+        "En una relación, el valor de la clave ajena debe ser igual al de la clave primaria.",
+        "Una clave ajena pueden admitir nulos, siempre y cuando lo permita el dominio.",
+        "Una clave primaria no puede ser nula, ni ninguno de los atributos que la componen."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-18",
+      "source_ref": "PI OEP 2019 · nº 18",
+      "stem": "Según Métrica v3, en un diagrama de flujo de datos, ¿qué componente representa una funcionalidad que tiene que llevar a cabo el sistema para transformar o manipular datos?",
+      "options": [
+        "Entidad externa.",
+        "Proceso.",
+        "Almacén de datos.",
+        "Flujo de datos."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-19",
+      "source_ref": "PI OEP 2019 · nº 19",
+      "stem": "En diseño de bases de datos, al conjunto de valores que puede tomar un atributo se le denomina:",
+      "options": [
+        "Entidad",
+        "Recorrido",
+        "Cardinalidad",
+        "Dominio"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-20",
+      "source_ref": "PI OEP 2019 · nº 20",
+      "stem": "¿Cuál es uno de los motivos para aplicar la desnormalización en una base de datos?",
+      "options": [
+        "Mejorar el rendimiento.",
+        "Disminución de la redundancia de los datos.",
+        "Disminución del tamaño de la base de datos.",
+        "Mejor actualización del modelo de datos."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-21",
+      "source_ref": "PI OEP 2019 · nº 21",
+      "stem": "Indique cuál de las siguientes NO es una de las Reglas de Codd:",
+      "options": [
+        "Regla de la independencia física de los datos.",
+        "Regla de no subversión.",
+        "Regla de la inserción, actualización y supresión de bajo nivel.",
+        "Regla de la actualización de vistas."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-22",
+      "source_ref": "PI OEP 2019 · nº 22",
+      "stem": "En el lenguaje C++, si hablamos de un bucle con estructura do…while:",
+      "options": [
+        "Sólo se ejecuta si la condición del bucle es verdadera.",
+        "Evalúa la condición del bucle y después se ejecuta al menos una vez.",
+        "Se ejecuta una vez antes de evaluar la condición del bucle.",
+        "Se ejecuta una sola vez siempre y cuando sea verdadera la condición del bucle."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-23",
+      "source_ref": "PI OEP 2019 · nº 23",
+      "stem": "En SQL, ¿cuál es la sentencia correcta para actualizar la columna 'City' de la tabla 'Customers' con el valor 'PARIS'?",
+      "options": [
+        "UPDATE_TABLE SET TABLE='Customers' AND City='PARIS'",
+        "UPDATE City='PARIS' WHERE TABLE='Customers'",
+        "UPDATE Customers SET City='PARIS'",
+        "CREATE NEW VALUE('PARIS') FOR City ON TABLE(Customers) REWRITE"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-24",
+      "source_ref": "PI OEP 2019 · nº 24",
+      "stem": "En relación al lenguaje SQL, ¿cuál de las siguientes afirmaciones es verdadera?",
+      "options": [
+        "CREATE es una sentencia de Lenguaje de Manipulación de Datos (DML).",
+        "INSERT es una sentencia de Lenguaje de Definición de Datos (DDL).",
+        "GRANT es una sentencia de Lenguaje de Control de Datos (DCL).",
+        "ALTER es una sentencia de Lenguaje de Control de Datos (DCL)."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-25",
+      "source_ref": "PI OEP 2019 · nº 25",
+      "stem": "Indique cuáles de las siguientes etiquetas NO fueron introducidas como novedad en HTML5.",
+      "options": [
+        "<footer> y <details>",
+        "<header> y <nav>",
+        "<details> y <mark>",
+        "<caption> y <nav>"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-26",
+      "source_ref": "PI OEP 2019 · nº 26",
+      "stem": "En relación a la representación de los diagramas de casos de uso del Lenguaje de Modelado Unificado (UML), indique la correcta.",
+      "options": [
+        "Los diagramas de casos de uso contienen actores, relaciones y casos de usos.",
+        "Los diagramas de casos de uso contienen almacenes, relaciones y procedimientos.",
+        "Los diagramas de casos de uso contienen actores, relaciones y procedimientos.",
+        "Los diagramas de casos de uso contienen almacenes, relaciones y casos de uso."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-27",
+      "source_ref": "PI OEP 2019 · nº 27",
+      "stem": "En lo referente a los patrones de diseño GoF (Gang of Four), indique cuál de los siguientes se corresponde con un patrón de comportamiento:",
+      "options": [
+        "Adapter",
+        "Iterator",
+        "Composite",
+        "Builder"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-28",
+      "source_ref": "PI OEP 2019 · nº 28",
+      "stem": "Indique cuál de las siguientes opciones corresponde a una API de Java para el procesamiento de documentos en formato XML.",
+      "options": [
+        "JNA",
+        "StAX",
+        "JNI",
+        "JPaX"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-29",
+      "source_ref": "PI OEP 2019 · nº 29",
+      "stem": "¿Cuál de los siguientes NO es un principio del Manifiesto Ágil?",
+      "options": [
+        "El software funcionando es la medida principal de progreso.",
+        "El arte de maximizar la cantidad de trabajo realizado es esencial.",
+        "Los proyectos se desarrollan en torno a individuos motivados.",
+        "Los responsables de negocio y los desarrolladores trabajamos juntos de manera cotidiana durante todo el proyecto."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-30",
+      "source_ref": "PI OEP 2019 · nº 30",
+      "stem": "¿Cuál de los siguientes protocolos está asociado al descubrimiento de servicios web?",
+      "options": [
+        "LLDP (Link Layer Discovery Protocol).",
+        "UDDI (Universal Description Discovery and Integration).",
+        "WSDP (Web Service Discovery Protocol).",
+        "SSDP (Simple Service Discovery Protocol)."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-31",
+      "source_ref": "PI OEP 2019 · nº 31",
+      "stem": "Señale la respuesta correcta en relación a las tecnologías y herramientas de desarrollo front-end:",
+      "options": [
+        "Sass, Less y Stylus, son preprocesadores de CSS.",
+        "Postman es una herramienta que sirve para probar la parte de front-end, no permitiendo validar los servicios REST.",
+        "Node js fue construido con el motor de java jre 1.9",
+        "Bootstrap es una herramienta de desarrollo que permite realizar test de los servicios REST, aislando al programador del front-end."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-32",
+      "source_ref": "PI OEP 2019 · nº 32",
+      "stem": "Según el WCAG 2.1, ¿qué pauta de las siguientes pertenece al principio Comprensible?",
+      "options": [
+        "Adaptable",
+        "Navegable",
+        "Predecible",
+        "Distinguible"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-33",
+      "source_ref": "PI OEP 2019 · nº 33",
+      "stem": "Las siglas UI y UX hacen referencia a:",
+      "options": [
+        "Interfaz de usuario (User Interface) y experiencia de usuario (User eXperience).",
+        "Innovación para usuarios (User Innovation) y ejemplos de usuario (User eXamples).",
+        "Índice de Unicode (Unicode Index) y pericia en Unicode (Unicode eXpertise).",
+        "Interfaz unidireccional (Unidirectional Interface) y experiencia unidireccional (Unidirectional eXperience)."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-34",
+      "source_ref": "PI OEP 2019 · nº 34",
+      "stem": "En los sistemas Linux, el comando pwd permite:",
+      "options": [
+        "Mostrar el nombre del directorio de trabajo actual.",
+        "Cambiar la contraseña de un usuario.",
+        "Informar del estado de los procesos.",
+        "Cambiar el directorio de trabajo."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-35",
+      "source_ref": "PI OEP 2019 · nº 35",
+      "stem": "En Linux, ¿cuál de las siguientes opciones utilizaría para conocer qué puertos tiene abiertos un servidor?",
+      "options": [
+        "ntpq",
+        "ntport",
+        "nmap",
+        "traceroute"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-36",
+      "source_ref": "PI OEP 2019 · nº 36",
+      "stem": "¿Cuál de los siguientes NO es un tipo de backup?",
+      "options": [
+        "Compartimental",
+        "Diferencial",
+        "Incremental",
+        "Completa"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-37",
+      "source_ref": "PI OEP 2019 · nº 37",
+      "stem": "En relación a los sistemas RAID, indique qué configuración permite acceso independiente con paridad distribuida:",
+      "options": [
+        "RAID 1",
+        "RAID 3",
+        "RAID 4",
+        "RAID 5"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-38",
+      "source_ref": "PI OEP 2019 · nº 38",
+      "stem": "El protocolo SMTP es acrónimo de:",
+      "options": [
+        "Secure Mail Transfer Protocol.",
+        "Secure Mail Transaction Protocol.",
+        "Simple Mail Transfer Protocol.",
+        "Simple Managemet Trace Protocol."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-39",
+      "source_ref": "PI OEP 2019 · nº 39",
+      "stem": "¿Qué comando se debe ejecutar para mostrar un listado de los servicios en ejecución en un ordenador con sistema operativo Windows 10?",
+      "options": [
+        "Net view services",
+        "Net start process",
+        "Net start",
+        "Net start all"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-40",
+      "source_ref": "PI OEP 2019 · nº 40",
+      "stem": "Indique cuál de los siguientes es un protocolo orientado a la gestión de los dispositivos de una red:",
+      "options": [
+        "SMTP",
+        "SNMP",
+        "HTTP",
+        "IGMPv3"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-41",
+      "source_ref": "PI OEP 2019 · nº 41",
+      "stem": "En relación a los riesgos de seguridad en aplicaciones, según OWASP, ¿qué tipo de fallo ocurre cuando datos no confiables son enviados a un intérprete como parte de un comando o consulta?",
+      "options": [
+        "Secuencia de comandos en sitios cruzados (XSS).",
+        "Exposición de datos sensibles.",
+        "Redirecciones y reenvíos no validados.",
+        "Inyección."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-42",
+      "source_ref": "PI OEP 2019 · nº 42",
+      "stem": "¿Qué tipo de ataque lleva a cabo el virus Ryuk?",
+      "options": [
+        "Sniffing",
+        "Ransomware",
+        "Spoofing",
+        "Phishing"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-43",
+      "source_ref": "PI OEP 2019 · nº 43",
+      "stem": "¿Cuál de los siguientes algoritmos de cifrado es de clave pública?",
+      "options": [
+        "RSA",
+        "Blowfish",
+        "IDEA",
+        "Twofish"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-44",
+      "source_ref": "PI OEP 2019 · nº 44",
+      "stem": "Sobre redes inalámbricas, indique cuál de las siguientes afirmaciones es INCORRECTA:",
+      "options": [
+        "La frecuencia de 2,4 GHz presenta interferencias con algunas versiones de Bluetooth.",
+        "La seguridad del protocolo WEP es superior a la del protocolo WPA2.",
+        "El protocolo WPA3 surge, entre otros, a raíz del ataque KRACK, mejorando la modalidad de cifrado WPA2-PSK (AES).",
+        "La frecuencia de 5 GHz tiene menor alcance que la de 2,4 GHz."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-45",
+      "source_ref": "PI OEP 2019 · nº 45",
+      "stem": "El estándar comercializado con el nombre de Wi-Fi 6 se corresponde con el estándar de IEEE:",
+      "options": [
+        "802.11ax",
+        "802.11ac",
+        "802.11ac wave 2",
+        "802.11az"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-46",
+      "source_ref": "PI OEP 2019 · nº 46",
+      "stem": "¿Cuál de los siguientes es un protocolo de nivel de transporte de TCP/IP?",
+      "options": [
+        "SMTP",
+        "ARP",
+        "UDP",
+        "FTP"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-47",
+      "source_ref": "PI OEP 2019 · nº 47",
+      "stem": "El orden ascendente que siguen las capas del modelo OSI es:",
+      "options": [
+        "Física, Enlace, Red, Transporte, Sesión, Presentación y Aplicación.",
+        "Física, Enlace, Red, Transporte, Presentación, Sesión y Aplicación.",
+        "Física, Enlace, Transporte, Red, Sesión, Aplicación y Presentación.",
+        "Física, Enlace, Red, Transporte, Sesión, Aplicación y Presentación."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-48",
+      "source_ref": "PI OEP 2019 · nº 48",
+      "stem": "¿Cuál de los siguientes registros DNS proporciona información sobre las características básicas del dominio y de la zona en la que se encuentra?",
+      "options": [
+        "AAAA",
+        "PTR",
+        "MX",
+        "SOA"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-49",
+      "source_ref": "PI OEP 2019 · nº 49",
+      "stem": "¿Cuál de las siguientes herramientas del CCN-CERT se utiliza para la detección de amenazas complejas en el puesto del usuario?",
+      "options": [
+        "MARIA",
+        "CLAUDIA",
+        "GLORIA",
+        "ANA"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-50",
+      "source_ref": "PI OEP 2019 · nº 50",
+      "stem": "En el contexto de la gestión de dispositivos móviles, qué significan las siglas BYOD:",
+      "options": [
+        "Bring Your Own Device.",
+        "Best Year's Open Device.",
+        "Backup Yearly with Online Device.",
+        "Buy Yet-Only Divided Device."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R1",
+      "source_ref": "PI OEP 2019 · reserva nº 1",
+      "stem": "La arquitectura de ordenadores Harvard:",
+      "options": [
+        "Tiene un único espacio de memoria para datos e instrucciones.",
+        "Tiene dos espacios de memoria separados, uno para datos y otro para instrucciones.",
+        "Es un tipo de arquitectura Von Neumann.",
+        "Tiene tres espacios de memoria separados, uno para datos, otro para instrucciones y otro para la memoria no volátil."
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R2",
+      "source_ref": "PI OEP 2019 · reserva nº 2",
+      "stem": "¿Cuál es la funcionalidad de la herramienta \"FACILITA\"?",
+      "options": [
+        "Una herramienta de la Agencia Española de Protección de Datos para el tratamiento de datos personales de escaso riesgo.",
+        "Una herramienta ofrecida por la Administración Pública que facilita la adecuación del plan de actuación para ayudar a las personas con movilidad reducida.",
+        "Una aplicación de código abierto que ofrece la Administración General del Estado para que facilitar la visualización de contenidos multimedia.",
+        "Una aplicación para móviles que ofrece la Agencia Estatal de Administración Tributaria para generar y presentar la declaración de la renta."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R3",
+      "source_ref": "PI OEP 2019 · reserva nº 3",
+      "stem": "Según el Esquema Nacional de Seguridad, ¿cuál de las siguientes medidas de seguridad afecta a la dimensión de Trazabilidad?",
+      "options": [
+        "Copias de seguridad.",
+        "Sellos de tiempo.",
+        "Cifrado.",
+        "Firma electrónica."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R4",
+      "source_ref": "PI OEP 2019 · reserva nº 4",
+      "stem": "En tecnologías de almacenamiento, el término SAS se corresponde con:",
+      "options": [
+        "Serial Attached State.",
+        "Solid Attached SCSI.",
+        "Serial Attached SCSI.",
+        "Solid Advanced SCSI."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R5",
+      "source_ref": "PI OEP 2019 · reserva nº 5",
+      "stem": "En el contexto de HTML5, si queremos ocultar una parte de la pantalla hasta que un usuario haya hecho \"log in\", utilizaremos:",
+      "options": [
+        "El atributo hidden.",
+        "El atributo style del elemento como \"non visible\".",
+        "La etiqueta aside.",
+        "La etiqueta iframe."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-1",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 1",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nSe necesita presentar una estadística utilizando HTML5 mediante una tabla en la que una de sus columnas contendrá la descripción de cada Proceso Selectivo. Suponiendo que a dicha columna la denominamos \"Proceso\", ¿qué etiqueta deberá utilizar para definir la celda de encabezado de la tabla para dicha columna, con un formato de letra diferenciado?",
+      "options": [
+        "<th>Proceso</th>",
+        "<tableheader>Proceso</tableheader>",
+        "<theader>Proceso</theader>",
+        "<tableh>Proceso</tableh>"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-2",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 2",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nTambién se requiere definir en el informe un hipervínculo en HTML5. ¿Qué etiqueta debería utilizar?",
+      "options": [
+        "<link>",
+        "<a>",
+        "<goto>",
+        "<hlink>"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-3",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 3",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nEn su Subdirección van a usar JSON para realizar intercambio de datos, y le preguntan, de entre los siguientes, cuál sería un fichero JSON válido.",
+      "options": [
+        "{\"nombre\": \"Juana\", \"apellido\": \"Ruiz\"}",
+        "{'nombre': 'Juana', 'apellido': 'Ruiz'}",
+        "{nombre: \"Juana\", apellido: \"Ruiz\"}",
+        "{nombre: \"Juana\"; apellido: \"Ruiz\"}"
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-4",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 4",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\n¿Cómo debe definir el equipo de desarrollo en Java una clase llamada Ejercicio si quiere impedir que se pueda heredar de la misma?",
+      "options": [
+        "closed class Ejercicio",
+        "final class Ejercicio",
+        "private class Ejercicio",
+        "immutable class Ejercicio"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-5",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 5",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nSu responsable le pregunta qué concepto hace referencia a la posibilidad de utilizar el mismo nombre de método con distintos parámetros en la programación orientada a objetos. ¿Qué debería responder?",
+      "options": [
+        "Herencia.",
+        "Ligadura dinámica.",
+        "Polimorfismo.",
+        "Abstracción."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-6",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 6",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nRevisando un programa escrito en lenguaje Python, se encuentra con el siguiente fragmento de código. [a*a for a in [3, 2, 1] if a > 1]\n¿Qué se muestra?",
+      "options": [
+        "[3, 2, 1, 3, 2, 1]",
+        "[9 ,4]",
+        "[9, 4, 1]",
+        "[2, 1]"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-7",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 7",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nLe han pedido que compruebe si en el esquema de la base de datos hay tablas que no se están utilizando, y verifica que existe una con esas características llamada PruebaOLD. ¿Cuál sería la instrucción SQL para eliminarla?",
+      "options": [
+        "TRUNCATE TABLE PruebaOLD",
+        "DROP TABLE PruebaOLD",
+        "DELETE TABLE PruebaOLD",
+        "ERASE TABLE PruebaOLD"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-8",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 8",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nTambién le consultan sobre la sentencia SQL a utilizar para obtener el listado del identificador de los opositores (IdOpositor) que tienen más de una entrada en la tabla Solicitud.",
+      "options": [
+        "SELECT IdOpositor, COUNT(IdSolicitud) AS NumeroSolicitudes FROM Solicitud GROUP BY IdOpositor WHERE NumeroSolicitudes > 1",
+        "SELECT IdOpositor, IdSolicitud FROM Solicitud WHERE COUNT(IdSolicitud) > 1",
+        "SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud WHERE COUNT(IdSolicitud) > 1 GROUP BY IdOpositor",
+        "SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud GROUP BY IdOpositor HAVING COUNT(IdSolicitud) > 1"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-9",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 9",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nDentro de las tecnologías para el desarrollo web utilizadas en su unidad, se contempla utilizar javascript. ¿Qué valor devuelve la siguiente función javascript?\nFunction prueba() {\nvar i = 1;\nvar j = 0;\nwhile (i < 7) {\nj += i;\ni += 2; }\nreturn j; }",
+      "options": [
+        "2",
+        "9",
+        "6",
+        "0"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-10",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 10",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nSu equipo está estudiando la información existente dispersa en distintas fuentes de datos con el fin de consolidarla. En una base de datos antigua, hay una tabla que contiene el siguiente registro:\nNIF: 12345678Z\nNombre: Emilia\nPrimerApellido: Pardo\nSegundoApellido: Bazán\nDireccion: Atocha 106\nTelefonos: 916666666;917777777\n¿En qué forma normal está la tabla?",
+      "options": [
+        "En primera forma normal.",
+        "En segunda forma normal.",
+        "En tercera forma normal.",
+        "No está en ninguna forma normal."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-11",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 11",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nEn una reunión departamental se está hablando de Servicios Web, y le preguntan cuál de los siguientes estándares no se usa en Servicios Web. ¿Qué debería responder?",
+      "options": [
+        "SOAP",
+        "UDDI",
+        "HEVC",
+        "WSDL"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-12",
+      "source_ref": "PI OEP 2019 · Supuesto I · nº 12",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nEl sistema de información deberá ser accesible a través de dispositivos móviles. ¿Cómo se denomina el tipo de diseño que permite la adaptación del contenido a los distintos dispositivos?",
+      "options": [
+        "Diseño incremental (Gradual Design).",
+        "Diseño responsivo (Responsive Design).",
+        "Diseño variable (Variable Design).",
+        "Diseño escalable (Scalable Design)."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R1",
+      "source_ref": "PI OEP 2019 · Supuesto I · reserva nº 1",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nDentro del código de la página web a la que acceden los opositores, se encuentra el siguiente código HTML:\n<html><body><h1 id=\"titulo\">Primer ejercicio TAI</h1></body></html>\n¿Cuál es el código javascript para obtener la cadena \"Primer ejercicio TAI\"?",
+      "options": [
+        "var titulo = document.getElementById(\"titulo\").firstChild.nodeValue;",
+        "var titulo = document.titulo.InnerHTML;",
+        "var titulo = document.getElement(\"h1\").InnerText;",
+        "var titulo = document.children[0].getValue();"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R2",
+      "source_ref": "PI OEP 2019 · Supuesto I · reserva nº 2",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nEl equipo de proyecto está estudiando varios framework para valorar su utilización. ¿Cuál es el propósito principal del framework de javascript Jest?",
+      "options": [
+        "Testeado de código.",
+        "Machine learning.",
+        "Animacion y efectos gráficos.",
+        "Funciones matemáticas y tratamiento de cadenas."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R3",
+      "source_ref": "PI OEP 2019 · Supuesto I · reserva nº 3",
+      "stem": "En el departamento TIC, al que usted se acaba de incorporar, quiere desarrollar para la Subdirección de Selección un sistema integral de información para la gestión de los procesos selectivos y convocatorias de oposiciones de la Administración General del Estado. El sistema incluirá, entre otras, las siguientes funcionalidades:\n- Gestión de solicitudes de inscripción de aspirantes al proceso selectivo.\n- Gestión de colaboradores.\n- Generación de listados, estadísticas y cuadros de mando.\n- Generación de certificados para aspirantes y colaboradores.\nDada la envergadura del proyecto, y para aprovechar las aplicaciones ya implantadas en la Subdirección y la experiencia profesional del personal, van a convivir diferentes lenguajes de programación, entre otros, Java, C# o Python, así como distintos gestores de Bases de Datos. Como repositorio de código se utiliza Git.\nA continuación se muestra un diagrama simplificado de clases que describe parte del sistema:\n\nSolicitud Opositor +IdSolicitud Presentada por +IdOpositor +IdOpositor 1..N 1 +NIF +IdProceso\n\n1..N\nPertenece a\n1\nProceso Ejercicio +IdProceso Consta +IdEjercicio +IdFormaAcceso 1 1..N +IdProceso +Duracion\n\nSalvo que el enunciado diga lo contrario, se asume que aquellas preguntas que contengan un fragmento de código tendrán declaradas correctamente todas las clases, librerías y variables que no aparezcan explícitamente. Del mismo modo sí se trata de lenguaje HTML, se da por supuesto que éste será HTML5 y será ejecutado en navegadores que soporten dicha versión. Las sentencias SQL que aparecen se encuentran dentro del estándar ANSI SQL.Como metodología de base el organismo aplica Métrica v3.\n\n(El diagrama del enunciado original no se reproduce fielmente aquí: consúltalo en el cuestionario del INAP.)\n\nPara el desarrollo de sus funciones, tiene que usar un gestor de paquetes de código desarrollado por Microsoft para .NET. ¿Cuál utilizaría?",
+      "options": [
+        "Pip",
+        "Maven",
+        "Npm",
+        "NuGet"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-1",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 1",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nEl equipo de comunicaciones le asigna la red 10.0.4.0 con la máscara 255.255.255.128 para el direccionamiento de la DCM. ¿Cuantos bits tiene la máscara de red?",
+      "options": [
+        "24",
+        "26",
+        "25",
+        "23"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-2",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 2",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nTambién le preguntan a qué Clase pertenece la red asignada (10.0.4.0).",
+      "options": [
+        "Clase A.",
+        "Clase B.",
+        "Clase C.",
+        "Clase D."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-3",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 3",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nPara la CHT los compañeros de redes le asignan el direccionamiento 10.0.0.0/21. ¿Cuál es el número máximo de hosts disponible?",
+      "options": [
+        "1024",
+        "2046",
+        "32",
+        "256"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-4",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 4",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nLa DCM no es capaz de especificarle la versión de RHEL que tienen sus máquinas, por lo que debe decirles el comando a ejecutar. ¿Cuál de los siguientes sería?",
+      "options": [
+        "rm -f /etc/redhat-release",
+        "cat /etc/redhat-version",
+        "cat /etc/redhat-release",
+        "mv /etc/redhat-release"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-5",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 5",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nUna pieza crucial en cualquier sistema informático son las BBDD. Le han informado que tanto la DCM como la CHT utilizan Oracle, pero no le han dicho la versión. ¿Qué consulta podría hacer en la base de datos para conocer esta información?",
+      "options": [
+        "SELECT * FROM V$VERSION",
+        "SELECT * FROM V$VERSIONADO",
+        "SELECT * FROM V$VERSIONDB",
+        "SELECT * FROM V$VERSIONTABLE"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-6",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 6",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nRelacionado con los sistemas de backup, le preguntan por una técnica que mejore la eficiencia del almacenamiento y reduzca su coste medio. ¿Cuál propondría?",
+      "options": [
+        "RTO",
+        "Deduplicación",
+        "RPO",
+        "Vaulting"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-7",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 7",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nDesde su unidad también se está valorando el uso de RAID 10, ¿cuántos discos duros son necesarios para crearlo?",
+      "options": [
+        "2 discos duros.",
+        "3 discos duros.",
+        "Al menos 4 discos duros.",
+        "Es indiferente."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-8",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 8",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nSe está hablando sobre el uso de máquinas virtuales, y le piden indicar cuál de los siguientes NO es un software de virtualización.",
+      "options": [
+        "Vmware",
+        "VirtualBox",
+        "Hyper-V",
+        "LVM"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-9",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 9",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nEn su unidad se ha decidido utilizar Docker. ¿Cuál de los siguientes comandos deberá utilizar para mostrar la información que tiene todo el sistema sobre la instalación de Docker (nº de contenedores, las imágenes…)?",
+      "options": [
+        "docker ps",
+        "docker info",
+        "docker inspect",
+        "docker systeminfo"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-10",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 10",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nEn una reunión se habla del Directorio Activo. Defina en qué consiste este concepto.",
+      "options": [
+        "Es el usuario que está logado actualmente en el sistema.",
+        "Es el conjunto de políticas de grupo que se aplican a los usuarios de una red Novell.",
+        "Es un almacén de datos estructurado que permite almacenar información sobre los objetos o recursos de una red para facilitar su localización y administración.",
+        "Es un almacén de datos que contiene información de los programas software instalados en la red por la organización."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-11",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 11",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nLe preguntan sobre las cuentas de usuario que pertenecen al grupo Administradores locales de una máquina, ¿qué comando de Windows debería utilizar?",
+      "options": [
+        "net local administradores",
+        "net localgroup admin",
+        "net local admin",
+        "net localgroup administradores"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-12",
+      "source_ref": "PI OEP 2019 · Supuesto II · nº 12",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nDebido al elevado volumen de peticiones e incidencias que se esperan durante la integración, se está valorando implantar un sistema de gestión específico.El único requerimiento que tienen es que sea Open Source. ¿Cuál propondría?",
+      "options": [
+        "Remedy",
+        "Ticket2.0",
+        "Nagios",
+        "osTicket"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R1",
+      "source_ref": "PI OEP 2019 · Supuesto II · reserva nº 1",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nCon el objetivo de recabar información sobre los equipos Windows, disponen de un software de inventariado que necesita acceso por el puerto 4433 (TCP) en los equipos destino. ¿Qué comando utilizaría en estos últimos para añadir la regla al firewall?",
+      "options": [
+        "netsh advfirewall firewall create rule name= \"Inventariado\" dir=in action=allow protocol=TCP localport=4433",
+        "netsh advfirewall firewall add rule name= \"Inventariado\" dir=in action=permit protocol=TCP localport=4433",
+        "netsh advfirewall firewall add rule name= \"Inventariado\" dir=in action=allow protocol=TCP localport=4433",
+        "netsh advfirewall firewall new rule name= \"Inventariado\" dir=in action=allow protocol=TCP localport=4433"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R2",
+      "source_ref": "PI OEP 2019 · Supuesto II · reserva nº 2",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nDurante el proceso de traslado, uno de los equipos Windows más importantes de la DCM da problemas de corrupción de datos y han decidido restaurar la copia de seguridad. Le indican que el dispositivo está cifrado. ¿Qué necesita que le proporcionen para poder restaurar la copia?",
+      "options": [
+        "El certificado digital.",
+        "La clave de BitLocker.",
+        "La clave privada.",
+        "La clave de sesión."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R3",
+      "source_ref": "PI OEP 2019 · Supuesto II · reserva nº 3",
+      "stem": "Debido a la pandemia ocasionada por el SARS-CoV-2, más conocido como Coronavirus, las Administraciones Publicas se han visto obligadas a impulsar el teletrabajo y a cambiar su estrategia en el ámbito de las TIC.\nEn este sentido ha sido asignado en la integración de dos organismos en su departamento, los cuales no tienen capacidad para asumir las nuevas demandas de servicios y conexiones.\nUno de los centros es la Demarcación de Carreteras de Madrid (DCM) y el otro es la Confederación Hidrográfica del Tajo (CHT). La DCM tiene máquinas físicas RedHat Enterprise Linux (RHEL). Su estructura consiste en tres áreas y en cada una de ellas trabajan 20 personas.\nLa CHT tiene máquinas físicas Solaris. Su estructura consiste en 5 áreas y en cada una de ellas trabajan 50 personas. Ambos organismos tienen bastantes máquinas Windows 10, además de equipamiento específico, para el desarrollo de sus actividades, que tendrá que ser trasladado a su CPD.\nEs crucial la salvaguarda de los datos, la pérdida o inconsistencia de los mismos durante el proceso es algo inasumible. Salvo que el enunciado de la propia pregunta diga lo contrario, debe suponer que dispone de los permisos adecuados, tanto a nivel de sistema operativo como de conexión de red.\n\nMuchas de las comunicaciones se van a realizar mediante conexiones ssh y tiene que solicitar las reglas de firewall al equipo de comunicaciones. ¿Cuál es el puerto que debe solicitar?",
+      "options": [
+        "21",
+        "63",
+        "69",
+        "22"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    }
+  ]
+}

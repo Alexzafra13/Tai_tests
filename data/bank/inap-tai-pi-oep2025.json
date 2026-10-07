@@ -1,0 +1,1372 @@
+{
+  "source": {
+    "kind": "inap_exam",
+    "title": "TAI promoción interna · OEP 2025 · ejercicio único (modelo A)",
+    "reference": "INAP-TAI-PI-OEP2025",
+    "url": "https://sede.inap.gob.es/es/procedimientos-y-servicios/seleccion/procesos-selectivos-de-cuerpos-y-escalas-generales/cuerpo-de-tecnicos-auxiliares-de-informatica-de-la-administracion-del-estado-promocion-interna-convocatoria-2025"
+  },
+  "questions": [
+    {
+      "key": "P-1",
+      "source_ref": "PI OEP 2025 · nº 1",
+      "stem": "¿Qué información está almacenada en la zona de seguridad del DNI electrónico, accesible en lectura por el ciudadano en los Puntos de Actualización del DNIe?",
+      "options": [
+        "El certificado de Firma (No Repudio).",
+        "El certificado de Autenticación (Digital Signature).",
+        "El certificado CA intermedia emisora.",
+        "La imagen de la fotografía."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-2",
+      "source_ref": "PI OEP 2025 · nº 2",
+      "stem": "De conformidad con el artículo 96 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿a qué hace referencia el derecho al testamento digital?",
+      "options": [
+        "A la transmisión automática de activos financieros digitales de personas fallecidas.",
+        "Al acceso a contenidos gestionados por prestadores de servicios de la sociedad de la información sobre personas fallecidas.",
+        "A la herencia de dispositivos digitales físicos del fallecido.",
+        "A la supresión automática y obligatoria de los datos personales del fallecido."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-3",
+      "source_ref": "PI OEP 2025 · nº 3",
+      "stem": "En España, según el artículo 7 de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales, ¿a partir de qué edad puede un menor prestar por sí solo consentimiento para el tratamiento de sus datos personales?",
+      "options": [
+        "13 años.",
+        "14 años.",
+        "15 años.",
+        "16 años."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-4",
+      "source_ref": "PI OEP 2025 · nº 4",
+      "stem": "Con base en el Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad, ¿cuál de las siguientes medidas de seguridad afecta a la dimensión de disponibilidad?",
+      "options": [
+        "Registro de la actividad.",
+        "Análisis de impacto.",
+        "Requisitos de acceso.",
+        "Bloqueo de puesto de trabajo."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-5",
+      "source_ref": "PI OEP 2025 · nº 5",
+      "stem": "Con base en el Real Decreto 311/2022, de 3 de mayo, por el que se regula el Esquema Nacional de Seguridad, indique qué se define como un incidente de seguridad en el que, debido a una violación de las medidas técnicas u organizativas de seguridad, una información o un servicio quedan expuestos, o potencialmente expuestos, a un acceso no autorizado.",
+      "options": [
+        "Ciberincidente.",
+        "Ciberataque.",
+        "Compromiso de la seguridad.",
+        "Categoría de seguridad de un sistema."
+      ],
+      "correct": "c",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-6",
+      "source_ref": "PI OEP 2025 · nº 6",
+      "stem": "De conformidad con el artículo 17 del Real Decreto 209/2003, de 21 de febrero, por el que se regulan los registros y las notificaciones telemáticas, así como la utilización de medios telemáticos para la sustitución de la aportación de certificados por los ciudadanos, ¿cuándo podrá realizarse la presentación de solicitudes, escritos y comunicaciones en los registros telemáticos?",
+      "options": [
+        "Durante las 24 horas de todos los días del año.",
+        "Durante las 24 horas de todos los días del año, excepto sábados y domingos.",
+        "Durante las 24 horas de todos los días del año, excepto los días declarados como inhábiles en el ámbito de la Administración General del Estado para todo el territorio nacional.",
+        "Durante las 24 horas de todos los días del año, excepto los días declarados como inhábiles en cada ámbito territorial y los declarados como inhábiles para todo el territorio nacional."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-7",
+      "source_ref": "PI OEP 2025 · nº 7",
+      "stem": "Dentro del marco de la Agenda 2030, señale cuál de los siguientes es el Objetivo de Desarrollo Sostenible número 1:",
+      "options": [
+        "Lucha contra el hambre.",
+        "Consumo responsable.",
+        "Paz y justicia.",
+        "Erradicación de la pobreza."
+      ],
+      "correct": "d",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-8",
+      "source_ref": "PI OEP 2025 · nº 8",
+      "stem": "Según establece la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la información pública y buen gobierno, señale cuál de los siguientes es miembro de la Comisión de Transparencia y Buen Gobierno:",
+      "options": [
+        "Un representante del Defensor del Pueblo.",
+        "Un representante de la Subsecretaría de Estado del Ministerio de Hacienda.",
+        "Un representante del Tribunal Constitucional.",
+        "Un representante de la Agencia Estatal de Administración Tributaria."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-9",
+      "source_ref": "PI OEP 2025 · nº 9",
+      "stem": "De conformidad con el artículo 4.2 del Real Decreto Legislativo 1/2013, de 29 de noviembre, por el que se aprueba el Texto Refundido de la Ley General de derechos de las personas con discapacidad y de su inclusión social, a los efectos de esta ley, ¿cuál es el grado minimo reconocido a partir del cual se tiene la consideración de persona con discapacidad?",
+      "options": [
+        "30 por ciento.",
+        "33 por ciento.",
+        "35 por ciento.",
+        "38 por ciento."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-10",
+      "source_ref": "PI OEP 2025 · nº 10",
+      "stem": "De conformidad con el artículo 6 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, indique la opción correcta:",
+      "options": [
+        "Se considera discriminación directa por razón de sexo la situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada, en atención a su sexo, de manera menos favorable que otra en situación comparable.",
+        "Se considera discriminación indirecta por razón de sexo la situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada, en atención a su sexo, de manera menos favorable que otra en situación comparable.",
+        "Se considera acoso por razón de sexo la situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada, en atención a su sexo, de manera menos favorable que otra en situación comparable.",
+        "Se considera acoso sexual la situación en que se encuentra una persona que sea, haya sido o pudiera ser tratada, en atención a su sexo, de manera menos favorable que otra en situación comparable."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-11",
+      "source_ref": "PI OEP 2025 · nº 11",
+      "stem": "¿Cuál de las siguientes características describe correctamente una unidad de estado sólido (SSD)?",
+      "options": [
+        "Almacena datos en discos magnéticos giratorios de alta densidad.",
+        "Utiliza memoria RAM volátil para el almacenamiento persistente de datos.",
+        "Es un dispositivo para almacenar datos en memoria no volátil sin partes móviles.",
+        "Requiere cabezales de lectura mecánicos para acceder a los datos almacenados."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-12",
+      "source_ref": "PI OEP 2025 · nº 12",
+      "stem": "En relación con los componentes de un ordenador, ¿cuál es la función principal del bus del sistema?",
+      "options": [
+        "Ejecutar las instrucciones del sistema almacenadas en memoria.",
+        "Suministrar energía eléctrica del sistema a todos los componentes del ordenador.",
+        "Almacenar de forma permanente el sistema operativo y los datos del usuario.",
+        "Transferir datos, direcciones y señales de control entre la CPU, la memoria y los periféricos."
+      ],
+      "correct": "d",
+      "topics": [
+        "B2-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-13",
+      "source_ref": "PI OEP 2025 · nº 13",
+      "stem": "En el formato de ficheros CSV, descrito en RFC 4180, ¿qué regla es correcta?",
+      "options": [
+        "Las comillas dobles están prohibidas, solo se permiten comillas simples.",
+        "Cada registro va en una línea separada por CRLF; y los campos que contengan caracteres coma, comillas o saltos de línea deben ir con comillas dobles.",
+        "Los campos nunca pueden contener comas, aunque estén delimitados por comillas dobles.",
+        "El tipo MIME registrado para CSV es “application/csv”."
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-14",
+      "source_ref": "PI OEP 2025 · nº 14",
+      "stem": "Según la definición estándar de JSON, RFC 8259, un valor JSON debe pertenecer a uno de estos tipos o literales. ¿Cuál es el conjunto correcto?",
+      "options": [
+        "object, array, number, string, date y undefined.",
+        "object, array, number, string, boolean y function.",
+        "object, array, number, string, true, false y null.",
+        "object, array, number, string, boolean y NaN."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-15",
+      "source_ref": "PI OEP 2025 · nº 15",
+      "stem": "¿Cuál es el kernel sobre el que se basa Android?",
+      "options": [
+        "Mach Kernel.",
+        "Windows NT Kernel.",
+        "Kernel de Linux.",
+        "Microkernel L4."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-16",
+      "source_ref": "PI OEP 2025 · nº 16",
+      "stem": "En el sistema operativo Linux, ¿cuál es la función principal del comando chmod?",
+      "options": [
+        "Cambiar el propietario de un archivo.",
+        "Crear un enlace simbólico.",
+        "Modificar el grupo al que pertenece un usuario.",
+        "Cambiar los permisos de acceso de un archivo o directorio."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-17",
+      "source_ref": "PI OEP 2025 · nº 17",
+      "stem": "En una entidad de base de datos con 4 columnas y 7 filas:",
+      "options": [
+        "El grado es 4 y la cardinalidad 7.",
+        "La cardinalidad es 4 y el grado 7.",
+        "El grado es 4 y el dominio 7.",
+        "El dominio es 4 y la cardinalidad 7."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-18",
+      "source_ref": "PI OEP 2025 · nº 18",
+      "stem": "Un atributo representado con una elipse discontinua en un diagrama entidad-relación significa que es un atributo:",
+      "options": [
+        "Clave primaria.",
+        "Compuesto.",
+        "Multivaluado.",
+        "Derivado."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-19",
+      "source_ref": "PI OEP 2025 · nº 19",
+      "stem": "¿Cómo se llama el bloque de un programa donde se incluyen instrucciones iterativas?",
+      "options": [
+        "Cabecera.",
+        "Declaraciones.",
+        "Asignaciones.",
+        "Control."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-20",
+      "source_ref": "PI OEP 2025 · nº 20",
+      "stem": "El slice de un array es:",
+      "options": [
+        "Su longitud.",
+        "Una subestructura del array.",
+        "Su primer elemento.",
+        "Su último elemento."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-21",
+      "source_ref": "PI OEP 2025 · nº 21",
+      "stem": "Una cola se caracteriza por:",
+      "options": [
+        "Tener cabecera y cola.",
+        "Seguir una política LIFO.",
+        "Permitir sacar un elemento independientemente de su posición en ella.",
+        "Permitir insertar un elemento en cualquier posición."
+      ],
+      "correct": "a",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-22",
+      "source_ref": "PI OEP 2025 · nº 22",
+      "stem": "En relación a SQL, indique cuál de los siguientes comandos permite asignar permisos a las tablas:",
+      "options": [
+        "ALTER TABLE",
+        "GRANT",
+        "PERMISSION",
+        "ALLOW"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-23",
+      "source_ref": "PI OEP 2025 · nº 23",
+      "stem": "En SQL, si se quiere restituir todas las modificaciones de datos realizadas desde el inicio de una transacción, o desde un punto de retorno, se debe usar la sentencia:",
+      "options": [
+        "SAVEPOINT",
+        "DELETE",
+        "ROLLBACK",
+        "RETURNBACK"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-24",
+      "source_ref": "PI OEP 2025 · nº 24",
+      "stem": "En una base de datos relacional existe una tabla \"Departamento\". Si lo que se quiere validar es un cambio antes del evento, indique cuál sería una forma válida de comenzar la creación de un Trigger en el estándar ANSI SQL:",
+      "options": [
+        "CREATE TRIGGER Validar_cambio BEFORE UPDATE OF TABLE Departamento",
+        "CREATE NEW TRIGGER Validar_cambio OF Departamento BEFORE UPDATE",
+        "CREATE TRIGGER Validar_cambio ON TABLE Departamento BEFORE UPDATE",
+        "CREATE TRIGGER Validar_cambio BEFORE UPDATE ON Departamento"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-25",
+      "source_ref": "PI OEP 2025 · nº 25",
+      "stem": "En el contexto de la relación entre clases y objetos, ¿cuál es la definición técnica más precisa de una instancia?",
+      "options": [
+        "Es el código fuente escrito en el lenguaje de programación que define los atributos.",
+        "Es un ejemplar concreto e individualizado de una clase que posee su propio estado.",
+        "Es un método estático que se ejecuta sin necesidad de crear el objeto en memoria.",
+        "Es el conjunto de todas las clases que pertenecen a un mismo paquete o espacio de nombres."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-26",
+      "source_ref": "PI OEP 2025 · nº 26",
+      "stem": "Dentro de la plataforma .NET, ¿cómo se denomina el componente encargado de ejecutar el manejo de excepciones y la recolección de basura (Garbage Collection)?",
+      "options": [
+        "MSBuild.",
+        "Kestrel.",
+        "CLR (Common Language Runtime).",
+        "NuGet."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-27",
+      "source_ref": "PI OEP 2025 · nº 27",
+      "stem": "En una arquitectura microservicios con Jakarta EE, ¿qué especificación se utiliza para crear servicios REST?",
+      "options": [
+        "Jakarta Mail.",
+        "Jakarta RESTful Web Services.",
+        "Jakarta Web Services Metadata.",
+        "Jakarta Pages."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-28",
+      "source_ref": "PI OEP 2025 · nº 28",
+      "stem": "¿Cuál de los siguientes NO es un producto orientado a las pruebas de software?",
+      "options": [
+        "Avocado.",
+        "Cucumber.",
+        "TestLink.",
+        "OneTrust."
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-29",
+      "source_ref": "PI OEP 2025 · nº 29",
+      "stem": "¿Cuál es la finalidad de WSDL 2.0, según la especificación del W3C?",
+      "options": [
+        "Ser un lenguaje XML para describir servicios web, permitiendo describir el servicio a partir de un modelo abstracto de lo que ofrece.",
+        "Ser un protocolo de mensajería que define un “envelope” y reglas de codificación para invocaciones remotas.",
+        "Ser un protocolo de aplicación que define métodos (GET, POST, PUT, DELETE) y códigos de estado para operar sobre recursos.",
+        "Ser un protocolo de comunicación bidireccional con “handshake” y “framing” sobre TCP para tiempo real."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-30",
+      "source_ref": "PI OEP 2025 · nº 30",
+      "stem": "En el ámbito de los sistemas de control de versiones como Git, ¿qué se entiende por un repositorio?",
+      "options": [
+        "Un servidor central donde se compila el código fuente de las aplicaciones web y distribuye la última versión ejecutable al navegador del usuario.",
+        "Un espacio que contiene el conjunto de archivos de un proyecto y el historial completo de cambios de cada uno de ellos, permitiendo almacenar, versionar y gestionar su evolución a lo largo del tiempo.",
+        "Un entorno de ejecución aislado que se utiliza para desplegar aplicaciones en producción y monitorizar su rendimiento.",
+        "Un archivo comprimido y cifrado que contiene la última versión estable del código fuente, conocida como “release candidate”."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-31",
+      "source_ref": "PI OEP 2025 · nº 31",
+      "stem": "Según el HTML Living Standard de WHATWG, ¿en qué posición debe aparecer la declaración DOCTYPE dentro de la estructura de un documento HTML?",
+      "options": [
+        "En la primera línea, antes del elemento raíz <html>.",
+        "Dentro del elemento <head>, como primera instrucción antes de cualquier metadato.",
+        "Dentro del elemento raíz <html>, como primera instrucción.",
+        "Al inicio del elemento <body>, antes de cualquier contenido visible."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-32",
+      "source_ref": "PI OEP 2025 · nº 32",
+      "stem": "De acuerdo con el artículo 3 del Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, indique la opción correcta acerca del contenido accesible de sitios web y apps móviles:",
+      "options": [
+        "Incluye la información textual y no textual, documentos y formularios descargables y contenidos multimedia pregrabados, así como el diseño de los dispositivos de interacción como pantallas, teclados y ratones.",
+        "Incluye la información textual y no textual, documentos y formularios descargables, contenidos multimedia pregrabados, interacción bidireccional y la cumplimentación de procesos de identificación, autenticación, firma y pago.",
+        "Los documentos y formularios descargables no están incluidos, por la posibilidad de tratarse de contenidos de terceros que no están bajo el control del sujeto obligado.",
+        "La cumplimentación de procesos de identificación, autenticación, firma y pago no están incluidos, por gestionarse generalmente a través de sistemas de terceros."
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-33",
+      "source_ref": "PI OEP 2025 · nº 33",
+      "stem": "De acuerdo con el CCN-CERT, ¿cuál de los siguientes NO se considera un mecanismo de Autenticación Multi-Factor (MFA)?",
+      "options": [
+        "Contraseña + Token OTP (One Time Password).",
+        "Escáner de Iris + Huella dactilar.",
+        "Contraseña + Escáner de Iris.",
+        "Tarjeta de identificación + Reconocimiento facial."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-34",
+      "source_ref": "PI OEP 2025 · nº 34",
+      "stem": "En Linux, para ver en tiempo real el contenido de un fichero de registro a medida que crece, se puede usar el comando:",
+      "options": [
+        "tail -r",
+        "tail -f",
+        "tail -w",
+        "tail -u"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-35",
+      "source_ref": "PI OEP 2025 · nº 35",
+      "stem": "En el contexto de las transacciones en bases de datos, la propiedad de aislamiento implica que:",
+      "options": [
+        "Una transacción debe ejecutarse completamente o no ejecutarse en absoluto.",
+        "Los cambios confirmados por una transacción deben mantenerse incluso ante fallos del sistema.",
+        "Las transacciones concurrentes no deben interferir entre sí de forma que se comprometa la consistencia de los datos.",
+        "Tras finalizar una transacción, los datos deben cumplir todas las restricciones definidas en la base de datos."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-36",
+      "source_ref": "PI OEP 2025 · nº 36",
+      "stem": "En una base de datos relacional, la regla de integridad referencial establece que:",
+      "options": [
+        "Todo valor no nulo de la clave ajena debe existir en la clave referenciada.",
+        "Todo valor de la clave ajena debe ser único dentro de la tabla.",
+        "Toda clave primaria debe existir previamente en la tabla que la referencia.",
+        "La clave referenciada debe contener únicamente valores no nulos."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-37",
+      "source_ref": "PI OEP 2025 · nº 37",
+      "stem": "¿Qué comando de Docker permite crear e iniciar un nuevo contenedor, descargando la imagen si es necesario, y ejecutar en el contenedor un comando especificado?",
+      "options": [
+        "docker run",
+        "docker start",
+        "docker exec",
+        "docker play"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-38",
+      "source_ref": "PI OEP 2025 · nº 38",
+      "stem": "¿Qué registro DNS permite a los propietarios de dominios firmar automáticamente los correos electrónicos de su dominio?",
+      "options": [
+        "DKIM.",
+        "SPF.",
+        "DMARC.",
+        "CNAME."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-39",
+      "source_ref": "PI OEP 2025 · nº 39",
+      "stem": "Según el modelo de referencia para redes locales de la IEEE, la capa de enlace de datos se divide en dos subcapas. ¿Cuál de ellas se encarga de la sincronización de tramas, control de flujo y la detección de errores de transmisión independientemente del medio físico?",
+      "options": [
+        "Subcapa de Control de Acceso al Medio (MAC).",
+        "Subcapa de Convergencia de Datos (DCS).",
+        "Subcapa de Control de Enlace Lógico (LLC).",
+        "Subcapa de Interfaz de Dependencia del Medio (MDI)."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-40",
+      "source_ref": "PI OEP 2025 · nº 40",
+      "stem": "De acuerdo con las recomendaciones del CCN-CERT, un requisito para una contraseña robusta es:",
+      "options": [
+        "Tener al menos 7 caracteres.",
+        "Incluir datos del usuario, como su nombre o fecha de nacimiento.",
+        "Usar frases cortas sin sentido.",
+        "Apuntar la contraseña en un papel guardado en un bolso o cartera personal."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-41",
+      "source_ref": "PI OEP 2025 · nº 41",
+      "stem": "Según el estándar ANSI/TIA 942-B, la zona de un Centro de Procesamiento de Datos donde se ubican elementos finales, como un servidor o un mainframe, se denomina:",
+      "options": [
+        "MDA (Main Distribution Area).",
+        "EDA (Equipment Distribution Area).",
+        "HDA (Horizontal Distribution Area).",
+        "IDA (Intermediate Distribution Area)."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-42",
+      "source_ref": "PI OEP 2025 · nº 42",
+      "stem": "¿Cómo se denomina a la degradación de la señal que consiste en la pérdida de energía de la misma a medida que se propaga por el medio de transmisión?",
+      "options": [
+        "Distorsión de retardo.",
+        "Diafonía.",
+        "Ruido térmico.",
+        "Atenuación."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-43",
+      "source_ref": "PI OEP 2025 · nº 43",
+      "stem": "¿Qué dispositivo de interconexión de redes es capaz de segmentar los dominios de colisión, pero mantiene un único dominio de difusión?",
+      "options": [
+        "Un router.",
+        "Un switch.",
+        "Un hub.",
+        "Un gateway."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T10"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-44",
+      "source_ref": "PI OEP 2025 · nº 44",
+      "stem": "Dentro del modelo de referencia OSI, ¿qué capa tiene como función principal la negociación de la sintaxis de transferencia y la aplicación de transformaciones de datos tales como el cifrado y la compresión?",
+      "options": [
+        "Capa de sesión.",
+        "Capa de presentación.",
+        "Capa de aplicación.",
+        "Capa de transporte."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-45",
+      "source_ref": "PI OEP 2025 · nº 45",
+      "stem": "En el saludo de tres vías (Three-way handshake) de TCP, ¿qué flag o flags se activan en el segundo paso?",
+      "options": [
+        "Solo INIT.",
+        "Solo ACK.",
+        "SYN y ACK.",
+        "SYN y FIN."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-46",
+      "source_ref": "PI OEP 2025 · nº 46",
+      "stem": "Según establece la RFC 8200, ¿cuál es el propósito del campo \"Hop Limit\" en la cabecera fija de IPv6?",
+      "options": [
+        "Determinar la prioridad de la calidad de servicio (QoS) del paquete.",
+        "Indicar el número máximo de saltos que un paquete puede dar antes de ser descartado.",
+        "Especificar el tamaño total de la carga útil del paquete.",
+        "Identificar el tipo de cabecera de extensión que sigue a la cabecera fija."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-47",
+      "source_ref": "PI OEP 2025 · nº 47",
+      "stem": "Dentro de la arquitectura de servicios de Internet, ¿cuál es la función técnica destacada del servicio DNS?",
+      "options": [
+        "Garantizar que los paquetes de datos sigan la ruta más corta entre el origen y el destino.",
+        "Encriptar el contenido de los correos electrónicos antes de ser enviados por SMTP.",
+        "Traducir direcciones lógicas (IP) a direcciones físicas (MAC).",
+        "Traducir nombres de dominio legibles para humanos en direcciones IP numéricas que las máquinas pueden procesar."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-48",
+      "source_ref": "PI OEP 2025 · nº 48",
+      "stem": "En una interacción cliente-servidor mediante HTTP, ¿qué clase de códigos de estado indican que se ha producido un error por parte del cliente?",
+      "options": [
+        "Códigos 2xx",
+        "Códigos 3xx",
+        "Códigos 4xx",
+        "Códigos 5xx"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-49",
+      "source_ref": "PI OEP 2025 · nº 49",
+      "stem": "En el contexto de la seguridad del puesto de trabajo, ¿en qué consiste el principio de mínimo privilegio que debe aplicarse a los usuarios de un sistema informático según el Esquema Nacional de Seguridad (ENS) regulado en el Real Decreto 311/2022, de 3 de mayo?",
+      "options": [
+        "En garantizar la trazabilidad completa de las acciones realizadas por los administradores de sistemas mediante el uso de cuentas genéricas de alta prioridad.",
+        "En conceder a cada usuario únicamente los permisos estrictamente necesarios para el desempeño de sus funciones.",
+        "En implementar un control de acceso basado exclusivamente en la ubicación física del puesto de usuario, independientemente del rol desempeñado.",
+        "En obligar a los usuarios a compartir sus credenciales con sus responsables directos para garantizar la continuidad del servicio."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-50",
+      "source_ref": "PI OEP 2025 · nº 50",
+      "stem": "En el diseño de una arquitectura de red segura, ¿qué configuración perimetral permite aislar los servidores que ofrecen servicios al exterior, impidiendo que una intrusión en estos comprometa directamente la red interna?",
+      "options": [
+        "La implementación de una red privada virtual (VPN) de acceso remoto para todos los usuarios externos.",
+        "La creación de una zona desmilitarizada (DMZ) mediante el uso de cortafuegos que segmenten el tráfico.",
+        "El uso de un único sistema de detección de intrusiones (IDS) configurado en modo promiscuo en el núcleo de la red.",
+        "La asignación de direcciones IP públicas directamente a los terminales de los usuarios internos."
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R1",
+      "source_ref": "PI OEP 2025 · reserva nº 1",
+      "stem": "En relación con la Agenda España Digital 2026, indique la respuesta correcta:",
+      "options": [
+        "La Dirección General del Dato es la entidad ejecutora de las iniciativas propuestas en los distintos ejes de acción del Plan de Impulso de los Espacios de Datos Sectoriales.",
+        "Una de las prioridades de la Estrategia de Tecnologías Cuánticas de España es demostrar el impacto de la sensórica y metrología cuánticas.",
+        "La coordinación del Proyecto ALIA está a cargo de la Agencia Española de Supervisión de la Inteligencia Artificial.",
+        "Actúa en dos dimensiones fundamentales: infraestructuras y tecnología, y servicios públicos."
+      ],
+      "correct": "b",
+      "topics": [
+        "B1-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R2",
+      "source_ref": "PI OEP 2025 · reserva nº 2",
+      "stem": "De acuerdo con el CCN-CERT, solo se autorizan los métodos de Key Exchange que proporcionen una fortaleza de seguridad de, al menos:",
+      "options": [
+        "192 bits.",
+        "128 bits.",
+        "112 bits.",
+        "256 bits."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R3",
+      "source_ref": "PI OEP 2025 · reserva nº 3",
+      "stem": "De conformidad con el artículo 79 de la Ley 4/2023, de 28 de febrero, para la igualdad real y efectiva de las personas trans y para la garantía de los derechos de las personas LGTBI, ¿cuál de las siguientes infracciones se califica como grave?",
+      "options": [
+        "La obstrucción o negativa absoluta a la actuación de los servicios de inspección correspondientes en el cumplimiento de los mandatos establecidos en esta ley.",
+        "El acoso discriminatorio, cuando no constituya infracción penal, por razón de orientación e identidad sexual, expresión de género o características sexuales.",
+        "La elaboración, utilización o difusión en centros educativos de libros de texto y materiales didácticos que presenten a las personas como superiores o inferiores en dignidad humana en función de su orientación e identidad sexual, expresión de género o características sexuales.",
+        "La victimización secundaria, entendida como el incumplimiento por parte de las Administraciones públicas de las obligaciones de atención previstas en esta ley que den lugar a un nuevo daño psicológico para la víctima."
+      ],
+      "correct": "a",
+      "topics": [
+        "B1-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R4",
+      "source_ref": "PI OEP 2025 · reserva nº 4",
+      "stem": "¿Cuál de los siguientes algoritmos de ordenación se ejecuta en tiempo lineal?",
+      "options": [
+        "Heapsort.",
+        "Mergesort.",
+        "Radix.",
+        "Quicksort."
+      ],
+      "correct": "c",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "P-R5",
+      "source_ref": "PI OEP 2025 · reserva nº 5",
+      "stem": "¿Cuántos canales Bluetooth Low Energy (LE) utiliza el mecanismo Extended Advertising introducido en Bluetooth Core 5.0?",
+      "options": [
+        "3 canales.",
+        "22 canales.",
+        "37 canales.",
+        "40 canales."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-1",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 1",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe desea garantizar en la base de datos que el campo DNI de la tabla ALUMNO no contenga valores duplicados, conforme al modelo de datos definido y asegurando el máximo rendimiento en consultas de búsqueda por dicho campo. ¿Cuál es la sentencia correcta en Oracle?",
+      "options": [
+        "CREATE INDEX idx_dni ON ALUMNO (dni);",
+        "ALTER TABLE ALUMNO ADD CONSTRAINT dni_unique UNIQUE (dni);",
+        "ALTER TABLE ALUMNO MODIFY dni PRIMARY KEY;",
+        "CREATE VIEW v_alumno AS SELECT DISTINCT dni FROM ALUMNO;"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-2",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 2",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl equipo técnico desea consultar en la base de datos solamente los datos de todos los alumnos que tienen matrículas asociadas. ¿Cuál de las siguientes consultas SQL en Oracle es correcta conforme al modelo de datos?",
+      "options": [
+        "SELECT * FROM ALUMNO, MATRICULA;",
+        "SELECT * FROM ALUMNO INNER JOIN MATRICULA ON ALUMNO.id_alumno = MATRICULA.id_alumno;",
+        "SELECT * FROM ALUMNO WHERE id_alumno IN MATRICULA;",
+        "SELECT * FROM MATRICULA WHERE ALUMNO.id_alumno = MATRICULA.id_alumno;"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-3",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 3",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl equipo técnico necesita garantizar que cada registro de la tabla MATRICULA tenga un identificador único generado automáticamente en Oracle, evitando conflictos de concurrencia cuando múltiples usuarios insertan matrículas simultáneamente desde la aplicación. Se decide utilizar una SEQUENCE para generar el valor de la clave primaria id_matricula. ¿Cuál de las siguientes sentencias SQL en Oracle es correcta para crear una secuencia que comience en 1 y se incremente en 1?",
+      "options": [
+        "CREATE SEQUENCE seq_matricula START 1 INCREMENT 1;",
+        "CREATE SEQUENCE seq_matricula BEGIN WITH 1 STEP 1;",
+        "CREATE SEQUENCE seq_matricula START WITH 1 INCREMENT BY 1;",
+        "CREATE SEQUENCE seq_matricula INIT 1 NEXT 1;"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-4",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 4",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl equipo técnico necesita definir la clase Alumno como entidad persistente conforme al estándar Jakarta Persistence compatible con Hibernate. ¿Cuál es la anotación correcta que deben emplear para definir esa clase como entidad persistente?",
+      "options": [
+        "@Entity",
+        "@Table",
+        "@Persistent",
+        "@DatabaseEntity"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-5",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 5",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl sistema implementa un servicio Java que calcula el número total de matrículas de un alumno a partir de los datos recuperados desde la base de datos. El equipo técnico desea verificar mediante una prueba unitaria utilizando JUnit 6 que el método calcularMatriculas() devuelve el valor correcto. La clase a probar es:\npublic class AlumnoService {\npublic int calcularMatriculas(int matriculas) {\nreturn matriculas;\n}\n}\n¿Cuál de las siguientes implementaciones de la prueba unitaria es correcta?",
+      "options": [
+        "@Test void testCalcularMatriculas() {\nAlumnoService service = new AlumnoService();\nassertEquals(3, service.calcularMatriculas(3));\n}",
+        "@Test void testCalcularMatriculas() {\nAlumnoService service = new AlumnoService();\nassertTrue(service.calcularMatriculas(3));\n}",
+        "@Test void testCalcularMatriculas() {\nassertEquals(3, calcularMatriculas(3));\n}",
+        "@Test void testCalcularMatriculas() {\nAlumnoService service = null;\nassertEquals(3, service.calcularMatriculas(3));\n}"
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-6",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 6",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe necesita ejecutar la aplicación Spring Boot. ¿Cuál es el comando de Maven correcto?",
+      "options": [
+        "mvn spring-boot:launch",
+        "mvn run spring-boot",
+        "mvn spring-boot:run",
+        "mvn launch spring-boot"
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-7",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 7",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl equipo técnico necesita definir una estructura HTML5 válida que incluya un contenedor para mostrar el listado de alumnos, cumpliendo el estándar HTML5 W3C y asegurando compatibilidad con navegadores modernos utilizados en el Ministerio. ¿Cuál de las siguientes estructuras es correcta?",
+      "options": [
+        "<html><body><div id=\"alumnos\"></div></body></html>",
+        "<!DOCTYPE html><html><head><title>EducaData</title></head><body><div id=\"alumnos\"></div></body></html>",
+        "<html version=\"5\"><body><container id=\"alumnos\"></container></body></html>",
+        "<!HTML5><body><div id=\"alumnos\"></div></body>"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-8",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 8",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe debe garantizar que los documentos XML generados estén bien formados conforme a la especificación XML 1.0 para permitir su procesamiento correcto por sistemas externos. ¿Cuál de los siguientes fragmentos XML está bien formado?",
+      "options": [
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?><alumno><id_alumno>10</nombre><nombre>Juan Pérez</nombre></alumno>",
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?><alumno><id_alumno>10</id_alumno><nombre>Juan Pérez</nombre></alumno>",
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?><alumno><id_alumno>10</id_alumno><nombre>Juan Pérez</nombre>",
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?><alumno><id_alumno>10</id_alumno><nombre>Juan Pérez</id_alumno> </alumno>"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-9",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 9",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe requiere mejorar la experiencia del usuario permitiendo interacción dinámica en EDUCA-DATA 2030. ¿Qué lenguaje permite implementar esta funcionalidad, de forma que los navegadores Google Chrome, Microsoft Edge y Mozilla Firefox la ejecuten de forma nativa?",
+      "options": [
+        "Python 3.11",
+        "Oracle SQL",
+        "Java JDK 17",
+        "JavaScript ECMAScript 2022"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-10",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 10",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl sistema implementa un Web Service REST que permite registrar un nuevo alumno en la base de datos. Lo utiliza una aplicación administrativa que envía una solicitud al backend para crear el nuevo registro. Tras crear correctamente el recurso en la base de datos, el Web Service debe devolver el código HTTP adecuado conforme a los estándares REST. ¿Cuál es el código de estado HTTP que existe específicamente para responder a este caso?",
+      "options": [
+        "200 OK",
+        "201 Created",
+        "204 No Content",
+        "202 Accepted"
+      ],
+      "correct": "b",
+      "topics": [
+        "B3-T06"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-11",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 11",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nSe debe implementar correctamente la estructura del contenido principal del aplicativo, garantizando accesibilidad a usuarios que utilizan tecnologías de asistencia como lectores de pantalla. ¿Qué actuación se recomienda en las pautas de accesibilidad WCAG 2.1?",
+      "options": [
+        "Utilizar tablas HTML <table> para estructurar todo el contenido.",
+        "Utilizar únicamente etiquetas <div> con atributos class para facilitar el diseño visual.",
+        "Utilizar etiquetas semánticas HTML5 como <main>, <section> y <header> para estructurar el contenido.",
+        "Utilizar únicamente estilos CSS para definir visualmente la estructura del contenido."
+      ],
+      "correct": "c",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-12",
+      "source_ref": "PI OEP 2025 · Supuesto I · nº 12",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\n¿Cuál de estas opciones recomienda OWASP para prevenir ataques XSS en la aplicación?",
+      "options": [
+        "Validar y escapar correctamente los datos antes de mostrarlos en el navegador.",
+        "Utilizar conexiones HTTP entre cliente y servidor.",
+        "Alojar la aplicación en servidores con redundancia física y tolerancia a fallos.",
+        "Almacenar los datos únicamente en Oracle Database 19c."
+      ],
+      "correct": "a",
+      "topics": [
+        "B3-T08"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R1",
+      "source_ref": "PI OEP 2025 · Supuesto I · reserva nº 1",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nPara el mantenimiento de la aplicación, se requiere ejecutar un código de limpieza cuando el motor Catalina de Tomcat se detenga por completo, pero antes de que la máquina virtual de Java finalice. ¿Cuál es la opción correcta para ello?",
+      "options": [
+        "Registrar un shutdown hook.",
+        "Usar una anotación @PreDestroy en la clase del código de limpieza.",
+        "Implementar un LifecycleListener y registrarlo en el elemento <server> del fichero \"server.xml\".",
+        "Definir en Tomcat una Valve personalizada en el elemento <Server> con el método de limpieza."
+      ],
+      "correct": "c",
+      "annulled": true,
+      "explanation": "Pregunta anulada en la plantilla definitiva. La plantilla provisional daba como correcta la c).",
+      "topics": [
+        "B3-T05"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R2",
+      "source_ref": "PI OEP 2025 · Supuesto I · reserva nº 2",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nTras un debate sobre cómo resolver un problema en la aplicación, se ha optado por utilizar un algoritmo greedy (voraz). Este algoritmo:",
+      "options": [
+        "Siempre alcanza la solución más óptima.",
+        "Siempre toma la decisión que parece más buena en el momento.",
+        "Solo se puede aplicar para resolver problemas de selección de actividades.",
+        "Resuelve el problema dividiéndolo en subproblemas pequeños y combinando sus soluciones."
+      ],
+      "correct": "b",
+      "topics": [
+        "B2-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SI-R3",
+      "source_ref": "PI OEP 2025 · Supuesto I · reserva nº 3",
+      "stem": "El Ministerio de Educación, Formación Profesional y Deportes ha puesto en marcha el proyecto EDUCA-DATA 2030, cuyo objetivo es diseñar, desarrollar e implantar un sistema integral para el seguimiento, análisis y toma de decisiones estratégicas sobre los diferentes programas educativos.\n\nEl sistema permitirá la visualización de indicadores clave de rendimiento (KPI) relativos a centros educativos, programas formativos y alumnado, entre otros muchos. La solución se integrará con los sistemas corporativos existentes mediante servicios REST y procesamientos ETL, y almacenará la información en una base de datos Oracle Database 19c Enterprise Edition.\n\nEl desarrollo se realizará utilizando Java SE Development Kit (JDK) 17, Spring Boot 3.2.2, Apache Maven 3.9.6, un servidor de aplicaciones Apache Tomcat 10.1.18 y un frontend basado en HTML5, CSS3 y JavaScript ECMAScript 2022. El control de versiones se realizará con Git 2.43 y la integración continua mediante Jenkins 2.426.\n\nAsimismo, el sistema incorporará funcionalidades de inteligencia artificial basadas en modelos de predicción implementados con Python 3.11 y TensorFlow 2.15 para anticipar riesgos de abandono escolar.\n\nAdemás, la aplicación se integrará con una aplicación desarrollada en C# 14 y .NET 10 para obtener otros indicadores relevantes para el sistema.\n\nUna propuesta de parte del modelo de datos de EDUCA-DATA 2030 es el siguiente:\n\nUsted forma parte del equipo técnico responsable del diseño, desarrollo, implantación y soporte de este proyecto y deberá responder a las cuestiones que se le plantean a continuación.\n\nPara responder a estas, suponga que tiene todos los permisos necesarios en las diferentes tecnologías empleadas y que, salvo que se especifique lo contrario, se utilizan las librerías nativas que ya han sido declaradas de cada lenguaje de programación utilizado.\n\n(El enunciado original incluye figuras que no se reproducen aquí.)\n\nEl equipo técnico necesita crear un usuario en Oracle llamado EDUCA_USER con contraseña segura, conforme a los requisitos del sistema, para que la aplicación pueda conectarse a la base de datos. ¿Cuál es la sentencia correcta en Oracle?",
+      "options": [
+        "REGISTER USER EDUCA_USER IDENTIFIED BY password123;",
+        "ADD USER EDUCA_USER PASSWORD password123;",
+        "NEW USER EDUCA_USER IDENTIFIED password123;",
+        "CREATE USER EDUCA_USER IDENTIFIED BY password123;"
+      ],
+      "correct": "d",
+      "topics": [
+        "B3-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-1",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 1",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nSe le asigna la gestión de la red interna 10.30.16.0/20. Si la VLAN 10 usa la primera subred del rango de direccionamiento de esa red, con 25 bits de máscara de red, ¿cuáles son su dirección de red y broadcast, respectivamente?",
+      "options": [
+        "10.30.16.0 y 10.30.16.191",
+        "10.30.16.1 y 10.30.16.191",
+        "10.30.16.1 y 10.30.16.127",
+        "10.30.16.0 y 10.30.16.127"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-2",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 2",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nTambién se le solicita el número máximo de hosts disponibles de la red interna 10.30.16.0/20, indique la respuesta correcta:",
+      "options": [
+        "254",
+        "1022",
+        "4094",
+        "8190\nEn un momento determinado, la web del Ministerio deja de estar accesible. A continuación, deberá comprobar posibles problemas de servicio, rutas, puertos y/o filtrado entre máquinas."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T07"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-3",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 3",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nEn la SVI (Switched Virtual Interface) de la VLAN 10 del router de distribución, ¿qué comando de Cisco IOS 15.x habilita el DHCP relay hacia el servidor 10.30.20.5?",
+      "options": [
+        "ip helper-address 10.30.20.5",
+        "ip dhcp server 10.30.20.5",
+        "service dhcp forward 10.30.20.5",
+        "relay dhcp 10.30.20.5"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-4",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 4",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nTambién le preguntan qué comando usaría para ver la tabla de enrutamiento en el servidor web01 (RHEL):",
+      "options": [
+        "route print",
+        "netstat -p tcp",
+        "ip route show",
+        "tracert -r"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-5",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 5",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nPara habilitar el servicio nginx automáticamente en el arranque del servidor web01, ¿qué orden de systemd resulta adecuada?",
+      "options": [
+        "systemctl enable nginx",
+        "systemctl autostart nginx",
+        "service nginx start-enable",
+        "systemctl run nginx -onboot"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-6",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 6",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nEn el servidor web01, un contenedor con ID \"3f7\" está consumiendo demasiados recursos y debe interrumpirse inmediatamente. ¿Cuál es el comando que debe ejecutar?",
+      "options": [
+        "docker kill 3f7",
+        "docker end 3f7",
+        "docker interrupt 3f7",
+        "docker block 3f7"
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T03"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-7",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 7",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nDesde web01 se le pide verificar qué ruta efectiva (interfaz/next hop) usa el kernel para llegar a db01 (10.30.20.30). ¿Qué orden sería la adecuada?",
+      "options": [
+        "ip route neigh 10.30.20.30",
+        "ip route get 10.30.20.30",
+        "ip net show 10.30.20.30",
+        "ip route net 10.30.20.30"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-8",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 8",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nLe solicitan listar rápidamente los puertos en escucha del sistema. En RHEL, ¿cuál indicaría que es un comando válido?",
+      "options": [
+        "route -n",
+        "arp -an",
+        "hostnamectl",
+        "ss -ltn\nEn los servidores RHEL 8.8 se usa RAID por hardware y LVM para la gestión de volúmenes de datos. Para la gestión de copias de seguridad se usa el producto Veeam Backup y se sigue la política de copias 3-2-1, usando estrategias basadas en snapshots y backups. Los servidores RHEL deberán seguir las recomendaciones de seguridad del CCN-CERT."
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-9",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 9",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\n¿Qué opción refleja correctamente la estrategia 3-2-1?",
+      "options": [
+        "3 copias de los datos, en 2 soportes fuera de la sede, con 1 copia cifrada.",
+        "3 copias de los datos, en 2 servidores fuera de la sede, con 1 copia en nube.",
+        "3 copias de los datos, en 2 soportes distintos, con 1 copia fuera de la sede.",
+        "3 copias de los datos, en 2 soportes distintos, con 1 copia cifrada."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-10",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 10",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nSe necesita generar una copia de seguridad en formato de compresión .tar.gz, del directorio “/srv/app/config/”, en un fichero llamado “config_backup.tar.gz”. El comando correcto es:",
+      "options": [
+        "tar -xzf config_backup.tar.gz /srv/app/config/",
+        "tar -czf config_backup.tar.gz /srv/app/config/",
+        "gzip -cf /srv/app/config/ > config_backup.tar",
+        "zip -r config_backup.tar.gz /srv/app/config/"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-11",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 11",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nEn el servidor de Windows Server 2019, se quiere agregar un usuario a un grupo global desde el Controlador de Dominio (DC), ¿qué herramienta gráfica nativa usaría?",
+      "options": [
+        "Active Directory Users and Computers (dsa.msc).",
+        "Local Users and Groups en el DC (lusrmgr.msc).",
+        "Panel de control de cuentas de usuario (netplwiz).",
+        "Administrador de certificados (certmgr.msc) del equipo."
+      ],
+      "correct": "a",
+      "topics": [
+        "B4-T04"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-12",
+      "source_ref": "PI OEP 2025 · Supuesto II · nº 12",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nEn Windows 11, le piden copiar todo el contenido de un directorio de origen, “C:\\DirectorioA”, en un directorio de destino existente, “C:\\DirectorioB”, de forma recursiva. ¿Qué comando cmdlet de PowerShell le permite hacer lo solicitado?",
+      "options": [
+        "Copy-Item “C:\\DirectorioA\\*” “C:\\DirectorioB” -Recursive",
+        "Copy-Path “C:\\DirectorioA\\*” “C:\\DirectorioB” -Recurse",
+        "Copy-Item -Path “C:\\DirectorioA\\*” -Destination “C:\\DirectorioB” -Recurse",
+        "Copy-Path “C:\\DirectorioA\\*” -Destination “C:\\DirectorioB” -Recursive"
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T01"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R1",
+      "source_ref": "PI OEP 2025 · Supuesto II · reserva nº 1",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nEn el servidor db01 (RHEL 8.8), se desea añadir de forma persistente una regla que permita el acceso al puerto 3306/TCP solo desde la DMZ 172.19.50.0/27. La zona efectiva del servidor es public. La activación en tiempo de ejecución se realizará posteriormente según el procedimiento estándar. ¿Qué comando añade la regla persistente correcta en la zona public?",
+      "options": [
+        "firewall-cmd --permanent --zone=public --add-rich-rule='rule family=\"ipv4\" address=\"172.19.50.0/27\" port protocol=\"tcp\" port number=\"3306\" accept'",
+        "firewall-cmd --permanent-direct --zone=public --add-rich-rule='rule ip=\"ipv4\" address=\"172.19.50.0/27\" protocol=\"tcp\" port=\"3306\" accept'",
+        "firewall-cmd --permanent-direct --add-rule='rule ip=\"ipv4\" source address=\"172.19.50.0/27\" protocol=\"tcp\" port number=\"3306\" accept'",
+        "firewall-cmd --permanent --zone=public --add-rich-rule='rule family=\"ipv4\" source address=\"172.19.50.0/27\" port protocol=\"tcp\" port=\"3306\" accept'"
+      ],
+      "correct": "d",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R2",
+      "source_ref": "PI OEP 2025 · Supuesto II · reserva nº 2",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\n¿Qué ajuste de sysctl del kernel resulta adecuado para mitigar ataques de suplantación de IP (IP spoofing) mediante filtrado de ruta inversa en RHEL 8.8?",
+      "options": [
+        "Activar net.ipv4.ip_forward",
+        "Configurar net.ipv4.conf.all.rp_filter=1",
+        "Deshabilitar net.ipv4.tcp_syncookies",
+        "Activar net.ipv4.conf.all.accept_ra=1"
+      ],
+      "correct": "b",
+      "topics": [
+        "B4-T09"
+      ],
+      "status": "published"
+    },
+    {
+      "key": "SII-R3",
+      "source_ref": "PI OEP 2025 · Supuesto II · reserva nº 3",
+      "stem": "La Subdirección General de Tecnologías de la Información y Comunicaciones (en adelante SGTIC) del Ministerio al que usted se acaba de incorporar, mantiene un CPD principal que cuenta con la siguiente infraestructura física y lógica:\n\n- Servidores Windows Server 2019 para los servicios de Directorio Activo (AD), DNS y DHCP.\n- Servidores Linux Red Hat Enterprise Linux (RHEL) 8.8, basado en Systemd, para los servicios web, base de datos y correo electrónico.\n\nA nivel de comunicaciones la SGTIC cuenta con switches y routers Cisco IOS 15.x y firewalls de distintos fabricantes para realizar la segmentación de red.\n\nSe dispone de dos líneas redundadas para la conexión a Internet y otras dos líneas para la conexión a Red SARA.\n\nLos puestos de trabajo son Windows 11 Enterprise en versión 25H2.\n\nLa SGTIC cuenta con dos grandes rangos de direccionamiento:\n\n- La red interna 10.30.16.0/20, que da servicio a usuarios y servidores internos.\n- La DMZ 172.19.50.0/27, que aloja, entre otros servicios, los servidores web01 (Nginx) y mail01 (Postfix).\n\nEntre otras, la SGTIC cuenta con una VLAN denominada VLAN 10 para usuarios y otra denominada VLAN 20 para servidores.\n\nEl router de distribución integra DHCP relay hacia el servidor DHCP de la VLAN 20.\n\nEntre sus tareas como integrante del Servicio de Sistemas, Comunicaciones y Seguridad Informática de la SGTIC se encuentran el mantenimiento y operación de los distintos elementos que conforman la infraestructura tecnológica de la SGTIC, así como el diagnóstico y resolución de las incidencias que afecten a dichos elementos.\n\nSalvo indicación expresa, usted dispone de los permisos necesarios para realizar todas las operaciones requeridas y las siguientes preguntas están referidas a la infraestructura anteriormente especificada.\n\nEn db01 (RHEL 8.8) existe un grupo de volúmenes LVM2 llamado vg_datos con 200 GiB libres. El volumen lógico lv_contenido (actualmente 500 GiB) contiene un sistema de ficheros XFS montado en /contenido. No hay snapshots activos. Se requiere ampliar la capacidad disponible en /contenido hasta 600 GiB, sin cambiar el punto de montaje ni la estructura del volumen y sin añadir discos nuevos. ¿Cuál es la secuencia de acciones correcta a nivel lógico para realizar la ampliación?",
+      "options": [
+        "Crear un volumen lógico nuevo de 600 GiB, formatearlo y sustituir el actual en /etc/fstab.",
+        "Crear un snapshot del volumen lógico, montar el snapshot y ejecutar la ampliación sobre el snapshot.",
+        "Extender el volumen lógico a 600 GiB y, a continuación, ampliar en línea el sistema de ficheros XFS sobre /contenido.",
+        "Añadir un PV nuevo al grupo vg_datos y ejecutar fsck sobre /contenido antes de ampliar el sistema de ficheros."
+      ],
+      "correct": "c",
+      "topics": [
+        "B4-T02"
+      ],
+      "status": "published"
+    }
+  ]
+}
