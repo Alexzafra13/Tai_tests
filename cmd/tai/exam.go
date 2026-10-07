@@ -96,7 +96,9 @@ func runImportExam(ctx context.Context, log *slog.Logger, args []string) error {
 
 // keepReview copies topics and status from the bank file being replaced
 // to the questions whose text and answer did not change, so re-importing an
-// exam keeps its review. It returns how many were kept.
+// exam keeps its review. A practical case's statement before the question
+// does not count: notes added to it change nothing that was checked. It
+// returns how many were kept.
 func keepReview(path string, qs []content.BankQuestion) (int, error) {
 	b, err := os.ReadFile(path)
 	if errors.Is(err, os.ErrNotExist) {
@@ -115,12 +117,21 @@ func keepReview(path string, qs []content.BankQuestion) (int, error) {
 	kept := 0
 	for i, q := range qs {
 		o, ok := byKey[q.Key]
-		if ok && o.Stem == q.Stem && o.Options == q.Options && o.Correct == q.Correct && o.Annulled == q.Annulled {
+		if ok && questionPart(o.Stem) == questionPart(q.Stem) && o.Options == q.Options && o.Correct == q.Correct &&
+			o.Annulled == q.Annulled {
 			qs[i].Topics, qs[i].Status = o.Topics, o.Status
 			kept++
 		}
 	}
 	return kept, nil
+}
+
+// questionPart drops the practical-case statement that opens a stem.
+func questionPart(stem string) string {
+	if i := strings.LastIndex(stem, "\n\n"); i >= 0 {
+		return stem[i+2:]
+	}
+	return stem
 }
 
 func pdfText(ctx context.Context, path string) (string, error) {
