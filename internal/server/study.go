@@ -80,3 +80,12 @@ func (s *Server) handleSearch(w http.ResponseWriter, r *http.Request) {
 	hits, err := s.content.Search(r.Context(), r.URL.Query().Get("q"), 30)
 	s.respond(w, hits, err)
 }
+
+func (s *Server) handleStudyQuestion(w http.ResponseWriter, r *http.Request) {
+	id, ok := pathID(w, r)
+	if !ok {
+		return
+	}
+	q, err := s.content.PublishedQuestion(r.Context(), id)
+	s.respond(w, q, err)
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { api, errorMessage } from "../api";
-import { optionLetters, originLabel, type Solution, type TestItem } from "../types";
+import { optionLetters, originLabel, type Solution, type SourceKind, type TestItem } from "../types";
 import "./QuestionView.css";
 
 // Options renders the four answers as large tap targets. Once `correct` is
@@ -39,6 +39,23 @@ export function Options({
         );
       })}
     </ol>
+  );
+}
+
+const sourceLinkLabel: Record<SourceKind, string> = {
+  inap_exam: "Ver el examen en el INAP",
+  law: "Ver la ley en el BOE",
+  technical_doc: "Ver la documentación",
+};
+
+// SourceLink opens the original document a question cites, when its URL is
+// known.
+export function SourceLink({ kind, url }: { kind: SourceKind; url: string }) {
+  if (!url) return null;
+  return (
+    <a href={url} target="_blank" rel="noreferrer" className="small">
+      {sourceLinkLabel[kind]} ↗
+    </a>
   );
 }
 

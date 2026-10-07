@@ -1,7 +1,7 @@
 // Spaced repetition, statistics and search (internal/srs, internal/stats,
 // content search).
 
-import type { Origin } from "./content";
+import type { Origin, SourceKind } from "./content";
 
 export type ReviewSummary = {
   due: number;
@@ -58,4 +58,16 @@ export type SearchHit = {
   source_title: string;
   source_ref: string;
   source_quote: string;
+  source_kind: SourceKind;
+  source_url: string;
+};
+
+export type TopicRef = {
+  id: number;
+  number: number;
+  title: string;
+};
+
+export type StudyQuestion = SearchHit & {
+  topics: TopicRef[];
 };
