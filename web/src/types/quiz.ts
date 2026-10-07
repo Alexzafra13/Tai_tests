@@ -129,6 +129,9 @@ export type ExamPart = {
   replaced: number;
   // missing: those left out with no reserve to take over.
   missing: number;
+  // Why questions were left out: annulled by the INAP, or not published here.
+  annulled: number;
+  unpublished: number;
 };
 
 export type Exam = {
