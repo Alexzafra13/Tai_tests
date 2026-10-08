@@ -568,7 +568,7 @@
      ],
      "items": [
       {
-       "text": "La nacionalidad se adquiere, conserva y pierde según la ley, y **ningún español de origen puede ser privado de su nacionalidad**. El Estado puede concertar **tratados de doble nacionalidad** con los países iberoamericanos o con los que tengan una particular vinculación con España (art. 11).",
+       "text": "La nacionalidad se adquiere, conserva y pierde según la ley, y **ningún español de origen puede ser privado de su nacionalidad**. El Estado puede concertar **tratados de doble nacionalidad** con los países iberoamericanos o con los que hayan tenido o tengan una particular vinculación con España (art. 11).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -635,7 +635,7 @@
      ]
     },
     {
-     "text": "**Igualdad ante la ley** (art. 14): sin discriminación por nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social. Está fuera de la Sección 1.ª, pero comparte con ella la tutela reforzada del art. 53.2 (procedimiento preferente y sumario, y amparo). En cambio, su reforma no sigue el procedimiento agravado del art. 168, que solo cubre la Sección 1.ª.",
+     "text": "**Igualdad ante la ley** (art. 14): sin discriminación por nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social. Está fuera de la Sección 1.ª, pero comparte con ella la tutela reforzada del art. 53.2 (procedimiento preferente y sumario, y amparo). En cambio, su reforma no sigue el procedimiento agravado del art. 168, que dentro del Título I solo alcanza a la Sección 1.ª (además del Título preliminar, el Título II y la revisión total).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -650,7 +650,7 @@
       {
        "law": "BOE-A-1978-31229",
        "section": "a168",
-       "quote": "al Capítulo segundo, Sección primera del Título I"
+       "quote": "Cuando se propusiere la revisión total de la Constitución o una parcial que afecte al Título preliminar, al Capítulo segundo, Sección primera del Título I, o al Título II"
       }
      ]
     },
@@ -1660,7 +1660,7 @@
        ]
       },
       {
-       "text": "**Excepción**: lo declara el **Gobierno** por decreto, **previa autorización del Congreso**, que fija expresamente sus efectos, ámbito y duración: **máximo treinta días, prorrogables por otros treinta** con los mismos requisitos.",
+       "text": "**Excepción**: lo declara el **Gobierno** por decreto acordado en Consejo de Ministros, **previa autorización del Congreso**; la autorización y la proclamación fijan expresamente sus efectos, ámbito territorial y duración: **máximo treinta días, prorrogables por otros treinta** con los mismos requisitos.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1670,7 +1670,7 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a116",
-         "quote": "su duración, que no podrá exceder de treinta días, prorrogables por otro plazo igual, con los mismos requisitos"
+         "quote": "La autorización y proclamación del estado de excepción deberá determinar expresamente los efectos del mismo, el ámbito territorial a que se extiende y su duración, que no podrá exceder de treinta días, prorrogables por otro plazo igual, con los mismos requisitos."
         }
        ]
       },
@@ -1685,7 +1685,7 @@
        ]
       },
       {
-       "text": "Mientras dure cualquiera de ellos **no puede disolverse el Congreso**: las Cámaras quedan convocadas automáticamente si no estaban en sesiones y su funcionamiento no puede interrumpirse. Si el Congreso está disuelto o ha expirado su mandato, asume sus competencias la **Diputación Permanente**.",
+       "text": "Mientras dure cualquiera de ellos **no puede disolverse el Congreso**: las Cámaras quedan convocadas automáticamente si no estaban en sesiones y su funcionamiento no puede interrumpirse. Si, estando el Congreso disuelto o expirado su mandato, se produce alguna de las situaciones que dan lugar a estos estados, asume sus competencias la **Diputación Permanente**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1695,7 +1695,7 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a116",
-         "quote": "las competencias del Congreso serán asumidas por su Diputación Permanente"
+         "quote": "Disuelto el Congreso o expirado su mandato, si se produjere alguna de las situaciones que dan lugar a cualquiera de dichos estados, las competencias del Congreso serán asumidas por su Diputación Permanente."
         }
        ]
       },
@@ -2118,8 +2118,13 @@
        ]
       },
       {
-       "text": "Tras cada renovación del Congreso, **previa consulta** con los representantes de los grupos políticos con representación parlamentaria, y **a través del Presidente del Congreso**, **propone un candidato a la Presidencia del Gobierno** (art. 99.1).",
+       "text": "Tras cada renovación del Congreso y en los demás supuestos constitucionales en que proceda, **previa consulta** con los representantes de los grupos políticos con representación parlamentaria, y **a través del Presidente del Congreso**, **propone un candidato a la Presidencia del Gobierno** (art. 99.1).",
        "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a99",
+         "quote": "Después de cada renovación del Congreso de los Diputados, y en los demás supuestos constitucionales en que así proceda"
+        },
         {
          "law": "BOE-A-1978-31229",
          "section": "a99",
