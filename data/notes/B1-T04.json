@@ -1,0 +1,4019 @@
+{
+ "topic": "B1-T04",
+ "sections": [
+  {
+   "title": "El TREBEP y los empleados públicos",
+   "points": [
+    {
+     "text": "El **texto refundido de la Ley del Estatuto Básico del Empleado Público** (TREBEP) se aprobó por el **Real Decreto Legislativo 5/2015, de 30 de octubre**. Establece las **bases del régimen estatutario de los funcionarios** y determina las normas aplicables al **personal laboral** (art. 1).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "aunico",
+       "quote": "Artículo único. Aprobación del texto refundido"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a1",
+       "quote": "El presente Estatuto tiene por objeto establecer las bases del régimen estatutario de los funcionarios públicos incluidos en su ámbito de aplicación."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a1",
+       "quote": "Asimismo tiene por objeto determinar las normas aplicables al personal laboral al servicio de las Administraciones Públicas."
+      }
+     ]
+    },
+    {
+     "text": "Se aplica al personal funcionario y, en lo que proceda, al laboral de la **AGE**, las **Comunidades Autónomas**, Ceuta y Melilla, las **entidades locales**, los **organismos públicos** y las **Universidades Públicas** (art. 2.1). Es **supletorio** para el personal no incluido en su ámbito (art. 2.5).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a2",
+       "quote": "Este Estatuto se aplica al personal funcionario y en lo que proceda al personal laboral al servicio de las siguientes Administraciones Públicas:"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a2",
+       "quote": "Las Universidades Públicas."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a2",
+       "quote": "El presente Estatuto tiene carácter supletorio para todo el personal de las Administraciones Públicas no incluido en su ámbito de aplicación."
+      }
+     ]
+    },
+    {
+     "text": "**Empleados públicos** son quienes desempeñan **funciones retribuidas** en las Administraciones Públicas al servicio de los intereses generales. Se clasifican en **funcionarios de carrera**, **funcionarios interinos**, **personal laboral** (fijo, por tiempo indefinido o temporal) y **personal eventual** (art. 8). El **personal directivo profesional** se regula aparte (art. 13).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a8",
+       "quote": "Son empleados públicos quienes desempeñan funciones retribuidas en las Administraciones Públicas al servicio de los intereses generales."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a8",
+       "quote": "Personal laboral, ya sea fijo, por tiempo indefinido o temporal."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a8",
+       "quote": "Personal eventual."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a13",
+       "quote": "Es personal directivo el que desarrolla funciones directivas profesionales en las Administraciones Públicas"
+      }
+     ]
+    },
+    {
+     "text": "**Funcionarios de carrera**: vinculados por **nombramiento legal** mediante una **relación estatutaria** de Derecho Administrativo, para servicios **de carácter permanente**. Las funciones que implican **potestades públicas** o la salvaguardia de los intereses generales corresponden **exclusivamente a los funcionarios** (art. 9).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a9",
+       "quote": "Son funcionarios de carrera quienes, en virtud de nombramiento legal, están vinculados a una Administración Pública por una relación estatutaria regulada por el Derecho Administrativo para el desempeño de servicios profesionales retribuidos de carácter permanente."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a9",
+       "quote": "corresponden exclusivamente a los funcionarios públicos"
+      }
+     ]
+    },
+    {
+     "text": "**Funcionarios interinos**: nombrados con **carácter temporal** por razones de **necesidad y urgencia**, en estos casos (art. 10.1):",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a10",
+       "quote": "Son funcionarios interinos los que, por razones expresamente justificadas de necesidad y urgencia, son nombrados como tales con carácter temporal"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Plazas vacantes** sin funcionario de carrera disponible: máximo **tres años**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "La existencia de plazas vacantes, cuando no sea posible su cobertura por funcionarios de carrera, por un máximo de tres años"
+        }
+       ]
+      },
+      {
+       "text": "**Sustitución transitoria** de los titulares, el tiempo estrictamente necesario.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "La sustitución transitoria de los titulares, durante el tiempo estrictamente necesario."
+        }
+       ]
+      },
+      {
+       "text": "**Programas temporales**: máximo **tres años**, ampliable **doce meses** más por ley.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "La ejecución de programas de carácter temporal, que no podrán tener una duración superior a tres años, ampliable hasta doce meses más"
+        }
+       ]
+      },
+      {
+       "text": "**Exceso o acumulación de tareas**: máximo **nueve meses** dentro de un periodo de **dieciocho**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "El exceso o acumulación de tareas por plazo máximo de nueve meses, dentro de un periodo de dieciocho meses."
+        }
+       ]
+      },
+      {
+       "text": "En las **vacantes**, a los **tres años** del nombramiento termina la interinidad y la plaza solo puede ocuparla un funcionario de carrera, salvo que el proceso selectivo quede **desierto** o que la convocatoria se haya **publicado dentro de esos tres años** (entonces sigue hasta resolverla) (art. 10.4).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "transcurridos tres años desde el nombramiento del personal funcionario interino se producirá el fin de la relación de interinidad, y la vacante solo podrá ser ocupada por personal funcionario de carrera, salvo que el correspondiente proceso selectivo quede desierto"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "siempre que se haya publicado la correspondiente convocatoria dentro del plazo de los tres años"
+        }
+       ]
+      },
+      {
+       "text": "La interinidad termina también, **sin compensación**, por la cobertura del puesto por un funcionario de carrera, la supresión o amortización del puesto, el fin del plazo autorizado o el fin de la causa del nombramiento (art. 10.3).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "sin derecho a compensación alguna:"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "Por la cobertura reglada del puesto por personal funcionario de carrera"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "Por razones organizativas que den lugar a la supresión o a la amortización de los puestos asignados."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "Por la finalización del plazo autorizado expresamente recogido en su nombramiento."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a10",
+         "quote": "Por la finalización de la causa que dio lugar a su nombramiento."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Personal laboral**: presta servicios en virtud de **contrato de trabajo formalizado por escrito** (art. 11.1). **Personal eventual**: nombrado con carácter **no permanente** para funciones de **confianza o asesoramiento especial**; nombramiento y cese **libres**, cesa con la autoridad a la que asesora y esa condición **no es mérito** para el acceso ni la promoción interna (art. 12).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a11",
+       "quote": "Es personal laboral el que en virtud de contrato de trabajo formalizado por escrito"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a12",
+       "quote": "Es personal eventual el que, en virtud de nombramiento y con carácter no permanente, sólo realiza funciones expresamente calificadas como de confianza o asesoramiento especial"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a12",
+       "quote": "El nombramiento y cese serán libres. El cese tendrá lugar, en todo caso, cuando se produzca el de la autoridad a la que se preste la función de confianza o asesoramiento."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a12",
+       "quote": "La condición de personal eventual no podrá constituir mérito para el acceso a la Función Pública o para la promoción interna."
+      }
+     ]
+    },
+    {
+     "text": "**Grupos de clasificación** de los cuerpos y escalas según la titulación (art. 76): **A** (subgrupos **A1** y **A2**, título universitario de **Grado**), **B** (**Técnico Superior**), **C1** (**Bachiller o Técnico**) y **C2** (**Graduado en ESO**). Además puede haber **agrupaciones profesionales** sin titulación (disp. adicional sexta). El TAI es un cuerpo del subgrupo C1.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a76",
+       "quote": "Grupo A: Dividido en dos Subgrupos, A1 y A2."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a76",
+       "quote": "Para el acceso a los cuerpos o escalas de este Grupo se exigirá estar en posesión del título universitario de Grado."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a76",
+       "quote": "Grupo B. Para el acceso a los cuerpos o escalas del Grupo B se exigirá estar en posesión del título de Técnico Superior."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a76",
+       "quote": "C1: Título de Bachiller o Técnico."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a76",
+       "quote": "C2: Título de Graduado en Educación Secundaria Obligatoria."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dasexta",
+       "quote": "para cuyo acceso no se exija estar en posesión de ninguna de las titulaciones previstas en el sistema educativo."
+      }
+     ]
+    },
+    {
+     "text": "**Acceso**: todos los ciudadanos tienen derecho al empleo público según **igualdad, mérito y capacidad** (art. 55.1). Requisitos generales: **nacionalidad española** (con excepciones para nacionales de la UE), **capacidad funcional**, **dieciséis años** cumplidos sin exceder la edad de jubilación forzosa, **no haber sido separado** ni estar inhabilitado y la **titulación** exigida (art. 56.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a55",
+       "quote": "Todos los ciudadanos tienen derecho al acceso al empleo público de acuerdo con los principios constitucionales de igualdad, mérito y capacidad"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a56",
+       "quote": "Tener la nacionalidad española, sin perjuicio de lo dispuesto en el artículo siguiente."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a56",
+       "quote": "Tener cumplidos dieciséis años y no exceder, en su caso, de la edad máxima de jubilación forzosa."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a56",
+       "quote": "Poseer la titulación exigida."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a56",
+       "quote": "Poseer la capacidad funcional para el desempeño de las tareas."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a56",
+       "quote": "No haber sido separado mediante expediente disciplinario del servicio de cualquiera de las Administraciones Públicas"
+      }
+     ]
+    },
+    {
+     "text": "Los sistemas selectivos de funcionarios de carrera son la **oposición** y el **concurso-oposición**; el **concurso** solo cabe **excepcionalmente y por ley** (art. 61.6). La condición de funcionario se adquiere, por este orden: superar el proceso, **nombramiento** publicado, **acatamiento de la Constitución** y **toma de posesión** (art. 62.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a61",
+       "quote": "Los sistemas selectivos de funcionarios de carrera serán los de oposición y concurso-oposición"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a61",
+       "quote": "Sólo en virtud de ley podrá aplicarse, con carácter excepcional, el sistema de concurso que consistirá únicamente en la valoración de méritos."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a62",
+       "quote": "La condición de funcionario de carrera se adquiere por el cumplimiento sucesivo de los siguientes requisitos:"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a62",
+       "quote": "Superación del proceso selectivo."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a62",
+       "quote": "Nombramiento por el órgano o autoridad competente, que será publicado en el Diario Oficial correspondiente."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a62",
+       "quote": "Acto de acatamiento de la Constitución"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a62",
+       "quote": "Toma de posesión dentro del plazo que se establezca."
+      }
+     ]
+    },
+    {
+     "text": "Se **pierde** la condición de funcionario de carrera por **renuncia**, **pérdida de la nacionalidad**, **jubilación total**, **separación del servicio** firme o **inhabilitación** firme (art. 63). La jubilación forzosa se declara de oficio a los **sesenta y cinco años**, con posible prolongación **hasta los setenta** (art. 67.3); pero para los funcionarios del **Régimen General de la Seguridad Social** (los que ingresan ahora) es la edad que fije ese régimen para la pensión contributiva **sin coeficiente reductor** (art. 67.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a63",
+       "quote": "La renuncia a la condición de funcionario."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a63",
+       "quote": "La pérdida de la nacionalidad."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a63",
+       "quote": "La jubilación total del funcionario."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a63",
+       "quote": "La sanción disciplinaria de separación del servicio que tuviere carácter firme."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a63",
+       "quote": "La pena principal o accesoria de inhabilitación absoluta o especial para cargo público que tuviere carácter firme."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a67",
+       "quote": "La jubilación forzosa se declarará de oficio al cumplir el funcionario los sesenta y cinco años de edad."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a67",
+       "quote": "como máximo hasta que se cumpla setenta años de edad"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a67",
+       "quote": "la edad de la jubilación forzosa del personal funcionario incluido en el Régimen General de la Seguridad Social será, en todo caso, la que prevean las normas reguladoras de dicho régimen para el acceso a la pensión de jubilación en su modalidad contributiva sin coeficiente reductor por razón de la edad."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Derechos de los empleados públicos (artículos 14 y 15)",
+   "points": [
+    {
+     "text": "**Derechos individuales** (art. 14), entre otros:",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a14",
+       "quote": "Los empleados públicos tienen los siguientes derechos de carácter individual en correspondencia con la naturaleza jurídica de su relación de servicio:"
+      }
+     ],
+     "items": [
+      {
+       "text": "A la **inamovilidad** en la condición de funcionario de carrera.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A la inamovilidad en la condición de funcionario de carrera."
+        }
+       ]
+      },
+      {
+       "text": "Al **desempeño efectivo** de las funciones propias de su condición y a la **progresión en la carrera** y **promoción interna** según igualdad, mérito y capacidad.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "Al desempeño efectivo de las funciones o tareas propias de su condición profesional"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A la progresión en la carrera profesional y promoción interna según principios constitucionales de igualdad, mérito y capacidad"
+        }
+       ]
+      },
+      {
+       "text": "A las **retribuciones** e **indemnizaciones** por razón del servicio.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A percibir las retribuciones y las indemnizaciones por razón del servicio."
+        }
+       ]
+      },
+      {
+       "text": "A la **defensa jurídica** y protección de la Administración en los procedimientos derivados del ejercicio legítimo de sus funciones.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A la defensa jurídica y protección de la Administración Pública en los procedimientos que se sigan ante cualquier orden jurisdiccional como consecuencia del ejercicio legítimo de sus funciones o cargos públicos."
+        }
+       ]
+      },
+      {
+       "text": "A la **formación continua**, **preferentemente en horario laboral**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A la formación continua y a la actualización permanente de sus conocimientos y capacidades profesionales, preferentemente en horario laboral."
+        }
+       ]
+      },
+      {
+       "text": "Al respeto de su **intimidad** y **dignidad**, especialmente frente al **acoso**, y a la **no discriminación**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "Al respeto de su intimidad, orientación e identidad sexual, expresión de género, características sexuales, propia imagen y dignidad en el trabajo"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A la no discriminación por razón de nacimiento"
+        }
+       ]
+      },
+      {
+       "text": "A la **conciliación** de la vida personal, familiar y laboral, y a la **intimidad digital** y la **desconexión digital** (letra j bis).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A la adopción de medidas que favorezcan la conciliación de la vida personal, familiar y laboral."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "así como a la desconexión digital en los términos establecidos en la legislación vigente"
+        }
+       ]
+      },
+      {
+       "text": "A la **libertad de expresión** dentro de los límites del ordenamiento; a la protección en **seguridad y salud**; a vacaciones, descansos, permisos y licencias; a la **jubilación**; a las prestaciones de la Seguridad Social; y a la **libre asociación profesional**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A la libertad de expresión dentro de los límites del ordenamiento jurídico."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A recibir protección eficaz en materia de seguridad y salud en el trabajo."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A las vacaciones, descansos, permisos y licencias."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a14",
+         "quote": "A la libre asociación profesional."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Derechos individuales ejercidos colectivamente** (art. 15): **libertad sindical**; **negociación colectiva** y participación en las condiciones de trabajo; **huelga**, con mantenimiento de los **servicios esenciales**; **conflictos colectivos**; y **reunión**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a15",
+       "quote": "Los empleados públicos tienen los siguientes derechos individuales que se ejercen de forma colectiva:"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a15",
+       "quote": "A la libertad sindical."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a15",
+       "quote": "A la negociación colectiva y a la participación en la determinación de las condiciones de trabajo."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a15",
+       "quote": "Al ejercicio de la huelga, con la garantía del mantenimiento de los servicios esenciales de la comunidad."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a15",
+       "quote": "Al planteamiento de conflictos colectivos de trabajo"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a15",
+       "quote": "Al de reunión, en los términos establecidos en el artículo 46 de este Estatuto."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Deberes y Código de Conducta (artículos 52 a 54)",
+   "points": [
+    {
+     "text": "Los empleados públicos desempeñan con **diligencia** sus tareas y velan por los intereses generales, con arreglo a estos principios: **objetividad, integridad, neutralidad, responsabilidad, imparcialidad, confidencialidad, dedicación al servicio público, transparencia, ejemplaridad, austeridad, accesibilidad, eficacia, honradez**, promoción del entorno cultural y medioambiental y **respeto a la igualdad entre mujeres y hombres** (art. 52).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a52",
+       "quote": "objetividad, integridad, neutralidad, responsabilidad, imparcialidad, confidencialidad, dedicación al servicio público, transparencia, ejemplaridad, austeridad, accesibilidad, eficacia, honradez, promoción del entorno cultural y medioambiental, y respeto a la igualdad entre mujeres y hombres"
+      }
+     ]
+    },
+    {
+     "text": "Esos principios **inspiran el Código de Conducta**, que está **configurado por los principios éticos** (art. 53) **y de conducta** (art. 54). Además, **informan la interpretación y aplicación del régimen disciplinario** (art. 52).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a52",
+       "quote": "que inspiran el Código de Conducta de los empleados públicos configurado por los principios éticos y de conducta regulados en los artículos siguientes."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a52",
+       "quote": "Los principios y reglas establecidos en este capítulo informarán la interpretación y aplicación del régimen disciplinario de los empleados públicos."
+      }
+     ]
+    },
+    {
+     "text": "**Principios éticos** (art. 53), los más preguntados:",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a53",
+       "quote": "Los empleados públicos respetarán la Constitución y el resto de normas que integran el ordenamiento jurídico."
+      }
+     ],
+     "items": [
+      {
+       "text": "Actuar con **lealtad y buena fe** con la Administración, superiores, compañeros, subordinados y ciudadanos.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a53",
+         "quote": "Ajustarán su actuación a los principios de lealtad y buena fe con la Administración en la que presten sus servicios"
+        }
+       ]
+      },
+      {
+       "text": "**Abstenerse** en los asuntos en que tengan **interés personal** y de toda actividad privada que suponga riesgo de **conflicto de intereses**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a53",
+         "quote": "Se abstendrán en aquellos asuntos en los que tengan un interés personal, así como de toda actividad privada o interés que pueda suponer un riesgo de plantear conflictos de intereses con su puesto público."
+        }
+       ]
+      },
+      {
+       "text": "No aceptar **trato de favor** o privilegio de personas físicas o entidades privadas.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a53",
+         "quote": "No aceptarán ningún trato de favor o situación que implique privilegio o ventaja injustificada, por parte de personas físicas o entidades privadas."
+        }
+       ]
+      },
+      {
+       "text": "Actuar según **eficacia, economía y eficiencia**, y resolver **dentro de plazo**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a53",
+         "quote": "Actuarán de acuerdo con los principios de eficacia, economía y eficiencia"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a53",
+         "quote": "resolverán dentro de plazo los procedimientos o expedientes de su competencia."
+        }
+       ]
+      },
+      {
+       "text": "Guardar **secreto** de las materias clasificadas y **discreción** sobre lo que conozcan por su cargo.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a53",
+         "quote": "Guardarán secreto de las materias clasificadas u otras cuya difusión esté prohibida legalmente, y mantendrán la debida discreción sobre aquellos asuntos que conozcan por razón de su cargo"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Principios de conducta** (art. 54), los más preguntados:",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a54",
+       "quote": "Tratarán con atención y respeto a los ciudadanos, a sus superiores y a los restantes empleados públicos."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Obedecer** las órdenes profesionales de los superiores, **salvo infracción manifiesta** del ordenamiento, que se comunicará a los órganos de inspección.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a54",
+         "quote": "Obedecerán las instrucciones y órdenes profesionales de los superiores, salvo que constituyan una infracción manifiesta del ordenamiento jurídico, en cuyo caso las pondrán inmediatamente en conocimiento de los órganos de inspección procedentes."
+        }
+       ]
+      },
+      {
+       "text": "Administrar los recursos públicos con **austeridad** y no usarlos en provecho propio.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a54",
+         "quote": "Administrarán los recursos y bienes públicos con austeridad, y no utilizarán los mismos en provecho propio o de personas allegadas."
+        }
+       ]
+      },
+      {
+       "text": "**Rechazar regalos**, favores o servicios que vayan más allá de los **usos habituales, sociales y de cortesía**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a54",
+         "quote": "Se rechazará cualquier regalo, favor o servicio en condiciones ventajosas que vaya más allá de los usos habituales, sociales y de cortesía"
+        }
+       ]
+      },
+      {
+       "text": "Mantener actualizada su **formación** y atender al ciudadano en la **lengua oficial** que solicite.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a54",
+         "quote": "Mantendrán actualizada su formación y cualificación."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a54",
+         "quote": "Garantizarán la atención al ciudadano en la lengua que lo solicite siempre que sea oficial en el territorio."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Carrera profesional y promoción interna",
+   "points": [
+    {
+     "text": "Ojo antes de empezar: los capítulos del TREBEP sobre **carrera y retribuciones** (caps. II y III del Título III, salvo el art. 25.2) y sobre **provisión de puestos** (cap. III del Título V) solo producen efectos **cuando se aprueben las leyes de Función Pública** que los desarrollen; hasta entonces siguen vigentes las normas anteriores en lo que no se opongan al Estatuto (disp. final cuarta). Por eso en la AGE se aplica, junto al TREBEP, el **RD 364/1995** (Reglamento General de Ingreso, provisión y promoción).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dfcuaa",
+       "quote": "Lo establecido en los capítulos II y III del título III, excepto el artículo 25.2, y en el capítulo III del título V producirá efectos a partir de la entrada en vigor de las leyes de Función Pública que se dicten en desarrollo de este Estatuto."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dfcuaa",
+       "quote": "se mantendrán en vigor en cada Administración Pública las normas vigentes sobre ordenación, planificación y gestión de recursos humanos en tanto no se opongan a lo establecido en este Estatuto."
+      }
+     ]
+    },
+    {
+     "text": "La **carrera profesional** es el conjunto ordenado de oportunidades de **ascenso** y expectativas de progreso profesional conforme a igualdad, mérito y capacidad (art. 16.2). Modalidades (art. 16.3):",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a16",
+       "quote": "La carrera profesional es el conjunto ordenado de oportunidades de ascenso y expectativas de progreso profesional conforme a los principios de igualdad, mérito y capacidad."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Carrera horizontal**: progresión de grado, categoría o escalón **sin cambiar de puesto**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a16",
+         "quote": "Carrera horizontal, que consiste en la progresión de grado, categoría, escalón u otros conceptos análogos, sin necesidad de cambiar de puesto de trabajo"
+        }
+       ]
+      },
+      {
+       "text": "**Carrera vertical**: ascenso en la estructura de **puestos** por los procedimientos de provisión.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a16",
+         "quote": "Carrera vertical, que consiste en el ascenso en la estructura de puestos de trabajo por los procedimientos de provisión"
+        }
+       ]
+      },
+      {
+       "text": "**Promoción interna vertical**: ascenso de un cuerpo o escala de un **Subgrupo** (o Grupo) a otro **superior**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a16",
+         "quote": "Promoción interna vertical, que consiste en el ascenso desde un cuerpo o escala de un Subgrupo, o Grupo de clasificación profesional en el supuesto de que éste no tenga Subgrupo, a otro superior"
+        }
+       ]
+      },
+      {
+       "text": "**Promoción interna horizontal**: acceso a cuerpos o escalas del **mismo Subgrupo**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a16",
+         "quote": "Promoción interna horizontal, que consiste en el acceso a cuerpos o escalas del mismo Subgrupo profesional"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Se puede progresar **a la vez** en carrera horizontal y vertical si la Administración las ha implantado en un mismo ámbito (art. 16.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a16",
+       "quote": "Los funcionarios de carrera podrán progresar simultáneamente en las modalidades de carrera horizontal y vertical cuando la Administración correspondiente las haya implantado en un mismo ámbito."
+      }
+     ]
+    },
+    {
+     "text": "**Promoción interna** según el TREBEP (art. 18): mediante **procesos selectivos**; hay que tener los requisitos de ingreso, una antigüedad de **al menos dos años de servicio activo** en el Subgrupo inferior y superar las pruebas. Las Administraciones adoptan medidas que **incentiven** la participación.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a18",
+       "quote": "La promoción interna se realizará mediante procesos selectivos que garanticen el cumplimiento de los principios constitucionales de igualdad, mérito y capacidad"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a18",
+       "quote": "tener una antigüedad de, al menos, dos años de servicio activo en el inferior Subgrupo"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a18",
+       "quote": "Las Administraciones Públicas adoptarán medidas que incentiven la participación de su personal en los procesos selectivos de promoción interna"
+      }
+     ]
+    },
+    {
+     "text": "En la AGE rige el **RD 364/1995**:",
+     "refs": [
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a73",
+       "quote": "La promoción interna consiste en el ascenso desde Cuerpos o Escalas de un Grupo de titulación a otro del inmediato superior o en el acceso a Cuerpos o Escalas del mismo Grupo de titulación."
+      }
+     ],
+     "items": [
+      {
+       "text": "Requisito: **al menos dos años de antigüedad en el Cuerpo o Escala** de pertenencia el día en que termina el plazo de solicitudes, y la titulación y requisitos del cuerpo al que se aspira (art. 76).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a76",
+         "quote": "deberán tener una antigüedad de, al menos, dos años en el Cuerpo o Escala a que pertenezcan el día de la finalización del plazo de presentación de solicitudes de participación"
+        }
+       ]
+      },
+      {
+       "text": "Por **oposición o concurso-oposición**; los puntos del **concurso no sirven para superar** la oposición (art. 74). Puede eximirse de las materias ya acreditadas en el ingreso al cuerpo de origen (art. 77).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a74",
+         "quote": "La promoción interna se efectuará mediante el sistema de oposición o concurso-oposición"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a74",
+         "quote": "En ningún caso la puntuación obtenida en la fase de concurso podrá aplicarse para superar los ejercicios de la fase de oposición."
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a77",
+         "quote": "En las convocatorias podrá establecerse la exención de las pruebas sobre aquellas materias cuyo conocimiento se haya acreditado suficientemente en las de ingreso al Cuerpo o Escala de origen."
+        }
+       ]
+      },
+      {
+       "text": "Quien promociona tiene **preferencia** para elegir las vacantes de su convocatoria y puede **conservar su grado personal** si está en el intervalo del nuevo cuerpo (art. 78).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a78",
+         "quote": "tendrán, en todo caso, preferencia para cubrir los puestos vacantes de la respectiva convocatoria sobre los aspirantes que no procedan de este turno."
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a78",
+         "quote": "Los funcionarios de promoción interna podrán conservar, a petición propia, el grado personal que hubieran consolidado"
+        }
+       ]
+      },
+      {
+       "text": "Las vacantes de promoción interna que queden desiertas **se acumulan al acceso libre**, salvo convocatorias independientes (art. 79).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a79",
+         "quote": "se acumularán a las que se ofrezcan al resto de los aspirantes de acceso libre, salvo en el caso de convocatorias independientes de promoción interna."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Los funcionarios del **Subgrupo C1** (como el TAI) con la titulación exigida pueden **promocionar al Grupo A sin pasar por el Grupo B** (disp. transitoria tercera.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dttercera",
+       "quote": "Los funcionarios del Subgrupo C1 que reúnan la titulación exigida podrán promocionar al Grupo A sin necesidad de pasar por el nuevo Grupo B"
+      }
+     ]
+    },
+    {
+     "text": "**Evaluación del desempeño** (art. 20): procedimiento que **mide y valora la conducta profesional y el rendimiento** o logro de resultados. Debe ser **transparente, objetiva, imparcial y no discriminatoria**, y tiene efectos en la carrera horizontal, la formación, la provisión de puestos y las retribuciones complementarias. La **continuidad en un puesto obtenido por concurso** queda vinculada a ella.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a20",
+       "quote": "La evaluación del desempeño es el procedimiento mediante el cual se mide y valora la conducta profesional y el rendimiento o el logro de resultados."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a20",
+       "quote": "se adecuarán, en todo caso, a criterios de transparencia, objetividad, imparcialidad y no discriminación"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a20",
+       "quote": "La continuidad en un puesto de trabajo obtenido por concurso quedará vinculada a la evaluación del desempeño"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a20",
+       "quote": "determinarán los efectos de la evaluación en la carrera profesional horizontal, la formación, la provisión de puestos de trabajo y en la percepción de las retribuciones complementarias"
+      }
+     ]
+    },
+    {
+     "text": "**Grado personal** en la AGE (RD 364/1995): los puestos se clasifican en **30 niveles**; el grado se consolida desempeñando puestos del nivel durante **dos años continuados o tres con interrupción** (art. 70).",
+     "refs": [
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a70",
+       "quote": "Los puestos de trabajo se clasifican en 30 niveles."
+      },
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a70",
+       "quote": "Todos los funcionarios de carrera adquirirán un grado personal por el desempeño de uno o más puestos del nivel correspondiente durante dos años continuados o tres con interrupción"
+      }
+     ]
+    },
+    {
+     "text": "Los **intervalos de niveles** del RD 364/1995 usan los **grupos antiguos** (A a E), que el TREBEP hace equivaler así: A = **A1**, B = **A2**, C = **C1**, D = **C2** y E = agrupaciones profesionales (disp. transitoria tercera.2). Por tanto: **A1 20-30**, **A2 16-26**, **C1 11-22**, **C2 9-18** y agrupaciones profesionales **7-14** (art. 71). No se pueden obtener puestos fuera del intervalo del propio grupo.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dttercera",
+       "quote": "Grupo A: Subgrupo A1."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dttercera",
+       "quote": "Grupo B: Subgrupo A2."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dttercera",
+       "quote": "Grupo C: Subgrupo C1."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dttercera",
+       "quote": "Grupo D: Subgrupo C2."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "dttercera",
+       "quote": "Grupo E: Agrupaciones Profesionales a que hace referencia la disposición adicional sexta."
+      },
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a71",
+       "quote": "Grupo A | 20 | 30"
+      },
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a71",
+       "quote": "Grupo B | 16 | 26"
+      },
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a71",
+       "quote": "Grupo C | 11 | 22"
+      },
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a71",
+       "quote": "Grupo D | 9 | 18"
+      },
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a71",
+       "quote": "Grupo E | 7 | 14"
+      },
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a71",
+       "quote": "En ningún caso los funcionarios podrán obtener puestos de trabajo no incluidos en los niveles del intervalo correspondiente al Grupo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Provisión de puestos de trabajo",
+   "points": [
+    {
+     "text": "Los puestos se proveen por procedimientos basados en **igualdad, mérito, capacidad y publicidad**: **concurso** y **libre designación con convocatoria pública** (art. 78).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a78",
+       "quote": "Las Administraciones Públicas proveerán los puestos de trabajo mediante procedimientos basados en los principios de igualdad, mérito, capacidad y publicidad."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a78",
+       "quote": "La provisión de puestos de trabajo en cada Administración Pública se llevará a cabo por los procedimientos de concurso y de libre designación con convocatoria pública."
+      }
+     ]
+    },
+    {
+     "text": "**Concurso**: es el **procedimiento normal**. Valora méritos, capacidades y, en su caso, aptitudes, por **órganos colegiados técnicos** con **paridad entre mujer y hombre** (art. 79.1). Si se suprime o remueve el puesto obtenido por concurso, se asigna otro puesto (art. 79.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a79",
+       "quote": "El concurso, como procedimiento normal de provisión de puestos de trabajo, consistirá en la valoración de los méritos y capacidades y, en su caso, aptitudes de los candidatos por órganos colegiados de carácter técnico."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a79",
+       "quote": "se adecuará al criterio de paridad entre mujer y hombre"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a79",
+       "quote": "En el caso de supresión o remoción de los puestos obtenidos por concurso se deberá asignar un puesto de trabajo"
+      }
+     ]
+    },
+    {
+     "text": "**Libre designación**: **apreciación discrecional** de la idoneidad de los candidatos, para puestos de **especial responsabilidad y confianza**. Sus titulares pueden ser **cesados discrecionalmente**, y se les asigna otro puesto (art. 80).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a80",
+       "quote": "La libre designación con convocatoria pública consiste en la apreciación discrecional por el órgano competente de la idoneidad de los candidatos en relación con los requisitos exigidos para el desempeño del puesto."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a80",
+       "quote": "por su especial responsabilidad y confianza"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a80",
+       "quote": "podrán ser cesados discrecionalmente"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a80",
+       "quote": "En caso de cese, se les deberá asignar un puesto de trabajo"
+      }
+     ]
+    },
+    {
+     "text": "En la AGE (RD 364/1995):",
+     "refs": [
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a36",
+       "quote": "Los puestos de trabajo adscritos a funcionarios se proveerán de acuerdo con los procedimientos de concurso, que es el sistema normal de provisión, o de libre designación"
+      }
+     ],
+     "items": [
+      {
+       "text": "Hay que permanecer **dos años** en el puesto definitivo para concursar, salvo en el ámbito de la misma Secretaría de Estado o Ministerio y otros supuestos (art. 41.2). Pueden participar funcionarios en cualquier situación, **salvo los suspensos en firme** (art. 41.1).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a41",
+         "quote": "Los funcionarios deberán permanecer en cada puesto de trabajo de destino definitivo un mínimo de dos años para poder participar en los concursos de provisión"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a41",
+         "quote": "salvo en el ámbito de una Secretaría de Estado o de un Departamento ministerial"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a41",
+         "quote": "excepto los suspensos en firme que no podrán participar mientras dure la suspensión"
+        }
+       ]
+      },
+      {
+       "text": "El **concurso específico** tiene **dos fases**: méritos generales y méritos **específicos** del puesto, con posibles **memorias o entrevistas** (art. 45).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a45",
+         "quote": "los concursos podrán constar de dos fases."
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a45",
+         "quote": "A tal fin podrá establecerse la elaboración de memorias o la celebración de entrevistas"
+        }
+       ]
+      },
+      {
+       "text": "Las **Comisiones de Valoración** tienen **al menos cuatro miembros**; los sindicales nunca igualan a los de la Administración (art. 46). El concurso se resuelve en **dos meses** (art. 47).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a46",
+         "quote": "Las Comisiones de Valoración estarán constituidas como mínimo por cuatro miembros designados por la autoridad convocante"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a46",
+         "quote": "El número de los representantes de las organizaciones sindicales no podrá ser igual o superior al de los miembros designados a propuesta de la Administración."
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a47",
+         "quote": "El plazo para la resolución del concurso será de dos meses"
+        }
+       ]
+      },
+      {
+       "text": "**Toma de posesión**: **tres días hábiles** sin cambio de residencia; **un mes** con cambio de residencia o reingreso (art. 48.1).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a48",
+         "quote": "El plazo para tomar posesión será de tres días hábiles si no implica cambio de residencia del funcionario, o de un mes si comporta cambio de residencia o el reingreso al servicio activo."
+        }
+       ]
+      },
+      {
+       "text": "Por **libre designación** solo se cubren puestos de **Subdirector general**, Delegados y Directores territoriales o provinciales, **Secretarías de altos cargos** y otros directivos o de especial responsabilidad que fije la RPT (art. 51.2).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a51",
+         "quote": "Sólo podrán cubrirse por este sistema los puestos de Subdirector general, Delegados y Directores territoriales, provinciales o Comisionados de los Departamentos ministeriales"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a51",
+         "quote": "Secretarías de Altos Cargos de la Administración"
+        }
+       ]
+      },
+      {
+       "text": "Quien cesa en libre designación o es removido de un concurso pasa a un puesto provisional **no inferior en más de dos niveles** a su grado, en el mismo municipio (arts. 50.5 y 58.2).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a58",
+         "quote": "no inferior en más de dos niveles al de su grado personal en el mismo municipio"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Otras formas de provisión** en la AGE (RD 364/1995):",
+     "refs": [
+      {
+       "law": "BOE-A-1995-8729",
+       "section": "a36",
+       "quote": "Temporalmente podrán ser cubiertos mediante comisión de servicios y adscripción provisional"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Comisión de servicios** (urgente e inaplazable necesidad): voluntaria o **forzosa**; duración máxima **un año prorrogable por otro** (art. 64).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a64",
+         "quote": "en caso de urgente e inaplazable necesidad, en comisión de servicios de carácter voluntario"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a64",
+         "quote": "Podrán acordarse también comisiones de servicios de carácter forzoso."
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a64",
+         "quote": "tendrán una duración máxima de un año prorrogable por otro"
+        }
+       ]
+      },
+      {
+       "text": "**Redistribución de efectivos**: adscripción por necesidades del servicio a otro puesto **no singularizado** de igual nivel y complemento, **sin cambio de municipio** (art. 59).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a59",
+         "quote": "Los funcionarios que ocupen con carácter definitivo puestos no singularizados podrán ser adscritos, por necesidades del servicio, a otros de la misma naturaleza, nivel de complemento de destino y complemento específico"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a59",
+         "quote": "sin que ello suponga cambio de municipio"
+        }
+       ]
+      },
+      {
+       "text": "**Reasignación de efectivos**: cuando un **Plan de Empleo** suprime el puesto (art. 60).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a60",
+         "quote": "Los funcionarios cuyo puesto de trabajo sea objeto de supresión como consecuencia de un Plan de Empleo podrán ser destinados a otro puesto de trabajo por el procedimiento de reasignación de efectivos."
+        }
+       ]
+      },
+      {
+       "text": "**Adscripción provisional**: solo por remoción o cese, supresión del puesto o reingreso sin reserva de puesto (art. 63).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a63",
+         "quote": "Los puestos de trabajo podrán proveerse por medio de adscripción provisional únicamente en los siguientes supuestos:"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a63",
+         "quote": "Remoción o cese en un puesto de trabajo obtenido por concurso o libre designación"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a63",
+         "quote": "Supresión del puesto de trabajo"
+        },
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a63",
+         "quote": "Reingreso al servicio activo de los funcionarios sin reserva de puesto de trabajo"
+        }
+       ]
+      },
+      {
+       "text": "**Atribución temporal de funciones**: en casos excepcionales, la acuerda el **Subsecretario** (art. 66).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8729",
+         "section": "a66",
+         "quote": "En casos excepcionales, los Subsecretarios de los Departamentos ministeriales podrán atribuir a los funcionarios el desempeño temporal en comisión de servicios de funciones especiales"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Movilidad**: por necesidades del servicio, la Administración puede **trasladar** motivadamente a sus funcionarios respetando sus retribuciones (art. 81.2). Las **mujeres víctimas de violencia de género o sexual** tienen derecho a traslado a un puesto análogo **sin necesidad de que sea vacante de necesaria cobertura**; las **víctimas del terrorismo**, a uno de necesaria cobertura o, si no, dentro de la comunidad autónoma. En ambos casos es **traslado forzoso** (art. 82). La movilidad **entre Administraciones** se articula preferentemente mediante convenio de **Conferencia Sectorial**, y quien obtiene así destino queda en **servicio en otras Administraciones Públicas** respecto de la de origen (art. 84).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a81",
+       "quote": "Las Administraciones Públicas, de manera motivada, podrán trasladar a sus funcionarios, por necesidades de servicio o funcionales"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a82",
+       "quote": "Las mujeres víctimas de violencia de género o de violencia sexual"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a82",
+       "quote": "sin necesidad de que sea vacante de necesaria cobertura."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a82",
+       "quote": "cuando la vacante sea de necesaria cobertura o, en caso contrario, dentro de la comunidad autónoma."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a82",
+       "quote": "Este traslado tendrá la consideración de traslado forzoso."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a84",
+       "quote": "preferentemente mediante convenio de Conferencia Sectorial u otros instrumentos de colaboración."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a84",
+       "quote": "quedarán respecto de su Administración de origen en la situación administrativa de servicio en otras Administraciones Públicas."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Situaciones administrativas (artículos 85 a 92)",
+   "points": [
+    {
+     "text": "Los funcionarios de carrera pueden estar en **servicio activo**, **servicios especiales**, **servicio en otras Administraciones Públicas**, **excedencia** o **suspensión de funciones** (art. 85.1). Las leyes de Función Pública pueden crear otras (art. 85.2); en la AGE, el RD 365/1995 añade la **expectativa de destino** y la **excedencia forzosa** (ver al final de esta sección).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a85",
+       "quote": "Los funcionarios de carrera se hallarán en alguna de las siguientes situaciones:"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a85",
+       "quote": "Servicio en otras Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a85",
+       "quote": "Suspensión de funciones."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a85",
+       "quote": "podrán regular otras situaciones administrativas de los funcionarios de carrera"
+      }
+     ]
+    },
+    {
+     "text": "**Servicio activo**: prestan servicios como funcionarios y no les corresponde otra situación; tienen **todos los derechos** y deberes (art. 86).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a86",
+       "quote": "Los funcionarios de carrera en situación de servicio activo gozan de todos los derechos inherentes a su condición de funcionarios"
+      }
+     ]
+    },
+    {
+     "text": "**Servicios especiales** (art. 87), entre otros casos, cuando son nombrados:",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a87",
+       "quote": "Los funcionarios de carrera serán declarados en situación de servicios especiales:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Miembros del Gobierno** (o de gobiernos autonómicos), de instituciones de la UE u organizaciones internacionales, o **altos cargos**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a87",
+         "quote": "Cuando sean designados miembros del Gobierno o de los órganos de gobierno de las comunidades autónomas y ciudades de Ceuta y Melilla"
+        }
+       ]
+      },
+      {
+       "text": "Para una **misión de más de seis meses** en organismos internacionales o programas de cooperación.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a87",
+         "quote": "Cuando sean autorizados para realizar una misión por periodo determinado superior a seis meses en organismos internacionales"
+        }
+       ]
+      },
+      {
+       "text": "**Diputados o Senadores** de las Cortes Generales, o miembros de asambleas autonómicas **si cobran retribuciones periódicas**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a87",
+         "quote": "Cuando accedan a la condición de Diputado o Senador de las Cortes Generales o miembros de las asambleas legislativas de las comunidades autónomas si perciben retribuciones periódicas por la realización de la función."
+        }
+       ]
+      },
+      {
+       "text": "**Cargos electivos locales retribuidos y de dedicación exclusiva**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a87",
+         "quote": "Cuando se desempeñen cargos electivos retribuidos y de dedicación exclusiva en las Asambleas de las ciudades de Ceuta y Melilla y en las entidades locales"
+        }
+       ]
+      },
+      {
+       "text": "**Personal eventual** de confianza o asesoramiento político, si no optan por seguir en servicio activo.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a87",
+         "quote": "Cuando sean designados como personal eventual por ocupar puestos de trabajo con funciones expresamente calificadas como de confianza o asesoramiento político y no opten por permanecer en la situación de servicio activo."
+        }
+       ]
+      },
+      {
+       "text": "Adscritos al **Tribunal Constitucional** o al **Defensor del Pueblo**, o miembros del **CGPJ**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a87",
+         "quote": "Cuando sean adscritos a los servicios del Tribunal Constitucional o del Defensor del Pueblo"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a87",
+         "quote": "Cuando sean designados para formar parte del Consejo General del Poder Judicial"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "En servicios especiales cobran las retribuciones **del cargo**, no las de funcionario, pero conservan los **trienios**; el tiempo **computa** para ascensos, trienios, promoción interna y Seguridad Social, y tienen derecho a reingresar **al menos en la misma localidad** (art. 87.2 y 87.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a87",
+       "quote": "percibirán las retribuciones del puesto o cargo que desempeñen y no las que les correspondan como funcionarios de carrera, sin perjuicio del derecho a percibir los trienios que tengan reconocidos en cada momento."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a87",
+       "quote": "El tiempo que permanezcan en tal situación se les computará a efectos de ascensos, reconocimiento de trienios, promoción interna y derechos en el régimen de Seguridad Social"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a87",
+       "quote": "tendrán derecho, al menos, a reingresar al servicio activo en la misma localidad"
+      }
+     ]
+    },
+    {
+     "text": "**Servicio en otras Administraciones Públicas**: cuando obtienen destino en otra Administración por **transferencias** o **provisión de puestos**; el tiempo computa como servicio activo en su cuerpo de origen (art. 88).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a88",
+       "quote": "obtengan destino en una Administración Pública distinta, serán declarados en la situación de servicio en otras Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a88",
+       "quote": "El tiempo de servicio en la Administración Pública en la que estén destinados se les computará como de servicio activo en su cuerpo o escala de origen."
+      }
+     ]
+    },
+    {
+     "text": "**Excedencia**: modalidades (art. 89.1):",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a89",
+       "quote": "La excedencia de los funcionarios de carrera podrá adoptar las siguientes modalidades:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Voluntaria por interés particular**: exige **cinco años** de servicios efectivos inmediatamente anteriores; se subordina a las **necesidades del servicio** y **no** se concede si hay **expediente disciplinario** en curso. **No** se cobra ni computa para ascensos, trienios ni Seguridad Social. Se declara **de oficio** a quien no pide el reingreso a tiempo al acabar la causa de otra situación (art. 89.2). En la AGE, cada periodo dura **al menos dos años continuados** (art. 16.3 RD 365/1995).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "cuando hayan prestado servicios efectivos en cualquiera de las Administraciones Públicas durante un periodo mínimo de cinco años inmediatamente anteriores."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "La concesión de excedencia voluntaria por interés particular quedará subordinada a las necesidades del servicio debidamente motivadas. No podrá declararse cuando al funcionario público se le instruya expediente disciplinario."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Quienes se encuentren en situación de excedencia por interés particular no devengarán retribuciones"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Procederá declarar de oficio la excedencia voluntaria por interés particular cuando finalizada la causa que determinó el pase a una situación distinta a la de servicio activo, se incumpla la obligación de solicitar el reingreso"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "ni les será computable el tiempo que permanezcan en tal situación a efectos de ascensos, trienios y derechos en el régimen de Seguridad Social"
+        },
+        {
+         "law": "BOE-A-1995-8730",
+         "section": "a16",
+         "quote": "Cada período de excedencia tendrá una duración no inferior a dos años continuados"
+        }
+       ]
+      },
+      {
+       "text": "**Voluntaria por agrupación familiar**: **sin** el requisito de servicios previos, cuando el **cónyuge** reside en otra localidad por un puesto definitivo; tampoco se cobra ni computa (art. 89.3). En la AGE dura **entre dos y quince años** (art. 17 RD 365/1995).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Podrá concederse la excedencia voluntaria por agrupación familiar sin el requisito de haber prestado servicios efectivos"
+        },
+        {
+         "law": "BOE-A-1995-8730",
+         "section": "a17",
+         "quote": "con una duración mínima de dos años y máxima de quince"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "a los funcionarios cuyo cónyuge resida en otra localidad por haber obtenido y estar desempeñando un puesto de trabajo de carácter definitivo"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Quienes se encuentren en situación de excedencia voluntaria por agrupación familiar no devengarán retribuciones"
+        }
+       ]
+      },
+      {
+       "text": "**Voluntaria por prestación de servicios en el sector público** (RD 365/1995, AGE): para quien pasa a servicio activo en **otro cuerpo** sin compatibilidad o a personal **laboral fijo** del sector público. Al cesar allí, hay que pedir el reingreso en **un mes**; si no, pasa a interés particular (art. 15).",
+       "refs": [
+        {
+         "law": "BOE-A-1995-8730",
+         "section": "a15",
+         "quote": "a los funcionarios de carrera que se encuentren en servicio activo en otro cuerpo o escala de cualquiera de las Administraciones públicas, salvo que hubieran obtenido la oportuna compatibilidad"
+        },
+        {
+         "law": "BOE-A-1995-8730",
+         "section": "a15",
+         "quote": "a los que pasen a prestar servicios como personal laboral fijo en organismos o entidades del sector público"
+        },
+        {
+         "law": "BOE-A-1995-8730",
+         "section": "a15",
+         "quote": "deberán solicitar el reingreso al servicio activo en el plazo máximo de un mes, declarándoseles, de no hacerlo, en la situación de excedencia voluntaria por interés particular."
+        }
+       ]
+      },
+      {
+       "text": "**Por cuidado de familiares**: hasta **tres años** por cada hijo (desde el nacimiento o la resolución de adopción o acogimiento) y hasta **tres años** por un familiar hasta el **segundo grado** que no pueda valerse por sí mismo. Computa para trienios, carrera y Seguridad Social; el puesto se **reserva dos años** y después, uno en la misma localidad y de igual retribución. Es **única por cada sujeto causante**; una nueva excedencia pone fin a la anterior (art. 89.4).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Los funcionarios de carrera tendrán derecho a un período de excedencia de duración no superior a tres años para atender al cuidado de cada hijo"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "hasta el segundo grado inclusive de consanguinidad o afinidad"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "El período de excedencia será único por cada sujeto causante."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Cuando un nuevo sujeto causante diera origen a una nueva excedencia, el inicio del período de la misma pondrá fin al que se viniera disfrutando."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "dicha reserva lo será a un puesto en la misma localidad y de igual retribución."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "El tiempo de permanencia en esta situación será computable a efectos de trienios, carrera y derechos en el régimen de Seguridad Social que sea de aplicación. El puesto de trabajo desempeñado se reservará, al menos, durante dos años."
+        }
+       ]
+      },
+      {
+       "text": "**Por violencia de género o sexual**: sin tiempo mínimo de servicios ni de permanencia; **reserva del puesto seis meses** (prorrogable por periodos de tres meses hasta **dieciocho**) y **retribuciones íntegras los dos primeros meses** (art. 89.5).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "tendrán derecho a solicitar la situación de excedencia sin tener que haber prestado un tiempo mínimo de servicios previos y sin que sea exigible plazo de permanencia en la misma."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Durante los seis primeros meses tendrán derecho a la reserva del puesto de trabajo"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "se podrá prorrogar este periodo por tres meses, con un máximo de dieciocho"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Durante los dos primeros meses de esta excedencia la funcionaria tendrá derecho a percibir las retribuciones íntegras"
+        }
+       ]
+      },
+      {
+       "text": "**Por violencia terrorista**: en las mismas condiciones que la de violencia de género, mantenida **mientras sea necesaria** para la protección de la víctima (art. 89.6).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "tendrán derecho a disfrutar de un periodo de excedencia en las mismas condiciones que las víctimas de violencia de género o de violencia sexual."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a89",
+         "quote": "Dicha excedencia será autorizada y mantenida en el tiempo en tanto que resulte necesaria"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Suspensión de funciones** (art. 90): priva del ejercicio de las funciones y de todos los derechos; si **supera seis meses**, se **pierde el puesto**. La **firme** se impone por **sentencia penal** o **sanción disciplinaria** (esta, **máximo seis años**). Durante ella no se puede trabajar en **ninguna Administración**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a90",
+       "quote": "La suspensión determinará la pérdida del puesto de trabajo cuando exceda de seis meses."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a90",
+       "quote": "La suspensión firme se impondrá en virtud de sentencia dictada en causa criminal o en virtud de sanción disciplinaria. La suspensión firme por sanción disciplinaria no podrá exceder de seis años."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a90",
+       "quote": "no podrá prestar servicios en ninguna Administración Pública"
+      }
+     ]
+    },
+    {
+     "text": "En la AGE, la **expectativa de destino** dura como máximo **un año** (luego, excedencia forzosa) y se cobran retribuciones básicas, complemento de destino y el **50 %** del específico (art. 12 RD 365/1995). En **excedencia forzosa** se cobran las **retribuciones básicas** y no se puede trabajar en el sector público (art. 13).",
+     "refs": [
+      {
+       "law": "BOE-A-1995-8730",
+       "section": "a12",
+       "quote": "Los funcionarios permanecerán en esta situación un período máximo de un año, transcurrido el cual pasarán a la situación de excedencia forzosa."
+      },
+      {
+       "law": "BOE-A-1995-8730",
+       "section": "a12",
+       "quote": "el 50 por 100 del complemento específico que percibieran al pasar a esta situación."
+      },
+      {
+       "law": "BOE-A-1995-8730",
+       "section": "a13",
+       "quote": "Los funcionarios en esta situación tendrán derecho a percibir las retribuciones básicas"
+      },
+      {
+       "law": "BOE-A-1995-8730",
+       "section": "a13",
+       "quote": "Los excedentes forzosos no podrán desempeñar puestos de trabajo en el sector público"
+      }
+     ]
+    },
+    {
+     "text": "El **personal laboral** se rige por el **Estatuto de los Trabajadores** y sus convenios colectivos (art. 92).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a92",
+       "quote": "El personal laboral se regirá por el Estatuto de los Trabajadores y por los Convenios Colectivos que les sean de aplicación."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Incompatibilidades (Ley 53/1984, de 26 de diciembre)",
+   "points": [
+    {
+     "text": "Principio: el personal **no puede compatibilizar** su puesto con **un segundo puesto, cargo o actividad en el sector público**, salvo los supuestos de la Ley, ni percibir **más de una remuneración** de los presupuestos públicos (art. 1.1 y 1.2). Es incompatible cualquier actividad que **comprometa su imparcialidad o independencia** (art. 1.3).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aprimero",
+       "quote": "no podrá compatibilizar sus actividades con el desempeño, por sí o mediante sustitución, de un segundo puesto de trabajo, cargo o actividad en el sector público, salvo en los supuestos previstos en la misma."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aprimero",
+       "quote": "no se podrá percibir, salvo en los supuestos previstos en esta Ley, más de una remuneración con cargo a los presupuestos"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aprimero",
+       "quote": "que pueda impedir o menoscabar el estricto cumplimiento de sus deberes o comprometer su imparcialidad o independencia."
+      }
+     ]
+    },
+    {
+     "text": "Se aplica a **todo el personal** del sector público, **cualquiera que sea la naturaleza** de su relación de empleo, incluidas las empresas con participación pública **superior al 50 %** (art. 2).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "asegundo",
+       "quote": "se entenderá incluido todo el personal, cualquiera que sea la naturaleza jurídica de la relación de empleo."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "asegundo",
+       "quote": "El personal que preste servicios en Empresas en que la participación del capital, directa o indirectamente, de las Administraciones Públicas sea superior al 50 por 100."
+      }
+     ]
+    },
+    {
+     "text": "**Segundo puesto público**: solo en funciones **docente y sanitaria**, en los casos de los arts. 5 (**cargos electivos**) y 6 (**investigación no permanente o asesoramiento científico o técnico**) y en casos de **interés público** fijados por el Consejo de Ministros mediante Real Decreto (u órgano autonómico), en este último caso **solo en régimen laboral, a tiempo parcial y con duración determinada**; siempre con **autorización previa y expresa** que **no modifica la jornada ni el horario** (art. 3.1). Además, el puesto público es **incompatible con cobrar la pensión de jubilación**, salvo la **jubilación parcial** con un puesto laboral a tiempo parcial (art. 3.2).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "atercero",
+       "quote": "Para el ejercicio de la segunda actividad será indispensable la previa y expresa autorización de compatibilidad, que no supondrá modificación de la jornada de trabajo y horario de los dos puestos"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "atercero",
+       "quote": "en los supuestos previstos en la misma para las funciones docente y sanitaria, en los casos a que se refieren los artículo 5.º y 6.º y en los que, por razón de interés público, se determine por el Consejo de Ministros, mediante Real decreto"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "asexto",
+       "quote": "actividades de investigación de carácter no permanente, o de asesoramiento científico o técnico en supuestos concretos"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "atercero",
+       "quote": "en este último supuesto la actividad sólo podrá prestarse en régimen laboral, a tiempo parcial y con duración determinada"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "atercero",
+       "quote": "es incompatible con la percepción de pensión de jubilación o retiro"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "atercero",
+       "quote": "será compatible la pensión de jubilación parcial con un puesto de trabajo a tiempo parcial."
+      }
+     ]
+    },
+    {
+     "text": "Se puede compatibilizar con ser miembro de una **asamblea autonómica** (si no cobra retribuciones periódicas) o de una **corporación local** (si no tiene dedicación exclusiva), cobrando **solo una** de las dos retribuciones (art. 5).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aquinto",
+       "quote": "Miembros de las Asambleas Legislativas de las Comunidades Autónomas, salvo que perciban retribuciones periódicas"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aquinto",
+       "quote": "Miembros de las Corporaciones locales, salvo que desempeñen en las mismas cargos retribuidos en régimen de dedicación exclusiva."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aquinto",
+       "quote": "sólo podrá percibirse la retribución correspondiente a una de las dos actividades"
+      }
+     ]
+    },
+    {
+     "text": "**Límite retributivo** para compatibilizar dos puestos públicos: el total no puede superar la retribución de **Director General** ni la del puesto principal incrementada en un **30 %** (grupo A), **35 %** (B), **40 %** (C), **45 %** (D) o **50 %** (E). El segundo puesto **no computa para trienios ni derechos pasivos**, y las pagas extraordinarias solo se cobran por uno (art. 7).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aseptimo",
+       "quote": "no supere la remuneración prevista en los Presupuestos Generales del Estado para el cargo de Director General"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aseptimo",
+       "quote": "Un 30 por 100, para los funcionarios del grupo A o personal de nivel equivalente."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aseptimo",
+       "quote": "Un 35 por 100, para los funcionarios del grupo B o personal de nivel equivalente."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aseptimo",
+       "quote": "Un 40 por 100, para los funcionarios del grupo C o personal de nivel equivalente."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aseptimo",
+       "quote": "Un 45 por 100, para los funcionarios del grupo D o personal equivalente."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aseptimo",
+       "quote": "Un 50 por 100, para los funcionarios del grupo E o personal equivalente."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aseptimo",
+       "quote": "Las pagas extraordinarias, así como las prestaciones de carácter familiar, sólo podrán percibirse por uno de los puestos"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aseptimo",
+       "quote": "Los servicio prestados en el segundo puesto o actividad no se computarán a efectos de trienios ni de derechos pasivos"
+      }
+     ]
+    },
+    {
+     "text": "Si se accede a un **nuevo puesto incompatible**, hay que **optar dentro del plazo de toma de posesión**; si no, se entiende que se opta por el **nuevo** y se pasa a **excedencia voluntaria** en el anterior. Si los puestos admiten compatibilidad, hay que pedirla en los **diez primeros días** de ese plazo (art. 10).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adiez",
+       "quote": "habrán de optar por uno de ellos dentro del plazo de toma de posesión."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adiez",
+       "quote": "A falta de opción en el plazo señalado se entenderá que optan por el nuevo puesto, pasando a la situación de excedencia voluntaria en los que vinieran desempeñando."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adiez",
+       "quote": "deberán instarla en los diez primeros días del aludido plazo de toma de posesión"
+      }
+     ]
+    },
+    {
+     "text": "**Actividades privadas**: prohibidas las relacionadas directamente con las del propio Departamento (art. 11) y, en todo caso, las del art. 12:",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aonce",
+       "quote": "no podrá ejercer, por sí o mediante sustitución, actividades privadas"
+      }
+     ],
+     "items": [
+      {
+       "text": "En asuntos en que intervenga, **haya intervenido en los dos últimos años** o tenga que intervenir por su puesto.",
+       "refs": [
+        {
+         "law": "BOE-A-1985-151",
+         "section": "adoce",
+         "quote": "en los asuntos en que esté interviniendo, haya intervenido en los dos últimos años o tenga que intervenir por razón del puesto público."
+        }
+       ]
+      },
+      {
+       "text": "Pertenecer a **consejos de administración** de empresas privadas relacionadas con su Departamento.",
+       "refs": [
+        {
+         "law": "BOE-A-1985-151",
+         "section": "adoce",
+         "quote": "La pertenencia a Consejos de Administración u órganos rectores de Empresas o Entidades privadas"
+        }
+       ]
+      },
+      {
+       "text": "Cargos en empresas **concesionarias o contratistas** del sector público, y participaciones **superiores al 10 %** en su capital.",
+       "refs": [
+        {
+         "law": "BOE-A-1985-151",
+         "section": "adoce",
+         "quote": "El desempeño, por sí o por persona interpuesta, de cargos de todo orden en Empresas o Sociedades concesionarias, contratistas de obras, servicios o suministros"
+        },
+        {
+         "law": "BOE-A-1985-151",
+         "section": "adoce",
+         "quote": "La participación superior al 10 por 100 en el capital de las Empresas o Sociedades a que se refiere el párrafo anterior."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Las actividades privadas requieren **reconocimiento previo de compatibilidad**, que resuelve en **dos meses** el **Ministerio de la Presidencia** a propuesta del Subsecretario (o el órgano autonómico o el **Pleno** de la Corporación Local) y queda **sin efecto si se cambia de puesto** (art. 14). No cabe para quien cobra complementos con el **factor de incompatibilidad** ni para el **personal directivo** (art. 16.1); y solo se reconoce si el complemento específico **no supera el 30 % de la retribución básica** (excluida la antigüedad) (art. 16.4). Nunca se puede **invocar la condición pública** en la actividad privada (art. 15).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "acatorce",
+       "quote": "El ejercicio de actividades profesionales, laborales, mercantiles o industriales fuera de las Administraciones Públicas requerirá el previo reconocimiento de compatibilidad."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "acatorce",
+       "quote": "que se dictará en el plazo de dos meses, corresponde al Ministerio de la Presidencia, a propuesta del Subsecretario del Departamento correspondiente; al órgano competente de la Comunidad Autónoma o al Pleno de la Corporación Local"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adieciseis",
+       "quote": "No podrá autorizarse o reconocerse compatibilidad al personal funcionario, al personal eventual y al personal laboral cuando las retribuciones complementarias que tengan derecho a percibir"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adieciseis",
+       "quote": "incluyan el factor de incompatibilidad"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adieciseis",
+       "quote": "al personal directivo, incluido el sujeto a la relación laboral de carácter especial de alta dirección."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "acatorce",
+       "quote": "quedarán automáticamente sin efecto en caso de cambio de puesto en el sector público."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adieciseis",
+       "quote": "cuya cuantía no supere el 30 por 100 de su retribución básica, excluidos los conceptos que tengan su origen en la antigüedad."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aquince",
+       "quote": "no podrá invocar o hacer uso de su condición pública para el ejercicio de actividad mercantil, industrial o profesional."
+      }
+     ]
+    },
+    {
+     "text": "Todas las resoluciones de compatibilidad se inscriben en los **Registros de Personal correspondientes** (art. 18).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adieciocho",
+       "quote": "Todas las resoluciones de compatibilidad para desempeñar un segundo puesto o actividad en el sector público o el ejercicio de actividades privadas se inscribirán en los Registros de Personal correspondientes."
+      }
+     ]
+    },
+    {
+     "text": "**Exceptuadas** del régimen de incompatibilidades (art. 19), entre otras: administrar el **patrimonio personal o familiar**; dar cursos o conferencias en centros de formación de funcionarios, si no son habituales ni superan **setenta y cinco horas al año**; formar parte de **tribunales de oposiciones**; la **creación literaria, artística, científica y técnica**; y la participación **ocasional** en medios de comunicación o congresos.",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adiecinueve",
+       "quote": "Las derivadas de la Administración del patrimonio personal o familiar"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adiecinueve",
+       "quote": "ni supongan más de setenta y cinco horas al año"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adiecinueve",
+       "quote": "La participación en Tribunales calificadores de pruebas selectivas para ingreso en las Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adiecinueve",
+       "quote": "La producción y creación literaria, artística, científica y técnica"
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "adiecinueve",
+       "quote": "La participación ocasional en coloquios y programas en cualquier medio de comunicación social"
+      }
+     ]
+    },
+    {
+     "text": "El incumplimiento se sanciona por el **régimen disciplinario** (art. 20.1). La actividad compatible **no excusa** el deber de residencia, la asistencia ni el atraso o la negligencia; si esa falta se califica de **grave o muy grave**, la compatibilidad queda **automáticamente revocada** (art. 20.2). En el TREBEP, incumplir las incompatibilidades **cuando da lugar a una situación de incompatibilidad** es **falta muy grave** (art. 95.2.n); incumplir solo los **plazos o el procedimiento**, sin mantener la incompatibilidad, es **falta grave** (art. 7.1.k RD 33/1986).",
+     "refs": [
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aveinte",
+       "quote": "será sancionado conforme al régimen disciplinario de aplicación"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a95",
+       "quote": "El incumplimiento de las normas sobre incompatibilidades cuando ello dé lugar a una situación de incompatibilidad."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aveinte",
+       "quote": "El ejercicio de cualquier actividad compatible no servirá de excusa al deber de residencia, a la asistencia al lugar de trabajo que requiera su puesto o cargo, ni al atraso, negligencia o descuido en el desempeño de los mismos."
+      },
+      {
+       "law": "BOE-A-1985-151",
+       "section": "aveinte",
+       "quote": "quedando automáticamente revocada la autorización o reconocimiento de compatibilidad si en la resolución correspondiente se califica de falta grave o muy grave."
+      },
+      {
+       "law": "BOE-A-1986-1216",
+       "section": "a7",
+       "quote": "El incumplimiento de los plazos u otras disposiciones de procedimiento en materia de incompatibilidades, cuando no suponga mantenimiento de una situación de incompatibilidad."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Régimen disciplinario (TREBEP y RD 33/1986)",
+   "points": [
+    {
+     "text": "Están sujetos **funcionarios y personal laboral** (art. 93.1). Quien **induce** a otro a cometer la falta incurre **en la misma responsabilidad** (art. 93.2). Quien **encubre** faltas **consumadas** muy graves o graves también incurre en responsabilidad, **si de ello se deriva daño grave** (art. 93.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a93",
+       "quote": "Los funcionarios públicos y el personal laboral quedan sujetos al régimen disciplinario"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a93",
+       "quote": "que indujeren a otros a la realización de actos o conductas constitutivos de falta disciplinaria incurrirán en la misma responsabilidad que éstos."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a93",
+       "quote": "que encubrieren las faltas consumadas muy graves o graves, cuando de dichos actos se derive daño grave para la Administración o los ciudadanos."
+      }
+     ]
+    },
+    {
+     "text": "**Principios** de la potestad disciplinaria: **legalidad y tipicidad**, **irretroactividad** de lo desfavorable y retroactividad de lo favorable, **proporcionalidad**, **culpabilidad** y **presunción de inocencia**. Si aparecen indicios de delito, se **suspende** el procedimiento y se comunica al **Ministerio Fiscal**; los **hechos probados** por sentencia firme **vinculan** a la Administración (art. 94).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a94",
+       "quote": "Principio de legalidad y tipicidad de las faltas y sanciones"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a94",
+       "quote": "Principio de proporcionalidad"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a94",
+       "quote": "Principio de culpabilidad."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a94",
+       "quote": "Principio de presunción de inocencia."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a94",
+       "quote": "se suspenderá su tramitación poniéndolo en conocimiento del Ministerio Fiscal."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a94",
+       "quote": "Los hechos declarados probados por resoluciones judiciales firmes vinculan a la Administración."
+      }
+     ]
+    },
+    {
+     "text": "**Faltas muy graves**: las fija el TREBEP (art. 95.2). Entre ellas:",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a95",
+       "quote": "Son faltas muy graves:"
+      }
+     ],
+     "items": [
+      {
+       "text": "Incumplir el deber de **respeto a la Constitución** y a los Estatutos de Autonomía.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "El incumplimiento del deber de respeto a la Constitución"
+        }
+       ]
+      },
+      {
+       "text": "La **discriminación** y el **acoso** (por razón de sexo, moral, sexual) y el **acoso laboral**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "Toda actuación que suponga discriminación por razón de origen racial o étnico"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "El acoso laboral."
+        }
+       ]
+      },
+      {
+       "text": "El **abandono del servicio** y **no hacerse cargo voluntariamente** de las tareas encomendadas.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "El abandono del servicio, así como no hacerse cargo voluntariamente de las tareas o funciones que tienen encomendadas."
+        }
+       ]
+      },
+      {
+       "text": "Adoptar **acuerdos manifiestamente ilegales** que causen **perjuicio grave**, y **prevalerse de la condición** de empleado público para obtener un **beneficio indebido**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "La adopción de acuerdos manifiestamente ilegales que causen perjuicio grave a la Administración o a los ciudadanos."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "La prevalencia de la condición de empleado público para obtener un beneficio indebido para sí o para otro."
+        }
+       ]
+      },
+      {
+       "text": "La **publicación o utilización indebida** de la información conocida por el cargo, y la negligencia en la custodia de **secretos oficiales**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "La publicación o utilización indebida de la documentación o información a que tengan o hayan tenido acceso por razón de su cargo o función."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "La negligencia en la custodia de secretos oficiales"
+        }
+       ]
+      },
+      {
+       "text": "El **notorio incumplimiento** de las funciones esenciales del puesto.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "El notorio incumplimiento de las funciones esenciales inherentes al puesto de trabajo o funciones encomendadas."
+        }
+       ]
+      },
+      {
+       "text": "La **desobediencia abierta** a las órdenes de un superior, salvo infracción manifiesta del ordenamiento.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "La desobediencia abierta a las órdenes o instrucciones de un superior, salvo que constituyan infracción manifiesta del Ordenamiento jurídico."
+        }
+       ]
+      },
+      {
+       "text": "Influir en **procesos electorales**, obstaculizar derechos sindicales o la **huelga**, o no atender los **servicios esenciales** en huelga.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "La violación de la imparcialidad, utilizando las facultades atribuidas para influir en procesos electorales"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "El incumplimiento de la obligación de atender los servicios esenciales en caso de huelga."
+        }
+       ]
+      },
+      {
+       "text": "La **incomparecencia injustificada** en las **Comisiones de Investigación** de las Cortes o de las asambleas autonómicas.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "La incomparecencia injustificada en las Comisiones de Investigación de las Cortes Generales"
+        }
+       ]
+      },
+      {
+       "text": "Y las que tipifique como muy graves una **ley** (o un convenio, para el personal laboral).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a95",
+         "quote": "También serán faltas muy graves las que queden tipificadas como tales en ley de las Cortes Generales"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Las **faltas graves** las establece una **ley** (o el convenio, para el personal laboral), atendiendo al grado de vulneración de la legalidad, la gravedad de los daños y el **descrédito** para la imagen de la Administración. Las **leves**, las leyes de Función Pública (art. 95.3 y 95.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a95",
+       "quote": "Las faltas graves serán establecidas por ley de las Cortes Generales o de la asamblea legislativa de la correspondiente comunidad autónoma o por los convenios colectivos en el caso de personal laboral"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a95",
+       "quote": "El descrédito para la imagen pública de la Administración."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a95",
+       "quote": "determinarán el régimen aplicable a las faltas leves"
+      }
+     ]
+    },
+    {
+     "text": "En la AGE sigue aplicándose el **Reglamento de Régimen Disciplinario (RD 33/1986)** en lo que **no se oponga** al TREBEP (que deroga las normas que lo contradigan). Tipifica, por ejemplo:",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "ddunica-2",
+       "quote": "Todas las normas de igual o inferior rango que contradigan o se opongan a lo dispuesto en este Estatuto."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Graves**: la falta de **obediencia debida**, el **abuso de autoridad**, intervenir pese a causa de **abstención**, el incumplimiento injustificado de la jornada de **al menos diez horas al mes**, la **tercera falta de asistencia** injustificada en tres meses (si las dos anteriores se sancionaron como leves) y **evadir los controles de horario** (art. 7).",
+       "refs": [
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a7",
+         "quote": "La falta de obediencia debida a los superiores y autoridades."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a7",
+         "quote": "El abuso de autoridad en el ejercicio del cargo."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a7",
+         "quote": "Intervenir en un procedimiento administrativo cuando se dé alguna de las causas de abstención legalmente señaladas."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a7",
+         "quote": "El incumplimiento injustificado de la jornada de trabajo que acumulado suponga un mínimo de diez horas al mes."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a7",
+         "quote": "La tercera falta injustificada de asistencia en un período de tres meses, cuando las dos anteriores hubieren sido objeto de sanción por falta leve."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a7",
+         "quote": "Las acciones u omisiones dirigidas a evadir los sistemas de control de horarios"
+        }
+       ]
+      },
+      {
+       "text": "**Leves**: el incumplimiento injustificado del **horario** (si no es grave), la **falta de asistencia injustificada de un día**, la **incorrección** con el público o los compañeros y el **descuido o negligencia** (art. 8).",
+       "refs": [
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a8",
+         "quote": "El incumplimiento injustificado del horario de trabajo, cuando no suponga falta grave."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a8",
+         "quote": "La falta de asistencia injustificada de un día."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a8",
+         "quote": "La incorrección con el público, superiores, compañeros o subordinados."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a8",
+         "quote": "El descuido o negligencia en el ejercicio de sus funciones."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Sanciones** (art. 96.1 TREBEP):",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a96",
+       "quote": "Por razón de las faltas cometidas podrán imponerse las siguientes sanciones:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Separación del servicio** (en interinos, **revocación** del nombramiento): **solo por faltas muy graves**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a96",
+         "quote": "Separación del servicio de los funcionarios, que en el caso de los funcionarios interinos comportará la revocación de su nombramiento, y que sólo podrá sancionar la comisión de faltas muy graves."
+        }
+       ]
+      },
+      {
+       "text": "**Despido disciplinario** del personal laboral: solo por faltas muy graves, e **inhabilita** para un nuevo contrato con funciones similares. Si se declara **improcedente**, el **laboral fijo** es **readmitido** (art. 96.2).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a96",
+         "quote": "Despido disciplinario del personal laboral, que sólo podrá sancionar la comisión de faltas muy graves"
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a96",
+         "quote": "comportará la inhabilitación para ser titular de un nuevo contrato de trabajo con funciones similares a las que desempeñaban."
+        },
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a96",
+         "quote": "Procederá la readmisión del personal laboral fijo cuando sea declarado improcedente el despido"
+        }
+       ]
+      },
+      {
+       "text": "**Suspensión firme** de funciones (o de empleo y sueldo): **máximo 6 años**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a96",
+         "quote": "Suspensión firme de funciones, o de empleo y sueldo en el caso del personal laboral, con una duración máxima de 6 años."
+        }
+       ]
+      },
+      {
+       "text": "**Traslado forzoso**, con o sin cambio de localidad.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a96",
+         "quote": "Traslado forzoso, con o sin cambio de localidad de residencia"
+        }
+       ]
+      },
+      {
+       "text": "**Demérito**: penalización a efectos de carrera, promoción o movilidad voluntaria.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a96",
+         "quote": "Demérito, que consistirá en la penalización a efectos de carrera, promoción o movilidad voluntaria."
+        }
+       ]
+      },
+      {
+       "text": "**Apercibimiento**, y cualquier otra que establezca una ley.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-11719",
+         "section": "a96",
+         "quote": "Apercibimiento."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "En la AGE, según el RD 33/1986: la suspensión por falta **muy grave** dura **entre tres y seis años**, y por falta **grave**, **hasta tres**; quien es trasladado con cambio de residencia no puede volver a esa localidad en **tres años** (muy grave) o **uno** (grave) (art. 16). Las faltas leves solo se sancionan con **apercibimiento** (art. 17; la otra letra que cita está derogada).",
+     "refs": [
+      {
+       "law": "BOE-A-1986-1216",
+       "section": "a16",
+       "quote": "La sanción de suspensión de funciones impuesta por comisión de falta muy grave, no podrá ser superior a seis años ni inferior a tres. Si se impone por falta grave, no excederá de tres años."
+      },
+      {
+       "law": "BOE-A-1986-1216",
+       "section": "a16",
+       "quote": "durante tres años, cuando hubiere sido impuesta por falta muy grave, y durante uno cuando hubiere correspondido a la comisión de una falta grave."
+      },
+      {
+       "law": "BOE-A-1986-1216",
+       "section": "a17",
+       "quote": "Las faltas leves solamente podrán ser corregidas con las sanciones que se señalan en los apartados d) o e) del artículo 14."
+      },
+      {
+       "law": "BOE-A-1986-1216",
+       "section": "a14",
+       "quote": "d) (Derogada) e) Apercibimiento."
+      }
+     ]
+    },
+    {
+     "text": "**Prescripción** (art. 97 TREBEP): **faltas** muy graves a los **tres años**, graves a los **dos** y leves a los **seis meses**; **sanciones** por muy graves a los **tres años**, por graves a los **dos** y por leves **al año**. Las faltas prescriben desde su comisión (o desde que cesa, si son continuadas); las sanciones, desde la **firmeza** de la resolución. Ojo: el RD 33/1986 da otros plazos, pero prevalece el TREBEP.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a97",
+       "quote": "Las infracciones muy graves prescribirán a los tres años, las graves a los dos años y las leves a los seis meses; las sanciones impuestas por faltas muy graves prescribirán a los tres años, las impuestas por faltas graves a los dos años y las impuestas por faltas leves al año."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a97",
+       "quote": "El de las sanciones, desde la firmeza de la resolución sancionadora."
+      },
+      {
+       "law": "BOE-A-1986-1216",
+       "section": "a20",
+       "quote": "Las faltas muy graves prescribirán a los seis años, las graves a los dos años y las leves al mes."
+      }
+     ]
+    },
+    {
+     "text": "**Procedimiento** (art. 98 TREBEP): las faltas muy graves y graves requieren el **procedimiento establecido**; las leves, un **procedimiento sumario con audiencia** al interesado. Debe separarse la **fase instructora** de la **sancionadora**, en órganos distintos.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "No podrá imponerse sanción por la comisión de faltas muy graves o graves sino mediante el procedimiento previamente establecido."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "La imposición de sanciones por faltas leves se llevará a cabo por procedimiento sumario con audiencia al interesado."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "En el procedimiento quedará establecida la debida separación entre la fase instructora y la sancionadora, encomendándose a órganos distintos."
+      }
+     ]
+    },
+    {
+     "text": "**Suspensión provisional** (art. 98.3 y 98.4): máximo **6 meses** salvo paralización imputable al interesado. Si se acuerda durante un **procedimiento judicial**, dura lo que la prisión provisional u otras medidas del juez, y aunque pase de seis meses **no supone perder el puesto**. Se cobran las **retribuciones básicas**. Si se convierte en firme, se **devuelve** lo cobrado y el tiempo **se abona**; si no, la Administración **restituye la diferencia** y el tiempo computa como **servicio activo**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "La suspensión provisional como medida cautelar en la tramitación de un expediente disciplinario no podrá exceder de 6 meses, salvo en caso de paralización del procedimiento imputable al interesado."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "El funcionario suspenso provisional tendrá derecho a percibir durante la suspensión las retribuciones básicas"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "Cuando la suspensión provisional se eleve a definitiva, el funcionario deberá devolver lo percibido durante el tiempo de duración de aquélla."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "El tiempo de permanencia en suspensión provisional será de abono para el cumplimiento de la suspensión firme."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "si la suspensión provisional excediera de seis meses no supondrá pérdida del puesto de trabajo."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a98",
+       "quote": "la Administración deberá restituir al funcionario la diferencia entre los haberes realmente percibidos y los que hubiera debido percibir"
+      }
+     ]
+    },
+    {
+     "text": "**Tramitación en la AGE** (RD 33/1986):",
+     "refs": [
+      {
+       "law": "BOE-A-1986-1216",
+       "section": "a27",
+       "quote": "El procedimiento se iniciará siempre de oficio"
+      }
+     ],
+     "items": [
+      {
+       "text": "Se inicia **siempre de oficio** (por iniciativa propia, orden superior, moción de subordinados o **denuncia**), y puede ir precedido de una **información reservada** (arts. 27 y 28).",
+       "refs": [
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a27",
+         "quote": "El procedimiento se iniciará siempre de oficio, por acuerdo del órgano competente, bien por propia iniciativa o como consecuencia de orden superior, moción razonada de los subordinados o denuncia."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a28",
+         "quote": "El órgano competente para incoar el procedimiento podrá acordar previamente la realización de una información reservada."
+        }
+       ]
+      },
+      {
+       "text": "Lo incoa el **Subsecretario** del Departamento (también Directores generales y Delegados del Gobierno en su ámbito) (art. 29). El **Instructor** debe ser funcionario de **igual o superior grupo** que el inculpado (art. 30).",
+       "refs": [
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a29",
+         "quote": "Será competente para ordenar la incoación del expediente disciplinario, el Subsecretario del Departamento en que esté destinado el funcionario, en todo caso."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a30",
+         "quote": "deberá ser un funcionario público perteneciente a un cuerpo o escala de igual o superior grupo al del inculpado"
+        }
+       ]
+      },
+      {
+       "text": "**Pliego de cargos** en **un mes** desde la incoación; el inculpado tiene **diez días** para contestar (arts. 35 y 36). La **propuesta de resolución** se formula en diez días y la **resolución**, también en **diez días** salvo separación del servicio (arts. 42 y 45).",
+       "refs": [
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a35",
+         "quote": "en un plazo no superior a un mes, contados a partir de la incoación del procedimiento, el Instructor formulará el correspondiente pliego de cargos"
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a36",
+         "quote": "concediéndosele un plazo de diez días para que pueda contestarlo"
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a42",
+         "quote": "El Instructor formulará dentro de los diez días siguientes la propuesta de resolución"
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a45",
+         "quote": "La resolución, que pone fin al procedimiento disciplinario, deberá adoptarse en el plazo de diez días, salvo en caso de separación del servicio"
+        }
+       ]
+      },
+      {
+       "text": "La **separación del servicio** la impone el **Consejo de Ministros**; la suspensión y el traslado, los **Ministros** y Secretarios de Estado; el apercibimiento, el **Subsecretario**, los Directores generales y los Delegados del Gobierno (art. 47). Las sanciones se anotan en el **Registro Central de Personal** (art. 51).",
+       "refs": [
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a47",
+         "quote": "El Consejo de Ministros, a propuesta del Ministro de la Presidencia, quien con carácter previo oirá a la Comisión Superior de Personal, para imponer la separación del servicio."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a47",
+         "quote": "Los Ministros y Secretarios de Estado del Departamento en el que esté destinado el funcionario"
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a47",
+         "quote": "El Subsecretario del Departamento, en todo caso, los Directores generales respecto del personal dependiente de su Dirección General y los Delegados del Gobierno y los Gobernadores civiles respecto a los funcionarios destinados en su correspondiente ámbito territorial, para la imposición de las sanciones de los apartados d) y e) del artículo 14."
+        },
+        {
+         "law": "BOE-A-1986-1216",
+         "section": "a51",
+         "quote": "Las sanciones disciplinarías que se impongan a los funcionarios se anotarán en el Registro Central de Personal"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ley 19/2013, de 9 de diciembre, de transparencia: objeto, ámbito y publicidad activa",
+   "points": [
+    {
+     "text": "**Objeto** (art. 1): **ampliar y reforzar la transparencia** de la actividad pública, regular y garantizar el **derecho de acceso** a la información y establecer las obligaciones de **buen gobierno** de los responsables públicos. Se estructura en un **Título I** (transparencia: publicidad activa y derecho de acceso), un **Título II** (buen gobierno) y un **Título III** (Consejo de Transparencia y Buen Gobierno).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a1",
+       "quote": "Esta Ley tiene por objeto ampliar y reforzar la transparencia de la actividad pública, regular y garantizar el derecho de acceso a la información relativa a aquella actividad y establecer las obligaciones de buen gobierno que deben cumplir los responsables públicos"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "ti",
+       "quote": "Transparencia de la actividad pública"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a25",
+       "quote": "En el ámbito de la Administración General del Estado las disposiciones de este título se aplicarán"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "tiii",
+       "quote": "Consejo de Transparencia y Buen Gobierno"
+      }
+     ]
+    },
+    {
+     "text": "**Entrada en vigor**: el **Título II** (buen gobierno) al **día siguiente** de su publicación en el BOE; el título preliminar y los **Títulos I y III**, **al año**; las Comunidades Autónomas y entidades locales tuvieron **dos años** para adaptarse (disp. final novena).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "dfnovena",
+       "quote": "Las disposiciones previstas en el título II entrarán en vigor al día siguiente de su publicación"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "dfnovena",
+       "quote": "El título preliminar, el título I y el título III entrarán en vigor al año de su publicación"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "dfnovena",
+       "quote": "dispondrán de un plazo máximo de dos años para adaptarse"
+      }
+     ]
+    },
+    {
+     "text": "**Ámbito** (art. 2.1): las Administraciones (AGE, CCAA, Ceuta y Melilla, entidades locales), entidades de la Seguridad Social, organismos y entidades de Derecho Público, **Universidades públicas**, corporaciones de Derecho Público, sociedades mercantiles con participación pública **superior al 50 %**, fundaciones del sector público y, en sus actividades sujetas a Derecho Administrativo, la **Casa del Rey**, el **Congreso**, el **Senado**, el **Tribunal Constitucional**, el **CGPJ**, el **Banco de España**, el **Consejo de Estado**, el **Defensor del Pueblo**, el **Tribunal de Cuentas** y el **CES**. A efectos de este título, «Administraciones Públicas» son solo las de las **letras a) a d)** (art. 2.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a2",
+       "quote": "incluidas las Universidades públicas."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a2",
+       "quote": "La Casa de su Majestad el Rey, el Congreso de los Diputados, el Senado, el Tribunal Constitucional y el Consejo General del Poder Judicial, así como el Banco de España, el Consejo de Estado, el Defensor del Pueblo, el Tribunal de Cuentas, el Consejo Económico y Social y las instituciones autonómicas análogas, en relación con sus actividades sujetas a Derecho Administrativo."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a2",
+       "quote": "Las sociedades mercantiles en cuyo capital social la participación, directa o indirecta, de las entidades previstas en este artículo sea superior al 50 por 100."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a2",
+       "quote": "se entiende por Administraciones Públicas los organismos y entidades incluidos en las letras a) a d) del apartado anterior."
+      }
+     ]
+    },
+    {
+     "text": "La **publicidad activa** se aplica también a **partidos políticos, sindicatos y organizaciones empresariales**, y a **entidades privadas** que reciban en un año más de **100.000 euros** en ayudas públicas, o cuyo **40 %** de ingresos sean ayudas (con un mínimo de **5.000 euros**) (art. 3).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a3",
+       "quote": "Los partidos políticos, organizaciones sindicales y organizaciones empresariales."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a3",
+       "quote": "Las entidades privadas que perciban durante el período de un año ayudas o subvenciones públicas en una cuantía superior a 100.000 euros o cuando al menos el 40 % del total de sus ingresos anuales tengan carácter de ayuda o subvención pública, siempre que alcancen como mínimo la cantidad de 5.000 euros."
+      }
+     ]
+    },
+    {
+     "text": "Quienes **presten servicios públicos** o ejerzan potestades administrativas deben **suministrar la información**, previo requerimiento, a la Administración a la que estén vinculados (también los **adjudicatarios de contratos**) (art. 4).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a4",
+       "quote": "estarán obligadas a suministrar a la Administración, organismo o entidad de las previstas en el artículo 2.1 a la que se encuentren vinculadas, previo requerimiento, toda la información necesaria"
+      }
+     ]
+    },
+    {
+     "text": "**Publicidad activa**: los sujetos publican **de forma periódica y actualizada** la información relevante, en sus **sedes electrónicas o páginas web**, de manera **clara, estructurada y entendible** y preferiblemente en **formatos reutilizables**. Es **gratuita** y **accesible** a personas con discapacidad. Si hay **datos especialmente protegidos**, se publican **previa disociación** (art. 5).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a5",
+       "quote": "publicarán de forma periódica y actualizada la información cuyo conocimiento sea relevante para garantizar la transparencia de su actividad"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a5",
+       "quote": "será publicada en las correspondientes sedes electrónicas o páginas web y de una manera clara, estructurada y entendible para los interesados y, preferiblemente, en formatos reutilizables."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a5",
+       "quote": "Toda la información será comprensible, de acceso fácil y gratuito"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a5",
+       "quote": "cuando la información contuviera datos especialmente protegidos, la publicidad sólo se llevará a cabo previa disociación de los mismos."
+      }
+     ]
+    },
+    {
+     "text": "Qué se publica:",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a8",
+       "quote": "deberán hacer pública, como mínimo, la información relativa a los actos de gestión administrativa con repercusión económica o presupuestaria que se indican a continuación:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Institucional y organizativa** (art. 6): funciones, normativa, estructura y un **organigrama actualizado** con los responsables y su perfil; y los **planes y programas** con sus objetivos, que en la AGE evalúan las **inspecciones generales de servicios**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a6",
+         "quote": "incluirán un organigrama actualizado que identifique a los responsables de los diferentes órganos y su perfil y trayectoria profesional."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a6",
+         "quote": "En el ámbito de la Administración General del Estado corresponde a las inspecciones generales de servicios la evaluación del cumplimiento de estos planes y programas."
+        }
+       ]
+      },
+      {
+       "text": "**De relevancia jurídica** (art. 7): directrices, instrucciones y circulares que interpreten el Derecho; **anteproyectos de ley** y proyectos de decretos legislativos (al pedir dictamen); **proyectos de reglamentos**; las **memorias** de los expedientes normativos (MAIN).",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a7",
+         "quote": "Las directrices, instrucciones, acuerdos, circulares o respuestas a consultas planteadas por los particulares u otros órganos en la medida en que supongan una interpretación del Derecho o tengan efectos jurídicos."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a7",
+         "quote": "Los Anteproyectos de Ley y los proyectos de Decretos Legislativos cuya iniciativa les corresponda, cuando se soliciten los dictámenes a los órganos consultivos correspondientes."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a7",
+         "quote": "Los proyectos de Reglamentos cuya iniciativa les corresponda."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a7",
+         "quote": "Las memorias e informes que conformen los expedientes de elaboración de los textos normativos, en particular, la memoria del análisis de impacto normativo"
+        }
+       ]
+      },
+      {
+       "text": "**Económica y presupuestaria** (art. 8): **contratos** (los **menores**, pueden publicarse **trimestralmente**), **convenios** y encomiendas, **subvenciones**, **presupuestos**, cuentas anuales, **retribuciones de los altos cargos**, resoluciones de **compatibilidad** de los empleados públicos, declaraciones de bienes de los representantes locales y estadísticas de calidad de los servicios. Además, la relación de **bienes inmuebles** de las Administraciones (art. 8.3).",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "La publicación de la información relativa a los contratos menores podrá realizarse trimestralmente."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "Las subvenciones y ayudas públicas concedidas con indicación de su importe, objetivo o finalidad y beneficiarios."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "La relación de los convenios suscritos"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "Igualmente, se publicarán las encomiendas de gestión que se firmen"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "Los presupuestos, con descripción de las principales partidas presupuestarias"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "Las cuentas anuales que deban rendirse"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "Las declaraciones anuales de bienes y actividades de los representantes locales"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "La información estadística necesaria para valorar el grado de cumplimiento y calidad de los servicios públicos"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "Las retribuciones percibidas anualmente por los altos cargos y máximos responsables"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "Las resoluciones de autorización o reconocimiento de compatibilidad que afecten a los empleados públicos"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a8",
+         "quote": "Las Administraciones Públicas publicarán la relación de los bienes inmuebles que sean de su propiedad o sobre los que ostenten algún derecho real."
+        }
+       ]
+      },
+      {
+       "text": "El **inventario de actividades de tratamiento** de datos personales (art. 6 bis).",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "ab",
+         "quote": "publicarán su inventario de actividades de tratamiento"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Control**: en la AGE lo ejerce el **Consejo de Transparencia y Buen Gobierno**, que puede dictar resoluciones con las medidas para **cesar el incumplimiento** e iniciar actuaciones disciplinarias; el **incumplimiento reiterado** de la publicidad activa es **infracción grave** a efectos disciplinarios (art. 9).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a9",
+       "quote": "El cumplimiento por la Administración General del Estado de las obligaciones contenidas en este capítulo será objeto de control por parte del Consejo de Transparencia y Buen Gobierno."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a9",
+       "quote": "podrá dictar resoluciones en las que se establezcan las medidas que sea necesario adoptar para el cese del incumplimiento"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a9",
+       "quote": "El incumplimiento reiterado de las obligaciones de publicidad activa reguladas en este capítulo tendrá la consideración de infracción grave"
+      }
+     ]
+    },
+    {
+     "text": "**Portal de la Transparencia** de la AGE: depende del **Ministerio de la Presidencia** (art. 10). Sus **principios técnicos** son **accesibilidad**, **interoperabilidad** (conforme al **Esquema Nacional de Interoperabilidad**) y **reutilización** (art. 11).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a10",
+       "quote": "La Administración General del Estado desarrollará un Portal de la Transparencia, dependiente del Ministerio de la Presidencia"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a11",
+       "quote": "Accesibilidad: se proporcionará información estructurada sobre los documentos y recursos de información"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a11",
+       "quote": "Interoperabilidad: la información publicada será conforme al Esquema Nacional de Interoperabilidad"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a11",
+       "quote": "Reutilización: se fomentará que la información sea publicada en formatos que permita su reutilización"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ley 19/2013: derecho de acceso a la información pública",
+   "points": [
+    {
+     "text": "**Todas las personas** tienen derecho a acceder a la información pública, en los términos del **art. 105.b) de la Constitución** (art. 12). **Información pública**: contenidos o documentos, **cualquiera que sea su formato o soporte**, que obren en poder de los sujetos obligados y hayan sido **elaborados o adquiridos en el ejercicio de sus funciones** (art. 13).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a12",
+       "quote": "Todas las personas tienen derecho a acceder a la información pública, en los términos previstos en el artículo 105.b) de la Constitución Española"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a13",
+       "quote": "Se entiende por información pública los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de alguno de los sujetos incluidos en el ámbito de aplicación de este título y que hayan sido elaborados o adquiridos en el ejercicio de sus funciones."
+      }
+     ]
+    },
+    {
+     "text": "**Límites** (art. 14): el acceso puede limitarse si supone un perjuicio para la **seguridad nacional**, la **defensa**, las **relaciones exteriores**, la **seguridad pública**, la persecución de **ilícitos**, la **igualdad de las partes** en los procesos, las funciones de **vigilancia e inspección**, los intereses **económicos y comerciales**, la política **económica y monetaria**, el **secreto profesional** y la propiedad intelectual e industrial, la **confidencialidad** en la toma de decisiones y el **medio ambiente**. Su aplicación debe ser **justificada y proporcionada**, atendiendo al **interés público o privado superior**.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "La seguridad nacional."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "La seguridad pública."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "La prevención, investigación y sanción de los ilícitos penales, administrativos o disciplinarios."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "La igualdad de las partes en los procesos judiciales y la tutela judicial efectiva."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "Las funciones administrativas de vigilancia, inspección y control."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "Los intereses económicos y comerciales."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "El secreto profesional y la propiedad intelectual e industrial."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "La garantía de la confidencialidad o el secreto requerido en procesos de toma de decisión."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "Las relaciones exteriores."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "La política económica y monetaria."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "La protección del medio ambiente."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a14",
+       "quote": "La aplicación de los límites será justificada y proporcionada a su objeto y finalidad de protección y atenderá a las circunstancias del caso concreto, especialmente a la concurrencia de un interés público o privado superior que justifique el acceso."
+      }
+     ]
+    },
+    {
+     "text": "**Datos personales** (art. 15):",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a15",
+       "quote": "Protección de datos personales."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Ideología, afiliación sindical, religión o creencias**: solo con **consentimiento expreso y por escrito** del afectado, salvo que él mismo los hubiera hecho **manifiestamente públicos**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a15",
+         "quote": "el acceso únicamente se podrá autorizar en caso de que se contase con el consentimiento expreso y por escrito del afectado, a menos que dicho afectado hubiese hecho manifiestamente públicos los datos con anterioridad a que se solicitase el acceso."
+        }
+       ]
+      },
+      {
+       "text": "**Origen racial, salud, vida sexual, datos genéticos o biométricos, infracciones** penales o administrativas sin amonestación pública: con **consentimiento expreso** o si lo ampara una **norma con rango de ley**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a15",
+         "quote": "el acceso solo se podrá autorizar en caso de que se cuente con el consentimiento expreso del afectado o si aquel estuviera amparado por una norma con rango de ley."
+        }
+       ]
+      },
+      {
+       "text": "Datos **meramente identificativos** relacionados con la organización o actividad pública del órgano: **con carácter general, se concede** el acceso.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a15",
+         "quote": "se concederá el acceso a información que contenga datos meramente identificativos relacionados con la organización, funcionamiento o actividad pública del órgano."
+        }
+       ]
+      },
+      {
+       "text": "Resto de datos: **ponderación** razonada entre el interés público y los derechos de los afectados. Nada de esto se aplica si los datos se **disocian**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a15",
+         "quote": "concederá el acceso previa ponderación suficientemente razonada del interés público en la divulgación de la información y los derechos de los afectados"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a15",
+         "quote": "No será aplicable lo establecido en los apartados anteriores si el acceso se efectúa previa disociación de los datos de carácter personal"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Acceso parcial**: si el límite no afecta a toda la información, se da el resto, **salvo que quede distorsionada** o sin sentido, indicando qué se ha omitido (art. 16).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a16",
+       "quote": "se concederá el acceso parcial previa omisión de la información afectada por el límite salvo que de ello resulte una información distorsionada o que carezca de sentido."
+      }
+     ]
+    },
+    {
+     "text": "**Solicitud** (art. 17):",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a17",
+       "quote": "El procedimiento para el ejercicio del derecho de acceso se iniciará con la presentación de la correspondiente solicitud"
+      }
+     ],
+     "items": [
+      {
+       "text": "Se dirige al **titular del órgano o entidad que posea la información**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a17",
+         "quote": "que deberá dirigirse al titular del órgano administrativo o entidad que posea la información."
+        }
+       ]
+      },
+      {
+       "text": "Por **cualquier medio** que deje constancia de la **identidad** del solicitante, la información pedida, una **dirección de contacto, preferentemente electrónica**, y, en su caso, la modalidad de acceso preferida.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a17",
+         "quote": "La solicitud podrá presentarse por cualquier medio que permita tener constancia de:"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a17",
+         "quote": "Una dirección de contacto, preferentemente electrónica, a efectos de comunicaciones."
+        }
+       ]
+      },
+      {
+       "text": "**No hay que motivarla**; la falta de motivación no es por sí sola causa de rechazo.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a17",
+         "quote": "El solicitante no está obligado a motivar su solicitud de acceso a la información."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a17",
+         "quote": "la ausencia de motivación no será por si sola causa de rechazo de la solicitud."
+        }
+       ]
+      },
+      {
+       "text": "Puede presentarse en **cualquiera de las lenguas cooficiales** del territorio de la Administración.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a17",
+         "quote": "en cualquiera de las lenguas cooficiales del Estado en el territorio en el que radique la Administración en cuestión."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Causas de inadmisión** (art. 18), por resolución motivada: información **en curso de elaboración** o de publicación general; de **carácter auxiliar** (notas, borradores, opiniones, informes internos); que requiera **reelaboración**; dirigida a un órgano que no la tiene **sin conocerse el competente** (debe indicarse cuál cree que lo es); o **manifiestamente repetitiva** o abusiva.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a18",
+       "quote": "Que se refieran a información que esté en curso de elaboración o de publicación general."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a18",
+       "quote": "Referidas a información que tenga carácter auxiliar o de apoyo como la contenida en notas, borradores, opiniones, resúmenes, comunicaciones e informes internos o entre órganos o entidades administrativas."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a18",
+       "quote": "Relativas a información para cuya divulgación sea necesaria una acción previa de reelaboración."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a18",
+       "quote": "Dirigidas a un órgano en cuyo poder no obre la información cuando se desconozca el competente."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a18",
+       "quote": "Que sean manifiestamente repetitivas o tengan un carácter abusivo no justificado con la finalidad de transparencia de esta Ley."
+      }
+     ]
+    },
+    {
+     "text": "**Tramitación** (art. 19): si el órgano no tiene la información, la **remite al competente** si lo conoce (avisando al solicitante); si la tiene pero la **elaboró otro**, le remite la solicitud para que decida. Si la solicitud no concreta la información, **diez días** para precisarla (si no, desistimiento); si afecta a **terceros**, **quince días** para alegaciones. Ambos casos **suspenden** el plazo para resolver.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a19",
+       "quote": "se pedirá al solicitante que la concrete en un plazo de diez días, con indicación de que, en caso de no hacerlo, se le tendrá por desistido"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a19",
+       "quote": "se les concederá un plazo de quince días para que puedan realizar las alegaciones que estimen oportunas."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a19",
+       "quote": "éste la remitirá al competente, si lo conociera, e informará de esta circunstancia al solicitante."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a19",
+       "quote": "haya sido elaborada o generada en su integridad o parte principal por otro, se le remitirá la solicitud a éste para que decida sobre el acceso."
+      }
+     ]
+    },
+    {
+     "text": "**Resolución** (art. 20):",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a20",
+       "quote": "La resolución en la que se conceda o deniegue el acceso deberá notificarse al solicitante"
+      }
+     ],
+     "items": [
+      {
+       "text": "Plazo máximo de **un mes** desde la recepción por el órgano competente, ampliable **otro mes** por volumen o complejidad.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a20",
+         "quote": "en el plazo máximo de un mes desde la recepción de la solicitud por el órgano competente para resolver."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a20",
+         "quote": "Este plazo podrá ampliarse por otro mes en el caso de que el volumen o la complejidad de la información que se solicita así lo hagan necesario"
+        }
+       ]
+      },
+      {
+       "text": "Se **motivan** las que **deniegan**, las que dan acceso **parcial** o por otra modalidad y las que conceden pese a la **oposición de un tercero**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a20",
+         "quote": "Serán motivadas las resoluciones que denieguen el acceso, las que concedan el acceso parcial o a través de una modalidad distinta a la solicitada y las que permitan el acceso cuando haya habido oposición de un tercero."
+        }
+       ]
+      },
+      {
+       "text": "**Silencio negativo**: sin resolución en plazo, la solicitud se entiende **desestimada**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a20",
+         "quote": "Transcurrido el plazo máximo para resolver sin que se haya dictado y notificado resolución expresa se entenderá que la solicitud ha sido desestimada."
+        }
+       ]
+      },
+      {
+       "text": "Las resoluciones son recurribles **directamente** ante la jurisdicción **contencioso-administrativa**, sin perjuicio de la **reclamación potestativa** ante el CTBG. El **incumplimiento reiterado** de resolver en plazo es **infracción grave**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a20",
+         "quote": "Las resoluciones dictadas en materia de acceso a la información pública son recurribles directamente ante la Jurisdicción Contencioso-administrativa, sin perjuicio de la posibilidad de interposición de la reclamación potestativa prevista en el artículo 24."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a20",
+         "quote": "El incumplimiento reiterado de la obligación de resolver en plazo tendrá la consideración de infracción grave"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Formalización** (art. 22): preferentemente **por vía electrónica**; si no puede darse al notificar, en **diez días** como máximo. El acceso es **gratuito**, aunque las **copias** o el cambio de formato pueden generar tasas. Si hubo **oposición de un tercero**, se espera a que pase el plazo del recurso contencioso.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a22",
+       "quote": "El acceso a la información se realizará preferentemente por vía electrónica"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a22",
+       "quote": "en un plazo no superior a diez días."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a22",
+       "quote": "El acceso a la información será gratuito."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a22",
+       "quote": "la expedición de copias o la trasposición de la información a un formato diferente al original podrá dar lugar a la exigencia de exacciones"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a22",
+       "quote": "Si ha existido oposición de tercero, el acceso sólo tendrá lugar cuando, habiéndose concedido dicho acceso, haya transcurrido el plazo para interponer recurso contencioso administrativo"
+      }
+     ]
+    },
+    {
+     "text": "En la AGE hay **unidades de información** especializadas que tramitan las solicitudes, llevan su **registro** y un **mapa de contenidos** (art. 21).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a21",
+       "quote": "En el ámbito de la Administración General del Estado, existirán unidades especializadas que tendrán las siguientes funciones:"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a21",
+       "quote": "Llevar un registro de las solicitudes de acceso a la información."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a21",
+       "quote": "Mantener actualizado un mapa de contenidos"
+      }
+     ]
+    },
+    {
+     "text": "**Reclamación ante el CTBG** (arts. 23 y 24):",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a24",
+       "quote": "Reclamación ante el Consejo de Transparencia y Buen Gobierno."
+      }
+     ],
+     "items": [
+      {
+       "text": "Es **potestativa** y previa al contencioso, contra resoluciones **expresas o presuntas**, y **sustituye a los recursos administrativos**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a24",
+         "quote": "Frente a toda resolución expresa o presunta en materia de acceso podrá interponerse una reclamación ante el Consejo de Transparencia y Buen Gobierno, con carácter potestativo y previo a su impugnación en vía contencioso-administrativa."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a23",
+         "quote": "tendrá la consideración de sustitutiva de los recursos administrativos"
+        }
+       ]
+      },
+      {
+       "text": "Plazo para interponerla: **un mes** desde la notificación o desde el silencio.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a24",
+         "quote": "La reclamación se interpondrá en el plazo de un mes a contar desde el día siguiente al de la notificación del acto impugnado o desde el día siguiente a aquel en que se produzcan los efectos del silencio administrativo."
+        }
+       ]
+      },
+      {
+       "text": "Plazo para resolverla: **tres meses**; si no, se entiende **desestimada**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a24",
+         "quote": "El plazo máximo para resolver y notificar la resolución será de tres meses, transcurrido el cual, la reclamación se entenderá desestimada."
+        }
+       ]
+      },
+      {
+       "text": "Contra las resoluciones de la **Casa del Rey, Cortes, TC, CGPJ, Banco de España** y demás órganos del art. 2.1.f) **solo cabe el contencioso** (no la reclamación).",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a23",
+         "quote": "contra las resoluciones dictadas por los órganos previstos en el artículo 2.1.f) sólo cabrá la interposición de recurso contencioso-administrativo."
+        }
+       ]
+      },
+      {
+       "text": "Sus resoluciones se **publican** previa disociación de datos y se comunican al **Defensor del Pueblo**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a24",
+         "quote": "Las resoluciones del Consejo de Transparencia y Buen Gobierno se publicarán, previa disociación de los datos de carácter personal que contuvieran"
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a24",
+         "quote": "El Presidente del Consejo de Transparencia y Buen Gobierno comunicará al Defensor del Pueblo las resoluciones que dicte en aplicación de este artículo."
+        }
+       ]
+      },
+      {
+       "text": "Para resoluciones **autonómicas y locales**, resuelve el **órgano independiente** que determine cada Comunidad Autónoma, salvo que esta atribuya la competencia al **CTBG mediante convenio** (disp. adicional cuarta).",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "dacuaa",
+         "quote": "al órgano independiente que determinen las Comunidades Autónomas."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "dacuaa",
+         "quote": "Las Comunidades Autónomas podrán atribuir la competencia para la resolución de la reclamación prevista en el artículo 24 al Consejo de Transparencia y Buen Gobierno."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Tienen **régimen propio** (la Ley es supletoria) el acceso de los **interesados** a su procedimiento en curso y las materias con régimen específico; se aplica en lo no previsto a la información **ambiental** y a la **reutilización** (disp. adicional primera).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "daprimera",
+       "quote": "La normativa reguladora del correspondiente procedimiento administrativo será la aplicable al acceso por parte de quienes tengan la condición de interesados en un procedimiento administrativo en curso a los documentos que se integren en el mismo."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "daprimera",
+       "quote": "esta Ley será de aplicación, en lo no previsto en sus respectivas normas reguladoras, al acceso a la información ambiental y a la destinada a la reutilización."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ley 19/2013: buen gobierno",
+   "points": [
+    {
+     "text": "**Ámbito** (art. 25): en la AGE, los **miembros del Gobierno**, los **Secretarios de Estado** y el resto de **altos cargos** de la AGE y del sector público estatal; también los altos cargos autonómicos y locales, incluidos los miembros de las **Juntas de Gobierno** locales. No afecta a su condición de **cargo electo**.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a25",
+       "quote": "las disposiciones de este título se aplicarán a los miembros del Gobierno, a los Secretarios de Estado y al resto de los altos cargos de la Administración General del Estado"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a25",
+       "quote": "incluidos los miembros de las Juntas de Gobierno de las Entidades Locales."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a25",
+       "quote": "no afectará, en ningún caso, a la condición de cargo electo que pudieran ostentar."
+      }
+     ]
+    },
+    {
+     "text": "**Principios de buen gobierno** (art. 26): **generales** (transparencia, dedicación, **imparcialidad**, trato igual, diligencia, conducta digna, responsabilidad) y **de actuación** (plena dedicación, **reserva**, denunciar irregularidades, no implicarse en situaciones incompatibles, **no aceptar regalos** más allá de los usos habituales —los de mayor relevancia institucional pasan al **patrimonio** de la Administración— y no valerse de la posición para obtener ventajas). Informan el régimen sancionador.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a26",
+       "quote": "Principios generales:"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a26",
+       "quote": "Respetarán el principio de imparcialidad, de modo que mantengan un criterio independiente y ajeno a todo interés particular."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a26",
+       "quote": "Principios de actuación:"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a26",
+       "quote": "No aceptarán para sí regalos que superen los usos habituales, sociales o de cortesía"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a26",
+       "quote": "En el caso de obsequios de una mayor relevancia institucional se procederá a su incorporación al patrimonio de la Administración Pública correspondiente."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a26",
+       "quote": "Los principios establecidos en este artículo informarán la interpretación y aplicación del régimen sancionador regulado en este título."
+      }
+     ]
+    },
+    {
+     "text": "**Infracciones**: en materia de **conflicto de intereses** (art. 27, se remite a su normativa), de **gestión económico-presupuestaria** (art. 28, **todas muy graves** si son culpables) y **disciplinarias** (art. 29: muy graves, graves y leves).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a27",
+       "quote": "Infracciones y sanciones en materia de conflicto de intereses."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a28",
+       "quote": "Constituyen infracciones muy graves las siguientes conductas cuando sean culpables:"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a29",
+       "quote": "Son infracciones muy graves:"
+      }
+     ]
+    },
+    {
+     "text": "**Sanciones** (art. 30):",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a30",
+       "quote": "Por la comisión de una infracción grave se impondrán al infractor algunas de las siguientes sanciones:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Leves**: **amonestación**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a30",
+         "quote": "Las infracciones leves serán sancionadas con una amonestación."
+        }
+       ]
+      },
+      {
+       "text": "**Graves**: **declaración del incumplimiento** y su publicación en el **BOE** o diario oficial, y/o **no cobrar la indemnización** por cese.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a30",
+         "quote": "La declaración del incumplimiento y su publicación en el «Boletín Oficial del Estado» o diario oficial que corresponda."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a30",
+         "quote": "La no percepción, en el caso de que la llevara aparejada, de la correspondiente indemnización para el caso de cese en el cargo."
+        }
+       ]
+      },
+      {
+       "text": "**Muy graves**: las anteriores **y además destitución** del cargo e inhabilitación para ser alto cargo **entre cinco y diez años**.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a30",
+         "quote": "En el caso de las infracciones muy graves, se impondrán en todo caso las sanciones previstas en el apartado anterior."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a30",
+         "quote": "serán destituidos del cargo que ocupen salvo que ya hubiesen cesado y no podrán ser nombrados para ocupar ningún puesto de alto cargo o asimilado durante un periodo de entre cinco y diez años"
+        }
+       ]
+      },
+      {
+       "text": "Las infracciones del **art. 28** obligan además a **restituir** lo indebido e **indemnizar** a la Hacienda Pública.",
+       "refs": [
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a30",
+         "quote": "La obligación de restituir, en su caso, las cantidades percibidas o satisfechas indebidamente."
+        },
+        {
+         "law": "BOE-A-2013-12887",
+         "section": "a30",
+         "quote": "La obligación de indemnizar a la Hacienda Pública"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Procedimiento** (art. 31): de oficio. Para **miembros del Gobierno y Secretarios de Estado**, incoa y sanciona el **Consejo de Ministros**; para otros altos cargos de la AGE, el **Ministro de Hacienda y Administraciones Públicas** (así lo dice la Ley). En la AGE **instruye la Oficina de Conflictos de Intereses**. Recurso: **contencioso-administrativo**.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a31",
+       "quote": "Cuando el alto cargo tenga la condición de miembro del Gobierno o de Secretario de Estado, el Consejo de Ministros a propuesta del Ministro de Hacienda y Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a31",
+       "quote": "El procedimiento sancionador se iniciará de oficio"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a31",
+       "quote": "Cuando los presuntos responsables sean personas al servicio de la Administración General del Estado distintas de los anteriores, el Ministro de Hacienda y Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a31",
+       "quote": "Al Consejo de Ministros cuando el alto cargo tenga la condición de miembro del Gobierno o Secretario de Estado."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a31",
+       "quote": "Al Ministro de Hacienda y Administraciones Públicas cuando el responsable sea un alto cargo de la Administración General del Estado."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a31",
+       "quote": "la instrucción de los correspondientes procedimientos corresponderá a la Oficina de Conflictos de Intereses."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a31",
+       "quote": "Las resoluciones que se dicten en aplicación del procedimiento sancionador regulado en este título serán recurribles ante el orden jurisdiccional contencioso-administrativo."
+      }
+     ]
+    },
+    {
+     "text": "**Prescripción** (art. 32): infracciones y sanciones muy graves a los **cinco años**, graves a los **tres** y leves al **año**.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a32",
+       "quote": "El plazo de prescripción de las infracciones previstas en este título será de cinco años para las infracciones muy graves, tres años para las graves y un año para las leves."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a32",
+       "quote": "Las sanciones impuestas por la comisión de infracciones muy graves prescribirán a los cinco años, las impuestas por infracciones graves a los tres años y las que sean consecuencia de la comisión de infracciones leves prescribirán en el plazo de un año."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Consejo de Transparencia y Buen Gobierno (Título III)",
+   "points": [
+    {
+     "text": "Es un **organismo público** con **personalidad jurídica propia** y plena capacidad de obrar, que actúa con **autonomía y plena independencia**. La Ley lo adscribe al Ministerio de Hacienda y Administraciones Públicas (art. 33).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a33",
+       "quote": "Se crea el Consejo de Transparencia y Buen Gobierno como organismo público"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a33",
+       "quote": "Estará adscrito al Ministerio de Hacienda y Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a33",
+       "quote": "El Consejo de Transparencia y Buen Gobierno tiene personalidad jurídica propia y plena capacidad de obrar. Actúa con autonomía y plena independencia en el cumplimiento de sus fines."
+      }
+     ]
+    },
+    {
+     "text": "**Fines**: promover la transparencia, velar por la publicidad, salvaguardar el **derecho de acceso** y garantizar el **buen gobierno** (art. 34). Sus **órganos** son la **Comisión de Transparencia y Buen Gobierno** y el **Presidente**, que lo es también de la Comisión (art. 35).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a34",
+       "quote": "El Consejo de Transparencia y Buen Gobierno tiene por finalidad promover la transparencia de la actividad pública, velar por el cumplimiento de las obligaciones de publicidad, salvaguardar el ejercicio de derecho de acceso a la información pública y garantizar la observancia de las disposiciones de buen gobierno."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a35",
+       "quote": "La Comisión de Transparencia y Buen Gobierno."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a35",
+       "quote": "El Presidente del Consejo de Transparencia y Buen Gobierno que lo será también de su Comisión."
+      }
+     ]
+    },
+    {
+     "text": "**Composición de la Comisión** (art. 36.2), muy preguntada: **ocho miembros**, que son el **Presidente**, **un Diputado**, **un Senador** y un representante de cada uno de estos: **Tribunal de Cuentas**, **Defensor del Pueblo**, **Agencia Española de Protección de Datos**, **Secretaría de Estado de Administraciones Públicas** y **Autoridad Independiente de Responsabilidad Fiscal**. Sus miembros **no tienen dedicación exclusiva ni cobran** (salvo el Presidente).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "Dicha Comisión estará compuesta por:"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "Un representante del Tribunal de Cuentas."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "Un representante del Defensor del Pueblo."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "Un representante de la Agencia Española de Protección de Datos."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "Un representante de la Secretaría de Estado de Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "Un representante de la Autoridad Independiente de Responsabilidad Fiscal."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "no exigirá dedicación exclusiva ni dará derecho a remuneración con excepción de lo previsto en el artículo siguiente."
+      }
+     ]
+    },
+    {
+     "text": "Ojo: la **FEMP no forma parte** de la Comisión; solo puede ser convocado un representante local propuesto por ella a la **reunión anual** con los organismos autonómicos análogos (art. 36.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "Al menos una vez al año, la Comisión de Transparencia y Buen Gobierno convocará a los representantes de los organismos que, con funciones similares a las desarrolladas por ella, hayan sido creados por las Comunidades Autónomas"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a36",
+       "quote": "A esta reunión podrá ser convocado un representante de la Administración Local propuesto por la Federación Española de Municipios y Provincias."
+      }
+     ]
+    },
+    {
+     "text": "**Presidente** (art. 37): nombrado por **Real Decreto** para un periodo **no renovable de cinco años**, a propuesta del Ministro (la Ley dice «de Hacienda y Administraciones Públicas»), entre personas de reconocido prestigio, tras **comparecer** ante la Comisión del Congreso, que debe **refrendar** el nombramiento por **mayoría absoluta** en **un mes natural**. Cesa por fin del mandato, a petición propia o por **separación acordada por el Gobierno** (incumplimiento grave, incapacidad permanente, incompatibilidad sobrevenida o condena por delito doloso).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a37",
+       "quote": "será nombrado por un período no renovable de cinco años mediante Real Decreto, a propuesta del titular del Ministerio de Hacienda y Administraciones Públicas"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a37",
+       "quote": "cesará en su cargo por la expiración de su mandato, a petición propia o por separación acordada por el Gobierno"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a37",
+       "quote": "por incumplimiento grave de sus obligaciones, incapacidad permanente para el ejercicio de su función, incompatibilidad sobrevenida o condena por delito doloso."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a37",
+       "quote": "entre personas de reconocido prestigio y competencia profesional previa comparecencia de la persona propuesta para el cargo ante la Comisión correspondiente del Congreso de los Diputados."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a37",
+       "quote": "El Congreso, a través de la Comisión competente y por acuerdo adoptado por mayoría absoluta, deberá refrendar el nombramiento del candidato propuesto en el plazo de un mes natural"
+      }
+     ]
+    },
+    {
+     "text": "**Funciones del Consejo** (art. 38.1): recomendaciones, asesoramiento, **informar preceptivamente** los proyectos normativos estatales sobre transparencia, **evaluar** la aplicación de la Ley (memoria anual a las Cortes), formación y colaboración con órganos análogos.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Adoptar recomendaciones para el mejor cumplimiento de las obligaciones contenidas en esta Ley."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Informar preceptivamente los proyectos normativos de carácter estatal que desarrollen esta Ley o que estén relacionados con su objeto."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Evaluar el grado de aplicación de esta Ley."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Asesorar en materia de transparencia, acceso a la información pública y buen gobierno."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "elaborará anualmente una memoria"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Promover actividades de formación y sensibilización"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Colaborar, en las materias que le son propias, con órganos de naturaleza análoga."
+      }
+     ]
+    },
+    {
+     "text": "**Funciones del Presidente** (art. 38.2): adoptar **criterios de interpretación uniforme**, velar por la publicidad activa, **conocer de las reclamaciones** del art. 24, responder consultas, **instar el procedimiento sancionador** de buen gobierno y aprobar el anteproyecto de presupuesto.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Adoptar criterios de interpretación uniforme de las obligaciones contenidas en esta Ley."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Conocer de las reclamaciones que se presenten en aplicación del artículo 24 de esta Ley."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Instar el inicio del procedimiento sancionador previsto en el título II de esta Ley."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Velar por el cumplimiento de las obligaciones de publicidad"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Responder las consultas que, con carácter facultativo, le planteen"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Aprobar el anteproyecto de presupuesto."
+      }
+     ]
+    },
+    {
+     "text": "Eleva **anualmente a las Cortes Generales** una **memoria** de sus actividades, y su Presidente **comparece** ante la Comisión correspondiente (art. 40). Su **Estatuto** se aprueba por **Real Decreto** del Consejo de Ministros (art. 39.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a40",
+       "quote": "El Consejo de Transparencia y Buen Gobierno elevará anualmente a las Cortes Generales una memoria sobre el desarrollo de sus actividades"
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a39",
+       "quote": "El Consejo de Ministros aprobará mediante Real Decreto el Estatuto del Consejo de Transparencia y Buen Gobierno"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La Agenda 2030 y los Objetivos de Desarrollo Sostenible",
+   "points": [
+    {
+     "text": "La **Asamblea General de la ONU** adoptó la **Agenda 2030 para el Desarrollo Sostenible** el **25 de septiembre de 2015**: un plan de acción a favor de las **personas, el planeta y la prosperidad**, que también busca fortalecer la paz universal y el acceso a la justicia.",
+     "refs": [
+      {
+       "title": "La Asamblea General adopta la Agenda 2030 para el Desarrollo Sostenible · Naciones Unidas",
+       "url": "https://www.un.org/sustainabledevelopment/es/2015/09/la-asamblea-general-adopta-la-agenda-2030-para-el-desarrollo-sostenible/",
+       "quote": "25 de septiembre de 2015"
+      },
+      {
+       "title": "La Asamblea General adopta la Agenda 2030 para el Desarrollo Sostenible · Naciones Unidas",
+       "url": "https://www.un.org/sustainabledevelopment/es/2015/09/la-asamblea-general-adopta-la-agenda-2030-para-el-desarrollo-sostenible/",
+       "quote": "La Asamblea General de la ONU adoptó hoy la Agenda 2030 para el Desarrollo Sostenible, un plan de acción a favor de las personas, el planeta y la prosperidad, que también tiene la intención de fortalecer la paz universal y el acceso a la justicia."
+      }
+     ]
+    },
+    {
+     "text": "Plantea **17 Objetivos** con **169 metas** de carácter **integrado e indivisible** que abarcan las esferas **económica, social y ambiental**, y rige los programas de desarrollo mundiales durante **15 años**. Reconoce que el mayor desafío es la **erradicación de la pobreza**.",
+     "refs": [
+      {
+       "title": "La Asamblea General adopta la Agenda 2030 para el Desarrollo Sostenible · Naciones Unidas",
+       "url": "https://www.un.org/sustainabledevelopment/es/2015/09/la-asamblea-general-adopta-la-agenda-2030-para-el-desarrollo-sostenible/",
+       "quote": "La Agenda plantea 17 Objetivos con 169 metas de carácter integrado e indivisible que abarcan las esferas económica, social y ambiental."
+      },
+      {
+       "title": "La Asamblea General adopta la Agenda 2030 para el Desarrollo Sostenible · Naciones Unidas",
+       "url": "https://www.un.org/sustainabledevelopment/es/2015/09/la-asamblea-general-adopta-la-agenda-2030-para-el-desarrollo-sostenible/",
+       "quote": "La nueva estrategia regirá los programas de desarrollo mundiales durante los próximos 15 años."
+      },
+      {
+       "title": "La Asamblea General adopta la Agenda 2030 para el Desarrollo Sostenible · Naciones Unidas",
+       "url": "https://www.un.org/sustainabledevelopment/es/2015/09/la-asamblea-general-adopta-la-agenda-2030-para-el-desarrollo-sostenible/",
+       "quote": "reconocen que el mayor desafío del mundo actual es la erradicación de la pobreza"
+      }
+     ]
+    },
+    {
+     "text": "Es un compromiso **universal**, pero cada Estado tiene soberanía sobre sus recursos y **fija sus propias metas nacionales**.",
+     "refs": [
+      {
+       "title": "La Asamblea General adopta la Agenda 2030 para el Desarrollo Sostenible · Naciones Unidas",
+       "url": "https://www.un.org/sustainabledevelopment/es/2015/09/la-asamblea-general-adopta-la-agenda-2030-para-el-desarrollo-sostenible/",
+       "quote": "cada uno fijará sus propias metas nacionales, apegándose a los Objetivos de Desarrollo Sostenible (ODS)"
+      }
+     ]
+    },
+    {
+     "text": "**Los 17 ODS** (por número; preguntan cuál es uno concreto o cuál no existe):",
+     "refs": [
+      {
+       "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+       "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+       "quote": "Infografías descargables en formato PDF con los Retos relacionados a cada ODS"
+      }
+     ],
+     "items": [
+      {
+       "text": "**1** Fin de la pobreza · **2** Hambre cero · **3** Salud y bienestar · **4** Educación de calidad.",
+       "refs": [
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 1 - Fin de la pobreza"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 2 - Hambre cero"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 3 - Salud y bienestar"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 4 - Educación de calidad"
+        }
+       ]
+      },
+      {
+       "text": "**5** Igualdad de género · **6** Agua limpia y saneamiento · **7** Energía asequible y no contaminante · **8** Trabajo decente y crecimiento económico.",
+       "refs": [
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 5 - Igualdad de género"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 6 - Agua limpia y saneamiento"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 7 - Energía asequible y no contaminante"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 8 - Trabajo decente y crecimiento económico"
+        }
+       ]
+      },
+      {
+       "text": "**9** Industria, innovación e infraestructura · **10** Reducción de las desigualdades · **11** Ciudades y comunidades sostenibles · **12** Producción y consumo responsables.",
+       "refs": [
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 9 - Industria, innovación e infraestructura"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 10 - Reducción de las desigualdades"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 11 - Ciudades y comunidades sostenibles"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 12 - Producción y consumo responsables"
+        }
+       ]
+      },
+      {
+       "text": "**13** Acción por el clima · **14** Vida submarina · **15** Vida de ecosistemas terrestres · **16** Paz, justicia e instituciones sólidas · **17** Alianzas para lograr los objetivos.",
+       "refs": [
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 13 - Acción por el clima"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 14 - Vida submarina"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 15 - Vida de ecosistemas terrestres"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 16 - Paz, justicia e instituciones sólidas"
+        },
+        {
+         "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+         "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+         "quote": "ODS 17 - Alianzas para lograr los objetivos"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Trampas de examen: «Aguas residuales y saneamiento» o «Crecimiento de la producción y reducción del paro» **no son ODS** (los reales son **Agua limpia y saneamiento** y **Trabajo decente y crecimiento económico**). El **ODS 1** es **Fin de la pobreza**.",
+     "refs": [
+      {
+       "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+       "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+       "quote": "ODS 6 - Agua limpia y saneamiento"
+      },
+      {
+       "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+       "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+       "quote": "ODS 8 - Trabajo decente y crecimiento económico"
+      },
+      {
+       "title": "Los 17 Objetivos de Desarrollo Sostenible · Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+       "url": "https://www.dsca.gob.es/es/agenda-2030/materiales-y-herramientas",
+       "quote": "ODS 1 - Fin de la pobreza"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gobierno abierto: planes de acción de España",
+   "points": [
+    {
+     "text": "El **IV Plan de Gobierno Abierto 2020-2024** lo aprobó el **Foro de Gobierno Abierto** (32 representantes de las Administraciones y 32 de la sociedad civil), alineado con la Agenda 2030 y en particular con el **ODS 16**. Tenía **diez compromisos**: nueve de la AGE y uno de las Administraciones autonómicas y locales a través de la FEMP.",
+     "refs": [
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "El Pleno del Foro de Gobierno Abierto, integrado por 32 representantes de las Administraciones Públicas y otros 32 en representación de la sociedad civil"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "en particular, con su ODS 16"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "El IV Plan de Gobierno, está integrado por diez compromisos: nueve de ellos, asumidos por la Administración General del Estado y otro referido a iniciativas formuladas por las Administraciones Autonómicas y locales, a través de la FEMP."
+      }
+     ]
+    },
+    {
+     "text": "Compromisos de la AGE en el IV Plan: **reforma del marco regulatorio** de la transparencia, **mejora de la transparencia y rendición de cuentas**, **mejora de la participación ciudadana**, **huella normativa**, **sistema de integridad pública**, **protección de denunciantes**, **educación y formación**, **comunicación inclusiva** y **Observatorio de Gobierno Abierto**. (La «participación de los jóvenes en políticas públicas» **no** era un compromiso.)",
+     "refs": [
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "La reforma del marco regulatorio de la transparencia"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "Plan de mejora y refuerzo de la transparencia y la rendición de cuentas"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "Plan de mejora de la participación ciudadana"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "Huella normativa"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "Sistema de integridad pública"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "Protección de denunciantes"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "Educación y formación"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "Comunicación inclusiva en Gobierno Abierto"
+      },
+      {
+       "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+       "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02",
+       "quote": "Observatorio de Gobierno Abierto"
+      }
+     ]
+    },
+    {
+     "text": "El vigente es el **V Plan de Gobierno Abierto 2025-2029**, aprobado por el Foro de Gobierno Abierto en **Vitoria-Gasteiz** en **octubre de 2025**: **218 iniciativas** distribuidas en **diez compromisos**, para promover la **transparencia, la participación ciudadana, la integridad pública y la rendición de cuentas**. Entre ellas, un **nuevo Portal de Transparencia** y la **Estrategia Nacional Antifraude**.",
+     "refs": [
+      {
+       "title": "Nota de prensa: el Foro de Gobierno Abierto aprueba el V Plan de Gobierno Abierto · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/10/v-plan/20251007_VPLAN%20Gobierno%20Abierto.pdf",
+       "quote": "El Plan 2025-2029, aprobado por el Foro de Gobierno Abierto tras su"
+      },
+      {
+       "title": "Nota de prensa: el Foro de Gobierno Abierto aprueba el V Plan de Gobierno Abierto · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/10/v-plan/20251007_VPLAN%20Gobierno%20Abierto.pdf",
+       "quote": "Se compone de 218 iniciativas,"
+      },
+      {
+       "title": "Nota de prensa: el Foro de Gobierno Abierto aprueba el V Plan de Gobierno Abierto · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/10/v-plan/20251007_VPLAN%20Gobierno%20Abierto.pdf",
+       "quote": "distribuidas en diez compromisos"
+      },
+      {
+       "title": "Nota de prensa: el Foro de Gobierno Abierto aprueba el V Plan de Gobierno Abierto · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/10/v-plan/20251007_VPLAN%20Gobierno%20Abierto.pdf",
+       "quote": "integridad pública y la rendición de cuentas"
+      },
+      {
+       "title": "Nota de prensa: el Foro de Gobierno Abierto aprueba el V Plan de Gobierno Abierto · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/10/v-plan/20251007_VPLAN%20Gobierno%20Abierto.pdf",
+       "quote": "Estrategia Nacional Antifraude"
+      },
+      {
+       "title": "Nota de prensa: el Foro de Gobierno Abierto aprueba el V Plan de Gobierno Abierto · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/10/v-plan/20251007_VPLAN%20Gobierno%20Abierto.pdf",
+       "quote": "Vitoria-Gasteiz, 07 octubre 2025"
+      },
+      {
+       "title": "Nota de prensa: el Foro de Gobierno Abierto aprueba el V Plan de Gobierno Abierto · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/10/v-plan/20251007_VPLAN%20Gobierno%20Abierto.pdf",
+       "quote": "se va a poner en marcha un nuevo Portal de Transparencia"
+      },
+      {
+       "title": "Nota de prensa: el Foro de Gobierno Abierto aprueba el V Plan de Gobierno Abierto · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/comunicacion/comunicacion_sefp/2025/10/v-plan/20251007_VPLAN%20Gobierno%20Abierto.pdf",
+       "quote": "para promover la transparencia, la participación ciudadana"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
