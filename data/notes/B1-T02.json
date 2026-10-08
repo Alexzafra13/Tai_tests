@@ -187,12 +187,17 @@
      ]
     },
     {
-     "text": "**Senadores designados** por las Comunidades Autónomas: **uno** y otro más **por cada millón de habitantes**. Los designa la **Asamblea legislativa** o, en su defecto, el órgano colegiado superior de la Comunidad, según sus Estatutos, que aseguran la **representación proporcional** (art. 69.5).",
+     "text": "**Senadores designados** por las Comunidades Autónomas: **uno** y otro más **por cada millón de habitantes**. Los designa la **Asamblea legislativa** o, en su defecto, el órgano colegiado superior de la Comunidad, según sus Estatutos, que aseguran **en todo caso la adecuada representación proporcional** (art. 69.5).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a69",
        "quote": "Las Comunidades Autónomas designarán además un Senador y otro más por cada millón de habitantes de su respectivo territorio. La designación corresponderá a la Asamblea legislativa o, en su defecto, al órgano colegiado superior de la Comunidad Autónoma"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a69",
+       "quote": "que asegurarán, en todo caso, la adecuada representación proporcional"
       }
      ]
     },
@@ -222,22 +227,17 @@
      ],
      "items": [
       {
-       "text": "A los componentes del **Tribunal Constitucional** y al **Defensor del Pueblo**.",
+       "text": "a) A los componentes del **Tribunal Constitucional**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a70",
          "quote": "A los componentes del Tribunal Constitucional."
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a70",
-         "quote": "Al Defensor del Pueblo."
         }
        ]
       },
       {
-       "text": "A los **altos cargos** de la Administración del Estado que determine la ley, **con la excepción de los miembros del Gobierno**.",
+       "text": "b) A los **altos cargos** de la Administración del Estado que determine la ley, **con la excepción de los miembros del Gobierno**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -247,7 +247,17 @@
        ]
       },
       {
-       "text": "A los **Magistrados, Jueces y Fiscales en activo**.",
+       "text": "c) Al **Defensor del Pueblo**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a70",
+         "quote": "Al Defensor del Pueblo."
+        }
+       ]
+      },
+      {
+       "text": "d) A los **Magistrados, Jueces y Fiscales en activo**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -257,7 +267,7 @@
        ]
       },
       {
-       "text": "A los **militares profesionales** y miembros de las **Fuerzas y Cuerpos de Seguridad y Policía en activo**.",
+       "text": "e) A los **militares profesionales** y miembros de las **Fuerzas y Cuerpos de Seguridad y Policía en activo**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -267,7 +277,7 @@
        ]
       },
       {
-       "text": "A los miembros de las **Juntas Electorales**.",
+       "text": "f) A los miembros de las **Juntas Electorales**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -379,12 +389,27 @@
      ]
     },
     {
-     "text": "**Sesión conjunta** (art. 74.1): para las competencias **no legislativas** que el **Título II** (la Corona) atribuye expresamente a las Cortes Generales.",
+     "text": "**Sesión conjunta** (art. 74.1): para las competencias **no legislativas** que el **Título II** (la Corona) atribuye expresamente a las Cortes Generales; por ejemplo, proveer a la sucesión si se extinguen las líneas (art. 57.3), reconocer la inhabilitación del Rey (art. 59.2) o nombrar la Regencia (art. 59.3).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a74",
        "quote": "Las Cámaras se reunirán en sesión conjunta para ejercer las competencias no legislativas que el Título II atribuye expresamente a las Cortes Generales."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a57",
+       "quote": "Extinguidas todas las líneas llamadas en Derecho, las Cortes Generales proveerán a la sucesión en la Corona"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a59",
+       "quote": "la imposibilidad fuere reconocida por las Cortes Generales"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a59",
+       "quote": "ésta será nombrada por las Cortes Generales"
       }
      ]
     },
@@ -429,7 +454,7 @@
      ]
     },
     {
-     "text": "**Comisiones de investigación** (art. 76): el Congreso, el Senado o ambos conjuntamente pueden crearlas sobre **cualquier asunto de interés público**. Sus conclusiones **no vinculan a los Tribunales**, aunque el resultado puede comunicarse al **Ministerio Fiscal**. **Comparecer es obligatorio**.",
+     "text": "**Comisiones de investigación** (art. 76): el Congreso, el Senado o ambos conjuntamente pueden crearlas sobre **cualquier asunto de interés público**. Sus conclusiones **no vinculan a los Tribunales** ni afectan a las resoluciones judiciales, aunque el resultado puede comunicarse al **Ministerio Fiscal** para que actúe cuando proceda. **Comparecer es obligatorio**, y la ley regula las sanciones por no hacerlo.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -444,7 +469,12 @@
       {
        "law": "BOE-A-1978-31229",
        "section": "a76",
-       "quote": "Será obligatorio comparecer a requerimiento de las Cámaras."
+       "quote": "ni afectarán a las resoluciones judiciales"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a76",
+       "quote": "Será obligatorio comparecer a requerimiento de las Cámaras. La ley regulará las sanciones que puedan imponerse por incumplimiento de esta obligación."
       }
      ]
     },
@@ -516,7 +546,7 @@
      ]
     },
     {
-     "text": "**Acuerdos** (art. 79): las Cámaras deben estar reunidas reglamentariamente y con asistencia de la **mayoría de sus miembros**; los acuerdos se aprueban por **mayoría de los miembros presentes**, salvo mayorías especiales. El **voto es personal e indelegable**.",
+     "text": "**Acuerdos** (art. 79): las Cámaras deben estar reunidas reglamentariamente y con asistencia de la **mayoría de sus miembros**; los acuerdos se aprueban por **mayoría de los miembros presentes**, sin perjuicio de las mayorías especiales de la Constitución o las leyes orgánicas y de las que fijen los Reglamentos para elegir personas. El **voto es personal e indelegable**.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -526,7 +556,7 @@
       {
        "law": "BOE-A-1978-31229",
        "section": "a79",
-       "quote": "deberán ser aprobados por la mayoría de los miembros presentes"
+       "quote": "deberán ser aprobados por la mayoría de los miembros presentes, sin perjuicio de las mayorías especiales que establezcan la Constitución o las leyes orgánicas y las que para elección de personas establezcan los Reglamentos de las Cámaras"
       },
       {
        "law": "BOE-A-1978-31229",
@@ -548,10 +578,10 @@
    ]
   },
   {
-   "title": "Atribuciones: elaboración de las leyes y tratados (artículos 81 a 96)",
+   "title": "Elaboración de las leyes y tratados internacionales (artículos 81 a 96)",
    "points": [
     {
-     "text": "**Leyes orgánicas** (art. 81): las relativas al **desarrollo de los derechos fundamentales y libertades públicas**, las que aprueban los **Estatutos de Autonomía** y el **régimen electoral general**, y las demás previstas en la Constitución. Exigen **mayoría absoluta del Congreso** en una votación final sobre el conjunto del proyecto.",
+     "text": "**Leyes orgánicas** (art. 81): las relativas al **desarrollo de los derechos fundamentales y libertades públicas**, las que aprueban los **Estatutos de Autonomía** y el **régimen electoral general**, y las demás previstas en la Constitución. Su **aprobación, modificación o derogación** exige **mayoría absoluta del Congreso** en una votación final sobre el conjunto del proyecto.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -799,12 +829,17 @@
      ],
      "items": [
       {
-       "text": "Por **ley orgánica** se puede autorizar un tratado que **atribuya a una organización internacional** competencias derivadas de la Constitución (art. 93).",
+       "text": "Por **ley orgánica** se puede autorizar un tratado que **atribuya a una organización internacional** competencias derivadas de la Constitución; garantizan su cumplimiento **las Cortes Generales o el Gobierno, según los casos** (art. 93).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a93",
          "quote": "Mediante ley orgánica se podrá autorizar la celebración de tratados por los que se atribuya a una organización o institución internacional el ejercicio de competencias derivadas de la Constitución."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a93",
+         "quote": "Corresponde a las Cortes Generales o al Gobierno, según los casos, la garantía del cumplimiento de estos tratados"
         }
        ]
       },
@@ -864,7 +899,7 @@
        ]
       },
       {
-       "text": "Los tratados válidamente celebrados forman parte del **ordenamiento interno** una vez **publicados oficialmente en España**; para **denunciarlos** se usa el mismo procedimiento que para su aprobación (art. 96).",
+       "text": "Los tratados válidamente celebrados forman parte del **ordenamiento interno** una vez **publicados oficialmente en España**, y sus disposiciones solo pueden derogarse, modificarse o suspenderse según los propios tratados o las normas generales del Derecho internacional; para **denunciarlos** se usa el mismo procedimiento que para su aprobación (art. 96).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -874,14 +909,24 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a96",
+         "quote": "Sus disposiciones sólo podrán ser derogadas, modificadas o suspendidas en la forma prevista en los propios tratados o de acuerdo con las normas generales del Derecho internacional."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a96",
          "quote": "Para la denuncia de los tratados y convenios internacionales se utilizará el mismo procedimiento previsto para su aprobación en el artículo 94."
         }
        ]
       }
      ]
-    },
+    }
+   ]
+  },
+  {
+   "title": "Atribuciones exclusivas del Congreso y del Senado",
+   "points": [
     {
-     "text": "**Atribuciones propias del Congreso** frente al Senado (se estudian en el tema 3):",
+     "text": "**Del Congreso** (las relaciones con el Gobierno se estudian en el tema 3):",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -890,6 +935,16 @@
       }
      ],
      "items": [
+      {
+       "text": "**Investidura** del Presidente del Gobierno: el candidato obtiene la confianza por **mayoría absoluta** y, si no, en una nueva votación **cuarenta y ocho horas después** por **mayoría simple** (art. 99.3).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a99",
+         "quote": "Si el Congreso de los Diputados, por el voto de la mayoría absoluta de sus miembros, otorgare su confianza a dicho candidato, el Rey le nombrará Presidente. De no alcanzarse dicha mayoría, se someterá la misma propuesta a nueva votación cuarenta y ocho horas después de la anterior, y la confianza se entenderá otorgada si obtuviere la mayoría simple."
+        }
+       ]
+      },
       {
        "text": "El Gobierno **responde solidariamente** en su gestión política **ante el Congreso** (art. 108).",
        "refs": [
@@ -901,13 +956,23 @@
        ]
       },
       {
-       "text": "La **cuestión de confianza** se plantea ante el **Congreso** (art. 112) y la **moción de censura** la adopta el **Congreso por mayoría absoluta** (art. 113).",
+       "text": "**Cuestión de confianza**: la plantea el Presidente, **previa deliberación del Consejo de Ministros**, ante el Congreso, y se otorga por **mayoría simple** (art. 112).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a112",
-         "quote": "puede plantear ante el Congreso de los Diputados la cuestión de confianza"
+         "quote": "El Presidente del Gobierno, previa deliberación del Consejo de Ministros, puede plantear ante el Congreso de los Diputados la cuestión de confianza"
         },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a112",
+         "quote": "La confianza se entenderá otorgada cuando vote a favor de la misma la mayoría simple de los Diputados."
+        }
+       ]
+      },
+      {
+       "text": "**Moción de censura**: la adopta el Congreso por **mayoría absoluta** (art. 113).",
+       "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a113",
@@ -916,12 +981,22 @@
        ]
       },
       {
-       "text": "La **convalidación de los decretos-leyes** (art. 86) y la **autorización del estado de excepción** y declaración del **de sitio** (art. 116) corresponden al **Congreso**.",
+       "text": "**Convalidar o derogar los decretos-leyes** en treinta días (art. 86.2).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a86",
          "quote": "Los Decretos-leyes deberán ser inmediatamente sometidos a debate y votación de totalidad al Congreso de los Diputados"
+        }
+       ]
+      },
+      {
+       "text": "**Estados excepcionales** (art. 116): autorizar la **prórroga del de alarma**, **autorizar el de excepción** y **declarar el de sitio** por mayoría absoluta. Mientras duran, **no puede disolverse el Congreso**; si estuviera disuelto, asume sus competencias su **Diputación Permanente**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a116",
+         "quote": "sin cuya autorización no podrá ser prorrogado dicho plazo"
         },
         {
          "law": "BOE-A-1978-31229",
@@ -932,18 +1007,122 @@
          "law": "BOE-A-1978-31229",
          "section": "a116",
          "quote": "El estado de sitio será declarado por la mayoría absoluta del Congreso de los Diputados"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a116",
+         "quote": "No podrá procederse a la disolución del Congreso mientras estén declarados algunos de los estados comprendidos en el presente artículo"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a116",
+         "quote": "las competencias del Congreso serán asumidas por su Diputación Permanente"
+        }
+       ]
+      },
+      {
+       "text": "**Autorizar el referéndum consultivo** (art. 92.2) y **decidir por mayoría absoluta** si no hay acuerdo con el Senado en los casos del art. 74.2.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a92",
+         "quote": "previamente autorizada por el Congreso de los Diputados"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a74",
+         "quote": "Si no se aprueba en la forma establecida, decidirá el Congreso por mayoría absoluta."
         }
        ]
       }
      ]
     },
     {
-     "text": "**Atribución propia del Senado**: aprobar **por mayoría absoluta** las medidas del Gobierno para obligar a una **Comunidad Autónoma** que incumpla sus obligaciones o atente gravemente al interés general (art. 155).",
+     "text": "**Del Senado**:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
-       "section": "a155",
-       "quote": "con la aprobación por mayoría absoluta del Senado, podrá adoptar las medidas necesarias para obligar a aquélla al cumplimiento forzoso de dichas obligaciones"
+       "section": "a69",
+       "quote": "El Senado es la Cámara de representación territorial."
+      }
+     ],
+     "items": [
+      {
+       "text": "Aprobar **por mayoría absoluta** las medidas del Gobierno para obligar a una **Comunidad Autónoma** que incumpla sus obligaciones o atente gravemente al interés general, **previo requerimiento al Presidente de la Comunidad** que no haya sido atendido (art. 155).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a155",
+         "quote": "el Gobierno, previo requerimiento al Presidente de la Comunidad Autónoma y, en el caso de no ser atendido, con la aprobación por mayoría absoluta del Senado, podrá adoptar las medidas necesarias para obligar a aquélla al cumplimiento forzoso de dichas obligaciones"
+        }
+       ]
+      },
+      {
+       "text": "**Iniciar** el procedimiento de las decisiones de los arts. **145.2** (acuerdos de cooperación entre Comunidades) y **158.2** (Fondo de Compensación) (art. 74.2).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a74",
+         "quote": "En el primer caso, el procedimiento se iniciará por el Congreso, y en los otros dos, por el Senado."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**De ambas Cámaras: la reforma constitucional**:",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "tx",
+       "quote": "TÍTULO X. De la reforma constitucional"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Ordinaria** (art. 167): **tres quintos de cada Cámara**; sin acuerdo, una **Comisión paritaria** propone un texto; y si no, basta la **mayoría absoluta del Senado** más **dos tercios del Congreso**. Hay **referéndum** solo si lo pide **una décima parte** de los miembros de cualquier Cámara en **quince días**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a167",
+         "quote": "Los proyectos de reforma constitucional deberán ser aprobados por una mayoría de tres quintos de cada una de las Cámaras."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a167",
+         "quote": "mediante la creación de una Comisión de composición paritaria de Diputados y Senadores"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a167",
+         "quote": "siempre que el texto hubiere obtenido el voto favorable de la mayoría absoluta del Senado, el Congreso, por mayoría de dos tercios, podrá aprobar la reforma"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a167",
+         "quote": "será sometida a referéndum para su ratificación cuando así lo soliciten, dentro de los quince días siguientes a su aprobación, una décima parte de los miembros de cualquiera de las Cámaras"
+        }
+       ]
+      },
+      {
+       "text": "**Agravada** (art. 168), para la revisión total o la que afecte al Título preliminar, a la Sección 1.ª del Capítulo II del Título I o al Título II: **dos tercios** de cada Cámara, **disolución**, ratificación y nuevo texto por **dos tercios** de las nuevas Cámaras, y **referéndum obligatorio**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a168",
+         "quote": "se procederá a la aprobación del principio por mayoría de dos tercios de cada Cámara, y a la disolución inmediata de las Cortes"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a168",
+         "quote": "que deberá ser aprobado por mayoría de dos tercios de ambas Cámaras"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a168",
+         "quote": "Aprobada la reforma por las Cortes Generales, será sometida a referéndum para su ratificación."
+        }
+       ]
       }
      ]
     }
@@ -1011,6 +1190,21 @@
          "quote": "dos a propuesta del Gobierno, y dos a propuesta del Consejo General del Poder Judicial"
         }
        ]
+      },
+      {
+       "text": "Cada propuesta debe incluir **como mínimo un cuarenta por ciento de cada sexo**, y los candidatos del Congreso y del Senado **comparecen antes ante sus Comisiones** (LOTC art. 16).",
+       "refs": [
+        {
+         "law": "BOE-A-1979-23709",
+         "section": "adieciseis",
+         "quote": "de forma que aquellas incluyan como mínimo un cuarenta por ciento de cada uno de los sexos"
+        },
+        {
+         "law": "BOE-A-1979-23709",
+         "section": "adieciseis",
+         "quote": "Los candidatos propuestos por el Congreso y por el Senado deberán comparecer previamente ante las correspondientes Comisiones"
+        }
+       ]
       }
      ]
     },
@@ -1045,7 +1239,7 @@
      ]
     },
     {
-     "text": "**Incompatibilidades** (art. 159.4): con **todo mandato representativo**, con los **cargos políticos o administrativos**, con **funciones directivas en un partido o sindicato** y el empleo a su servicio, con las **carreras judicial y fiscal** y con **cualquier actividad profesional o mercantil**. En lo demás, las propias de los miembros del poder judicial. Son **independientes e inamovibles** (art. 159.5).",
+     "text": "**Incompatibilidades** (art. 159.4): con **todo mandato representativo**, con los **cargos políticos o administrativos**, con **funciones directivas en un partido o sindicato** y el empleo a su servicio, con las **carreras judicial y fiscal** y con **cualquier actividad profesional o mercantil**. En lo demás, las propias de los miembros del poder judicial. Son **independientes e inamovibles** (art. 159.5). Quien esté en causa de incompatibilidad debe cesar en ella antes de tomar posesión, en **diez días** desde la propuesta; si no, se entiende que no acepta (LOTC art. 19.2).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -1056,11 +1250,31 @@
        "law": "BOE-A-1978-31229",
        "section": "a159",
        "quote": "Los miembros del Tribunal Constitucional serán independientes e inamovibles en el ejercicio de su mandato."
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "adiecinueve",
+       "quote": "Si no lo hiciere en el plazo de diez días siguientes a la propuesta, se entenderá que no acepta el cargo de Magistrado del Tribunal Constitucional."
       }
      ]
     },
     {
-     "text": "**Presidente** (art. 160): lo nombra el **Rey entre sus miembros**, a **propuesta del Tribunal en Pleno**, por **tres años**. Se elige en votación secreta y puede ser **reelegido una sola vez**; el Pleno elige también un **Vicepresidente** por tres años (LOTC art. 9).",
+     "text": "**Cese de los Magistrados** (LOTC art. 23): lo decreta el **Presidente** en los casos de **renuncia**, **expiración del plazo** y **fallecimiento**; en los demás decide el **Pleno**, por **mayoría simple** (incapacidad e incompatibilidad sobrevenida) o por **tres cuartas partes** de sus miembros (el resto).",
+     "refs": [
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "aveintitres",
+       "quote": "El cese o la vacante en el cargo de Magistrado del Tribunal Constitucional, en los casos primero y segundo, así como en el de fallecimiento, se decretará por el Presidente."
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "aveintitres",
+       "quote": "En los restantes supuestos decidirá el Tribunal en Pleno, por mayoría simple en los casos tercero y cuarto y por mayoría de las tres cuartas partes de sus miembros en los demás casos."
+      }
+     ]
+    },
+    {
+     "text": "**Presidente** (art. 160): lo nombra el **Rey entre sus miembros**, a **propuesta del Tribunal en Pleno**, por **tres años**. Se elige en votación secreta, por **mayoría absoluta** en primera votación y, si no, resulta elegido el **más votado**; puede ser **reelegido una sola vez**. El Pleno elige también un **Vicepresidente** por tres años, que sustituye al Presidente y preside la **Sala Segunda** (LOTC art. 9).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -1075,7 +1289,17 @@
       {
        "law": "BOE-A-1979-23709",
        "section": "anoveno",
+       "quote": "En primera votación se requerirá la mayoría absoluta. Si ésta no se alcanzase se procederá a una segunda votación, en la que resultará elegido quien obtuviese mayor número de votos."
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "anoveno",
        "quote": "expirado el cual podrá ser reelegido por una sola vez"
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "anoveno",
+       "quote": "un Vicepresidente, al que incumbe sustituir al Presidente en caso de vacante, ausencia u otro motivo legal y presidir la Sala Segunda"
       }
      ]
     },
@@ -1106,6 +1330,46 @@
        "law": "BOE-A-1979-23709",
        "section": "aoctavo",
        "quote": "constituirán Secciones compuestas por el respectivo Presidente o quien le sustituya y dos Magistrados"
+      }
+     ]
+    },
+    {
+     "text": "**Reparto**: el **Pleno** conoce, entre otros, de los **tratados**, los **recursos de inconstitucionalidad** (salvo los de mera aplicación de doctrina), los **conflictos**, los **recursos previos** contra Estatutos y las **impugnaciones del art. 161.2** (LOTC art. 10). Las **Salas** conocen de lo que no sea del Pleno, sobre todo el **amparo** (LOTC art. 11).",
+     "refs": [
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "adiez",
+       "quote": "De la constitucionalidad o inconstitucionalidad de los tratados internacionales."
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "adiez",
+       "quote": "De los recursos de inconstitucionalidad contra las leyes y demás disposiciones con valor de ley, excepto los de mera aplicación de doctrina"
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "adiez",
+       "quote": "De los conflictos constitucionales de competencia entre el Estado y las Comunidades Autónomas o de los de éstas entre sí."
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "aonce",
+       "quote": "Las Salas del Tribunal Constitucional conocerán de los asuntos que, atribuidos a la justicia constitucional, no sean de la competencia del Pleno."
+      }
+     ]
+    },
+    {
+     "text": "**No se le puede plantear cuestión de jurisdicción o competencia**: él delimita su propia jurisdicción, y sus resoluciones **no pueden ser enjuiciadas por ningún órgano jurisdiccional** (LOTC art. 4).",
+     "refs": [
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "acuarto",
+       "quote": "En ningún caso se podrá promover cuestión de jurisdicción o competencia al Tribunal Constitucional."
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "acuarto",
+       "quote": "Las resoluciones del Tribunal Constitucional no podrán ser enjuiciadas por ningún órgano jurisdiccional del Estado."
       }
      ]
     },
@@ -1145,7 +1409,7 @@
        ]
       },
       {
-       "text": "Los **conflictos de competencia** entre el **Estado y las Comunidades Autónomas** o de estas entre sí; los **conflictos entre órganos constitucionales** del Estado; y los **conflictos en defensa de la autonomía local**.",
+       "text": "Los **conflictos de competencia** entre el **Estado y las Comunidades Autónomas** o de estas entre sí; los **conflictos entre órganos constitucionales**, que oponen al **Gobierno con el Congreso, el Senado o el Consejo General del Poder Judicial**, o a estos entre sí; y los **conflictos en defensa de la autonomía local**, que plantean municipios y provincias (LOTC art. 59).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1161,6 +1425,16 @@
          "law": "BOE-A-1979-23709",
          "section": "asegundo",
          "quote": "De los conflictos en defensa de la autonomía local."
+        },
+        {
+         "law": "BOE-A-1979-23709",
+         "section": "acincuentaynueve",
+         "quote": "Al Gobierno con el Congreso de los Diputados, el Senado o el Consejo General del Poder Judicial; o a cualquiera de estos órganos constitucionales entre sí."
+        },
+        {
+         "law": "BOE-A-1979-23709",
+         "section": "acincuentaynueve",
+         "quote": "conflictos en defensa de la autonomía local que planteen los municipios y provincias frente al Estado o a una Comunidad Autónoma"
         }
        ]
       },
@@ -1185,7 +1459,7 @@
        ]
       },
       {
-       "text": "La **impugnación por el Gobierno** de disposiciones y resoluciones de las **Comunidades Autónomas**: produce su **suspensión**, que el Tribunal debe **ratificar o levantar en cinco meses** como máximo (art. 161.2). El Gobierno tiene **dos meses** desde su publicación (LOTC art. 76).",
+       "text": "La **impugnación por el Gobierno** de disposiciones y resoluciones de las **Comunidades Autónomas** (art. 161.2): produce su **suspensión**, que el Tribunal, en su caso, debe **ratificar o levantar en un plazo no superior a cinco meses**. Para las disposiciones **sin fuerza de ley** y resoluciones, el Gobierno tiene **dos meses** desde su publicación o, en su defecto, desde que las conoce (LOTC art. 76). Contra **leyes autonómicas** usa el **recurso de inconstitucionalidad** y, si invoca el art. 161.2, la ley queda suspendida (LOTC art. 30).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1195,7 +1469,12 @@
         {
          "law": "BOE-A-1979-23709",
          "section": "asetentayseis",
-         "quote": "Dentro de los dos meses siguientes a la fecha de su publicación"
+         "quote": "Dentro de los dos meses siguientes a la fecha de su publicación o, en defecto de la misma, desde que llegare a su conocimiento, el Gobierno podrá impugnar ante el Tribunal Constitucional las disposiciones normativas sin fuerza de Ley y resoluciones emanadas de cualquier órgano de las Comunidades Autónomas."
+        },
+        {
+         "law": "BOE-A-1979-23709",
+         "section": "atreinta",
+         "quote": "excepto en el caso en que el Gobierno se ampare en lo dispuesto por el artículo ciento sesenta y uno, dos, de la Constitución"
         }
        ]
       }
@@ -1212,17 +1491,22 @@
      ],
      "items": [
       {
-       "text": "**Legitimados** (art. 162.1.a): el **Presidente del Gobierno**, el **Defensor del Pueblo**, **50 Diputados**, **50 Senadores**, los **órganos colegiados ejecutivos** de las Comunidades Autónomas y, en su caso, sus **Asambleas**.",
+       "text": "**Legitimados** (art. 162.1.a): el **Presidente del Gobierno**, el **Defensor del Pueblo**, **50 Diputados**, **50 Senadores**, los **órganos colegiados ejecutivos** de las Comunidades Autónomas y, en su caso, sus **Asambleas**. Estos últimos solo contra **leyes del Estado que afecten a su propio ámbito de autonomía** y **previo acuerdo** (LOTC art. 32.2).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a162",
          "quote": "Para interponer el recurso de inconstitucionalidad, el Presidente del Gobierno, el Defensor del Pueblo, 50 Diputados, 50 Senadores, los órganos colegiados ejecutivos de las Comunidades Autónomas y, en su caso, las Asambleas de las mismas."
+        },
+        {
+         "law": "BOE-A-1979-23709",
+         "section": "atreintaydos",
+         "quote": "Para el ejercicio del recurso de inconstitucionalidad contra las Leyes, disposiciones o actos con fuerza de Ley del Estado que puedan afectar a su propio ámbito de autonomía, están también legitimados los órganos colegiados ejecutivos y las Asambleas de las Comunidades Autónomas, previo acuerdo adoptado al efecto."
         }
        ]
       },
       {
-       "text": "**Plazo**: **tres meses** desde la publicación de la ley (LOTC art. 33.1), ampliable a **nueve meses** para el Presidente del Gobierno y los ejecutivos autonómicos si se reúne la **Comisión Bilateral** y acuerdan negociar (art. 33.2).",
+       "text": "**Plazo**: **tres meses** desde la publicación de la ley (LOTC art. 33.1), ampliable a **nueve meses** para el Presidente del Gobierno y los ejecutivos autonómicos si se reúne la **Comisión Bilateral**, acuerda iniciar negociaciones y lo comunica al Tribunal **dentro de los tres meses** siguientes a la publicación, publicándose el acuerdo (art. 33.2). La admisión del recurso **no suspende la ley**, salvo la invocación del art. 161.2 (LOTC art. 30).",
        "refs": [
         {
          "law": "BOE-A-1979-23709",
@@ -1233,6 +1517,16 @@
          "law": "BOE-A-1979-23709",
          "section": "atreintaytres",
          "quote": "podrán interponer el recurso de inconstitucionalidad en el plazo de nueve meses"
+        },
+        {
+         "law": "BOE-A-1979-23709",
+         "section": "atreintaytres",
+         "quote": "Que el acuerdo sea puesto en conocimiento del Tribunal Constitucional por los órganos anteriormente mencionados dentro de los tres meses siguientes a la publicación"
+        },
+        {
+         "law": "BOE-A-1979-23709",
+         "section": "atreinta",
+         "quote": "La admisión de un recurso o de una cuestión de inconstitucionalidad no suspenderá la vigencia ni la aplicación de la Ley"
         }
        ]
       },
@@ -1259,7 +1553,7 @@
      ]
     },
     {
-     "text": "**Cuestión de inconstitucionalidad** (art. 163): la plantea un **órgano judicial** cuando una norma con rango de ley **aplicable al caso** y de cuya validez dependa el fallo pueda ser inconstitucional; sus efectos **en ningún caso son suspensivos**. Según la LOTC, se plantea **concluso el procedimiento** y dentro del plazo para dictar sentencia.",
+     "text": "**Cuestión de inconstitucionalidad** (art. 163): la plantea un **juez o tribunal**, de oficio o a instancia de parte, cuando una norma con rango de ley **aplicable al caso** y de cuya validez dependa el fallo pueda ser inconstitucional. Se plantea **concluso el procedimiento** y dentro del plazo para dictar sentencia (LOTC art. 35). **No suspende la vigencia de la ley** (art. 163 y LOTC art. 30), pero **sí el proceso judicial**: provisionalmente hasta la admisión y, admitida, hasta que el Tribunal resuelva (LOTC art. 35.3).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -1274,7 +1568,17 @@
       {
        "law": "BOE-A-1979-23709",
        "section": "atreintaycinco",
+       "quote": "Cuando un Juez o Tribunal, de oficio o a instancia de parte"
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "atreintaycinco",
        "quote": "El órgano judicial sólo podrá plantear la cuestión una vez concluso el procedimiento y dentro del plazo para dictar sentencia"
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "atreintaycinco",
+       "quote": "El planteamiento de la cuestión de constitucionalidad originará la suspensión provisional de las actuaciones en el proceso judicial hasta que el Tribunal Constitucional se pronuncie sobre su admisión. Producida ésta el proceso judicial permanecerá suspendido hasta que el Tribunal Constitucional resuelva definitivamente sobre la cuestión."
       }
      ]
     },
@@ -1314,7 +1618,7 @@
        ]
       },
       {
-       "text": "**Plazos** (LOTC): **tres meses** contra actos sin valor de ley de las **Cortes o Asambleas** (art. 42); **veinte días** contra actos del **Gobierno** o la Administración, una vez agotada la vía judicial (art. 43); y **30 días** contra actos de **órganos judiciales** (art. 44).",
+       "text": "**Plazos** (LOTC): **tres meses** contra actos sin valor de ley de las **Cortes o Asambleas**, desde que son firmes (art. 42); **veinte días** contra actos del **Gobierno** o la Administración, una vez agotada la vía judicial y desde la notificación de la resolución judicial previa (art. 43); y **30 días** contra actos de **órganos judiciales**, desde la notificación de la resolución (art. 44).",
        "refs": [
         {
          "law": "BOE-A-1979-23709",
@@ -1356,7 +1660,7 @@
      ]
     },
     {
-     "text": "**Sentencias** (art. 164): se publican en el **BOE** con los **votos particulares**; tienen valor de **cosa juzgada** desde el **día siguiente a su publicación** y **no cabe recurso** contra ellas. Las que declaran inconstitucional una norma con fuerza de ley tienen **plenos efectos frente a todos**, y la ley **subsiste en la parte no afectada**, salvo que el fallo diga otra cosa.",
+     "text": "**Sentencias** (art. 164): se publican en el **BOE** con los **votos particulares**, si los hubiere; tienen valor de **cosa juzgada** desde el **día siguiente a su publicación** y **no cabe recurso** contra ellas. Tienen **plenos efectos frente a todos** las que declaran inconstitucional una ley o norma con fuerza de ley y **todas las que no se limiten a la estimación subjetiva de un derecho**; la ley **subsiste en la parte no afectada**, salvo que el fallo diga otra cosa.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -1366,7 +1670,7 @@
       {
        "law": "BOE-A-1978-31229",
        "section": "a164",
-       "quote": "tienen plenos efectos frente a todos"
+       "quote": "Las que declaren la inconstitucionalidad de una ley o de una norma con fuerza de ley y todas las que no se limiten a la estimación subjetiva de un derecho, tienen plenos efectos frente a todos."
       },
       {
        "law": "BOE-A-1978-31229",
@@ -1441,8 +1745,13 @@
        ]
       },
       {
-       "text": "Es designado quien obtenga **tres quintos del Congreso** y después, en un **máximo de veinte días**, la ratificación por la **misma mayoría del Senado**.",
+       "text": "Propuesto el candidato, el Pleno del Congreso se convoca en un plazo **no inferior a diez días**. Es designado quien obtenga **tres quintos del Congreso** y después, en un **máximo de veinte días**, la ratificación por la **misma mayoría del Senado**.",
        "refs": [
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "asegundo",
+         "quote": "se convocará en término no inferior a diez días al Pleno del Congreso para que proceda a su elección"
+        },
         {
          "law": "BOE-A-1981-10325",
          "section": "asegundo",
@@ -1451,8 +1760,13 @@
        ]
       },
       {
-       "text": "Si no se alcanzan, en nuevas propuestas basta, tras los **tres quintos del Congreso**, la **mayoría absoluta del Senado**.",
+       "text": "Si no se alcanzan, la Comisión formula nuevas propuestas en el plazo **máximo de un mes**, y basta, tras los **tres quintos del Congreso**, la **mayoría absoluta del Senado**.",
        "refs": [
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "asegundo",
+         "quote": "en el plazo máximo de un mes, a formular sucesivas propuestas"
+        },
         {
          "law": "BOE-A-1981-10325",
          "section": "asegundo",
@@ -1488,7 +1802,7 @@
      ]
     },
     {
-     "text": "**Cese** (art. 5): por **renuncia**, **expiración del plazo**, **muerte o incapacidad sobrevenida**, **notoria negligencia** o **condena firme por delito doloso**. Declara la vacante el **Presidente del Congreso** en los casos de muerte, renuncia y expiración; en los demás deciden **tres quintos de cada Cámara**, con audiencia del interesado. Mientras tanto, le sustituyen interinamente los **Adjuntos** por su orden.",
+     "text": "**Cese** (art. 5): por **renuncia**, **expiración del plazo**, **muerte o incapacidad sobrevenida**, **notoria negligencia** o **condena firme por delito doloso**. La vacante la declara el **Presidente del Congreso** solo en los casos de **muerte, renuncia y expiración del plazo**; en los demás (incapacidad, negligencia y condena) deciden **tres quintas partes de los componentes de cada Cámara**, mediante debate y previa audiencia del interesado. El nuevo nombramiento se inicia en **un mes** como máximo, y en caso de muerte, cese o incapacidad, hasta la nueva designación, desempeñan sus funciones **interinamente los Adjuntos**, por su orden.",
      "refs": [
       {
        "law": "BOE-A-1981-10325",
@@ -1518,7 +1832,12 @@
       {
        "law": "BOE-A-1981-10325",
        "section": "aquinto",
-       "quote": "La vacante en el cargo se declarará por el Presidente del Congreso en los casos de muerte, renuncia y expiración del plazo del mandato. En los demás casos se decidirá, por mayoría de las tres quintas partes de los componentes de cada Cámara"
+       "quote": "La vacante en el cargo se declarará por el Presidente del Congreso en los casos de muerte, renuncia y expiración del plazo del mandato. En los demás casos se decidirá, por mayoría de las tres quintas partes de los componentes de cada Cámara, mediante debate y previa audiencia del interesado."
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "aquinto",
+       "quote": "Vacante el cargo se iniciará el procedimiento para el nombramiento de nuevo Defensor del Pueblo en plazo no superior a un mes."
       },
       {
        "law": "BOE-A-1981-10325",
@@ -1528,7 +1847,7 @@
      ]
     },
     {
-     "text": "**Prerrogativas** (art. 6): **no está sujeto a mandato imperativo** ni recibe instrucciones de ninguna autoridad; goza de **inviolabilidad** por sus opiniones y actos en el ejercicio del cargo; solo puede ser detenido en **flagrante delito**, y decide sobre su inculpación y juicio la **Sala de lo Penal del Tribunal Supremo**.",
+     "text": "**Prerrogativas** (art. 6): **no está sujeto a mandato imperativo** ni recibe instrucciones de ninguna autoridad; goza de **inviolabilidad** por sus opiniones y actos en el ejercicio del cargo; en los demás casos, mientras ejerce sus funciones, solo puede ser detenido en **flagrante delito**, y decide sobre su inculpación y juicio la **Sala de lo Penal del Tribunal Supremo**. Estas reglas se aplican también a los **Adjuntos**.",
      "refs": [
       {
        "law": "BOE-A-1981-10325",
@@ -1543,12 +1862,17 @@
       {
        "law": "BOE-A-1981-10325",
        "section": "asexto",
-       "quote": "no podrá ser detenido ni retenido sino en caso de flagrante delito, correspondiendo la decisión sobre su inculpación, prisión, procesamiento y juicio exclusivamente a la Sala de lo Penal del Tribunal Supremo"
+       "quote": "En los demás casos, y mientras permanezca en el ejercicio de sus funciones, el Defensor del Pueblo no podrá ser detenido ni retenido sino en caso de flagrante delito, correspondiendo la decisión sobre su inculpación, prisión, procesamiento y juicio exclusivamente a la Sala de lo Penal del Tribunal Supremo."
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "asexto",
+       "quote": "Las anteriores reglas serán aplicables a los Adjuntos del Defensor del Pueblo en el cumplimiento de sus funciones."
       }
      ]
     },
     {
-     "text": "**Incompatibilidades** (art. 7): con **todo mandato representativo**, **cargo político** o propaganda política, el **servicio activo** en cualquier Administración, la **afiliación a un partido** o funciones directivas en partidos, sindicatos, asociaciones o fundaciones, las **carreras judicial y fiscal** y cualquier actividad **profesional, liberal, mercantil o laboral**. Debe cesar en ellas **en diez días** desde su nombramiento.",
+     "text": "**Incompatibilidades** (art. 7): con **todo mandato representativo**, **cargo político** o propaganda política, el **servicio activo** en cualquier Administración, la **afiliación a un partido** o funciones directivas en partidos, sindicatos, asociaciones o fundaciones y el empleo a su servicio, las **carreras judicial y fiscal** y cualquier actividad **profesional, liberal, mercantil o laboral**. Debe cesar en ellas **en diez días** desde su nombramiento y antes de tomar posesión; si no, se entiende que **no acepta** el nombramiento. Una incompatibilidad **sobrevenida** equivale a **renuncia**.",
      "refs": [
       {
        "law": "BOE-A-1981-10325",
@@ -1563,12 +1887,22 @@
       {
        "law": "BOE-A-1981-10325",
        "section": "aseptimo",
-       "quote": "El Defensor del Pueblo deberá cesar, dentro de los diez días siguientes a su nombramiento y antes de tomar posesión, en toda situación de incompatibilidad"
+       "quote": "en un sindicato, asociación o fundación, y con el empleo al servicio de los mismos"
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "aseptimo",
+       "quote": "El Defensor del Pueblo deberá cesar, dentro de los diez días siguientes a su nombramiento y antes de tomar posesión, en toda situación de incompatibilidad que pudiera afectarle, entendiéndose en caso contrario que no acepta el nombramiento."
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "aseptimo",
+       "quote": "Si la incompatibilidad fuere sobrevenida una vez posesionado del cargo, se entenderá que renuncia al mismo"
       }
      ]
     },
     {
-     "text": "**Adjuntos** (art. 8): un **Adjunto Primero** y un **Adjunto Segundo**, en los que puede delegar y que le sustituyen por su orden; los **nombra y separa el Defensor**, **previa conformidad de las Cámaras**, y su nombramiento se publica en el BOE.",
+     "text": "**Adjuntos** (art. 8): un **Adjunto Primero** y un **Adjunto Segundo**, en los que puede delegar y que le sustituyen por su orden; los **nombra y separa el Defensor**, **previa conformidad de las Cámaras**, que da la **Comisión Mixta Congreso-Senado**; su nombramiento se publica en el BOE. Tienen sus mismos **requisitos, prerrogativas e incompatibilidades** y **cesan cuando toma posesión un nuevo Defensor**.",
      "refs": [
       {
        "law": "BOE-A-1981-10325",
@@ -1579,6 +1913,21 @@
        "law": "BOE-A-1981-10325",
        "section": "aoctavo",
        "quote": "El Defensor del Pueblo nombrará y separará a sus Adjuntos previa conformidad de las Cámaras"
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "asegundo",
+       "quote": "para otorgar su conformidad previa al nombramiento de los adjuntos que le sean propuestos por aquél"
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "aoctavo",
+       "quote": "A los Adjuntos les será de aplicación lo dispuesto para el Defensor del Pueblo en los artículos tercero, sexto y séptimo de la presente Ley."
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "atreintayseis",
+       "quote": "Los adjuntos y asesores cesarán automáticamente en el momento de la toma de posesión de un nuevo Defensor del Pueblo"
       }
      ]
     },
@@ -1623,6 +1972,16 @@
        ]
       },
       {
+       "text": "También pueden pedir su intervención, por escrito motivado, los **Diputados y Senadores individualmente**, las **comisiones de investigación** o de defensa de derechos y, principalmente, la **Comisión Mixta** de relaciones con el Defensor (art. 10.2).",
+       "refs": [
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "adiez",
+         "quote": "Los Diputados y Senadores individualmente, las comisiones de investigación o relacionadas con la defensa general o parcial de los derechos y libertades públicas y, principalmente, la Comisión Mixta Congreso-Senado de relaciones con el Defensor del Pueblo podrán solicitar, mediante escrito motivado, la intervención del Defensor del Pueblo"
+        }
+       ]
+      },
+      {
        "text": "Su actividad **no se interrumpe** si las Cortes no están reunidas, se han disuelto o ha expirado su mandato (se dirige entonces a las **Diputaciones Permanentes**), ni durante los **estados de excepción o de sitio** (art. 11).",
        "refs": [
         {
@@ -1643,6 +2002,26 @@
        ]
       },
       {
+       "text": "Puede **supervisar por sí mismo la actividad de las Comunidades Autónomas**, cuyos órganos similares coordinan sus funciones con él (art. 12), y vela por los derechos en la **Administración Militar**, sin interferir en el mando de la Defensa Nacional (art. 14).",
+       "refs": [
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "adoce",
+         "quote": "El Defensor del Pueblo podrá, en todo caso, de oficio o a instancia de parte, supervisar por sí mismo la actividad de la Comunidad Autónoma"
+        },
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "adoce",
+         "quote": "los órganos similares de las Comunidades Autónomas coordinarán sus funciones con las del Defensor del Pueblo"
+        },
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "acatorce",
+         "quote": "en el ámbito de la Administración Militar, sin que ella pueda entrañar una interferencia en el mando de la Defensa Nacional"
+        }
+       ]
+      },
+      {
        "text": "Las quejas sobre la **Administración de Justicia** las dirige al **Ministerio Fiscal** o al **Consejo General del Poder Judicial** (art. 13).",
        "refs": [
         {
@@ -1653,7 +2032,7 @@
        ]
       },
       {
-       "text": "**Quejas**: firmadas, con nombre, apellidos y domicilio, en escrito razonado y en el plazo máximo de **un año** desde que se conocieron los hechos; son **gratuitas** y **no exigen abogado ni procurador** (art. 15). Rechaza las **anónimas**, no entra en las que tengan **resolución judicial pendiente** y sus decisiones **no admiten recurso** (art. 17).",
+       "text": "**Quejas**: firmadas, con nombre, apellidos y domicilio, en escrito razonado y en el plazo máximo de **un año** desde que se conocieron los hechos; son **gratuitas** y **no exigen abogado ni procurador** (art. 15). Las registra y tramita o rechaza, en este caso **en escrito motivado**. **Rechaza las anónimas** y **puede rechazar** las de mala fe, sin fundamento o sin pretensión. **No entra** en las que tengan **resolución judicial pendiente** y suspende su examen si se interpone demanda o recurso, aunque puede investigar los **problemas generales** planteados. Sus decisiones **no admiten recurso** (art. 17). La correspondencia que se le envía desde **centros de detención** no puede ser censurada (art. 16).",
        "refs": [
         {
          "law": "BOE-A-1981-10325",
@@ -1673,7 +2052,27 @@
         {
          "law": "BOE-A-1981-10325",
          "section": "adiecisiete",
-         "quote": "El Defensor del Pueblo rechazará las quejas anónimas"
+         "quote": "que tramitará o rechazará. En este último caso lo hará en escrito motivado"
+        },
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "adiecisiete",
+         "quote": "lo suspenderá si, iniciada su actuación, se interpusiere por persona interesada demanda o recurso"
+        },
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "adiecisiete",
+         "quote": "Ello no impedirá, sin embargo, la investigación sobre los problemas generales planteados en las quejas presentadas."
+        },
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "adiecisiete",
+         "quote": "El Defensor del Pueblo rechazará las quejas anónimas y podrá rechazar aquellas en las que advierta mala fe, carencia de fundamento, inexistencia de pretensión"
+        },
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "adieciseis",
+         "quote": "La correspondencia dirigida al Defensor del Pueblo y que sea remitida desde cualquier centro de detención, internamiento o custodia de las personas no podrá ser objeto de censura de ningún tipo."
         },
         {
          "law": "BOE-A-1981-10325",
@@ -1683,8 +2082,13 @@
        ]
       },
       {
-       "text": "Todos los poderes públicos deben **auxiliarle con carácter preferente y urgente** (art. 19). Pide al organismo afectado un **informe escrito en quince días** (art. 18).",
+       "text": "Admitida la queja, pide al organismo afectado un **informe escrito en quince días**, plazo **ampliable** (art. 18). Todos los poderes públicos deben **auxiliarle con carácter preferente y urgente** (art. 19). Puede pedir **documentos secretos**: no remitirlos debe **acordarlo el Consejo de Ministros** (art. 22). Puede ejercitar **de oficio la acción de responsabilidad** contra autoridades y funcionarios (art. 26).",
        "refs": [
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "adieciocho",
+         "quote": "en el plazo máximo de quince días, se remita informe escrito. Tal plazo será ampliable"
+        },
         {
          "law": "BOE-A-1981-10325",
          "section": "adiecinueve",
@@ -1692,8 +2096,13 @@
         },
         {
          "law": "BOE-A-1981-10325",
-         "section": "adieciocho",
-         "quote": "en el plazo máximo de quince días, se remita informe escrito"
+         "section": "aveintidos",
+         "quote": "la no remisión de dichos documentos deberá ser acordada por el Consejo de Ministros"
+        },
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "aveintiseis",
+         "quote": "El Defensor del Pueblo podrá, de oficio, ejercitar la acción de responsabilidad contra todas las autoridades, funcionarios y agentes civiles del orden gubernativo o administrativo"
         }
        ]
       }
@@ -1710,12 +2119,17 @@
      ],
      "items": [
       {
-       "text": "**No puede modificar ni anular** actos de la Administración, pero puede **sugerir** que cambien los criterios o la norma (art. 28).",
+       "text": "**No puede modificar ni anular** actos de la Administración, pero puede **sugerir** que cambien los criterios con que se dictan (art. 28.1) y, si el cumplimiento riguroso de una norma provoca situaciones injustas, sugerir su modificación **al órgano legislativo competente o a la Administración** (art. 28.2).",
        "refs": [
         {
          "law": "BOE-A-1981-10325",
          "section": "aveintiocho",
          "quote": "El Defensor del Pueblo, aun no siendo competente para modificar o anular los actos y resoluciones de la Administración Pública, podrá, sin embargo, sugerir la modificación de los criterios utilizados para la producción de aquéllos."
+        },
+        {
+         "law": "BOE-A-1981-10325",
+         "section": "aveintiocho",
+         "quote": "podrá sugerir al órgano legislativo competente o a la Administración la modificación de la misma"
         }
        ]
       },
@@ -1747,7 +2161,7 @@
      ]
     },
     {
-     "text": "**Informes a las Cortes** (arts. 32 y 33): un **informe anual**, presentado en periodo ordinario de sesiones, y **extraordinarios** cuando la gravedad o urgencia lo aconseje (a las Diputaciones Permanentes si las Cámaras no están reunidas). Se **publican**, y un resumen se expone **oralmente ante los Plenos** de ambas Cámaras.",
+     "text": "**Informes a las Cortes** (arts. 32 y 33): un **informe anual**, presentado en periodo ordinario de sesiones, y **extraordinarios** cuando la gravedad o urgencia lo aconseje (a las Diputaciones Permanentes si las Cámaras no están reunidas). El anual recoge el número y tipo de quejas, las rechazadas y sus causas y el resultado de las investigaciones, **sin datos personales** que identifiquen a los interesados. Se **publican**, y un resumen se expone **oralmente ante los Plenos** de ambas Cámaras.",
      "refs": [
       {
        "law": "BOE-A-1981-10325",
@@ -1763,6 +2177,16 @@
        "law": "BOE-A-1981-10325",
        "section": "atreintaydos",
        "quote": "Los informes anuales y, en su caso los extraordinarios, serán publicados."
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "atreintaytres",
+       "quote": "dará cuenta del número y tipo de quejas presentadas; de aquellas que hubiesen sido rechazadas y sus causas"
+      },
+      {
+       "law": "BOE-A-1981-10325",
+       "section": "atreintaytres",
+       "quote": "En el informe no constarán datos personales que permitan la pública identificación de los interesados"
       },
       {
        "law": "BOE-A-1981-10325",
