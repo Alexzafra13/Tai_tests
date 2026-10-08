@@ -191,20 +191,20 @@ func syncBankQuestions(ctx context.Context, tx *sql.Tx, f BankFile, res *BankRes
 	for _, q := range f.Questions {
 		var id int64
 		var cur Question
-		var created, updated string
+		var edited bool
 		err := tx.QueryRowContext(ctx, `SELECT q.id, q.stem, q.option_a, q.option_b, q.option_c, q.option_d, q.correct,
-			q.explanation, q.status, q.annulled, q.created_at, q.updated_at
+			q.explanation, q.status, q.annulled, q.edited
 			FROM questions q JOIN sources s ON s.id = q.source_id
 			WHERE s.kind = ? AND s.reference = ? AND q.source_ref = ?`, f.Source.Kind, f.Source.Reference, q.SourceRef).Scan(
 			&id, &cur.Stem, &cur.Options[0], &cur.Options[1], &cur.Options[2], &cur.Options[3], &cur.Correct,
-			&cur.Explanation, &cur.Status, &cur.Annulled, &created, &updated)
+			&cur.Explanation, &cur.Status, &cur.Annulled, &edited)
 		if errors.Is(err, sql.ErrNoRows) {
 			continue // deleted in this installation
 		} else if err != nil {
 			return err
 		}
 		correct, _ := CorrectIndex(q.Correct)
-		if created == updated && cur.Stem == q.Stem && cur.Options == q.Options && cur.Correct == correct {
+		if !edited && cur.Stem == q.Stem && cur.Options == q.Options && cur.Correct == correct {
 			if err := syncBankQuestion(ctx, tx, id, cur, q, topics, res); err != nil {
 				return err
 			}
@@ -303,8 +303,7 @@ func (s *Store) loadBankFile(ctx context.Context, tx *sql.Tx, f BankFile, res *B
 }
 
 // syncBankQuestion applies the bank's explanation, topics, status and
-// annulment to a question nobody has edited, keeping updated_at so later
-// versions of the bank can still update it.
+// annulment to a question nobody has edited here.
 func syncBankQuestion(ctx context.Context, tx *sql.Tx, id int64, cur Question, q BankQuestion,
 	topics map[string]int64, res *BankResult) error {
 	var ids []int64

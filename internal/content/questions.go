@@ -276,7 +276,7 @@ func (s *Store) updateQuestion(ctx context.Context, tx *sql.Tx, id int64, in Que
 			OR option_d <> ?5 OR correct <> ?6),
 		stem = ?1, option_a = ?2, option_b = ?3, option_c = ?4, option_d = ?5, correct = ?6,
 		explanation = ?7, origin = ?8, author = ?9, source_id = ?10, source_ref = ?11,
-		source_quote = ?12, status = ?13, annulled = ?14, fixed_order = ?15, updated_at = ?16
+		source_quote = ?12, status = ?13, annulled = ?14, fixed_order = ?15, updated_at = ?16, edited = 1
 		WHERE id = ?17`,
 		in.Stem, in.Options[0], in.Options[1], in.Options[2], in.Options[3], in.Correct,
 		in.Explanation, in.Origin, in.Author, in.SourceID, in.SourceRef, in.SourceQuote, in.Status,
