@@ -991,7 +991,7 @@
        ]
       },
       {
-       "text": "**Estados excepcionales** (art. 116): autorizar la **prórroga del de alarma**, **autorizar el de excepción** y **declarar el de sitio** por mayoría absoluta. Mientras duran, **no puede disolverse el Congreso**; si estuviera disuelto, asume sus competencias su **Diputación Permanente**.",
+       "text": "**Estados excepcionales** (art. 116): autorizar la **prórroga del de alarma**, **autorizar el de excepción** y **declarar por mayoría absoluta el de sitio**. Mientras duran, **no puede disolverse el Congreso**; si está disuelto o ha expirado su mandato, asume sus competencias su **Diputación Permanente**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1334,7 +1334,7 @@
      ]
     },
     {
-     "text": "**Reparto**: el **Pleno** conoce, entre otros, de los **tratados**, los **recursos de inconstitucionalidad** (salvo los de mera aplicación de doctrina), los **conflictos**, los **recursos previos** contra Estatutos y las **impugnaciones del art. 161.2** (LOTC art. 10). Las **Salas** conocen de lo que no sea del Pleno, sobre todo el **amparo** (LOTC art. 11).",
+     "text": "**Reparto**: el **Pleno** conoce, entre otros, de los **tratados**, los **recursos de inconstitucionalidad** (salvo los de mera aplicación de doctrina), los **conflictos**, los **recursos previos** contra Estatutos y las **impugnaciones del art. 161.2** (LOTC art. 10). Del resto de cuestiones de inconstitucionalidad conocen las Salas por turno, y al admitir conflictos Estado-Comunidades, impugnaciones del art. 161.2 o conflictos en defensa de la autonomía local, el Pleno puede atribuir la decisión de fondo a una **Sala**. Las Salas conocen de lo que no sea del Pleno, sobre todo el **amparo** (LOTC arts. 10 y 11).",
      "refs": [
       {
        "law": "BOE-A-1979-23709",
@@ -1350,6 +1350,16 @@
        "law": "BOE-A-1979-23709",
        "section": "adiez",
        "quote": "De los conflictos constitucionales de competencia entre el Estado y las Comunidades Autónomas o de los de éstas entre sí."
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "adiez",
+       "quote": "De las cuestiones de constitucionalidad que reserve para sí; las demás deberán deferirse a las Salas según un turno objetivo."
+      },
+      {
+       "law": "BOE-A-1979-23709",
+       "section": "adiez",
+       "quote": "en el trámite de admisión la decisión de fondo podrá atribuirse a la Sala que corresponda según un turno objetivo"
       },
       {
        "law": "BOE-A-1979-23709",
@@ -1491,7 +1501,7 @@
      ],
      "items": [
       {
-       "text": "**Legitimados** (art. 162.1.a): el **Presidente del Gobierno**, el **Defensor del Pueblo**, **50 Diputados**, **50 Senadores**, los **órganos colegiados ejecutivos** de las Comunidades Autónomas y, en su caso, sus **Asambleas**. Estos últimos solo contra **leyes del Estado que afecten a su propio ámbito de autonomía** y **previo acuerdo** (LOTC art. 32.2).",
+       "text": "**Legitimados** (art. 162.1.a): el **Presidente del Gobierno**, el **Defensor del Pueblo**, **50 Diputados**, **50 Senadores**, los **órganos colegiados ejecutivos** de las Comunidades Autónomas y, en su caso, sus **Asambleas**. Estos últimos solo contra **leyes, disposiciones o actos con fuerza de ley del Estado que puedan afectar a su propio ámbito de autonomía** y **previo acuerdo** (LOTC art. 32.2).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1902,7 +1912,7 @@
      ]
     },
     {
-     "text": "**Adjuntos** (art. 8): un **Adjunto Primero** y un **Adjunto Segundo**, en los que puede delegar y que le sustituyen por su orden; los **nombra y separa el Defensor**, **previa conformidad de las Cámaras**, que da la **Comisión Mixta Congreso-Senado**; su nombramiento se publica en el BOE. Tienen sus mismos **requisitos, prerrogativas e incompatibilidades** y **cesan cuando toma posesión un nuevo Defensor**.",
+     "text": "**Adjuntos** (art. 8): un **Adjunto Primero** y un **Adjunto Segundo**, en los que puede delegar y que le sustituyen por su orden; los **nombra y separa el Defensor**, **previa conformidad de las Cámaras** en la forma que determinen sus Reglamentos (art. 8.2); para el **nombramiento**, esa conformidad la otorga la **Comisión Mixta Congreso-Senado** (art. 2.6). Su nombramiento se publica en el BOE. Tienen sus mismos **requisitos, prerrogativas e incompatibilidades** y **cesan cuando toma posesión un nuevo Defensor**.",
      "refs": [
       {
        "law": "BOE-A-1981-10325",
@@ -1912,7 +1922,7 @@
       {
        "law": "BOE-A-1981-10325",
        "section": "aoctavo",
-       "quote": "El Defensor del Pueblo nombrará y separará a sus Adjuntos previa conformidad de las Cámaras"
+       "quote": "El Defensor del Pueblo nombrará y separará a sus Adjuntos previa conformidad de las Cámaras en la forma que determinen sus Reglamentos."
       },
       {
        "law": "BOE-A-1981-10325",
