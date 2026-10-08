@@ -225,3 +225,75 @@
     margin-bottom: 0.75rem;
   }
 }
+
+@layer pages {
+  .note {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .note-section h3 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-read);
+  }
+
+  .note-points,
+  .note-items {
+    margin: 0;
+    padding-left: 1.1rem;
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .note-items {
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .note-point > p {
+    margin: 0;
+    font-family: var(--font-read);
+    line-height: 1.55;
+  }
+
+  .note-refs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+    margin-top: 0.25rem;
+  }
+
+  .note-ref summary {
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--accent-ink);
+  }
+
+  .note-ref summary .badge {
+    margin-left: 0.375rem;
+  }
+
+  .note-ref[open] {
+    flex-basis: 100%;
+  }
+
+  .note-ref blockquote {
+    margin: 0.375rem 0;
+    color: var(--muted);
+  }
+
+  .note-ref .link {
+    font-size: 0.85rem;
+  }
+
+  .note-flag {
+    margin-top: 0.25rem;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .note-sent {
+    margin: 0.25rem 0 0;
+    font-size: 0.85rem;
+  }
+}

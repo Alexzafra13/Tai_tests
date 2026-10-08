@@ -54,9 +54,9 @@ export function SyllabusPage() {
                     {isAdmin ? `${t.published}/${t.questions}` : t.published}
                   </span>
                 </Link>
-                {(t.laws > 0 || t.pages > 0) && (
+                {(t.notes || t.laws > 0 || t.pages > 0) && (
                   <Link className="topic-study" to={`/study/${t.id}`} aria-label={`Estudiar el tema ${t.number}`}>
-                    {t.laws > 0 ? "Leyes" : "Docs"}
+                    {t.notes ? "Apuntes" : t.laws > 0 ? "Leyes" : "Docs"}
                   </Link>
                 )}
               </li>

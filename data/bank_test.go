@@ -141,3 +141,46 @@ func TestBankArticlesExist(t *testing.T) {
 		}
 	}
 }
+
+// Every bundled study note loads: each quote of a law is in the section
+// it names, in the bundled text.
+func TestNotesLoadCleanly(t *testing.T) {
+	ctx := context.Background()
+	notes, err := content.ReadNotes(data.Notes())
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(notes) == 0 {
+		t.Fatal("no notes")
+	}
+	d, err := db.Open(":memory:")
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer d.Close()
+	if _, err := db.Migrate(ctx, d); err != nil {
+		t.Fatal(err)
+	}
+	cs := content.NewStore(d)
+	syl, err := content.ParseSyllabus(data.Syllabus())
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := cs.LoadSyllabus(ctx, syl); err != nil {
+		t.Fatal(err)
+	}
+	laws, topics, err := content.ReadLaws(data.Laws())
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := cs.LoadLaws(ctx, laws, topics); err != nil {
+		t.Fatal(err)
+	}
+	res, err := cs.LoadNotes(ctx, notes)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Loaded != len(notes) || len(res.Problems) > 0 {
+		t.Fatalf("result %+v", res)
+	}
+}

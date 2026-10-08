@@ -82,4 +82,39 @@ export type StudyTopic = {
   block: string;
   laws: StudyLaw[];
   pages: StudyPage[];
+  note: TopicNote | null;
+};
+
+// Study notes (internal/content/notes.go): every point carries the literal
+// quotes that back it.
+export type NoteRef = {
+  source_id?: number;
+  block_id?: string;
+  url?: string;
+  label: string;
+  quotes: string[];
+  asked: number;
+};
+
+export type NotePoint = {
+  path: string;
+  text: string;
+  refs: NoteRef[];
+  items: NotePoint[];
+};
+
+export type TopicNote = {
+  sections: { title: string; points: NotePoint[] }[];
+};
+
+export type NoteReport = {
+  id: number;
+  topic_id: number;
+  topic_code: string;
+  topic_title: string;
+  point: string;
+  excerpt: string;
+  username: string;
+  note: string;
+  created_at: string;
 };

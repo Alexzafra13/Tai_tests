@@ -22,6 +22,7 @@ func (s *Server) routes(mux *http.ServeMux) {
 	mux.Handle("GET /api/syllabus", user(s.handleSyllabus))
 	mux.Handle("GET /api/study/topics/{id}", user(s.handleStudyTopic))
 	mux.Handle("GET /api/laws/{id}", user(s.handleLawText))
+	mux.Handle("POST /api/study/topics/{id}/report", user(s.handleReportNote))
 	mux.Handle("GET /api/sources", user(s.handleListSources))
 	mux.Handle("GET /api/exams", user(s.handleExams))
 	mux.Handle("GET /api/settings/scoring", user(s.handleGetScoring))
@@ -58,6 +59,8 @@ func (s *Server) routes(mux *http.ServeMux) {
 	mux.Handle("POST /api/review/{id}/accept", admin(s.handleAccept))
 	mux.Handle("POST /api/review/{id}/discard", admin(s.handleDiscard))
 	mux.Handle("POST /api/review/{id}/restore", admin(s.handleRestore))
+	mux.Handle("GET /api/review/notes", admin(s.handleNoteReports))
+	mux.Handle("POST /api/review/notes/{id}/resolve", admin(s.handleResolveNoteReport))
 
 	mux.Handle("PUT /api/settings/scoring", admin(s.handleSetScoring))
 

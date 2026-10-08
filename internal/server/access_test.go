@@ -31,6 +31,8 @@ func TestUserCannotReachAdminEndpoints(t *testing.T) {
 		{"GET", "/api/review"},
 		{"GET", "/api/review/counts"},
 		{"POST", "/api/review/1/accept"},
+		{"GET", "/api/review/notes"},
+		{"POST", "/api/review/notes/1/resolve"},
 		{"PUT", "/api/settings/scoring"},
 		{"GET", "/api/users"},
 		{"POST", "/api/users"},

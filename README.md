@@ -136,6 +136,7 @@ web/src/types/         espejo de los tipos JSON de la API, un fichero por área
 data/                  syllabus.json (temario oficial, en el binario) y syllabus.example.json (formato)
 data/bank/             banco de preguntas oficiales incluido en el binario (un JSON por examen)
 data/laws/             leyes del temario (texto consolidado del BOE y EUR-Lex) y su reparto por temas
+data/notes/            apuntes de cada tema, con la cita literal de lo que respalda cada punto
 ```
 
 ## Usuarios y permisos
@@ -282,6 +283,16 @@ docker compose exec -T tai tai add-source -kind law \
   -title "Ley 39/2015, del Procedimiento Administrativo Común" \
   -ref BOE-A-2015-10565 -version 2024-01-01 -text - < ley39.txt
 ```
+
+## Apuntes
+
+En **Temario**, los temas con apuntes tienen el botón **Apuntes**: el tema
+explicado punto por punto. Cada punto lleva el artículo o la página oficial
+que lo respalda; al abrirlo se ve la cita literal y se puede saltar al
+artículo. Una etiqueta marca cuántas preguntas de examen ha habido sobre
+ese artículo. Si algo está mal o falta, **Avisar de un error** lo manda a
+Revisión. Los apuntes están en `data/notes/` y la app comprueba al arrancar
+que cada cita sigue en el texto vigente de su ley.
 
 ## Leyes y documentación para estudiar
 

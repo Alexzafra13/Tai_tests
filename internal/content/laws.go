@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"io/fs"
 	"regexp"
+	"slices"
 	"sort"
 	"strings"
 	"time"
@@ -317,6 +318,8 @@ type StudyTopic struct {
 	// Pages are the official pages outside the laws that answer the
 	// topic's published questions, most asked first.
 	Pages []StudyPage `json:"pages"`
+	// Note is the topic's study note, nil when it has none.
+	Note *TopicNote `json:"note"`
 }
 
 // StudyPage is an official page with the questions of a topic it answers.
@@ -357,6 +360,9 @@ func (s *Store) StudyTopic(ctx context.Context, topicID int64, today time.Time) 
 		return st, err
 	}
 	if st.Pages, err = s.topicPages(ctx, topicID); err != nil {
+		return st, err
+	}
+	if st.Note, err = s.topicNote(ctx, topicID); err != nil {
 		return st, err
 	}
 	cites, err := s.lawCitations(ctx)
@@ -632,7 +638,7 @@ func (c *lawCites) section(sec LawSection) []QuestionBrief {
 	if c == nil || sec.Kind != SectionArticle {
 		return nil
 	}
-	return append(c.byArticle[articleKey(sec.Title)], c.byBlock[sec.ID]...)
+	return slices.Concat(c.byArticle[articleKey(sec.Title)], c.byBlock[sec.ID])
 }
 
 // sectionRef is a section a question is linked to by the bank; an empty
