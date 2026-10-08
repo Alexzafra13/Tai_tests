@@ -13,6 +13,8 @@ export type Topic = {
   questions: number;
   published: number;
   laws: number;
+  // pages counts the official pages outside the laws that answer its questions.
+  pages: number;
 };
 
 export type Block = {

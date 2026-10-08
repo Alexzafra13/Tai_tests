@@ -7,7 +7,7 @@ import "./SyllabusPage.css";
 
 // SyllabusPage lists blocks and topics. Tapping a topic starts a test on it;
 // administrators go to the topic's questions instead and see draft counts.
-// Topics with laws also link to their study texts.
+// Topics with laws or official documentation also link to their study page.
 export function SyllabusPage() {
   const { isAdmin } = useAuth();
   const { data: blocks, error, loading } = useResource<Block[]>("/syllabus");
@@ -54,9 +54,9 @@ export function SyllabusPage() {
                     {isAdmin ? `${t.published}/${t.questions}` : t.published}
                   </span>
                 </Link>
-                {t.laws > 0 && (
+                {(t.laws > 0 || t.pages > 0) && (
                   <Link className="topic-study" to={`/study/${t.id}`} aria-label={`Estudiar el tema ${t.number}`}>
-                    Leyes
+                    {t.laws > 0 ? "Leyes" : "Docs"}
                   </Link>
                 )}
               </li>

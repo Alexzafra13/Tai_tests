@@ -3,10 +3,12 @@ import { useResource } from "../../hooks";
 import type { StudyTopic } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
 import { formatDay, lawOrigin, lawShortName } from "../../format";
+import { AskedQuestion } from "./LawPage";
 import "./study.css";
 
 // StudyTopicPage lists the laws of a topic: the literal consolidated text
-// of the BOE, to read with the articles the INAP has asked about.
+// of the BOE, to read with the articles the INAP has asked about; and the
+// official documentation that answers its exam questions, with them.
 export function StudyTopicPage() {
   const { topicId } = useParams();
   const { data: topic, error, loading } = useResource<StudyTopic>(`/study/topics/${topicId}`);
@@ -27,9 +29,9 @@ export function StudyTopicPage() {
           <h3 className="study-topic">
             {topic.number}. {topic.title}
           </h3>
-          {topic.laws.length === 0 && (
+          {topic.laws.length === 0 && topic.pages.length === 0 && (
             <div className="card">
-              <p>Este tema todavía no tiene normas para leer.</p>
+              <p>Este tema todavía no tiene normas ni documentación para leer.</p>
             </div>
           )}
           <ul className="law-list">
@@ -52,6 +54,32 @@ export function StudyTopicPage() {
               </li>
             ))}
           </ul>
+          {topic.pages.length > 0 && (
+            <>
+              <h3 className="study-section">Documentación oficial</h3>
+              <p className="muted study-note">
+                Las páginas oficiales que responden a las preguntas de examen del tema, con esas preguntas para
+                practicar.
+              </p>
+              <ul className="law-list">
+                {topic.pages.map((p) => (
+                  <li key={p.url} className="card doc-card">
+                    <a href={p.url} target="_blank" rel="noreferrer" className="link law-title">
+                      {p.title} ↗
+                    </a>
+                    <details className="law-asked">
+                      <summary>
+                        {p.questions.length === 1 ? "1 pregunta de examen" : `${p.questions.length} preguntas de examen`}
+                      </summary>
+                      {p.questions.map((q) => (
+                        <AskedQuestion key={q.id} q={q} />
+                      ))}
+                    </details>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </>
       )}
     </>

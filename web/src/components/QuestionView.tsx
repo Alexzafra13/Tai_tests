@@ -99,6 +99,7 @@ export function ArticleLinks({ articles }: { articles: ArticleLink[] }) {
             <a href={a.url} target="_blank" rel="noreferrer" className="link">
               {a.law} ↗
             </a>
+            {a.quote && <blockquote className="article-quote">«{a.quote}»</blockquote>}
           </li>
         ) : (
           <li key={`${a.source_id}-${a.block_id}`}>

@@ -202,7 +202,7 @@ function Section({ s, target }: { s: LawTextSection; target: boolean }) {
 }
 
 // AskedQuestion lets you answer an official question before seeing the key.
-function AskedQuestion({ q }: { q: QuestionBrief }) {
+export function AskedQuestion({ q }: { q: QuestionBrief }) {
   const [chosen, setChosen] = useState<number | null>(null);
   return (
     <div className="asked-question">
