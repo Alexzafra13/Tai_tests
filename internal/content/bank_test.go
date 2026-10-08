@@ -165,3 +165,56 @@ func TestLoadBankPublishesCheckedQuestions(t *testing.T) {
 		t.Errorf("unchecked question %+v", q)
 	}
 }
+
+func TestLoadBankUpdatesUneditedQuestions(t *testing.T) {
+	ctx := context.Background()
+	s := newStore(t)
+	loadTestSyllabus(t, s)
+	file := func(topic, explanation string) BankFile {
+		q := func(key string) BankQuestion {
+			return BankQuestion{Key: key, SourceRef: "nº " + key, Stem: "¿Pregunta " + key + "?",
+				Options: [4]string{"A", "B", "C", "D"}, Correct: "a", Topics: []string{topic}, Status: StatusPublished,
+				Explanation: explanation}
+		}
+		return BankFile{Source: BankSource{Kind: KindINAPExam, Title: "Examen", Reference: "REF"},
+			Questions: []BankQuestion{q("1"), q("2")}}
+	}
+	if _, err := s.LoadBank(ctx, []BankFile{file("B1-T01", "")}); err != nil {
+		t.Fatal(err)
+	}
+	page, _ := s.ListQuestions(ctx, QuestionFilter{})
+	byRef := map[string]Question{}
+	for _, q := range page.Items {
+		byRef[q.SourceRef] = q
+	}
+	// Someone edits question 2 here: the bank leaves it alone from then on.
+	edited := byRef["nº 2"]
+	in := QuestionInput{Stem: edited.Stem, Options: edited.Options, Correct: edited.Correct, Explanation: "Mía.",
+		Origin: edited.Origin, Author: edited.Author, SourceID: edited.SourceID, SourceRef: edited.SourceRef,
+		Status: edited.Status, TopicIDs: edited.TopicIDs}
+	if err := s.UpdateQuestion(ctx, edited.ID, in); err != nil {
+		t.Fatal(err)
+	}
+
+	res, err := s.LoadBank(ctx, []BankFile{file("B1-T02", "Nota del banco.")})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if res.Added != 0 || res.Updated != 1 {
+		t.Errorf("result %+v", res)
+	}
+	blocks, _ := s.Syllabus(ctx)
+	t2 := blocks[0].Topics[1].ID
+	q1, _ := s.Question(ctx, byRef["nº 1"].ID)
+	if q1.Explanation != "Nota del banco." || len(q1.TopicIDs) != 1 || q1.TopicIDs[0] != t2 {
+		t.Errorf("unedited question %+v", q1)
+	}
+	q2, _ := s.Question(ctx, edited.ID)
+	if q2.Explanation != "Mía." || q2.TopicIDs[0] == t2 {
+		t.Errorf("edited question %+v", q2)
+	}
+	// Nothing left to change: a third start updates nothing.
+	if res, _ := s.LoadBank(ctx, []BankFile{file("B1-T02", "Nota del banco.")}); res.Updated != 0 {
+		t.Errorf("third load %+v", res)
+	}
+}

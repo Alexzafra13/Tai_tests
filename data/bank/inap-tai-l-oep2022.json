@@ -460,7 +460,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Cable de USB-C a conector Lightning · Apple",
+          "url": "https://support.apple.com/es-es/111752",
+          "quote": "Con un cable de USB-C a conector Lightning, podrás cargar y sincronizar tus AirPods, AirPods Pro, iPhone, iPad o iPod touch"
+        }
+      ]
     },
     {
       "key": "P-22",
@@ -508,7 +515,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Unidad central de procesamiento (CPU) · Arm",
+          "url": "https://www.arm.com/glossary/cpu",
+          "quote": "Arithmetic logic unit (ALU): Executes arithmetic and logical operations."
+        }
+      ]
     },
     {
       "key": "P-25",
@@ -524,7 +538,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Microprogramming · IEEE Technology Navigator",
+          "url": "https://technav.ieee.org/topic/microprogramming/",
+          "quote": "However, microprogramming persists in complex instruction set computers"
+        }
+      ]
     },
     {
       "key": "P-26",
@@ -556,7 +577,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Troubleshooting Serial ATA (SATA) issues · IBM",
+          "url": "https://www.ibm.com/support/pages/troubleshooting-serial-ata-sata-issues",
+          "quote": "The Serial ATA (SATA) specification, called Serial ATA 1.0, or SATA150 was introduced in 2001 as an evolutionary replacement for Enhanced IDE (EIDE) or Parallel ATA"
+        }
+      ]
     },
     {
       "key": "P-28",
@@ -572,7 +600,19 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Especificación de cable y conector USB Type-C · USB-IF",
+          "url": "https://www.usb.org/usb-type-cr-cable-and-connector-specification",
+          "quote": "This specification is to establish a new USB connector ecosystem that addresses the evolving needs of platforms and devices"
+        },
+        {
+          "title": "USB 3.2 · USB-IF",
+          "url": "https://www.usb.org/usb-32-0",
+          "quote": "allowing for up to two lanes of 10Gbps operation to realize a 20Gbps data transfer rate"
+        }
+      ]
     },
     {
       "key": "P-29",
@@ -588,7 +628,14 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Algoritmo de Dijkstra · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/dijkstraalgo.html",
+          "quote": "An algorithm to find the shortest paths from a single source vertex to all other vertices in a weighted, directed graph"
+        }
+      ]
     },
     {
       "key": "P-30",
@@ -604,7 +651,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Familia PDF/X (intercambio para preimpresión) · Library of Congress",
+          "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000124.shtml",
+          "quote": "PDF/X is a family of ISO standards for constrained forms of the PDF_family of format specifications, designed for prepress digital data exchange."
+        },
+        {
+          "title": "Familia de formatos PDF (normas ISO PDF/A, PDF/E, PDF/UA) · Library of Congress",
+          "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000030.shtml",
+          "quote": "PDF/A standards (ISO 19005), PDF/R (ISO 23504), PDF/E (ISO 24517), PDF/UA (ISO 14289)."
+        }
+      ]
     },
     {
       "key": "P-31",
@@ -620,7 +679,15 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Descubre qué versión de macOS usa tu Mac · Apple",
+          "url": "https://support.apple.com/es-es/109033",
+          "quote": "Estas son las versiones más recientes de cada sistema operativo Mac, empezando por la más actual."
+        }
+      ],
+      "explanation": "Respuesta según el examen de 2022: de las cuatro opciones, la más reciente es macOS Ventura (macOS 13). Apple ha publicado versiones posteriores."
     },
     {
       "key": "P-32",
@@ -636,7 +703,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Interoperabilidad de procesos (Windows de 64 bits) · Microsoft Learn",
+          "url": "https://learn.microsoft.com/es-es/windows/win32/winprog64/process-interoperability",
+          "quote": "Sin embargo, Windows de 64 bits admite llamadas a procedimientos remotos (RPC) entre procesos de 64 y 32 bits (tanto en el mismo equipo como en todos los equipos)."
+        }
+      ]
     },
     {
       "key": "P-33",
@@ -652,7 +726,14 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Propiedades ACID de las transacciones · Microsoft Learn",
+          "url": "https://learn.microsoft.com/es-es/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide",
+          "quote": "conocidas como propiedades de atomicidad, coherencia, aislamiento y durabilidad (ACID)"
+        }
+      ]
     },
     {
       "key": "P-34",
@@ -684,7 +765,14 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "¿Qué es Machine Learning Services para SQL Server? · Microsoft Learn",
+          "url": "https://learn.microsoft.com/es-es/sql/machine-learning/sql-server-machine-learning-services",
+          "quote": "Machine Learning Services es una característica de SQL Server que proporciona la capacidad de ejecutar scripts de Python y R con datos relacionales."
+        }
+      ]
     },
     {
       "key": "P-36",
@@ -798,7 +886,19 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Aislamiento de transacciones: fenómenos · PostgreSQL",
+          "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+          "quote": "The phenomena which are prohibited at various levels are:"
+        },
+        {
+          "title": "Guía de bloqueo y versiones de fila de transacciones · Microsoft Learn",
+          "url": "https://learn.microsoft.com/es-es/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide",
+          "quote": "Una lectura fantasma es una situación que se produce cuando se ejecutan dos consultas idénticas y el conjunto de filas devuelto por la segunda consulta es diferente."
+        }
+      ]
     },
     {
       "key": "P-43",
@@ -1106,7 +1206,19 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Qué es el kernel de Linux · Red Hat",
+          "url": "https://www.redhat.com/es/topics/linux/what-is-the-linux-kernel",
+          "quote": "Se encuentra justo en el medio y se trata del software que reside en la memoria e indica qué debe hacer la CPU."
+        },
+        {
+          "title": "Qué es el kernel de Linux · Red Hat",
+          "url": "https://www.redhat.com/es/topics/linux/what-is-the-linux-kernel",
+          "quote": "controla todas las funciones principales del hardware"
+        }
+      ]
     },
     {
       "key": "P-62",
@@ -1122,7 +1234,19 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "systemd(1) · Linux man-pages",
+          "url": "https://man7.org/linux/man-pages/man1/systemd.1.html",
+          "quote": "init system that brings up and maintains userspace services."
+        },
+        {
+          "title": "Definiciones (Group ID, User ID) · POSIX.1-2024, The Open Group",
+          "url": "https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap03.html",
+          "quote": "A non-negative integer that is used to identify a system user."
+        }
+      ]
     },
     {
       "key": "P-63",
@@ -1451,7 +1575,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "MIUI · Xiaomi",
+          "url": "https://www.mi.com/global/miui/",
+          "quote": "MIUI is one of the most popular custom ROMs for Android."
+        }
+      ]
     },
     {
       "key": "P-R3",
@@ -1467,7 +1598,14 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "RevoScaleR (paquete R en SQL Server Machine Learning Services) · Microsoft Learn",
+          "url": "https://learn.microsoft.com/es-es/sql/machine-learning/r/ref-r-revoscaler",
+          "quote": "También admite la importación de datos, la transformación de datos, el resumen, la visualización y el análisis."
+        }
+      ]
     },
     {
       "key": "P-R4",

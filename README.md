@@ -283,7 +283,7 @@ docker compose exec -T tai tai add-source -kind law \
   -ref BOE-A-2015-10565 -version 2024-01-01 -text - < ley39.txt
 ```
 
-## Leyes para estudiar
+## Leyes y documentación para estudiar
 
 En **Temario**, los temas con normas tienen el botón **Leyes**: el texto
 consolidado del BOE de cada norma del tema, literal (nada resumido), con
@@ -295,7 +295,9 @@ normas están en `data/laws/` (ver `docs/importar-contenido.md`): todo el
 bloque I, con las 12 Normas Técnicas de Interoperabilidad vigentes y, del
 texto consolidado de EUR-Lex, el RGPD y el reglamento eIDAS. Cada pregunta
 oficial del bloque enlaza con el artículo que la responde, o con la página
-oficial que lo hace si no es una ley. Una tarea mensual de GitHub las
+oficial que lo hace si no es una ley. En los temas sin leyes (bloque II), el
+botón **Docs** reúne la documentación técnica oficial que responde a sus
+preguntas de examen, con la frase literal que respalda cada respuesta. Una tarea mensual de GitHub las
 descarga de nuevo (`tai refresh-laws`) y abre una PR si el BOE o EUR-Lex han
 cambiado algo.
 
