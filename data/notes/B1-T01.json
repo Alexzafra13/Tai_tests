@@ -5,8 +5,13 @@
    "title": "La Constitución de 1978",
    "points": [
     {
-     "text": "La aprobaron las **Cortes** y la **ratificó el pueblo español**; el Rey la sanciona en su encabezamiento.",
+     "text": "Su encabezamiento, en nombre del Rey Don Juan Carlos I, hace saber que **las Cortes la han aprobado** y **el pueblo español la ha ratificado**.",
      "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "preambulo",
+       "quote": "DON JUAN CARLOS I, REY DE ESPAÑA, A TODOS LOS QUE LA PRESENTE VIEREN Y ENTENDIEREN"
+      },
       {
        "law": "BOE-A-1978-31229",
        "section": "preambulo",
@@ -35,7 +40,7 @@
      ]
     },
     {
-     "text": "Se estructura en un **Preámbulo**, un **Título preliminar** y **diez títulos** (del I, derechos y deberes fundamentales, al X, reforma constitucional), más las disposiciones finales del texto.",
+     "text": "Estructura: un **Preámbulo**, un **Título preliminar** y **diez títulos**, más **cuatro disposiciones adicionales**, **nueve transitorias**, **una derogatoria** y **una final**. Los títulos son:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -44,43 +49,165 @@
       },
       {
        "law": "BOE-A-1978-31229",
-       "section": "ti",
-       "quote": "TÍTULO I. De los derechos y deberes fundamentales"
+       "section": "cuarta",
+       "quote": "Disposición adicional cuarta."
       },
       {
        "law": "BOE-A-1978-31229",
-       "section": "tx",
-       "quote": "TÍTULO X. De la reforma constitucional"
+       "section": "novena",
+       "quote": "Disposición transitoria novena."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "dd",
+       "quote": "Disposición derogatoria."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "df",
+       "quote": "Disposición final."
+      }
+     ],
+     "items": [
+      {
+       "text": "**I**: De los derechos y deberes fundamentales.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "ti",
+         "quote": "TÍTULO I. De los derechos y deberes fundamentales"
+        }
+       ]
+      },
+      {
+       "text": "**II**: De la Corona.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tii",
+         "quote": "TÍTULO II. De la Corona"
+        }
+       ]
+      },
+      {
+       "text": "**III**: De las Cortes Generales.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tiii",
+         "quote": "TÍTULO III. De las Cortes Generales"
+        }
+       ]
+      },
+      {
+       "text": "**IV**: Del Gobierno y de la Administración.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tiv",
+         "quote": "TÍTULO IV. Del Gobierno y de la Administración"
+        }
+       ]
+      },
+      {
+       "text": "**V**: De las relaciones entre el Gobierno y las Cortes Generales.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tv",
+         "quote": "TÍTULO V. De las relaciones entre el Gobierno y las Cortes Generales"
+        }
+       ]
+      },
+      {
+       "text": "**VI**: Del Poder Judicial.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tvi",
+         "quote": "TÍTULO VI. Del Poder Judicial"
+        }
+       ]
+      },
+      {
+       "text": "**VII**: Economía y Hacienda.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tvii",
+         "quote": "TÍTULO VII. Economía y Hacienda"
+        }
+       ]
+      },
+      {
+       "text": "**VIII**: De la Organización Territorial del Estado.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tviii",
+         "quote": "TÍTULO VIII. De la Organización Territorial del Estado"
+        }
+       ]
+      },
+      {
+       "text": "**IX**: Del Tribunal Constitucional.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tix",
+         "quote": "TÍTULO IX. Del Tribunal Constitucional"
+        }
+       ]
+      },
+      {
+       "text": "**X**: De la reforma constitucional.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "tx",
+         "quote": "TÍTULO X. De la reforma constitucional"
+        }
+       ]
       }
      ]
     },
     {
-     "text": "Su **disposición derogatoria** deroga la Ley para la Reforma Política y las Leyes Fundamentales anteriores.",
+     "text": "La **disposición derogatoria** deroga la Ley para la Reforma Política y, **en tanto no estuvieran ya derogadas** por ella, las Leyes Fundamentales anteriores; además, quedan derogadas **cuantas disposiciones se opongan** a la Constitución.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "dd",
        "quote": "Queda derogada la Ley 1/1977, de 4 de enero, para la Reforma Política"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "dd",
+       "quote": "en tanto en cuanto no estuvieran ya derogadas por la anteriormente mencionada Ley"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "dd",
+       "quote": "quedan derogadas cuantas disposiciones se opongan a lo establecido en esta Constitución"
       }
      ]
     },
     {
-     "text": "En el **Preámbulo**, la Nación española, «en uso de su soberanía», proclama su voluntad de:",
+     "text": "En el **Preámbulo**, la Nación española, deseando establecer la **justicia, la libertad y la seguridad** y promover el bien de cuantos la integran, **en uso de su soberanía**, proclama su voluntad de:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "preambulo",
-       "quote": "en uso de su soberanía, proclama su voluntad de"
+       "quote": "La Nación española, deseando establecer la justicia, la libertad y la seguridad y promover el bien de cuantos la integran, en uso de su soberanía, proclama su voluntad de"
       }
      ],
      "items": [
       {
-       "text": "Garantizar la **convivencia democrática** dentro de la Constitución y de las leyes.",
+       "text": "Garantizar la **convivencia democrática** dentro de la Constitución y de las leyes conforme a un orden económico y social justo.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "preambulo",
-         "quote": "Garantizar la convivencia democrática dentro de la Constitución y de las leyes"
+         "quote": "Garantizar la convivencia democrática dentro de la Constitución y de las leyes conforme a un orden económico y social justo"
         }
        ]
       },
@@ -100,7 +227,7 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "preambulo",
-         "quote": "Proteger a todos los españoles y pueblos de España en el ejercicio de los derechos humanos"
+         "quote": "Proteger a todos los españoles y pueblos de España en el ejercicio de los derechos humanos, sus culturas y tradiciones, lenguas e instituciones"
         }
        ]
       },
@@ -125,7 +252,7 @@
        ]
       },
       {
-       "text": "Colaborar en unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
+       "text": "Colaborar en el fortalecimiento de unas relaciones pacíficas y de eficaz cooperación entre todos los pueblos de la Tierra.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -142,7 +269,7 @@
    "title": "Título preliminar (artículos 1 a 9)",
    "points": [
     {
-     "text": "España es un **Estado social y democrático de Derecho**. Sus **valores superiores** son cuatro: la **libertad**, la **justicia**, la **igualdad** y el **pluralismo político**.",
+     "text": "España es un **Estado social y democrático de Derecho**. Sus **valores superiores** son cuatro: la **libertad**, la **justicia**, la **igualdad** y el **pluralismo político** (art. 1.1).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -152,7 +279,7 @@
      ]
     },
     {
-     "text": "La **soberanía nacional reside en el pueblo español**, del que emanan los poderes del Estado. La forma política del Estado es la **Monarquía parlamentaria**.",
+     "text": "La **soberanía nacional reside en el pueblo español**, del que emanan los poderes del Estado. La forma política del Estado es la **Monarquía parlamentaria** (art. 1.2 y 1.3).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -167,12 +294,12 @@
      ]
     },
     {
-     "text": "La Constitución se fundamenta en la **indisoluble unidad de la Nación española** y reconoce y garantiza el **derecho a la autonomía** de las nacionalidades y regiones y la **solidaridad** entre ellas.",
+     "text": "La Constitución se fundamenta en la **indisoluble unidad de la Nación española**, patria común e indivisible de todos los españoles, y reconoce y garantiza el **derecho a la autonomía** de las nacionalidades y regiones y la **solidaridad** entre todas ellas (art. 2).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a2",
-       "quote": "La Constitución se fundamenta en la indisoluble unidad de la Nación española"
+       "quote": "La Constitución se fundamenta en la indisoluble unidad de la Nación española, patria común e indivisible de todos los españoles"
       },
       {
        "law": "BOE-A-1978-31229",
@@ -182,7 +309,7 @@
      ]
     },
     {
-     "text": "El **castellano** es la lengua oficial del Estado: todos tienen el **deber de conocerla** y el **derecho a usarla**. Las demás lenguas españolas son también oficiales en sus Comunidades Autónomas, según sus Estatutos.",
+     "text": "El **castellano** es la lengua española oficial del Estado: todos los españoles tienen el **deber de conocerla** y el **derecho a usarla**. Las demás lenguas españolas son también oficiales en las respectivas Comunidades Autónomas según sus Estatutos, y la riqueza de las modalidades lingüísticas es un **patrimonio cultural** objeto de especial respeto y protección (art. 3).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -193,16 +320,26 @@
        "law": "BOE-A-1978-31229",
        "section": "a3",
        "quote": "Las demás lenguas españolas serán también oficiales en las respectivas Comunidades Autónomas de acuerdo con sus Estatutos."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a3",
+       "quote": "La riqueza de las distintas modalidades lingüísticas de España es un patrimonio cultural que será objeto de especial respeto y protección."
       }
      ]
     },
     {
-     "text": "La **bandera**: tres franjas horizontales, roja, amarilla y roja; la amarilla, de doble anchura que cada roja. La **capital** es la villa de Madrid.",
+     "text": "La **bandera** de España tiene tres franjas horizontales, roja, amarilla y roja, siendo la amarilla de doble anchura que cada roja; los Estatutos pueden reconocer banderas propias, que se usan **junto a la de España** en los edificios y actos oficiales de las Comunidades (art. 4). La **capital** es la villa de Madrid (art. 5).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a4",
        "quote": "tres franjas horizontales, roja, amarilla y roja, siendo la amarilla de doble anchura que cada una de las rojas"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a4",
+       "quote": "Estas se utilizarán junto a la bandera de España en sus edificios públicos y en sus actos oficiales."
       },
       {
        "law": "BOE-A-1978-31229",
@@ -212,47 +349,72 @@
      ]
     },
     {
-     "text": "Los **partidos políticos** (art. 6) y los **sindicatos y asociaciones empresariales** (art. 7) se crean libremente dentro del respeto a la Constitución y a la ley, y su estructura interna y funcionamiento **deben ser democráticos**.",
+     "text": "Los **partidos políticos** expresan el pluralismo político, concurren a la formación y manifestación de la voluntad popular y son **instrumento fundamental para la participación política** (art. 6).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a6",
-       "quote": "Los partidos políticos expresan el pluralismo político"
+       "quote": "Los partidos políticos expresan el pluralismo político, concurren a la formación y manifestación de la voluntad popular y son instrumento fundamental para la participación política."
+      }
+     ]
+    },
+    {
+     "text": "Los **sindicatos de trabajadores y las asociaciones empresariales** contribuyen a la defensa y promoción de los intereses económicos y sociales que les son propios (art. 7).",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a7",
+       "quote": "Los sindicatos de trabajadores y las asociaciones empresariales contribuyen a la defensa y promoción de los intereses económicos y sociales que les son propios."
+      }
+     ]
+    },
+    {
+     "text": "Para partidos (art. 6) y sindicatos y asociaciones empresariales (art. 7): su **creación y actividad son libres** dentro del respeto a la Constitución y a la ley, y su estructura interna y funcionamiento **deberán ser democráticos**.",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a6",
+       "quote": "Su creación y el ejercicio de su actividad son libres dentro del respeto a la Constitución y a la ley. Su estructura interna y funcionamiento deberán ser democráticos."
       },
       {
        "law": "BOE-A-1978-31229",
        "section": "a7",
-       "quote": "Los sindicatos de trabajadores y las asociaciones empresariales contribuyen a la defensa y promoción de los intereses económicos y sociales"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a6",
-       "quote": "Su estructura interna y funcionamiento deberán ser democráticos."
+       "quote": "Su creación y el ejercicio de su actividad son libres dentro del respeto a la Constitución y a la ley. Su estructura interna y funcionamiento deberán ser democráticos."
       }
      ]
     },
     {
-     "text": "Las **Fuerzas Armadas** (Ejército de Tierra, Armada y Ejército del Aire) garantizan la soberanía e independencia de España y defienden su integridad territorial y el ordenamiento constitucional.",
+     "text": "Las **Fuerzas Armadas**, constituidas por el Ejército de Tierra, la Armada y el Ejército del Aire, tienen como misión garantizar la soberanía e independencia de España, defender su integridad territorial y el ordenamiento constitucional. Una **ley orgánica** regula las bases de la organización militar (art. 8).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a8",
-       "quote": "Las Fuerzas Armadas, constituidas por el Ejército de Tierra, la Armada y el Ejército del Aire, tienen como misión garantizar la soberanía e independencia de España"
+       "quote": "Las Fuerzas Armadas, constituidas por el Ejército de Tierra, la Armada y el Ejército del Aire, tienen como misión garantizar la soberanía e independencia de España, defender su integridad territorial y el ordenamiento constitucional."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a8",
+       "quote": "Una ley orgánica regulará las bases de la organización militar"
       }
      ]
     },
     {
-     "text": "Ciudadanos y poderes públicos están **sujetos a la Constitución** y al resto del ordenamiento (art. 9.1). Los poderes públicos deben promover que la libertad y la igualdad sean **reales y efectivas** (art. 9.2).",
+     "text": "Los ciudadanos y los poderes públicos están **sujetos a la Constitución** y al resto del ordenamiento jurídico (art. 9.1).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a9",
        "quote": "Los ciudadanos y los poderes públicos están sujetos a la Constitución y al resto del ordenamiento jurídico."
-      },
+      }
+     ]
+    },
+    {
+     "text": "Corresponde a los poderes públicos promover que la libertad y la igualdad sean **reales y efectivas**, **remover los obstáculos** que impidan o dificulten su plenitud y **facilitar la participación** de todos los ciudadanos en la vida política, económica, cultural y social (art. 9.2).",
+     "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a9",
-       "quote": "promover las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra sean reales y efectivas"
+       "quote": "promover las condiciones para que la libertad y la igualdad del individuo y de los grupos en que se integra sean reales y efectivas; remover los obstáculos que impidan o dificulten su plenitud y facilitar la participación de todos los ciudadanos en la vida política, económica, cultural y social"
       }
      ]
     },
@@ -304,27 +466,27 @@
    "title": "Derechos y deberes fundamentales (Título I)",
    "points": [
     {
-     "text": "La **dignidad de la persona**, los derechos inviolables que le son inherentes y el libre desarrollo de la personalidad son **fundamento del orden político y de la paz social** (art. 10.1).",
+     "text": "El Título I se abre con el art. 10, antes de sus capítulos: **la dignidad de la persona**, los derechos inviolables que le son inherentes, el **libre desarrollo de la personalidad**, **el respeto a la ley y a los derechos de los demás** son fundamento del orden político y de la paz social.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a10",
-       "quote": "son fundamento del orden político y de la paz social"
+       "quote": "La dignidad de la persona, los derechos inviolables que le son inherentes, el libre desarrollo de la personalidad, el respeto a la ley y a los derechos de los demás son fundamento del orden político y de la paz social."
       }
      ]
     },
     {
-     "text": "Los derechos fundamentales se **interpretan** de conformidad con la **Declaración Universal de Derechos Humanos** y los tratados ratificados por España (art. 10.2).",
+     "text": "Las normas relativas a los derechos fundamentales y a las libertades que la Constitución reconoce se **interpretan de conformidad con la Declaración Universal de Derechos Humanos** y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España (art. 10.2).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a10",
-       "quote": "se interpretarán de conformidad con la Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales"
+       "quote": "Las normas relativas a los derechos fundamentales y a las libertades que la Constitución reconoce se interpretarán de conformidad con la Declaración Universal de Derechos Humanos y los tratados y acuerdos internacionales sobre las mismas materias ratificados por España."
       }
      ]
     },
     {
-     "text": "El Título I se divide en cinco capítulos:",
+     "text": "El Título I tiene cinco capítulos:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -344,7 +506,7 @@
        ]
       },
       {
-       "text": "**Capítulo II**: derechos y libertades (arts. 14 a 38), con la **Sección 1.ª**, derechos fundamentales y libertades públicas (arts. 15 a 29), y la **Sección 2.ª**, derechos y deberes de los ciudadanos (arts. 30 a 38).",
+       "text": "**Capítulo II**: derechos y libertades (arts. 14 a 38). Lo abre el art. 14 (igualdad) y sigue la **Sección 1.ª**, de los derechos fundamentales y de las libertades públicas (arts. 15 a 29), y la **Sección 2.ª**, de los derechos y deberes de los ciudadanos (arts. 30 a 38).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -364,7 +526,7 @@
        ]
       },
       {
-       "text": "**Capítulo III**: principios rectores de la política social y económica (arts. 39 a 52).",
+       "text": "**Capítulo III**: de los principios rectores de la política social y económica (arts. 39 a 52).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -374,7 +536,7 @@
        ]
       },
       {
-       "text": "**Capítulo IV**: garantías de las libertades y derechos fundamentales (arts. 53 y 54).",
+       "text": "**Capítulo IV**: de las garantías de las libertades y derechos fundamentales (arts. 53 y 54).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -384,7 +546,7 @@
        ]
       },
       {
-       "text": "**Capítulo V**: suspensión de los derechos y libertades (art. 55).",
+       "text": "**Capítulo V**: de la suspensión de los derechos y libertades (art. 55).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -400,23 +562,33 @@
      "refs": [
       {
        "law": "BOE-A-1978-31229",
-       "section": "a11",
-       "quote": "La nacionalidad española se adquiere, se conserva y se pierde de acuerdo con lo establecido por la ley."
+       "section": "cprimero",
+       "quote": "CAPÍTULO PRIMERO. De los españoles y los extranjeros"
       }
      ],
      "items": [
       {
-       "text": "Ningún **español de origen** puede ser privado de su nacionalidad.",
+       "text": "La nacionalidad se adquiere, conserva y pierde según la ley, y **ningún español de origen puede ser privado de su nacionalidad**. El Estado puede concertar **tratados de doble nacionalidad** con los países iberoamericanos o con los que tengan una particular vinculación con España (art. 11).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a11",
+         "quote": "La nacionalidad española se adquiere, se conserva y se pierde de acuerdo con lo establecido por la ley."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a11",
          "quote": "Ningún español de origen podrá ser privado de su nacionalidad."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a11",
+         "quote": "El Estado podrá concertar tratados de doble nacionalidad con los países iberoamericanos o con aquellos que hayan tenido o tengan una particular vinculación con España."
         }
        ]
       },
       {
-       "text": "La **mayoría de edad** es a los **dieciocho años**.",
+       "text": "Los españoles son **mayores de edad a los dieciocho años** (art. 12).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -426,7 +598,7 @@
        ]
       },
       {
-       "text": "Los extranjeros gozan de las libertades públicas del Título I en los términos de los tratados y la ley. Los derechos del art. 23 son **solo de los españoles**, salvo el **sufragio activo y pasivo en las elecciones municipales**, por reciprocidad.",
+       "text": "Los extranjeros gozan de las libertades públicas del Título I **en los términos que establezcan los tratados y la ley**. Los derechos del **art. 23** son **solo de los españoles**, salvo lo que, por reciprocidad, **pueda establecerse por tratado o ley** para el sufragio activo y pasivo en las **elecciones municipales** (art. 13.1 y 13.2).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -441,19 +613,29 @@
        ]
       },
       {
-       "text": "La **extradición** excluye los delitos políticos, pero el **terrorismo** no se considera delito político.",
+       "text": "La **extradición** solo se concede en cumplimiento de un tratado o de la ley, atendiendo al principio de **reciprocidad**. Se excluyen los **delitos políticos**, pero los actos de **terrorismo** no se consideran tales (art. 13.3).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a13",
-         "quote": "Quedan excluidos de la extradición los delitos políticos, no considerándose como tales los actos de terrorismo."
+         "quote": "La extradición sólo se concederá en cumplimiento de un tratado o de la ley, atendiendo al principio de reciprocidad. Quedan excluidos de la extradición los delitos políticos, no considerándose como tales los actos de terrorismo."
+        }
+       ]
+      },
+      {
+       "text": "La ley establece los términos en que los ciudadanos de otros países y los **apátridas** pueden gozar del **derecho de asilo** (art. 13.4).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a13",
+         "quote": "La ley establecerá los términos en que los ciudadanos de otros países y los apátridas podrán gozar del derecho de asilo en España."
         }
        ]
       }
      ]
     },
     {
-     "text": "**Igualdad ante la ley** (art. 14): sin discriminación por nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social. Está fuera de la Sección 1.ª, pero tiene su misma protección (art. 53.2).",
+     "text": "**Igualdad ante la ley** (art. 14): sin discriminación por nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social. Está fuera de la Sección 1.ª, pero comparte con ella la tutela reforzada del art. 53.2 (procedimiento preferente y sumario, y amparo). En cambio, su reforma no sigue el procedimiento agravado del art. 168, que solo cubre la Sección 1.ª.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -464,6 +646,11 @@
        "law": "BOE-A-1978-31229",
        "section": "a53",
        "quote": "Cualquier ciudadano podrá recabar la tutela de las libertades y derechos reconocidos en el artículo 14 y la Sección primera del Capítulo segundo"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a168",
+       "quote": "al Capítulo segundo, Sección primera del Título I"
       }
      ]
     },
@@ -478,12 +665,12 @@
      ],
      "items": [
       {
-       "text": "Art. 15: **vida** e integridad física y moral; nadie puede sufrir tortura ni penas o tratos inhumanos o degradantes. Queda **abolida la pena de muerte**, salvo lo que dispongan las leyes penales militares para tiempos de guerra.",
+       "text": "Art. 15: todos tienen derecho a la **vida** y a la integridad física y moral; nadie puede ser sometido a tortura ni a penas o tratos inhumanos o degradantes. Queda **abolida la pena de muerte**, salvo lo que puedan disponer las leyes penales militares para tiempos de guerra.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a15",
-         "quote": "Todos tienen derecho a la vida y a la integridad física y moral"
+         "quote": "Todos tienen derecho a la vida y a la integridad física y moral, sin que, en ningún caso, puedan ser sometidos a tortura ni a penas o tratos inhumanos o degradantes."
         },
         {
          "law": "BOE-A-1978-31229",
@@ -493,12 +680,12 @@
        ]
       },
       {
-       "text": "Art. 16: libertad **ideológica, religiosa y de culto**; nadie está obligado a declarar sobre sus creencias y **ninguna confesión tiene carácter estatal**.",
+       "text": "Art. 16: libertad **ideológica, religiosa y de culto**, sin más limitación que la necesaria para el mantenimiento del **orden público** protegido por la ley. Nadie puede ser obligado a declarar sobre su ideología, religión o creencias. **Ninguna confesión tiene carácter estatal**, y los poderes públicos mantienen relaciones de cooperación con la Iglesia Católica y las demás confesiones.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a16",
-         "quote": "Se garantiza la libertad ideológica, religiosa y de culto"
+         "quote": "Se garantiza la libertad ideológica, religiosa y de culto de los individuos y las comunidades sin más limitación, en sus manifestaciones, que la necesaria para el mantenimiento del orden público protegido por la ley."
         },
         {
          "law": "BOE-A-1978-31229",
@@ -509,71 +696,126 @@
          "law": "BOE-A-1978-31229",
          "section": "a16",
          "quote": "Ninguna confesión tendrá carácter estatal."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a16",
+         "quote": "mantendrán las consiguientes relaciones de cooperación con la Iglesia Católica y las demás confesiones"
         }
        ]
       },
       {
-       "text": "Art. 17: **libertad y seguridad**. La detención preventiva dura lo estrictamente necesario y como máximo **setenta y dos horas**; el detenido es informado de sus derechos, no está obligado a declarar y tiene asistencia de abogado. La ley regula el **«habeas corpus»**.",
+       "text": "Art. 17: **libertad y seguridad**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a17",
-         "quote": "en el plazo máximo de setenta y dos horas, el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial"
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a17",
-         "quote": "no pudiendo ser obligada a declarar"
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a17",
-         "quote": "La ley regulará un procedimiento de «habeas corpus»"
+         "quote": "Toda persona tiene derecho a la libertad y a la seguridad."
         }
        ]
       },
       {
-       "text": "Art. 18: **honor, intimidad personal y familiar y propia imagen**; **inviolabilidad del domicilio** (entrada solo con consentimiento, resolución judicial o flagrante delito); **secreto de las comunicaciones**, salvo resolución judicial; y la ley **limitará el uso de la informática** para garantizar esos derechos.",
+       "text": "Art. 17.2: la **detención preventiva** dura solo lo estrictamente necesario para las averiguaciones y, como **máximo setenta y dos horas**, tras las cuales el detenido queda en libertad o a disposición judicial.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a17",
+         "quote": "La detención preventiva no podrá durar más del tiempo estrictamente necesario para la realización de las averiguaciones tendentes al esclarecimiento de los hechos, y, en todo caso, en el plazo máximo de setenta y dos horas, el detenido deberá ser puesto en libertad o a disposición de la autoridad judicial."
+        }
+       ]
+      },
+      {
+       "text": "Art. 17.3: el detenido debe ser informado **de forma inmediata y de modo comprensible** de sus derechos y de las razones de su detención; **no puede ser obligado a declarar** y tiene garantizada la **asistencia de abogado** en las diligencias policiales y judiciales.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a17",
+         "quote": "Toda persona detenida debe ser informada de forma inmediata, y de modo que le sea comprensible, de sus derechos y de las razones de su detención, no pudiendo ser obligada a declarar."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a17",
+         "quote": "Se garantiza la asistencia de abogado al detenido en las diligencias policiales y judiciales"
+        }
+       ]
+      },
+      {
+       "text": "Art. 17.4: la ley regula el **«habeas corpus»** para la inmediata puesta a disposición judicial de toda persona detenida ilegalmente, y fija el **plazo máximo de la prisión provisional**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a17",
+         "quote": "La ley regulará un procedimiento de «habeas corpus» para producir la inmediata puesta a disposición judicial de toda persona detenida ilegalmente."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a17",
+         "quote": "por ley se determinará el plazo máximo de duración de la prisión provisional"
+        }
+       ]
+      },
+      {
+       "text": "Art. 18: se garantiza el **honor, la intimidad personal y familiar y la propia imagen** (18.1).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a18",
          "quote": "Se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen."
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a18",
-         "quote": "Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito."
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a18",
-         "quote": "Se garantiza el secreto de las comunicaciones"
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a18",
-         "quote": "La ley limitará el uso de la informática"
         }
        ]
       },
       {
-       "text": "Art. 19: elegir **residencia**, **circular** por el territorio nacional y entrar y salir de España.",
+       "text": "Art. 18.2: el **domicilio es inviolable**: ninguna entrada o registro sin **consentimiento del titular** o **resolución judicial**, salvo **flagrante delito**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a18",
+         "quote": "El domicilio es inviolable. Ninguna entrada o registro podrá hacerse en él sin consentimiento del titular o resolución judicial, salvo en caso de flagrante delito."
+        }
+       ]
+      },
+      {
+       "text": "Art. 18.3: se garantiza el **secreto de las comunicaciones**, en especial postales, telegráficas y telefónicas, salvo resolución judicial.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a18",
+         "quote": "Se garantiza el secreto de las comunicaciones y, en especial, de las postales, telegráficas y telefónicas, salvo resolución judicial."
+        }
+       ]
+      },
+      {
+       "text": "Art. 18.4: **la ley limitará el uso de la informática** para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a18",
+         "quote": "La ley limitará el uso de la informática para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos."
+        }
+       ]
+      },
+      {
+       "text": "Art. 19: los **españoles** tienen derecho a elegir libremente su **residencia** y a **circular** por el territorio nacional, y a **entrar y salir** de España en los términos que la ley establezca; este derecho **no puede limitarse por motivos políticos o ideológicos**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a19",
          "quote": "Los españoles tienen derecho a elegir libremente su residencia y a circular por el territorio nacional."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a19",
+         "quote": "Asimismo, tienen derecho a entrar y salir libremente de España en los términos que la ley establezca. Este derecho no podrá ser limitado por motivos políticos o ideológicos."
         }
        ]
       },
       {
-       "text": "Art. 20: libertad de **expresión**, **producción y creación** literaria, artística, científica y técnica, **libertad de cátedra** e **información veraz**. No cabe la **censura previa** y el secuestro de publicaciones exige **resolución judicial**.",
+       "text": "Art. 20.1: se reconocen los derechos a **expresar y difundir** pensamientos, ideas y opiniones; a la **producción y creación** literaria, artística, científica y técnica; a la **libertad de cátedra**; y a **comunicar o recibir información veraz**, con la **cláusula de conciencia** y el **secreto profesional** que regule la ley.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a20",
-         "quote": "A expresar y difundir libremente los pensamientos, ideas y opiniones"
+         "quote": "A expresar y difundir libremente los pensamientos, ideas y opiniones mediante la palabra, el escrito o cualquier otro medio de reproducción."
         },
         {
          "law": "BOE-A-1978-31229",
@@ -588,12 +830,27 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a20",
-         "quote": "A comunicar o recibir libremente información veraz por cualquier medio de difusión."
+         "quote": "A comunicar o recibir libremente información veraz por cualquier medio de difusión. La ley regulará el derecho a la cláusula de conciencia y al secreto profesional en el ejercicio de estas libertades."
+        }
+       ]
+      },
+      {
+       "text": "Art. 20.2 a 20.5: **no cabe censura previa**; la ley regula el **control parlamentario** de los medios públicos; estas libertades tienen su límite en los demás derechos, especialmente el **honor, la intimidad, la propia imagen y la protección de la juventud y de la infancia**; y el **secuestro** de publicaciones solo cabe por **resolución judicial**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a20",
+         "quote": "El ejercicio de estos derechos no puede restringirse mediante ningún tipo de censura previa."
         },
         {
          "law": "BOE-A-1978-31229",
          "section": "a20",
-         "quote": "no puede restringirse mediante ningún tipo de censura previa"
+         "quote": "La ley regulará la organización y el control parlamentario de los medios de comunicación social dependientes del Estado o de cualquier ente público"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a20",
+         "quote": "especialmente, en el derecho al honor, a la intimidad, a la propia imagen y a la protección de la juventud y de la infancia"
         },
         {
          "law": "BOE-A-1978-31229",
@@ -603,7 +860,7 @@
        ]
       },
       {
-       "text": "Art. 21: **reunión pacífica y sin armas**, sin autorización previa; las reuniones en lugares de tránsito público y las manifestaciones requieren **comunicación previa** a la autoridad.",
+       "text": "Art. 21: **reunión pacífica y sin armas**, **sin autorización previa**. Las reuniones en lugares de tránsito público y las manifestaciones exigen **comunicación previa** a la autoridad, que solo puede prohibirlas cuando haya **razones fundadas de alteración del orden público, con peligro para personas o bienes**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -613,13 +870,23 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a21",
-         "quote": "En los casos de reuniones en lugares de tránsito público y manifestaciones se dará comunicación previa a la autoridad"
+         "quote": "En los casos de reuniones en lugares de tránsito público y manifestaciones se dará comunicación previa a la autoridad, que sólo podrá prohibirlas cuando existan razones fundadas de alteración del orden público, con peligro para personas o bienes."
         }
        ]
       },
       {
-       "text": "Art. 22: **asociación**. Las asociaciones se inscriben en un registro **a los solos efectos de publicidad**, solo pueden disolverse o suspenderse por **resolución judicial motivada** y se prohíben las **secretas y las paramilitares**.",
+       "text": "Art. 22: **asociación**. Son ilegales las que persigan fines o utilicen medios tipificados como delito; se inscriben en un registro **a los solos efectos de publicidad**; solo pueden disolverse o suspenderse por **resolución judicial motivada**; y se prohíben las **secretas y las de carácter paramilitar**.",
        "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a22",
+         "quote": "Se reconoce el derecho de asociación."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a22",
+         "quote": "Las asociaciones que persigan fines o utilicen medios tipificados como delito son ilegales."
+        },
         {
          "law": "BOE-A-1978-31229",
          "section": "a22",
@@ -628,7 +895,7 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a22",
-         "quote": "sólo podrán ser disueltas o suspendidas en sus actividades en virtud de resolución judicial motivada"
+         "quote": "Las asociaciones sólo podrán ser disueltas o suspendidas en sus actividades en virtud de resolución judicial motivada."
         },
         {
          "law": "BOE-A-1978-31229",
@@ -638,47 +905,52 @@
        ]
       },
       {
-       "text": "Art. 23: **participar en los asuntos públicos** y **acceder en condiciones de igualdad** a las funciones y cargos públicos.",
+       "text": "Art. 23: los **ciudadanos** tienen derecho a **participar en los asuntos públicos**, directamente o por medio de representantes libremente elegidos en elecciones periódicas por sufragio universal, y a **acceder en condiciones de igualdad** a las funciones y cargos públicos, con los requisitos que señalen las leyes.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a23",
-         "quote": "Los ciudadanos tienen el derecho a participar en los asuntos públicos"
+         "quote": "Los ciudadanos tienen el derecho a participar en los asuntos públicos, directamente o por medio de representantes, libremente elegidos en elecciones periódicas por sufragio universal."
         },
         {
          "law": "BOE-A-1978-31229",
          "section": "a23",
-         "quote": "tienen derecho a acceder en condiciones de igualdad a las funciones y cargos públicos"
+         "quote": "Asimismo, tienen derecho a acceder en condiciones de igualdad a las funciones y cargos públicos, con los requisitos que señalen las leyes."
         }
        ]
       },
       {
-       "text": "Art. 24: **tutela judicial efectiva** sin indefensión, juez ordinario predeterminado por la ley, defensa, proceso sin dilaciones indebidas, no declarar contra sí mismo y **presunción de inocencia**.",
+       "text": "Art. 24: **tutela judicial efectiva** sin que pueda producirse indefensión; derecho al **Juez ordinario predeterminado por la ley**, a la defensa y asistencia de letrado, a ser informados de la acusación, a un **proceso público sin dilaciones indebidas** y con todas las garantías, a utilizar los medios de prueba pertinentes, a **no declarar contra sí mismos**, a **no confesarse culpables** y a la **presunción de inocencia**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a24",
-         "quote": "Todas las personas tienen derecho a obtener la tutela efectiva de los jueces y tribunales"
+         "quote": "Todas las personas tienen derecho a obtener la tutela efectiva de los jueces y tribunales en el ejercicio de sus derechos e intereses legítimos, sin que, en ningún caso, pueda producirse indefensión."
         },
         {
          "law": "BOE-A-1978-31229",
          "section": "a24",
-         "quote": "a no declarar contra sí mismos, a no confesarse culpables y a la presunción de inocencia"
+         "quote": "todos tienen derecho al Juez ordinario predeterminado por la ley, a la defensa y a la asistencia de letrado, a ser informados de la acusación formulada contra ellos, a un proceso público sin dilaciones indebidas y con todas las garantías, a utilizar los medios de prueba pertinentes para su defensa, a no declarar contra sí mismos, a no confesarse culpables y a la presunción de inocencia"
         }
        ]
       },
       {
-       "text": "Art. 25: **legalidad penal y sancionadora**; las penas privativas de libertad se orientan a la **reeducación y reinserción social**, y la **Administración civil** no puede imponer sanciones que impliquen privación de libertad.",
+       "text": "Art. 25: **legalidad penal y sancionadora**: nadie puede ser condenado o sancionado por lo que no era delito, falta o infracción administrativa cuando ocurrió. Las penas privativas de libertad se orientan a la **reeducación y reinserción social** y **no pueden consistir en trabajos forzados**; el condenado tiene derecho a un **trabajo remunerado** y a la Seguridad Social. La **Administración civil** no puede imponer sanciones que impliquen **privación de libertad**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a25",
-         "quote": "Nadie puede ser condenado o sancionado por acciones u omisiones que en el momento de producirse no constituyan delito, falta o infracción administrativa"
+         "quote": "Nadie puede ser condenado o sancionado por acciones u omisiones que en el momento de producirse no constituyan delito, falta o infracción administrativa, según la legislación vigente en aquel momento."
         },
         {
          "law": "BOE-A-1978-31229",
          "section": "a25",
-         "quote": "estarán orientadas hacia la reeducación y reinserción social"
+         "quote": "estarán orientadas hacia la reeducación y reinserción social y no podrán consistir en trabajos forzados"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a25",
+         "quote": "tendrá derecho a un trabajo remunerado y a los beneficios correspondientes de la Seguridad Social"
         },
         {
          "law": "BOE-A-1978-31229",
@@ -688,7 +960,7 @@
        ]
       },
       {
-       "text": "Art. 26: se prohíben los **Tribunales de Honor** en la Administración civil y en las organizaciones profesionales.",
+       "text": "Art. 26: se prohíben los **Tribunales de Honor** en el ámbito de la Administración civil y de las organizaciones profesionales.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -698,7 +970,7 @@
        ]
       },
       {
-       "text": "Art. 27: **educación** y **libertad de enseñanza**; la enseñanza básica es **obligatoria y gratuita** y se reconoce la **autonomía de las Universidades**.",
+       "text": "Art. 27: derecho a la **educación** y **libertad de enseñanza**. Los padres tienen derecho a que sus hijos reciban la formación religiosa y moral acorde con sus convicciones; la **enseñanza básica es obligatoria y gratuita**; se reconoce la libertad de **creación de centros docentes**; profesores, padres y, en su caso, alumnos intervienen en el control y gestión de los centros sostenidos con fondos públicos; y se reconoce la **autonomía de las Universidades**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -708,7 +980,22 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a27",
+         "quote": "Los poderes públicos garantizan el derecho que asiste a los padres para que sus hijos reciban la formación religiosa y moral que esté de acuerdo con sus propias convicciones."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a27",
          "quote": "La enseñanza básica es obligatoria y gratuita."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a27",
+         "quote": "Se reconoce a las personas físicas y jurídicas la libertad de creación de centros docentes"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a27",
+         "quote": "Los profesores, los padres y, en su caso, los alumnos intervendrán en el control y gestión de todos los centros sostenidos por la Administración con fondos públicos"
         },
         {
          "law": "BOE-A-1978-31229",
@@ -718,49 +1005,59 @@
        ]
       },
       {
-       "text": "Art. 28: **libertad sindical** (nadie puede ser obligado a afiliarse; la ley puede limitarla en Fuerzas Armadas y cuerpos con disciplina militar) y **derecho de huelga**, garantizando los servicios esenciales.",
+       "text": "Art. 28.1: **libertad sindical**. La ley puede **limitar o exceptuar** este derecho a las Fuerzas o Institutos armados y a los Cuerpos sometidos a disciplina militar, y regula las **peculiaridades para los funcionarios públicos**. Nadie puede ser obligado a afiliarse a un sindicato.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a28",
-         "quote": "Todos tienen derecho a sindicarse libremente."
+         "quote": "Todos tienen derecho a sindicarse libremente. La ley podrá limitar o exceptuar el ejercicio de este derecho a las Fuerzas o Institutos armados o a los demás Cuerpos sometidos a disciplina militar y regulará las peculiaridades de su ejercicio para los funcionarios públicos."
         },
         {
          "law": "BOE-A-1978-31229",
          "section": "a28",
          "quote": "Nadie podrá ser obligado a afiliarse a un sindicato."
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a28",
-         "quote": "Se reconoce el derecho a la huelga de los trabajadores para la defensa de sus intereses."
         }
        ]
       },
       {
-       "text": "Art. 29: **petición** individual y colectiva, **por escrito**; los miembros de Fuerzas o Institutos armados solo pueden ejercerla **individualmente**.",
+       "text": "Art. 28.2: **derecho a la huelga** de los trabajadores; la ley que lo regule garantiza el mantenimiento de los **servicios esenciales** de la comunidad.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a28",
+         "quote": "Se reconoce el derecho a la huelga de los trabajadores para la defensa de sus intereses. La ley que regule el ejercicio de este derecho establecerá las garantías precisas para asegurar el mantenimiento de los servicios esenciales de la comunidad."
+        }
+       ]
+      },
+      {
+       "text": "Art. 29: los españoles tienen derecho de **petición individual y colectiva, por escrito**. Los miembros de Fuerzas o Institutos armados o de Cuerpos sometidos a disciplina militar solo pueden ejercerlo **individualmente** y con arreglo a su legislación específica.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a29",
-         "quote": "Todos los españoles tendrán el derecho de petición individual y colectiva, por escrito"
+         "quote": "Todos los españoles tendrán el derecho de petición individual y colectiva, por escrito, en la forma y con los efectos que determine la ley."
         },
         {
          "law": "BOE-A-1978-31229",
          "section": "a29",
-         "quote": "podrán ejercer este derecho sólo individualmente"
+         "quote": "podrán ejercer este derecho sólo individualmente y con arreglo a lo dispuesto en su legislación específica"
         }
        ]
       }
      ]
     },
     {
-     "text": "**Derechos y deberes de los ciudadanos** (Sección 2.ª, arts. 30 a 38). No son derechos fundamentales de la Sección 1.ª: por ejemplo, el **derecho a la propiedad privada** está aquí (art. 33).",
+     "text": "**Derechos y deberes de los ciudadanos** (Sección 2.ª, arts. 30 a 38). Están en el Capítulo II: vinculan a todos los poderes públicos y solo se regulan por ley que respete su contenido esencial, pero **no tienen recurso de amparo**, salvo la **objeción de conciencia** del art. 30. Aquí está, por ejemplo, el **derecho a la propiedad privada** (art. 33), que no es un derecho fundamental de la Sección 1.ª.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "s2",
        "quote": "De los derechos y deberes de los ciudadanos"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a53",
+       "quote": "Este último recurso será aplicable a la objeción de conciencia reconocida en el artículo 30."
       },
       {
        "law": "BOE-A-1978-31229",
@@ -770,7 +1067,7 @@
      ],
      "items": [
       {
-       "text": "Art. 30: **derecho y deber de defender a España**; la ley regula la **objeción de conciencia**, puede establecerse un **servicio civil** y, mediante ley, los deberes de los ciudadanos en caso de **grave riesgo, catástrofe o calamidad pública**.",
+       "text": "Art. 30.1 y 30.2: los españoles tienen el **derecho y el deber de defender a España**. La ley fija las obligaciones militares y regula la **objeción de conciencia** y las demás causas de exención del servicio militar, pudiendo imponer una **prestación social sustitutoria**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -780,8 +1077,23 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a30",
-         "quote": "regulará, con las debidas garantías, la objeción de conciencia"
-        },
+         "quote": "La ley fijará las obligaciones militares de los españoles y regulará, con las debidas garantías, la objeción de conciencia, así como las demás causas de exención del servicio militar obligatorio, pudiendo imponer, en su caso, una prestación social sustitutoria."
+        }
+       ]
+      },
+      {
+       "text": "Art. 30.3: **podrá establecerse un servicio civil** para el cumplimiento de fines de interés general.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a30",
+         "quote": "Podrá establecerse un servicio civil para el cumplimiento de fines de interés general."
+        }
+       ]
+      },
+      {
+       "text": "Art. 30.4: **mediante ley podrán regularse** los deberes de los ciudadanos en los casos de **grave riesgo, catástrofe o calamidad pública**.",
+       "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a30",
@@ -790,22 +1102,37 @@
        ]
       },
       {
-       "text": "Art. 31: todos contribuyen a los gastos públicos según su **capacidad económica**, con un sistema tributario justo, de **igualdad y progresividad**, que nunca tendrá **alcance confiscatorio**.",
+       "text": "Art. 31: todos contribuyen al sostenimiento de los gastos públicos según su **capacidad económica**, con un sistema tributario justo, inspirado en la **igualdad y progresividad**, que **nunca tendrá alcance confiscatorio**. El gasto público hará una asignación equitativa y responderá a la **eficiencia y economía**, y las prestaciones personales o patrimoniales de carácter público solo pueden establecerse **con arreglo a la ley**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a31",
          "quote": "Todos contribuirán al sostenimiento de los gastos públicos de acuerdo con su capacidad económica mediante un sistema tributario justo inspirado en los principios de igualdad y progresividad que, en ningún caso, tendrá alcance confiscatorio."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a31",
+         "quote": "El gasto público realizará una asignación equitativa de los recursos públicos, y su programación y ejecución responderán a los criterios de eficiencia y economía."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a31",
+         "quote": "Sólo podrán establecerse prestaciones personales o patrimoniales de carácter público con arreglo a la ley."
         }
        ]
       },
       {
-       "text": "Arts. 32 a 34: **matrimonio** con plena igualdad jurídica, **propiedad privada y herencia** (con función social; expropiación solo con causa justificada e indemnización) y **fundación** para fines de interés general.",
+       "text": "Arts. 32 a 34: **matrimonio** con plena igualdad jurídica del hombre y la mujer; **propiedad privada y herencia**, cuyo contenido delimita su **función social**, y nadie puede ser privado de sus bienes sino por causa justificada de utilidad pública o interés social, con **indemnización**; y **fundación** para fines de interés general.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a32",
          "quote": "El hombre y la mujer tienen derecho a contraer matrimonio con plena igualdad jurídica."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a33",
+         "quote": "La función social de estos derechos delimitará su contenido, de acuerdo con las leyes."
         },
         {
          "law": "BOE-A-1978-31229",
@@ -820,18 +1147,48 @@
        ]
       },
       {
-       "text": "Arts. 35 a 38: **deber de trabajar y derecho al trabajo**, colegios profesionales, **negociación colectiva** y medidas de **conflicto colectivo**, y **libertad de empresa** en el marco de la economía de mercado.",
+       "text": "Art. 35: **deber de trabajar y derecho al trabajo**, a la libre elección de profesión u oficio, a la promoción y a una **remuneración suficiente**, sin discriminación por razón de sexo; la ley regula un **estatuto de los trabajadores**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a35",
-         "quote": "Todos los españoles tienen el deber de trabajar y el derecho al trabajo"
+         "quote": "Todos los españoles tienen el deber de trabajar y el derecho al trabajo, a la libre elección de profesión u oficio, a la promoción a través del trabajo y a una remuneración suficiente para satisfacer sus necesidades y las de su familia, sin que en ningún caso pueda hacerse discriminación por razón de sexo."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a35",
+         "quote": "La ley regulará un estatuto de los trabajadores."
+        }
+       ]
+      },
+      {
+       "text": "Art. 36: la ley regula los **Colegios Profesionales** y las profesiones tituladas; su estructura interna y funcionamiento **deberán ser democráticos**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a36",
+         "quote": "La ley regulará las peculiaridades propias del régimen jurídico de los Colegios Profesionales y el ejercicio de las profesiones tituladas. La estructura interna y el funcionamiento de los Colegios deberán ser democráticos."
+        }
+       ]
+      },
+      {
+       "text": "Art. 37: la ley garantiza la **negociación colectiva laboral** y la **fuerza vinculante de los convenios**, y se reconoce el derecho a adoptar **medidas de conflicto colectivo**, garantizando el funcionamiento de los servicios esenciales.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a37",
+         "quote": "La ley garantizará el derecho a la negociación colectiva laboral entre los representantes de los trabajadores y empresarios, así como la fuerza vinculante de los convenios."
         },
         {
          "law": "BOE-A-1978-31229",
          "section": "a37",
-         "quote": "La ley garantizará el derecho a la negociación colectiva laboral"
-        },
+         "quote": "Se reconoce el derecho de los trabajadores y empresarios a adoptar medidas de conflicto colectivo."
+        }
+       ]
+      },
+      {
+       "text": "Art. 38: **libertad de empresa** en el marco de la **economía de mercado**.",
+       "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a38",
@@ -842,17 +1199,22 @@
      ]
     },
     {
-     "text": "**Principios rectores de la política social y económica** (Capítulo III, arts. 39 a 52): mandatos a los poderes públicos sobre:",
+     "text": "**Principios rectores de la política social y económica** (Capítulo III, arts. 39 a 52): mandatos a los poderes públicos, que solo pueden alegarse ante los jueces según las leyes que los desarrollen (art. 53.3). Tratan de:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "ctercero",
        "quote": "De los principios rectores de la política social y económica"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a53",
+       "quote": "Sólo podrán ser alegados ante la Jurisdicción ordinaria de acuerdo con lo que dispongan las leyes que los desarrollen."
       }
      ],
      "items": [
       {
-       "text": "La **familia** y los hijos (art. 39), el progreso social y el **pleno empleo** (art. 40) y la **Seguridad Social** pública (art. 41).",
+       "text": "Art. 39: protección social, económica y jurídica de la **familia**; protección integral de los hijos, **iguales ante la ley con independencia de su filiación**; y la ley posibilita la **investigación de la paternidad**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -861,18 +1223,58 @@
         },
         {
          "law": "BOE-A-1978-31229",
+         "section": "a39",
+         "quote": "iguales éstos ante la ley con independencia de su filiación"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a39",
+         "quote": "La ley posibilitará la investigación de la paternidad."
+        }
+       ]
+      },
+      {
+       "text": "Art. 40: progreso social y económico, una distribución más equitativa de la renta y una política orientada al **pleno empleo**; formación y readaptación profesionales, **seguridad e higiene en el trabajo**, limitación de la jornada y **vacaciones periódicas retribuidas**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
          "section": "a40",
          "quote": "De manera especial realizarán una política orientada al pleno empleo."
         },
         {
          "law": "BOE-A-1978-31229",
-         "section": "a41",
-         "quote": "Los poderes públicos mantendrán un régimen público de Seguridad Social para todos los ciudadanos"
+         "section": "a40",
+         "quote": "velarán por la seguridad e higiene en el trabajo y garantizarán el descanso necesario, mediante la limitación de la jornada laboral, las vacaciones periódicas retribuidas"
         }
        ]
       },
       {
-       "text": "La **protección de la salud** (art. 43), la **cultura** y la ciencia (art. 44) y el **medio ambiente**, con el deber de conservarlo (art. 45).",
+       "text": "Art. 41: un **régimen público de Seguridad Social** para todos los ciudadanos, especialmente en caso de desempleo; la asistencia y prestaciones **complementarias serán libres**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a41",
+         "quote": "Los poderes públicos mantendrán un régimen público de Seguridad Social para todos los ciudadanos"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a41",
+         "quote": "La asistencia y prestaciones complementarias serán libres."
+        }
+       ]
+      },
+      {
+       "text": "Art. 42: el Estado vela por los derechos económicos y sociales de los **trabajadores españoles en el extranjero** y orienta su política hacia su **retorno**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a42",
+         "quote": "El Estado velará especialmente por la salvaguardia de los derechos económicos y sociales de los trabajadores españoles en el extranjero y orientará su política hacia su retorno."
+        }
+       ]
+      },
+      {
+       "text": "Art. 43: derecho a la **protección de la salud**; los poderes públicos fomentan la educación sanitaria, la **educación física y el deporte** y la adecuada utilización del ocio.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -881,24 +1283,59 @@
         },
         {
          "law": "BOE-A-1978-31229",
-         "section": "a44",
-         "quote": "Los poderes públicos promoverán y tutelarán el acceso a la cultura"
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a45",
-         "quote": "Todos tienen el derecho a disfrutar de un medio ambiente adecuado para el desarrollo de la persona, así como el deber de conservarlo."
+         "section": "a43",
+         "quote": "Los poderes públicos fomentarán la educación sanitaria, la educación física y el deporte."
         }
        ]
       },
       {
-       "text": "El patrimonio histórico (art. 46), una **vivienda digna y adecuada** (art. 47) y la participación de la **juventud** (art. 48).",
+       "text": "Art. 44: acceso a la **cultura**, a la que todos tienen derecho, y promoción de la **ciencia y la investigación**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a44",
+         "quote": "Los poderes públicos promoverán y tutelarán el acceso a la cultura, a la que todos tienen derecho."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a44",
+         "quote": "Los poderes públicos promoverán la ciencia y la investigación científica y técnica en beneficio del interés general."
+        }
+       ]
+      },
+      {
+       "text": "Art. 45: derecho a un **medio ambiente adecuado** y **deber de conservarlo**; quien lo viole tendrá sanciones penales o administrativas y la **obligación de reparar el daño**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a45",
+         "quote": "Todos tienen el derecho a disfrutar de un medio ambiente adecuado para el desarrollo de la persona, así como el deber de conservarlo."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a45",
+         "quote": "se establecerán sanciones penales o, en su caso, administrativas, así como la obligación de reparar el daño causado"
+        }
+       ]
+      },
+      {
+       "text": "Art. 46: conservación del **patrimonio histórico, cultural y artístico**; la ley penal sanciona los atentados contra él.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a46",
-         "quote": "Los poderes públicos garantizarán la conservación y promoverán el enriquecimiento del patrimonio histórico"
+         "quote": "Los poderes públicos garantizarán la conservación y promoverán el enriquecimiento del patrimonio histórico, cultural y artístico"
         },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a46",
+         "quote": "La ley penal sancionará los atentados contra este patrimonio."
+        }
+       ]
+      },
+      {
+       "text": "Art. 47: derecho a una **vivienda digna y adecuada**; se regula el suelo para **impedir la especulación** y la comunidad participa en las **plusvalías** de la acción urbanística.",
+       "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a47",
@@ -906,33 +1343,73 @@
         },
         {
          "law": "BOE-A-1978-31229",
-         "section": "a48",
-         "quote": "Los poderes públicos promoverán las condiciones para la participación libre y eficaz de la juventud"
+         "section": "a47",
+         "quote": "regulando la utilización del suelo de acuerdo con el interés general para impedir la especulación"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a47",
+         "quote": "La comunidad participará en las plusvalías que genere la acción urbanística de los entes públicos."
         }
        ]
       },
       {
-       "text": "Las **personas con discapacidad**, que ejercen los derechos del Título I en condiciones de libertad e igualdad reales y efectivas (art. 49, en su redacción de la reforma de 2024).",
+       "text": "Art. 48: participación libre y eficaz de la **juventud** en el desarrollo político, social, económico y cultural.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a48",
+         "quote": "Los poderes públicos promoverán las condiciones para la participación libre y eficaz de la juventud en el desarrollo político, social, económico y cultural."
+        }
+       ]
+      },
+      {
+       "text": "Art. 49: las **personas con discapacidad** ejercen los derechos del Título I en condiciones de libertad e igualdad reales y efectivas; los poderes públicos impulsan su **plena autonomía personal e inclusión social** en entornos universalmente accesibles, atendiendo particularmente a las mujeres y los menores con discapacidad.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a49",
          "quote": "Las personas con discapacidad ejercen los derechos previstos en este Título en condiciones de libertad e igualdad reales y efectivas."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a49",
+         "quote": "Los poderes públicos impulsarán las políticas que garanticen la plena autonomía personal y la inclusión social de las personas con discapacidad, en entornos universalmente accesibles."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a49",
+         "quote": "Se atenderán particularmente las necesidades específicas de las mujeres y los menores con discapacidad."
         }
        ]
       },
       {
-       "text": "La **tercera edad**, con pensiones adecuadas y periódicamente actualizadas (art. 50), los **consumidores y usuarios** (art. 51) y las organizaciones profesionales (art. 52).",
+       "text": "Art. 50: suficiencia económica en la **tercera edad** mediante **pensiones adecuadas y periódicamente actualizadas**, y un sistema de servicios sociales.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a50",
-         "quote": "mediante pensiones adecuadas y periódicamente actualizadas"
-        },
+         "quote": "Los poderes públicos garantizarán, mediante pensiones adecuadas y periódicamente actualizadas, la suficiencia económica a los ciudadanos durante la tercera edad."
+        }
+       ]
+      },
+      {
+       "text": "Art. 51: defensa de los **consumidores y usuarios** (seguridad, salud y legítimos intereses económicos), su información y educación, y sus organizaciones.",
+       "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a51",
-         "quote": "Los poderes públicos garantizarán la defensa de los consumidores y usuarios"
+         "quote": "Los poderes públicos garantizarán la defensa de los consumidores y usuarios, protegiendo, mediante procedimientos eficaces, la seguridad, la salud y los legítimos intereses económicos de los mismos."
+        }
+       ]
+      },
+      {
+       "text": "Art. 52: la ley regula las **organizaciones profesionales**, cuya estructura interna y funcionamiento deberán ser democráticos.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a52",
+         "quote": "La ley regulará las organizaciones profesionales que contribuyan a la defensa de los intereses económicos que les sean propios. Su estructura interna y funcionamiento deberán ser democráticos."
         }
        ]
       }
@@ -944,8 +1421,13 @@
    "title": "Garantía de los derechos (Capítulo IV y otros preceptos)",
    "points": [
     {
-     "text": "Los derechos del **Capítulo II vinculan a todos los poderes públicos**; su ejercicio **solo puede regularse por ley**, que debe respetar su **contenido esencial**, y se protegen con el recurso de inconstitucionalidad (art. 161.1.a).",
+     "text": "Escala de protección: el **art. 14 y la Sección 1.ª** tienen la protección máxima (amparo y procedimiento preferente y sumario); la **Sección 2.ª** vincula a todos los poderes públicos y tiene reserva de ley, pero sin amparo (salvo la objeción de conciencia); y los **principios rectores** del Capítulo III solo informan la actuación pública.",
      "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a53",
+       "quote": "Cualquier ciudadano podrá recabar la tutela de las libertades y derechos reconocidos en el artículo 14 y la Sección primera del Capítulo segundo"
+      },
       {
        "law": "BOE-A-1978-31229",
        "section": "a53",
@@ -954,7 +1436,17 @@
       {
        "law": "BOE-A-1978-31229",
        "section": "a53",
-       "quote": "Sólo por ley, que en todo caso deberá respetar su contenido esencial, podrá regularse el ejercicio de tales derechos y libertades"
+       "quote": "El reconocimiento, el respeto y la protección de los principios reconocidos en el Capítulo tercero informarán la legislación positiva, la práctica judicial y la actuación de los poderes públicos."
+      }
+     ]
+    },
+    {
+     "text": "Art. 53.1: los derechos y libertades del **Capítulo II vinculan a todos los poderes públicos**. Su ejercicio **solo puede regularse por ley** (no se exige ley orgánica), que en todo caso debe respetar su **contenido esencial**, y se tutelan mediante el recurso de inconstitucionalidad del art. 161.1.a.",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a53",
+       "quote": "Sólo por ley, que en todo caso deberá respetar su contenido esencial, podrá regularse el ejercicio de tales derechos y libertades, que se tutelarán de acuerdo con lo previsto en el artículo 161, 1, a)."
       },
       {
        "law": "BOE-A-1978-31229",
@@ -964,7 +1456,22 @@
      ]
     },
     {
-     "text": "El **art. 14 y la Sección 1.ª** tienen la protección reforzada: un procedimiento ante los tribunales ordinarios basado en la **preferencia y sumariedad** y, en su caso, el **recurso de amparo** ante el Tribunal Constitucional, que también protege la **objeción de conciencia** (art. 30).",
+     "text": "En cambio, el **desarrollo de los derechos fundamentales y de las libertades públicas** se hace por **ley orgánica**, que exige **mayoría absoluta del Congreso** en una votación final sobre el conjunto del proyecto (art. 81).",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a81",
+       "quote": "Son leyes orgánicas las relativas al desarrollo de los derechos fundamentales y de las libertades públicas"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a81",
+       "quote": "La aprobación, modificación o derogación de las leyes orgánicas exigirá mayoría absoluta del Congreso, en una votación final sobre el conjunto del proyecto."
+      }
+     ]
+    },
+    {
+     "text": "Art. 53.2: cualquier ciudadano puede recabar la tutela del **art. 14 y la Sección 1.ª** ante los **tribunales ordinarios**, por un procedimiento basado en los principios de **preferencia y sumariedad**, y, en su caso, mediante el **recurso de amparo** ante el Tribunal Constitucional. El amparo se aplica también a la **objeción de conciencia** del art. 30.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -979,7 +1486,7 @@
      ]
     },
     {
-     "text": "Pueden interponer el **recurso de amparo** toda persona natural o jurídica que invoque un **interés legítimo**, el **Defensor del Pueblo** y el **Ministerio Fiscal**.",
+     "text": "Pueden interponer el **recurso de amparo** toda persona natural o jurídica que invoque un **interés legítimo**, el **Defensor del Pueblo** y el **Ministerio Fiscal** (art. 162.1.b).",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -989,8 +1496,13 @@
      ]
     },
     {
-     "text": "Los **principios rectores** (Capítulo III) informan la legislación, la práctica judicial y la actuación de los poderes públicos, pero **solo pueden alegarse** ante la jurisdicción ordinaria según las **leyes que los desarrollen**.",
+     "text": "Art. 53.3: los **principios rectores** del Capítulo III **informarán la legislación positiva, la práctica judicial y la actuación de los poderes públicos**, y solo pueden alegarse ante la jurisdicción ordinaria según las **leyes que los desarrollen**.",
      "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a53",
+       "quote": "informarán la legislación positiva, la práctica judicial y la actuación de los poderes públicos"
+      },
       {
        "law": "BOE-A-1978-31229",
        "section": "a53",
@@ -999,47 +1511,59 @@
      ]
     },
     {
-     "text": "El **Defensor del Pueblo** se regula por **ley orgánica**: es **alto comisionado de las Cortes Generales**, designado por ellas para defender los derechos del Título I, y puede supervisar la actividad de la Administración.",
+     "text": "Art. 54: **una ley orgánica regulará el Defensor del Pueblo**, **alto comisionado de las Cortes Generales**, designado por estas para defender los derechos del Título I; puede **supervisar la actividad de la Administración**, dando cuenta a las Cortes Generales.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a54",
-       "quote": "Una ley orgánica regulará la institución del Defensor del Pueblo, como alto comisionado de las Cortes Generales"
+       "quote": "Una ley orgánica regulará la institución del Defensor del Pueblo, como alto comisionado de las Cortes Generales, designado por éstas para la defensa de los derechos comprendidos en este Título, a cuyo efecto podrá supervisar la actividad de la Administración, dando cuenta a las Cortes Generales."
       }
      ]
     },
     {
-     "text": "El **desarrollo de los derechos fundamentales y libertades públicas** se hace por **ley orgánica**, que exige **mayoría absoluta del Congreso** en una votación final sobre el conjunto del proyecto.",
-     "refs": [
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a81",
-       "quote": "Son leyes orgánicas las relativas al desarrollo de los derechos fundamentales y de las libertades públicas"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a81",
-       "quote": "exigirá mayoría absoluta del Congreso, en una votación final sobre el conjunto del proyecto"
-      }
-     ]
-    },
-    {
-     "text": "Su **reforma está agravada**: la revisión total o una parcial que afecte al **Título preliminar**, a la **Sección 1.ª del Capítulo II del Título I** o al **Título II** exige dos tercios de cada Cámara, disolución de las Cortes, nueva aprobación por dos tercios y **referéndum** de ratificación.",
+     "text": "**Reforma agravada** (art. 168): la revisión total o una parcial que afecte al **Título preliminar**, a la **Sección 1.ª del Capítulo II del Título I** o al **Título II** exige:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a168",
        "quote": "Cuando se propusiere la revisión total de la Constitución o una parcial que afecte al Título preliminar, al Capítulo segundo, Sección primera del Título I, o al Título II"
+      }
+     ],
+     "items": [
+      {
+       "text": "Aprobar el principio por **dos tercios de cada Cámara** y **disolver inmediatamente las Cortes**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a168",
+         "quote": "se procederá a la aprobación del principio por mayoría de dos tercios de cada Cámara, y a la disolución inmediata de las Cortes"
+        }
+       ]
       },
       {
-       "law": "BOE-A-1978-31229",
-       "section": "a168",
-       "quote": "se procederá a la aprobación del principio por mayoría de dos tercios de cada Cámara, y a la disolución inmediata de las Cortes"
+       "text": "Las **Cámaras elegidas** ratifican la decisión y aprueban el nuevo texto por **dos tercios de ambas Cámaras**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a168",
+         "quote": "Las Cámaras elegidas deberán ratificar la decisión y proceder al estudio del nuevo texto constitucional, que deberá ser aprobado por mayoría de dos tercios de ambas Cámaras."
+        }
+       ]
       },
       {
-       "law": "BOE-A-1978-31229",
-       "section": "a168",
-       "quote": "Aprobada la reforma por las Cortes Generales, será sometida a referéndum para su ratificación."
+       "text": "**Referéndum obligatorio** de ratificación. En la reforma ordinaria (art. 167), el referéndum solo se celebra si lo pide **una décima parte** de los miembros de cualquiera de las Cámaras en los quince días siguientes.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a168",
+         "quote": "Aprobada la reforma por las Cortes Generales, será sometida a referéndum para su ratificación."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a167",
+         "quote": "será sometida a referéndum para su ratificación cuando así lo soliciten, dentro de los quince días siguientes a su aprobación, una décima parte de los miembros de cualquiera de las Cámaras"
+        }
+       ]
       }
      ]
     }
@@ -1049,7 +1573,7 @@
    "title": "Suspensión de los derechos (Capítulo V y art. 116)",
    "points": [
     {
-     "text": "La suspensión se regula en el **Capítulo V del Título I** (art. 55).",
+     "text": "La suspensión se regula en el **Capítulo V del Título I** (art. 55), en dos modalidades: general e individual.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -1059,7 +1583,7 @@
      ]
     },
     {
-     "text": "**Suspensión general** (art. 55.1): solo con la declaración del **estado de excepción o de sitio**. Pueden suspenderse:",
+     "text": "**Suspensión general** (art. 55.1): solo cuando se declara el **estado de excepción o de sitio**. El **estado de alarma no permite suspender derechos**: el art. 55.1 no lo menciona. Pueden suspenderse:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -1069,7 +1593,7 @@
      ],
      "items": [
       {
-       "text": "Art. 17: libertad y seguridad (detención). Pero el **art. 17.3** (derechos del detenido) **no se suspende en el estado de excepción**.",
+       "text": "Art. 17, libertad y seguridad. Excepción: los **derechos del detenido del art. 17.3 no se suspenden en el estado de excepción**; sí pueden suspenderse en el de sitio.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1079,7 +1603,7 @@
        ]
       },
       {
-       "text": "Art. 18.2 y 18.3: inviolabilidad del domicilio y secreto de las comunicaciones; art. 19: residencia y circulación.",
+       "text": "Art. 18.2 y 18.3, inviolabilidad del domicilio y secreto de las comunicaciones, y art. 19, residencia, circulación y entrada y salida de España.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1089,7 +1613,7 @@
        ]
       },
       {
-       "text": "Art. 20.1.a y d y 20.5: libertad de expresión e información y secuestro de publicaciones; art. 21: reunión; art. 28.2: huelga; art. 37.2: conflicto colectivo.",
+       "text": "Art. 20.1.a y d (expresión e información) y 20.5 (secuestro de publicaciones), art. 21 (reunión), art. 28.2 (huelga) y art. 37.2 (conflicto colectivo).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1101,57 +1625,42 @@
      ]
     },
     {
-     "text": "**Suspensión individual** (art. 55.2): una **ley orgánica** puede permitir suspender para personas determinadas los arts. **17.2** (plazo de detención) y **18.2 y 18.3**, en investigaciones sobre **bandas armadas o elementos terroristas**, con **intervención judicial** y **control parlamentario**. Su uso injustificado o abusivo genera **responsabilidad penal**.",
+     "text": "**Suspensión individual** (art. 55.2): una **ley orgánica** puede permitir suspender, **para personas determinadas**, los arts. **17.2** (duración de la detención) y **18.2 y 18.3**, en las investigaciones sobre **bandas armadas o elementos terroristas**, con la necesaria **intervención judicial** y el adecuado **control parlamentario**. Su uso injustificado o abusivo produce **responsabilidad penal**.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a55",
-       "quote": "los derechos reconocidos en los artículos 17, apartado 2, y 18, apartados 2 y 3, pueden ser suspendidos para personas determinadas"
+       "quote": "Una ley orgánica podrá determinar la forma y los casos en los que, de forma individual y con la necesaria intervención judicial y el adecuado control parlamentario, los derechos reconocidos en los artículos 17, apartado 2, y 18, apartados 2 y 3, pueden ser suspendidos para personas determinadas, en relación con las investigaciones correspondientes a la actuación de bandas armadas o elementos terroristas."
       },
       {
        "law": "BOE-A-1978-31229",
        "section": "a55",
-       "quote": "con la necesaria intervención judicial y el adecuado control parlamentario"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a55",
-       "quote": "en relación con las investigaciones correspondientes a la actuación de bandas armadas o elementos terroristas"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a55",
-       "quote": "producirá responsabilidad penal"
+       "quote": "La utilización injustificada o abusiva de las facultades reconocidas en dicha ley orgánica producirá responsabilidad penal"
       }
      ]
     },
     {
-     "text": "Los **estados excepcionales** (art. 116, regulados por ley orgánica):",
+     "text": "**Estados excepcionales** (art. 116), regulados por ley orgánica:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a116",
-       "quote": "Una ley orgánica regulará los estados de alarma, de excepción y de sitio"
+       "quote": "Una ley orgánica regulará los estados de alarma, de excepción y de sitio, y las competencias y limitaciones correspondientes."
       }
      ],
      "items": [
       {
-       "text": "**Alarma**: lo declara el **Gobierno** por decreto acordado en Consejo de Ministros, por un máximo de **quince días**, dando cuenta al Congreso, sin cuya autorización no puede prorrogarse.",
+       "text": "**Alarma**: lo declara el **Gobierno** por decreto acordado en Consejo de Ministros, por un máximo de **quince días**, **dando cuenta al Congreso**, sin cuya autorización no puede prorrogarse. El decreto fija su ámbito territorial.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a116",
-         "quote": "El estado de alarma será declarado por el Gobierno mediante decreto acordado en Consejo de Ministros por un plazo máximo de quince días"
-        },
-        {
-         "law": "BOE-A-1978-31229",
-         "section": "a116",
-         "quote": "sin cuya autorización no podrá ser prorrogado dicho plazo"
+         "quote": "El estado de alarma será declarado por el Gobierno mediante decreto acordado en Consejo de Ministros por un plazo máximo de quince días, dando cuenta al Congreso de los Diputados, reunido inmediatamente al efecto y sin cuya autorización no podrá ser prorrogado dicho plazo."
         }
        ]
       },
       {
-       "text": "**Excepción**: lo declara el **Gobierno**, **previa autorización del Congreso**, por un máximo de **treinta días prorrogables** por otro plazo igual.",
+       "text": "**Excepción**: lo declara el **Gobierno** por decreto, **previa autorización del Congreso**, que fija expresamente sus efectos, ámbito y duración: **máximo treinta días, prorrogables por otros treinta** con los mismos requisitos.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1161,27 +1670,42 @@
         {
          "law": "BOE-A-1978-31229",
          "section": "a116",
-         "quote": "que no podrá exceder de treinta días, prorrogables por otro plazo igual"
+         "quote": "su duración, que no podrá exceder de treinta días, prorrogables por otro plazo igual, con los mismos requisitos"
         }
        ]
       },
       {
-       "text": "**Sitio**: lo declara la **mayoría absoluta del Congreso**, a **propuesta exclusiva del Gobierno**.",
+       "text": "**Sitio**: lo declara la **mayoría absoluta del Congreso**, a **propuesta exclusiva del Gobierno**. La Constitución no le fija plazo: **el Congreso determina su ámbito territorial, duración y condiciones**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a116",
-         "quote": "El estado de sitio será declarado por la mayoría absoluta del Congreso de los Diputados, a propuesta exclusiva del Gobierno."
+         "quote": "El estado de sitio será declarado por la mayoría absoluta del Congreso de los Diputados, a propuesta exclusiva del Gobierno. El Congreso determinará su ámbito territorial, duración y condiciones."
         }
        ]
       },
       {
-       "text": "Mientras dure cualquiera de ellos **no puede disolverse el Congreso**, ni puede iniciarse una reforma constitucional.",
+       "text": "Mientras dure cualquiera de ellos **no puede disolverse el Congreso**: las Cámaras quedan convocadas automáticamente si no estaban en sesiones y su funcionamiento no puede interrumpirse. Si el Congreso está disuelto o ha expirado su mandato, asume sus competencias la **Diputación Permanente**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a116",
-         "quote": "No podrá procederse a la disolución del Congreso mientras estén declarados algunos de los estados comprendidos en el presente artículo"
+         "quote": "No podrá procederse a la disolución del Congreso mientras estén declarados algunos de los estados comprendidos en el presente artículo, quedando automáticamente convocadas las Cámaras si no estuvieren en período de sesiones."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a116",
+         "quote": "las competencias del Congreso serán asumidas por su Diputación Permanente"
+        }
+       ]
+      },
+      {
+       "text": "Su declaración **no modifica el principio de responsabilidad del Gobierno** y de sus agentes, y durante su vigencia **no puede iniciarse la reforma constitucional**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a116",
+         "quote": "La declaración de los estados de alarma, de excepción y de sitio no modificarán el principio de responsabilidad del Gobierno y de sus agentes"
         },
         {
          "law": "BOE-A-1978-31229",
@@ -1198,52 +1722,52 @@
    "title": "La Corona (Título II, artículos 56 a 65)",
    "points": [
     {
-     "text": "El **Rey es el Jefe del Estado**, símbolo de su unidad y permanencia; **arbitra y modera** el funcionamiento regular de las instituciones y asume la **más alta representación** del Estado en las relaciones internacionales. Su título es el de **Rey de España**.",
+     "text": "Art. 56.1: el **Rey es el Jefe del Estado**, **símbolo de su unidad y permanencia**; **arbitra y modera** el funcionamiento regular de las instituciones; asume la **más alta representación del Estado** en las relaciones internacionales, especialmente con las naciones de su comunidad histórica; y ejerce las funciones que le atribuyen **expresamente** la Constitución y las leyes.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a56",
-       "quote": "El Rey es el Jefe del Estado, símbolo de su unidad y permanencia, arbitra y modera el funcionamiento regular de las instituciones"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a56",
-       "quote": "asume la más alta representación del Estado español en las relaciones internacionales"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a56",
-       "quote": "Su título es el de Rey de España"
+       "quote": "El Rey es el Jefe del Estado, símbolo de su unidad y permanencia, arbitra y modera el funcionamiento regular de las instituciones, asume la más alta representación del Estado español en las relaciones internacionales, especialmente con las naciones de su comunidad histórica, y ejerce las funciones que le atribuyen expresamente la Constitución y las leyes."
       }
      ]
     },
     {
-     "text": "La persona del Rey es **inviolable** y **no está sujeta a responsabilidad**. Sus actos deben estar **refrendados** (art. 64) y sin refrendo carecen de validez, salvo los del art. 65.2.",
+     "text": "Art. 56.2: su título es el de **Rey de España**, y puede utilizar los demás que correspondan a la Corona.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a56",
-       "quote": "La persona del Rey es inviolable y no está sujeta a responsabilidad."
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a56",
-       "quote": "Sus actos estarán siempre refrendados en la forma establecida en el artículo 64, careciendo de validez sin dicho refrendo, salvo lo dispuesto en el artículo 65, 2."
+       "quote": "Su título es el de Rey de España y podrá utilizar los demás que correspondan a la Corona."
       }
      ]
     },
     {
-     "text": "**Sucesión** (art. 57): la Corona es **hereditaria** en los sucesores de Don Juan Carlos I de Borbón, por orden de **primogenitura y representación**:",
+     "text": "Art. 56.3: la persona del Rey es **inviolable** y **no está sujeta a responsabilidad**. Sus actos están **siempre refrendados** (art. 64) y **sin refrendo carecen de validez**, salvo lo dispuesto en el **art. 65.2**.",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a56",
+       "quote": "La persona del Rey es inviolable y no está sujeta a responsabilidad. Sus actos estarán siempre refrendados en la forma establecida en el artículo 64, careciendo de validez sin dicho refrendo, salvo lo dispuesto en el artículo 65, 2."
+      }
+     ]
+    },
+    {
+     "text": "**Sucesión** (art. 57): la Corona es **hereditaria** en los sucesores de Don Juan Carlos I de Borbón, y la sucesión sigue el **orden regular de primogenitura y representación**:",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a57",
-       "quote": "La Corona de España es hereditaria en los sucesores de S. M. Don Juan Carlos I de Borbón"
+       "quote": "La Corona de España es hereditaria en los sucesores de S. M. Don Juan Carlos I de Borbón, legítimo heredero de la dinastía histórica."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a57",
+       "quote": "La sucesión en el trono seguirá el orden regular de primogenitura y representación"
       }
      ],
      "items": [
       {
-       "text": "Preferida siempre la **línea anterior** a las posteriores; en la misma línea, el **grado más próximo** al más remoto; en el mismo grado, el **varón a la mujer**; y en el mismo sexo, la **persona de más edad**.",
+       "text": "Siempre se prefiere la **línea anterior** a las posteriores; en la misma línea, el **grado más próximo** al más remoto; en el mismo grado, el **varón a la mujer**; y en el mismo sexo, la **persona de más edad** a la de menos.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1253,27 +1777,27 @@
        ]
       },
       {
-       "text": "El heredero tiene la dignidad de **Príncipe de Asturias**.",
+       "text": "El Príncipe heredero, **desde su nacimiento** o desde que se produzca el hecho que origine el llamamiento, tiene la dignidad de **Príncipe de Asturias** y los demás títulos vinculados tradicionalmente al sucesor.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a57",
-         "quote": "tendrá la dignidad de Príncipe de Asturias"
+         "quote": "El Príncipe heredero, desde su nacimiento o desde que se produzca el hecho que origine el llamamiento, tendrá la dignidad de Príncipe de Asturias y los demás títulos vinculados tradicionalmente al sucesor de la Corona de España."
         }
        ]
       },
       {
-       "text": "Extinguidas todas las líneas, **las Cortes Generales** proveen a la sucesión.",
+       "text": "Extinguidas todas las líneas llamadas en Derecho, **las Cortes Generales** proveen a la sucesión.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a57",
-         "quote": "Extinguidas todas las líneas llamadas en Derecho, las Cortes Generales proveerán a la sucesión en la Corona"
+         "quote": "Extinguidas todas las líneas llamadas en Derecho, las Cortes Generales proveerán a la sucesión en la Corona en la forma que más convenga a los intereses de España."
         }
        ]
       },
       {
-       "text": "Quien tenga derecho a la sucesión y se case contra la **expresa prohibición del Rey y de las Cortes Generales** queda excluido, con sus descendientes.",
+       "text": "Quien, teniendo derecho a la sucesión, se case contra la **expresa prohibición del Rey y de las Cortes Generales** queda excluido de la sucesión, por sí y sus descendientes.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1283,7 +1807,7 @@
        ]
       },
       {
-       "text": "Las **abdicaciones y renuncias** y las dudas sobre el orden de sucesión se resuelven por **ley orgánica**.",
+       "text": "Las **abdicaciones y renuncias** y cualquier duda de hecho o de derecho en el orden de sucesión se resuelven por **ley orgánica**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1295,7 +1819,7 @@
      ]
     },
     {
-     "text": "La **Reina consorte o el consorte de la Reina** no asumen funciones constitucionales, salvo lo dispuesto para la Regencia.",
+     "text": "Art. 58: la **Reina consorte o el consorte de la Reina** no pueden asumir funciones constitucionales, salvo lo dispuesto para la **Regencia**.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -1305,42 +1829,79 @@
      ]
     },
     {
-     "text": "**Regencia** (art. 59): se ejerce durante la **minoría de edad del Rey** (por el padre o la madre o, en su defecto, el pariente mayor de edad más próximo a suceder) o si el Rey se inhabilita y **las Cortes lo reconocen** (por el Príncipe heredero si es mayor de edad). Si nadie tiene derecho, la nombran las Cortes Generales y se compone de **una, tres o cinco personas**. Hay que ser **español y mayor de edad**, y se ejerce **siempre en nombre del Rey**.",
+     "text": "**Regencia** (art. 59):",
      "refs": [
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a59",
-       "quote": "el padre o la madre del Rey y, en su defecto, el pariente mayor de edad más próximo a suceder en la Corona"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a59",
-       "quote": "Si el Rey se inhabilitare para el ejercicio de su autoridad y la imposibilidad fuere reconocida por las Cortes Generales"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a59",
-       "quote": "ésta será nombrada por las Cortes Generales, y se compondrá de una, tres o cinco personas"
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a59",
-       "quote": "Para ejercer la Regencia es preciso ser español y mayor de edad."
-      },
       {
        "law": "BOE-A-1978-31229",
        "section": "a59",
        "quote": "La Regencia se ejercerá por mandato constitucional y siempre en nombre del Rey."
       }
+     ],
+     "items": [
+      {
+       "text": "**Rey menor de edad**: entra a ejercerla **inmediatamente** el padre o la madre del Rey y, en su defecto, el pariente mayor de edad más próximo a suceder en la Corona, durante la minoría de edad del Rey (59.1).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a59",
+         "quote": "Cuando el Rey fuere menor de edad, el padre o la madre del Rey y, en su defecto, el pariente mayor de edad más próximo a suceder en la Corona, según el orden establecido en la Constitución, entrará a ejercer inmediatamente la Regencia"
+        }
+       ]
+      },
+      {
+       "text": "**Rey inhabilitado**, si la imposibilidad la **reconocen las Cortes Generales**: entra inmediatamente el **Príncipe heredero**, si es mayor de edad; si no lo es, se procede como en la minoría hasta que lo sea (59.2).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a59",
+         "quote": "Si el Rey se inhabilitare para el ejercicio de su autoridad y la imposibilidad fuere reconocida por las Cortes Generales, entrará a ejercer inmediatamente la Regencia el Príncipe heredero de la Corona, si fuere mayor de edad."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a59",
+         "quote": "Si no lo fuere, se procederá de la manera prevista en el apartado anterior, hasta que el Príncipe heredero alcance la mayoría de edad."
+        }
+       ]
+      },
+      {
+       "text": "Si nadie tiene derecho a ella, la **nombran las Cortes Generales** y se compone de **una, tres o cinco personas** (59.3).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a59",
+         "quote": "Si no hubiere ninguna persona a quien corresponda la Regencia, ésta será nombrada por las Cortes Generales, y se compondrá de una, tres o cinco personas."
+        }
+       ]
+      },
+      {
+       "text": "Para ejercerla hay que ser **español y mayor de edad**, y se ejerce por mandato constitucional y **siempre en nombre del Rey** (59.4 y 59.5).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a59",
+         "quote": "Para ejercer la Regencia es preciso ser español y mayor de edad."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a59",
+         "quote": "La Regencia se ejercerá por mandato constitucional y siempre en nombre del Rey."
+        }
+       ]
+      }
      ]
     },
     {
-     "text": "**Tutela del Rey menor** (art. 60): la persona nombrada en el testamento del Rey difunto (mayor de edad y **español de nacimiento**); si no, el padre o la madre mientras permanezcan viudos; y en su defecto, las Cortes Generales. Es **incompatible con todo cargo o representación política**.",
+     "text": "**Tutela del Rey menor** (art. 60): la ejerce quien haya nombrado en su testamento el Rey difunto, si es mayor de edad y **español de nacimiento** (para la Regencia basta ser español); si no lo nombró, el padre o la madre mientras permanezcan viudos; y en su defecto la nombran las Cortes Generales. Los cargos de **Regente y tutor** solo pueden acumularse en el padre, la madre o los ascendientes directos del Rey, y la tutela es **incompatible con todo cargo o representación política**.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a60",
-       "quote": "Será tutor del Rey menor la persona que en su testamento hubiese nombrado el Rey difunto, siempre que sea mayor de edad y español de nacimiento"
+       "quote": "Será tutor del Rey menor la persona que en su testamento hubiese nombrado el Rey difunto, siempre que sea mayor de edad y español de nacimiento; si no lo hubiese nombrado, será tutor el padre o la madre mientras permanezcan viudos. En su defecto, lo nombrarán las Cortes Generales"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a60",
+       "quote": "no podrán acumularse los cargos de Regente y de tutor sino en el padre, madre o ascendientes directos del Rey"
       },
       {
        "law": "BOE-A-1978-31229",
@@ -1350,17 +1911,17 @@
      ]
     },
     {
-     "text": "El Rey, al ser proclamado **ante las Cortes Generales**, **jura** desempeñar fielmente sus funciones y guardar la Constitución; el Príncipe heredero jura al alcanzar la mayoría de edad.",
+     "text": "**Juramento** (art. 61): el Rey, al ser proclamado **ante las Cortes Generales**, jura desempeñar fielmente sus funciones, **guardar y hacer guardar la Constitución y las leyes** y respetar los derechos de los ciudadanos y de las Comunidades Autónomas. El **Príncipe heredero**, al alcanzar la mayoría de edad, y el **Regente o Regentes**, al hacerse cargo de sus funciones, prestan el mismo juramento y además el de **fidelidad al Rey**.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a61",
-       "quote": "El Rey, al ser proclamado ante las Cortes Generales, prestará juramento de desempeñar fielmente sus funciones"
+       "quote": "El Rey, al ser proclamado ante las Cortes Generales, prestará juramento de desempeñar fielmente sus funciones, guardar y hacer guardar la Constitución y las leyes y respetar los derechos de los ciudadanos y de las Comunidades Autónomas."
       },
       {
        "law": "BOE-A-1978-31229",
        "section": "a61",
-       "quote": "El Príncipe heredero, al alcanzar la mayoría de edad"
+       "quote": "El Príncipe heredero, al alcanzar la mayoría de edad, y el Regente o Regentes al hacerse cargo de sus funciones, prestarán el mismo juramento, así como el de fidelidad al Rey."
       }
      ]
     },
@@ -1375,7 +1936,7 @@
      ],
      "items": [
       {
-       "text": "**Sancionar y promulgar** las leyes.",
+       "text": "a) **Sancionar y promulgar** las leyes.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1385,7 +1946,7 @@
        ]
       },
       {
-       "text": "**Convocar y disolver** las Cortes Generales y **convocar elecciones** en los términos previstos en la Constitución.",
+       "text": "b) **Convocar y disolver** las Cortes Generales y **convocar elecciones** en los términos previstos en la Constitución.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1395,17 +1956,22 @@
        ]
       },
       {
-       "text": "**Convocar a referéndum** en los casos previstos en la Constitución (el artículo no exige autorización previa de las Cortes).",
+       "text": "c) **Convocar a referéndum** en los casos previstos en la Constitución. El art. 62 no añade «previa autorización de las Cortes Generales»; en el referéndum consultivo, el Rey lo convoca a **propuesta del Presidente del Gobierno, previamente autorizada por el Congreso** (art. 92.2).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "a62",
          "quote": "Convocar a referéndum en los casos previstos en la Constitución."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a92",
+         "quote": "El referéndum será convocado por el Rey, mediante propuesta del Presidente del Gobierno, previamente autorizada por el Congreso de los Diputados."
         }
        ]
       },
       {
-       "text": "**Proponer el candidato** a Presidente del Gobierno y, en su caso, **nombrarlo**, así como poner fin a sus funciones.",
+       "text": "d) **Proponer el candidato** a Presidente del Gobierno y, en su caso, **nombrarlo**, así como poner fin a sus funciones en los términos previstos en la Constitución.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1415,7 +1981,7 @@
        ]
       },
       {
-       "text": "**Nombrar y separar** a los miembros del Gobierno, **a propuesta de su Presidente**.",
+       "text": "e) **Nombrar y separar** a los miembros del Gobierno, **a propuesta de su Presidente**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1425,7 +1991,7 @@
        ]
       },
       {
-       "text": "**Expedir los decretos** acordados en el Consejo de Ministros, conferir los empleos civiles y militares y conceder honores y distinciones.",
+       "text": "f) **Expedir los decretos acordados en el Consejo de Ministros**, conferir los empleos civiles y militares y conceder honores y distinciones con arreglo a las leyes.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1435,7 +2001,7 @@
        ]
       },
       {
-       "text": "**Ser informado** de los asuntos de Estado y **presidir el Consejo de Ministros** cuando lo estime oportuno, **a petición del Presidente del Gobierno**.",
+       "text": "g) **Ser informado** de los asuntos de Estado y presidir, **a estos efectos**, las sesiones del **Consejo de Ministros**, cuando lo estime oportuno, **a petición del Presidente del Gobierno**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1445,7 +2011,7 @@
        ]
       },
       {
-       "text": "El **mando supremo de las Fuerzas Armadas**.",
+       "text": "h) El **mando supremo de las Fuerzas Armadas**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1455,7 +2021,7 @@
        ]
       },
       {
-       "text": "Ejercer el **derecho de gracia** con arreglo a la ley, que **no puede autorizar indultos generales**.",
+       "text": "i) Ejercer el **derecho de gracia** con arreglo a la ley, que **no podrá autorizar indultos generales**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1465,7 +2031,7 @@
        ]
       },
       {
-       "text": "El **Alto Patronazgo de las Reales Academias**.",
+       "text": "j) El **Alto Patronazgo de las Reales Academias**.",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
@@ -1477,17 +2043,17 @@
      ]
     },
     {
-     "text": "En las **relaciones internacionales** (art. 63), el Rey **acredita a los embajadores**, manifiesta el **consentimiento del Estado** para obligarse por tratados y, **previa autorización de las Cortes Generales**, **declara la guerra y hace la paz**.",
+     "text": "**Relaciones internacionales** (art. 63): el Rey **acredita a los embajadores** y otros representantes diplomáticos, y los representantes extranjeros están acreditados ante él; manifiesta el **consentimiento del Estado para obligarse por tratados**, de conformidad con la Constitución y las leyes; y, **previa autorización de las Cortes Generales**, **declara la guerra y hace la paz**.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a63",
-       "quote": "El Rey acredita a los embajadores y otros representantes diplomáticos."
+       "quote": "El Rey acredita a los embajadores y otros representantes diplomáticos. Los representantes extranjeros en España están acreditados ante él."
       },
       {
        "law": "BOE-A-1978-31229",
        "section": "a63",
-       "quote": "Al Rey corresponde manifestar el consentimiento del Estado para obligarse internacionalmente por medio de tratados"
+       "quote": "Al Rey corresponde manifestar el consentimiento del Estado para obligarse internacionalmente por medio de tratados, de conformidad con la Constitución y las leyes."
       },
       {
        "law": "BOE-A-1978-31229",
@@ -1497,17 +2063,12 @@
      ]
     },
     {
-     "text": "**Refrendo** (art. 64): los actos del Rey los refrendan el **Presidente del Gobierno** y, en su caso, los **Ministros competentes**. La **propuesta y el nombramiento del Presidente del Gobierno** y la **disolución del art. 99** los refrenda el **Presidente del Congreso**. De los actos del Rey **responden quienes los refrendan**.",
+     "text": "**Refrendo** (art. 64): los actos del Rey los refrendan el **Presidente del Gobierno** y, en su caso, los **Ministros competentes**. La **propuesta y el nombramiento del Presidente del Gobierno** y la **disolución del art. 99** los refrenda el **Presidente del Congreso**. De los actos del Rey **son responsables quienes los refrendan**.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
        "section": "a64",
-       "quote": "Los actos del Rey serán refrendados por el Presidente del Gobierno y, en su caso, por los Ministros competentes."
-      },
-      {
-       "law": "BOE-A-1978-31229",
-       "section": "a64",
-       "quote": "La propuesta y el nombramiento del Presidente del Gobierno, y la disolución prevista en el artículo 99, serán refrendados por el Presidente del Congreso."
+       "quote": "Los actos del Rey serán refrendados por el Presidente del Gobierno y, en su caso, por los Ministros competentes. La propuesta y el nombramiento del Presidente del Gobierno, y la disolución prevista en el artículo 99, serán refrendados por el Presidente del Congreso."
       },
       {
        "law": "BOE-A-1978-31229",
@@ -1517,7 +2078,7 @@
      ]
     },
     {
-     "text": "**Casa del Rey** (art. 65): recibe de los Presupuestos del Estado una **cantidad global** para su Familia y Casa, que **distribuye libremente**, y **nombra y releva libremente** a los miembros civiles y militares de su Casa (estos actos no necesitan refrendo).",
+     "text": "**Casa del Rey** (art. 65): recibe de los Presupuestos del Estado una **cantidad global** para el sostenimiento de su Familia y Casa y la **distribuye libremente** (65.1). **Nombra y releva libremente** a los miembros civiles y militares de su Casa (65.2), el único caso que el art. 56.3 exceptúa del refrendo.",
      "refs": [
       {
        "law": "BOE-A-1978-31229",
@@ -1532,7 +2093,84 @@
       {
        "law": "BOE-A-1978-31229",
        "section": "a56",
-       "quote": "salvo lo dispuesto en el artículo 65, 2"
+       "quote": "careciendo de validez sin dicho refrendo, salvo lo dispuesto en el artículo 65, 2"
+      }
+     ]
+    },
+    {
+     "text": "**Otras funciones del Rey fuera del Título II**:",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a91",
+       "quote": "El Rey sancionará en el plazo de quince días las leyes aprobadas por las Cortes Generales"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Sanciona en quince días** las leyes aprobadas por las Cortes Generales, las **promulga** y ordena su **inmediata publicación** (art. 91).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a91",
+         "quote": "El Rey sancionará en el plazo de quince días las leyes aprobadas por las Cortes Generales, y las promulgará y ordenará su inmediata publicación."
+        }
+       ]
+      },
+      {
+       "text": "Tras cada renovación del Congreso, **previa consulta** con los representantes de los grupos políticos con representación parlamentaria, y **a través del Presidente del Congreso**, **propone un candidato a la Presidencia del Gobierno** (art. 99.1).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a99",
+         "quote": "el Rey, previa consulta con los representantes designados por los Grupos políticos con representación parlamentaria, y a través del Presidente del Congreso, propondrá un candidato a la Presidencia del Gobierno"
+        }
+       ]
+      },
+      {
+       "text": "Si en **dos meses** desde la primera votación de investidura ningún candidato obtiene la confianza, **disuelve ambas Cámaras** y convoca elecciones con el **refrendo del Presidente del Congreso** (art. 99.5).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a99",
+         "quote": "Si transcurrido el plazo de dos meses, a partir de la primera votación de investidura, ningún candidato hubiere obtenido la confianza del Congreso, el Rey disolverá ambas Cámaras y convocará nuevas elecciones con el refrendo del Presidente del Congreso."
+        }
+       ]
+      },
+      {
+       "text": "**Decreta la disolución** del Congreso, del Senado o de las Cortes Generales **a propuesta del Presidente del Gobierno**, previa deliberación del Consejo de Ministros (art. 115.1).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a115",
+         "quote": "El Presidente del Gobierno, previa deliberación del Consejo de Ministros, y bajo su exclusiva responsabilidad, podrá proponer la disolución del Congreso, del Senado o de las Cortes Generales, que será decretada por el Rey."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Otros preceptos que se preguntan con este tema",
+   "points": [
+    {
+     "text": "Art. 103.1: la **Administración Pública** sirve con **objetividad** los intereses generales y actúa de acuerdo con los principios de **eficacia, jerarquía, descentralización, desconcentración y coordinación**, con **sometimiento pleno a la ley y al Derecho**.",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a103",
+       "quote": "La Administración Pública sirve con objetividad los intereses generales y actúa de acuerdo con los principios de eficacia, jerarquía, descentralización, desconcentración y coordinación, con sometimiento pleno a la ley y al Derecho."
+      }
+     ]
+    },
+    {
+     "text": "Art. 103.3: la ley regula el **estatuto de los funcionarios públicos**, el acceso a la función pública según los principios de **mérito y capacidad**, las peculiaridades de su derecho a **sindicación**, el sistema de **incompatibilidades** y las garantías para la **imparcialidad** en el ejercicio de sus funciones.",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a103",
+       "quote": "La ley regulará el estatuto de los funcionarios públicos, el acceso a la función pública de acuerdo con los principios de mérito y capacidad, las peculiaridades del ejercicio de su derecho a sindicación, el sistema de incompatibilidades y las garantías para la imparcialidad en el ejercicio de sus funciones."
       }
      ]
     }
