@@ -30,9 +30,20 @@ export function formatDay(day: string | undefined): string {
 
 // lawShortName names a law by what it approves when its official title is
 // a resolution or decree "por la que se aprueba…" ("Norma Técnica de
-// Interoperabilidad de Documento Electrónico"); otherwise it returns "".
+// Interoperabilidad de Documento Electrónico"), and an EU regulation by its
+// number and popular name; otherwise it returns "".
 export function lawShortName(title: string): string {
+  const eu = /^(Reglamento \(UE\) (?:n\.º )?\d+\/\d+) del Parlamento.*?(\([^()]+\))?$/.exec(title);
+  if (eu) return eu[2] ? `${eu[1]} ${eu[2]}` : eu[1];
   const m = /, por (?:la|el) que se (?:aprueba|regula) (?:la |el )?(.+)$/.exec(title);
   if (!m || !/^Resolución/.test(title)) return "";
   return m[1].charAt(0).toUpperCase() + m[1].slice(1);
+}
+
+// lawOrigin names where a study text comes from: EU regulations (CELEX
+// numbers) are EUR-Lex's consolidation, the rest the BOE's.
+export function lawOrigin(reference: string): { text: string; site: string } {
+  return /^3\d{4}R\d{4}$/.test(reference)
+    ? { text: "Texto consolidado de EUR-Lex", site: "eur-lex.europa.eu" }
+    : { text: "Texto consolidado del BOE", site: "boe.es" };
 }

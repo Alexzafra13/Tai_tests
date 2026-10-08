@@ -87,18 +87,27 @@ export function SolutionBox({ solution, chosen }: { solution: Solution; chosen: 
   );
 }
 
-// ArticleLinks opens the law at each article the question asks about.
+// ArticleLinks opens the law at each article the question asks about, or
+// the official page that answers it when no law does.
 export function ArticleLinks({ articles }: { articles: ArticleLink[] }) {
   if (articles.length === 0) return null;
   return (
     <ul className="article-links">
-      {articles.map((a) => (
-        <li key={`${a.source_id}-${a.block_id}`}>
-          <Link to={articlePath(a)} className="link">
-            {a.title.replace(/\.$/, "")} · {a.law}
-          </Link>
-        </li>
-      ))}
+      {articles.map((a) =>
+        a.url ? (
+          <li key={a.url}>
+            <a href={a.url} target="_blank" rel="noreferrer" className="link">
+              {a.law} ↗
+            </a>
+          </li>
+        ) : (
+          <li key={`${a.source_id}-${a.block_id}`}>
+            <Link to={articlePath(a)} className="link">
+              {a.title.replace(/\.$/, "")} · {a.law}
+            </Link>
+          </li>
+        ),
+      )}
     </ul>
   );
 }

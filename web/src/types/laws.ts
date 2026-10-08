@@ -9,8 +9,10 @@ export type LawChange = {
 };
 
 // ArticleLink points from a question to an article it cites; topic_id is 0
-// when no topic studies that article.
+// when no topic studies that article. With url, it is an official page
+// outside the laws and law holds its title.
 export type ArticleLink = {
+  url?: string;
   source_id: number;
   law: string;
   block_id: string;

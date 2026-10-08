@@ -112,6 +112,10 @@ func TestParseBankFileRejects(t *testing.T) {
 		"bad letter": `{"source": {"kind": "inap_exam", "title": "x", "reference": "r"}, "questions": [
 			{"key": "a", "correct": "e"}]}`,
 		"unknown field": `{"source": {"kind": "inap_exam", "title": "x", "reference": "r"}, "questions": [], "extra": 1}`,
+		"article without law": `{"source": {"kind": "inap_exam", "title": "x", "reference": "r"}, "questions": [
+			{"key": "a", "correct": "a", "articles": [{"section": "a1"}]}]}`,
+		"page without https": `{"source": {"kind": "inap_exam", "title": "x", "reference": "r"}, "questions": [
+			{"key": "a", "correct": "a", "articles": [{"title": "Ficha", "url": "http://x"}]}]}`,
 	} {
 		if _, err := ParseBankFile([]byte(body)); err == nil {
 			t.Errorf("%s: accepted", name)

@@ -89,6 +89,13 @@ proceso selectivo, con el cuestionario y las plantillas de respuestas.
    `"status": "published"`; las que dependen de una figura que no se
    reproduce se dejan sin estado, para Revisión. Al reimportar, se conserva
    en las preguntas que no cambian.
+   Con las leyes del tema ya en `data/laws` (paso 6), cada pregunta lleva
+   en `articles` lo que la responde, comprobado contra el texto vigente:
+   `{"law": "BOE-A-1978-31229", "section": "a54"}` (sin `section`, la norma
+   entera) o, si no la responde ninguna ley, la página oficial que sí:
+   `{"title": "eVisor · Centro de Transferencia de Tecnología", "url":
+   "https://…"}`. Sustituye a los artículos que la app deduce del enunciado
+   y llega también a las instalaciones que ya tenían la pregunta.
 4. `make test`: un test carga todo el banco con el temario incluido y exige
    que cada pregunta pase la validación y que las comprobadas se publiquen.
 5. Subirlo. Al arrancar, cada instalación añade lo que aún no tiene.
@@ -123,10 +130,12 @@ ley, con su texto completo para validar citas, y se leen en
 
 1. Elegir las normas de un tema por lo que nombra el temario y lo que citan
    las preguntas oficiales del banco.
-2. Descargarla de la API de datos abiertos del BOE:
+2. Descargarla de la API de datos abiertos del BOE o, si es un reglamento
+   europeo, del texto consolidado de EUR-Lex (por su número CELEX):
 
    ```sh
    go run ./cmd/tai fetch-law -ref BOE-A-2015-10565 -alias "LPACAP"
+   go run ./cmd/tai fetch-law -ref 32016R0679 -alias "RGPD"
    ```
 
    Guarda la redacción vigente de cada artículo y, si ya hay publicada una
@@ -143,12 +152,16 @@ ley, con su texto completo para validar citas, y se leen en
    Si el texto nuevo deja sin respaldo la cita de alguna pregunta, la
    instalación conserva el anterior y lo avisa al arrancar.
 
-Hecho: las 22 normas españolas del bloque I, la LO 10/2022 (tema 5) y las
-12 Normas Técnicas de Interoperabilidad vigentes (tema 8; las dos
-derogadas se dejan fuera). Comprobado con la web del BOE: el texto de cada
-artículo coincide. Pendiente: el RGPD y el reglamento eIDAS, que solo están
-completos y vigentes en EUR-Lex (hay que permitir `eur-lex.europa.eu` y
-`publications.europa.eu` en la red del entorno).
+Hecho, bloque I completo: 29 normas españolas (con los reglamentos de
+ingreso y provisión, situaciones administrativas y régimen disciplinario,
+la Ley 56/2007, el RD 209/2003 y la resolución de Cl@ve), las 12 Normas
+Técnicas de Interoperabilidad vigentes (las dos derogadas se dejan fuera)
+y, de EUR-Lex, el RGPD y el reglamento eIDAS. Comprobado con la web del BOE
+y EUR-Lex: el texto de cada artículo coincide. Las 109 preguntas oficiales
+del bloque están revisadas una a una contra el texto vigente: todas
+mantienen su respuesta y 108 llevan lo que las responde (88 un artículo,
+20 una página oficial: fichas del CTT, AEPD, Agenda 2030…); falta la
+nº 16 de 2019 (algoritmos del DNIe 3.0), sin fuente oficial publicada.
 
 Es la base para generar después preguntas de ley con cita literal (fase 6).
 

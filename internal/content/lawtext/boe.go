@@ -234,7 +234,7 @@ func tableText(inner string) string {
 	return strings.Join(rows, "\n")
 }
 
-var lawNumber = regexp.MustCompile(`^(Ley Orgánica|Ley|Real Decreto Legislativo|Real Decreto-ley|Real Decreto) (\d+/\d{4})`)
+var lawNumber = regexp.MustCompile(`^(Ley Orgánica|Ley|Real Decreto Legislativo|Real Decreto-ley|Real Decreto|Reglamento \(UE\)(?: n\.º)?) (\d+/\d+)`)
 
 // Aliases are the names exam questions use for a law: its number with and
 // without the kind ("Ley 39/2015", "39/2015"), plus any given.
@@ -242,6 +242,9 @@ func Aliases(title string, extra []string) []string {
 	var out []string
 	if m := lawNumber.FindStringSubmatch(title); m != nil {
 		out = append(out, m[1]+" "+m[2], m[2])
+		if kind, ok := strings.CutSuffix(m[1], " n.º"); ok {
+			out = append(out, kind+" "+m[2]) // "Reglamento (UE) 910/2014"
+		}
 	}
 	for _, e := range extra {
 		if e = strings.TrimSpace(e); e != "" {

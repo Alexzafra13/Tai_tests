@@ -114,3 +114,14 @@ func TestAliases(t *testing.T) {
 		t.Errorf("%q", got)
 	}
 }
+
+func TestAliasesEURegulation(t *testing.T) {
+	got := Aliases("Reglamento (UE) n.º 910/2014 del Parlamento Europeo y del Consejo, de 23 de julio de 2014", []string{"eIDAS"})
+	if strings.Join(got, "|") != "Reglamento (UE) n.º 910/2014|910/2014|Reglamento (UE) 910/2014|eIDAS" {
+		t.Errorf("%q", got)
+	}
+	got = Aliases("Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo", nil)
+	if strings.Join(got, "|") != "Reglamento (UE) 2016/679|2016/679" {
+		t.Errorf("%q", got)
+	}
+}

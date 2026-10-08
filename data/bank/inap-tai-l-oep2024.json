@@ -20,7 +20,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a33"
+        }
+      ]
     },
     {
       "key": "P-2",
@@ -36,7 +42,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a54"
+        }
+      ]
     },
     {
       "key": "P-3",
@@ -52,7 +64,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a62"
+        }
+      ]
     },
     {
       "key": "P-4",
@@ -68,7 +86,13 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1981-10325",
+          "section": "atercero"
+        }
+      ]
     },
     {
       "key": "P-5",
@@ -84,7 +108,13 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a71"
+        }
+      ]
     },
     {
       "key": "P-6",
@@ -100,7 +130,13 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a77"
+        }
+      ]
     },
     {
       "key": "P-7",
@@ -116,7 +152,13 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a159"
+        }
+      ]
     },
     {
       "key": "P-8",
@@ -132,7 +174,13 @@
       "topics": [
         "B1-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1997-25336",
+          "section": "a17"
+        }
+      ]
     },
     {
       "key": "P-9",
@@ -148,7 +196,13 @@
       "topics": [
         "B1-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a113"
+        }
+      ]
     },
     {
       "key": "P-10",
@@ -164,7 +218,13 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2015-10565",
+          "section": "a11"
+        }
+      ]
     },
     {
       "key": "P-11",
@@ -180,7 +240,13 @@
       "topics": [
         "B1-T09"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2015-14215",
+          "section": "iv"
+        }
+      ]
     },
     {
       "key": "P-12",
@@ -196,7 +262,13 @@
       "topics": [
         "B1-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2013-12887",
+          "section": "a17"
+        }
+      ]
     },
     {
       "key": "P-13",
@@ -212,7 +284,13 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2005-21163",
+          "section": "a12"
+        }
+      ]
     },
     {
       "key": "P-14",
@@ -228,7 +306,13 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2007-22440",
+          "section": "a1"
+        }
+      ]
     },
     {
       "key": "P-15",
@@ -244,7 +328,13 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "32016R0679",
+          "section": "art_5"
+        }
+      ]
     },
     {
       "key": "P-16",
@@ -260,7 +350,21 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2015-10565",
+          "section": "a44"
+        },
+        {
+          "law": "BOE-A-2015-10565",
+          "section": "a40"
+        },
+        {
+          "law": "BOE-A-2015-10565",
+          "section": "a42"
+        }
+      ]
     },
     {
       "key": "P-17",
@@ -276,7 +380,13 @@
       "topics": [
         "B1-T09"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2021-5032",
+          "section": "a1-3"
+        }
+      ]
     },
     {
       "key": "P-18",
@@ -292,7 +402,13 @@
       "topics": [
         "B1-T09"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Nodo eIDAS · Portal de Administración Electrónica",
+          "url": "https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Identidad_y_firmaelectronica/Nodo-eIDAS.html"
+        }
+      ]
     },
     {
       "key": "P-19",

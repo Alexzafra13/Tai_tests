@@ -20,7 +20,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a64"
+        }
+      ]
     },
     {
       "key": "P-2",
@@ -36,7 +42,13 @@
       "topics": [
         "B1-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a55"
+        }
+      ]
     },
     {
       "key": "P-3",
@@ -52,7 +64,13 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a68"
+        }
+      ]
     },
     {
       "key": "P-4",
@@ -68,7 +86,13 @@
       "topics": [
         "B1-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1997-25336",
+          "section": "a18"
+        }
+      ]
     },
     {
       "key": "P-5",
@@ -84,7 +108,13 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a78"
+        }
+      ]
     },
     {
       "key": "P-6",
@@ -100,7 +130,13 @@
       "topics": [
         "B1-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2013-12887",
+          "section": "a24"
+        }
+      ]
     },
     {
       "key": "P-7",
@@ -116,7 +152,13 @@
       "topics": [
         "B1-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "IV Plan de Gobierno Abierto 2020-2024 · Secretaría de Estado de Función Pública",
+          "url": "https://digital.gob.es/funcion-publica/secretaria/actualidad/detalle-noticia/2020/10/2020-10-29_02"
+        }
+      ]
     },
     {
       "key": "P-8",
@@ -132,7 +174,13 @@
       "topics": [
         "B1-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1985-151",
+          "section": "adieciocho"
+        }
+      ]
     },
     {
       "key": "P-9",
@@ -148,7 +196,13 @@
       "topics": [
         "B1-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2006-21990",
+          "section": "a30"
+        }
+      ]
     },
     {
       "key": "P-10",
@@ -164,7 +218,13 @@
       "topics": [
         "B1-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2007-6115",
+          "section": "a49"
+        }
+      ]
     },
     {
       "key": "P-11",
@@ -180,7 +240,13 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2005-21163",
+          "section": "a6"
+        }
+      ]
     },
     {
       "key": "P-12",
@@ -196,7 +262,13 @@
       "topics": [
         "B1-T06"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2020-14046",
+          "section": "a4"
+        }
+      ]
     },
     {
       "key": "P-13",
@@ -212,7 +284,21 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2018-16673",
+          "section": "a9-8"
+        },
+        {
+          "law": "BOE-A-2018-16673",
+          "section": "a9-6"
+        },
+        {
+          "law": "BOE-A-2018-16673",
+          "section": "a8-10"
+        }
+      ]
     },
     {
       "key": "P-14",
@@ -228,7 +314,13 @@
       "topics": [
         "B1-T07"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2018-16673",
+          "section": "a3-6"
+        }
+      ]
     },
     {
       "key": "P-15",
@@ -244,7 +336,13 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2022-7191",
+          "section": "ai-2"
+        }
+      ]
     },
     {
       "key": "P-16",
@@ -260,7 +358,13 @@
       "topics": [
         "B1-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2012-10049",
+          "section": "ii-2"
+        }
+      ]
     },
     {
       "key": "P-17",
@@ -292,7 +396,13 @@
       "topics": [
         "B1-T09"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "CIRCABC · Centro de Transferencia de Tecnología",
+          "url": "https://administracionelectronica.gob.es/ctt/circabc"
+        }
+      ]
     },
     {
       "key": "P-19",
@@ -308,7 +418,17 @@
       "topics": [
         "B1-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-1978-31229",
+          "section": "a54"
+        },
+        {
+          "law": "BOE-A-1981-10325",
+          "section": "aprimero"
+        }
+      ]
     },
     {
       "key": "P-20",
@@ -1128,9 +1248,16 @@
       ],
       "correct": "d",
       "topics": [
-        "B1-T06"
+        "B1-T06",
+        "B4-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2016-10146",
+          "section": "ii-2"
+        }
+      ]
     },
     {
       "key": "P-71",
@@ -1949,9 +2076,16 @@
       ],
       "correct": "c",
       "topics": [
-        "B1-T06"
+        "B1-T06",
+        "B4-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Código fuente de AutoFirma 1.8.2 · Centro de Transferencia de Tecnología",
+          "url": "https://github.com/ctt-gob-es/clienteafirma/blob/v1.8.2/afirma-simple/src/main/java/es/gob/afirma/standalone/ui/preferences/PreferencesPanelGeneral.java"
+        }
+      ]
     },
     {
       "key": "SII-12",

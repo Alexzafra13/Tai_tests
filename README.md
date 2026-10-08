@@ -121,7 +121,7 @@ internal/auth/         login, sesiones y usuario actual de cada petición
 internal/validate/     errores de validación por campo, comunes a todos los paquetes
 internal/content/      temario, fuentes, preguntas con sus reglas de validación y banco incluido
 internal/content/examtext/  lectura del texto de los PDF del INAP (cuestionario y plantillas)
-internal/content/lawtext/   lectura de la legislación consolidada de la API del BOE
+internal/content/lawtext/   lectura de la legislación consolidada del BOE y de EUR-Lex
 internal/quiz/         sesiones de test: creación, respuestas, historial, nota y barajado
 internal/srs/          repetición espaciada (FSRS): cuándo repasar cada pregunta
 internal/stats/        estadísticas por usuario: aciertos, temas, progreso diario
@@ -135,7 +135,7 @@ web/src/pages/         una pantalla por fichero o carpeta, con su CSS al lado
 web/src/types/         espejo de los tipos JSON de la API, un fichero por área
 data/                  syllabus.json (temario oficial, en el binario) y syllabus.example.json (formato)
 data/bank/             banco de preguntas oficiales incluido en el binario (un JSON por examen)
-data/laws/             leyes del temario (texto consolidado del BOE) y su reparto por temas
+data/laws/             leyes del temario (texto consolidado del BOE y EUR-Lex) y su reparto por temas
 ```
 
 ## Usuarios y permisos
@@ -291,10 +291,13 @@ consolidado del BOE de cada norma del tema, literal (nada resumido), con
 exámenes oficiales van marcados, con las preguntas para responderlas allí
 mismo, y se pueden filtrar. Si ya hay publicada una reforma que aún no está
 en vigor, el artículo lo avisa con la nueva redacción y su fecha. Las
-normas están en `data/laws/` (ver `docs/importar-contenido.md`): las 22
-leyes y reales decretos del bloque I, la LO 10/2022 y las 12 Normas Técnicas
-de Interoperabilidad vigentes. Una tarea mensual de GitHub las descarga de
-nuevo (`tai refresh-laws`) y abre una PR si el BOE ha cambiado algo.
+normas están en `data/laws/` (ver `docs/importar-contenido.md`): todo el
+bloque I, con las 12 Normas Técnicas de Interoperabilidad vigentes y, del
+texto consolidado de EUR-Lex, el RGPD y el reglamento eIDAS. Cada pregunta
+oficial del bloque enlaza con el artículo que la responde, o con la página
+oficial que lo hace si no es una ley. Una tarea mensual de GitHub las
+descarga de nuevo (`tai refresh-laws`) y abre una PR si el BOE o EUR-Lex han
+cambiado algo.
 
 ## Banco de preguntas incluido
 
