@@ -546,7 +546,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Arquitectura RISC y ARM · Arm",
+          "url": "https://www.arm.com/glossary/risc",
+          "quote": "ARM, or “Advanced RISC Machine” is a specific family of instruction set architecture that’s based on reduced instruction set architecture developed by Arm Ltd."
+        }
+      ]
     },
     {
       "key": "P-26",
@@ -562,7 +569,20 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Anuncio de la especificación USB4 (2019) · USB-IF",
+          "url": "https://www.usb.org/sites/default/files/2019-09/USB-IF_USB4%20spec%20announcement_FINAL.pdf",
+          "quote": "Two-lane operation using existing USB Type-C® cables and up to 40Gbps operation over 40Gbps certified cables"
+        },
+        {
+          "title": "USB4 · USB-IF",
+          "url": "https://www.usb.org/usb4",
+          "quote": "Two-lane operation using existing USB Type-C cables and up to 80 Gbps operation over 80 Gbps certified cables"
+        }
+      ],
+      "explanation": "Respuesta según el examen de 2019: la especificación USB4 (versión 1.0, de 2019) llega a 40 Gbps. Desde USB4 versión 2.0 (2022) llega a 80 Gbps, cifra que no está entre las opciones."
     },
     {
       "key": "P-27",
@@ -578,7 +598,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Identificar los puertos del Mac · Apple",
+          "url": "https://support.apple.com/es-es/109523",
+          "quote": "Puedes utilizar un cable Thunderbolt 5, un cable Thunderbolt 4, un cable Thunderbolt 3 o un cable USB-C para conectar monitores y otros dispositivos."
+        }
+      ]
     },
     {
       "key": "P-28",
@@ -594,7 +621,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Qué es un SSD · SNIA",
+          "url": "https://www.snia.org/education/what-is-ssd",
+          "quote": "A solid-state drive (SSD) is a device for storing data on non-volatile memory. SSDs have no moving parts"
+        }
+      ]
     },
     {
       "key": "P-29",
@@ -610,7 +644,14 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Códec de vídeo AV1 · Alliance for Open Media",
+          "url": "https://aomedia.org/specifications/av1/",
+          "quote": "AV1 (AOMedia Video 1) is an open video codec designed to provide high-quality video compression with greater efficiency than previous codecs."
+        }
+      ]
     },
     {
       "key": "P-30",
@@ -626,7 +667,14 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Recorrido en preorden (preorder traversal) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/preorderTraversal.html",
+          "quote": "print(tree.root); preorder(tree.left_subtree); preorder(tree.right_subtree);"
+        }
+      ]
     },
     {
       "key": "P-31",
@@ -642,7 +690,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "hier(7) · Linux man-pages",
+          "url": "https://man7.org/linux/man-pages/man7/hier.7.html",
+          "quote": "Contains configuration files which are local to the"
+        }
+      ]
     },
     {
       "key": "P-32",
@@ -658,7 +713,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Modos numéricos de chmod · GNU Coreutils",
+          "url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+          "quote": "one bit for read, one for write, and one for execute/search permission."
+        }
+      ]
     },
     {
       "key": "P-33",
@@ -690,7 +752,14 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Las 12 reglas de Codd (definición de base de datos relacional) · IBM Support",
+          "url": "https://www.ibm.com/support/pages/node/683255",
+          "quote": "Distribution Independence: Users should not be aware of whether or not a database is distributed."
+        }
+      ]
     },
     {
       "key": "P-35",
@@ -1170,7 +1239,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Net start · Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490713(v=technet.10)",
+          "quote": "displays a list of services that are currently operating."
+        }
+      ]
     },
     {
       "key": "P-65",
@@ -1442,7 +1518,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Arquitectura de la familia PICmicro de gama media (DS31004A) · Microchip",
+          "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/31004a.pdf",
+          "quote": "Harvard architecture has the program memory and data memory as separate memories"
+        }
+      ]
     },
     {
       "key": "P-R2",

@@ -13,6 +13,7 @@ export type LawChange = {
 // outside the laws and law holds its title.
 export type ArticleLink = {
   url?: string;
+  quote?: string;
   source_id: number;
   law: string;
   block_id: string;
@@ -65,6 +66,14 @@ export type StudyLaw = {
   cited_articles: number;
 };
 
+// StudyPage is an official page outside the laws with the topic's
+// questions it answers.
+export type StudyPage = {
+  title: string;
+  url: string;
+  questions: QuestionBrief[];
+};
+
 export type StudyTopic = {
   topic_id: number;
   code: string;
@@ -72,4 +81,5 @@ export type StudyTopic = {
   title: string;
   block: string;
   laws: StudyLaw[];
+  pages: StudyPage[];
 };

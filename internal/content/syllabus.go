@@ -151,6 +151,9 @@ type Topic struct {
 	Published int    `json:"published"`
 	// Laws counts the study texts linked to the topic.
 	Laws int `json:"laws"`
+	// Pages counts the official pages outside the laws that answer its
+	// published questions.
+	Pages int `json:"pages"`
 }
 
 // Syllabus returns the active blocks and topics in order, with question
@@ -159,7 +162,11 @@ func (s *Store) Syllabus(ctx context.Context) ([]Block, error) {
 	rows, err := s.db.QueryContext(ctx, `
 		SELECT b.id, b.code, b.name, t.id, t.code, t.number, t.title,
 			count(q.id), count(CASE WHEN q.status = 'published' AND q.annulled = 0 THEN 1 END),
-			(SELECT count(*) FROM topic_laws tl WHERE tl.topic_id = t.id)
+			(SELECT count(*) FROM topic_laws tl WHERE tl.topic_id = t.id),
+			(SELECT count(DISTINCT qs.url) FROM question_sections qs
+				JOIN question_topics pt ON pt.question_id = qs.question_id AND pt.topic_id = t.id
+				JOIN questions pq ON pq.id = qs.question_id AND pq.status = 'published' AND pq.annulled = 0
+				WHERE qs.url <> '')
 		FROM blocks b
 		JOIN topics t ON t.block_id = b.id AND t.active = 1
 		LEFT JOIN question_topics qt ON qt.topic_id = t.id
@@ -176,7 +183,8 @@ func (s *Store) Syllabus(ctx context.Context) ([]Block, error) {
 	for rows.Next() {
 		var b Block
 		var t Topic
-		if err := rows.Scan(&b.ID, &b.Code, &b.Name, &t.ID, &t.Code, &t.Number, &t.Title, &t.Questions, &t.Published, &t.Laws); err != nil {
+		if err := rows.Scan(&b.ID, &b.Code, &b.Name, &t.ID, &t.Code, &t.Number, &t.Title, &t.Questions, &t.Published, &t.Laws,
+			&t.Pages); err != nil {
 			return nil, err
 		}
 		if n := len(blocks); n == 0 || blocks[n-1].ID != b.ID {

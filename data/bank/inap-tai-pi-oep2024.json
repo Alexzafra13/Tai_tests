@@ -248,7 +248,19 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "In Memoriam: Mike Flynn · IEEE Computer Society",
+          "url": "https://www.computer.org/publications/tech-news/insider-membership-news/in-memoriam-mike-flynn",
+          "quote": "a pioneering framework for categorizing parallelism in computer architectures based on the number of simultaneous instruction streams and data streams they handle"
+        },
+        {
+          "title": "Parallel architectures · IEEE Technology Navigator",
+          "url": "https://technav.ieee.org/topic/parallel-architectures/",
+          "quote": "Flynn's taxonomy, proposed in 1966, provides the foundational classification framework"
+        }
+      ]
     },
     {
       "key": "P-12",
@@ -264,7 +276,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "NTI de Digitalización de Documentos (Res. 19-7-2011) · BOE",
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-13168",
+          "quote": "El nivel de resolución mínimo para imágenes electrónicas será de 200 píxeles por pulgada, tanto para imágenes obtenidas en blanco y negro, color o escala de grises."
+        }
+      ]
     },
     {
       "key": "P-13",
@@ -280,7 +299,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "ArrayDeque (pila sobre array redimensionable) · Oracle Java SE 21",
+          "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayDeque.html",
+          "quote": "Resizable-array implementation of the Deque interface."
+        },
+        {
+          "title": "ArrayDeque (pila sobre array redimensionable) · Oracle Java SE 21",
+          "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayDeque.html",
+          "quote": "This class is likely to be faster than Stack when used as a stack, and faster than LinkedList when used as a queue."
+        }
+      ]
     },
     {
       "key": "P-14",
@@ -296,7 +327,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Definir una interfaz (Java Tutorials) · Oracle",
+          "url": "https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html",
+          "quote": "When an instantiable class implements an interface, it provides a method body for each of the methods declared in the interface."
+        },
+        {
+          "title": "Tipo abstracto de datos (abstract data type) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/abstractDataType.html",
+          "quote": "A set of data values and associated operations that are precisely specified independent of any particular implementation."
+        }
+      ]
     },
     {
       "key": "P-15",
@@ -472,7 +515,19 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Floating-point arithmetic · IEEE Technology Navigator",
+          "url": "https://technav.ieee.org/topic/floating-point-arithmetic/",
+          "quote": "The 64-bit double-precision format uses 11 exponent bits and 52 fractional bits"
+        },
+        {
+          "title": "Representación de punto flotante IEEE · Microsoft Learn",
+          "url": "https://learn.microsoft.com/es-es/cpp/build/ieee-floating-point-representation",
+          "quote": "Los formatos de precisión sencilla (4 bytes) y de precisión doble (8 bytes) se usan en MSVC."
+        }
+      ]
     },
     {
       "key": "P-26",
@@ -680,7 +735,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Arquitectura de la familia PICmicro de gama media (DS31004A) · Microchip",
+          "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/31004a.pdf",
+          "quote": "In the execution cycle, the fetched instruction is latched into the “Instruction Register (IR)”"
+        }
+      ]
     },
     {
       "key": "P-39",
@@ -910,7 +972,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Funciones integradas: bin() · Python docs",
+          "url": "https://docs.python.org/3/library/functions.html",
+          "quote": "Convert an integer number to a binary string prefixed with"
+        }
+      ]
     },
     {
       "key": "P-R3",

@@ -240,7 +240,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "NVDIMM Technical Brief · SNIA",
+          "url": "https://www.snia.org/sites/default/files/technical-work/whitepapers/SNIA-NVDIMM-Technical-Brief.pdf",
+          "quote": "DRAM loses all of its data instantly when power is removed, so DRAM is referred to as volatile memory."
+        }
+      ]
     },
     {
       "key": "P-12",
@@ -256,7 +263,20 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Anuncio de la especificación USB4 (2019) · USB-IF",
+          "url": "https://www.usb.org/sites/default/files/2019-09/USB-IF_USB4%20spec%20announcement_FINAL.pdf",
+          "quote": "Two-lane operation using existing USB Type-C® cables and up to 40Gbps operation over 40Gbps certified cables"
+        },
+        {
+          "title": "USB4 · USB-IF",
+          "url": "https://www.usb.org/usb4",
+          "quote": "Two-lane operation using existing USB Type-C cables and up to 80 Gbps operation over 80 Gbps certified cables"
+        }
+      ],
+      "explanation": "Respuesta según el examen de 2019: la especificación USB4 (versión 1.0, de 2019) llega a 40 Gbps. Desde USB4 versión 2.0 (2022) llega a 80 Gbps, cifra que no está entre las opciones."
     },
     {
       "key": "P-13",
@@ -272,7 +292,14 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Recorrido en preorden (preorder traversal) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/preorderTraversal.html",
+          "quote": "print(tree.root); preorder(tree.left_subtree); preorder(tree.right_subtree);"
+        }
+      ]
     },
     {
       "key": "P-14",
@@ -288,7 +315,14 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Ordenación por burbuja (bubble sort) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/bubblesort.html",
+          "quote": "Sort by comparing each adjacent pair of items in a list in turn, swapping the items if necessary, and repeating the pass through the list until no swaps are done."
+        }
+      ]
     },
     {
       "key": "P-15",
@@ -304,7 +338,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "wait(2) · Linux man-pages",
+          "url": "https://man7.org/linux/man-pages/man2/wait.2.html",
+          "quote": "A child that terminates, but has not been waited for becomes a"
+        }
+      ]
     },
     {
       "key": "P-16",
@@ -320,7 +361,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Modos numéricos de chmod · GNU Coreutils",
+          "url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+          "quote": "one bit for read, one for write, and one for execute/search permission."
+        }
+      ]
     },
     {
       "key": "P-17",
@@ -400,7 +448,14 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Las 12 reglas de Codd (definición de base de datos relacional) · IBM Support",
+          "url": "https://www.ibm.com/support/pages/node/683255",
+          "quote": "Set-at-a-time Insert, Update, Delete: The DML must support these operations."
+        }
+      ]
     },
     {
       "key": "P-22",
@@ -880,7 +935,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Arquitectura de la familia PICmicro de gama media (DS31004A) · Microchip",
+          "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/31004a.pdf",
+          "quote": "Harvard architecture has the program memory and data memory as separate memories"
+        }
+      ]
     },
     {
       "key": "P-R2",
@@ -940,7 +1002,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Enumeración STORAGE_BUS_TYPE · Microsoft Learn",
+          "url": "https://learn.microsoft.com/en-us/windows/win32/api/winioctl/ne-winioctl-storage_bus_type",
+          "quote": "Serial Attached SCSI (SAS) bus."
+        }
+      ]
     },
     {
       "key": "P-R5",
@@ -1004,7 +1073,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "RFC 8259 (JSON) · IETF",
+          "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+          "quote": "member = string name-separator value"
+        },
+        {
+          "title": "RFC 8259 (JSON) · IETF",
+          "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+          "quote": "string = quotation-mark *char quotation-mark"
+        }
+      ]
     },
     {
       "key": "SI-4",

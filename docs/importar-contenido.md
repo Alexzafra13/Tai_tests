@@ -92,10 +92,16 @@ proceso selectivo, con el cuestionario y las plantillas de respuestas.
    Con las leyes del tema ya en `data/laws` (paso 6), cada pregunta lleva
    en `articles` lo que la responde, comprobado contra el texto vigente:
    `{"law": "BOE-A-1978-31229", "section": "a54"}` (sin `section`, la norma
-   entera) o, si no la responde ninguna ley, la página oficial que sí:
-   `{"title": "eVisor · Centro de Transferencia de Tecnología", "url":
-   "https://…"}`. Sustituye a los artículos que la app deduce del enunciado
-   y llega también a las instalaciones que ya tenían la pregunta.
+   entera) o, si no la responde ninguna ley, la página oficial que sí, con
+   la frase literal que respalda la respuesta: `{"title": "eVisor · Centro
+   de Transferencia de Tecnología", "url": "https://…", "quote": "…"}`.
+   Vale la documentación técnica oficial (Microsoft Learn, páginas de
+   manual de Linux, POSIX, documentación de PostgreSQL u Oracle, RFC, W3C,
+   USB-IF…), nunca apuntes, academias ni Wikipedia. Sustituye a los
+   artículos que la app deduce del enunciado y llega también a las
+   instalaciones que ya tenían la pregunta. Al arrancar, las preguntas que
+   nadie ha editado en la instalación también toman del banco sus temas,
+   explicación y estado.
 4. `make test`: un test carga todo el banco con el temario incluido y exige
    que cada pregunta pase la validación y que las comprobadas se publiquen.
 5. Subirlo. Al arrancar, cada instalación añade lo que aún no tiene.
@@ -162,6 +168,13 @@ del bloque están revisadas una a una contra el texto vigente: todas
 mantienen su respuesta y 108 llevan lo que las responde (88 un artículo,
 20 una página oficial: fichas del CTT, AEPD, Agenda 2030…); falta la
 nº 16 de 2019 (algoritmos del DNIe 3.0), sin fuente oficial publicada.
+
+Bloque II (sin leyes): sus 80 preguntas oficiales están revisadas contra
+la documentación técnica oficial; 77 llevan la página que las responde con
+su frase literal, comprobada descargando de nuevo cada página. Las tres
+desfasadas (USB4 y la versión de macOS) explican en qué ha cambiado. Sin
+fuente quedan las dos anuladas y la nº 34 de 2022 (bases de datos
+orientadas a objetos: el estándar ODMG no está publicado en línea).
 
 Es la base para generar después preguntas de ley con cita literal (fase 6).
 

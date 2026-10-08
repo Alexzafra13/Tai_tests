@@ -314,11 +314,21 @@ type StudyTopic struct {
 	Title   string     `json:"title"`
 	Block   string     `json:"block"`
 	Laws    []StudyLaw `json:"laws"`
+	// Pages are the official pages outside the laws that answer the
+	// topic's published questions, most asked first.
+	Pages []StudyPage `json:"pages"`
+}
+
+// StudyPage is an official page with the questions of a topic it answers.
+type StudyPage struct {
+	Title     string          `json:"title"`
+	URL       string          `json:"url"`
+	Questions []QuestionBrief `json:"questions"`
 }
 
 // StudyTopic returns a topic with its laws.
 func (s *Store) StudyTopic(ctx context.Context, topicID int64, today time.Time) (StudyTopic, error) {
-	st := StudyTopic{TopicID: topicID, Laws: []StudyLaw{}}
+	st := StudyTopic{TopicID: topicID, Laws: []StudyLaw{}, Pages: []StudyPage{}}
 	err := s.db.QueryRowContext(ctx, `SELECT t.code, t.number, t.title, b.name FROM topics t
 		JOIN blocks b ON b.id = t.block_id WHERE t.id = ?`, topicID).Scan(&st.Code, &st.Number, &st.Title, &st.Block)
 	if errors.Is(err, sql.ErrNoRows) {
@@ -344,6 +354,9 @@ func (s *Store) StudyTopic(ctx context.Context, topicID int64, today time.Time) 
 	}
 	rows.Close()
 	if err := rows.Err(); err != nil {
+		return st, err
+	}
+	if st.Pages, err = s.topicPages(ctx, topicID); err != nil {
 		return st, err
 	}
 	cites, err := s.lawCitations(ctx)
@@ -375,6 +388,41 @@ func (s *Store) StudyTopic(ctx context.Context, topicID int64, today time.Time) 
 		}
 	}
 	return st, nil
+}
+
+// topicPages groups the topic's published questions by the official pages
+// the bank links them to.
+func (s *Store) topicPages(ctx context.Context, topicID int64) ([]StudyPage, error) {
+	rows, err := s.db.QueryContext(ctx, `SELECT qs.url, qs.title, q.id, q.source_ref, q.stem, q.option_a, q.option_b,
+		q.option_c, q.option_d, q.correct
+		FROM question_sections qs
+		JOIN question_topics qt ON qt.question_id = qs.question_id AND qt.topic_id = ?
+		JOIN questions q ON q.id = qs.question_id AND q.status = 'published' AND q.annulled = 0
+		WHERE qs.url <> '' ORDER BY q.source_ref`, topicID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	pages := []StudyPage{}
+	at := map[string]int{}
+	for rows.Next() {
+		var url, title string
+		var q QuestionBrief
+		if err := rows.Scan(&url, &title, &q.ID, &q.SourceRef, &q.Stem, &q.Options[0], &q.Options[1], &q.Options[2],
+			&q.Options[3], &q.Correct); err != nil {
+			return nil, err
+		}
+		q.Stem = questionStem(q.Stem)
+		i, ok := at[url]
+		if !ok {
+			i = len(pages)
+			at[url] = i
+			pages = append(pages, StudyPage{Title: title, URL: url})
+		}
+		pages[i].Questions = append(pages[i].Questions, q)
+	}
+	sort.SliceStable(pages, func(i, j int) bool { return len(pages[i].Questions) > len(pages[j].Questions) })
+	return pages, rows.Err()
 }
 
 // lawOutline returns the sections of a law in force on today without their
@@ -775,9 +823,11 @@ func questionStem(stem string) string {
 }
 
 // ArticleLink points from a question to an article of a law it cites or,
-// with URL, to an official page outside the laws (Law holds its title).
+// with URL, to an official page outside the laws (Law holds its title and
+// Quote the sentence that backs the answer).
 type ArticleLink struct {
 	URL      string `json:"url,omitempty"`
+	Quote    string `json:"quote,omitempty"`
 	SourceID int64  `json:"source_id"`
 	Law      string `json:"law"` // short name: "Ley 39/2015"
 	BlockID  string `json:"block_id"`
@@ -928,7 +978,7 @@ func (s *Store) questionPages(ctx context.Context, ids []int64) (map[int64][]Art
 	for i, id := range ids {
 		args[i] = id
 	}
-	rows, err := s.db.QueryContext(ctx, `SELECT question_id, title, url FROM question_sections
+	rows, err := s.db.QueryContext(ctx, `SELECT question_id, title, url, quote FROM question_sections
 		WHERE url <> '' AND question_id IN (`+placeholders(len(ids))+`) ORDER BY question_id, position`, args...)
 	if err != nil {
 		return nil, err
@@ -938,7 +988,7 @@ func (s *Store) questionPages(ctx context.Context, ids []int64) (map[int64][]Art
 	for rows.Next() {
 		var qid int64
 		var l ArticleLink
-		if err := rows.Scan(&qid, &l.Law, &l.URL); err != nil {
+		if err := rows.Scan(&qid, &l.Law, &l.URL, &l.Quote); err != nil {
 			return nil, err
 		}
 		l.pos = -1

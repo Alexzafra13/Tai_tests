@@ -234,7 +234,7 @@ func TestBankArticlesReplaceCitations(t *testing.T) {
 			// The stem cites article 13, but the bank says article 62 answers it.
 			{Key: "1", SourceRef: "nº 1", Stem: "Según el artículo 13 de la CE, ¿a quién corresponde sancionar las leyes?",
 				Options: [4]string{"Al Rey", "B", "C", "D"}, Correct: "a", Topics: []string{"B1-T01"}, Status: StatusPublished,
-				Articles: append(articles, BankArticle{Title: "Ficha del CTT", URL: "https://administracionelectronica.gob.es/ctt/x"})},
+				Articles: append(articles, BankArticle{Title: "Ficha del CTT", URL: "https://administracionelectronica.gob.es/ctt/x", Quote: "Herramienta de trabajo en grupo"})},
 			{Key: "2", SourceRef: "nº 2", Stem: "¿Qué dice la Constitución Española?", Options: [4]string{"A", "B", "C", "D"},
 				Correct: "a", Topics: []string{"B1-T01"}, Status: StatusPublished,
 				Articles: []BankArticle{{Law: "BOE-A-1978-31229"}}},
@@ -278,7 +278,7 @@ func TestBankArticlesReplaceCitations(t *testing.T) {
 	var all []string
 	for _, ls := range links {
 		for _, l := range ls {
-			if l.URL != "" && l.Law != "Ficha del CTT" {
+			if l.URL != "" && (l.Law != "Ficha del CTT" || l.Quote != "Herramienta de trabajo en grupo") {
 				t.Errorf("page %+v", l)
 			}
 			all = append(all, fmt.Sprintf("%s %d", l.BlockID, l.TopicID))
@@ -286,5 +286,18 @@ func TestBankArticlesReplaceCitations(t *testing.T) {
 	}
 	if strings.Join(all, "|") != fmt.Sprintf("a62 %d| 0", t1) {
 		t.Errorf("links %v", all)
+	}
+
+	st, err := s.StudyTopic(ctx, t1, time.Date(2026, 10, 7, 0, 0, 0, 0, time.UTC))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(st.Pages) != 1 || st.Pages[0].Title != "Ficha del CTT" || len(st.Pages[0].Questions) != 1 ||
+		st.Pages[0].Questions[0].SourceRef != "nº 1" {
+		t.Errorf("topic pages %+v", st.Pages)
+	}
+	blocks, _ := s.Syllabus(ctx)
+	if tp := blocks[0].Topics[0]; tp.ID != t1 || tp.Pages != 1 || tp.Laws != 1 {
+		t.Errorf("syllabus topic %+v", tp)
 	}
 }

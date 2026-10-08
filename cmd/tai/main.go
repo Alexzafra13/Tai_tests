@@ -218,5 +218,8 @@ func loadBank(ctx context.Context, log *slog.Logger, cs *content.Store) error {
 		log.Info("question bank loaded", "added", res.Added, "published", res.Published,
 			"drafts_for_review", res.Added-res.Published)
 	}
+	if res.Updated > 0 {
+		log.Info("bank questions brought up to date", "updated", res.Updated)
+	}
 	return nil
 }

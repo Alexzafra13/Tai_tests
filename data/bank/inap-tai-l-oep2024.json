@@ -424,7 +424,19 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "In Memoriam: Mike Flynn · IEEE Computer Society",
+          "url": "https://www.computer.org/publications/tech-news/insider-membership-news/in-memoriam-mike-flynn",
+          "quote": "a pioneering framework for categorizing parallelism in computer architectures based on the number of simultaneous instruction streams and data streams they handle"
+        },
+        {
+          "title": "Parallel architectures · IEEE Technology Navigator",
+          "url": "https://technav.ieee.org/topic/parallel-architectures/",
+          "quote": "Flynn's taxonomy, proposed in 1966, provides the foundational classification framework"
+        }
+      ]
     },
     {
       "key": "P-20",
@@ -440,7 +452,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "fprintf (POSIX.1-2024) · The Open Group",
+          "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/fprintf.html",
+          "quote": "except that letters \"ABCDEF\" are used instead of \"abcdef\""
+        }
+      ]
     },
     {
       "key": "P-21",
@@ -456,7 +475,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Qué es un SSD · SNIA",
+          "url": "https://www.snia.org/education/what-is-ssd",
+          "quote": "M.2 is the most popular form factor for laptops and desktop"
+        }
+      ]
     },
     {
       "key": "P-22",
@@ -490,7 +516,14 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Árbol 2-3-4 · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/two34tree.html",
+          "quote": "A B-tree of order 4, that is, internal nodes have two, three, or four children"
+        }
+      ]
     },
     {
       "key": "P-24",
@@ -506,7 +539,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Cola (queue) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/queue.html",
+          "quote": "Also known as \"first-in, first-out\" or FIFO."
+        },
+        {
+          "title": "LinkedList (implementa Deque/Queue con lista enlazada) · Oracle Java SE 21",
+          "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/LinkedList.html",
+          "quote": "Doubly-linked list implementation of the List and Deque interfaces."
+        }
+      ]
     },
     {
       "key": "P-25",
@@ -522,7 +567,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Definir una interfaz (Java Tutorials) · Oracle",
+          "url": "https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html",
+          "quote": "When an instantiable class implements an interface, it provides a method body for each of the methods declared in the interface."
+        },
+        {
+          "title": "Tipo abstracto de datos (abstract data type) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/abstractDataType.html",
+          "quote": "A set of data values and associated operations that are precisely specified independent of any particular implementation."
+        }
+      ]
     },
     {
       "key": "P-26",
@@ -538,7 +595,19 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Qué es el kernel de Linux · Red Hat",
+          "url": "https://www.redhat.com/es/topics/linux/what-is-the-linux-kernel",
+          "quote": "determina qué procesos pueden usar la unidad central de procesamiento (CPU), cuándo y durante cuánto tiempo."
+        },
+        {
+          "title": "Qué es el kernel de Linux · Red Hat",
+          "url": "https://www.redhat.com/es/topics/linux/what-is-the-linux-kernel",
+          "quote": "actúa como mediador o intérprete entre el hardware y los procesos."
+        }
+      ]
     },
     {
       "key": "P-27",
@@ -554,7 +623,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Introducción al NDK · Android Developers",
+          "url": "https://developer.android.com/ndk/guides?hl=es-419",
+          "quote": "Volver a usar tus propias bibliotecas C o C++, o las de otros desarrolladores"
+        }
+      ]
     },
     {
       "key": "P-28",
@@ -586,7 +662,14 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Matisse: información de producto · Matisse Software",
+          "url": "https://www.matisse.com/product_information/",
+          "quote": "Simplifies development by providing native support for virtually all object-oriented languages and capabilities including: object persistence, inheritance, encapsulation, polymorphism, unique object identifiers and bi-directional links between objects."
+        }
+      ]
     },
     {
       "key": "P-30",
@@ -602,7 +685,14 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Consultas con OQL · Apache Geode",
+          "url": "https://geode.apache.org/docs/guide/115/developing/querying_basics/chapter_overview.html",
+          "quote": "OQL is very similar to SQL, but OQL allows you to query complex objects, object attributes, and methods."
+        }
+      ]
     },
     {
       "key": "P-31",
@@ -1004,7 +1094,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "pthreads(7) · Linux man-pages",
+          "url": "https://man7.org/linux/man-pages/man7/pthreads.7.html",
+          "quote": "A single process can contain multiple threads, all of"
+        }
+      ]
     },
     {
       "key": "P-56",
@@ -1422,7 +1519,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "WQHD · Lenovo",
+          "url": "https://www.lenovo.com/us/en/glossary/wqhd/",
+          "quote": "WQHD has a resolution of 2560x1440, while 2K resolution refers to a slightly lower resolution of 2048x1080."
+        }
+      ]
     },
     {
       "key": "P-R2",
@@ -1438,7 +1542,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "IPS Display · Lenovo",
+          "url": "https://www.lenovo.com/us/en/glossary/ips-display/",
+          "quote": "IPS Display, or In-Plane Switching Display, is a type of LCD technology that enhances image quality and color accuracy."
+        }
+      ]
     },
     {
       "key": "P-R3",
@@ -1709,7 +1820,19 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "SET TRANSACTION ISOLATION LEVEL (REPEATABLE READ) · Microsoft Learn",
+          "url": "https://learn.microsoft.com/es-es/sql/t-sql/statements/set-transaction-isolation-level-transact-sql",
+          "quote": "Otras transacciones pueden insertar filas nuevas que coincidan con las condiciones de búsqueda de las instrucciones emitidas por la transacción actual."
+        },
+        {
+          "title": "Niveles de aislamiento y fenómenos · PostgreSQL",
+          "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+          "quote": "A transaction re-reads data it has previously read and finds that data has been modified by another transaction (that committed since the initial read)."
+        }
+      ]
     },
     {
       "key": "SI-15",

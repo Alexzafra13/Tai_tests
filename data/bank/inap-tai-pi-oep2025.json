@@ -244,7 +244,14 @@
       "topics": [
         "B2-T02"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Qué es un SSD · SNIA",
+          "url": "https://www.snia.org/education/what-is-ssd",
+          "quote": "A solid-state drive (SSD) is a device for storing data on non-volatile memory. SSDs have no moving parts"
+        }
+      ]
     },
     {
       "key": "P-12",
@@ -260,7 +267,14 @@
       "topics": [
         "B2-T01"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "System buses · IEEE Technology Navigator",
+          "url": "https://technav.ieee.org/topic/system-buses/",
+          "quote": "System buses are shared communication pathways within a computer that carry data, addresses, and control signals among the central processing unit"
+        }
+      ]
     },
     {
       "key": "P-13",
@@ -276,7 +290,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "RFC 4180 (CSV) · IETF",
+          "url": "https://www.rfc-editor.org/rfc/rfc4180.html",
+          "quote": "Each record is located on a separate line, delimited by a line"
+        },
+        {
+          "title": "RFC 4180 (CSV) · IETF",
+          "url": "https://www.rfc-editor.org/rfc/rfc4180.html",
+          "quote": "Fields containing line breaks (CRLF), double quotes, and commas"
+        }
+      ]
     },
     {
       "key": "P-14",
@@ -292,7 +318,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "RFC 8259 (JSON) · IETF",
+          "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+          "quote": "A JSON value MUST be an object, array, number, or string, or one of"
+        },
+        {
+          "title": "RFC 8259 (JSON) · IETF",
+          "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+          "quote": "The literal names MUST be lowercase."
+        }
+      ]
     },
     {
       "key": "P-15",
@@ -308,7 +346,14 @@
       "topics": [
         "B2-T04"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Descripción general del kernel de Android · Android Open Source Project",
+          "url": "https://source.android.com/docs/core/architecture/kernel",
+          "quote": "The Android kernel is based on an upstream"
+        }
+      ]
     },
     {
       "key": "P-16",
@@ -404,7 +449,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Cola (queue) · Oracle Java SE 21",
+          "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Queue.html",
+          "quote": "In a FIFO queue, all new elements are inserted at the tail of the queue."
+        },
+        {
+          "title": "Cola (queue) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/queue.html",
+          "quote": "A collection of items in which only the earliest added item may be accessed."
+        }
+      ]
     },
     {
       "key": "P-22",
@@ -628,7 +685,14 @@
       "topics": [
         "B2-T05"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Propiedades ACID: aislamiento · Microsoft Learn",
+          "url": "https://learn.microsoft.com/es-es/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide",
+          "quote": "Las modificaciones realizadas por transacciones simultáneas se deben aislar de las modificaciones llevadas a cabo por otras transacciones simultáneas."
+        }
+      ]
     },
     {
       "key": "P-36",
@@ -944,7 +1008,19 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Ordenación radix (radix sort) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/radixsort.html",
+          "quote": "A multiple pass distribution sort algorithm that distributes each item to a bucket according to part of the item's key"
+        },
+        {
+          "title": "Heapsort · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/heapSort.html",
+          "quote": "then repeatedly extracts the maximum item. Run time is O(n log n)"
+        }
+      ]
     },
     {
       "key": "P-R5",
@@ -1186,7 +1262,14 @@
       "topics": [
         "B2-T03"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "title": "Algoritmo voraz (greedy algorithm) · NIST DADS",
+          "url": "https://xlinux.nist.gov/dads/HTML/greedyalgo.html",
+          "quote": "An algorithm that always takes the best immediate, or local, solution while finding an answer."
+        }
+      ]
     },
     {
       "key": "SI-R3",

@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"io/fs"
 	"path"
+	"slices"
 	"strings"
 
 	"github.com/alexzafra13/tai_tests/internal/validate"
@@ -59,12 +60,14 @@ type BankQuestion struct {
 
 // BankArticle points to a section of a bundled law (an empty Section
 // points to the law as a whole) or, for questions no law answers, to the
-// official page that does (Title and URL).
+// official page that does (Title and URL), with the literal sentence of
+// the page that backs the answer (Quote).
 type BankArticle struct {
 	Law     string `json:"law,omitempty"`
 	Section string `json:"section,omitempty"`
 	Title   string `json:"title,omitempty"`
 	URL     string `json:"url,omitempty"`
+	Quote   string `json:"quote,omitempty"`
 }
 
 // CorrectIndex converts a letter (a-d) to an option index.
@@ -122,7 +125,7 @@ func ParseBankFile(b []byte) (BankFile, error) {
 			return f, fmt.Errorf("bank: question %s: status must be empty or published", q.Key)
 		}
 		for _, a := range q.Articles {
-			law := a.Law != "" && a.Title == "" && a.URL == ""
+			law := a.Law != "" && a.Title == "" && a.URL == "" && a.Quote == ""
 			page := a.Law == "" && a.Section == "" && a.Title != "" && strings.HasPrefix(a.URL, "https://")
 			if !law && !page {
 				return f, fmt.Errorf("bank: question %s: an article is a law and section, or a title and https url", q.Key)
@@ -152,6 +155,7 @@ type BankResult struct {
 	Added     int
 	Published int // of those added
 	Existing  int
+	Updated   int // existing questions brought up to date with the bank
 	Problems  []BankProblem
 }
 
@@ -165,7 +169,7 @@ func (s *Store) LoadBank(ctx context.Context, files []BankFile) (BankResult, err
 			if err := s.loadBankFile(ctx, tx, f, &res); err != nil {
 				return err
 			}
-			return linkBankArticles(ctx, tx, f)
+			return syncBankQuestions(ctx, tx, f, &res)
 		})
 		if err != nil {
 			return res, fmt.Errorf("bank %s: %w", f.Source.Reference, err)
@@ -174,24 +178,43 @@ func (s *Store) LoadBank(ctx context.Context, files []BankFile) (BankResult, err
 	return res, nil
 }
 
-// linkBankArticles stores the articles of the file's questions, also of
-// those loaded by an earlier version, found by their source reference.
-func linkBankArticles(ctx context.Context, tx *sql.Tx, f BankFile) error {
+// syncBankQuestions brings the bank's checks to the questions of the file
+// this installation already has, found by their source reference: their
+// articles always and, while nobody has edited the question here and its
+// text and answer are still the bank's, its explanation, topics, status
+// and annulment.
+func syncBankQuestions(ctx context.Context, tx *sql.Tx, f BankFile, res *BankResult) error {
+	topics, err := topicsByCode(ctx, tx)
+	if err != nil {
+		return err
+	}
 	for _, q := range f.Questions {
 		var id int64
-		err := tx.QueryRowContext(ctx, `SELECT q.id FROM questions q JOIN sources s ON s.id = q.source_id
-			WHERE s.kind = ? AND s.reference = ? AND q.source_ref = ?`, f.Source.Kind, f.Source.Reference, q.SourceRef).Scan(&id)
+		var cur Question
+		var created, updated string
+		err := tx.QueryRowContext(ctx, `SELECT q.id, q.stem, q.option_a, q.option_b, q.option_c, q.option_d, q.correct,
+			q.explanation, q.status, q.annulled, q.created_at, q.updated_at
+			FROM questions q JOIN sources s ON s.id = q.source_id
+			WHERE s.kind = ? AND s.reference = ? AND q.source_ref = ?`, f.Source.Kind, f.Source.Reference, q.SourceRef).Scan(
+			&id, &cur.Stem, &cur.Options[0], &cur.Options[1], &cur.Options[2], &cur.Options[3], &cur.Correct,
+			&cur.Explanation, &cur.Status, &cur.Annulled, &created, &updated)
 		if errors.Is(err, sql.ErrNoRows) {
 			continue // deleted in this installation
 		} else if err != nil {
 			return err
+		}
+		correct, _ := CorrectIndex(q.Correct)
+		if created == updated && cur.Stem == q.Stem && cur.Options == q.Options && cur.Correct == correct {
+			if err := syncBankQuestion(ctx, tx, id, cur, q, topics, res); err != nil {
+				return err
+			}
 		}
 		if _, err := tx.ExecContext(ctx, `DELETE FROM question_sections WHERE question_id = ?`, id); err != nil {
 			return err
 		}
 		for i, a := range q.Articles {
 			if _, err := tx.ExecContext(ctx, `INSERT INTO question_sections (question_id, position, law_reference, block_id,
-				title, url) VALUES (?, ?, ?, ?, ?, ?)`, id, i, a.Law, a.Section, a.Title, a.URL); err != nil {
+				title, url, quote) VALUES (?, ?, ?, ?, ?, ?, ?)`, id, i, a.Law, a.Section, a.Title, a.URL, a.Quote); err != nil {
 				return err
 			}
 		}
@@ -276,6 +299,61 @@ func (s *Store) loadBankFile(ctx context.Context, tx *sql.Tx, f BankFile, res *B
 			res.Published++
 		}
 	}
+	return nil
+}
+
+// syncBankQuestion applies the bank's explanation, topics, status and
+// annulment to a question nobody has edited, keeping updated_at so later
+// versions of the bank can still update it.
+func syncBankQuestion(ctx context.Context, tx *sql.Tx, id int64, cur Question, q BankQuestion,
+	topics map[string]int64, res *BankResult) error {
+	var ids []int64
+	complete := len(q.Topics) > 0
+	for _, code := range q.Topics {
+		if tid, ok := topics[code]; ok {
+			ids = append(ids, tid)
+		} else {
+			complete = false
+		}
+	}
+	status := StatusDraft
+	if q.Status == StatusPublished && complete {
+		status = StatusPublished
+	}
+	rows, err := tx.QueryContext(ctx, `SELECT topic_id FROM question_topics WHERE question_id = ? ORDER BY topic_id`, id)
+	if err != nil {
+		return err
+	}
+	var have []int64
+	for rows.Next() {
+		var tid int64
+		if err := rows.Scan(&tid); err != nil {
+			rows.Close()
+			return err
+		}
+		have = append(have, tid)
+	}
+	rows.Close()
+	if err := rows.Err(); err != nil {
+		return err
+	}
+	slices.Sort(ids)
+	if cur.Explanation == q.Explanation && cur.Status == status && cur.Annulled == q.Annulled && slices.Equal(have, ids) {
+		return nil
+	}
+	if _, err := tx.ExecContext(ctx, `UPDATE questions SET explanation = ?, status = ?, annulled = ? WHERE id = ?`,
+		q.Explanation, status, q.Annulled, id); err != nil {
+		return err
+	}
+	if _, err := tx.ExecContext(ctx, `DELETE FROM question_topics WHERE question_id = ?`, id); err != nil {
+		return err
+	}
+	for _, tid := range ids {
+		if _, err := tx.ExecContext(ctx, `INSERT INTO question_topics (question_id, topic_id) VALUES (?, ?)`, id, tid); err != nil {
+			return err
+		}
+	}
+	res.Updated++
 	return nil
 }
 
