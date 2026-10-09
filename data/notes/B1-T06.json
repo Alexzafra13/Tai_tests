@@ -162,7 +162,7 @@
      ]
     },
     {
-     "text": "La prestación de estos servicios **no está sujeta a autorización previa** (art. 6), y los que vienen de prestadores de la **UE o del EEE** se rigen por la **libre prestación de servicios** (art. 7.1). Solo pueden **interrumpirse** o retirarse datos si atentan contra el **orden público**, la investigación penal, la seguridad pública y la defensa nacional, la **salud pública** o los consumidores, la **dignidad** y la no discriminación, la **juventud y la infancia** o la **propiedad intelectual** (art. 8.1); cuando la ley lo reserve a los jueces, **solo la autoridad judicial** puede adoptar esas medidas.",
+     "text": "La prestación de estos servicios **no está sujeta a autorización previa** (art. 6), y los que vienen de prestadores de la **UE o del EEE** se rigen por la **libre prestación de servicios** (art. 7.1). Solo pueden **interrumpirse** o retirarse datos si atentan **o pueden atentar** contra el **orden público**, la investigación penal, la seguridad pública y la defensa nacional, la **salud pública** o los consumidores, la **dignidad** y la no discriminación, la **juventud y la infancia** o la **propiedad intelectual** (art. 8.1); cuando la ley lo reserve a los jueces, **solo la autoridad judicial** puede adoptar esas medidas.",
      "refs": [
       {
        "law": "BOE-A-2002-13758",
@@ -614,12 +614,17 @@
      ]
     },
     {
-     "text": "**Multas** (art. 39.1): **muy graves**, de **150.001 a 600.000 €** (y, si se reiteran dos o más en **tres años**, prohibición de actuar en España hasta **dos años**); **graves**, de **30.001 a 150.000 €**; **leves**, **hasta 30.000 €**.",
+     "text": "**Multas** (art. 39.1): **muy graves**, de **150.001 a 600.000 €** (si se reiteran dos o más, sancionadas en firme, en **tres años**, **puede** imponerse la prohibición de actuar en España hasta **dos años**); **graves**, de **30.001 a 150.000 €**; **leves**, **hasta 30.000 €**.",
      "refs": [
       {
        "law": "BOE-A-2002-13758",
        "section": "a39",
        "quote": "Por la comisión de infracciones muy graves, multa de 150.001 hasta 600.000 euros."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a39",
+       "quote": "sancionadas con carácter firme, podrá dar lugar, en función de sus circunstancias,"
       },
       {
        "law": "BOE-A-2002-13758",
@@ -1111,7 +1116,7 @@
      ]
     },
     {
-     "text": "**Firma electrónica** (art. 3, puntos 9 a 12): los datos en formato electrónico anejos a otros o asociados lógicamente con ellos que usa el **firmante** (siempre una **persona física**) para firmar. Tres niveles:",
+     "text": "**Firma electrónica** (art. 3, puntos 9 a 12): los datos en formato electrónico anejos a otros o asociados lógicamente con ellos que usa el **firmante** (siempre una **persona física**) para firmar. Además de esta firma simple, hay dos más exigentes:",
      "refs": [
       {
        "law": "32014R0910",
@@ -1730,7 +1735,7 @@
      ]
     },
     {
-     "text": "Por regla general basta con **identificarse** (art. 11.1). La **firma solo es obligatoria** para (art. 11.2): **formular solicitudes**, presentar **declaraciones responsables o comunicaciones**, **interponer recursos**, **desistir de acciones** y **renunciar a derechos**. (Para **consultar el estado de la tramitación** basta identificarse.)",
+     "text": "Por regla general basta con **identificarse** (art. 11.1). La **firma solo es obligatoria** para (art. 11.2): **formular solicitudes**, presentar **declaraciones responsables o comunicaciones**, **interponer recursos**, **desistir de acciones** y **renunciar a derechos**. Para lo demás (por ejemplo, **consultar el estado de la tramitación**) basta con identificarse.",
      "refs": [
       {
        "law": "BOE-A-2015-10565",
@@ -1785,12 +1790,17 @@
      ]
     },
     {
-     "text": "Las **Administraciones** se identifican con un **sello electrónico** basado en certificado cualificado (art. 40 Ley 40/2015). En la **actuación administrativa automatizada** (sin intervención directa de un empleado público, art. 41) firman con **sello electrónico** o **código seguro de verificación (CSV)** (art. 42). El **personal** firma con su propia firma electrónica (art. 43).",
+     "text": "Las **Administraciones** **pueden** identificarse con un **sello electrónico** basado en certificado reconocido o cualificado, y quedan identificadas por lo que publican como propio en su **portal** (art. 40 Ley 40/2015). En la **actuación administrativa automatizada** (sin intervención directa de un empleado público, art. 41) firman con **sello electrónico** o **código seguro de verificación (CSV)** (art. 42). El **personal** firma con su propia firma electrónica (art. 43).",
      "refs": [
       {
        "law": "BOE-A-2015-10566",
        "section": "a40",
        "quote": "Las Administraciones Públicas podrán identificarse mediante el uso de un sello electrónico basado en un certificado electrónico reconocido o cualificado"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a40",
+       "quote": "Se entenderá identificada la Administración Pública respecto de la información que se publique como propia en su portal de internet."
       },
       {
        "law": "BOE-A-2015-10566",
@@ -1900,7 +1910,7 @@
      ]
     },
     {
-     "text": "**Derechos y obligaciones** (art. 4): todos los españoles **tienen derecho** a él; es **obligatorio a partir de los 14 años** para los residentes en España y para quienes, residiendo fuera, se trasladen aquí **seis meses o más**. Nadie puede ser privado de él, ni temporalmente, salvo en los casos legales. Hay que **exhibirlo** cuando lo pidan la autoridad o sus agentes, y **denunciar** su sustracción o extravío.",
+     "text": "**Derechos y obligaciones** (art. 4): todos los españoles **tienen derecho** a él; es **obligatorio para los mayores de 14 años** los residentes en España y para quienes, residiendo fuera, se trasladen aquí **seis meses o más**. Nadie puede ser privado de él, ni temporalmente, salvo en los casos legales. Hay que **exhibirlo** cuando lo pidan la autoridad o sus agentes, y **denunciar** su sustracción o extravío.",
      "refs": [
       {
        "law": "BOE-A-2025-6601",
@@ -2117,12 +2127,17 @@
      ]
     },
     {
-     "text": "Los **certificados del DNI** valen **dos años** (art. 11.3); con el Real Decreto 1553/2005 podían durar **hasta cinco** (el portal fijaba 24 meses de un máximo de 60). El **Ministerio para la Transformación Digital y de la Función Pública** supervisa lo que corresponde a la Dirección General de la Policía como prestador, que publica su **Declaración de Prácticas y Políticas de Certificación** (art. 11.2 y 11.4).",
+     "text": "Los **certificados del DNI** valen **dos años** (art. 11.3). La Ley 6/2020 limita los certificados cualificados a **cinco años** (art. 4.2), y el portal del DNIe indica 24 meses dentro de ese máximo de 60. El **Ministerio para la Transformación Digital y de la Función Pública** supervisa lo que corresponde a la Dirección General de la Policía como prestador, que publica su **Declaración de Prácticas y Políticas de Certificación** (art. 11.2 y 11.4).",
      "refs": [
       {
        "law": "BOE-A-2025-6601",
        "section": "a1-3",
        "quote": "El plazo de validez de los certificados electrónicos contenidos en el Documento Nacional de Identidad será de dos años."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a4",
+       "quote": "El período de vigencia de los certificados cualificados no será superior a cinco años."
       },
       {
        "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
