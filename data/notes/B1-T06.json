@@ -35,7 +35,7 @@
      ],
      "items": [
       {
-       "text": "**Son** servicios de la sociedad de la información, entre otros: la contratación electrónica de bienes o servicios, las **subastas** y centros comerciales virtuales, la gestión de compras en grupo, el envío de **comunicaciones comerciales** y el **suministro de información por vía telemática**.",
+       "text": "**Son** servicios de la sociedad de la información, entre otros y **siempre que representen una actividad económica**: la contratación electrónica de bienes o servicios, las **subastas** y centros comerciales virtuales, la gestión de compras en grupo, el envío de **comunicaciones comerciales** y el **suministro de información por vía telemática**.",
        "refs": [
         {
          "law": "BOE-A-2002-13758",
@@ -46,6 +46,16 @@
          "law": "BOE-A-2002-13758",
          "section": "an",
          "quote": "2.º La organización y gestión de subastas por medios electrónicos o de mercados y centros comerciales virtuales."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "Son servicios de la sociedad de la información, entre otros y siempre que representen una actividad económica, los siguientes:"
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "3.º La gestión de compras en la red por grupos de personas."
         },
         {
          "law": "BOE-A-2002-13758",
@@ -71,6 +81,11 @@
          "law": "BOE-A-2002-13758",
          "section": "an",
          "quote": "2.º El intercambio de información por medio de correo electrónico u otro medio de comunicación electrónica equivalente para fines ajenos a la actividad económica de quienes lo utilizan."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "3.º Los servicios de radiodifusión televisiva"
         },
         {
          "law": "BOE-A-2002-13758",
@@ -137,7 +152,7 @@
       {
        "law": "BOE-A-2002-13758",
        "section": "a2",
-       "quote": "se presumirá que el prestador de servicios está establecido en España cuando el prestador o alguna de sus sucursales se haya inscrito en el Registro Mercantil"
+       "quote": "se presumirá que el prestador de servicios está establecido en España cuando el prestador o alguna de sus sucursales se haya inscrito en el Registro Mercantil o en otro registro público español en el que fuera necesaria la inscripción para la adquisición de personalidad jurídica."
       },
       {
        "law": "BOE-A-2002-13758",
@@ -172,7 +187,7 @@
       {
        "law": "BOE-A-2002-13758",
        "section": "a7",
-       "quote": "se realizará en régimen de libre prestación de servicios"
+       "quote": "que procedan de un prestador establecido en algún Estado miembro de la Unión Europea o del Espacio Económico Europeo se realizará en régimen de libre prestación de servicios"
       },
       {
        "law": "BOE-A-2002-13758",
@@ -212,7 +227,7 @@
    "title": "LSSI: obligaciones y responsabilidad de los prestadores",
    "points": [
     {
-     "text": "**Información general** (art. 10.1): el prestador debe permitir acceder por medios electrónicos, de forma **permanente, fácil, directa y gratuita**, a su **nombre o denominación social**, domicilio, **correo electrónico**, datos de inscripción registral, autorización administrativa si la necesita, datos de la **profesión regulada**, **NIF** y **precios** (con o sin impuestos y gastos de envío).",
+     "text": "**Información general** (art. 10.1): el prestador debe permitir acceder por medios electrónicos, de forma **permanente, fácil, directa y gratuita**, a su **nombre o denominación social**, domicilio, **correo electrónico**, datos de inscripción registral, autorización administrativa si la necesita, datos de la **profesión regulada**, **NIF**, los **precios** cuando el servicio se refiera a ellos (indicando si incluyen impuestos y gastos de envío) y los **códigos de conducta** a los que esté adherido.",
      "refs": [
       {
        "law": "BOE-A-2002-13758",
@@ -243,6 +258,16 @@
        "law": "BOE-A-2002-13758",
        "section": "a10",
        "quote": "e) El número de identificación fiscal que le corresponda."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "g) Los códigos de conducta a los que, en su caso, esté adherido y la manera de consultarlos electrónicamente."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "Cuando el servicio de la sociedad de la información haga referencia a precios"
       },
       {
        "law": "BOE-A-2002-13758",
@@ -278,6 +303,11 @@
        "law": "BOE-A-2002-13758",
        "section": "a12bis",
        "quote": "informarán sobre las herramientas existentes para el filtrado y restricción del acceso a determinados contenidos y servicios en Internet no deseados o que puedan resultar nocivos para la juventud y la infancia."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a12bis",
+       "quote": "facilitarán información a sus clientes acerca de las posibles responsabilidades en que puedan incurrir por el uso de Internet con fines ilícitos"
       },
       {
        "law": "BOE-A-2002-13758",
@@ -332,6 +362,16 @@
         {
          "law": "BOE-A-2002-13758",
          "section": "a15",
+         "quote": "b) Permiten el acceso a ella sólo a los destinatarios que cumplan las condiciones impuestas a tal fin"
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a15",
+         "quote": "c) Respetan las normas generalmente aceptadas y aplicadas por el sector para la actualización de la información."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a15",
          "quote": "Retiran la información que hayan almacenado o hacen imposible el acceso a ella, en cuanto tengan conocimiento efectivo de:"
         }
        ]
@@ -380,6 +420,11 @@
        "law": "BOE-A-2002-13758",
        "section": "a18",
        "quote": "Los códigos de conducta podrán tratar, en particular, sobre los procedimientos para la detección y retirada de contenidos ilícitos y la protección de los destinatarios frente al envío por vía electrónica de comunicaciones comerciales no solicitadas"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a18",
+       "quote": "así como sobre los procedimientos extrajudiciales para la resolución de los conflictos"
       },
       {
        "law": "BOE-A-2002-13758",
@@ -724,6 +769,11 @@
       {
        "law": "BOE-A-2007-22440",
        "section": "a2",
+       "quote": "a) Contratación electrónica de servicios, suministros y bienes, la modificación y finalización o rescisión de los correspondientes contratos"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
        "quote": "información sobre su historial de facturación de, al menos, los últimos tres años"
       },
       {
@@ -864,6 +914,11 @@
       {
        "law": "BOE-A-2020-14046",
        "section": "pr",
+       "quote": "complementar el Reglamento (UE) 910/2014 en aquellos aspectos que este no ha armonizado"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "pr",
        "quote": "la elección de un reglamento como instrumento legislativo por el legislador europeo, de aplicación directa en los Estados miembros"
       },
       {
@@ -929,7 +984,7 @@
      ]
     },
     {
-     "text": "**Reconocimiento mutuo** (art. 6): para un servicio público en línea, cada Estado reconoce el medio de identificación de otro Estado si su sistema está en la **lista publicada por la Comisión** y su nivel es **sustancial o alto** e **igual o superior** al exigido. Los de nivel **bajo** **pueden** reconocerse.",
+     "text": "**Reconocimiento mutuo** (art. 6): para un servicio público en línea, cada Estado reconoce el medio de identificación de otro Estado si su sistema está en la **lista publicada por la Comisión** su nivel es **igual o superior** al exigido y tanto este como el que usa el organismo son **sustancial o alto**; se reconoce **a más tardar 12 meses** después de publicarse la lista. Los de nivel **bajo** **pueden** reconocerse.",
      "refs": [
       {
        "law": "32014R0910",
@@ -940,6 +995,16 @@
        "law": "32014R0910",
        "section": "art_6",
        "quote": "siempre que el nivel de seguridad de dicho medio de identificación electrónica corresponda a un nivel de seguridad sustancial o alto"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_6",
+       "quote": "c) el organismo público en cuestión utilice un nivel de seguridad sustancial o alto en relación con el acceso a ese servicio en línea."
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_6",
+       "quote": "Este reconocimiento se producirá a más tardar 12 meses después de que la Comisión publique la lista"
       },
       {
        "law": "32014R0910",
@@ -964,12 +1029,17 @@
      ],
      "items": [
       {
-       "text": "Su código fuente tiene **licencia de código abierto**; funciona con un **nivel de seguridad alto**; respeta la **seguridad desde el diseño**.",
+       "text": "Su código fuente tiene **licencia de código abierto** (con justificación, los Estados pueden no divulgar componentes que no se instalan en el dispositivo del usuario); funciona con un **nivel de seguridad alto**; respeta la **seguridad desde el diseño**.",
        "refs": [
         {
          "law": "32014R0910",
          "section": "art_5a",
          "quote": "El código fuente de los componentes de programas informáticos de las carteras europeas de identidad digital tendrá licencia de código abierto."
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "no se divulgue el código fuente de componentes específicos distintos de los instalados en los dispositivos de los usuarios."
         },
         {
          "law": "32014R0910",
@@ -1005,6 +1075,11 @@
          "law": "32014R0910",
          "section": "art_5a",
          "quote": "La utilización de las carteras europeas de identidad digital será voluntaria."
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "no se restringirán de ninguna manera ni perjudicarán a las personas físicas o jurídicas que no utilicen las carteras europeas de identidad digital."
         }
        ]
       }
@@ -1027,6 +1102,16 @@
        "law": "32014R0910",
        "section": "art_3",
        "quote": "a) la expedición de certificados de firma electrónica, certificados de sello electrónico, certificados de autenticación de sitios web o certificados para la prestación de otros servicios de confianza;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "b) la validación de certificados de firma electrónica"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "c) la creación de firmas electrónicas o sellos electrónicos;"
       },
       {
        "law": "32014R0910",
@@ -1302,6 +1387,11 @@
       },
       {
        "law": "BOE-A-2020-14046",
+       "section": "pr",
+       "quote": "referido a los terceros de confianza"
+      },
+      {
+       "law": "BOE-A-2020-14046",
        "section": "dd",
        "quote": "b) El artículo 25 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico."
       }
@@ -1368,7 +1458,7 @@
      ]
     },
     {
-     "text": "**Revocación** (art. 5.1), entre otras causas: **solicitud** del firmante o titular; **violación o puesta en peligro** del secreto de los datos de creación; **resolución judicial o administrativa**; **fallecimiento** del firmante o extinción de la persona jurídica; fin de la **representación**; **cese** del prestador (salvo transferencia); **falsedad** de los datos; **criptografía** insuficiente; o causa lícita de la declaración de prácticas.",
+     "text": "**Revocación** (art. 5.1), entre otras causas: **solicitud** del firmante o titular; **violación o puesta en peligro** del secreto de los datos de creación; **resolución judicial o administrativa**; **fallecimiento** del firmante o extinción de la personalidad jurídica o disolución del creador del sello; fin de la **representación**; **cese** del prestador (salvo transferencia); **falsedad** de los datos; **criptografía** insuficiente; o causa lícita de la declaración de prácticas.",
      "refs": [
       {
        "law": "BOE-A-2020-14046",
@@ -1389,6 +1479,11 @@
        "law": "BOE-A-2020-14046",
        "section": "a5",
        "quote": "d) Fallecimiento del firmante"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "extinción de la personalidad jurídica o disolución del creador del sello"
       },
       {
        "law": "BOE-A-2020-14046",
@@ -1458,7 +1553,7 @@
      ]
     },
     {
-     "text": "**Comprobación de la identidad** (art. 7): exige la **personación** del solicitante, que se acredita con **DNI, pasaporte** u otros medios admitidos. **No hace falta** si su firma en la solicitud se **legitima ante notario**. Por **orden ministerial** pueden admitirse métodos a distancia como la **videoconferencia o vídeo-identificación**, con seguridad equivalente a la presencia física. Tampoco se exige si ya se le identificó así en una relación previa **hace menos de cinco años**.",
+     "text": "**Comprobación de la identidad** (art. 7): exige la **personación** del solicitante, que se acredita con **DNI, pasaporte** u otros medios admitidos. **No hace falta** si su firma en la solicitud se **legitima ante notario**. Por **orden ministerial** pueden admitirse métodos a distancia como la **videoconferencia o vídeo-identificación**, con seguridad equivalente a la presencia física **según un organismo de evaluación de la conformidad**. Estas comprobaciones **pueden no exigirse** si el prestador ya identificó así al solicitante en una relación previa **hace menos de cinco años**.",
      "refs": [
       {
        "law": "BOE-A-2020-14046",
@@ -1474,6 +1569,16 @@
        "law": "BOE-A-2020-14046",
        "section": "a7",
        "quote": "mediante otros métodos de identificación como videoconferencia o vídeo-identificación que aporten una seguridad equivalente en términos de fiabilidad a la presencia física"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a7",
+       "quote": "según su evaluación por un organismo de evaluación de la conformidad"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a7",
+       "quote": "Lo dispuesto en los apartados anteriores podrá no ser exigible"
       },
       {
        "law": "BOE-A-2020-14046",
@@ -1605,12 +1710,22 @@
      ]
     },
     {
-     "text": "**Infracciones** (art. 18): **muy graves**, entre otras, **reincidir en una grave** en dos años o expedir certificados cualificados **sin las comprobaciones** cuando afecta a la **mayoría** de los expedidos; **graves**, entre otras, **obstruir la inspección**, presentarse como **cualificado sin serlo**, **almacenar o copiar** datos de creación o **no extinguir** certificados cuando procede.",
+     "text": "**Infracciones** (art. 18): **muy graves**, entre otras, cometer una grave en los **dos años** siguientes a la **sanción firme** por otra grave **de la misma naturaleza**, o expedir certificados cualificados **sin las comprobaciones** cuando afecta a la **mayoría** de los expedidos; **graves**, entre otras, **obstruir la inspección**, presentarse como **cualificado sin serlo**, **almacenar o copiar** datos de creación o **no extinguir** certificados cuando procede.",
      "refs": [
       {
        "law": "BOE-A-2020-14046",
        "section": "a1-10",
-       "quote": "La comisión de una infracción grave en el plazo de dos años desde que hubiese sido sancionado por una infracción grave de la misma naturaleza"
+       "quote": "La comisión de una infracción grave en el plazo de dos años desde que hubiese sido sancionado por una infracción grave de la misma naturaleza, contados desde que recaiga la resolución sancionadora firme."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-10",
+       "quote": "a) La resistencia, obstrucción, excusa o negativa a la actuación inspectora"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-10",
+       "quote": "almacenar o copiar, por sí o a través de un tercero, los datos de creación de firma, sello o autenticación de sitio web"
       },
       {
        "law": "BOE-A-2020-14046",
@@ -1685,7 +1800,7 @@
    "title": "Identificación y firma ante las Administraciones",
    "points": [
     {
-     "text": "Las Administraciones **verifican la identidad** de los interesados con su nombre y apellidos o razón social del **DNI** o documento equivalente (art. 9.1 Ley 39/2015). Para identificarse **electrónicamente** valen (art. 9.2): **certificados cualificados de firma** y **de sello** de prestadores de la **lista de confianza**, y **cualquier otro sistema** que las Administraciones consideren válido con **registro previo** del usuario y **comunicación previa** a la Secretaría General de Administración Digital (eficaz a los **dos meses**).",
+     "text": "Las Administraciones **verifican la identidad** de los interesados con su nombre y apellidos o razón social del **DNI** o documento equivalente (art. 9.1 Ley 39/2015). Para identificarse **electrónicamente** valen (art. 9.2): **certificados cualificados de firma** y **de sello** de prestadores de la **lista de confianza**, y **cualquier otro sistema** que las Administraciones consideren válido con **registro previo** del usuario y **comunicación previa** a la Secretaría General de Administración Digital (eficaz a los **dos meses**). Siempre debe poder usarse un **certificado cualificado** (letras a o b) en **todo procedimiento**, y el sistema que acepte la **Administración General del Estado** sirve ante **todas las Administraciones**, salvo prueba en contrario (art. 9.4).",
      "refs": [
       {
        "law": "BOE-A-2015-10565",
@@ -1711,6 +1826,16 @@
        "law": "BOE-A-2015-10565",
        "section": "a9",
        "quote": "habrán de transcurrir dos meses desde dicha comunicación"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a9",
+       "quote": "Las Administraciones Públicas deberán garantizar que la utilización de uno de los sistemas previstos en las letras a) y b) sea posible para todo procedimiento"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a9",
+       "quote": "la aceptación de alguno de estos sistemas por la Administración General del Estado servirá para acreditar frente a todas las Administraciones Públicas, salvo prueba en contrario"
       }
      ]
     },
@@ -1775,7 +1900,7 @@
      ]
     },
     {
-     "text": "Si un interesado no obligado a relacionarse electrónicamente no tiene medios, puede identificarle o firmar por él un **funcionario habilitado**, con su **consentimiento expreso** (art. 12.2 Ley 39/2015).",
+     "text": "Si un interesado no obligado a relacionarse electrónicamente no tiene medios, puede identificarle o firmar por él un **funcionario** con su propio sistema de firma, siempre que el interesado **se identifique ante él** y preste su **consentimiento expreso**, del que debe **quedar constancia** (art. 12.2 Ley 39/2015). Las Administraciones llevan un **registro de funcionarios habilitados** (art. 12.3).",
      "refs": [
       {
        "law": "BOE-A-2015-10565",
@@ -1785,12 +1910,17 @@
       {
        "law": "BOE-A-2015-10565",
        "section": "a12",
-       "quote": "preste su consentimiento expreso para esta actuación"
+       "quote": "se identifique ante el funcionario y preste su consentimiento expreso para esta actuación, de lo que deberá quedar constancia"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "donde constarán los funcionarios habilitados para la identificación o firma regulada en este artículo."
       }
      ]
     },
     {
-     "text": "Las **Administraciones** **pueden** identificarse con un **sello electrónico** basado en certificado reconocido o cualificado, y quedan identificadas por lo que publican como propio en su **portal** (art. 40 Ley 40/2015). En la **actuación administrativa automatizada** (sin intervención directa de un empleado público, art. 41) firman con **sello electrónico** o **código seguro de verificación (CSV)** (art. 42). El **personal** firma con su propia firma electrónica (art. 43).",
+     "text": "Las **Administraciones** **pueden** identificarse con un **sello electrónico** basado en certificado reconocido o cualificado, y quedan identificadas por lo que publican como propio en su **portal** (art. 40 Ley 40/2015). En la **actuación administrativa automatizada** (sin intervención directa de un empleado público, art. 41) cada Administración determina cuándo firma con **sello electrónico** o con **código seguro de verificación (CSV)** (art. 42). El **personal** firma con su propia firma electrónica (art. 43).",
      "refs": [
       {
        "law": "BOE-A-2015-10566",
@@ -1810,6 +1940,11 @@
       {
        "law": "BOE-A-2015-10566",
        "section": "a42",
+       "quote": "cada Administración Pública podrá determinar los supuestos de utilización de los siguientes sistemas de firma electrónica:"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a42",
        "quote": "b) Código seguro de verificación vinculado a la Administración Pública"
       },
       {
@@ -1820,12 +1955,17 @@
      ]
     },
     {
-     "text": "**Formatos de firma** admitidos en la Administración (NTI de Política de firma y sello, III.2 y III.4): los de la **Decisión de Ejecución (UE) 2015/1506** y, por compatibilidad, **XAdES** (XML), **CAdES** (CMS) y **PAdES** (**PDF**). El perfil mínimo es **«-EPES»**: clase básica (**BES**) más la información de la **política de firma**.",
+     "text": "**Formatos de firma** admitidos en la Administración (NTI de Política de firma y sello, III.2 y III.4): los de la **Decisión de Ejecución (UE) 2015/1506** y, solo por compatibilidad (se permiten **aunque no se recomiendan**), **XAdES** (XML), **CAdES** (CMS) y **PAdES** (**PDF**). El perfil mínimo es **«-EPES»**: clase básica (**BES**) más la información de la **política de firma**.",
      "refs": [
       {
        "law": "BOE-A-2016-10146",
        "section": "ii-2",
        "quote": "c) los formatos CAdES, XAdES y PAdES"
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "Por compatibilidad con las políticas de firma anteriores, se permitirán aunque no se recomiendan los siguientes formatos"
       },
       {
        "law": "BOE-A-2016-10146",
@@ -1846,6 +1986,41 @@
        "law": "BOE-A-2016-10146",
        "section": "ii-2",
        "quote": "será «-EPES», esto es, clase básica (BES) añadiendo información sobre la política de firma y sello."
+      }
+     ]
+    },
+    {
+     "text": "**Firmas múltiples** (NTI III.6): si el segundo firmante **ratifica** la firma del primero, se usa la etiqueta **CounterSignature**; si las firmas son **al mismo nivel**, cada una es una **firma independiente**. El **tipo de firma** del documento electrónico distingue, entre otros, XAdES **internally detached** o **enveloped**, CAdES **detached/explicit** o **attached/implicit** y PAdES.",
+     "refs": [
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "donde el segundo firmante ratifica la firma del primero se utilizará la etiqueta correspondiente, CounterSignature"
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "En el caso de que las múltiples firmas/sellos se realicen al mismo nivel, cada una de ellas se representará como una firma independiente."
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "i. XAdES internally detached signature."
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "ii. XAdES enveloped signature."
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "iii. CAdES detached/explicit signature."
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "iv. CAdES attached/implicit signature."
       }
      ]
     }
@@ -1910,7 +2085,7 @@
      ]
     },
     {
-     "text": "**Derechos y obligaciones** (art. 4): todos los españoles **tienen derecho** a él; es **obligatorio para los mayores de 14 años** los residentes en España y para quienes, residiendo fuera, se trasladen aquí **seis meses o más**. Nadie puede ser privado de él, ni temporalmente, salvo en los casos legales. Hay que **exhibirlo** cuando lo pidan la autoridad o sus agentes, y **denunciar** su sustracción o extravío.",
+     "text": "**Derechos y obligaciones** (art. 4): todos los españoles **tienen derecho** a él; es **obligatorio para los mayores de 14 años** que residan en España y para los de igual edad que, residiendo fuera, se trasladen aquí **seis meses o más**. Nadie puede ser privado de él, ni temporalmente, salvo en los casos legales. Hay que **exhibirlo** cuando lo pidan la autoridad o sus agentes, y **denunciar** su sustracción o extravío.",
      "refs": [
       {
        "law": "BOE-A-2025-6601",
@@ -1940,12 +2115,27 @@
      ]
     },
     {
-     "text": "**Tramitación** (art. 6.2): **presencia física**, con **cita previa**; los menores, con quien ejerza la patria potestad o tutela. Requisitos: **tasa**, documentos recabados **electrónicamente** (registro civil, **empadronamiento** de menos de **tres meses**) y **fotografía** en color de **32 × 26 mm** con fondo blanco. Lleva **imagen facial** y **dos impresiones dactilares** (los **índices**; no a menores de **seis años**) y la **firma manuscrita digitalizada**.",
+     "text": "**Tramitación** (art. 6.2): **presencia física**, con **cita previa** (excepcionalmente, sin ella); los menores, con quien ejerza la patria potestad o tutela. Requisitos: **tasa**, documentos recabados **electrónicamente** (registro civil, **empadronamiento** de menos de **tres meses**) y **fotografía** en color de **32 × 26 mm** con fondo blanco. Lleva **imagen facial** y **dos impresiones dactilares** (los **índices**; si no es posible, medio, anular o pulgar; no a menores de **seis años** ni a quien le sea físicamente imposible) y la **firma manuscrita digitalizada**.",
      "refs": [
       {
        "law": "BOE-A-2025-6601",
        "section": "a6",
        "quote": "se realizará con la presencia física de la persona, a través de los sistemas de cita previa"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "se podrá expedir con carácter excepcional sin cita previa"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "medio, anular o pulgar"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "Las personas a las que sea físicamente imposible quedarán exentas del requisito de facilitarlas."
       },
       {
        "law": "BOE-A-2025-6601",
@@ -2051,6 +2241,11 @@
          "law": "BOE-A-2025-6601",
          "section": "a7",
          "quote": "Cuando sea físicamente imposible, con carácter temporal, tomar las impresiones dactilares de cualquier dedo de la persona solicitante."
+        },
+        {
+         "law": "BOE-A-2025-6601",
+         "section": "a6",
+         "quote": "no pudiera ser presentado alguno de los documentos necesarios o recabados electrónicamente, y siempre que los datos que consten en tales documentos se acrediten por otros medios"
         }
        ]
       }
@@ -2068,6 +2263,11 @@
        "law": "BOE-A-2025-6601",
        "section": "a8",
        "quote": "en los supuestos de variación de los datos que se recogen en el mismo"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a9",
+       "quote": "debiendo presentar denuncia policial o administrativa en caso de extravío y sustracción."
       },
       {
        "law": "BOE-A-2025-6601",
@@ -2237,7 +2437,7 @@
       {
        "title": "El DNI electrónico · Portal del DNI electrónico",
        "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_100",
-       "quote": "en 2006 se creó el Documento Nacional de Identidad electrónico (DNIe)"
+       "quote": "en 2006 se creó el Documento Nacional de Identidad electrónico (DNIe) , de policarbonato"
       },
       {
        "title": "El DNI electrónico · Portal del DNI electrónico",
@@ -2287,12 +2487,22 @@
      ]
     },
     {
-     "text": "El **chip** contiene los mismos datos impresos (filiación, **fotografía**, firma digitalizada y **resumen criptográfico de la huella**), los **certificados de autenticación y de firma** y un **certificado de componente**. **No** guarda datos **históricos**, sanitarios, fiscales, penales ni laborales.",
+     "text": "El **chip** contiene los mismos datos impresos (filiación, **fotografía**, firma digitalizada y **resumen criptográfico de la huella**), los **certificados de autenticación y de firma** y un **certificado de componente**. Según el portal, también el **certificado de la autoridad emisora** y las **claves privadas** que activan los certificados. **No** guarda datos **históricos**, sanitarios, fiscales, penales ni laborales.",
      "refs": [
       {
        "title": "Preguntas frecuentes sobre el DNIe · Portal del DNI electrónico",
        "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1001",
        "quote": "El chip que incorpora el DNI contiene los mismos datos que aparecen impresos en la tarjeta (filiación, fotografía y firma digitalizada y resumen criptográfico de la impresión dactilar) junto con los certificados de autenticación y firma electrónica, además de un certificado de componente propio del DNI."
+      },
+      {
+       "title": "Preguntas frecuentes sobre el chip del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1008",
+       "quote": "Certificados reconocidos de autenticación y de firma, y certificado electrónico de la autoridad emisora, que contendrán sus respectivos períodos de validez."
+      },
+      {
+       "title": "Preguntas frecuentes sobre el chip del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1008",
+       "quote": "Claves privadas necesarias para la activación de los certificados mencionados anteriormente."
       },
       {
        "title": "Preguntas frecuentes sobre el DNIe · Portal del DNI electrónico",
@@ -2347,12 +2557,27 @@
      ]
     },
     {
-     "text": "La **renovación de los certificados** exige la **presencia física** del titular en la oficina de expedición, en un **Punto de Actualización**, con verificación de identidad por la tarjeta y las **huellas**; es **voluntaria y gratuita**. Si se **pierde o roban** el DNI, hay que comunicarlo para **revocar** los certificados.",
+     "text": "La **renovación de los certificados** exige la **presencia física** del titular en la oficina de expedición, en un **Punto de Actualización**, con verificación de identidad por la tarjeta y las **huellas**; **no puede pedirse por Internet**. Es **voluntaria y gratuita** (se puede renunciar al certificado de firma, **no al de autenticación**). Si se **pierde o roban** el DNI, hay que comunicarlo para **revocar** los certificados.",
      "refs": [
       {
        "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
        "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1028",
        "quote": "La renovación de los certificados requiere la presencia física del titular del DNI en la Oficina de expedición."
+      },
+      {
+       "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1028",
+       "quote": "haciendo uso de los Puntos de Actualización del DNIe habilitados y previa comprobación de la identidad mediante la tarjeta y las plantillas biométricas (impresiones dactilares)"
+      },
+      {
+       "title": "Preguntas frecuentes sobre los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1004",
+       "quote": "No se habilita por tanto ningún procedimiento para solicitar de forma telemática la renovación de los certificados"
+      },
+      {
+       "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1028",
+       "quote": "no se puede renunciar al certificado de autenticación"
       },
       {
        "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
@@ -2367,12 +2592,17 @@
      ]
     },
     {
-     "text": "**Validación** de los certificados (**gratuita**): la presta la **FNMT-RCM** con carácter **universal** y la Administración para el **conjunto de las Administraciones Públicas** (servicio **@firma**).",
+     "text": "**Validación** de los certificados (**gratuita**): la presta la **FNMT-RCM** con carácter **universal** y el **Ministerio de Hacienda y Administraciones Públicas** (así lo nombra el portal) para el **conjunto de las Administraciones Públicas**; también puede comprobarse en **@firma** (VALIDE).",
      "refs": [
       {
        "title": "Preguntas frecuentes sobre los certificados del DNIe · Portal del DNI electrónico",
        "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1004",
        "quote": "que prestará sus servicios de validación con carácter universal"
+      },
+      {
+       "title": "Preguntas frecuentes sobre los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1004",
+       "quote": "Ministerio de Hacienda y Administraciones Públicas"
       },
       {
        "title": "Preguntas frecuentes sobre los certificados del DNIe · Portal del DNI electrónico",
@@ -2532,6 +2762,11 @@
         {
          "title": "España Digital 2025 (documento de la agenda)",
          "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "públicos disponibles en app móvil)."
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
          "quote": "6. Acelerar la digitalización de las empresas, con especial atención a las microPYMEs y las"
         },
         {
@@ -2542,7 +2777,7 @@
        ]
       },
       {
-       "text": "**Proyectos tractores sectoriales** (10 % menos de emisiones de CO2), **hub audiovisual** (30 % más de producción), **economía del dato e IA** (**25 % de empresas** con IA y Big Data) y **derechos digitales** (una **carta nacional** de derechos digitales).",
+       "text": "**Proyectos tractores sectoriales** (10 % menos de emisiones de CO2 por efecto de la digitalización), **hub audiovisual** (30 % más de producción), **economía del dato e IA** (**25 % de empresas** con IA y Big Data) y **derechos digitales** (una **carta nacional** de derechos digitales).",
        "refs": [
         {
          "title": "España Digital 2025 (documento de la agenda)",
@@ -2552,7 +2787,7 @@
         {
          "title": "España Digital 2025 (documento de la agenda)",
          "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
-         "quote": "(meta 2025: 10% reducción de emisiones"
+         "quote": "(meta 2025: 10% reducción de emisiones CO2 por efecto de la digitalización)."
         },
         {
          "title": "España Digital 2025 (documento de la agenda)",
@@ -2691,8 +2926,38 @@
      ]
     },
     {
-     "text": "Planes que la desarrollan: el **Plan para la Conectividad y las Infraestructuras Digitales** (primer eje), la **Estrategia de impulso de la tecnología 5G** y la **Estrategia Nacional de Inteligencia Artificial (ENIA)**, con **6 ejes y 30 actuaciones**.",
+     "text": "Se despliega con **ocho planes específicos**: el **Plan para la Conectividad y las Infraestructuras Digitales** (primer eje), la **Estrategia de impulso de la tecnología 5G**, los planes nacionales de **Competencias Digitales** y de **Ciberseguridad**, el de **Digitalización de las Administraciones Públicas**, el de **Impulso a la Digitalización de pymes**, el **Plan España Hub Audiovisual de Europa** y la **Estrategia Nacional de Inteligencia Artificial (ENIA)**, con **6 ejes y 30 actuaciones**.",
      "refs": [
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "se han publicado ocho planes específicos para su despliegue"
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "Plan Nacional de Competencias Digitales"
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "Plan Nacional de Ciberseguridad"
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "Plan de Digitalización de las Administraciones Públicas"
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "Plan de Impulso a la Digitalización de pymes"
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "Plan España Hub Audiovisual de Europa"
+      },
       {
        "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
        "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
