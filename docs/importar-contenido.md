@@ -164,9 +164,9 @@ ley, con su texto completo para validar citas, y se leen en
    a ella los `articles` del banco (con una `explanation` si la respuesta
    del examen ya no es la vigente) y borrar el fichero de la derogada.
 
-Hecho, bloque I completo: 29 normas españolas (con los reglamentos de
+Hecho, bloque I completo: 28 normas españolas (con los reglamentos de
 ingreso y provisión, situaciones administrativas y régimen disciplinario,
-la Ley 56/2007, el RD 209/2003 y la resolución de Cl@ve), las 12 Normas
+la Ley 56/2007 y la resolución de Cl@ve), las 12 Normas
 Técnicas de Interoperabilidad vigentes (las dos derogadas se dejan fuera)
 y, de EUR-Lex, el RGPD y el reglamento eIDAS. Comprobado con la web del BOE
 y EUR-Lex: el texto de cada artículo coincide. Las 109 preguntas oficiales
