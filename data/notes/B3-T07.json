@@ -1,0 +1,597 @@
+{
+ "topic": "B3-T07",
+ "sections": [
+  {
+   "title": "HTML",
+   "points": [
+    {
+     "text": "Estructura del documento (HTML Living Standard), por este orden: un BOM opcional y comentarios; la declaración **DOCTYPE** (`<!DOCTYPE html>`, sin distinguir mayúsculas), y luego el **elemento raíz `<html>`**. El DOCTYPE es **obligatorio** por razones históricas: sin él, los navegadores usan otro modo de representación. No es una etiqueta, sino una **declaración**.",
+     "refs": [
+      {
+       "title": "HTML Living Standard · 13 The HTML syntax (WHATWG)",
+       "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+       "quote": "Documents must consist of the following parts, in the given order:"
+      },
+      {
+       "title": "HTML Living Standard · 13 The HTML syntax (WHATWG)",
+       "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+       "quote": "whitespace . A DOCTYPE ."
+      },
+      {
+       "title": "HTML Living Standard · 13 The HTML syntax (WHATWG)",
+       "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+       "quote": "The document element , in the form of an html element ."
+      },
+      {
+       "title": "HTML Living Standard · 13 The HTML syntax (WHATWG)",
+       "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+       "quote": "In other words, <!DOCTYPE html> , case-insensitively."
+      },
+      {
+       "title": "HTML Living Standard · 13 The HTML syntax (WHATWG)",
+       "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+       "quote": "DOCTYPEs are required for legacy reasons. When omitted, browsers tend to use a different rendering mode that is incompatible with some specifications."
+      },
+      {
+       "title": "Doctype · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/Doctype",
+       "quote": "Doctype es una declaración no una etiqueta ."
+      }
+     ]
+    },
+    {
+     "text": "**XHTML** es a XML lo que HTML a SGML: un lenguaje de marcado parecido a HTML pero con una **sintaxis más estricta** (XHTML 1.0 es HTML 4 reformulado como aplicación XML). En **HTML**, en cambio, se pueden omitir algunas etiquetas (por ejemplo, la de inicio de `<head>`) y los **elementos vacíos** (`br`, `img`, `input`…) **no llevan etiqueta de cierre**.",
+     "refs": [
+      {
+       "title": "XHTML · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/XHTML",
+       "quote": "XHTML es a XML como HTML es a SGML . Es decir, XHTML es un lenguaje de marcado que es similar al HTML, pero con un sintaxis más estricta."
+      },
+      {
+       "title": "XHTML · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/XHTML",
+       "quote": "XHTML 1.0 es HTML4 reformulado como una aplicación XML"
+      },
+      {
+       "title": "HTML Living Standard · 13 The HTML syntax (WHATWG)",
+       "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+       "quote": "A head element's start tag may be omitted if the element is empty, or if the first thing inside the head element is an element."
+      },
+      {
+       "title": "HTML Living Standard · 13 The HTML syntax (WHATWG)",
+       "url": "https://html.spec.whatwg.org/multipage/syntax.html",
+       "quote": "Void elements only have a start tag; end tags must not be specified for void elements ."
+      }
+     ]
+    },
+    {
+     "text": "Elementos que se preguntan (MDN):",
+     "refs": [
+      {
+       "title": "<th> · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/th",
+       "quote": "El elemento HTML <th> define una celda como encabezado de un grupo de celdas en una tabla."
+      }
+     ],
+     "items": [
+      {
+       "text": "`<th>`: celda de **encabezado** de una tabla.",
+       "refs": [
+        {
+         "title": "<th> · MDN",
+         "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/th",
+         "quote": "El elemento HTML <th> define una celda como encabezado de un grupo de celdas en una tabla."
+        }
+       ]
+      },
+      {
+       "text": "`<ul>`: **lista no ordenada**; contiene uno o más `<li>`.",
+       "refs": [
+        {
+         "title": "<ul> · MDN",
+         "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/ul",
+         "quote": "ul de \"unordered list\" - lista no ordenada . crea una lista no ordenada."
+        }
+       ]
+      },
+      {
+       "text": "`<a>` con `href`: **hipervínculo** a páginas, archivos, correos o partes de la misma página.",
+       "refs": [
+        {
+         "title": "<a> · MDN",
+         "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/a",
+         "quote": "El elemento <a> de HTML (o elemento ancla ), junto con su atributo href , crea un hipervínculo"
+        }
+       ]
+      },
+      {
+       "text": "`<video>` con varios `<source>`: el navegador las prueba **en orden** y usa la **primera que sabe interpretar**; el contenido entre `<video>` y `</video>` se muestra si no admite el elemento.",
+       "refs": [
+        {
+         "title": "<video> · MDN",
+         "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/video",
+         "quote": "puedes proporcionar varias fuentes dentro de elementos <source> anidados, y el navegador usará entonces la primera que sea capaz de interpretar."
+        },
+        {
+         "title": "<video> · MDN",
+         "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/video",
+         "quote": "se muestra como alternativa en los navegadores que no admiten el elemento."
+        },
+        {
+         "title": "<source> · MDN",
+         "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/source",
+         "quote": "Normalmente se utiliza para servir el mismo contenido multimedia en varios formatos soportados por diferentes navegadores ."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Atributos de formulario: **required** obliga a dar un valor antes de enviar el formulario; **maxlength** fija la **longitud máxima** que el usuario puede escribir en un `<input>` o `<textarea>` (p. ej. `<input type=\"email\" maxlength=\"100\">`).",
+     "refs": [
+      {
+       "title": "Atributo required · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/required",
+       "quote": "The Boolean required attribute, if present, indicates that the user must specify a value for the input before the owning form can be submitted."
+      },
+      {
+       "title": "Atributo maxlength · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/maxlength",
+       "quote": "The maxlength attribute defines the maximum string length that the user can enter into an <input> or <textarea> ."
+      }
+     ]
+    },
+    {
+     "text": "Atributo global **hidden**: el elemento **aún no es (o ya no es) relevante** y el navegador **no lo dibuja**; sirve, por ejemplo, para ocultar partes de la página hasta que el usuario **inicie sesión**. Ojo: un `display` de CSS (como flex) lo muestra igualmente.",
+     "refs": [
+      {
+       "title": "Atributo global hidden · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Global_attributes/hidden",
+       "quote": "El atributo global hidden es un atributo Booleano que indica que el elemento todavía no está , o ya no es relevante ."
+      },
+      {
+       "title": "Atributo global hidden · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Global_attributes/hidden",
+       "quote": "puede ser usado para ocultar elelementos de la página que no pueden ser usados hasta que el proceso de login se haya completado"
+      },
+      {
+       "title": "Atributo global hidden · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Global_attributes/hidden",
+       "quote": "El explorador no dibujará dichos elementos ."
+      }
+     ]
+    },
+    {
+     "text": "Evento **mouseover**: se dispara cuando el puntero **entra** en un elemento o en uno de sus hijos; se maneja con `addEventListener` o con la propiedad o atributo **onmouseover**.",
+     "refs": [
+      {
+       "title": "Evento mouseover · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event",
+       "quote": "The mouseover event is fired at an Element when a pointing device (such as a mouse or trackpad) is used to move the cursor onto the element or one of its child elements."
+      },
+      {
+       "title": "Evento mouseover · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/mouseover_event",
+       "quote": "Use the event name in methods like addEventListener() , or set an event handler property."
+      },
+      {
+       "title": "<ul> · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/ul",
+       "quote": "onclick, ondblclick, onmousedown, onmouseup, onmouseover,"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "CSS",
+   "points": [
+    {
+     "text": "**Combinador de hijo** `>`: selecciona solo los elementos que son **hijos directos** del primero (`li > a` = enlaces hijos de un `li`); el espacio (combinador de descendiente), en cambio, selecciona **descendientes** a cualquier nivel.",
+     "refs": [
+      {
+       "title": "Combinador de hijo · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Child_combinator",
+       "quote": "El combinador > separa a dos selectores y busca solo a los elementos que coindicen con el segundo selector y que son hijos directos del primero."
+      },
+      {
+       "title": "Combinador de hijo · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Child_combinator",
+       "quote": "sin importar el nivel de separación que tengan dentro del DOM."
+      }
+     ]
+    },
+    {
+     "text": "**Flexbox**: al declarar `display: flex` en el contenedor, sus **hijos directos** pasan a ser **ítems flexibles**, por defecto en **una fila** (`flex-direction: row`). Ejemplo: `div#principal {display: flex;}`.",
+     "refs": [
+      {
+       "title": "Conceptos básicos de flexbox · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox",
+       "quote": "Tan pronto como hacemos esto, los hijos directos de este contenedor se vuelven ítems flex ."
+      },
+      {
+       "title": "Conceptos básicos de flexbox · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox",
+       "quote": "Los ítems se despliegan sobre una fila (la propiedad flex-direction por defecto es row )."
+      }
+     ]
+    },
+    {
+     "text": "**Unidades de longitud**: las **absolutas** no son relativas a nada: **cm, mm, Q** (cuartos de milímetro: 1Q = 1/40 cm), **in, pc, pt, px**. Las **relativas** dependen de otra cosa, como el tamaño de letra o de la ventana: **em, ex, ch, rem, lh, vw, vh, vmin, vmax**. Los porcentajes también son relativos a otro valor.",
+     "refs": [
+      {
+       "title": "Valores y unidades de CSS · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units",
+       "quote": "Todas las unidades siguientes son unidades de longitud absoluta : no son relativas a nada más y en general se considera que siempre tienen el mismo tamaño."
+      },
+      {
+       "title": "Valores y unidades de CSS · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units",
+       "quote": "1Q = 1/40 de 1cm"
+      },
+      {
+       "title": "Valores y unidades de CSS · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Core/Styling_basics/Values_and_units",
+       "quote": "Las unidades de longitud relativa son relativas a algo más, por ejemplo, al tamaño de letra del elemento principal o al tamaño de la ventana gráfica."
+      }
+     ]
+    },
+    {
+     "text": "**Especificidad**: el peso de una regla según sus selectores, en tres categorías de menor a mayor: **tipo** (y pseudoelementos), **clase/atributo/pseudoclase**, e **ID**. El universal, los combinadores y `:not()` no cuentan; con igual especificidad gana la **última**; los estilos **en línea** ganan a las hojas externas. Así, `input:required` tiene **0 IDs, 1 pseudoclase y 1 tipo**, lo que suele escribirse **0-1-1** (IDs-clases-tipos).",
+     "refs": [
+      {
+       "title": "Especificidad · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Specificity",
+       "quote": "La siguiente lista de tipos de selectores incrementa en función de la especificidad:"
+      },
+      {
+       "title": "Especificidad · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Specificity",
+       "quote": "Selectores de tipo (p.e., h1 ) y pseudo-elementos (p.e., ::before )."
+      },
+      {
+       "title": "Especificidad · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Specificity",
+       "quote": "Selectores de clase (p.e., .example ), selectores de atributos (p.e., [type=\"radio\"] ) y pseudo-clases (p.e., :hover )."
+      },
+      {
+       "title": "Especificidad · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Specificity",
+       "quote": "Selectores de ID (p.e., #example )."
+      },
+      {
+       "title": "Especificidad · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Specificity",
+       "quote": "no tienen efecto sobre la especificidad."
+      },
+      {
+       "title": "Especificidad · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Specificity",
+       "quote": "Cuando varias declaraciones tienen igual especificidad, se aplicará al elemento la última declaración encontrada en el CSS."
+      },
+      {
+       "title": "Especificidad · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/Specificity",
+       "quote": "siempre sobrescriben a cualquier estilo escrito en hojas de estilo externas"
+      },
+      {
+       "title": ":required · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/CSS/:required",
+       "quote": "La pseudo-clase :required de CSS representa cualquier elemento <input> , <select> , o <textarea> que tenga el atributo required establecido en él."
+      }
+     ]
+    },
+    {
+     "text": "**Preprocesadores CSS** (los más populares: **Sass, Less, Stylus**): programas que **generan CSS** a partir de su propia sintaxis, con añadidos como **variables, mixins o selectores anidados**; necesitan un compilador.",
+     "refs": [
+      {
+       "title": "Preprocesador CSS · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/CSS_preprocessor",
+       "quote": "Un preprocesador CSS es un programa que te permite generar CSS a partir de la syntax única del preprocesador."
+      },
+      {
+       "title": "Preprocesador CSS · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/CSS_preprocessor",
+       "quote": "la mayoría de preprocesadores CSS añadiran algunas características que no existen en CSS puro, como variable , mixins, selectores anidados"
+      },
+      {
+       "title": "Preprocesador CSS · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/CSS_preprocessor",
+       "quote": "Estos son algunos de lo preprocesadores CSS más populares:"
+      },
+      {
+       "title": "Preprocesador CSS · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/CSS_preprocessor",
+       "quote": "Para utilizar un preprocesador CSS debes instalar un compilador CSS"
+      }
+     ]
+    },
+    {
+     "text": "**Diseño responsivo** (Ethan Marcotte, 2010): no es una tecnología sino un **enfoque** o conjunto de buenas prácticas para que el diseño **responda al dispositivo** con que se ve; en origen combinaba **cuadrículas flexibles** y **consultas de medios** (media queries).",
+     "refs": [
+      {
+       "title": "Diseño responsivo · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+       "quote": "El término diseño responsivo fue acuñado por Ethan Marcotte en 2010"
+      },
+      {
+       "title": "Diseño responsivo · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+       "quote": "es un término utilizado para describir un enfoque para el diseño web, o un conjunto de buenas prácticas utilizado para crear un diseño que puede responder según el dispositivo que se utiliza"
+      },
+      {
+       "title": "Diseño responsivo · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Core/CSS_layout/Responsive_Design",
+       "quote": "esto significaba cuadrículas flexibles (mediante elementos flotantes) y consultas de media"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "JavaScript",
+   "points": [
+    {
+     "text": "**JavaScript** es un lenguaje **ligero, interpretado** (o compilado justo a tiempo) con **funciones de primera clase**: se pueden **pasar como argumento**, **devolver** desde otra función y **asignar a una variable**. Se usa en el navegador y fuera de él (Node.js).",
+     "refs": [
+      {
+       "title": "JavaScript · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript",
+       "quote": "JavaScript ( JS ) es un lenguaje de programación ligero, interpretado (o compilado justo-a-tiempo ) con funciones de primera clase ."
+      },
+      {
+       "title": "Función de primera clase · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/First-class_Function",
+       "quote": "una función puede ser pasada como argumento a otras funciones, puede ser retornada por otra función y puede ser asignada a una variable."
+      },
+      {
+       "title": "JavaScript · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript",
+       "quote": "muchos entornos fuera del navegador también lo usan, tal como Node.js"
+      }
+     ]
+    },
+    {
+     "text": "**Igualdad estricta** `===`: si los operandos son de **distinto tipo**, da **false**, así que `10 === '10'` es **false** (con `==` se convertirían).",
+     "refs": [
+      {
+       "title": "Igualdad estricta (===) · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Strict_equality",
+       "quote": "siempre considera que los operandos de distinto tipo de valor son diferentes y nunca similares."
+      },
+      {
+       "title": "Igualdad estricta (===) · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Strict_equality",
+       "quote": "Si los operandos son de diferente tipo de valor, produce false ."
+      }
+     ]
+    },
+    {
+     "text": "DOM: `document.getElementById(\"titulo\")` devuelve el elemento por su **ID** (o **null** si no existe; distingue mayúsculas); `firstChild`, su **primer hijo**, que puede ser un nodo de **texto** (en `<h1>texto</h1>`, el texto), y `nodeValue` devuelve el **contenido de un nodo de texto** (en un elemento devuelve **null**). Para el primer hijo que sea elemento está `firstElementChild`.",
+     "refs": [
+      {
+       "title": "Document.getElementById() · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/API/Document/getElementById",
+       "quote": "Devuelve una referencia al elemento por su ID ."
+      },
+      {
+       "title": "Document.getElementById() · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/API/Document/getElementById",
+       "quote": "Si no existe un elemento con la id solicitada, esta función devuelve null ."
+      },
+      {
+       "title": "Node.firstChild · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild",
+       "quote": "This property returns any type of node that is the first child of this one. It may be a Text or a Comment node."
+      },
+      {
+       "title": "Node.firstChild · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/firstChild",
+       "quote": "consider using Element.firstElementChild ."
+      },
+      {
+       "title": "Node.nodeValue · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/API/Node/nodeValue",
+       "quote": "Para el nodo en si, nodeValue devuelve null . Para texto, comentarios, y nodos CDATA, nodeValue devuelve el contenido de dicho nodo."
+      }
+     ]
+    },
+    {
+     "text": "**JSON.parse()** analiza una cadena JSON y devuelve el **valor u objeto** correspondiente; si la cadena no es JSON válido, lanza **SyntaxError**.",
+     "refs": [
+      {
+       "title": "JSON.parse() · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+       "quote": "El método JSON.parse() analiza una cadena de texto como JSON, transformando opcionalmente el valor producido por el análisis."
+      },
+      {
+       "title": "JSON.parse() · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+       "quote": "Retorna el objeto que se corresponde con el texto JSON entregado."
+      },
+      {
+       "title": "JSON.parse() · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse",
+       "quote": "Lanza una excepción SyntaxError si la cadena a transformar no es un JSON válido."
+      }
+     ]
+    },
+    {
+     "text": "**Push API**: permite a una aplicación web **recibir mensajes del servidor** aunque no esté en primer plano, para enviar **notificaciones** a los usuarios que las aceptan; requiere un **service worker**.",
+     "refs": [
+      {
+       "title": "Push API · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/API/Push_API",
+       "quote": "La API Push otorga a las aplicaciones web la habilidad de recibir mensajes enviados a ellas desde un servidor, sin importar si la aplicación está o no en primer plano o cargada."
+      },
+      {
+       "title": "Push API · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/API/Push_API",
+       "quote": "enviar notificaciones asíncronas y actualizaciones para los usuarios que las aceptan."
+      },
+      {
+       "title": "Push API · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/API/Push_API",
+       "quote": "esta debe tener un service worker ."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "XML y JSON",
+   "points": [
+    {
+     "text": "Un documento XML **correcto** debe estar **bien formado** (cumplir la sintaxis XML: por ejemplo, toda etiqueta abierta **se cierra o se cierra a sí misma**, como `<Nota1/>`) y ser **válido** según las reglas semánticas de su lenguaje, definidas en un **esquema XML (XSD)** o una **DTD**. Los **comentarios** se escriben `<!-- … -->`.",
+     "refs": [
+      {
+       "title": "Introducción a XML · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/XML/Guides/XML_introduction",
+       "quote": "Para que un documento XML sea correcto, debe ser un documento bien formado, cumpliendo todas las reglas de sintaxis de XML, y válidas, acorde a las reglas de un lenguaje específico."
+      },
+      {
+       "title": "Introducción a XML · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/XML/Guides/XML_introduction",
+       "quote": "Un ejemplo de un documento que no está bien formado es uno que tiene una etiqueta de apertura y no tiene una de cierre, ni se cierra en si misma."
+      },
+      {
+       "title": "Introducción a XML · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/XML/Guides/XML_introduction",
+       "quote": "que son generalmente definidas en un esquema XML o en una Definición de Tipo de Documento (DTD)."
+      },
+      {
+       "title": "Introducción a XML · MDN",
+       "url": "https://developer.mozilla.org/es/docs/Web/XML/Guides/XML_introduction",
+       "quote": "<!--missing </warning> -->"
+      }
+     ]
+    },
+    {
+     "text": "**JSON** es un **formato de intercambio de datos**, muy parecido a un subconjunto de JavaScript: cuatro tipos primitivos (**cadenas, números, booleanos y null**) y dos estructurados (**objetos y arrays**). Un **objeto** va entre **llaves** con pares **nombre: valor** separados por comas, y los nombres son **cadenas entre comillas dobles**: `{\"nombre\": \"Juana\", \"apellido\": \"Ruiz\"}`. Los literales (`true`, `false`, `null`) van en **minúsculas**.",
+     "refs": [
+      {
+       "title": "JSON · Glosario de MDN",
+       "url": "https://developer.mozilla.org/es/docs/Glossary/JSON",
+       "quote": "JSON (notación de objetos javascript) es un formato de intercambio de datos."
+      },
+      {
+       "title": "RFC 8259 · The JSON Data Interchange Format",
+       "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+       "quote": "JSON can represent four primitive types (strings, numbers, booleans, and null) and two structured types (objects and arrays)."
+      },
+      {
+       "title": "RFC 8259 · The JSON Data Interchange Format",
+       "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+       "quote": "An object structure is represented as a pair of curly brackets"
+      },
+      {
+       "title": "RFC 8259 · The JSON Data Interchange Format",
+       "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+       "quote": "A name is a string. A single colon comes after each name, separating the name from the value."
+      },
+      {
+       "title": "RFC 8259 · The JSON Data Interchange Format",
+       "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+       "quote": "A string begins and ends with quotation marks."
+      },
+      {
+       "title": "RFC 8259 · The JSON Data Interchange Format",
+       "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+       "quote": "The literal names MUST be lowercase."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Frameworks, navegadores y renderizado",
+   "points": [
+    {
+     "text": "**Ruby on Rails**: framework de desarrollo de aplicaciones web en **Ruby**, organizado según **Modelo-Vista-Controlador (MVC)**: el **modelo** gestiona los datos, la **vista** genera la respuesta (HTML, JSON…) y el **controlador** atiende las peticiones. **Django**: framework web de **Python** de alto nivel. **Bootstrap**: kit de herramientas de **frontend** con CSS y JavaScript listos para usar.",
+     "refs": [
+      {
+       "title": "Getting Started with Rails · Rails Guides",
+       "url": "https://guides.rubyonrails.org/getting_started.html",
+       "quote": "Rails is a web application development framework written in the Ruby programming language."
+      },
+      {
+       "title": "Getting Started with Rails · Rails Guides",
+       "url": "https://guides.rubyonrails.org/getting_started.html",
+       "quote": "Rails code is organized using the Model-View-Controller (MVC) architecture."
+      },
+      {
+       "title": "Getting Started with Rails · Rails Guides",
+       "url": "https://guides.rubyonrails.org/getting_started.html",
+       "quote": "Model - Manages the data in your application."
+      },
+      {
+       "title": "Getting Started with Rails · Rails Guides",
+       "url": "https://guides.rubyonrails.org/getting_started.html",
+       "quote": "Controller - Handles user interactions and the logic for each request."
+      },
+      {
+       "title": "Django",
+       "url": "https://www.djangoproject.com/",
+       "quote": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design."
+      },
+      {
+       "title": "Bootstrap 5.3 · Get started",
+       "url": "https://getbootstrap.com/docs/5.3/getting-started/introduction/",
+       "quote": "Bootstrap is a powerful, feature-packed frontend toolkit."
+      }
+     ]
+    },
+    {
+     "text": "**PHP**: `$_SESSION` es una **superglobal**: el **array asociativo** con las **variables de sesión** del script; la sesión se inicia o reanuda con `session_start()`.",
+     "refs": [
+      {
+       "title": "$_SESSION · Manual de PHP",
+       "url": "https://www.php.net/manual/es/reserved.variables.session.php",
+       "quote": "Es un array asociativo que contiene variables de sesión disponibles para el script actual."
+      },
+      {
+       "title": "$_SESSION · Manual de PHP",
+       "url": "https://www.php.net/manual/es/reserved.variables.session.php",
+       "quote": "Esto es una 'superglobal', o variable global automática."
+      },
+      {
+       "title": "$_SESSION · Manual de PHP",
+       "url": "https://www.php.net/manual/es/reserved.variables.session.php",
+       "quote": "Inicia una nueva sesión o reanuda una sesión existente"
+      }
+     ]
+    },
+    {
+     "text": "**Renderizado en el servidor (SSR)**: el HTML se **genera en el servidor** y se envía al cliente, frente al renderizado en el cliente con JavaScript; ambos se pueden **combinar**.",
+     "refs": [
+      {
+       "title": "Server-side rendering (SSR) · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/SSR",
+       "quote": "Server-side rendering (SSR) refers to the practice of generating HTML content on the server and sending it to the client."
+      },
+      {
+       "title": "Server-side rendering (SSR) · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/SSR",
+       "quote": "SSR is opposed to client-side rendering , where the client generates the HTML content using JavaScript."
+      },
+      {
+       "title": "Server-side rendering (SSR) · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/SSR",
+       "quote": "Both techniques are not mutually exclusive and can be used together in the same application."
+      }
+     ]
+    },
+    {
+     "text": "**Gecko**: el **motor de renderizado** (layout engine) del proyecto **Mozilla**, usado en **Firefox**.",
+     "refs": [
+      {
+       "title": "Gecko · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/Gecko",
+       "quote": "Gecko is the layout engine developed by the Mozilla Project and used in many apps/devices, including Firefox and Firefox OS ."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
