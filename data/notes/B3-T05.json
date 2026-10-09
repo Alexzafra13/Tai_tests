@@ -1,0 +1,552 @@
+{
+ "topic": "B3-T05",
+ "sections": [
+  {
+   "title": "La plataforma .NET",
+   "points": [
+    {
+     "text": "**.NET** es una plataforma para desarrolladores **gratuita, de código abierto y multiplataforma**, creada por Microsoft, para compilar **muchos tipos de aplicaciones** en varios lenguajes (el más usado, **C#**). Es un proyecto de la **.NET Foundation**, mantenido por Microsoft y la comunidad en GitHub.",
+     "refs": [
+      {
+       "title": "Introducción a .NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/core/introduction",
+       "quote": ".NET es una plataforma para desarrolladores de código abierto gratuita y multiplataforma para compilar muchos tipos de aplicaciones . Puede ejecutar programas escritos en varios lenguajes , con C# como el más popular."
+      },
+      {
+       "title": "Introducción a .NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/core/introduction",
+       "quote": ".NET es gratuito, de código abierto y es un proyecto de .NET Foundation . .NET es mantenido por Microsoft y la comunidad en GitHub en varios repositorios ."
+      }
+     ]
+    },
+    {
+     "text": "Las versiones **pares** son **LTS** (soporte a largo plazo, **tres años**) y las **impares**, **STS** (**dos años**); la calidad es la misma, solo cambia la duración del soporte. **.NET 8** (noviembre de 2023) y **.NET 10** (noviembre de 2025) son LTS, y .NET 10 es la **LTS más reciente**; .NET 8 y .NET 9 dejan de tener soporte el **10 de noviembre de 2026**.",
+     "refs": [
+      {
+       "title": "Directiva de soporte técnico de .NET · Microsoft",
+       "url": "https://dotnet.microsoft.com/es-es/platform/support/policy/dotnet-core",
+       "quote": "Las versiones numeradas pares son versiones LTS que obtienen soporte técnico y revisiones gratuitos durante tres años."
+      },
+      {
+       "title": "Directiva de soporte técnico de .NET · Microsoft",
+       "url": "https://dotnet.microsoft.com/es-es/platform/support/policy/dotnet-core",
+       "quote": "Las versiones de números impares son versiones STS que obtienen soporte técnico gratuito y revisiones durante dos años."
+      },
+      {
+       "title": "Directiva de soporte técnico de .NET · Microsoft",
+       "url": "https://dotnet.microsoft.com/es-es/platform/support/policy/dotnet-core",
+       "quote": "La calidad de todas las versiones es la misma. La única diferencia es la duración del soporte."
+      },
+      {
+       "title": "Directiva de soporte técnico de .NET · Microsoft",
+       "url": "https://dotnet.microsoft.com/es-es/platform/support/policy/dotnet-core",
+       "quote": ".NET 10 11 de noviembre de 2025"
+      },
+      {
+       "title": "Directiva de soporte técnico de .NET · Microsoft",
+       "url": "https://dotnet.microsoft.com/es-es/platform/support/policy/dotnet-core",
+       "quote": ".NET 8 14 de noviembre de 2023"
+      },
+      {
+       "title": "Directiva de soporte técnico de .NET · Microsoft",
+       "url": "https://dotnet.microsoft.com/es-es/platform/support/policy/dotnet-core",
+       "quote": "LTS Mantenimiento 10 de noviembre de 2026"
+      }
+     ]
+    },
+    {
+     "text": "El **CLR (Common Language Runtime)** es el entorno de ejecución que **ejecuta el código** (el que se compila para él es código **administrado**) y da servicios como el **control de excepciones** estructurado y la **recolección de basura** (libera los objetos cuando ya no se usan).",
+     "refs": [
+      {
+       "title": "Introducción a Common Language Runtime (CLR) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/standard/clr",
+       "quote": ".NET proporciona un entorno en tiempo de ejecución denominado Common Language Runtime que ejecuta el código y proporciona servicios que facilitan el proceso de desarrollo."
+      },
+      {
+       "title": "Introducción a Common Language Runtime (CLR) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/standard/clr",
+       "quote": "El código que desarrolla con un compilador de lenguaje que tiene como destino el entorno de ejecución se denomina código administrado."
+      },
+      {
+       "title": "Introducción a Common Language Runtime (CLR) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/standard/clr",
+       "quote": "El tiempo de ejecución controla automáticamente el diseño de objetos y administra las referencias a objetos, lo que los libera cuando ya no se usan."
+      },
+      {
+       "title": "Introducción a Common Language Runtime (CLR) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/standard/clr",
+       "quote": "Compatibilidad con el control de excepciones estructurado."
+      },
+      {
+       "title": "Introducción a Common Language Runtime (CLR) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/standard/clr",
+       "quote": "Recolección de basura."
+      }
+     ]
+    },
+    {
+     "text": "**NuGet** es el mecanismo de Microsoft para **compartir código** en .NET: el **gestor de paquetes** que define cómo se crean, hospedan y consumen. Un paquete es un archivo **.nupkg** (un ZIP con código compilado). Se añade a un proyecto con `dotnet add package <nombre>` (desde .NET 10 también `dotnet package add`).",
+     "refs": [
+      {
+       "title": "¿Qué es NuGet? · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/nuget/what-is-nuget",
+       "quote": "Para .NET (incluido .NET Core), el mecanismo compatible con Microsoft para compartir código es NuGet , que define cómo se crean, hospedan y consumen los paquetes de .NET y proporcionan las herramientas para cada uno de esos roles."
+      },
+      {
+       "title": "¿Qué es NuGet? · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/nuget/what-is-nuget",
+       "quote": "un paquete NuGet es un único archivo ZIP con la extensión .nupkg que contiene código compilado (DLL)"
+      },
+      {
+       "title": "dotnet package add · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/core/tools/dotnet-package-add",
+       "quote": "dotnet package add : agrega o actualiza una referencia de paquete en un archivo de proyecto."
+      },
+      {
+       "title": "dotnet package add · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/core/tools/dotnet-package-add",
+       "quote": "Si usa el SDK de .NET 9 o versiones anteriores, use el formulario \"verbo primero\" ( dotnet add package ) en su lugar."
+      },
+      {
+       "title": "dotnet package add · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/core/tools/dotnet-package-add",
+       "quote": "El formato \"nombre primero\" se introdujo en .NET 10."
+      }
+     ]
+    },
+    {
+     "text": "**.NET MAUI** es un **marco multiplataforma** para crear aplicaciones **móviles y de escritorio nativas** con **C# y XAML**, para **Android, iOS, macOS y Windows** desde una sola base de código; es la evolución de **Xamarin.Forms**.",
+     "refs": [
+      {
+       "title": "¿Qué es .NET MAUI? · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/maui/what-is-maui",
+       "quote": "La interfaz de usuario de aplicaciones multiplataforma de .NET (.NET MAUI) es un marco multiplataforma para crear aplicaciones móviles y de escritorio nativas con C# y XAML."
+      },
+      {
+       "title": "¿Qué es .NET MAUI? · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/maui/what-is-maui",
+       "quote": "Con .NET MAUI, puede desarrollar aplicaciones que se pueden ejecutar en Android, iOS, macOS y Windows desde una sola base de código compartida."
+      },
+      {
+       "title": "¿Qué es .NET MAUI? · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/maui/what-is-maui",
+       "quote": ".NET MAUI es de código abierto y es la evolución de Xamarin.Forms"
+      }
+     ]
+    },
+    {
+     "text": "**Razor** es la **sintaxis de marcado** de ASP.NET Core para **insertar código .NET en páginas web** (C# y HTML); sus archivos suelen ser **.cshtml** (y **.razor** en los componentes), y usa el símbolo **@** para pasar de HTML a C#.",
+     "refs": [
+      {
+       "title": "Referencia de sintaxis de Razor para ASP.NET Core · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/aspnet/core/mvc/views/razor",
+       "quote": "Razor es una sintaxis de marcado para insertar código basado en .NET en páginas web. La sintaxis de Razor consta de marcado de Razor, C# y HTML. Los archivos que contienen Razor suelen tener la extensión de archivo .cshtml ."
+      },
+      {
+       "title": "Referencia de sintaxis de Razor para ASP.NET Core · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/aspnet/core/mvc/views/razor",
+       "quote": "Razor también se encuentra en Razor archivos de componentes ( .razor )."
+      },
+      {
+       "title": "Referencia de sintaxis de Razor para ASP.NET Core · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/aspnet/core/mvc/views/razor",
+       "quote": "Razor admite C# y usa el símbolo @ para realizar la transición de HTML a C#."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Acceso a datos y C# en .NET",
+   "points": [
+    {
+     "text": "**ADO.NET** es el componente de .NET para **comunicarse con bases de datos**: da acceso a orígenes de datos (SQL Server, XML, OLE DB, ODBC) para **conectarse y recuperar, controlar y actualizar** datos, con **proveedores de datos** para conectarse, ejecutar comandos y recuperar resultados. Es el acceso **más directo**; para trabajar con un modelo conceptual está **Entity Framework**.",
+     "refs": [
+      {
+       "title": "Información general sobre ADO.NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/framework/data/adonet/ado-net-overview",
+       "quote": "ADO.NET proporciona acceso coherente a orígenes de datos, como SQL Server y XML, y a orígenes de datos expuestos a través de OLE DB y ODBC."
+      },
+      {
+       "title": "Información general sobre ADO.NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/framework/data/adonet/ado-net-overview",
+       "quote": "Las aplicaciones de consumidor de uso compartido de datos pueden usar ADO.NET para conectarse a estos orígenes de datos y recuperar, controlar y actualizar los datos que contienen."
+      },
+      {
+       "title": "Información general sobre ADO.NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/framework/data/adonet/ado-net-overview",
+       "quote": "ADO.NET incluye proveedores de datos de .NET Framework para conectarse a una base de datos, ejecutar comandos y recuperar resultados."
+      },
+      {
+       "title": "Información general sobre ADO.NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/framework/data/adonet/ado-net-overview",
+       "quote": "ADO.NET proporciona el método más directo de acceso a datos dentro de .NET Framework."
+      },
+      {
+       "title": "Información general sobre ADO.NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/framework/data/adonet/ado-net-overview",
+       "quote": "Para obtener una abstracción de nivel superior que permita que las aplicaciones funcionen con un modelo conceptual en lugar del modelo de almacenamiento subyacente, consulte la ADO.NET Entity Framework ."
+      }
+     ]
+    },
+    {
+     "text": "**ORM** (mapeadores objeto-relacional): en .NET, **Entity Framework Core**, tecnología de acceso a datos ligera, de código abierto y multiplataforma (modelo de **clases de entidad** y un **contexto**, consultas con **LINQ**); en Java, **Hibernate**, que implementa **Jakarta Persistence (JPA)** e influyó en su primera versión.",
+     "refs": [
+      {
+       "title": "Entity Framework Core · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/ef/core/",
+       "quote": "Entity Framework (EF) Core es una versión ligera, extensible, de código abierto y multiplataforma de la popular tecnología de acceso a datos Entity Framework."
+      },
+      {
+       "title": "Entity Framework Core · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/ef/core/",
+       "quote": "EF Core puede servir como mapeador objeto-relacional (O/RM), que:"
+      },
+      {
+       "title": "Entity Framework Core · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/ef/core/",
+       "quote": "Un modelo se compone de clases de entidad y un objeto de contexto que representa una sesión con la base de datos."
+      },
+      {
+       "title": "Hibernate ORM",
+       "url": "https://hibernate.org/orm/",
+       "quote": "Hibernate is the most successful ORM solution ever, in any programming language."
+      },
+      {
+       "title": "Hibernate ORM",
+       "url": "https://hibernate.org/orm/",
+       "quote": "Right alongside its own \"native\" API, Hibernate provides an implementation of the Jakarta Persistence specification."
+      },
+      {
+       "title": "Hibernate ORM",
+       "url": "https://hibernate.org/orm/",
+       "quote": "In fact, the first version of JPA was inspired by the success of Hibernate 2, and Hibernate was the major influence on the specification and API."
+      }
+     ]
+    },
+    {
+     "text": "**POCO** («plain old CLR object»): estructura de datos que **solo tiene propiedades o campos públicos**, **sin métodos, eventos ni delegados**; un POCO puro no hereda ni implementa interfaces. Se usa sobre todo como **objeto de transferencia de datos (DTO)**.",
+     "refs": [
+      {
+       "title": "Glosario de .NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/standard/glossary",
+       "quote": "Un objeto POCO, o un clásico objeto CLR o de clase, es una estructura de datos de .NET que solo contiene propiedades o campos públicos. Un POCO no debe contener ningún otro miembro, como:"
+      },
+      {
+       "title": "Glosario de .NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/standard/glossary",
+       "quote": "Un POCO puro no heredará otro objeto ni implementará una interfaz."
+      },
+      {
+       "title": "Glosario de .NET · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/standard/glossary",
+       "quote": "Estos objetos se usan principalmente como objetos de transferencia de datos (DTO)."
+      }
+     ]
+    },
+    {
+     "text": "**using** garantiza que un objeto **IDisposable** (una conexión, un fichero) se **libere** (Dispose) al salir del bloque, **aunque haya una excepción**: `using (SqlConnection conn = new SqlConnection(cs)) { conn.Open(); }`.",
+     "refs": [
+      {
+       "title": "Instrucción using (C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/statements/using",
+       "quote": "La instrucción using garantiza el uso correcto de una instancia IDisposable :"
+      },
+      {
+       "title": "Instrucción using (C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/statements/using",
+       "quote": "la instrucción using garantiza que una instancia descartable se elimine incluso si se produce una excepción dentro del bloque de la instrucción using ."
+      }
+     ]
+    },
+    {
+     "text": "**Tipos de valor que admiten NULL**: `T?` (o `Nullable<T>`) representa todos los valores del tipo de valor y además **null**; sirve para un dato **opcional o sin definir**, p. ej. `int? Telefono`. `HasValue` dice si tiene valor y `Value` lo devuelve.",
+     "refs": [
+      {
+       "title": "Tipos de valor que admiten valores NULL (C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/nullable-value-types",
+       "quote": "Un tipo de valor que admite un valor NULL T? representa todos los valores de su tipo de valor subyacente T y un valor NULL adicional."
+      },
+      {
+       "title": "Tipos de valor que admiten valores NULL (C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/nullable-value-types",
+       "quote": "Puede hacer referencia a un tipo de valor que admite valores NULL con un tipo subyacente T en cualquiera de las formas intercambiables siguientes: Nullable<T> o T? ."
+      },
+      {
+       "title": "Tipos de valor que admiten valores NULL (C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/nullable-value-types",
+       "quote": "Normalmente, use un tipo de valor que acepta valores NULL cuando necesite representar el valor indefinido de un tipo de valor subyacente."
+      },
+      {
+       "title": "Tipos de valor que admiten valores NULL (C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/nullable-value-types",
+       "quote": "Nullable<T>.Value obtiene el valor de un tipo subyacente si HasValue es true ."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Jakarta EE",
+   "points": [
+    {
+     "text": "**Jakarta EE** es un **estándar abierto** e independiente de fabricantes para aplicaciones **Java empresariales**: un conjunto de **especificaciones** (cada tecnología se define en una), de modo que las aplicaciones sean **portables**; una implementación que pasa las pruebas (TCK) es **compatible**. Tiene la plataforma completa y los perfiles **Web** y **Core**, y es la continuación de Java EE.",
+     "refs": [
+      {
+       "title": "Jakarta EE · Eclipse Foundation",
+       "url": "https://jakarta.ee/about/jakarta-ee/",
+       "quote": "Jakarta EE is an open, vendor-neutral standard for building reliable, cloud native enterprise Java applications."
+      },
+      {
+       "title": "Jakarta EE · Eclipse Foundation",
+       "url": "https://jakarta.ee/about/jakarta-ee/",
+       "quote": "Each Jakarta EE technology is defined by a specification, a set of rules that describe how it should behave, ensuring applications remain portable, predictable, and consistent across platforms, without vendor lock-in."
+      },
+      {
+       "title": "Jakarta EE · Eclipse Foundation",
+       "url": "https://jakarta.ee/about/jakarta-ee/",
+       "quote": "An implementation that passes the TCK becomes a Compatible Implementation"
+      },
+      {
+       "title": "Jakarta EE · Eclipse Foundation",
+       "url": "https://jakarta.ee/about/jakarta-ee/",
+       "quote": "updated and new features across Platform, Web, and Core Profiles that revolutionize Java EE applications across industries."
+      }
+     ]
+    },
+    {
+     "text": "**Jakarta Persistence (JPA)**: una **entidad** es un objeto de dominio **persistente y ligero**; normalmente representa **una tabla** y cada instancia, **una fila**. La clase se marca con la anotación **@Entity** (`jakarta.persistence.Entity`, o en el descriptor XML), necesita un constructor **sin argumentos** público o protegido y **no puede ser final**.",
+     "refs": [
+      {
+       "title": "Jakarta Persistence 3.1 · especificación",
+       "url": "https://jakarta.ee/specifications/persistence/3.1/jakarta-persistence-spec-3.1.html",
+       "quote": "An entity is a lightweight persistent domain object."
+      },
+      {
+       "title": "Jakarta EE Tutorial · Introducción a Jakarta Persistence",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html",
+       "quote": "Typically, an entity represents a table in a relational database, and each entity instance corresponds to a row in that table."
+      },
+      {
+       "title": "Jakarta EE Tutorial · Introducción a Jakarta Persistence",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/persist/persistence-intro/persistence-intro.html",
+       "quote": "The class must be annotated with the jakarta.persistence.Entity annotation."
+      },
+      {
+       "title": "Jakarta Persistence 3.1 · especificación",
+       "url": "https://jakarta.ee/specifications/persistence/3.1/jakarta-persistence-spec-3.1.html",
+       "quote": "The no-arg constructor must be public or protected."
+      },
+      {
+       "title": "Jakarta Persistence 3.1 · especificación",
+       "url": "https://jakarta.ee/specifications/persistence/3.1/jakarta-persistence-spec-3.1.html",
+       "quote": "The entity class must not be final."
+      }
+     ]
+    },
+    {
+     "text": "**Jakarta RESTful Web Services**: API para servicios web **REST**. **Jakarta XML Binding**: **mapea documentos XML a objetos Java** y viceversa.",
+     "refs": [
+      {
+       "title": "Jakarta RESTful Web Services · Eclipse Foundation",
+       "url": "https://jakarta.ee/specifications/restful-ws/",
+       "quote": "Jakarta RESTful Web Services provides a foundational API to develop web services following the Representational State Transfer (REST) architectural pattern"
+      },
+      {
+       "title": "Jakarta XML Binding · Eclipse Foundation",
+       "url": "https://jakarta.ee/specifications/xml-binding/",
+       "quote": "The Jakarta XML Binding provides an API and tools that automate the mapping between XML documents and Java objects."
+      }
+     ]
+    },
+    {
+     "text": "**MicroProfile**: foro abierto para **optimizar Java empresarial para microservicios**, con varias implementaciones y una meta de estandarización.",
+     "refs": [
+      {
+       "title": "MicroProfile · Eclipse Foundation",
+       "url": "https://microprofile.io/",
+       "quote": "An open forum to optimize Enterprise Java for a microservices architecture by innovating across multiple implementations and collaborating on common areas of interest with a goal of standardization."
+      }
+     ]
+    },
+    {
+     "text": "Con **Spring Boot**, el plugin de Maven ejecuta la aplicación con `mvn spring-boot:run`.",
+     "refs": [
+      {
+       "title": "Spring Boot Maven Plugin · spring-boot:run",
+       "url": "https://docs.spring.io/spring-boot/maven-plugin/run.html",
+       "quote": "Run an application in place."
+      },
+      {
+       "title": "Spring Boot Maven Plugin · spring-boot:run",
+       "url": "https://docs.spring.io/spring-boot/maven-plugin/run.html",
+       "quote": "$ mvn spring-boot:run"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "API de Java SE",
+   "points": [
+    {
+     "text": "**StringBuilder**: secuencia de caracteres **mutable**, compatible con StringBuffer pero **sin sincronización**; pensada para usarse desde **un solo hilo**, donde suele ser **más rápida** que StringBuffer. No es segura entre hilos (para eso, StringBuffer).",
+     "refs": [
+      {
+       "title": "Java SE 17 API · StringBuilder",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html",
+       "quote": "A mutable sequence of characters. This class provides an API compatible with StringBuffer , but with no guarantee of synchronization."
+      },
+      {
+       "title": "Java SE 17 API · StringBuilder",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html",
+       "quote": "in places where the string buffer was being used by a single thread (as is generally the case)."
+      },
+      {
+       "title": "Java SE 17 API · StringBuilder",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html",
+       "quote": "StringBuffer as it will be faster under most implementations."
+      },
+      {
+       "title": "Java SE 17 API · StringBuilder",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html",
+       "quote": "Instances of StringBuilder are not safe for use by multiple threads."
+      }
+     ]
+    },
+    {
+     "text": "**LocalDateTime**: **fecha y hora** sin zona horaria (calendario ISO-8601, p. ej. 2007-12-03T10:15:30); es **inmutable**.",
+     "refs": [
+      {
+       "title": "Java SE 17 API · LocalDateTime",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html",
+       "quote": "A date-time without a time-zone in the ISO-8601 calendar system, such as 2007-12-03T10:15:30 ."
+      },
+      {
+       "title": "Java SE 17 API · LocalDateTime",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html",
+       "quote": "LocalDateTime is an immutable date-time object that represents a date-time,"
+      }
+     ]
+    },
+    {
+     "text": "**PreparedStatement**: sentencia SQL **precompilada** que se puede ejecutar **muchas veces** de forma eficiente.",
+     "refs": [
+      {
+       "title": "Java SE 17 API · PreparedStatement",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/PreparedStatement.html",
+       "quote": "An object that represents a precompiled SQL statement."
+      },
+      {
+       "title": "Java SE 17 API · PreparedStatement",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/PreparedStatement.html",
+       "quote": "efficiently execute this statement multiple times."
+      }
+     ]
+    },
+    {
+     "text": "**StAX** (Streaming API for XML, paquete `javax.xml.stream`): API para **leer y escribir XML** de forma eficiente, con una API de **cursor** y otra de **iterador de eventos**.",
+     "refs": [
+      {
+       "title": "Java SE 17 API · javax.xml.stream (StAX)",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/javax/xml/stream/package-summary.html",
+       "quote": "Defines interfaces and classes for the Streaming API for XML (StAX)."
+      },
+      {
+       "title": "Java SE 17 API · javax.xml.stream (StAX)",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.xml/javax/xml/stream/package-summary.html",
+       "quote": "StAX provides two basic functions: the cursor API allowing users to read and write XML efficiently, and the event iterator API promoting ease of use that is event based"
+      }
+     ]
+    },
+    {
+     "text": "Conexión a la base de datos: un **DataSource** (paquete `javax.sql`) es la forma **preferida** de obtener conexiones (y permite el **pool de conexiones**); suele registrarse en un servicio de nombres **JNDI**, cuyas clases están en `javax.naming`.",
+     "refs": [
+      {
+       "title": "Java SE 17 API · javax.sql.DataSource",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/DataSource.html",
+       "quote": "a DataSource object is the preferred means of getting a connection."
+      },
+      {
+       "title": "Java SE 17 API · javax.sql.DataSource",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/DataSource.html",
+       "quote": "An object that implements the DataSource interface will typically be registered with a naming service based on the Java Naming and Directory (JNDI) API."
+      },
+      {
+       "title": "Java SE 17 API · javax.sql.DataSource",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/DataSource.html",
+       "quote": "Connection pooling implementation -- produces a Connection object that will automatically participate in connection pooling."
+      },
+      {
+       "title": "Java SE 17 API · javax.naming",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.naming/javax/naming/package-summary.html",
+       "quote": "Provides the classes and interfaces for accessing naming services."
+      }
+     ]
+    },
+    {
+     "text": "**Tipos de drivers JDBC**:",
+     "refs": [
+      {
+       "title": "Oracle · Tipos de drivers JDBC",
+       "url": "https://docs.oracle.com/cd/E19509-01/820-5069/ggzcj/index.html",
+       "quote": "Those drivers come in four varieties."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Tipo 1**: **puente JDBC-ODBC**.",
+       "refs": [
+        {
+         "title": "Oracle · Tipos de drivers JDBC",
+         "url": "https://docs.oracle.com/cd/E19509-01/820-5069/ggzcj/index.html",
+         "quote": "Type one drivers provide JDBC access via one or more Open Database Connectivity (ODBC) drivers."
+        }
+       ]
+      },
+      {
+       "text": "**Tipo 2**: **parcialmente Java**, convierte las llamadas en llamadas a la **API cliente** del gestor; necesita código binario en cada cliente.",
+       "refs": [
+        {
+         "title": "Oracle · Tipos de drivers JDBC",
+         "url": "https://docs.oracle.com/cd/E19509-01/820-5069/ggzcj/index.html",
+         "quote": "A native-API partly Java technology-enabled driver converts JDBC calls into calls on the client API for DBMSs."
+        },
+        {
+         "title": "Oracle · Tipos de drivers JDBC",
+         "url": "https://docs.oracle.com/cd/E19509-01/820-5069/ggzcj/index.html",
+         "quote": "Like the bridge driver, this style of driver requires that some binary code be loaded on each client machine."
+        }
+       ]
+      },
+      {
+       "text": "**Tipo 3**: Java puro para **middleware**: traduce a un **protocolo de red** independiente del gestor, que un **servidor intermedio** pasa al protocolo de la base de datos.",
+       "refs": [
+        {
+         "title": "Oracle · Tipos de drivers JDBC",
+         "url": "https://docs.oracle.com/cd/E19509-01/820-5069/ggzcj/index.html",
+         "quote": "A net-protocol fully Java-enabled driver translates JDBC API calls into a DBMS-independent net protocol which is then translated to a DBMS protocol by a server."
+        },
+        {
+         "title": "Oracle · Tipos de drivers JDBC",
+         "url": "https://docs.oracle.com/cd/E19509-01/820-5069/ggzcj/index.html",
+         "quote": "This driver translates JDBC calls into the middleware vendor’s protocol, which is then converted to a database-specific protocol by the middleware"
+        }
+       ]
+      },
+      {
+       "text": "**Tipo 4**: Java puro **directo a la base de datos**: convierte las llamadas al **protocolo de red nativo** del gestor.",
+       "refs": [
+        {
+         "title": "Oracle · Tipos de drivers JDBC",
+         "url": "https://docs.oracle.com/cd/E19509-01/820-5069/ggzcj/index.html",
+         "quote": "A native-protocol fully Java technology-enabled driver converts JDBC technology calls into the network protocol used by DBMSs directly."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

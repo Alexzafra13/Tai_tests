@@ -1,0 +1,520 @@
+{
+ "topic": "B3-T06",
+ "sections": [
+  {
+   "title": "Arquitectura cliente/servidor y por capas",
+   "points": [
+    {
+     "text": "**Cliente/servidor**: se basa en la **separación de responsabilidades**: separar la interfaz de usuario del almacenamiento de datos mejora la **portabilidad** de la interfaz y la **escalabilidad**, al simplificar el servidor.",
+     "refs": [
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "Separation of concerns is the principle behind the client-server constraints."
+      },
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "By separating the user interface concerns from the data storage concerns, we improve the portability of the user interface across multiple platforms and improve scalability by simplifying the server components."
+      }
+     ]
+    },
+    {
+     "text": "**Sistemas por capas (multinivel)**: los intermediarios permiten, por ejemplo, **repartir la carga** entre varias redes y procesadores (escalabilidad); su principal **inconveniente** es que **añaden sobrecarga y latencia** al procesar los datos, lo que reduce el rendimiento percibido.",
+     "refs": [
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "Intermediaries can also be used to improve system scalability by enabling load balancing of services across multiple networks and processors."
+      },
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "The primary disadvantage of layered systems is that they add overhead and latency to the processing of data, reducing user-perceived performance"
+      }
+     ]
+    },
+    {
+     "text": "La forma más simple de cliente/servidor, con un servidor al que acceden directamente varios clientes, es la arquitectura de **2 niveles** (guía archivada de Microsoft, 2009).",
+     "refs": [
+      {
+       "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Architectural Patterns and Styles",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658117(v=pandp.10)",
+       "quote": "The client/server architectural style describes distributed systems that involve a separate client and server system, and a connecting network."
+      },
+      {
+       "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Architectural Patterns and Styles",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658117(v=pandp.10)",
+       "quote": "The simplest form of client/server system involves a server application that is accessed directly by multiple clients, referred to as a 2-Tier architectural style."
+      }
+     ]
+    },
+    {
+     "text": "**N niveles**: la aplicación se divide en **capas** lógicas y **niveles** (*tiers*) físicos, en máquinas separadas. La clásica de **3 niveles**: presentación, intermedio (opcional) y base de datos. En una arquitectura de capas **cerrada**, cada capa solo llama a la inmediatamente inferior.",
+     "refs": [
+      {
+       "title": "Azure Architecture Center · N-tier architecture style",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+       "quote": "An N-tier architecture divides an application into logical layers and physical tiers"
+      },
+      {
+       "title": "Azure Architecture Center · N-tier architecture style",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+       "quote": "A traditional three-tier application has a presentation tier, an optional middle tier, and a database tier."
+      },
+      {
+       "title": "Azure Architecture Center · N-tier architecture style",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+       "quote": "Tiers are physically separated and run on separate machines."
+      },
+      {
+       "title": "Azure Architecture Center · N-tier architecture style",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+       "quote": "In a closed layer architecture, a layer can only call the next layer immediately down."
+      }
+     ]
+    },
+    {
+     "text": "**Escalado vertical**: más capacidad para un solo recurso (un servidor mayor); suele exigir dejar el sistema **temporalmente sin servicio** mientras se redespliega. **Horizontal**: más instancias para repartir la carga.",
+     "refs": [
+      {
+       "title": "Azure Well-Architected Framework · Scaling and partitioning",
+       "url": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/scale-partition",
+       "quote": "Using vertical scaling, you can increase the capacity of a single resource, such as upgrading to a larger server or instance size."
+      },
+      {
+       "title": "Azure Well-Architected Framework · Scaling and partitioning",
+       "url": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/scale-partition",
+       "quote": "Using horizontal scaling, you can add more instances or resources to distribute the workload across multiple servers."
+      },
+      {
+       "title": "Azure Architecture Center · Autoscaling",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling",
+       "quote": "Vertical scaling often requires making the system temporarily unavailable while it's being redeployed."
+      }
+     ]
+    },
+    {
+     "text": "En las aplicaciones de **cliente enriquecido** (*rich client*), el cliente **ligero** (*thin*) es la interfaz de un sistema de negocio, que contiene la capa de negocio (normalmente expuesta como servicio); en el **pesado** (*thick*), la capa de negocio está en el **propio cliente** (guía archivada de Microsoft, 2009).",
+     "refs": [
+      {
+       "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Rich Client Applications",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658087(v=pandp.10)",
+       "quote": "A typical thin rich client acts as the interface to a business system, and the business layer is part of that business system and is usually exposed as a service."
+      },
+      {
+       "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Rich Client Applications",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658087(v=pandp.10)",
+       "quote": "However, in a typical thick rich client, the business layer is located on the client itself."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Servicios web y SOA",
+   "points": [
+    {
+     "text": "Un **servicio web** es un conjunto de funciones de aplicación que se **invocan por programa a través de Internet**: aplicaciones **autocontenidas, autodescriptivas y modulares** que se **publican, localizan e invocan** en la web, **independientes de la plataforma** porque se basan en estándares abiertos **XML**.",
+     "refs": [
+      {
+       "title": "Eclipse Web Tools · Visión general de los servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cws.html",
+       "quote": "A Web service is a set of related application functions that can be programmatically invoked over the Internet."
+      },
+      {
+       "title": "Eclipse Web Tools · Visión general de los servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cws.html",
+       "quote": "Web services are self-contained, self-describing modular applications that can be published, located, and invoked across the Web."
+      },
+      {
+       "title": "Eclipse Web Tools · Visión general de los servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cws.html",
+       "quote": "Web services are based on a concise set of open, XML-based standards designed to promote interoperability"
+      }
+     ]
+    },
+    {
+     "text": "**SOA** (arquitectura orientada a servicios) es un paradigma para **organizar y usar capacidades distribuidas** que pueden pertenecer a distintos dominios. Unos actúan como **proveedores** de servicios y otros como **consumidores**, que conocen el servicio por su **descripción**.",
+     "refs": [
+      {
+       "title": "OASIS · Reference Model for Service Oriented Architecture 1.0",
+       "url": "https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.html",
+       "quote": "Architecture (SOA) is a paradigm for organizing and utilizing distributed capabilities that may be under the control of different ownership domains."
+      },
+      {
+       "title": "OASIS · Reference Model for Service Oriented Architecture 1.0",
+       "url": "https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.html",
+       "quote": "In general, entities (people and organizations) offer capabilities and act as service providers ."
+      },
+      {
+       "title": "OASIS · Reference Model for Service Oriented Architecture 1.0",
+       "url": "https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.html",
+       "quote": "use of services are referred to as service consumers ."
+      },
+      {
+       "title": "OASIS · Reference Model for Service Oriented Architecture 1.0",
+       "url": "https://docs.oasis-open.org/soa-rm/v1.0/soa-rm.html",
+       "quote": "allows prospective consumers to decide if the service is suitable for their current needs"
+      }
+     ]
+    },
+    {
+     "text": "En la arquitectura de servicios web hay tres **papeles**: **proveedor** del servicio, **intermediario o registro** (broker: registra y clasifica los servicios publicados y permite buscarlos, como hace **UDDI**) y **cliente**. El proveedor publica la descripción **WSDL**, a la que pueden apuntar el registro UDDI o documentos WSIL.",
+     "refs": [
+      {
+       "title": "Eclipse Web Tools · Visión general de los servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cws.html",
+       "quote": "can play one or more fundamental roles: service provider, service broker, and service client."
+      },
+      {
+       "title": "Eclipse Web Tools · Visión general de los servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cws.html",
+       "quote": "Service brokers register and categorize published services and provide search services. For example, UDDI acts as a service broker for WSDL-described Web services."
+      },
+      {
+       "title": "Eclipse Web Tools · Estándares de servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsstandards.html",
+       "quote": "The WSDL document may be referenced by the UDDI business registry and WSIL documents."
+      }
+     ]
+    },
+    {
+     "text": "Estándares clave de los servicios web: **UDDI, WSDL, WSIL, SOAP** y **WS-I** (interoperabilidad).",
+     "refs": [
+      {
+       "title": "Eclipse Web Tools · Estándares de servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsstandards.html",
+       "quote": "The following standards play key roles in Web services: Universal Description, Discovery and Integration (UDDI), Web Services Description Language (WSDL), Web Services Inspection Language (WSIL), SOAP, and Web Services Interoperability (WS-I)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SOAP, WSDL, UDDI y WSIL",
+   "points": [
+    {
+     "text": "**SOAP**: protocolo **ligero** para intercambiar información en un entorno distribuido, **basado en XML**: los servicios SOAP («big web services») se comunican con **mensajes XML**. Un mensaje es un **sobre** (envelope) con cero o más **cabeceras** y **un cuerpo**; la comunicación puede ser estilo **RPC** o **documento**. Es **independiente del transporte**, aunque lo habitual es **HTTP**.",
+     "refs": [
+      {
+       "title": "Eclipse Web Tools · SOAP",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/csoap.html",
+       "quote": "SOAP (formerly known as Simple Object Access Protocol) is a lightweight protocol for the exchange of information in a decentralized, distributed environment."
+      },
+      {
+       "title": "Jakarta EE 9.1 Tutorial · Introducción a los servicios web",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/9.1/websvcs/webservices-intro/webservices-intro.html",
+       "quote": "Big web services use XML messages that follow the Simple Object Access Protocol (SOAP) standard, an XML language defining a message architecture and message formats."
+      },
+      {
+       "title": "Eclipse Web Tools · SOAP",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/csoap.html",
+       "quote": "A SOAP message is an envelope containing zero or more headers and exactly one body."
+      },
+      {
+       "title": "Eclipse Web Tools · SOAP",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/csoap.html",
+       "quote": "Communications can follow a remote procedure call (RPC) or message-oriented (Document) format."
+      },
+      {
+       "title": "Eclipse Web Tools · SOAP",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/csoap.html",
+       "quote": "SOAP is transport independent but is most commonly carried over HTTP"
+      }
+     ]
+    },
+    {
+     "text": "**WSDL** (Web Services Description Language): especificación **XML** para **describir servicios web** (operaciones, mensajes, enlaces y ubicación) **con independencia de su implementación**. Primero se describen **en abstracto** las operaciones y mensajes y luego se **enlazan** a un protocolo y formato concretos. Sirve para describir el **contrato** del servicio, y a partir de él se puede **generar el cliente** (un proxy Java).",
+     "refs": [
+      {
+       "title": "Eclipse Web Tools · WSDL",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsdl.html",
+       "quote": "It provides a simple way for service providers to describe the basic format of requests to their systems regardless of the underlying run-time implementation."
+      },
+      {
+       "title": "Eclipse Web Tools · WSDL",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsdl.html",
+       "quote": "The operations and messages are first described abstractly and then bound to a concrete network protocol and message format in order to define an endpoint."
+      },
+      {
+       "title": "Jakarta EE 9.1 Tutorial · Introducción a los servicios web",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/9.1/websvcs/webservices-intro/webservices-intro.html",
+       "quote": "WSDL can be used to describe the details of the contract, which may include messages, operations, bindings, and the location of the web service."
+      },
+      {
+       "title": "Eclipse Web Tools · WSDL",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsdl.html",
+       "quote": "A business service client can generate a Java proxy from a WSDL document"
+      }
+     ]
+    },
+    {
+     "text": "**UDDI** (Universal Description, Discovery and Integration): servicios para la **descripción y el descubrimiento** de proveedores, de sus servicios web y de sus interfaces técnicas, basados en **HTTP, XML y SOAP**; es un **registro centralizado** donde publicar y **encontrar** servicios.",
+     "refs": [
+      {
+       "title": "OASIS · UDDI Version 3.0.2",
+       "url": "https://www.oasis-open.org/committees/uddi-spec/doc/spec/v3/uddi-v3.0.2-20041019.htm",
+       "quote": "The focus of Universal Description Discovery & Integration (UDDI) is the definition of a set of services supporting the description and discovery of (1) businesses, organizations, and other Web services providers, (2) the Web services they make available, and (3) the technical interfaces which may be used to access those services."
+      },
+      {
+       "title": "OASIS · UDDI Version 3.0.2",
+       "url": "https://www.oasis-open.org/committees/uddi-spec/doc/spec/v3/uddi-v3.0.2-20041019.htm",
+       "quote": "Based on a common set of industry standards, including HTTP, XML, XML Schema, and SOAP"
+      },
+      {
+       "title": "Eclipse Web Tools · WSIL",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsil.html",
+       "quote": "When you discover Web services with UDDI, you go to a centralized registry."
+      }
+     ]
+    },
+    {
+     "text": "**WSIL** (Web Services Inspection Language, propuesta de IBM y Microsoft): método de descubrimiento **alternativo y complementario a UDDI**: en vez de ir a un registro centralizado, se pregunta **directamente al proveedor** qué servicios ofrece; un documento WSIL (de nombre fijo **inspection.wsil**) indica dónde buscar las descripciones en un sitio web.",
+     "refs": [
+      {
+       "title": "Eclipse Web Tools · WSIL",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsil.html",
+       "quote": "Web Services Inspection Language (WSIL) is a service discovery mechanism that is an alternative to UDDI as well as complementary to UDDI."
+      },
+      {
+       "title": "Eclipse Web Tools · WSIL",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsil.html",
+       "quote": "WSIL allows you to go directly to the service provider and ask for the services it provides."
+      },
+      {
+       "title": "Eclipse Web Tools · WSIL",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsil.html",
+       "quote": "Microsoft's proposal for the WSIL specification"
+      },
+      {
+       "title": "Eclipse Web Tools · WSIL",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsil.html",
+       "quote": "The fixed name for WSIL documents is inspection.wsil."
+      },
+      {
+       "title": "Eclipse Web Tools · Estándares de servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cwsstandards.html",
+       "quote": "A WSIL document defines the locations on a Web site where you can look for Web service descriptions."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Seguridad en servicios web SOAP (WS-*)",
+   "points": [
+    {
+     "text": "**WS-Security** (OASIS): mejoras de la mensajería SOAP para dar **integridad y confidencialidad**: protege el mensaje **cifrando y/o firmando digitalmente** el cuerpo, las cabeceras o partes de ellos (con **XML Signature** y tokens de seguridad). Es lo que se usa para **firmar las peticiones SOAP**.",
+     "refs": [
+      {
+       "title": "OASIS · Web Services Security: SOAP Message Security 1.1.1",
+       "url": "https://docs.oasis-open.org/wss-m/wss/v1.1.1/os/wss-SOAPMessageSecurity-v1.1.1-os.html",
+       "quote": "This specification describes enhancements to SOAP messaging to provide message integrity and confidentiality."
+      },
+      {
+       "title": "OASIS · Web Services Security: SOAP Message Security 1.1.1",
+       "url": "https://docs.oasis-open.org/wss-m/wss/v1.1.1/os/wss-SOAPMessageSecurity-v1.1.1-os.html",
+       "quote": "This specification provides a means to protect a message by encrypting and/or digitally signing a body, a header, or any combination of them (or parts of them)."
+      },
+      {
+       "title": "OASIS · Web Services Security: SOAP Message Security 1.1.1",
+       "url": "https://docs.oasis-open.org/wss-m/wss/v1.1.1/os/wss-SOAPMessageSecurity-v1.1.1-os.html",
+       "quote": "Message integrity is provided by XML Signature [XMLSIG] in conjunction with security tokens to ensure that modifications to messages are detected."
+      }
+     ]
+    },
+    {
+     "text": "**WS-SecureConversation** (OASIS): sobre los mecanismos de WS-Security, define cómo **establecer y compartir contextos de seguridad** y **derivar claves** de sesión, para series de mensajes.",
+     "refs": [
+      {
+       "title": "OASIS · WS-SecureConversation 1.4",
+       "url": "https://docs.oasis-open.org/ws-sx/ws-secureconversation/v1.4/ws-secureconversation.html",
+       "quote": "This specification defines extensions to allow security context establishment and sharing, and session key derivation."
+      },
+      {
+       "title": "OASIS · WS-SecureConversation 1.4",
+       "url": "https://docs.oasis-open.org/ws-sx/ws-secureconversation/v1.4/ws-secureconversation.html",
+       "quote": "provide the basic mechanisms on top of which secure messaging semantics can be defined for multiple message exchanges."
+      }
+     ]
+    },
+    {
+     "text": "Frente a REST, la pila SOAP (Jakarta XML Web Services) facilita usar los protocolos **WS-*** de **seguridad y fiabilidad**; se recomienda para integración empresarial con requisitos avanzados de calidad de servicio, y REST para la integración a través de la web.",
+     "refs": [
+      {
+       "title": "Jakarta EE 9.1 Tutorial · Introducción a los servicios web",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/9.1/websvcs/webservices-intro/webservices-intro.html",
+       "quote": "XML Web Services makes it easier to support the WS-* set of protocols, which provide standards for security and reliability"
+      },
+      {
+       "title": "Jakarta EE 9.1 Tutorial · Introducción a los servicios web",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/9.1/websvcs/webservices-intro/webservices-intro.html",
+       "quote": "Basically, you want to use RESTful web services for integration over the web and big web services in enterprise application–integration scenarios that have advanced quality-of-service (QoS) requirements."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "REST",
+   "points": [
+    {
+     "text": "**REST** (Representational State Transfer) es un **estilo arquitectónico** cliente-servidor basado en la transferencia de **representaciones de recursos**; los recursos se identifican con **URI** y se manejan con una **interfaz uniforme** (en HTTP, PUT, GET, POST y DELETE).",
+     "refs": [
+      {
+       "title": "Jakarta EE Tutorial · Servicios web REST",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/websvcs/rest/rest.html",
+       "quote": "Representational State Transfer (REST) is an architectural style of client-server application centered around the transfer of representations of resources through requests and responses."
+      },
+      {
+       "title": "Jakarta EE Tutorial · Servicios web REST",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/websvcs/rest/rest.html",
+       "quote": "In the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web."
+      },
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "The central feature that distinguishes the REST architectural style from other network-based styles is its emphasis on a uniform interface between components"
+      },
+      {
+       "title": "Jakarta EE Tutorial · Servicios web REST",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/websvcs/rest/rest.html",
+       "quote": "Uniform interface: Resources are manipulated using a fixed set of four create, read, update, delete operations: PUT, GET, POST, and DELETE."
+      }
+     ]
+    },
+    {
+     "text": "**Sin estado** (stateless): cada petición lleva **toda la información** necesaria para entenderla y el estado de la sesión se guarda **en el cliente**: el servidor **no almacena el estado del cliente** entre peticiones. Mejora la **escalabilidad** (el servidor libera recursos antes), a costa de repetir datos en cada petición.",
+     "refs": [
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "each request from client to server must contain all of the information necessary to understand the request"
+      },
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "Session state is therefore kept entirely on the client."
+      },
+      {
+       "title": "Jakarta EE Tutorial · Servicios web REST",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/websvcs/rest/rest.html",
+       "quote": "Every interaction with a resource is stateless; that is, request messages are self-contained."
+      },
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "Scalability is improved because not having to store state between requests allows the server component to quickly free resources"
+      },
+      {
+       "title": "Roy T. Fielding · Representational State Transfer (REST), cap. 5 de su tesis",
+       "url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+       "quote": "The disadvantage is that it may decrease network performance by increasing the repetitive data (per-interaction overhead) sent in a series of requests"
+      }
+     ]
+    },
+    {
+     "text": "Los servicios REST **no necesitan mensajes XML ni descripciones WSDL**, a menudo se integran mejor con HTTP y usan estándares conocidos (**HTTP, XML, URI, MIME**) con una infraestructura **ligera** y poco costosa. Como UDDI es un registro de servicios descritos con WSDL, el descubrimiento con UDDI es propio de los servicios SOAP, no de REST.",
+     "refs": [
+      {
+       "title": "Jakarta EE 9.1 Tutorial · Introducción a los servicios web",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/9.1/websvcs/webservices-intro/webservices-intro.html",
+       "quote": "RESTful web services, often better integrated with HTTP than SOAP-based services are, do not require XML messages or WSDL service-API definitions."
+      },
+      {
+       "title": "Jakarta EE 9.1 Tutorial · Introducción a los servicios web",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/9.1/websvcs/webservices-intro/webservices-intro.html",
+       "quote": "have a lightweight infrastructure that allows services to be built with minimal tooling, developing RESTful web services is inexpensive"
+      },
+      {
+       "title": "Eclipse Web Tools · Visión general de los servicios web",
+       "url": "https://help.eclipse.org/latest/topic/org.eclipse.jst.ws.doc.user/concepts/cws.html",
+       "quote": "UDDI acts as a service broker for WSDL-described Web services."
+      }
+     ]
+    },
+    {
+     "text": "**201 Created**: la petición se ha cumplido y ha **creado uno o más recursos**, identificados en la cabecera **Location** (o, si no la hay, por la URI de la petición). Es habitual crear con **POST** y responder 201 con Location.",
+     "refs": [
+      {
+       "title": "RFC 9110 · HTTP Semantics",
+       "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+       "quote": "The 201 (Created) status code indicates that the request has been fulfilled and has resulted in one or more new resources being created."
+      },
+      {
+       "title": "RFC 9110 · HTTP Semantics",
+       "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+       "quote": "The primary resource created by the request is identified by either a Location header field in the response or, if no Location header field is received, by the target URI."
+      },
+      {
+       "title": "Jakarta EE Tutorial · Servicios web REST",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/websvcs/rest/rest.html",
+       "quote": "A common application pattern is to use POST to create a resource and return a 201 response with a location header"
+      }
+     ]
+    },
+    {
+     "text": "**Documentar** los servicios: los SOAP se describen con **WSDL**; las **API HTTP** (como las REST), con **OpenAPI**, cuya definición usan herramientas de **documentación**, de generación de código y de pruebas. REST es un **estilo arquitectónico**, no un lenguaje de descripción.",
+     "refs": [
+      {
+       "title": "Jakarta EE 9.1 Tutorial · Introducción a los servicios web",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/9.1/websvcs/webservices-intro/webservices-intro.html",
+       "quote": "written in the Web Services Description Language (WSDL), an XML language for defining interfaces syntactically."
+      },
+      {
+       "title": "OpenAPI Specification 3.1.0",
+       "url": "https://spec.openapis.org/oas/v3.1.0.html",
+       "quote": "The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for HTTP APIs"
+      },
+      {
+       "title": "OpenAPI Specification 3.1.0",
+       "url": "https://spec.openapis.org/oas/v3.1.0.html",
+       "quote": "An OpenAPI definition can then be used by documentation generation tools to"
+      },
+      {
+       "title": "Jakarta EE Tutorial · Servicios web REST",
+       "url": "https://jakarta.ee/learn/docs/jakartaee-tutorial/current/websvcs/rest/rest.html",
+       "quote": "Representational State Transfer (REST) is an architectural style of client-server application"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Herramientas",
+   "points": [
+    {
+     "text": "**Apache CXF**: framework de servicios de código abierto en Java con soporte **cliente/servidor** de **JAX-WS** (SOAP, con desarrollo a partir del **WSDL** o del código) y **JAX-RS** (REST); habla SOAP, XML/HTTP o REST sobre HTTP, JMS… Sirve, por ejemplo, para **generar un cliente** de servicios web.",
+     "refs": [
+      {
+       "title": "Apache CXF",
+       "url": "https://cxf.apache.org/",
+       "quote": "Apache CXF™ is an open source services framework. CXF helps you build and develop services using frontend programming APIs, like JAX-WS and JAX-RS."
+      },
+      {
+       "title": "Apache CXF",
+       "url": "https://cxf.apache.org/",
+       "quote": "These services can speak a variety of protocols such as SOAP, XML/HTTP, RESTful HTTP, or CORBA"
+      },
+      {
+       "title": "Apache CXF",
+       "url": "https://cxf.apache.org/",
+       "quote": "Full support for JAX-WS 2.x client/server programming model"
+      },
+      {
+       "title": "Apache CXF",
+       "url": "https://cxf.apache.org/",
+       "quote": "JAX-RS for RESTful clients"
+      },
+      {
+       "title": "Apache CXF",
+       "url": "https://cxf.apache.org/",
+       "quote": "CXF supports both contract first development with WSDL and code first development starting from Java."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

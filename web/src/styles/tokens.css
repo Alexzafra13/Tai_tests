@@ -76,4 +76,27 @@
       --series-2: #4a5fc1;
     }
   }
+
+  /* Paper is always light, whatever the screen theme. */
+  @media print {
+    :root,
+    :root[data-theme] {
+      color-scheme: light;
+      --bg: #f3eee5;
+      --surface: #fffaf2;
+      --surface-2: #ebe4d6;
+      --border: #e0d6c4;
+      --text: #1f1b16;
+      --muted: #6b6357;
+      --primary: #e9a634;
+      --primary-text: #241806;
+      --accent-ink: #8a5a00;
+      --ok: #2e7d4f;
+      --danger: #b8392b;
+      --warn-bg: #fbe8c2;
+      --warn-text: #74470a;
+      --series-1: #b37400;
+      --series-2: #4a5fc1;
+    }
+  }
 }

@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	"errors"
 	"flag"
 	"fmt"
 	"io"
@@ -47,6 +48,7 @@ func runRefreshLaws(ctx context.Context, log *slog.Logger, args []string) error 
 		return err
 	}
 	changed := 0
+	var repealed []string
 	for _, name := range names {
 		if filepath.Base(name) == "topics.json" {
 			continue
@@ -70,6 +72,11 @@ func runRefreshLaws(ctx context.Context, log *slog.Logger, args []string) error 
 			}
 		}
 		updated, err := fetchLaw(ctx, log, old.Reference, extra, *dir)
+		var rep repealedError
+		if errors.As(err, &rep) {
+			repealed = append(repealed, rep.ref+" on "+rep.date)
+			continue
+		}
 		if err != nil {
 			return err
 		}
@@ -78,8 +85,20 @@ func runRefreshLaws(ctx context.Context, log *slog.Logger, args []string) error 
 		}
 	}
 	log.Info("laws refreshed", "laws", len(names)-1, "changed", changed)
+	if len(repealed) > 0 {
+		// Failing makes the scheduled run red, so someone replaces them.
+		return fmt.Errorf("repealed laws, replace them with the ones in force: %s", strings.Join(repealed, "; "))
+	}
 	return nil
 }
+
+// repealedError reports a BOE law that is no longer in force: its text
+// must not be offered as the one to study.
+type repealedError struct {
+	ref, date string
+}
+
+func (e repealedError) Error() string { return "repealed on " + e.date }
 
 // fetchLaw writes the law's file in dir and returns its content. ref is a
 // BOE reference or, for an EU regulation, its CELEX number.
@@ -130,6 +149,9 @@ func fetchBOE(ctx context.Context, ref string) (content.LawFile, error) {
 	meta, err := lawtext.ParseMetadata(metaJSON)
 	if err != nil {
 		return content.LawFile{}, err
+	}
+	if meta.Repealed != "" {
+		return content.LawFile{}, repealedError{ref: ref, date: meta.Repealed}
 	}
 	textXML, err := httpGet(ctx, lawtext.TextURL(ref), "application/xml")
 	if err != nil {

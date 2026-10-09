@@ -140,12 +140,17 @@
        ]
       },
       {
-       "text": "**VIII**: De la Organización Territorial del Estado.",
+       "text": "**VIII**: De la Organización Territorial del Estado: el Estado se organiza en **municipios**, **provincias** y **Comunidades Autónomas** (art. 137).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "tviii",
          "quote": "TÍTULO VIII. De la Organización Territorial del Estado"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a137",
+         "quote": "El Estado se organiza territorialmente en municipios, en provincias y en las Comunidades Autónomas que se constituyan."
         }
        ]
       },
@@ -2151,6 +2156,230 @@
          "quote": "El Presidente del Gobierno, previa deliberación del Consejo de Ministros, y bajo su exclusiva responsabilidad, podrá proponer la disolución del Congreso, del Senado o de las Cortes Generales, que será decretada por el Rey."
         }
        ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Poder Judicial, Economía y Hacienda y Organización territorial (Títulos VI a VIII)",
+   "points": [
+    {
+     "text": "**Poder Judicial** (art. 117): la justicia emana del pueblo y se administra en nombre del Rey por **Jueces y Magistrados** independientes, inamovibles, responsables y sometidos únicamente al imperio de la ley. Rige la **unidad jurisdiccional** y se **prohíben los Tribunales de excepción**.",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a117",
+       "quote": "La justicia emana del pueblo y se administra en nombre del Rey por Jueces y Magistrados integrantes del poder judicial, independientes, inamovibles, responsables y sometidos únicamente al imperio de la ley."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a117",
+       "quote": "El principio de unidad jurisdiccional es la base de la organización y funcionamiento de los Tribunales."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a117",
+       "quote": "Se prohíben los Tribunales de excepción."
+      }
+     ]
+    },
+    {
+     "text": "El **Consejo General del Poder Judicial** es su órgano de gobierno: lo preside el **Presidente del Tribunal Supremo** y tiene **20 miembros** nombrados por el Rey por **cinco años** (12 entre jueces y magistrados, 4 a propuesta del Congreso y 4 del Senado, por **tres quintos**) (art. 122). El **Tribunal Supremo** es el órgano jurisdiccional superior en todos los órdenes, salvo en garantías constitucionales (art. 123).",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a122",
+       "quote": "El Consejo General del Poder Judicial es el órgano de gobierno del mismo."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a122",
+       "quote": "El Consejo General del Poder Judicial estará integrado por el Presidente del Tribunal Supremo, que lo presidirá, y por veinte miembros nombrados por el Rey por un período de cinco años. De éstos, doce entre Jueces y Magistrados de todas las categorías judiciales, en los términos que establezca la ley orgánica; cuatro a propuesta del Congreso de los Diputados, y cuatro a propuesta del Senado, elegidos en ambos casos por mayoría de tres quintos de sus miembros"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a123",
+       "quote": "El Tribunal Supremo, con jurisdicción en toda España, es el órgano jurisdiccional superior en todos los órdenes, salvo lo dispuesto en materia de garantías constitucionales."
+      }
+     ]
+    },
+    {
+     "text": "**Presupuestos** (art. 134): los **elabora el Gobierno** y las **Cortes** los examinan, enmiendan y aprueban; son **anuales**; el Gobierno los presenta al Congreso al menos **tres meses** antes de que expiren los anteriores, y si no se aprueban a tiempo se **prorrogan automáticamente**. La Ley de Presupuestos **no puede crear tributos**.",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a134",
+       "quote": "Corresponde al Gobierno la elaboración de los Presupuestos Generales del Estado y a las Cortes Generales, su examen, enmienda y aprobación."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a134",
+       "quote": "Los Presupuestos Generales del Estado tendrán carácter anual"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a134",
+       "quote": "El Gobierno deberá presentar ante el Congreso de los Diputados los Presupuestos Generales del Estado al menos tres meses antes de la expiración de los del año anterior."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a134",
+       "quote": "se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a134",
+       "quote": "La Ley de Presupuestos no puede crear tributos."
+      }
+     ]
+    },
+    {
+     "text": "El **Tribunal de Cuentas** es el **supremo órgano fiscalizador** de las cuentas y la gestión económica del Estado y del sector público; **depende directamente de las Cortes** y les remite un **informe anual** (art. 136).",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a136",
+       "quote": "El Tribunal de Cuentas es el supremo órgano fiscalizador de las cuentas y de la gestión económica de Estado, así como del sector público."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a136",
+       "quote": "Dependerá directamente de las Cortes Generales"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a136",
+       "quote": "remitirá a las Cortes Generales un informe anual"
+      }
+     ]
+    },
+    {
+     "text": "**Organización territorial** (art. 137): **municipios, provincias y Comunidades Autónomas**, con autonomía para gestionar sus intereses. Las CCAA se constituyen por la vía del **art. 143** (iniciativa de las Diputaciones y de **dos tercios de los municipios** que sumen la mayoría del censo; si fracasa, solo se reitera pasados **cinco años**).",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a137",
+       "quote": "El Estado se organiza territorialmente en municipios, en provincias y en las Comunidades Autónomas que se constituyan. Todas estas entidades gozan de autonomía para la gestión de sus respectivos intereses."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a143",
+       "quote": "La iniciativa del proceso autonómico corresponde a todas las Diputaciones interesadas o al órgano interinsular correspondiente y a las dos terceras partes de los municipios cuya población represente, al menos, la mayoría del censo electoral de cada provincia o isla."
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a143",
+       "quote": "La iniciativa, en caso de no prosperar, solamente podrá reiterarse pasados cinco años."
+      }
+     ]
+    },
+    {
+     "text": "**Estatutos de autonomía** (art. 147): norma institucional básica de cada Comunidad. Deben contener:",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a147",
+       "quote": "los Estatutos serán la norma institucional básica de cada Comunidad Autónoma"
+      },
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a147",
+       "quote": "Los Estatutos de autonomía deberán contener:"
+      }
+     ],
+     "items": [
+      {
+       "text": "La **denominación** de la Comunidad que mejor corresponda a su identidad histórica y la **delimitación de su territorio**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a147",
+         "quote": "La denominación de la Comunidad que mejor corresponda a su identidad histórica."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a147",
+         "quote": "La delimitación de su territorio."
+        }
+       ]
+      },
+      {
+       "text": "La **denominación, organización y sede** de sus instituciones y las **competencias** asumidas, con las bases para el traspaso de servicios. Su reforma exige en todo caso **ley orgánica** de las Cortes.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a147",
+         "quote": "La denominación, organización y sede de las instituciones autónomas propias."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a147",
+         "quote": "Las competencias asumidas dentro del marco establecido en la Constitución y las bases para el traspaso de los servicios correspondientes a las mismas."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a147",
+         "quote": "requerirá, en todo caso, la aprobación por las Cortes Generales, mediante ley orgánica."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Control de los órganos de las CCAA** (art. 153):",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a153",
+       "quote": "El control de la actividad de los órganos de las Comunidades Autónomas se ejercerá:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Tribunal Constitucional**: constitucionalidad de sus disposiciones con **fuerza de ley**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a153",
+         "quote": "Por el Tribunal Constitucional, el relativo a la constitucionalidad de sus disposiciones normativas con fuerza de ley."
+        }
+       ]
+      },
+      {
+       "text": "**Gobierno**, previo dictamen del **Consejo de Estado**: ejercicio de funciones **delegadas** (art. 150.2).",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a153",
+         "quote": "Por el Gobierno, previo dictamen del Consejo de Estado, el del ejercicio de funciones delegadas a que se refiere el apartado 2 del artículo 150."
+        }
+       ]
+      },
+      {
+       "text": "**Jurisdicción contencioso-administrativa**: la administración autónoma y sus **reglamentos**. **Tribunal de Cuentas**: el control **económico y presupuestario**.",
+       "refs": [
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a153",
+         "quote": "Por la jurisdicción contencioso-administrativa, el de la administración autónoma y sus normas reglamentarias."
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a153",
+         "quote": "Por el Tribunal de Cuentas, el económico y presupuestario."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Art. 155**: si una Comunidad no cumple sus obligaciones o atenta gravemente al interés general, el Gobierno, previo **requerimiento** a su Presidente y con la **aprobación por mayoría absoluta del Senado**, puede adoptar las medidas necesarias para obligarla.",
+     "refs": [
+      {
+       "law": "BOE-A-1978-31229",
+       "section": "a155",
+       "quote": "Si una Comunidad Autónoma no cumpliere las obligaciones que la Constitución u otras leyes le impongan, o actuare de forma que atente gravemente al interés general de España, el Gobierno, previo requerimiento al Presidente de la Comunidad Autónoma y, en el caso de no ser atendido, con la aprobación por mayoría absoluta del Senado"
       }
      ]
     }

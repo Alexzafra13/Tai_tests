@@ -1,0 +1,544 @@
+{
+ "topic": "B4-T06",
+ "sections": [
+  {
+   "title": "Organismos",
+   "points": [
+    {
+     "text": "La **UIT/ITU** es el organismo especializado de las **Naciones Unidas** para las tecnologías de la información y la comunicación (telecomunicaciones).",
+     "refs": [
+      {
+       "title": "ITU · About ITU",
+       "url": "https://www.itu.int/en/about/Pages/default.aspx",
+       "quote": "ITU is the United Nations specialized agency for information and communication technologies (ICTs)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Modos de comunicación",
+   "points": [
+    {
+     "text": "Según el sentido de la transmisión:",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 701-03-18) · unidirectional",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-18",
+       "quote": "pertaining to a transmission link where the transfer of users' information is possible in one pre-assigned direction only"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Símplex** (en el uso habitual de los temarios): en **un solo sentido**. La IEC lo llama *unidirectional* (en francés marca *simplex* como desaconsejado aquí), porque reserva *simplex* para el semidúplex.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 701-03-18) · unidirectional (entrada francesa)",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-18",
+         "quote": "DÉCONSEILLÉ: simplex, adj"
+        }
+       ]
+      },
+      {
+       "text": "**Semidúplex** (*half-duplex*): en **los dos sentidos, pero no a la vez**. Ojo: la IEC llama a esto *simplex* y desaconseja *half-duplex*.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 701-03-161) · simplex",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-161",
+         "quote": "pertaining to a method of operation in which information can be transmitted in either direction, but not simultaneously, between two points"
+        },
+        {
+         "title": "IEC Electropedia (IEV 701-03-162) · simplex",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-162",
+         "quote": "DEPRECATED: half-duplex, noun"
+        }
+       ]
+      },
+      {
+       "text": "**Dúplex** (*full duplex*): en **los dos sentidos a la vez**.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 701-03-171) · duplex",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-171",
+         "quote": "pertaining to a mode of operation in which information can be transmitted in both directions simultaneously between two points"
+        },
+        {
+         "title": "IEC Electropedia (IEV 701-03-172) · duplex",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-172",
+         "quote": "DEPRECATED: full duplex, noun"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Transmisión síncrona**: emisor y receptor funcionan de forma continua con una **diferencia de tiempo constante**. **Arranque-parada** (*start-stop*, lo que suele llamarse transmisión asíncrona): cada carácter o bloque va precedido de una señal de **arranque** y seguido de una de **parada** (la IEC desaconseja «asynchronous» y prefiere *anisochronous*).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 721-03-05) · synchronous transmission",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-03-05",
+       "quote": "transmission using isochronous signals in which the sending and receiving instruments are operating continuously in a constant time difference between homologous significant instants"
+      },
+      {
+       "title": "IEC Electropedia (IEV 721-03-07) · start-stop transmission",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-03-07",
+       "quote": "each equal length group of signal elements representing a character or a block is preceded by a start signal and is followed by a stop signal"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-04-15) · anisochronous",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-04-15",
+       "quote": "DEPRECATED: asynchronous, adj"
+      }
+     ]
+    },
+    {
+     "text": "Según los destinatarios:",
+     "refs": [
+      {
+       "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+       "quote": "It includes the basic formats for the various types of IPv6 addresses (unicast, anycast, and multicast)."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Unidifusión** (*unicast*): a **un único** destino.",
+       "refs": [
+        {
+         "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+         "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+         "quote": "A packet sent to a unicast address is delivered to the interface identified by that address."
+        }
+       ]
+      },
+      {
+       "text": "**Multidifusión** (*multicast*): a **todos los miembros de un grupo** identificado por una sola dirección.",
+       "refs": [
+        {
+         "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+         "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+         "quote": "A packet sent to a multicast address is delivered to all interfaces identified by that address."
+        },
+        {
+         "title": "RFC 1112 · Host Extensions for IP Multicasting",
+         "url": "https://www.rfc-editor.org/rfc/rfc1112.txt",
+         "quote": "IP multicasting is the transmission of an IP datagram to a \"host group\", a set of zero or more hosts identified by a single IP destination address."
+        }
+       ]
+      },
+      {
+       "text": "**Difusión** (*broadcast*): a **todos** los equipos de la red local (en IPv4, 255.255.255.255, que no se reenvía). **IPv6 no tiene broadcast**: lo sustituye la multidifusión.",
+       "refs": [
+        {
+         "title": "RFC 919 · Broadcasting Internet Datagrams",
+         "url": "https://www.rfc-editor.org/rfc/rfc919.txt",
+         "quote": "The address 255.255.255.255 denotes a broadcast on a local hardware network, which must not be forwarded."
+        },
+        {
+         "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+         "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+         "quote": "There are no broadcast addresses in IPv6, their function being superseded by multicast addresses."
+        }
+       ]
+      },
+      {
+       "text": "**Anycast**: a **uno** de los destinos que comparten la dirección, el **más cercano** según el enrutamiento.",
+       "refs": [
+        {
+         "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+         "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+         "quote": "A packet sent to an anycast address is delivered to one of the interfaces identified by that address (the \"nearest\" one, according to the routing protocols' measure of distance)."
+        },
+        {
+         "title": "RFC 4786 · Operation of Anycast Services",
+         "url": "https://www.rfc-editor.org/rfc/rfc4786.txt",
+         "quote": "Anycast is the name given to the practice of making a Service Address available to a routing system at Anycast Nodes in two or more discrete locations."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Redes de comunicaciones: conmutación y difusión",
+   "points": [
+    {
+     "text": "Por extensión: **LAN** (red local, en las instalaciones del usuario y en un área limitada), **MAN** (une redes locales de una misma **zona urbana**), **WAN** (área mayor que una ciudad; típicamente, un país) y **WPAN** (red personal inalámbrica, de corto alcance, para pocos dispositivos en una sala).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 732-01-04) · local area network",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-04",
+       "quote": "computer network located on a user’s premises within a limited geographical area"
+      },
+      {
+       "title": "IEC Electropedia (IEV 732-01-06) · metropolitan area network",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-06",
+       "quote": "network for connecting local area networks located in the same urban area"
+      },
+      {
+       "title": "IEC Electropedia (IEV 732-01-07) · wide area network",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-07",
+       "quote": "network that provides communication services to a geographic area larger than a single urban area"
+      },
+      {
+       "title": "IEC Electropedia (IEV 732-01-07) · wide area network",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-07",
+       "quote": "Typically a wide area network covers a single country."
+      },
+      {
+       "title": "NIST CSRC Glossary · wireless personal area network",
+       "url": "https://csrc.nist.gov/glossary/term/wireless_personal_area_network",
+       "quote": "A small-scale wireless network that requires little or no infrastructure and operates within a short range."
+      },
+      {
+       "title": "NIST CSRC Glossary · wireless personal area network",
+       "url": "https://csrc.nist.gov/glossary/term/wireless_personal_area_network",
+       "quote": "A WPAN is typically used by a few devices in a single room instead of connecting the devices with cables."
+      }
+     ]
+    },
+    {
+     "text": "**Conmutación de circuitos**: se establece una conexión de **uso exclusivo** durante toda la llamada o servicio.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 714-05-08) · circuit switching",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=714-05-08",
+       "quote": "to provide a connection for exclusive use of the users for the duration of a call or service"
+      }
+     ]
+    },
+    {
+     "text": "**Conmutación de paquetes**: el mensaje se divide en **paquetes con dirección** que los nodos reciben, almacenan y reenvían, y se reconstruye en el destino; un paquete ocupa el canal **solo mientras se transmite**. Servicios de la red: **circuito virtual** (simula una conexión de circuitos) y **datagrama** (un mensaje que cabe en un solo paquete se envía al destino que indica la dirección del paquete).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 714-05-09) · packet switching",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=714-05-09",
+       "quote": "the messages are first cut into addressed packets; in certain nodes of the network, these packets are received, stored and forwarded onto the appropriate transmission channels; at the receiving end, the message is reconstituted from the received packets"
+      },
+      {
+       "title": "IEC Electropedia (IEV 714-05-09) · packet switching",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=714-05-09",
+       "quote": "A packet occupies a channel only for its duration of transmission"
+      },
+      {
+       "title": "IEC Electropedia (IEV 721-16-27) · virtual circuit",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-16-27",
+       "quote": "that simulate facilities provided by a circuit switched connection"
+      },
+      {
+       "title": "IEC Electropedia (IEV 721-19-23) · datagram service",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-19-23",
+       "quote": "a message short enough to be contained in one packet is sent to the destination identified by the packet address"
+      }
+     ]
+    },
+    {
+     "text": "**Conmutación de mensajes**: se encamina el **mensaje completo**, que se recibe, se almacena si hace falta y se reenvía.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 714-05-10) · message switching",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=714-05-10",
+       "quote": "the process of routing complete messages within a telecommunication network by receiving, storing if necessary and forwarding the messages"
+      }
+     ]
+    },
+    {
+     "text": "**MPLS** (*Multiprotocol Label Switching*): al **entrar** en la red, cada paquete se asigna una sola vez a una clase (**FEC**) y recibe una **etiqueta** corta de longitud fija; en los saltos siguientes no se analiza la cabecera de red, sino que la etiqueta indica el siguiente salto y la nueva etiqueta. Los routers que soportan MPLS son **LSR** (*label switching routers*).",
+     "refs": [
+      {
+       "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
+       "quote": "A label is a short, fixed length, locally significant identifier which is used to identify a FEC."
+      },
+      {
+       "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
+       "quote": "In MPLS, the assignment of a particular packet to a particular FEC is done just once, as the packet enters the network."
+      },
+      {
+       "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
+       "quote": "At subsequent hops, there is no further analysis of the packet's network layer header. Rather, the label is used as an index into a table which specifies the next hop, and a new label."
+      },
+      {
+       "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
+       "quote": "A router which supports MPLS is known as a \"Label Switching Router\", or LSR."
+      }
+     ]
+    },
+    {
+     "text": "**Difusión** (radio y televisión): comunicación **unidireccional** para muchos usuarios con receptores adecuados, por radio o cable; es **punto a zona**.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 701-01-32) · broadcasting",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-01-32",
+       "quote": "unidirectional telecommunication intended for a large number of users having appropriate receiving facilities, and carried out by means of radio or by cable networks"
+      },
+      {
+       "title": "IEC Electropedia (IEV 701-01-32) · broadcasting",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-01-32",
+       "quote": "Broadcasting is a point-to-area communication."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Medios de transmisión y degradación de la señal",
+   "points": [
+    {
+     "text": "**Atenuación**: disminución de la energía de la señal a medida que se **propaga**.",
+     "refs": [
+      {
+       "title": "IEC Electropedia · IEV 705-02-05 attenuation (atenuación)",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=705-02-05",
+       "quote": "the decrease of the energy of an electromagnetic wave during its propagation"
+      }
+     ]
+    },
+    {
+     "text": "**Diafonía** (*crosstalk*): aparición de energía no deseada en un canal (p. ej., un par) por la señal de **otro canal**, por inducción, conducción o no linealidad.",
+     "refs": [
+      {
+       "title": "IEC Electropedia · IEV 722-15-03 crosstalk (diafonía)",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=722-15-03",
+       "quote": "the appearance of undesired energy in a channel, owing to the presence of a signal in another channel, caused by, for example induction, conduction or non-linearity"
+      }
+     ]
+    },
+    {
+     "text": "Cable de pares: **U/UTP** no tiene **ninguna pantalla** (ni global ni por par); **F/UTP** (FTP) tiene pantalla global y **S/FTP** (STP) malla global y pantalla en cada par.",
+     "refs": [
+      {
+       "title": "Fluke Networks · Acronyms for balanced cables",
+       "url": "https://www.flukenetworks.com/knowledge-base/applicationstandards-articles-copper/acronyms-balanced-cables",
+       "quote": "U/UTP = overall unscreened cable with unscreened twisted pairs (often referred to as UTP)"
+      },
+      {
+       "title": "Fluke Networks · Acronyms for balanced cables",
+       "url": "https://www.flukenetworks.com/knowledge-base/applicationstandards-articles-copper/acronyms-balanced-cables",
+       "quote": "F/UTP = overall screened cable with unscreened twisted pairs (often referred to as FTP)"
+      },
+      {
+       "title": "Fluke Networks · Acronyms for balanced cables",
+       "url": "https://www.flukenetworks.com/knowledge-base/applicationstandards-articles-copper/acronyms-balanced-cables",
+       "quote": "S/FTP = overall braid screened cable with foil screened twisted pairs (often referred to as STP or PiMF)"
+      }
+     ]
+    },
+    {
+     "text": "Categorías: la **6A** soporta **10 Gb/s** hasta 100 m; la **8** está pensada para **25GBASE-T y 40GBASE-T** en canales de hasta **30 m**, para centros de datos.",
+     "refs": [
+      {
+       "title": "Fluke Networks · Ethernet Cable Categories & Speeds Explained",
+       "url": "https://www.flukenetworks.com/blog/cabling-chronicles/ethernet-cable-history",
+       "quote": "Category 6A—capable of supporting 10 Gb/s to 100 meters—was ratified in 2009."
+      },
+      {
+       "title": "Fluke Networks · Category 8 Cable Testing",
+       "url": "https://www.flukenetworks.com/expertise/learn-about/category-8-cable-testing",
+       "quote": "the latest twisted-pair copper system designed to support future IEEE 25GBASE-T and 40GBASE-T applications."
+      },
+      {
+       "title": "Fluke Networks · Category 8 Cable Testing",
+       "url": "https://www.flukenetworks.com/expertise/learn-about/category-8-cable-testing",
+       "quote": "Characterized to 2 GHz and specified for 30-meter, 2-connector channels, Category 8 is intended as a data center application."
+      }
+     ]
+    },
+    {
+     "text": "**Fibra óptica de plástico (POF)**: núcleo **grande** (≈1 mm, casi todo núcleo), que facilita acoplar la luz con conectores poco precisos; conectores más baratos y enlaces **cortos** (hasta unos 50 m).",
+     "refs": [
+      {
+       "title": "The Fiber Optic Association · Plastic Optical Fiber (POF)",
+       "url": "https://www.thefoa.org/tech/pof.htm",
+       "quote": "POF is large core step-index multimode fiber with a typical diameter of 1 mm, mostly core with a thin cladding."
+      },
+      {
+       "title": "The Fiber Optic Association · Plastic Optical Fiber (POF)",
+       "url": "https://www.thefoa.org/tech/pof.htm",
+       "quote": "This large core size makes it easy to couple light from LED sources and connectors do not need to be high precision."
+      },
+      {
+       "title": "The Fiber Optic Association · Plastic Optical Fiber (POF)",
+       "url": "https://www.thefoa.org/tech/pof.htm",
+       "quote": "typical connector costs are 10-20% as much as for glass fibers"
+      },
+      {
+       "title": "The Fiber Optic Association · Plastic Optical Fiber (POF)",
+       "url": "https://www.thefoa.org/tech/pof.htm",
+       "quote": "it is adequate for running short links, such as inside of instruments or within a room for desktop connections up to 50 meters."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Redes inalámbricas (Wi-Fi)",
+   "points": [
+    {
+     "text": "**IEEE 802.11** es la norma de las **redes de área local inalámbricas** (WLAN).",
+     "refs": [
+      {
+       "title": "IEEE 802.11 Working Group",
+       "url": "https://www.ieee802.org/11/",
+       "quote": "IEEE 802.11, The Working Group Setting the Standards for Wireless LANs"
+      }
+     ]
+    },
+    {
+     "text": "**Wi-Fi 6** = **802.11ax**. **Wi-Fi 7** = **802.11be**, que trabaja en las bandas de **2,4, 5 y 6 GHz**.",
+     "refs": [
+      {
+       "title": "Wi-Fi Alliance · Wi-Fi Alliance introduces Wi-Fi 6",
+       "url": "https://www.wi-fi.org/news-events/newsroom/wi-fi-alliance-introduces-wi-fi-6",
+       "quote": "Wi-Fi Alliance® introduces Wi-Fi 6 as the industry designation for products and networks that support the next generation of Wi-Fi®, based on 802.11ax technology."
+      },
+      {
+       "title": "Wi-Fi Alliance · Wi-Fi 7: Advanced connectivity for the next generation",
+       "url": "https://www.wi-fi.org/beacon/the-beacon/wi-fi-7-advanced-connectivity-for-the-next-generation",
+       "quote": "Based on IEEE 802.11be technology, Wi-Fi 7’s unique features offer extremely high throughputs"
+      },
+      {
+       "title": "Wi-Fi Alliance · Wi-Fi (MAC/PHY)",
+       "url": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7",
+       "quote": "Introduced in 2024, Wi-Fi 7 enhances performance across the 2.4 GHz, 5 GHz, and 6 GHz bands"
+      }
+     ]
+    },
+    {
+     "text": "**WEP** tiene debilidades criptográficas conocidas y **ya no se considera viable**: es menos seguro que **WPA2**, la especificación de la Wi-Fi Alliance para IEEE 802.11i, que se diseñó para superar las carencias de WEP.",
+     "refs": [
+      {
+       "title": "NIST SP 800-48 Rev. 1 · Wireless Network Security",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-48r1.pdf",
+       "quote": "WEP is no longer considered a viable encryption mechanism due to known weaknesses."
+      },
+      {
+       "title": "NIST SP 800-48 Rev. 1 · Wireless Network Security",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-48r1.pdf",
+       "quote": "WPA2 is the Wi-Fi Alliance interoperable specification for IEEE 802.11i."
+      },
+      {
+       "title": "NIST SP 800-48 Rev. 1 · Wireless Network Security",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-48r1.pdf",
+       "quote": "the IEEE finalized the 802.11i amendment, which was designed to overcome the shortcomings of WEP"
+      },
+      {
+       "title": "NIST SP 800-97 · Establishing Wireless Robust Security Networks",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-97.pdf",
+       "quote": "WEP suffers from a number of cryptographic weaknesses that enable attackers with readily available software tools to decipher captured data"
+      }
+     ]
+    },
+    {
+     "text": "**WPS** (Wi-Fi Protected Setup, hoy Wi-Fi Simple Configuration): métodos de configuración **PIN**, **botón (PBC)**, **NFC** y **USB**.",
+     "refs": [
+      {
+       "title": "Wi-Fi Alliance · Wi-Fi Protected Setup adds NFC tap-to-connect",
+       "url": "https://www.wi-fi.org/news-events/newsroom/wi-fi-certified-wi-fi-protected-setup-adds-nfc-tap-to-connect-for-simple-set",
+       "quote": "Wi-Fi Protected Setup now offers users three easy setup methods – Personal Identification Number (PIN), Push-Button Configuration, and NFC."
+      },
+      {
+       "title": "Microsoft Learn · About Windows Connect Now",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/wcn/about-windows-connect-now",
+       "quote": "Starting with version 2 specification, the specification is named Wi-Fi Simple Configuration (WSC)."
+      },
+      {
+       "title": "Microsoft Learn · WCN_VALUE_TYPE_CONFIG_METHODS",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/api/wcntypes/ne-wcntypes-wcn_value_type_config_methods",
+       "quote": "USB-A (flash drive) configuration is supported."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Bluetooth",
+   "points": [
+    {
+     "text": "**Piconet**: un dispositivo central y los periféricos enlazados con él. **Scatternet**: **dos o más piconets** con algún dispositivo en común.",
+     "refs": [
+      {
+       "title": "Bluetooth Core Specification 6.0 · Architecture",
+       "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-60/out/en/architecture,-change-history,-and-conventions/architecture.html",
+       "quote": "A piconet consists of a single Central, known as the Central of the piconet, and all the Peripherals linked to it, known as the Peripherals in the piconet."
+      },
+      {
+       "title": "Bluetooth Core Specification 6.0 · Architecture",
+       "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-60/out/en/architecture,-change-history,-and-conventions/architecture.html",
+       "quote": "Two or more piconets that have one or more devices in common."
+      }
+     ]
+    },
+    {
+     "text": "**Bluetooth LE**: 40 canales físicos (3 de anuncio primarios y 37 de uso general). El **anuncio extendido** (Core 5.0) usa **los 40**: los primarios 37, 38 y 39 y los generales 0-36 como secundarios.",
+     "refs": [
+      {
+       "title": "Bluetooth Core Specification 6.0 · Architecture",
+       "url": "https://www.bluetooth.com/wp-content/uploads/Files/Specification/HTML/Core-60/out/en/architecture,-change-history,-and-conventions/architecture.html",
+       "quote": "For the purposes of data transfer, 40 physical channels, separated by 2 MHz, are used in the FDMA scheme. Three are used as primary advertising channels and 37 are used as general-purpose channels (including as secondary advertising channels)."
+      },
+      {
+       "title": "Bluetooth SIG · Bluetooth Core 5.0 Feature Enhancements",
+       "url": "https://www.bluetooth.com/wp-content/uploads/2019/03/Bluetooth_5-FINAL.pdf",
+       "quote": "Core 5.0 introduces Extended Advertising which uses all 40 Bluetooth LE channels"
+      },
+      {
+       "title": "Bluetooth SIG · Bluetooth Core 5.0 Feature Enhancements",
+       "url": "https://www.bluetooth.com/wp-content/uploads/2019/03/Bluetooth_5-FINAL.pdf",
+       "quote": "with primary advertising channels 37, 38 and 39 carrying less data and general-purpose channels 0 - 36 doing most of the heavy lifting."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Redes de baja potencia y área extensa (LPWAN)",
+   "points": [
+    {
+     "text": "Tecnologías **LPWAN** (enlaces de **varios kilómetros**): **LoRaWAN, NB-IoT, Sigfox** y Wi-SUN FAN. **Bluetooth LE no** está entre ellas: es una de las tecnologías de enlace a las que el grupo 6lo del IETF adapta 6LoWPAN, aparte de las LPWAN.",
+     "refs": [
+      {
+       "title": "RFC 8376 · Low-Power Wide Area Network (LPWAN) Overview",
+       "url": "https://www.rfc-editor.org/rfc/rfc8376.txt",
+       "quote": "This section provides an overview of the set of LPWAN technologies that are being considered in the LPWAN WG."
+      },
+      {
+       "title": "RFC 8376 · Low-Power Wide Area Network (LPWAN) Overview",
+       "url": "https://www.rfc-editor.org/rfc/rfc8376.txt",
+       "quote": "LoRaWAN is a wireless technology based on Industrial, Scientific, and Medical (ISM) that is used for long-range low-power low-data-rate applications"
+      },
+      {
+       "title": "RFC 8376 · Low-Power Wide Area Network (LPWAN) Overview",
+       "url": "https://www.rfc-editor.org/rfc/rfc8376.txt",
+       "quote": "The Sigfox LPWAN is in line with the terminology and specifications being defined by ETSI"
+      },
+      {
+       "title": "RFC 8376 · Low-Power Wide Area Network (LPWAN) Overview",
+       "url": "https://www.rfc-editor.org/rfc/rfc8376.txt",
+       "quote": "2.2. Narrowband IoT (NB-IoT)"
+      },
+      {
+       "title": "RFC 8376 · Low-Power Wide Area Network (LPWAN) Overview",
+       "url": "https://www.rfc-editor.org/rfc/rfc8376.txt",
+       "quote": "2.4. Wi-SUN Alliance Field Area Network (FAN)"
+      },
+      {
+       "title": "RFC 8376 · Low-Power Wide Area Network (LPWAN) Overview",
+       "url": "https://www.rfc-editor.org/rfc/rfc8376.txt",
+       "quote": "This prioritization is made in order to get the multiple-kilometer radio links implied by \"Wide Area\" in LPWAN's name."
+      },
+      {
+       "title": "RFC 8376 · Low-Power Wide Area Network (LPWAN) Overview",
+       "url": "https://www.rfc-editor.org/rfc/rfc8376.txt",
+       "quote": "The 6lo WG has been reusing and adapting 6LoWPAN to enable IPv6 support over link-layer technologies such as Bluetooth Low Energy (BTLE)"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

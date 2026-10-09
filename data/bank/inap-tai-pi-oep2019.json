@@ -23,10 +23,11 @@
       "status": "published",
       "articles": [
         {
-          "law": "BOE-A-2005-21163",
-          "section": "a11"
+          "law": "BOE-A-2025-6601",
+          "section": "a1-3"
         }
-      ]
+      ],
+      "explanation": "Respuesta según el Real Decreto 1553/2005 que cita la pregunta (art. 11.4), derogado por el Real Decreto 255/2025, de 1 de abril. Hoy el chip integra los certificados electrónicos cualificados y, por separado, la fotografía, los datos personales y las dos impresiones dactilares (art. 11.2)."
     },
     {
       "key": "P-2",

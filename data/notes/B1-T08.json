@@ -1,0 +1,2534 @@
+{
+ "topic": "B1-T08",
+ "sections": [
+  {
+   "title": "Derechos y obligación de relacionarse electrónicamente",
+   "points": [
+    {
+     "text": "Quienes tienen capacidad de obrar tienen, entre otros, derecho a **comunicarse a través de un Punto de Acceso General electrónico**, a **ser asistidos** en el uso de medios electrónicos, a usar las **lenguas oficiales** de su comunidad, a obtener y usar los **medios de identificación y firma** electrónica y a la **protección de sus datos** (art. 13 Ley 39/2015).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a13",
+       "quote": "a) A comunicarse con las Administraciones Públicas a través de un Punto de Acceso General electrónico de la Administración."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a13",
+       "quote": "b) A ser asistidos en el uso de medios electrónicos en sus relaciones con las Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a13",
+       "quote": "c) A utilizar las lenguas oficiales en el territorio de su Comunidad Autónoma"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a13",
+       "quote": "g) A la obtención y utilización de los medios de identificación y firma electrónica contemplados en esta Ley."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a13",
+       "quote": "h) A la protección de datos de carácter personal"
+      }
+     ]
+    },
+    {
+     "text": "Las **personas físicas** pueden **elegir en todo momento** si se relacionan por medios electrónicos o no (y **cambiar** de medio), **salvo** que estén obligadas (art. 14.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a14",
+       "quote": "Las personas físicas podrán elegir en todo momento si se comunican con las Administraciones Públicas para el ejercicio de sus derechos y obligaciones a través de medios electrónicos o no, salvo que estén obligadas"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a14",
+       "quote": "El medio elegido por la persona para comunicarse con las Administraciones Públicas podrá ser modificado por aquella en cualquier momento."
+      }
+     ]
+    },
+    {
+     "text": "**Están obligados**, al menos, a relacionarse electrónicamente para **cualquier trámite** (art. 14.2):",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a14",
+       "quote": "estarán obligados a relacionarse a través de medios electrónicos con las Administraciones Públicas para la realización de cualquier trámite de un procedimiento administrativo, al menos, los siguientes sujetos:"
+      }
+     ],
+     "items": [
+      {
+       "text": "Las **personas jurídicas** y las **entidades sin personalidad jurídica**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-10565",
+         "section": "a14",
+         "quote": "a) Las personas jurídicas."
+        },
+        {
+         "law": "BOE-A-2015-10565",
+         "section": "a14",
+         "quote": "b) Las entidades sin personalidad jurídica."
+        }
+       ]
+      },
+      {
+       "text": "Quienes ejerzan una **profesión de colegiación obligatoria**, para los trámites de esa actividad (incluidos **notarios y registradores**).",
+       "refs": [
+        {
+         "law": "BOE-A-2015-10565",
+         "section": "a14",
+         "quote": "c) Quienes ejerzan una actividad profesional para la que se requiera colegiación obligatoria"
+        },
+        {
+         "law": "BOE-A-2015-10565",
+         "section": "a14",
+         "quote": "se entenderán incluidos los notarios y registradores de la propiedad y mercantiles."
+        }
+       ]
+      },
+      {
+       "text": "Quienes **representen** a un interesado obligado.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-10565",
+         "section": "a14",
+         "quote": "d) Quienes representen a un interesado que esté obligado a relacionarse electrónicamente con la Administración."
+        }
+       ]
+      },
+      {
+       "text": "Los **empleados públicos**, para los trámites que hagan **por su condición** de empleados.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-10565",
+         "section": "a14",
+         "quote": "e) Los empleados de las Administraciones Públicas para los trámites y actuaciones que realicen con ellas por razón de su condición de empleado público"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Por **reglamento** puede imponerse la obligación, **para determinados procedimientos**, a **colectivos de personas físicas** de los que **quede acreditado** que, por capacidad económica, técnica, dedicación profesional u otros motivos, tienen acceso a los medios necesarios (art. 14.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a14",
+       "quote": "quede acreditado que tienen acceso y disponibilidad de los medios electrónicos necesarios."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a14",
+       "quote": "Reglamentariamente, las Administraciones podrán establecer la obligación de relacionarse con ellas a través de medios electrónicos para determinados procedimientos y para ciertos colectivos de personas físicas"
+      }
+     ]
+    },
+    {
+     "text": "Las Administraciones **asisten a quienes lo soliciten** (no obligados) en el uso de medios electrónicos, en especial en identificación y firma, registro y copias auténticas. Si el interesado carece de medios, un **funcionario** puede identificarle o firmar por él con su propio sistema de firma, si el interesado **se identifica ante él** y da su **consentimiento expreso**, que debe quedar registrado (art. 12.2 Ley 39/2015).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "Las Administraciones Públicas asistirán en el uso de medios electrónicos a los interesados no incluidos en los apartados 2 y 3 del artículo 14 que así lo soliciten"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "podrá ser válidamente realizada por un funcionario público mediante el uso del sistema de firma electrónica del que esté dotado para ello."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "se identifique ante el funcionario"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "de lo que deberá quedar constancia"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "preste su consentimiento expreso para esta actuación"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "especialmente en lo referente a la identificación y firma electrónica, presentación de solicitudes a través del registro electrónico general y obtención de copias auténticas."
+      }
+     ]
+    },
+    {
+     "text": "**Apoderamientos** (art. 6 Ley 39/2015): cada Administración tiene un **registro electrónico general de apoderamientos** (en la AGE, el **Registro Electrónico de Apoderamientos**), interoperable. Tipos de poder: **general** (cualquier actuación ante cualquier Administración), ante **una Administración u organismo** concreto, o para **trámites determinados**. El **apud acta** se otorga por **comparecencia electrónica** en la sede o **personal** en las oficinas de asistencia. Los poderes valen **como máximo cinco años**, revocables o prorrogables antes de que venzan.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "dispondrán de un registro electrónico general de apoderamientos"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "este registro será el Registro Electrónico de Apoderamientos de la Administración General del Estado."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "a) Un poder general para que el apoderado pueda actuar en nombre del poderdante en cualquier actuación administrativa y ante cualquier Administración."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "b) Un poder para que el apoderado pueda actuar en nombre del poderdante en cualquier actuación administrativa ante una Administración u Organismo concreto."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "c) Un poder para que el apoderado pueda actuar en nombre del poderdante únicamente para la realización de determinados trámites especificados en el poder."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "se otorgará mediante comparecencia electrónica en la correspondiente sede electrónica"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "o bien mediante comparecencia personal en las oficinas de asistencia en materia de registros."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "tendrán una validez determinada máxima de cinco años a contar desde la fecha de inscripción."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a6",
+       "quote": "el poderdante podrá revocar o prorrogar el poder."
+      }
+     ]
+    },
+    {
+     "text": "**Identificación y firma** (art. 11 Ley 39/2015): por regla general basta con que los interesados **acrediten su identidad**. La **firma** solo es obligatoria para **formular solicitudes**, presentar **declaraciones responsables o comunicaciones**, **interponer recursos**, **desistir de acciones** y **renunciar a derechos** (no, por ejemplo, para acceder a las notificaciones). Más detalle en el tema 6.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "será suficiente con que los interesados acrediten previamente su identidad a través de cualquiera de los medios de identificación previstos en esta Ley."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "Las Administraciones Públicas sólo requerirán a los interesados el uso obligatorio de firma para:"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "a) Formular solicitudes."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "b) Presentar declaraciones responsables o comunicaciones."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "c) Interponer recursos."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "d) Desistir de acciones."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "e) Renunciar a derechos."
+      }
+     ],
+     "items": []
+    }
+   ]
+  },
+  {
+   "title": "Registros electrónicos",
+   "points": [
+    {
+     "text": "Cada Administración tiene un **Registro Electrónico General** donde se asienta **todo documento presentado o recibido** en cualquier órgano u organismo (también pueden anotarse las **salidas**). Los organismos pueden tener **su propio registro**, interoperable e interconectado con el general; el **Registro Electrónico General** funciona como **portal** de acceso a los registros de cada organismo (art. 16.1 Ley 39/2015).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "Cada Administración dispondrá de un Registro Electrónico General, en el que se hará el correspondiente asiento de todo documento que sea presentado o que se reciba"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "También se podrán anotar en el mismo, la salida de los documentos oficiales"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "podrán disponer de su propio registro electrónico plenamente interoperable e interconectado con el Registro Electrónico General"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "funcionará como un portal que facilitará el acceso a los registros electrónicos de cada Organismo."
+      }
+     ]
+    },
+    {
+     "text": "Las **disposiciones de creación** se publican en el **diario oficial**, están disponibles en la **sede electrónica** y fijan el **órgano responsable**, la **fecha y hora oficial** y los **días inhábiles**. Los asientos siguen el **orden temporal** (art. 16.1 y 16.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "Las disposiciones de creación de los registros electrónicos se publicarán en el diario oficial correspondiente"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "especificarán el órgano o unidad responsable de su gestión, así como la fecha y hora oficial y los días declarados como inhábiles."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "Los asientos se anotarán respetando el orden temporal de recepción o salida de los documentos"
+      }
+     ]
+    },
+    {
+     "text": "Cada asiento recoge **número**, epígrafe, **fecha y hora** de presentación, **interesado**, órgano remitente y destinatario y referencia al contenido. Se emite **automáticamente un recibo**: **copia autenticada** del documento con fecha, hora y **número de entrada**, que garantiza la **integridad y el no repudio** (art. 16.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "garantizará la constancia, en cada asiento que se practique, de un número, epígrafe expresivo de su naturaleza, fecha y hora de su presentación, identificación del interesado"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "se emitirá automáticamente un recibo consistente en una copia autenticada del documento de que se trate, incluyendo la fecha y hora de presentación y el número de entrada de registro"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "que garantice la integridad y el no repudio de los mismos."
+      }
+     ]
+    },
+    {
+     "text": "**Dónde presentar** (art. 16.4): en el registro electrónico de la Administración a la que se dirija **o en el de cualquier otra**; en **Correos**; en las **representaciones diplomáticas u oficinas consulares**; en las **oficinas de asistencia en materia de registros**; y donde digan otras normas. Los registros deben ser **plenamente interoperables**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "a) En el registro electrónico de la Administración u Organismo al que se dirijan, así como en los restantes registros electrónicos de cualquiera de los sujetos a los que se refiere el artículo 2.1."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "b) En las oficinas de Correos, en la forma que reglamentariamente se establezca."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "c) En las representaciones diplomáticas u oficinas consulares de España en el extranjero."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "d) En las oficinas de asistencia en materia de registros."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "deberán ser plenamente interoperables"
+      }
+     ]
+    },
+    {
+     "text": "Lo presentado **en papel** lo **digitaliza** la oficina de asistencia y se **devuelven los originales**, salvo que la norma exija su custodia o se trate de objetos o soportes no digitalizables (art. 16.5). Si un documento en papel no puede devolverse en el momento, una vez digitalizado se guarda **seis meses** a disposición del interesado para que lo recoja, salvo que un reglamento fije un plazo mayor (art. 53 RD 203/2021). **No se tienen por presentados** los documentos con un régimen especial de presentación (art. 16.8).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "deberán ser digitalizados"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "devolviéndose los originales al interesado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a5-5",
+       "quote": "que por cualquier circunstancia no le puedan ser devueltos en el momento de su presentación"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a5-5",
+       "quote": "salvo que reglamentariamente la Administración correspondiente establezca un plazo mayor."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a5-5",
+       "quote": "serán conservados a su disposición durante seis meses para que pueda recogerlos"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a16",
+       "quote": "No se tendrán por presentados en el registro aquellos documentos e información cuyo régimen especial establezca otra forma de presentación."
+      }
+     ]
+    },
+    {
+     "text": "En la AGE, el **Registro Electrónico General** lo gestiona el Ministerio de **Política Territorial y Función Pública** con el de **Asuntos Económicos y Transformación Digital**, según el texto vigente del reglamento, y sus anotaciones valen para **todas las Administraciones** (art. 38 RD 203/2021). Los documentos demasiado grandes para el **Sistema de Interconexión de Registros (SIR)** pueden ponerse a disposición en un **repositorio** (art. 39.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-10",
+       "quote": "será gestionado por el Ministerio de Política Territorial y Función Pública en colaboración con el Ministerio de Asuntos Económicos y Transformación Digital"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-10",
+       "quote": "tendrán plena eficacia y validez para todas las Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-11",
+       "quote": "Cuando el tamaño de los documentos registrados exceda la capacidad que se determine para el Sistema de Interconexión de Registros (SIR)"
+      }
+     ]
+    },
+    {
+     "text": "En la AGE, las **oficinas de asistencia en materia de registros** son **órganos administrativos** (art. 40 RD 203/2021). Entre sus funciones: **digitalizar** y anotar lo presentado en papel, emitir el **recibo**, expedir **copias electrónicas auténticas**, informar sobre identificación y firma, **identificar o firmar** por los no obligados, **notificar** a quien comparezca espontáneamente y lo pida en ese momento, e iniciar el **apoderamiento apud acta**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "Oficinas de asistencia en materia de registros en el ámbito de la Administración General del Estado."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "y solicite la comunicación o notificación personal en ese momento."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "Las Oficinas de asistencia en materia de registros tienen naturaleza de órgano administrativo"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "a) La digitalización de las solicitudes, escritos y comunicaciones en papel"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "c) La emisión del correspondiente recibo que acredite la fecha y hora de presentación"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "d) La expedición de copias electrónicas auténticas tras la digitalización"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "f) La identificación o firma electrónica del interesado, cuando se trate de una persona no obligada a la relación electrónica"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "g) La práctica de notificaciones"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-2",
+       "quote": "i) La iniciación de la tramitación del apoderamiento presencial apud acta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Cómputo de plazos",
+   "points": [
+    {
+     "text": "**Horas** (art. 30.1): son **hábiles** (las de un día hábil); se cuentan de **hora en hora y de minuto en minuto** desde la notificación o publicación y **no pueden superar 24 horas** (si no, se expresan en días).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "cuando los plazos se señalen por horas, se entiende que éstas son hábiles. Son hábiles todas las horas del día que formen parte de un día hábil."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "Los plazos expresados por horas se contarán de hora en hora y de minuto en minuto"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "no podrán tener una duración superior a veinticuatro horas, en cuyo caso se expresarán en días."
+      }
+     ]
+    },
+    {
+     "text": "**Días** (art. 30.2 y 30.3): salvo que una ley o el Derecho de la UE digan otra cosa, son **hábiles** (sin **sábados, domingos ni festivos**) y se cuentan **desde el día siguiente** a la notificación o publicación (o al silencio). Si una **ley o el Derecho de la UE** los fija en días **naturales**, debe constar en las notificaciones.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "cuando los plazos se señalen por días, se entiende que éstos son hábiles, excluyéndose del cómputo los sábados, los domingos y los declarados festivos."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "se hará constar esta circunstancia en las correspondientes notificaciones."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "Los plazos expresados en días se contarán a partir del día siguiente a aquel en que tenga lugar la notificación o publicación del acto de que se trate"
+      }
+     ]
+    },
+    {
+     "text": "**Meses o años** (art. 30.4): desde el día siguiente, y concluyen el **mismo día** en que se produjo la notificación, publicación o silencio en el mes o año de vencimiento (o el **último día del mes** si no lo hay). Si el último día es **inhábil**, pasa al **primer hábil siguiente** (art. 30.5).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "El plazo concluirá el mismo día en que se produjo la notificación, publicación o silencio administrativo en el mes o el año de vencimiento."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "se entenderá que el plazo expira el último día del mes."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "Cuando el último día del plazo sea inhábil, se entenderá prorrogado al primer día hábil siguiente."
+      }
+     ]
+    },
+    {
+     "text": "Un día **hábil donde reside el interesado e inhábil en la sede del órgano** (o al revés) se considera **inhábil en todo caso** (art. 30.6). La AGE y las comunidades fijan el **calendario de días inhábiles** antes de cada año (art. 30.7).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "se considerará inhábil en todo caso."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "fijarán, en su respectivo ámbito, el calendario de días inhábiles a efectos de cómputos de plazos"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a30",
+       "quote": "Dicho calendario deberá publicarse antes del comienzo de cada año"
+      }
+     ]
+    },
+    {
+     "text": "**Registro electrónico** (art. 31): se rige por la **fecha y hora oficial de la sede**; admite documentos **todos los días del año, las 24 horas**. Para los plazos **en días hábiles** que deben cumplir los interesados, lo presentado en día **inhábil** se entiende presentado en la **primera hora del primer día hábil siguiente** (salvo norma que admita la recepción en inhábil) y va **antes** que lo presentado ese día hábil. El plazo de la Administración empieza con la fecha y hora de presentación, que se **comunica** a quien presentó. Su calendario es el de la sede (no se aplica el art. 30.6).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a31",
+       "quote": "por la fecha y hora oficial de la sede electrónica de acceso"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a31",
+       "quote": "a) Permitirá la presentación de documentos todos los días del año durante las veinticuatro horas."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a31",
+       "quote": "la presentación en un día inhábil se entenderá realizada en la primera hora del primer día hábil siguiente salvo que una norma permita expresamente la recepción en día inhábil."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a31",
+       "quote": "Los documentos presentados en el día inhábil se reputarán anteriores, según el mismo orden, a los que lo fueran el primer día hábil posterior."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a31",
+       "quote": "la fecha y hora efectiva de inicio del cómputo de plazos deberá ser comunicada a quien presentó el documento."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a31",
+       "quote": "sin que resulte de aplicación a los mismos lo dispuesto en el artículo 30.6."
+      }
+     ]
+    },
+    {
+     "text": "**Ampliación** (art. 32): salvo precepto en contrario, la Administración **puede** ampliar, de oficio o a petición, **hasta la mitad** del plazo, si las circunstancias lo aconsejan y no perjudica a terceros, y notifica el acuerdo. Se aplica **siempre la máxima** en los procedimientos de **misiones diplomáticas y oficinas consulares**, en los que exigen un trámite en el **extranjero** y en los que hay interesados **residentes fuera de España**. Se pide y acuerda **antes de que venza** (un plazo vencido no se amplía) y el acuerdo **no es recurrible** (sí la resolución final). También por **incidencias técnicas** (publicándolo en la sede) o **ciberincidentes** graves (ampliación general).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a32",
+       "quote": "una ampliación de los plazos establecidos, que no exceda de la mitad de los mismos, si las circunstancias lo aconsejan y con ello no se perjudican derechos de tercero."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a32",
+       "quote": "La Administración, salvo precepto en contrario, podrá conceder de oficio o a petición de los interesados"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a32",
+       "quote": "a los procedimientos tramitados por las misiones diplomáticas y oficinas consulares"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a32",
+       "quote": "El acuerdo de ampliación deberá ser notificado a los interesados."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a32",
+       "quote": "La ampliación de los plazos por el tiempo máximo permitido se aplicará en todo caso"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a32",
+       "quote": "En ningún caso podrá ser objeto de ampliación un plazo ya vencido. Los acuerdos sobre ampliación de plazos o sobre su denegación no serán susceptibles de recurso"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a32",
+       "quote": "Cuando una incidencia técnica haya imposibilitado el funcionamiento ordinario del sistema"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a32",
+       "quote": "Cuando como consecuencia de un ciberincidente"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Documentos, copias y archivo electrónico",
+   "points": [
+    {
+     "text": "Las Administraciones emiten los documentos **por escrito y por medios electrónicos**, salvo que su naturaleza exija otra forma (art. 26.1 Ley 39/2015). Para ser válido, el documento electrónico administrativo debe (art. 26.2): contener información en un **formato** identificable, tener **datos de identificación**, una **referencia temporal**, los **metadatos mínimos** y las **firmas** que correspondan.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a26",
+       "quote": "Las Administraciones Públicas emitirán los documentos administrativos por escrito, a través de medios electrónicos, a menos que su naturaleza exija otra forma más adecuada de expresión y constancia."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a26",
+       "quote": "c) Incorporar una referencia temporal del momento en que han sido emitidos."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a26",
+       "quote": "d) Incorporar los metadatos mínimos exigidos."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a26",
+       "quote": "e) Incorporar las firmas electrónicas que correspondan"
+      }
+     ]
+    },
+    {
+     "text": "**No necesitan firma** los documentos **meramente informativos** ni los que **no forman parte de un expediente**, aunque siempre hay que identificar su **origen** (art. 26.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a26",
+       "quote": "No requerirán de firma electrónica, los documentos electrónicos emitidos por las Administraciones Públicas que se publiquen con carácter meramente informativo, así como aquellos que no formen parte de un expediente administrativo. En todo caso, será necesario identificar el origen de estos documentos."
+      }
+     ]
+    },
+    {
+     "text": "**Copias auténticas** (art. 27): las expide un **funcionario habilitado** o una **actuación administrativa automatizada**; tienen **la misma validez y eficacia que el original** y valen ante **todas** las Administraciones (las de documentos **privados**, solo efectos **administrativos**). Se ajustan al **ENI**, al **ENS** y sus normas técnicas.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "podrán realizar copias auténticas mediante funcionario habilitado o mediante actuación administrativa automatizada."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "Las copias auténticas tendrán la misma validez y eficacia que los documentos originales."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "Las copias auténticas de documentos privados surten únicamente efectos administrativos. Las copias auténticas realizadas por una Administración Pública tendrán validez en las restantes Administraciones."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "deberán ajustarse a lo previsto en el Esquema Nacional de Interoperabilidad, el Esquema Nacional de Seguridad y sus normas técnicas de desarrollo"
+      }
+     ]
+    },
+    {
+     "text": "Reglas (art. 27.3): las copias electrónicas incluyen **metadatos** que acreditan su condición de copia; las **copias electrónicas de documentos en papel** requieren además **digitalización** (convertir el documento en un fichero con su **imagen codificada, fiel e íntegra**); y las **copias en papel de documentos electrónicos** indican que son copia y llevan un **código de verificación** que permite contrastarlas en los archivos del emisor.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "deberán incluir los metadatos que acrediten su condición de copia y que se visualicen al consultar el documento."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "Se entiende por digitalización, el proceso tecnológico que permite convertir un documento en soporte papel o en otro soporte no electrónico en un fichero electrónico que contiene la imagen codificada, fiel e íntegra del documento."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "contendrán un código generado electrónicamente u otro sistema de verificación"
+      }
+     ]
+    },
+    {
+     "text": "Los interesados pueden pedir **en cualquier momento** copias auténticas de documentos públicos administrativos al órgano emisor, que debe expedirlas en **quince días**; y las Administraciones están **obligadas** a expedir **copias auténticas electrónicas** de cualquier documento en papel que presenten los interesados para incorporarlo a un expediente (art. 27.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "Los interesados podrán solicitar, en cualquier momento, la expedición de copias auténticas"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "las Administraciones Públicas estarán obligadas a expedir copias auténticas electrónicas de cualquier documento en papel que presenten los interesados y que se vaya a incorporar a un expediente administrativo."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a27",
+       "quote": "en el plazo de quince días a contar desde la recepción de la solicitud"
+      }
+     ]
+    },
+    {
+     "text": "**Documentos aportados** (art. 28): derecho a **no aportar** los que ya tenga la Administración actuante o haya **elaborado otra**; la Administración los **consulta** (por sus redes o las **plataformas de intermediación de datos**) salvo **oposición** del interesado, que **no cabe** en potestades **sancionadoras o de inspección**. No se exigen **originales**, salvo excepción legal, ni datos ya aportados a cualquier Administración. Los **informes preceptivos** de otro órgano se remiten en **diez días**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a28",
+       "quote": "Los interesados tienen derecho a no aportar documentos que ya se encuentren en poder de la Administración actuante o hayan sido elaborados por cualquier otra Administración."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a28",
+       "quote": "No cabrá la oposición cuando la aportación del documento se exigiera en el marco del ejercicio de potestades sancionadoras o de inspección."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a28",
+       "quote": "mediante consulta a las plataformas de intermediación de datos"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a28",
+       "quote": "Las Administraciones no exigirán a los interesados la presentación de documentos originales, salvo que, con carácter excepcional, la normativa reguladora aplicable establezca lo contrario."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a28",
+       "quote": "deberán ser remitidos en el plazo de diez días a contar desde su solicitud."
+      }
+     ]
+    },
+    {
+     "text": "**Archivo** (art. 17): cada Administración mantiene un **archivo electrónico único** de los documentos de **procedimientos finalizados**, en formatos que garanticen **autenticidad, integridad y conservación** y permitan **trasladarlos** a otros formatos; su **eliminación** debe autorizarse. Los soportes cumplen el **ENS** (también art. 46 Ley 40/2015).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a17",
+       "quote": "Cada Administración deberá mantener un archivo electrónico único de los documentos electrónicos que correspondan a procedimientos finalizados"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a17",
+       "quote": "en un formato que permita garantizar la autenticidad, integridad y conservación del documento"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a17",
+       "quote": "La eliminación de dichos documentos deberá ser autorizada"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a46",
+       "quote": "deberán contar con medidas de seguridad, de acuerdo con lo previsto en el Esquema Nacional de Seguridad"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Notificaciones",
+   "points": [
+    {
+     "text": "Se **cursa** en **diez días** desde que se dictó el acto y contiene el **texto íntegro**, si **pone fin a la vía administrativa**, los **recursos**, el órgano y el **plazo** (art. 40.2 Ley 39/2015). Si falta algo salvo el texto íntegro, surte efecto cuando el interesado actúe conociéndolo o recurra (art. 40.3). Para cumplir el **plazo máximo** basta el texto íntegro y el **intento acreditado** (art. 40.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a40",
+       "quote": "Toda notificación deberá ser cursada dentro del plazo de diez días a partir de la fecha en que el acto haya sido dictado, y deberá contener el texto íntegro de la resolución, con indicación de si pone fin o no a la vía administrativa"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a40",
+       "quote": "surtirán efecto a partir de la fecha en que el interesado realice actuaciones que supongan el conocimiento del contenido y alcance de la resolución"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a40",
+       "quote": "así como el intento de notificación debidamente acreditado."
+      }
+     ]
+    },
+    {
+     "text": "Se practican **preferentemente por medios electrónicos** y siempre si el interesado está **obligado** (art. 41.1). Cabe el papel si el interesado **comparece espontáneamente** en una oficina de registro y lo pide, o si hace falta la **entrega directa** de un empleado público. **Nunca** son electrónicas si el acto va con elementos **no convertibles** o con **medios de pago** como cheques (art. 41.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "Las notificaciones se practicarán preferentemente por medios electrónicos y, en todo caso, cuando el interesado resulte obligado a recibirlas por esta vía."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "a) Cuando la notificación se realice con ocasión de la comparecencia espontánea del interesado"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "b) Cuando para asegurar la eficacia de la actuación administrativa resulte necesario practicar la notificación por entrega directa de un empleado público"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "a) Aquellas en las que el acto a notificar vaya acompañado de elementos que no sean susceptibles de conversión en formato electrónico."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "b) Las que contengan medios de pago a favor de los obligados, tales como cheques."
+      }
+     ]
+    },
+    {
+     "text": "Son válidas si dejan constancia del **envío o puesta a disposición**, la **recepción o acceso**, las **fechas y horas**, el **contenido íntegro** y la **identidad** de remitente y destinatario. Los no obligados pueden **cambiar** cuando quieran entre electrónica y papel. El correo o móvil que comunique el interesado sirve **solo para avisos**, no para notificar (art. 41.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "las notificaciones serán válidas siempre que permitan tener constancia de su envío o puesta a disposición, de la recepción o acceso por el interesado o su representante, de sus fechas y horas, del contenido íntegro, y de la identidad fidedigna del remitente y destinatario de la misma."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "podrán decidir y comunicar en cualquier momento a la Administración Pública"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "servirán para el envío de los avisos regulados en este artículo, pero no para la práctica de notificaciones."
+      }
+     ]
+    },
+    {
+     "text": "Si el interesado **rechaza** la notificación, consta en el expediente y se da por **efectuado el trámite** (art. 41.5). Se envía un **aviso** al dispositivo o correo comunicado; si falta, la notificación **sigue siendo válida** (art. 41.6). Si se notifica por **varios cauces**, vale la **primera** fecha (art. 41.7).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "dando por efectuado el trámite y siguiéndose el procedimiento."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "La falta de práctica de este aviso no impedirá que la notificación sea considerada plenamente válida."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "se tomará como fecha de notificación la de aquélla que se hubiera producido en primer lugar."
+      }
+     ]
+    },
+    {
+     "text": "En los procedimientos **iniciados a solicitud** del interesado, se notifica por el **medio que él señale** (electrónico si está obligado) (art. 41.3 Ley 39/2015). El **aviso** es **meramente informativo** y solo se envía si se comunicó un dispositivo o correo; si un **obligado** no ha dado datos de contacto, la **primera notificación** de un procedimiento de oficio va **en papel**, advirtiendo de que las siguientes serán electrónicas (art. 43 RD 203/2021).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a41",
+       "quote": "En los procedimientos iniciados a solicitud del interesado, la notificación se practicará por el medio señalado al efecto por aquel."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-5",
+       "quote": "La falta de práctica de este aviso, de carácter meramente informativo"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-5",
+       "quote": "El aviso regulado en este apartado sólo se practicará en caso de que el interesado o su representante hayan comunicado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-5",
+       "quote": "la primera notificación que efectúe la Administración, organismo o entidad se realizará en papel"
+      }
+     ]
+    },
+    {
+     "text": "**En papel** (art. 42): se pone también a disposición en la **sede electrónica**. En el domicilio, si el interesado no está, puede recogerla **cualquier persona mayor de 14 años** que se identifique; si nadie la recoge, se repite **una sola vez** en los **tres días** siguientes, en hora distinta (si el primero fue **antes de las 15:00**, el segundo **después**, y viceversa) con **al menos tres horas** de diferencia. Si también falla, se publica (art. 44).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a42",
+       "quote": "Todas las notificaciones que se practiquen en papel deberán ser puestas a disposición del interesado en la sede electrónica"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a42",
+       "quote": "podrá hacerse cargo de la misma cualquier persona mayor de catorce años que se encuentre en el domicilio y haga constar su identidad."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a42",
+       "quote": "intento que se repetirá por una sola vez y en una hora distinta dentro de los tres días siguientes."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a42",
+       "quote": "En caso de que el primer intento de notificación se haya realizado antes de las quince horas, el segundo intento deberá realizarse después de las quince horas y viceversa, dejando en todo caso al menos un margen de diferencia de tres horas entre ambos intentos"
+      }
+     ]
+    },
+    {
+     "text": "**Electrónicas** (art. 43): por **comparecencia en la sede electrónica**, por la **Dirección Electrónica Habilitada única (DEHú)** o por ambas. Se entienden practicadas al **acceder al contenido**; si son obligatorias o elegidas, se entienden **rechazadas** a los **diez días naturales** sin acceso. La **puesta a disposición** basta para cumplir el plazo de notificar. Se accede desde el **Punto de Acceso General**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a43",
+       "quote": "se practicarán mediante comparecencia en la sede electrónica de la Administración u Organismo actuante, a través de la dirección electrónica habilitada única o mediante ambos sistemas"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a43",
+       "quote": "Las notificaciones por medios electrónicos se entenderán practicadas en el momento en que se produzca el acceso a su contenido."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a43",
+       "quote": "se entenderá rechazada cuando hayan transcurrido diez días naturales desde la puesta a disposición de la notificación sin que se acceda a su contenido."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a43",
+       "quote": "Se entenderá cumplida la obligación a la que se refiere el artículo 40.4 con la puesta a disposición"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a43",
+       "quote": "Los interesados podrán acceder a las notificaciones desde el Punto de Acceso General electrónico de la Administración"
+      }
+     ]
+    },
+    {
+     "text": "En el ámbito estatal, **toda notificación** se pone a disposición en la **DEHú** (y el emisor puede, de forma complementaria, notificar también en su sede). Si se usan ambas, vale el **primer acceso o rechazo**. Se entrega un **acuse de recibo** con el acto, el destinatario y las fechas y horas (art. 42 RD 203/2021). La DEHú la gestiona el Ministerio de **Asuntos Económicos y Transformación Digital** con el de **Política Territorial y Función Pública** (según el texto vigente) y se aloja en la **sede del PAGe** (art. 44).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-4",
+       "quote": "se pondrá a disposición del interesado a través de la Dirección Electrónica Habilitada única"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-4",
+       "quote": "los emisores de ámbito estatal podrán notificar en su sede electrónica o sede electrónica asociada de forma complementaria"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-4",
+       "quote": "en el sistema en el que haya ocurrido en primer lugar."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-4",
+       "quote": "conlleva la puesta a disposición del interesado de un acuse de recibo"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-6",
+       "quote": "cuya gestión corresponde al Ministerio de Asuntos Económicos y Transformación Digital en colaboración con el Ministerio de Política Territorial y Función Pública."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4-6",
+       "quote": "la Dirección Electrónica Habilitada única se aloja en la sede electrónica del PAGe de la Administración General del Estado."
+      }
+     ]
+    },
+    {
+     "text": "**Notificación infructuosa** (art. 44 Ley 39/2015): si los interesados son **desconocidos**, se ignora el lugar o el intento falla, se notifica por **anuncio en el BOE**. Antes, y de forma **facultativa**, puede publicarse en el boletín autonómico o provincial, en el **tablón del Ayuntamiento** del último domicilio o en el **Consulado**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a44",
+       "quote": "la notificación se hará por medio de un anuncio publicado en el «Boletín Oficial del Estado»."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a44",
+       "quote": "previamente y con carácter facultativo, las Administraciones podrán publicar un anuncio en el boletín oficial de la Comunidad Autónoma o de la Provincia, en el tablón de edictos del Ayuntamiento del último domicilio del interesado o del Consulado"
+      }
+     ]
+    },
+    {
+     "text": "**Publicación** (art. 45): sustituye a la notificación cuando el acto se dirige a una **pluralidad indeterminada** de personas y en los **procedimientos selectivos o de concurrencia competitiva** (en el medio que diga la convocatoria). Se hace en el **diario oficial** correspondiente. Si la publicación íntegra **lesiona derechos**, se publica solo una **somera indicación** del contenido y dónde consultarlo (art. 46).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a45",
+       "quote": "a) Cuando el acto tenga por destinatario a una pluralidad indeterminada de personas"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a45",
+       "quote": "b) Cuando se trate de actos integrantes de un procedimiento selectivo o de concurrencia competitiva de cualquier tipo."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a45",
+       "quote": "La publicación de los actos se realizará en el diario oficial que corresponda"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a46",
+       "quote": "se limitará a publicar en el Diario oficial que corresponda una somera indicación del contenido del acto"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Expediente administrativo electrónico",
+   "points": [
+    {
+     "text": "**Expediente**: conjunto **ordenado** de documentos y actuaciones que sirven de **antecedente y fundamento** a la resolución y las diligencias para ejecutarla (art. 70.1). Tiene **formato electrónico**, con un **índice numerado** cuando se remite y **copia electrónica certificada** de la resolución (art. 70.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a70",
+       "quote": "el conjunto ordenado de documentos y actuaciones que sirven de antecedente y fundamento a la resolución administrativa, así como las diligencias encaminadas a ejecutarla."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a70",
+       "quote": "Los expedientes tendrán formato electrónico"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a70",
+       "quote": "así como un índice numerado de todos los documentos que contenga cuando se remita."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a70",
+       "quote": "deberá constar en el expediente copia electrónica certificada de la resolución adoptada."
+      }
+     ]
+    },
+    {
+     "text": "Se remite conforme al **ENI** y sus **NTI**: **completo, foliado, autentificado** y con un **índice autentificado**, que garantiza su **integridad e inmutabilidad**; un mismo documento puede estar en **varios expedientes** (art. 70.3). **No forma parte** la información **auxiliar o de apoyo** (notas, borradores, opiniones, comunicaciones internas), salvo informes solicitados antes de resolver (art. 70.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a70",
+       "quote": "se enviará completo, foliado, autentificado y acompañado de un índice, asimismo autentificado"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a70",
+       "quote": "garantizará la integridad e inmutabilidad del expediente electrónico"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a70",
+       "quote": "siendo admisible que un mismo documento forme parte de distintos expedientes electrónicos."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a70",
+       "quote": "No formará parte del expediente administrativo la información que tenga carácter auxiliar o de apoyo"
+      }
+     ]
+    },
+    {
+     "text": "Componentes (NTI de Expediente electrónico): **documentos electrónicos** (sueltos, en **carpetas** o en expedientes anidados), **índice electrónico**, **firma del índice** y **metadatos** del expediente.",
+     "refs": [
+      {
+       "law": "BOE-A-2011-13170",
+       "section": "ii-2",
+       "quote": "a) Documentos electrónicos"
+      },
+      {
+       "law": "BOE-A-2011-13170",
+       "section": "ii-2",
+       "quote": "b) Índice electrónico"
+      },
+      {
+       "law": "BOE-A-2011-13170",
+       "section": "ii-2",
+       "quote": "c) Firma del índice electrónico por la Administración, órgano o entidad actuante"
+      },
+      {
+       "law": "BOE-A-2011-13170",
+       "section": "ii-2",
+       "quote": "d) Metadatos del expediente electrónico."
+      },
+      {
+       "law": "BOE-A-2011-13170",
+       "section": "ii-2",
+       "quote": "bien dentro de una carpeta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Interoperabilidad entre Administraciones (Ley 40/2015)",
+   "points": [
+    {
+     "text": "Cada Administración **facilita a las demás el acceso** a los datos de los interesados que tenga, con las condiciones y protocolos necesarios y respetando la protección de datos; **no** cabe un tratamiento posterior **incompatible** con el fin inicial (no lo es el de archivo, investigación o estadística). Si la cesionaria quiere usarlos para otro fin que crea compatible, lo **comunica antes** a la cedente, que puede **oponerse en diez días** (art. 155).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a155",
+       "quote": "cada Administración deberá facilitar el acceso de las restantes Administraciones Públicas a los datos relativos a los interesados que obren en su poder"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a155",
+       "quote": "no se considerará incompatible con los fines iniciales el tratamiento ulterior de los datos personales con fines de archivo en interés público"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a155",
+       "quote": "deberá comunicarlo previamente a la Administración Pública cedente"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a155",
+       "quote": "La Administración Pública cedente podrá, en el plazo de diez días oponerse motivadamente."
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a155",
+       "quote": "En ningún caso podrá procederse a un tratamiento ulterior de los datos para fines incompatibles"
+      }
+     ]
+    },
+    {
+     "text": "El **Esquema Nacional de Interoperabilidad (ENI)** reúne los criterios y recomendaciones de **seguridad, conservación y normalización** de la información, formatos y aplicaciones para garantizar la interoperabilidad. El **Esquema Nacional de Seguridad (ENS)** establece la **política de seguridad** en el uso de medios electrónicos, con **principios básicos y requisitos mínimos** (art. 156).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a156",
+       "quote": "El Esquema Nacional de Interoperabilidad comprende el conjunto de criterios y recomendaciones en materia de seguridad, conservación y normalización de la información, de los formatos y de las aplicaciones"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a156",
+       "quote": "El Esquema Nacional de Seguridad tiene por objeto establecer la política de seguridad en la utilización de medios electrónicos"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a156",
+       "quote": "está constituido por los principios básicos y requisitos mínimos"
+      }
+     ]
+    },
+    {
+     "text": "**Reutilización** (art. 157): las Administraciones ceden sus aplicaciones a las demás (pueden acordar repercutir el coste) y pueden declararlas de **fuentes abiertas**. **Antes** de adquirir o desarrollar una aplicación deben consultar el **directorio general de aplicaciones** de la AGE y, si hay una solución reutilizable, están **obligadas a usarla** salvo que justifiquen no hacerlo por **eficiencia**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a157",
+       "quote": "Las Administraciones pondrán a disposición de cualquiera de ellas que lo solicite las aplicaciones"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a157",
+       "quote": "podrán ser declaradas como de fuentes abiertas"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a157",
+       "quote": "deberán consultar en el directorio general de aplicaciones, dependiente de la Administración General del Estado"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a157",
+       "quote": "estarán obligadas a su uso, salvo que la decisión de no reutilizarla se justifique en términos de eficiencia"
+      }
+     ]
+    },
+    {
+     "text": "**Transferencia de tecnología** (art. 158): directorios de aplicaciones **interoperables** con el directorio general de la AGE, que gestiona el **Centro de Transferencia de Tecnología** (art. 17 ENI).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a158",
+       "quote": "Las Administraciones Públicas mantendrán directorios actualizados de aplicaciones para su libre reutilización"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a158",
+       "quote": "Estos directorios deberán ser plenamente interoperables con el directorio general de la Administración General del Estado"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a17",
+       "quote": "a través del Centro de Transferencia de Tecnología"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Esquema Nacional de Seguridad: objeto, ámbito y principios",
+   "points": [
+    {
+     "text": "El **ENS** lo regula el **Real Decreto 311/2022, de 3 de mayo**. Lo forman los **principios básicos y requisitos mínimos** para proteger la información y los servicios, asegurando su **acceso, confidencialidad, integridad, trazabilidad, autenticidad, disponibilidad y conservación** (art. 1).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1",
+       "quote": "El ENS está constituido por los principios básicos y requisitos mínimos necesarios para una protección adecuada de la información tratada y los servicios prestados"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1",
+       "quote": "con objeto de asegurar el acceso, la confidencialidad, la integridad, la trazabilidad, la autenticidad, la disponibilidad y la conservación de los datos"
+      }
+     ]
+    },
+    {
+     "text": "Se aplica a **todo el sector público**, a los sistemas con **información clasificada** y a los **sistemas privados** que presten servicios o soluciones al sector público, que también deben tener **política de seguridad**; los **pliegos** de los contratos exigen la conformidad con el ENS (art. 2).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a2",
+       "quote": "El presente real decreto es de aplicación a todo el sector público"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a2",
+       "quote": "este real decreto será de aplicación a los sistemas que tratan información clasificada"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a2",
+       "quote": "también se aplica a los sistemas de información de las entidades del sector privado, incluida la obligación de contar con la política de seguridad"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a2",
+       "quote": "Los pliegos de prescripciones administrativas o técnicas de los contratos"
+      }
+     ]
+    },
+    {
+     "text": "Si el sistema trata **datos personales**, se aplican además el RGPD y la LOPDGDD, con su **análisis de riesgos** y, en su caso, **evaluación de impacto**; **prevalecen** las medidas de estos si son **más exigentes** (art. 3).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3",
+       "quote": "realizarán un análisis de riesgos conforme al artículo 24 del Reglamento General de Protección de Datos"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3",
+       "quote": "prevalecerán las medidas a implantar como consecuencia del análisis de riesgos y, en su caso, de la evaluación de impacto"
+      }
+     ]
+    },
+    {
+     "text": "**Siete principios básicos** (art. 5):",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a5",
+       "quote": "deberán tenerse en cuenta los siguientes principios básicos:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Seguridad como proceso integral** (elementos humanos, materiales, técnicos, jurídicos y organizativos; excluye actuaciones puntuales).",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a5",
+         "quote": "a) Seguridad como proceso integral."
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a6",
+         "quote": "La aplicación del ENS estará presidida por este principio, que excluye cualquier actuación puntual o tratamiento coyuntural."
+        }
+       ]
+      },
+      {
+       "text": "**Gestión de la seguridad basada en los riesgos** (actividad continua; riesgos a niveles aceptables).",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a5",
+         "quote": "b) Gestión de la seguridad basada en los riesgos."
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a7",
+         "quote": "minimizando los riesgos a niveles aceptables"
+        }
+       ]
+      },
+      {
+       "text": "**Prevención, detección, respuesta y conservación**.",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a5",
+         "quote": "c) Prevención, detección, respuesta y conservación."
+        }
+       ]
+      },
+      {
+       "text": "**Existencia de líneas de defensa**: varias **capas** de naturaleza **organizativa, física y lógica**.",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a5",
+         "quote": "d) Existencia de líneas de defensa."
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a9",
+         "quote": "Las líneas de defensa han de estar constituidas por medidas de naturaleza organizativa, física y lógica."
+        }
+       ]
+      },
+      {
+       "text": "**Vigilancia continua**: detectar actividades anómalas y responder a tiempo.",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a5",
+         "quote": "e) Vigilancia continua."
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a1-2",
+         "quote": "La vigilancia continua permitirá la detección de actividades o comportamientos anómalos y su oportuna respuesta."
+        }
+       ]
+      },
+      {
+       "text": "**Reevaluación periódica**: las medidas se reevalúan y actualizan.",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a5",
+         "quote": "f) Reevaluación periódica."
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a1-2",
+         "quote": "Las medidas de seguridad se reevaluarán y actualizarán periódicamente"
+        }
+       ]
+      },
+      {
+       "text": "**Diferenciación de responsabilidades**: responsable de la **información**, del **servicio**, de la **seguridad** y del **sistema**; la seguridad se separa de la **explotación**.",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a5",
+         "quote": "g) Diferenciación de responsabilidades."
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a1-3",
+         "quote": "se diferenciará el responsable de la información, el responsable del servicio, el responsable de la seguridad y el responsable del sistema."
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "a1-3",
+         "quote": "La responsabilidad de la seguridad de los sistemas de información estará diferenciada de la responsabilidad sobre la explotación"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ENS: política de seguridad, responsables y requisitos mínimos",
+   "points": [
+    {
+     "text": "La **política de seguridad** es el conjunto de **directrices** sobre cómo la organización gestiona y protege la información y los servicios. Incluye al menos: **objetivos o misión**, **marco regulatorio**, **roles** de seguridad, **comités**, estructura de la **documentación** y **riesgos** de los datos personales (art. 12.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "La política de seguridad de la información es el conjunto de directrices que rigen la forma en que una organización gestiona y protege la información que trata y los servicios que presta."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "a) Los objetivos o misión de la organización."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "c) Los roles o funciones de seguridad"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "b) El marco regulatorio en el que se desarrollarán las actividades."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "e) Las directrices para la estructuración de la documentación de seguridad del sistema, su gestión y acceso."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "d) La estructura y composición del comité o los comités para la gestión y coordinación de la seguridad"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "f) Los riesgos que se derivan del tratamiento de los datos personales."
+      }
+     ]
+    },
+    {
+     "text": "Cada **Administración** y cada entidad con personalidad jurídica propia tiene una política **formalmente aprobada** (las del sector público institucional pueden quedar incluidas en la de la Administración de la que dependen); en la AGE, **cada ministerio**, aprobada por su **titular** (los organismos, propia o la del ministerio). Los **municipios** pueden tener una **común** elaborada por la entidad **comarcal o provincial** (art. 12).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "Cada administración pública contará con una política de seguridad formalmente aprobada por el órgano competente."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "podrán quedar incluidos en el ámbito subjetivo de la política de seguridad aprobada por la Administración con la que guarden relación de vinculación, dependencia o adscripción"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "cada ministerio contará con su política de seguridad, que aprobará la persona titular del Departamento."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "Los municipios podrán disponer de una política de seguridad común elaborada por la entidad local comarcal o provincial"
+      }
+     ]
+    },
+    {
+     "text": "**Requisitos mínimos** (art. 12.6 y 12.7), exigibles **en proporción a los riesgos**: organización e implantación del proceso de seguridad; análisis y gestión de riesgos; gestión de personal; profesionalidad; autorización y control de accesos; protección de instalaciones; adquisición de productos y servicios de seguridad; **mínimo privilegio**; integridad y actualización; protección de la información almacenada y en tránsito; prevención ante sistemas interconectados; registro de actividad y detección de código dañino; incidentes; continuidad; y **mejora continua**.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "a) Organización e implantación del proceso de seguridad."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "h) Mínimo privilegio."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "l) Registro de la actividad y detección de código dañino."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "ñ) Mejora continua del proceso de seguridad."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-4",
+       "quote": "Los requisitos mínimos se exigirán en proporción a los riesgos identificados en cada sistema"
+      }
+     ]
+    },
+    {
+     "text": "**Funciones** (art. 13): el responsable de la **información** fija los requisitos de la información; el del **servicio**, los del servicio; el de **seguridad** decide cómo satisfacer los requisitos de seguridad y supervisa; el del **sistema** implanta la seguridad y supervisa la operación diaria. El de **seguridad** es **distinto** del del **sistema** y **sin dependencia jerárquica** (salvo excepción con medidas compensatorias).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-5",
+       "quote": "a) El responsable de la información determinará los requisitos de la información tratada"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-5",
+       "quote": "b) El responsable del servicio determinará los requisitos de los servicios prestados."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-5",
+       "quote": "c) El responsable de la seguridad determinará las decisiones para satisfacer los requisitos de seguridad"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-5",
+       "quote": "se encargará de desarrollar la forma concreta de implementar la seguridad en el sistema y de la supervisión de la operación diaria del mismo"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-5",
+       "quote": "El responsable de la seguridad será distinto del responsable del sistema, no debiendo existir dependencia jerárquica entre ambos."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-5",
+       "quote": "deberán aplicarse medidas compensatorias"
+      }
+     ]
+    },
+    {
+     "text": "En los servicios **externalizados**, el prestador designa un **POC** (punto o persona de contacto) para la seguridad (art. 13.5). Cada organización hace su **propia gestión de riesgos** con una **metodología reconocida internacionalmente** (art. 14).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-5",
+       "quote": "deberá designar un POC (Punto o Persona de Contacto) para la seguridad de la información"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-6",
+       "quote": "Cada organización que desarrolle e implante sistemas para el tratamiento de la información o la prestación de servicios realizará su propia gestión de riesgos."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a1-6",
+       "quote": "se empleará alguna metodología reconocida internacionalmente."
+      }
+     ]
+    },
+    {
+     "text": "Las medidas del anexo II son **mínimos ampliables** por el responsable de la seguridad; las seleccionadas se recogen en la **Declaración de Aplicabilidad**, firmada por él, y pueden sustituirse por **medidas compensatorias** justificadas (art. 28).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a2-10",
+       "quote": "tendrán la condición de mínimos exigibles, siendo ampliables a criterio del responsable de la seguridad"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a2-10",
+       "quote": "se formalizará en un documento denominado Declaración de Aplicabilidad, firmado por el responsable de la seguridad."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a2-10",
+       "quote": "podrán ser reemplazadas por otras compensatorias"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ENS: dimensiones, categorías y medidas",
+   "points": [
+    {
+     "text": "**Dimensiones de la seguridad** (anexo I): **Confidencialidad [C]**, **Integridad [I]**, **Trazabilidad [T]**, **Autenticidad [A]** y **Disponibilidad [D]**.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "a) Confidencialidad [C]."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "b) Integridad [I]."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "c) Trazabilidad [T]."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "d) Autenticidad [A]."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "e) Disponibilidad [D]."
+      }
+     ]
+    },
+    {
+     "text": "Definiciones (anexo IV): **confidencialidad**, la información no se revela a no autorizados; **integridad**, no ha sido **alterada** sin autorización; **trazabilidad**, las actuaciones de una entidad pueden **trazarse de forma indiscutible** hasta ella; **autenticidad**, una entidad es **quien dice ser** o se garantiza la fuente; **disponibilidad**, los autorizados acceden **cuando lo requieren**.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-4",
+       "quote": "propiedad o característica consistente en que la información ni se pone a disposición, ni se revela a individuos, entidades o procesos no autorizados."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-4",
+       "quote": "propiedad o característica consistente en que el activo de información no ha sido alterado de manera no autorizada."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-4",
+       "quote": "propiedad o característica consistente en que las actuaciones de una entidad (persona o proceso) pueden ser trazadas de forma indiscutible hasta dicha entidad."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-4",
+       "quote": "propiedad o característica consistente en que una entidad es quien dice ser o bien que garantiza la fuente de la que proceden los datos."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-4",
+       "quote": "propiedad o característica de los activos consistente en que las entidades o procesos autorizados tienen acceso a los mismos cuando lo requieren."
+      }
+     ]
+    },
+    {
+     "text": "Cada dimensión afectada tiene un **nivel**: **BAJO** (perjuicio **limitado**), **MEDIO** (perjuicio **grave**) o **ALTO** (perjuicio **muy grave**). Si el sistema trata varias informaciones o servicios, en cada dimensión vale el **mayor** nivel.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "Cada dimensión de seguridad afectada se adscribirá a uno de los siguientes niveles de seguridad: BAJO, MEDIO o ALTO."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "supongan un perjuicio limitado sobre las funciones de la organización"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "supongan un perjuicio grave sobre las funciones de la organización"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "supongan un perjuicio muy grave sobre las funciones de la organización"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "el nivel de seguridad del sistema en cada dimensión será el mayor de los establecidos para cada información y cada servicio."
+      }
+     ]
+    },
+    {
+     "text": "**Categoría del sistema**: **ALTA** si alguna dimensión es de nivel ALTO; **MEDIA** si alguna es MEDIO y ninguna superior; **BÁSICA** si alguna es BAJO y ninguna superior. Se **reevalúa anualmente** o ante cambios significativos (anexo I).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "a) Un sistema de información será de categoría ALTA si alguna de sus dimensiones de seguridad alcanza el nivel de seguridad ALTO."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "b) Un sistema de información será de categoría MEDIA si alguna de sus dimensiones de seguridad alcanza el nivel de seguridad MEDIO, y ninguna alcanza un nivel de seguridad superior."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "c) Un sistema de información será de categoría BÁSICA si alguna de sus dimensiones de seguridad alcanza el nivel BAJO, y ninguna alcanza un nivel superior."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai",
+       "quote": "Anualmente, o siempre que se produzcan modificaciones significativas en los citados criterios de determinación, deberá re-evaluarse la categoría"
+      }
+     ]
+    },
+    {
+     "text": "Las **medidas de seguridad** (anexo II) se agrupan en: **marco organizativo [org]** (organización global de la seguridad), **marco operacional [op]** (proteger la operación del sistema) y **medidas de protección [mp]** (proteger activos concretos).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "a) Marco organizativo [org]. Constituido por el conjunto de medidas relacionadas con la organización global de la seguridad."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "b) Marco operacional [op]. Formado por las medidas a tomar para proteger la operación del sistema como conjunto integral de componentes para un fin."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "c) Medidas de protección [mp]. Se centran en proteger activos concretos"
+      }
+     ]
+    },
+    {
+     "text": "Algunas medidas dependen de la **categoría** y otras de una **dimensión** concreta. Ejemplos de la tabla:",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "Medidas de Seguridad | Por categoría o dimensión(es)"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Trazabilidad [T]**: **registro de la actividad** (op.exp.8) y **sellos de tiempo** (mp.info.4, solo nivel alto).",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "op.exp.8 | Registro de la actividad | T"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.info.4 | Sellos de tiempo | T | n.a. | n.a. | aplica"
+        }
+       ]
+      },
+      {
+       "text": "**Disponibilidad [D]**: dimensionamiento de la capacidad, **análisis de impacto**, plan de continuidad, pruebas periódicas, medios alternativos, energía eléctrica, incendios, inundaciones, **copias de seguridad** y **protección frente a denegación de servicio**.",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.s.4 | Protección frente a denegación de servicio | D"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "op.pl.4 | Dimensionamiento/gestión de la capacidad | D"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.if.6 | Protección frente a inundaciones | D"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "op.cont.1 | Análisis de impacto | D"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "op.cont.2 | Plan de continuidad | D"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.if.5 | Protección frente a incendios | D"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.info.6 | Copias de seguridad | D"
+        }
+       ]
+      },
+      {
+       "text": "**Confidencialidad [C]**: protección de la confidencialidad de las comunicaciones, otros dispositivos conectados a la red, **marcado de soportes**, **borrado y destrucción**, calificación de la información y limpieza de documentos; la **criptografía** (mp.si.2) afecta a **C e I**.",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.eq.4 | Otros dispositivos conectados a la red | C"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.com.2 | Protección de la confidencialidad | C"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.si.1 | Marcado de soportes | C"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.si.5 | Borrado y destrucción | C"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.si.2 | Criptografía | C I"
+        }
+       ]
+      },
+      {
+       "text": "**Autenticidad [A]**: **bloqueo de puesto de trabajo** (mp.eq.2); la **firma electrónica** (mp.info.3) afecta a **I y A**; la **identificación** (op.acc.1), a **T y A**.",
+       "refs": [
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.eq.2 | Bloqueo de puesto de trabajo | A"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "mp.info.3 | Firma electrónica | I A"
+        },
+        {
+         "law": "BOE-A-2022-7191",
+         "section": "ai-2",
+         "quote": "op.acc.1 | Identificación | T A"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "ENS: auditoría, conformidad e incidentes",
+   "points": [
+    {
+     "text": "**Auditoría** ordinaria **al menos cada dos años** (prorrogable **tres meses** por fuerza mayor) y **extraordinaria** ante **modificaciones sustanciales**, que reinicia el cómputo. El informe va al responsable del **sistema** y al de **seguridad**; en categoría **ALTA**, el del sistema puede **suspender** el servicio hasta subsanar deficiencias graves (art. 31).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-3",
+       "quote": "serán objeto de una auditoría regular ordinaria, al menos cada dos años"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-3",
+       "quote": "podrá extenderse durante tres meses cuando concurran impedimentos de fuerza mayor"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-3",
+       "quote": "deberá realizarse dicha auditoría siempre que se produzcan modificaciones sustanciales en los sistemas de información"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-3",
+       "quote": "Los informes de auditoría serán presentados al responsable del sistema y al responsable de la seguridad."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-3",
+       "quote": "En el caso de los sistemas de categoría ALTA"
+      }
+     ]
+    },
+    {
+     "text": "**Conformidad** (art. 38): las categorías **MEDIA o ALTA** necesitan una **auditoría de certificación**; la **BÁSICA**, solo una **autoevaluación** para su **declaración** de conformidad. Las declaraciones y certificaciones se **publican** en los portales o sedes.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-10",
+       "quote": "los sistemas de categoría MEDIA o ALTA precisarán de una auditoría para la certificación de su conformidad"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-10",
+       "quote": "los sistemas de categoría BÁSICA solo requerirán de una autoevaluación para su declaración de la conformidad"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-10",
+       "quote": "darán publicidad, en los correspondientes portales de internet o sedes electrónicas a las declaraciones y certificaciones de conformidad con el ENS"
+      }
+     ]
+    },
+    {
+     "text": "**Incidentes** (art. 33): el **CCN** articula la respuesta mediante el **CCN-CERT**; las entidades del sector público le notifican los incidentes con **impacto significativo**, y el CCN coordina los **CSIRT** del sector público. Los prestadores **privados** notifican al **INCIBE-CERT**.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-5",
+       "quote": "El CCN articulará la respuesta a los incidentes de seguridad en torno a la estructura denominada CCN-CERT"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-5",
+       "quote": "las entidades del sector público notificarán al CCN aquellos incidentes que tengan un impacto significativo"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-5",
+       "quote": "el CCN ejercerá la coordinación nacional de la respuesta técnica de los equipos de respuesta a incidentes de seguridad informática"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "a3-5",
+       "quote": "Las organizaciones del sector privado que presten servicios a las entidades públicas notificarán al INCIBE-CERT"
+      }
+     ]
+    },
+    {
+     "text": "Glosario (anexo IV): **incidente de seguridad**, suceso inesperado o no deseado en detrimento de la seguridad de redes y sistemas; **compromiso de la seguridad**, incidente en que, por violarse las medidas, una información o servicio queda **expuesto a un acceso no autorizado**; **ciberataque**, conducta **dolosa** a través del ciberespacio contra sistemas.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-4",
+       "quote": "suceso inesperado o no deseado con consecuencias en detrimento de la seguridad de las redes y sistemas de información."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-4",
+       "quote": "incidente de seguridad en el que, debido a una violación de las medidas técnicas u organizativas de seguridad, una información o un servicio quedan expuestos, o potencialmente expuestos, a un acceso no autorizado."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-4",
+       "quote": "cualquier conducta dolosa de individuos u organizaciones, conocidos o no, desarrollada a través del ciberespacio contra sistemas de información"
+      }
+     ]
+    },
+    {
+     "text": "Los sistemas **preexistentes** tenían **24 meses** para adecuarse; los **nuevos** aplican el ENS **desde su concepción** (disp. trans. única).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "dt",
+       "quote": "dispondrán de veinticuatro meses para alcanzar su plena adecuación al ENS"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "dt",
+       "quote": "Los nuevos sistemas de información aplicarán lo establecido en este real decreto desde su concepción."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Esquema Nacional de Interoperabilidad (RD 4/2010)",
+   "points": [
+    {
+     "text": "El **ENI** (Real Decreto 4/2010, de 8 de enero) comprende los criterios y recomendaciones de **seguridad, normalización y conservación** para una interoperabilidad **organizativa, semántica y técnica** y para **evitar la discriminación** de los ciudadanos **por su elección tecnológica** (art. 1). **Prevalece** sobre cualquier otro criterio de política de interoperabilidad (art. 3.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a1",
+       "quote": "para asegurar un adecuado nivel de interoperabilidad organizativa, semántica y técnica de los datos, informaciones y servicios"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a1",
+       "quote": "para evitar la discriminación a los ciudadanos por razón de su elección tecnológica."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a3",
+       "quote": "prevalecerán sobre cualquier otro criterio en materia de política de interoperabilidad"
+      }
+     ]
+    },
+    {
+     "text": "**Principios específicos** (art. 4): la interoperabilidad como **cualidad integral** (desde la concepción y en todo el ciclo de vida); su **carácter multidimensional** (dimensiones **organizativa, semántica y técnica**, y la **temporal**); y el **enfoque de soluciones multilaterales** (compartir, reutilizar, colaborar).",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a4",
+       "quote": "a) La interoperabilidad como cualidad integral."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a4",
+       "quote": "b) Carácter multidimensional de la interoperabilidad."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a4",
+       "quote": "c) Enfoque de soluciones multilaterales."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a6",
+       "quote": "La interoperabilidad se entenderá contemplando sus dimensiones organizativa, semántica y técnica."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a6",
+       "quote": "Todo ello sin olvidar la dimensión temporal"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a7",
+       "quote": "de compartir, de reutilizar y de colaborar."
+      }
+     ]
+    },
+    {
+     "text": "**Organizativa**: las Administraciones publican las condiciones de acceso a sus servicios y pueden usar **nodos de interoperabilidad** (art. 8); mantienen **inventarios** de procedimientos y servicios (conectados al **Sistema de Información Administrativa**) y de órganos y oficinas (conectados al **Directorio Común de Unidades Orgánicas y Oficinas**) (art. 9). **Semántica**: **modelos de datos** publicados en el **Centro de Interoperabilidad Semántica** (art. 10).",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a8",
+       "quote": "podrán utilizar nodos de interoperabilidad"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a9",
+       "quote": "con el Sistema de Información Administrativa"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a9",
+       "quote": "con el Directorio Común de Unidades Orgánicas y Oficinas"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a10",
+       "quote": "a través del Centro de Interoperabilidad Semántica de la Administración"
+      }
+     ]
+    },
+    {
+     "text": "**Técnica**: se usan **estándares abiertos** y, de forma complementaria, los de **uso generalizado**; los servicios se ofrecen **como mínimo** con estándares abiertos, y un estándar **no abierto** en exclusiva solo cabe si **no hay** uno abierto equivalente y **solo mientras** no exista (art. 11).",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a11",
+       "quote": "Las Administraciones públicas usarán estándares abiertos, así como, en su caso y de forma complementaria, estándares que sean de uso generalizado por los ciudadanos"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a11",
+       "quote": "se encontrarán, como mínimo, disponibles mediante estándares abiertos."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a11",
+       "quote": "y sólo mientras dicha disponibilidad no se produzca."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a11",
+       "quote": "se limitará a aquellas circunstancias en las que no se disponga de un estándar abierto"
+      }
+     ]
+    },
+    {
+     "text": "Las Administraciones se comunican preferentemente por la **Red de comunicaciones de las Administraciones públicas españolas**, que presta la **Red SARA** (art. 13). Los sistemas se **sincronizan con la hora oficial** del **Real Instituto y Observatorio de la Armada** (art. 15).",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a13",
+       "quote": "utilizarán preferentemente la Red de comunicaciones de las Administraciones públicas españolas para comunicarse entre sí"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a13",
+       "quote": "La Red SARA prestará la citada Red de comunicaciones de las Administraciones públicas españolas."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a15",
+       "quote": "La sincronización de la fecha y la hora se realizará con el Real Instituto y Observatorio de la Armada"
+      }
+     ]
+    },
+    {
+     "text": "**Licencias** (art. 16): las aplicaciones se ceden **por defecto sin contraprestación** ni convenio; las de **fuentes abiertas** deben poder **ejecutarse para cualquier propósito**, **conocer su código**, **modificarse** y **redistribuirse**; se procura la **Licencia Pública de la Unión Europea**. La AGE mantiene el **directorio general de aplicaciones** en el **Centro de Transferencia de Tecnología** (art. 17).",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a16",
+       "quote": "El licenciamiento se realizará por defecto sin contraprestación y sin necesidad de establecer convenio alguno."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a16",
+       "quote": "a) Pueden ejecutarse para cualquier propósito."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a16",
+       "quote": "b) Permiten conocer su código fuente."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a16",
+       "quote": "c) Pueden modificarse o mejorarse."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a16",
+       "quote": "d) Pueden redistribuirse a otros usuarios con o sin cambios siempre que la obra derivada mantenga estas cuatro garantías."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a16",
+       "quote": "se procurará la aplicación de la Licencia Pública de la Unión Europea"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a17",
+       "quote": "La Administración General del Estado mantendrá el Directorio general de aplicaciones para su libre reutilización"
+      }
+     ]
+    },
+    {
+     "text": "**Firma**: la AGE define una **política de firma electrónica y de certificados**, marco general de interoperabilidad para el reconocimiento mutuo de firmas. Es **obligatoria para la AGE** (no aplicarla debe justificarse y lo autoriza la Secretaría General de Administración Digital). Las demás Administraciones **pueden acogerse** a ella o aprobar la suya, que parte de la NTI y debe ser **interoperable con la política marco** (art. 18). Las **plataformas de validación** de certificados y firmas ofrecen todo en **un único punto de llamada** (art. 20).",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a18",
+       "quote": "La Administración General del Estado definirá una política de firma electrónica y de certificados que servirá de marco general de interoperabilidad"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a18",
+       "quote": "Todos los organismos y entidades de derecho público de la Administración General del Estado aplicarán la política de firma electrónica y de certificados"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a18",
+       "quote": "La no aplicación de dicha política deberá ser justificada por el órgano u organismo competente y autorizada por la Secretaría General de Administración Digital."
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a18",
+       "quote": "partirán de la norma técnica establecida a tal efecto"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a18",
+       "quote": "Las restantes Administraciones Públicas podrán acogerse a la política de firma electrónica y de certificados"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a18",
+       "quote": "deberán ser interoperables con la política marco de firma electrónica"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a20",
+       "quote": "Proporcionarán, en un único punto de llamada"
+      }
+     ]
+    },
+    {
+     "text": "**Conservación** (arts. 21 a 24): política de **gestión de documentos**, **índice electrónico firmado** en los expedientes, **metadatos**, plan de **clasificación**, plazos de conservación y **repositorios electrónicos**; conservar en el formato original y preferentemente en **estándar abierto**, con copiado auténtico si hay **obsolescencia**; la **digitalización** sigue su NTI.",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a21",
+       "quote": "a) La definición de una política de gestión de documentos"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a21",
+       "quote": "b) La inclusión en los expedientes de un índice electrónico firmado por el órgano o entidad actuante"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a21",
+       "quote": "las Administraciones públicas crearán repositorios electrónicos"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a23",
+       "quote": "el documento se conservará en el formato en que haya sido elaborado, enviado o recibido, y preferentemente en un formato correspondiente a un estándar abierto"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "a23",
+       "quote": "Cuando exista riesgo de obsolescencia del formato"
+      }
+     ]
+    },
+    {
+     "text": "La **Guía de auditoría de cumplimiento del ENI** (DTIC, 2016) ayuda a demostrar la conformidad con el ENI. Agrupa sus controles en **tres categorías**:",
+     "refs": [
+      {
+       "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+       "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+       "quote": "El objetivo de esta Guía es proporcionar un instrumento que facilite que se pueda realizar una valoración del cumplimiento de las medidas de interoperabilidad"
+      },
+      {
+       "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+       "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+       "quote": "Esta Guía contiene un conjunto de controles apropiados para evaluar el cumplimiento de lo previsto en el ENI, agrupados en tres categorías:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Marco organizativo**: medidas **horizontales** (aspectos jurídicos, políticas, decisiones), a menudo de **gobernanza** de la interoperabilidad.",
+       "refs": [
+        {
+         "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+         "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+         "quote": "Marco organizativo, referido a aquellos controles cuyo cumplimiento exige medidas horizontales, como los aspectos jurídicos, de políticas de actuación o determinadas decisiones, frecuentemente referidas a la gobernanza de la interoperabilidad."
+        }
+       ],
+       "items": []
+      },
+      {
+       "text": "**Marco operacional**: **prácticas, procedimientos y medidas** para administrar la interoperabilidad (diseño, implementación, configuración y explotación de sistemas).",
+       "refs": [
+        {
+         "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+         "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+         "quote": "Marco operacional, referido a aquellos controles cuyo cumplimiento requiere la adopción de prácticas, procedimientos y medidas alineadas con la administración de la interoperabilidad como un conjunto"
+        }
+       ],
+       "items": []
+      },
+      {
+       "text": "**Medidas técnicas**: requisitos concretos como **formatos, vocabularios o protocolos**.",
+       "refs": [
+        {
+         "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+         "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+         "quote": "Medidas técnicas, que suponen requisitos concretos que permiten garantizar la interoperabilidad, incluyendo formatos, vocabularios o protocolos."
+        }
+       ],
+       "items": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Normas Técnicas de Interoperabilidad (NTI)",
+   "points": [
+    {
+     "text": "Las **NTI** son de **obligado cumplimiento**; las aprueba el **Ministerio para la Transformación Digital y de la Función Pública** a propuesta de la **Comisión Sectorial de Administración Electrónica** y se publican por **resolución de la Secretaría de Estado de Función Pública** (disp. adic. 1.ª ENI). Entre ellas:",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "daprimera",
+       "quote": "Se desarrollarán las siguientes normas técnicas de interoperabilidad que serán de obligado cumplimiento por parte de las Administraciones Públicas:"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "daprimera",
+       "quote": "El Ministerio para la Transformación Digital y de la Función Pública, a propuesta de la Comisión Sectorial de Administración Electrónica"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "daprimera",
+       "quote": "las publicará mediante Resolución de la persona titular de la Secretaría de Estado de Función Pública."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Catálogo de estándares**, **Documento electrónico**, **Digitalización de documentos**, **Expediente electrónico** y **Política de firma electrónica y de certificados**.",
+       "refs": [
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "a) Norma Técnica de Catálogo de estándares"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "b) Norma Técnica de Documento electrónico"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "c) Norma Técnica de Digitalización de documentos"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "d) Norma Técnica de Expediente electrónico"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "e) Norma Técnica de Política de firma electrónica y de certificados de la Administración"
+        }
+       ]
+      },
+      {
+       "text": "**Protocolos de intermediación de datos**, **Relación de modelos de datos**, **Política de gestión de documentos electrónicos**, **Requisitos de conexión a la Red** de las Administraciones y **Procedimientos de copiado auténtico y conversión**.",
+       "refs": [
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "f) Norma Técnica de Protocolos de intermediación de datos"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "g) Norma Técnica de Relación de modelos de datos"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "h) Norma Técnica de Política de gestión de documentos electrónicos"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "i) Norma Técnica de Requisitos de conexión a la Red de comunicaciones de las Administraciones Públicas españolas."
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "j) Norma Técnica de Procedimientos de copiado auténtico y conversión"
+        }
+       ]
+      },
+      {
+       "text": "**Modelo de Datos para el intercambio de asientos entre las Entidades Registrales**, **Reutilización de recursos de información**, y otras más recientes (inventario y codificación de objetos administrativos, transferencia, valoración y eliminación, preservación, plan de direccionamiento, registros de funcionarios habilitados y de apoderamientos, etc.).",
+       "refs": [
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "k) Norma Técnica de Modelo de Datos para el intercambio de asientos entre las Entidades Registrales"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "l) Norma Técnica de Reutilización de recursos de información"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "m) Norma Técnica de interoperabilidad de inventario y codificación de objetos administrativos"
+        },
+        {
+         "law": "BOE-A-2010-1331",
+         "section": "daprimera",
+         "quote": "q) Norma Técnica de Interoperabilidad de Plan de Direccionamiento"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "El ENI también prevé como instrumentos el **Sistema de Información Administrativa**, el **Centro de Interoperabilidad Semántica**, el **Centro de Transferencia de Tecnología** y el **Directorio Común de Unidades Orgánicas y Oficinas** (disp. adic. 1.ª.4). En **ciberseguridad y criptografía**, el órgano competente es el **Centro Criptológico Nacional**, adscrito al **CNI**.",
+     "refs": [
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "daprimera",
+       "quote": "a) Sistema de Información Administrativa:"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "daprimera",
+       "quote": "b) Centro de interoperabilidad semántica de la Administración:"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "daprimera",
+       "quote": "c) Centro de Transferencia de Tecnología:"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "daprimera",
+       "quote": "d) Directorio Común de Unidades Orgánicas y Oficinas de las Administraciones Públicas:"
+      },
+      {
+       "law": "BOE-A-2010-1331",
+       "section": "daprimera",
+       "quote": "el órgano competente será el Centro Criptológico Nacional, adscrito al Centro Nacional de Inteligencia."
+      }
+     ]
+    },
+    {
+     "text": "**NTI de Documento electrónico**: componentes **contenido**, **firma** (en su caso) y **metadatos**. Los documentos administrativos llevan **al menos una firma**. Los **metadatos mínimos obligatorios** están en todo intercambio y **no se modifican** después (salvo corrección de errores).",
+     "refs": [
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "iii",
+       "quote": "a) Contenido, entendido como conjunto de datos o información del documento."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "iii",
+       "quote": "b) En su caso, firma electrónica."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "iii",
+       "quote": "c) Metadatos del documento electrónico."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "iv",
+       "quote": "tendrán siempre asociada al menos una firma electrónica"
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "v",
+       "quote": "No serán modificados en ninguna fase posterior del procedimiento administrativo, a excepción de modificaciones necesarias para la corrección de errores u omisiones"
+      }
+     ]
+    },
+    {
+     "text": "Los **metadatos mínimos obligatorios** del documento electrónico (anexo I de la NTI) incluyen, entre otros, el **Identificador**, el **Órgano**, la **Fecha de captura**, el **Origen** (ciudadano o Administración), el **Estado de elaboración**, el **Nombre de formato**, el **Tipo documental** y el **Tipo de firma**.",
+     "refs": [
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "ani",
+       "quote": "Identificador | Identificador normalizado del documento."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "ani",
+       "quote": "Órgano | Identificador normalizado de la administración generadora del documento"
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "ani",
+       "quote": "Fecha de captura | Fecha de alta del documento en el sistema de gestión documental."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "ani",
+       "quote": "Origen | Indica si el contenido del documento fue creado por un ciudadano o por una administración."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "ani",
+       "quote": "Estado de elaboración | Indica la naturaleza del documento."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "ani",
+       "quote": "Nombre de formato | Formato lógico del fichero de contenido del documento electrónico."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "ani",
+       "quote": "Tipo documental | Descripción del tipo documental del documento."
+      },
+      {
+       "law": "BOE-A-2011-13169",
+       "section": "ani",
+       "quote": "Tipo de firma | Indica el tipo de firma que avala el documento."
+      }
+     ]
+    },
+    {
+     "text": "**NTI de Digitalización**: el documento digitalizado lleva la **imagen electrónica**, los **metadatos** y, si procede, **firma**; la resolución mínima es de **200 píxeles por pulgada** (blanco y negro, color o grises) y la imagen debe ser **fiel** (geometría, sin añadidos).",
+     "refs": [
+      {
+       "law": "BOE-A-2011-13168",
+       "section": "ii-2",
+       "quote": "a) La imagen electrónica que representará el aspecto y contenido del documento en el soporte origen"
+      },
+      {
+       "law": "BOE-A-2011-13168",
+       "section": "iv",
+       "quote": "El nivel de resolución mínimo para imágenes electrónicas será de 200 píxeles por pulgada, tanto para imágenes obtenidas en blanco y negro, color o escala de grises."
+      },
+      {
+       "law": "BOE-A-2011-13168",
+       "section": "iv",
+       "quote": "a) Respetará la geometría del documento origen en tamaños y proporciones."
+      },
+      {
+       "law": "BOE-A-2011-13168",
+       "section": "iv",
+       "quote": "b) No contendrá caracteres o gráficos que no figurasen en el documento origen."
+      }
+     ]
+    },
+    {
+     "text": "**NTI de Protocolos de intermediación de datos**: la plataforma de intermediación del Ministerio (en el texto, de Hacienda y Administraciones Públicas) funciona como **nodo de interoperabilidad**, **no almacena información personal** ni el **contenido** de los intercambios y funciona **24x7**. **Emisores y Requirentes mantienen la trazabilidad** de los intercambios (la plataforma conserva los datos de trazabilidad acordados para auditorías). Se usan **estándares abiertos** del Catálogo, **pueden** usarse **servicios web** y, con carácter general, el protocolo **SCSP versión 3.0** (Sustitución de Certificados en Soporte Papel).",
+     "refs": [
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "El Ministerio de Hacienda y Administraciones Públicas funcionará como un nodo de interoperabilidad"
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "no almacenará información sobre el contenido del intercambio"
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "Emisores y Requirentes mantendrán trazabilidad de los intercambios de datos producidos"
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "De forma general en servicios de intercambio se utilizará la versión 3.0 del protocolo SCSP (Sustitución de Certificados en Soporte Papel)"
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "funcionará como un nodo de interoperabilidad"
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "b) No almacenará información personal de ningún ciudadano derivada de cualquier transacción de intercambio de datos."
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "e) Mantendrá el sistema en funcionamiento 24x7."
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "conservando los datos de trazabilidad"
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "se implementarán en base a estándares abiertos e interoperables según lo establecido en la Norma Técnica de Interoperabilidad de Catálogo de estándares."
+      },
+      {
+       "law": "BOE-A-2012-10049",
+       "section": "ii-2",
+       "quote": "Los intercambios de información se podrán implementar a través de servicios web"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

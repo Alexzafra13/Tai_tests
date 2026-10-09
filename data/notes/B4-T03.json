@@ -1,0 +1,430 @@
+{
+ "topic": "B4-T03",
+ "sections": [
+  {
+   "title": "Correo electrónico: protocolos",
+   "points": [
+    {
+     "text": "**SMTP** (*Simple Mail Transfer Protocol*) **transporta y entrega** el correo, y también se usa para **enviarlo** desde el cliente del usuario a su servidor. El correo puede pasar por varios servidores (*relay*) hasta el destino.",
+     "refs": [
+      {
+       "title": "RFC 5321 · Simple Mail Transfer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc5321.txt",
+       "quote": "The objective of the Simple Mail Transfer Protocol (SMTP) is to transfer mail reliably and efficiently."
+      },
+      {
+       "title": "RFC 5321 · Simple Mail Transfer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc5321.txt",
+       "quote": "Although SMTP was designed as a mail transport and delivery protocol, this specification also contains information that is important to its use as a \"mail submission\" protocol for \"split-UA\" (User Agent) mail reading systems and mobile environments."
+      },
+      {
+       "title": "RFC 5321 · Simple Mail Transfer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc5321.txt",
+       "quote": "A very common case in the Internet today involves submission of the original message to an intermediate, \"message submission\" server"
+      },
+      {
+       "title": "RFC 5321 · Simple Mail Transfer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc5321.txt",
+       "quote": "relay or gateway hosts on its path from sender to ultimate recipient."
+      }
+     ]
+    },
+    {
+     "text": "**POP3** permite a un equipo **recoger el correo** que el servidor le guarda; no está pensado para manipularlo en el servidor: lo normal es **descargarlo y borrarlo** de él.",
+     "refs": [
+      {
+       "title": "RFC 1939 · Post Office Protocol - Version 3",
+       "url": "https://www.rfc-editor.org/rfc/rfc1939.txt",
+       "quote": "Usually, this means that the POP3 protocol is used to allow a workstation to retrieve mail that the server is holding for it."
+      },
+      {
+       "title": "RFC 1939 · Post Office Protocol - Version 3",
+       "url": "https://www.rfc-editor.org/rfc/rfc1939.txt",
+       "quote": "POP3 is not intended to provide extensive manipulation operations of mail on the server; normally, mail is downloaded and then deleted."
+      }
+     ]
+    },
+    {
+     "text": "**IMAP** permite **acceder y manipular los mensajes en el servidor**: los buzones (carpetas remotas) se manejan como si fueran locales, y un cliente desconectado puede volver a sincronizarse. Por eso las carpetas y el estado se ven igual desde todos los dispositivos; con POP3 no.",
+     "refs": [
+      {
+       "title": "RFC 9051 · IMAP4rev2",
+       "url": "https://www.rfc-editor.org/rfc/rfc9051.txt",
+       "quote": "allows a client to access and manipulate electronic mail messages on a server. IMAP4rev2 permits manipulation of mailboxes (remote message folders) in a way that is functionally equivalent to local folders."
+      },
+      {
+       "title": "RFC 9051 · IMAP4rev2",
+       "url": "https://www.rfc-editor.org/rfc/rfc9051.txt",
+       "quote": "IMAP4rev2 also provides the capability for an offline client to resynchronize with the server."
+      },
+      {
+       "title": "RFC 9051 · IMAP4rev2",
+       "url": "https://www.rfc-editor.org/rfc/rfc9051.txt",
+       "quote": "concurrent and subsequent sessions will see any change in permanent flags."
+      },
+      {
+       "title": "RFC 1939 · Post Office Protocol - Version 3",
+       "url": "https://www.rfc-editor.org/rfc/rfc1939.txt",
+       "quote": "POP3 is not intended to provide extensive manipulation operations of mail on the server; normally, mail is downloaded and then deleted."
+      }
+     ]
+    },
+    {
+     "text": "En el envío de un correo: **SMTP** del cliente del remitente a su servidor y de ese servidor al del destinatario; **POP3 o IMAP** del servidor de destino al cliente del destinatario.",
+     "refs": [
+      {
+       "title": "RFC 5321 · Simple Mail Transfer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc5321.txt",
+       "quote": "Although SMTP was designed as a mail transport and delivery protocol"
+      },
+      {
+       "title": "RFC 1939 · Post Office Protocol - Version 3",
+       "url": "https://www.rfc-editor.org/rfc/rfc1939.txt",
+       "quote": "is used to allow a workstation to retrieve mail that the server is holding for it."
+      },
+      {
+       "title": "RFC 9051 · IMAP4rev2",
+       "url": "https://www.rfc-editor.org/rfc/rfc9051.txt",
+       "quote": "allows a client to access and manipulate electronic mail messages on a server."
+      }
+     ]
+    },
+    {
+     "text": "Puertos seguros (**TLS implícito**): **POP3S 995**, **IMAPS 993** y envío **SMTP (submissions) 465**.",
+     "refs": [
+      {
+       "title": "RFC 8314 · Cleartext Considered Obsolete: Use of TLS for Email Submission and Access",
+       "url": "https://www.rfc-editor.org/rfc/rfc8314.txt",
+       "quote": "When a TCP connection is established for the \"pop3s\" service (default port 995), a TLS handshake begins immediately."
+      },
+      {
+       "title": "RFC 8314 · Cleartext Considered Obsolete: Use of TLS for Email Submission and Access",
+       "url": "https://www.rfc-editor.org/rfc/rfc8314.txt",
+       "quote": "When a TCP connection is established for the \"imaps\" service (default port 993), a TLS handshake begins immediately."
+      },
+      {
+       "title": "RFC 8314 · Cleartext Considered Obsolete: Use of TLS for Email Submission and Access",
+       "url": "https://www.rfc-editor.org/rfc/rfc8314.txt",
+       "quote": "When a TCP connection is established for the \"submissions\" service (default port 465), a TLS handshake begins immediately."
+      }
+     ]
+    },
+    {
+     "text": "**DKIM** permite al dueño del dominio **firmar** los mensajes y asociar así su dominio al mensaje; la clave pública se publica en el **DNS** (registro TXT bajo `_domainkey`).",
+     "refs": [
+      {
+       "title": "RFC 6376 · DomainKeys Identified Mail (DKIM) Signatures",
+       "url": "https://www.rfc-editor.org/rfc/rfc6376.txt",
+       "quote": "DomainKeys Identified Mail (DKIM) permits a person, role, or organization that owns the signing domain to claim some responsibility for a message by associating the domain with the message."
+      },
+      {
+       "title": "RFC 6376 · DomainKeys Identified Mail (DKIM) Signatures",
+       "url": "https://www.rfc-editor.org/rfc/rfc6376.txt",
+       "quote": "Assertion of responsibility is validated through a cryptographic signature and by querying the Signer's domain directly to retrieve the appropriate public key."
+      },
+      {
+       "title": "RFC 6376 · DomainKeys Identified Mail (DKIM) Signatures",
+       "url": "https://www.rfc-editor.org/rfc/rfc6376.txt",
+       "quote": "The DNS is proposed as the initial mechanism for the public keys."
+      },
+      {
+       "title": "RFC 6376 · DomainKeys Identified Mail (DKIM) Signatures",
+       "url": "https://www.rfc-editor.org/rfc/rfc6376.txt",
+       "quote": "Currently, the only valid value is \"dns/txt\", which defines the DNS TXT resource record (RR) lookup algorithm"
+      },
+      {
+       "title": "RFC 6376 · DomainKeys Identified Mail (DKIM) Signatures",
+       "url": "https://www.rfc-editor.org/rfc/rfc6376.txt",
+       "quote": "All DKIM keys are stored in a subdomain named \"_domainkey\"."
+      }
+     ]
+    },
+    {
+     "text": "Ojo con los distractores: **SNTP** es un protocolo de **hora** (subconjunto de NTP), no de correo; y **Outlook** no es un protocolo.",
+     "refs": [
+      {
+       "title": "RFC 4330 · Simple Network Time Protocol (SNTP) Version 4",
+       "url": "https://www.rfc-editor.org/rfc/rfc4330.txt",
+       "quote": "This memorandum describes the Simple Network Time Protocol Version 4 (SNTPv4), which is a subset of the Network Time Protocol (NTP)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Administración de un servidor de correo (Postfix)",
+   "points": [
+    {
+     "text": "La configuración general de Postfix está en `main.cf`. El nombre que se envía en **HELO/EHLO** lo fija el parámetro `smtp_helo_name` (por defecto, `$myhostname`); en `main.cf` vale para **todos** los clientes SMTP y en `master.cf` para uno concreto.",
+     "refs": [
+      {
+       "title": "Postfix · postconf(5), Configuration Parameters",
+       "url": "https://www.postfix.org/postconf.5.html",
+       "quote": "The Postfix main.cf configuration file specifies a very small subset of all the parameters"
+      },
+      {
+       "title": "Postfix · postconf(5), Configuration Parameters",
+       "url": "https://www.postfix.org/postconf.5.html",
+       "quote": "smtp_helo_name (default: $ myhostname ) The hostname to send in the SMTP HELO or EHLO command."
+      },
+      {
+       "title": "Postfix · postconf(5), Configuration Parameters",
+       "url": "https://www.postfix.org/postconf.5.html",
+       "quote": "This information can be specified in the main.cf file for all SMTP clients, or it can be specified in the master.cf file for a specific client"
+      }
+     ]
+    },
+    {
+     "text": "El mensaje de bienvenida del servidor (tras el código 220) es `smtpd_banner`.",
+     "refs": [
+      {
+       "title": "Postfix · postconf(5), Configuration Parameters",
+       "url": "https://www.postfix.org/postconf.5.html",
+       "quote": "The text that follows the 220 status code in the SMTP greeting banner."
+      }
+     ]
+    },
+    {
+     "text": "Ojo: `$helo_name` no es un parámetro de `main.cf`; en postconf(5) es una variable de las plantillas de respuesta de rechazo, con el nombre recibido en HELO/EHLO.",
+     "refs": [
+      {
+       "title": "Postfix · postconf(5), Configuration Parameters",
+       "url": "https://www.postfix.org/postconf.5.html",
+       "quote": "$helo_name The hostname given in HELO or EHLO command or empty string."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Microservicios",
+   "points": [
+    {
+     "text": "Los **microservicios** son componentes pequeños, independientes y poco acoplados, que un equipo pequeño puede escribir y mantener, y que se **implementan por separado**.",
+     "refs": [
+      {
+       "title": "Azure Architecture Center · Estilo de arquitectura de microservicios",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/guide/architecture-styles/microservices",
+       "quote": "Los microservicios son componentes pequeños, independientes y de acoplamiento flexible que un único equipo pequeño de desarrolladores puede escribir y mantener."
+      },
+      {
+       "title": "Azure Architecture Center · Estilo de arquitectura de microservicios",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/guide/architecture-styles/microservices",
+       "quote": "que se pueden implementar de forma independiente y que evolucionan rápidamente."
+      }
+     ]
+    },
+    {
+     "text": "Ventajas: cada equipo **elige la tecnología** de su servicio, los **errores quedan aislados** (si un servicio cae no se cae toda la aplicación), **escalado independiente** de cada servicio y despliegue automatizado con **CI/CD**. Un «diseño único sin poder elegir tecnología» no es una ventaja.",
+     "refs": [
+      {
+       "title": "Azure Architecture Center · Estilo de arquitectura de microservicios",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/guide/architecture-styles/microservices",
+       "quote": "Combinación de tecnologías: Los equipos pueden elegir la tecnología que mejor se adapte a su servicio mediante una combinación de conjuntos tecnológicos según corresponda."
+      },
+      {
+       "title": "Azure Architecture Center · Estilo de arquitectura de microservicios",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/guide/architecture-styles/microservices",
+       "quote": "Aislamiento de errores: Si un microservicio individual deja de estar disponible, no interrumpe toda la aplicación"
+      },
+      {
+       "title": "Azure Architecture Center · Estilo de arquitectura de microservicios",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/guide/architecture-styles/microservices",
+       "quote": "Escalabilidad: Los servicios se pueden escalar de forma independiente."
+      },
+      {
+       "title": "Azure Architecture Center · Estilo de arquitectura de microservicios",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/guide/architecture-styles/microservices",
+       "quote": "Use canalizaciones de integración continua e implementación continua (CI/CD) para automatizar las pruebas y la implementación."
+      }
+     ]
+    },
+    {
+     "text": "Para coordinar varios servicios (por ejemplo, en el patrón Saga) hay dos enfoques: **coreografía** (los servicios intercambian eventos **sin controlador central**) y **orquestación** (un **orquestador central** indica a cada uno qué hacer).",
+     "refs": [
+      {
+       "title": "Azure Architecture Center · Patrón de diseño saga",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/patterns/saga",
+       "quote": "Los dos enfoques típicos de implementación de saga son coreografía y orquestación ."
+      },
+      {
+       "title": "Azure Architecture Center · Patrón de diseño saga",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/patterns/saga",
+       "quote": "En el enfoque de coreografía, los servicios intercambian eventos sin un controlador centralizado."
+      },
+      {
+       "title": "Azure Architecture Center · Patrón de diseño saga",
+       "url": "https://learn.microsoft.com/es-es/azure/architecture/patterns/saga",
+       "quote": "En orquestación, un controlador centralizado o orquestador , controla todas las transacciones e indica a los participantes qué operación realizar en función de los eventos."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Contenedores: Docker y otras tecnologías",
+   "points": [
+    {
+     "text": "`docker run` (alias de `docker container run`) **crea y arranca** un contenedor nuevo a partir de una imagen, **descargándola si hace falta**, y ejecuta en él un comando. `docker start` arranca un contenedor ya existente que esté parado.",
+     "refs": [
+      {
+       "title": "Docker Docs · docker container run",
+       "url": "https://docs.docker.com/reference/cli/docker/container/run/",
+       "quote": "Create and run a new container from an image"
+      },
+      {
+       "title": "Docker Docs · docker container run",
+       "url": "https://docs.docker.com/reference/cli/docker/container/run/",
+       "quote": "Aliases An alias is a short or memorable alternative for a longer command. docker run"
+      },
+      {
+       "title": "Docker Docs · docker container run",
+       "url": "https://docs.docker.com/reference/cli/docker/container/run/",
+       "quote": "The docker run command runs a command in a new container, pulling the image if needed and starting the container."
+      },
+      {
+       "title": "Docker Docs · docker container run",
+       "url": "https://docs.docker.com/reference/cli/docker/container/run/",
+       "quote": "You can restart a stopped container with all its previous changes intact using docker start ."
+      }
+     ]
+    },
+    {
+     "text": "`docker ps -a` lista **todos** los contenedores, también los parados (sin `-a`, solo los que están en marcha).",
+     "refs": [
+      {
+       "title": "Docker Docs · docker container ls",
+       "url": "https://docs.docker.com/reference/cli/docker/container/ls/",
+       "quote": "-a, --all Show all containers (default shows just running)"
+      },
+      {
+       "title": "Docker Docs · docker container run",
+       "url": "https://docs.docker.com/reference/cli/docker/container/run/",
+       "quote": "Use docker ps -a to view a list of all containers, including those that are stopped."
+      }
+     ]
+    },
+    {
+     "text": "`docker info` muestra información **de todo el sistema** sobre la instalación de Docker: versión del kernel, número de contenedores e imágenes…",
+     "refs": [
+      {
+       "title": "Docker Docs · docker system info",
+       "url": "https://docs.docker.com/reference/cli/docker/system/info/",
+       "quote": "This command displays system wide information regarding the Docker installation. Information displayed includes the kernel version, number of containers and images."
+      }
+     ]
+    },
+    {
+     "text": "`docker kill` **mata** contenedores en marcha: envía `SIGKILL` (por defecto) al proceso principal. Se puede indicar el contenedor por su ID, un **prefijo del ID** o su nombre: `docker kill 3f7`.",
+     "refs": [
+      {
+       "title": "Docker Docs · docker container kill",
+       "url": "https://docs.docker.com/reference/cli/docker/container/kill/",
+       "quote": "Kill one or more running containers"
+      },
+      {
+       "title": "Docker Docs · docker container kill",
+       "url": "https://docs.docker.com/reference/cli/docker/container/kill/",
+       "quote": "The main process inside the container is sent SIGKILL signal (default), or the signal that is specified with the --signal option. You can reference a container by its ID, ID-prefix, or name."
+      }
+     ]
+    },
+    {
+     "text": "Otras tecnologías de contenedores: **containerd** (entorno de ejecución de contenedores estándar de la industria), **Podman** (herramienta sin demonio para ejecutar contenedores OCI) y **LXC** (interfaz para las funciones de aislamiento del kernel Linux: algo entre un `chroot` y una máquina virtual completa, sin kernel propio).",
+     "refs": [
+      {
+       "title": "containerd",
+       "url": "https://containerd.io/",
+       "quote": "An industry-standard container runtime with an emphasis on simplicity, robustness and portability"
+      },
+      {
+       "title": "Podman documentation · What is Podman?",
+       "url": "https://docs.podman.io/en/latest/",
+       "quote": "Podman is a daemonless, open source, Linux native tool designed to make it easy to find, run, build, share and deploy applications using Open Containers Initiative ( OCI ) Containers and Container Images ."
+      },
+      {
+       "title": "Linux Containers · LXC Introduction",
+       "url": "https://linuxcontainers.org/lxc/introduction/",
+       "quote": "LXC is a userspace interface for the Linux kernel containment features."
+      },
+      {
+       "title": "Linux Containers · LXC Introduction",
+       "url": "https://linuxcontainers.org/lxc/introduction/",
+       "quote": "LXC containers are often considered as something in the middle between a chroot and a full fledged virtual machine."
+      },
+      {
+       "title": "Linux Containers · LXC Introduction",
+       "url": "https://linuxcontainers.org/lxc/introduction/",
+       "quote": "The goal of LXC is to create an environment as close as possible to a standard Linux installation but without the need for a separate kernel."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Kubernetes",
+   "points": [
+    {
+     "text": "**Kubernetes** es una plataforma portable y extensible de código abierto para **administrar cargas de trabajo y servicios** en contenedores. No es un PaaS convencional y **no provee** un sistema exhaustivo de mantenimiento, administración o corrección automática de errores.",
+     "refs": [
+      {
+       "title": "Kubernetes · ¿Qué es Kubernetes?",
+       "url": "https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/",
+       "quote": "Kubernetes es una plataforma portable y extensible de código abierto para administrar cargas de trabajo y servicios."
+      },
+      {
+       "title": "Kubernetes · ¿Qué es Kubernetes?",
+       "url": "https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/",
+       "quote": "Kubernetes ofrece un entorno de administración centrado en contenedores ."
+      },
+      {
+       "title": "Kubernetes · ¿Qué es Kubernetes?",
+       "url": "https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/",
+       "quote": "Kubernetes no es una Plataforma como Servicio (PaaS) convencional."
+      },
+      {
+       "title": "Kubernetes · ¿Qué es Kubernetes?",
+       "url": "https://kubernetes.io/es/docs/concepts/overview/what-is-kubernetes/",
+       "quote": "No provee ni adopta un sistema exhaustivo de mantenimiento, administración o corrección automática de errores"
+      }
+     ]
+    },
+    {
+     "text": "Objetos **básicos**: **Pod, Service, Volume y Namespace**. Por encima están los **controladores** (ReplicaSet, Deployment, StatefulSet, DaemonSet…).",
+     "refs": [
+      {
+       "title": "Kubernetes · Conceptos",
+       "url": "https://kubernetes.io/es/docs/concepts/",
+       "quote": "Los objetos básicos de Kubernetes incluyen: Pod Service Volume Namespace"
+      },
+      {
+       "title": "Kubernetes · Conceptos",
+       "url": "https://kubernetes.io/es/docs/concepts/",
+       "quote": "Además, Kubernetes contiene abstracciónes de nivel superior llamadas Controladores. Los Controladores se basan en los objetos básicos y proporcionan funcionalidades adicionales sobre ellos. Incluyen: ReplicaSet Deployment StatefulSet DaemonSet"
+      }
+     ]
+    },
+    {
+     "text": "En la definición de un objeto, el campo `metadata` lleva los datos que lo **identifican unívocamente**: nombre, UID y espacio de nombres.",
+     "refs": [
+      {
+       "title": "Kubernetes · Objects In Kubernetes",
+       "url": "https://kubernetes.io/docs/concepts/overview/working-with-objects/",
+       "quote": "metadata - Data that helps uniquely identify the object, including a name string, UID , and optional namespace"
+      }
+     ]
+    },
+    {
+     "text": "Protocolos de un **Service**: **SCTP, TCP (por defecto) y UDP**.",
+     "refs": [
+      {
+       "title": "Kubernetes · Protocols for Services",
+       "url": "https://kubernetes.io/docs/reference/networking/service-protocols/",
+       "quote": "Kubernetes supports the following protocols with Services: SCTP TCP (the default) UDP"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

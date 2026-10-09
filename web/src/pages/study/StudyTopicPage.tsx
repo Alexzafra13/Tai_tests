@@ -32,7 +32,12 @@ export function StudyTopicPage() {
           </h3>
           {topic.note && (
             <>
-              <h3 className="study-section">Apuntes</h3>
+              <div className="study-section study-head">
+                <h3>Apuntes</h3>
+                <Link to={`/study/${topic.topic_id}/document`} className="link">
+                  Ver como documento
+                </Link>
+              </div>
               <p className="muted study-note">
                 Cada punto lleva el artículo o la página oficial que lo respalda: ábrelo para leer la cita literal. Las
                 etiquetas marcan cuántas preguntas de examen ha habido sobre ese artículo.

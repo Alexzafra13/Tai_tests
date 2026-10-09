@@ -1,0 +1,814 @@
+{
+ "topic": "B3-T04",
+ "sections": [
+  {
+   "title": "Conceptos de la orientación a objetos",
+   "points": [
+    {
+     "text": "Un **objeto** tiene **estado** y **comportamiento**: guarda su estado en **campos** (variables) y muestra su comportamiento con **métodos**. Ocultar el estado interno y obligar a interactuar a través de los métodos es la **encapsulación**, principio fundamental de la programación orientada a objetos.",
+     "refs": [
+      {
+       "title": "The Java Tutorials · ¿Qué es un objeto?",
+       "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+       "quote": "Software objects are conceptually similar to real-world objects: they too consist of state and related behavior. An object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (functions in some programming languages)."
+      },
+      {
+       "title": "The Java Tutorials · ¿Qué es un objeto?",
+       "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+       "quote": "Hiding internal state and requiring all interaction to be performed through an object's methods is known as data encapsulation — a fundamental principle of object-oriented programming."
+      }
+     ]
+    },
+    {
+     "text": "**Ventajas** de agrupar el código en objetos:",
+     "refs": [
+      {
+       "title": "The Java Tutorials · What Is an Object?",
+       "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+       "quote": "Bundling code into individual software objects provides a number of benefits, including:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Modularidad**: el código de cada objeto se escribe y mantiene por separado.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · What Is an Object?",
+         "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+         "quote": "Modularity: The source code for an object can be written and maintained independently of the source code for other objects."
+        }
+       ]
+      },
+      {
+       "text": "**Ocultación de información**: fuera solo se ven sus métodos, no su implementación.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · What Is an Object?",
+         "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+         "quote": "Information-hiding: By interacting only with an object's methods, the details of its internal implementation remain hidden from the outside world."
+        }
+       ]
+      },
+      {
+       "text": "**Reutilización** del código: se pueden usar objetos ya escritos por otros.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · What Is an Object?",
+         "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+         "quote": "Code re-use: If an object already exists (perhaps written by another software developer), you can use that object in your program."
+        }
+       ]
+      },
+      {
+       "text": "**Sustitución y depuración** más fáciles: un objeto que falla se reemplaza por otro.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · What Is an Object?",
+         "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+         "quote": "Pluggability and debugging ease: If a particular object turns out to be problematic, you can simply remove it from your application and plug in a different object as its replacement."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Una **clase** es el **plano** (blueprint) a partir del que se crean los objetos; cada objeto es una **instancia** de su clase, con **su propio estado** (sus propias variables de instancia). En Métrica v3: una clase describe un conjunto de objetos con **atributos** similares y **comportamiento común**; un objeto tiene **estado, comportamiento e identidad**.",
+     "refs": [
+      {
+       "title": "The Java Tutorials · ¿Qué es una clase?",
+       "url": "https://docs.oracle.com/javase/tutorial/java/concepts/class.html",
+       "quote": "In object-oriented terms, we say that your bicycle is an instance of the class of objects known as bicycles. A class is the blueprint from which individual objects are created."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "a new variable associated with that instance is created for every instance variable declared in that class or any of its superclasses."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Una clase describe un conjunto de objetos con propiedades (atributos) similares y un comportamiento común. Los objetos son instancias de las clases."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un objeto es una entidad que tiene un estado, un comportamiento e identidad."
+      }
+     ]
+    },
+    {
+     "text": "**Atributos**: los datos de los objetos de la clase. **Operaciones o métodos**: las funciones o procesos propios de esos objetos.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los atributos de una clase representan los datos asociados a los objetos instanciados por esa clase."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las operaciones o métodos representan las funciones o procesos propios de los objetos de una clase, caracterizando a dichos objetos."
+      }
+     ]
+    },
+    {
+     "text": "**Herencia**: una clase **incorpora atributos y métodos de otra** y añade los suyos; refleja una relación **«es_un»**. La clase de la que se hereda es la **superclase**; la que hereda, la **subclase**, que recibe su **estado y comportamiento**. La **generalización** obtiene una superclase a partir de otras; la **especialización** es la inversa. En Java cada clase tiene **una sola superclase directa** y puede implementar interfaces.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Herencia es el mecanismo que permite a una clase de objetos incorporar atributos y métodos de otra clase, añadiéndolos a los que ya posee. Con la herencia se refleja una relación “es_un” entre clases."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La clase de la cual se hereda se denomina superclase, y la que hereda subclase."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La generalización define una superclase a partir de otras."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La especialización o especificación es la operación inversa, y en ella una clase se descompone en una o varias subclases."
+      },
+      {
+       "title": "The Java Tutorials · ¿Qué es la herencia?",
+       "url": "https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html",
+       "quote": "Object-oriented programming allows classes to inherit commonly used state and behavior from other classes."
+      },
+      {
+       "title": "The Java Tutorials · ¿Qué es la herencia?",
+       "url": "https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html",
+       "quote": "In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses"
+      }
+     ]
+    },
+    {
+     "text": "**Polimorfismo**: las **subclases** pueden definir **su propio comportamiento** y a la vez compartir parte de la funcionalidad de la clase padre.",
+     "refs": [
+      {
+       "title": "The Java Tutorials · Polimorfismo",
+       "url": "https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html",
+       "quote": "Subclasses of a class can define their own unique behaviors and yet share some of the same functionality of the parent class."
+      }
+     ]
+    },
+    {
+     "text": "**Sobrecarga**: varias funciones o métodos con **el mismo nombre** en el mismo ámbito y **distintos parámetros** (tipo o número); el compilador elige cuál usar según los argumentos. En C++ se llaman **funciones sobrecargadas**, y el **tipo de retorno no cuenta** para distinguirlas. En Java, un nombre de método está **sobrecargado** si dos métodos de la clase lo comparten con firmas no equivalentes.",
+     "refs": [
+      {
+       "title": "Sobrecarga de funciones (C++) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/cpp/cpp/function-overloading",
+       "quote": "C++ permite especificar más de una función con el mismo nombre en el mismo ámbito. Estas funciones se denominan funciones sobrecargadas o sobrecargas ."
+      },
+      {
+       "title": "Sobrecarga de funciones (C++) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/cpp/cpp/function-overloading",
+       "quote": "En tiempo de compilación, el compilador elige qué sobrecarga usar en función de los tipos y el número de argumentos pasados por el autor de la llamada."
+      },
+      {
+       "title": "Sobrecarga de funciones (C++) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/cpp/cpp/function-overloading",
+       "quote": "Tipo de retorno de función"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "name but signatures that are not override-equivalent, then the method name is said to be overloaded ."
+      }
+     ]
+    },
+    {
+     "text": "**Clase abstracta**: no puede existir en la realidad pero es útil en el diseño; **no se instancia directamente**, sino en sus descendientes, y suele situarse en la jerarquía como **depósito de métodos y atributos** que heredan las subclases.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Una Clase abstracta es una clase que no puede existir en la realidad, pero que es útil conceptualmente para el diseño del modelo orientado a objetos. Las clases abstractas no son instanciables directamente sino en sus descendientes."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Una clase abstracta suele ser situada en la jerarquía de clases en una posición que le permita ser un depósito de métodos y atributos para ser compartidos o heredados por las subclases de nivel inferior."
+      }
+     ]
+    },
+    {
+     "text": "**Interfaz**: especificación de un conjunto de **operaciones** de una clase o paquete visibles desde otros; una clase que las implementa tiene con ella una relación de **realización**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Una interfaz es una especificación de la semántica de un conjunto de operaciones de una clase o paquete que son visibles desde otras clases o paquetes."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Entre una clase que implementa las operaciones que una interfaz ofrece y esa interfaz se establece una relación de realización"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Clases en Java",
+   "points": [
+    {
+     "text": "**abstract**: una clase abstracta está **incompleta** (o se considera así); es un **error de compilación** intentar **crear una instancia** de ella con `new`, pero sí se instancia una subclase suya que no sea abstracta. Una clase **no abstracta** no puede tener métodos abstractos.",
+     "refs": [
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "An abstract class is a class that is incomplete, or to be considered incomplete."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "if an attempt is made to create an instance of an abstract class using a class instance creation expression"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "A subclass of an abstract class that is not itself abstract may be instantiated"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "It is a compile-time error if a normal class that is not abstract has an abstract method."
+      }
+     ]
+    },
+    {
+     "text": "**final**: una clase final está **completa** y **no admite subclases**: es un error de compilación heredar de ella (para impedir que se herede de Ejercicio, `final class Ejercicio`). Por eso sus métodos nunca se sobrescriben. Una clase no puede ser **final y abstract** a la vez.",
+     "refs": [
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "A class can be declared final if its definition is complete and no subclasses are desired or required."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "because final classes are not allowed to have subclasses"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "It is a compile-time error if a class is declared both final and abstract"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "Because a final class never has any subclasses, the methods of a final class are never overridden"
+      }
+     ]
+    },
+    {
+     "text": "**implements**: la cláusula que, en la declaración de una clase, lista las **interfaces** (superinterfaces directas) que implementa. Salvo que la clase sea abstracta, debe implementar **todos los métodos abstractos** de esas interfaces.",
+     "refs": [
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "The optional implements clause in a class declaration specifies the direct superinterface types of the class being declared."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 8, clases",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-8.html",
+       "quote": "Unless the class being declared is abstract , all the abstract member methods of each direct superinterface must be implemented"
+      }
+     ]
+    },
+    {
+     "text": "**public**: un miembro o constructor público es accesible en **todo su paquete** y **desde cualquier otro paquete** (siempre que la propia clase sea accesible). Es la visibilidad para que otros objetos usen un atributo directamente.",
+     "refs": [
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 6, nombres y acceso",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-6.html",
+       "quote": "If the member or constructor is declared public , then access is permitted."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 6, nombres y acceso",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-6.html",
+       "quote": "A public class member or constructor is accessible throughout the package where it is declared and from any other package, provided the package in which it is declared is observable"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "UML: el lenguaje y el diagrama de clases",
+   "points": [
+    {
+     "text": "**UML** (Unified Modeling Language) es una especificación del **Object Management Group (OMG)**: un **lenguaje gráfico** para **visualizar, especificar, construir y documentar** los artefactos de los sistemas de objetos distribuidos. La versión formal más reciente es la **2.5.1**, revisión de la 2.5. No es solo estático: el diagrama de clases muestra la estructura, y los de interacción y de estados, el **comportamiento dinámico**. Métrica v3 usa su notación (de la época de UML 1.x: por eso habla de diagramas de «colaboración» y de relaciones «usa» y «extiende»).",
+     "refs": [
+      {
+       "title": "Unified Modeling Language 2.5.1 · Object Management Group",
+       "url": "https://www.omg.org/spec/UML/",
+       "quote": "A specification defining a graphical language for visualizing, specifying, constructing, and documenting the artifacts of distributed object systems."
+      },
+      {
+       "title": "Unified Modeling Language 2.5.1 · Object Management Group",
+       "url": "https://www.omg.org/spec/UML/",
+       "quote": "About the Unified Modeling Language Specification Version 2.5.1"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En el caso de desarrollos orientados a objetos se ha seguido la notación de UML."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "describir el comportamiento dinámico del sistema de información mediante el paso de mensajes entre los objetos del mismo."
+      }
+     ]
+    },
+    {
+     "text": "El **diagrama de clases** representa los **aspectos estáticos** del sistema (clases y asociaciones), **sin información temporal**; para el comportamiento en el tiempo se usa el diagrama de **transición de estados**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo principal de este modelo es la representación de los aspectos estáticos del sistema"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "pero no muestra información temporal."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "aunque para mostrarlos se puede utilizar un diagrama de transición de estados"
+      }
+     ]
+    },
+    {
+     "text": "Relaciones entre clases:",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los tipos más importantes de relaciones estáticas entre clases son los siguientes:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Asociación**: enlaces entre objetos; la más **general**. Puede llevar **rol** (nombre) y **multiplicidad** (cuántas instancias de una clase se asocian a una de la otra: uno a uno, uno a muchos o muchos a muchos). Se dibuja con una **línea continua**; si une una clase consigo misma es **reflexiva**; la **navegabilidad** se marca con una flecha sin relleno.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Asociación. Las relaciones de asociación representan un conjunto de enlaces entre objetos o instancias de clases. Es el tipo de relación más general"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Cada asociación puede presentar elementos adicionales"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Multiplicidad, que describe la cardinalidad de la relación, es decir, especifica cuántas instancias de una clase están asociadas a una instancia de la otra clase."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Los tipos de multiplicidad son: Uno a uno, uno a muchos y muchos a muchos."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Una relación de asociación se representa como una línea continua entre las clases asociadas."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "lo que se conoce como asociación reflexiva."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La navegación desde una clase a la otra se representa poniendo una flecha sin relleno en el extremo de la línea"
+        }
+       ]
+      },
+      {
+       "text": "**Multiplicidad**: un número, un rango o una colección; **n** y `*` significan **cualquier número** (p. ej. `1` o `1..*`).",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La multiplicidad puede ser un número concreto, un rango o una colección de números. La letra ‘n’ y el símbolo ‘*’ representan cualquier número."
+        }
+       ]
+      },
+      {
+       "text": "**Herencia**: **línea continua con flecha hueca** que apunta a la superclase.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Herencia: Esta relación se representa como una línea continua con una flecha hueca en el extremo que apunta a la superclase."
+        }
+       ]
+      },
+      {
+       "text": "**Agregación**: relación todo-parte (los objetos «**son parte de**» otro); **rombo hueco** en el todo.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La agregación es un tipo de relación jerárquica entre un objeto que representa la totalidad de ese objeto y las partes que lo componen."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Los objetos “son-parte-de” otro objeto completo."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Agregación: Se representa con un rombo hueco en la clase cuya instancia es una agregación de las instancias de la otra."
+        }
+       ]
+      },
+      {
+       "text": "**Composición**: agregación **más fuerte**, en la que incluso **coinciden los tiempos de vida** del todo y las partes; **rombo lleno**.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La composición es una forma de agregación donde la relación de propiedad es más fuerte, e incluso coinciden los tiempos de vida del objeto completo y las partes que lo componen."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Composición: Se representa con un rombo lleno en la clase cuya instancia contiene las instancias de la otra clase."
+        }
+       ]
+      },
+      {
+       "text": "**Dependencia**: una clase **requiere de otra** para dar alguno de sus servicios; **línea discontinua con flecha**. La **realización** de una interfaz dibujada como clase: **flecha hueca discontinua** hacia la interfaz.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "e indica que una clase requiere de otra para proporcionar alguno de sus servicios."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Dependencia: Una línea discontinua con una flecha"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "con una flecha hueca discontinua apuntando a la interfaz cuando se represente como una clase."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Notación de la clase**: caja de **tres zonas**: arriba el **nombre** (en **cursiva** si es **abstracta**, con el estereotipo encima entre `<< >>`), en medio los **atributos** y abajo las **operaciones**. **Visibilidad**: **+ pública**, **- privada**, **# protegida**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Una clase se representa como una caja, separada en tres zonas por líneas horizontales."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En la zona superior se muestra el nombre de la clase y propiedades generales como el estereotipo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "si la clase es abstracta se representa en cursiva."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La zona central contiene una lista de atributos, uno en cada línea."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En la zona inferior se incluye una lista con las operaciones que proporciona la clase."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La visibilidad será en general publica (+), privada (-) o protegida (#)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "UML: casos de uso",
+   "points": [
+    {
+     "text": "Los **casos de uso** capturan los **requisitos funcionales** desde el punto de vista del **usuario**: una secuencia de acciones del sistema que produce un **resultado observable y valioso** para un usuario. Sus **escenarios** son los distintos caminos por los que puede evolucionar.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Capturar los requisitos funcionales del sistema y expresarlos desde el punto de vista del usuario."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un caso de uso es una secuencia de acciones realizadas por el sistema, que producen un resultado observable y valioso para un usuario en particular"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los escenarios son los distintos caminos por los que puede evolucionar un caso de uso"
+      }
+     ]
+    },
+    {
+     "text": "El **diagrama de casos de uso** tiene **actores** (algo o alguien **fuera del sistema** que interactúa con él; un actor es un **papel**, no una persona concreta), **casos de uso** y **relaciones**. Notación: caso de uso, **elipse**; actor, **«hombre de palo»**; los límites del sistema, un **recuadro opcional**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Actores. Un actor es algo o alguien que se encuentra fuera del sistema y que interactúa con él."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "un actor es el papel que puede llevar a cabo en cuanto a su forma de interactuar con el sistema"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Además de estos elementos, un diagrama de casos de uso presenta relaciones."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un caso de uso se representa mediante una elipse con el nombre del caso de uso dentro o debajo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un actor se representa con una figura de ‘hombre de palo’ con el nombre del actor debajo de la figura."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Opcionalmente, los casos de uso se pueden enmarcar en un cuadrado que representa los límites del sistema."
+      }
+     ]
+    },
+    {
+     "text": "Relaciones (en Métrica v3): actor–caso de uso, de **comunicación** (**línea continua**). Entre casos de uso, **unidireccionales** (**flecha discontinua** con la etiqueta): **«usa»** para el **comportamiento común** a varios casos (flecha del caso básico al común), y **«extiende»** para un comportamiento **opcional** (flecha del caso que añade el comportamiento hacia el básico). En UML 2 se llaman «include» y «extend».",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La relación entre un actor y un caso de uso es una relación de comunicación"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "las relaciones entre un actor y un caso de uso se representan mediante una línea continua entre ellos. Las relaciones entre casos de uso se representan con una flecha discontinua con el nombre del tipo de relación como etiqueta."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La relación entre casos de uso es una relación unidireccional."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La relación “usa” se utiliza cuando se quiere reflejar un comportamiento común en varios casos de uso."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La relación “extiende” se utiliza cuando se quiere reflejar un comportamiento opcional de un caso de uso."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En las relaciones “extensión” la flecha parte del caso de uso con el comportamiento adicional hacia aquel que recoge el comportamiento básico"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "y en las relaciones “usa” desde el caso de uso básico hacia el que representa el comportamiento común."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "UML: diagramas de interacción y de estados",
+   "points": [
+    {
+     "text": "Un **diagrama de interacción** describe el **comportamiento dinámico** mediante **mensajes entre objetos** y **detalla un escenario concreto de un caso de uso**. Métrica v3 distingue dos: de **secuencia** y de **colaboración**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo de esta técnica es describir el comportamiento dinámico del sistema de información mediante el paso de mensajes entre los objetos del mismo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un diagrama de interacción describe en detalle un determinado escenario de un caso de uso."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Hay dos tipos de diagramas de interacción: diagramas de secuencia y diagramas de colaboración."
+      }
+     ]
+    },
+    {
+     "text": "**Diagrama de secuencia**: destaca el **orden de los mensajes** (flechas horizontales entre líneas de vida); el eje **vertical es el tiempo**, que avanza **de arriba abajo**, y el horizontal, los objetos, cada uno con su **línea de vida** (línea vertical discontinua) y sus **focos de control**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "haciendo énfasis en la secuencia de los mensajes intercambiados por los objetos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un diagrama de secuencia tiene dos dimensiones, el eje vertical representa el tiempo y el eje horizontal los diferentes objetos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El tiempo avanza desde la parte superior del diagrama hacia la inferior."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Cada objeto tiene asociados una línea de vida y focos de control."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un mensaje se representa como una flecha horizontal entre las líneas de vida de los objetos que intercambian el mensaje."
+      }
+     ]
+    },
+    {
+     "text": "**Diagrama de colaboración**: la misma información, pero destaca **cómo colaboran los objetos**; no hay eje de tiempo, así que los mensajes llevan **siempre número de secuencia**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un diagrama de colaboración muestra la misma información que un diagrama de secuencia pero de forma diferente."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "los diagramas de colaboración muestran de forma más clara cómo colaboran los objetos"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En los diagramas de colaboración no existe una secuencia temporal en el eje vertical"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "en los diagramas de colaboración siempre se muestra el número de secuencia del mensaje delante de su nombre"
+      }
+     ]
+    },
+    {
+     "text": "**Diagrama de transición de estados**: el comportamiento **dependiente del tiempo**: los **estados** de un componente (rectángulos de **esquinas redondeadas**) y los **eventos** que provocan las **transiciones**. Solo hay **un estado inicial** (círculo relleno; ninguna transición llega a él) y puede haber **varios finales** (círculo relleno rodeado; de ellos no sale ninguna).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un diagrama de transición de estados muestra el comportamiento dependiente del tiempo de un sistema de información. Representa los estados que puede tomar un componente o un sistema y muestra los eventos que implican el cambio de un estado a otro."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un sistema sólo puede tener un estado inicial"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En ningún caso puede haber una transición dirigida al estado inicial."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "No se permiten transiciones que partan del estado final. Puede haber varios estados finales en un diagrama"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un estado se representa como un rectángulo con las esquinas redondeadas."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El estado inicial se representa con un pequeño circulo relleno, y el estado final como un pequeño circulo relleno con una circunferencia que lo rodea."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "UML: componentes, despliegue y paquetes",
+   "points": [
+    {
+     "text": "**Diagrama de componentes**: visión **física** de la construcción: cómo se **divide el sistema en componentes** software (código fuente, binario, ejecutable o librería con interfaz), sus interfaces y las **dependencias** entre ellos. Componente: rectángulo con **dos pequeños rectángulos** en el lado izquierdo; dependencia: línea discontinua con flecha hacia el componente que **da el servicio**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El diagrama de componentes proporciona una visión física de la construcción del sistema de información."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un componente es un módulo de software que puede ser código fuente, código binario, un ejecutable, o una librería con una interfaz definida."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Como ya se ha indicado, los elementos de estos diagramas son los componentes software y las dependencias entre ellos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un componente se representa como un rectángulo, con dos pequeños rectángulos superpuestos perpendicularmente en el lado izquierdo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Una relación de dependencia se representa mediante una línea discontinua con una flecha que apunta al componente o interfaz que provee del servicio o facilidad al otro."
+      }
+     ]
+    },
+    {
+     "text": "**Diagrama de despliegue**: las **particiones físicas** y qué componentes software van en cada una: **nodos** (dibujados como **cubos**) y **conexiones** (líneas continuas).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo de estos diagramas es mostrar la disposición de las particiones físicas del sistema de información y la asignación de los componentes software a estas particiones."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En estos diagramas se representan dos tipos de elementos, nodos y conexiones"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se representa con la figura de un cubo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las conexiones se representan con una línea continua que une ambos nodos"
+      }
+     ]
+    },
+    {
+     "text": "**Diagrama de paquetes**: organiza el sistema en **subsistemas** agrupando **casos de uso, clases o componentes** en **paquetes** (icono de **carpeta**); hay dependencia cuando un elemento de un paquete requiere de otro de un paquete distinto, y las dependencias **no son transitivas**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "organizándolo en subsistemas"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un paquete es una agrupación de elementos, bien sea casos de uso, clases o componentes."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Existe una dependencia cuando un elemento de un paquete requiere de otro que pertenece a un paquete distinto. Es importante resaltar que las dependencias no son transitivas."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un paquete se representa con un icono con forma de carpeta"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

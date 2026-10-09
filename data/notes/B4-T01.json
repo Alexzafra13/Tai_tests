@@ -1,0 +1,400 @@
+{
+ "topic": "B4-T01",
+ "sections": [
+  {
+   "title": "Linux: sistema, ficheros y procesos",
+   "points": [
+    {
+     "text": "`pwd` muestra el **directorio de trabajo actual**.",
+     "refs": [
+      {
+       "title": "pwd(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/pwd.1.html",
+       "quote": "pwd - print name of current/working directory"
+      }
+     ]
+    },
+    {
+     "text": "`chmod` cambia los **permisos** (bits de modo) de cada fichero, en notación **simbólica** (`[ugoa][+-=][perms]`) u **octal**.",
+     "refs": [
+      {
+       "title": "chmod(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/chmod.1.html",
+       "quote": "chmod - change file mode bits"
+      },
+      {
+       "title": "chmod(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/chmod.1.html",
+       "quote": "changes the file mode bits of each given file according to mode , which can be either a symbolic representation of changes to make, or an octal number representing the bit pattern for the new mode bits."
+      },
+      {
+       "title": "chmod(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/chmod.1.html",
+       "quote": "The format of a symbolic mode is [ ugoa ...][[ -+= ][ perms ...]...]"
+      }
+     ]
+    },
+    {
+     "text": "`tail -f` sigue mostrando lo que se **añade al fichero mientras crece**: sirve para ver un log en tiempo real.",
+     "refs": [
+      {
+       "title": "tail(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tail.1.html",
+       "quote": "-f, --follow[={name|descriptor}] output appended data as the file grows"
+      }
+     ]
+    },
+    {
+     "text": "`uname -r` muestra la **versión (release) del kernel**.",
+     "refs": [
+      {
+       "title": "uname(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/uname.1.html",
+       "quote": "-r, --kernel-release print the kernel release"
+      }
+     ]
+    },
+    {
+     "text": "En Red Hat Enterprise Linux, la versión de la distribución se consulta con `cat /etc/redhat-release` (y la del kernel con `uname -a`).",
+     "refs": [
+      {
+       "title": "Red Hat · Red Hat Enterprise Linux Release Dates",
+       "url": "https://access.redhat.com/articles/red-hat-enterprise-linux-release-dates",
+       "quote": "To find your Red Hat Enterprise Linux release please: $ cat /etc/redhat-release"
+      },
+      {
+       "title": "Red Hat · Red Hat Enterprise Linux Release Dates",
+       "url": "https://access.redhat.com/articles/red-hat-enterprise-linux-release-dates",
+       "quote": "To find your kernel version please: $ uname -a"
+      }
+     ]
+    },
+    {
+     "text": "Las contraseñas cifradas de los usuarios están en `/etc/shadow`: una línea por cuenta con **9 campos separados por dos puntos**, empezando por el nombre de usuario y la contraseña cifrada.",
+     "refs": [
+      {
+       "title": "shadow(5) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man5/shadow.5.html",
+       "quote": "shadow - shadowed password file"
+      },
+      {
+       "title": "shadow(5) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man5/shadow.5.html",
+       "quote": "Each line of this file contains 9 fields, separated by colons"
+      },
+      {
+       "title": "shadow(5) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man5/shadow.5.html",
+       "quote": "login name It must be a valid account name, which exists on the system. encrypted password"
+      }
+     ]
+    },
+    {
+     "text": "`fsck` **comprueba y, opcionalmente, repara** sistemas de ficheros Linux. Con `-y` (en e2fsck, el de ext2/3/4) responde **«sí» a todas las preguntas**, así repara sin intervención: `fsck -y /dev/sda8`.",
+     "refs": [
+      {
+       "title": "fsck(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/fsck.8.html",
+       "quote": "fsck is used to check and optionally repair one or more Linux filesystems."
+      },
+      {
+       "title": "e2fsck(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/e2fsck.8.html",
+       "quote": "-y Assume an answer of `yes' to all questions; allows e2fsck to be used non-interactively."
+      },
+      {
+       "title": "fsck(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/fsck.8.html",
+       "quote": "Options which are not understood by fsck are passed to the filesystem-specific checker!"
+      }
+     ]
+    },
+    {
+     "text": "`systemctl start` **arranca** una unidad ahora; `systemctl enable` crea los enlaces de su sección `[Install]` y así la unidad **arranca con el sistema** (p. ej., `systemctl enable nginx`).",
+     "refs": [
+      {
+       "title": "systemctl(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/systemctl.1.html",
+       "quote": "start PATTERN ... Start (activate) one or more units specified on the command line."
+      },
+      {
+       "title": "systemctl(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/systemctl.1.html",
+       "quote": "Enable one or more units or unit instances. This will create a set of symlinks, as encoded in the [Install] sections of the indicated unit files."
+      },
+      {
+       "title": "systemctl(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/systemctl.1.html",
+       "quote": "Enabled units are included in the dependency network between units, and thus are started at boot"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Linux: paquetes y red",
+   "points": [
+    {
+     "text": "En Debian, `apt update` **descarga la información de los paquetes** de todas las fuentes configuradas; las demás órdenes (instalar, actualizar, buscar) trabajan sobre esos datos.",
+     "refs": [
+      {
+       "title": "apt(8) · Debian Manpages",
+       "url": "https://manpages.debian.org/bookworm/apt/apt.8.en.html",
+       "quote": "update is used to download package information from all configured sources. Other commands operate on this data"
+      }
+     ]
+    },
+    {
+     "text": "`ifconfig` configura las interfaces de red. Sin argumentos muestra las **interfaces activas**; con una interfaz (`ifconfig eth0`) muestra **solo esa**.",
+     "refs": [
+      {
+       "title": "ifconfig(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/ifconfig.8.html",
+       "quote": "ifconfig - configure a network interface"
+      },
+      {
+       "title": "ifconfig(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/ifconfig.8.html",
+       "quote": "If no arguments are given, ifconfig displays the status of the currently active interfaces. If a single interface argument is given, it displays the status of the given interface only"
+      }
+     ]
+    },
+    {
+     "text": "`ip route show` **lista las rutas** (la tabla de enrutamiento); `ip route get <dirección>` muestra **la ruta que usaría el kernel** para llegar a ese destino.",
+     "refs": [
+      {
+       "title": "ip-route(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+       "quote": "ip route show list routes"
+      },
+      {
+       "title": "ip-route(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/ip-route.8.html",
+       "quote": "ip route get get a single route this command gets a single route to a destination and prints its contents exactly as the kernel sees it."
+      }
+     ]
+    },
+    {
+     "text": "`ss -ltn` lista los **puertos en escucha**: `-l` solo sockets en escucha, `-t` solo TCP, `-n` sin resolver nombres de servicio.",
+     "refs": [
+      {
+       "title": "ss(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+       "quote": "-l, --listening Display only listening sockets"
+      },
+      {
+       "title": "ss(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+       "quote": "-t, --tcp Display TCP sockets."
+      },
+      {
+       "title": "ss(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/ss.8.html",
+       "quote": "-n, --numeric Do not try to resolve service names."
+      }
+     ]
+    },
+    {
+     "text": "`nmap` es una herramienta de **exploración de red y escáner de puertos**: sirve para saber qué puertos tiene abiertos un servidor.",
+     "refs": [
+      {
+       "title": "Nmap Reference Guide",
+       "url": "https://nmap.org/book/man.html",
+       "quote": "nmap — Network exploration tool and security / port scanner"
+      },
+      {
+       "title": "Nmap Reference Guide",
+       "url": "https://nmap.org/book/man.html",
+       "quote": "Nmap ( “ Network Mapper ” ) is an open source tool for network exploration and security auditing."
+      }
+     ]
+    },
+    {
+     "text": "En **Solaris**, `route -p` hace la ruta **persistente** tras reiniciar; `-net` indica que el destino es una red y `-gateway` marca la puerta de enlace: `route -p add -net 10.0.5.0/24 -gateway 10.0.5.150`.",
+     "refs": [
+      {
+       "title": "Oracle Solaris 11.3 · route(1M)",
+       "url": "https://docs.oracle.com/cd/E86824_01/html/E54764/route-1m.html",
+       "quote": "Make changes to the network route tables persistent across system restarts."
+      },
+      {
+       "title": "Oracle Solaris 11.3 · route(1M)",
+       "url": "https://docs.oracle.com/cd/E86824_01/html/E54764/route-1m.html",
+       "quote": "–net Force the destination to be interpreted as a network."
+      },
+      {
+       "title": "Oracle Solaris 11.3 · route(1M)",
+       "url": "https://docs.oracle.com/cd/E86824_01/html/E54764/route-1m.html",
+       "quote": "You can distinguish a gateway address by using the –gateway modifier."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Windows: comandos de administración",
+   "points": [
+    {
+     "text": "`ipconfig /flushdns` **vacía la caché** del cliente DNS.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · ipconfig",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/ipconfig",
+       "quote": "/flushdns Vacía y restablece el contenido de la caché de resolución del cliente DNS."
+      }
+     ]
+    },
+    {
+     "text": "`route print` **muestra** la tabla de rutas.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · route",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/route_ws2008",
+       "quote": "print : imprime una ruta o rutas."
+      }
+     ]
+    },
+    {
+     "text": "`net user` **agrega, modifica o elimina** cuentas de usuario y **muestra información** de ellas: `net user Infocentro` da los datos de esa cuenta.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · net user",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/net-user",
+       "quote": "El net user comando permite agregar, modificar o eliminar cuentas de usuario y mostrar información detallada sobre las cuentas de usuario en un equipo o dominio local."
+      },
+      {
+       "title": "Microsoft Learn · net user",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/net-user",
+       "quote": "Para mostrar información sobre la cuenta de usuario TommyH , ejecute el siguiente comando:"
+      }
+     ]
+    },
+    {
+     "text": "`net localgroup` gestiona los **grupos locales**; sin parámetros lista los grupos del equipo (`net localgroup administradores` muestra los miembros de ese grupo).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Net localgroup",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc725622(v=ws.11)",
+       "quote": "Adds, displays, or modifies local groups. Used without parameters, net localgroup displays the name of the server and the names of local groups on the computer."
+      },
+      {
+       "title": "Microsoft Learn · Net localgroup",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc725622(v=ws.11)",
+       "quote": "displays a list of users or global groups in a local group."
+      }
+     ]
+    },
+    {
+     "text": "`net start` arranca un servicio; **sin parámetros, lista los servicios en ejecución**. Si el nombre lleva espacios, va entre comillas (referencia de comandos de Windows XP en Microsoft Learn).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Net start",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490713(v=technet.10)",
+       "quote": "Starts a service. Used without parameters, net start displays a list of services that are currently operating."
+      },
+      {
+       "title": "Microsoft Learn · Net services overview",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490948(v=technet.10)",
+       "quote": "If a service name contains spaces, use quotation marks around the text"
+      }
+     ]
+    },
+    {
+     "text": "`gpresult` muestra el **conjunto resultante de directivas (RSoP)** de un usuario y un equipo.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · gpresult",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/gpresult",
+       "quote": "Muestra información del conjunto resultante de directivas (RSoP) de un usuario y un equipo remotos."
+      }
+     ]
+    },
+    {
+     "text": "`sfc /scannow` (como administrador) **examina los archivos protegidos del sistema** y repara los que tengan problemas, sustituyendo las versiones incorrectas por las correctas. `/verifyonly` solo comprueba.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · sfc",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/sfc",
+       "quote": "Examina y comprueba la integridad de todos los archivos del sistema protegidos y reemplaza las versiones incorrectas por versiones correctas."
+      },
+      {
+       "title": "Microsoft Learn · sfc",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/sfc",
+       "quote": "Para ejecutar este comando, debe haber iniciado la sesión como miembro del grupo Administradores."
+      },
+      {
+       "title": "Microsoft Learn · sfc",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/sfc",
+       "quote": "/scannow Examina la integridad de todos los archivos protegidos del sistema y repara archivos que tienen problemas siempre que sea posible."
+      },
+      {
+       "title": "Microsoft Learn · sfc",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/sfc",
+       "quote": "/verifyonly Examina la integridad de todos los archivos del sistema protegidos, sin realizar reparaciones."
+      }
+     ]
+    },
+    {
+     "text": "En PowerShell, `Copy-Item` **copia un elemento** de una ubicación a otra; con `-Recurse` copia **recursivamente** (subcarpetas incluidas).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Copy-Item",
+       "url": "https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.management/copy-item?view=powershell-7.6",
+       "quote": "Copia un elemento de una ubicación a otra."
+      },
+      {
+       "title": "Microsoft Learn · Copy-Item",
+       "url": "https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.management/copy-item?view=powershell-7.6",
+       "quote": "-Recurse Indica que este cmdlet realiza una copia recursiva."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Servidores web",
+   "points": [
+    {
+     "text": "**IIS** se reinicia con la utilidad de línea de comandos `IISRESET` (o desde el Administrador de IIS); ambas permiten parar, arrancar y reiniciar sus servicios (documentación de IIS 6.0).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Restarting IIS",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc758159(v=ws.10)",
+       "quote": "Using IIS Manager ."
+      },
+      {
+       "title": "Microsoft Learn · Restarting IIS",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc758159(v=ws.10)",
+       "quote": "Using the IISReset command-line utility."
+      },
+      {
+       "title": "Microsoft Learn · Restarting IIS",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc758159(v=ws.10)",
+       "quote": "Both methods allow you to stop, start, and restart IIS Internet services."
+      }
+     ]
+    },
+    {
+     "text": "En **Apache**, un *host virtual* es servir **varios sitios web en una misma máquina**; se definen con la directiva `<VirtualHost>`, cuyas directivas se aplican solo a ese nombre de host o IP.",
+     "refs": [
+      {
+       "title": "Apache HTTP Server 2.4 · Virtual Host documentation",
+       "url": "https://httpd.apache.org/docs/2.4/vhosts/",
+       "quote": "The term Virtual Host refers to the practice of running more than one web site"
+      },
+      {
+       "title": "Apache HTTP Server 2.4 · Virtual Host documentation",
+       "url": "https://httpd.apache.org/docs/2.4/vhosts/",
+       "quote": "on a single machine."
+      },
+      {
+       "title": "Apache HTTP Server 2.4 · core",
+       "url": "https://httpd.apache.org/docs/2.4/mod/core.html",
+       "quote": "Contains directives that apply only to a specific hostname or IP address"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

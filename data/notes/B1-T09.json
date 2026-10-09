@@ -1,0 +1,1734 @@
+{
+ "topic": "B1-T09",
+ "sections": [
+  {
+   "title": "Principios y canales de acceso (RD 203/2021)",
+   "points": [
+    {
+     "text": "El **Real Decreto 203/2021, de 30 de marzo**, aprueba el **Reglamento de actuación y funcionamiento del sector público por medios electrónicos**, que **desarrolla las Leyes 39/2015 y 40/2015** en lo electrónico (art. 1).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1",
+       "quote": "Este Reglamento tiene por objeto el desarrollo de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, y de la Ley 40/2015, de 1 de octubre, de Régimen Jurídico del Sector Público, en lo referido a la actuación y el funcionamiento electrónico del sector público."
+      }
+     ]
+    },
+    {
+     "text": "**Principios generales** (art. 2): **neutralidad tecnológica** y adaptabilidad al progreso (con **estándares abiertos** y, complementariamente, de uso generalizado); **accesibilidad** (en especial para personas con **discapacidad** y **mayores**); **facilidad de uso**; **interoperabilidad**; **proporcionalidad** (solo las garantías adecuadas a cada trámite); y **personalización y proactividad** (servicios **precumplimentados**, anticiparse a las necesidades). Las herramientas que se exijan deben ser **no discriminatorias**, de disponibilidad general y **compatibles** con los productos de uso general.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2",
+       "quote": "a) Los principios de neutralidad tecnológica y de adaptabilidad al progreso de las tecnologías y sistemas de comunicaciones electrónicas"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2",
+       "quote": "el sector público utilizará estándares abiertos, así como, en su caso y de forma complementaria, estándares que sean de uso generalizado."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2",
+       "quote": "en particular de las personas con discapacidad y de las personas mayores."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2",
+       "quote": "c) El principio de facilidad de uso"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2",
+       "quote": "d) El principio de interoperabilidad"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2",
+       "quote": "e) El principio de proporcionalidad, en cuya virtud sólo se exigirán las garantías y medidas de seguridad adecuadas a la naturaleza y circunstancias de los distintos trámites y actuaciones electrónicos."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2",
+       "quote": "proporcione servicios precumplimentados y se anticipe a las posibles necesidades de los mismos."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2",
+       "quote": "serán no discriminatorios, estarán disponibles de forma general y serán compatibles con los productos informáticos de uso general."
+      }
+     ]
+    },
+    {
+     "text": "Están obligados a relacionarse electrónicamente, **al menos**, los sujetos del **art. 14.2 de la Ley 39/2015** (art. 3.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3",
+       "quote": "al menos, los sujetos a los que se refiere el artículo 14.2 de la Ley 39/2015"
+      }
+     ]
+    },
+    {
+     "text": "Las personas físicas no obligadas comunican al **inicio** del procedimiento que quieren relacionarse electrónicamente, y pueden **cambiar** después avisando al órgano; surte efecto desde el **quinto día hábil** siguiente a que el órgano tenga constancia (art. 3.2). En el ámbito estatal, la **obligación** para colectivos se fija por **real decreto** o, si la regulación no exige ese rango, por **orden ministerial**, y se publica en el **PAGe** y en la sede (art. 3.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3",
+       "quote": "podrán ejercitar su derecho a relacionarse electrónicamente con la Administración Pública de que se trate al inicio del procedimiento"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3",
+       "quote": "La voluntad de relacionarse electrónicamente o, en su caso, de dejar de hacerlo cuando ya se había optado anteriormente por ello, podrá realizarse en una fase posterior del procedimiento"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3",
+       "quote": "podrá ser establecida por real decreto acordado en Consejo de Ministros o por orden de la persona titular del Departamento competente"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3",
+       "quote": "los efectos de la comunicación se producirán a partir del quinto día hábil siguiente a aquel en que el órgano competente para tramitar el procedimiento haya tenido constancia de la misma"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3",
+       "quote": "cuya regulación no requiera de norma con rango de real decreto"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3",
+       "quote": "se publicará en el Punto de Acceso General electrónico (PAGe) de la Administración General del Estado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3",
+       "quote": "y en la sede electrónica o sede asociada que corresponda"
+      }
+     ]
+    },
+    {
+     "text": "**Canales de asistencia** para el acceso a los servicios electrónicos, a través de **alguno o algunos** de estos (art. 4): **presencial** (oficinas de asistencia), **portales de internet y sedes electrónicas**, **redes sociales**, **teléfono**, **correo electrónico** y cualquier otro.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4",
+       "quote": "a) Presencial, a través de las oficinas de asistencia que se determinen."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4",
+       "quote": "b) Portales de internet y sedes electrónicas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4",
+       "quote": "c) Redes sociales.\nd) Telefónico.\ne) Correo electrónico."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4",
+       "quote": "f) Cualquier otro canal que pueda establecerse de acuerdo con lo previsto en el artículo 12 de la Ley 39/2015"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a4",
+       "quote": "a través de alguno o algunos de los siguientes canales"
+      }
+     ]
+    },
+    {
+     "text": "**Subsanación** (art. 14): si un **obligado** no usa medios electrónicos, se le requiere y, si no subsana en **diez días**, se le tiene por **desistido** (o decaído en su derecho al trámite); si era una solicitud de inicio, cuenta como fecha de presentación la de la **subsanación**. Lo mismo para los no obligados que **eligieron** la vía electrónica. El plazo puede **ampliarse hasta cinco días** si aportar los documentos es especialmente difícil, salvo en procedimientos **selectivos o de concurrencia competitiva**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-6",
+       "quote": "de no ser atendido el requerimiento en el plazo de diez días, se le tendrá por desistido de su solicitud o se le podrá declarar decaído en su derecho al trámite correspondiente"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-6",
+       "quote": "la fecha de la subsanación se considerará a estos efectos como fecha de presentación de la solicitud"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-6",
+       "quote": "Este régimen de subsanación será asimismo aplicable a las personas físicas no obligadas"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-6",
+       "quote": "Este plazo podrá ser ampliado hasta cinco días, a petición del interesado o a iniciativa del órgano, cuando la aportación de los documentos requeridos, en su caso, presente dificultades especiales, siempre que no se trate de procedimientos selectivos o de concurrencia competitiva."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Portales de internet, Punto de Acceso General y Carpeta Ciudadana",
+   "points": [
+    {
+     "text": "**Portal de internet**: punto de acceso electrónico de una Administración u organismo que permite acceder a la **información publicada** y, en su caso, a la **sede electrónica** (art. 39 Ley 40/2015; art. 5 RD 203/2021). Disponen de sistemas que permiten establecer **medidas de seguridad** conforme al ENS. La Administración se entiende **identificada** respecto de la información que publique como propia en su portal (art. 40.2 Ley 40/2015).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a39",
+       "quote": "Se entiende por portal de internet el punto de acceso electrónico cuya titularidad corresponda a una Administración Pública, organismo público o entidad de Derecho Público que permite el acceso a través de internet a la información publicada y, en su caso, a la sede electrónica correspondiente."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a5",
+       "quote": "Los portales de internet dispondrán de sistemas que permitan el establecimiento de medidas de seguridad"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a40",
+       "quote": "Se entenderá identificada la Administración Pública respecto de la información que se publique como propia en su portal de internet."
+      }
+     ]
+    },
+    {
+     "text": "En el ámbito estatal, los portales se crean por **orden ministerial** o **resolución** del órgano superior o del presidente o director del organismo, con **informe favorable de la Comisión Ministerial de Administración Digital**; su dirección usa el dominio **«.gob.es»** y deben estar **referenciados en el PAGe** (art. 6). Su **supresión** requiere comunicarla antes a los dos ministerios competentes.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a6",
+       "quote": "la creación o supresión de portales se llevará a cabo por orden de la persona titular del ministerio correspondiente o por resolución de la persona titular del órgano superior"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a6",
+       "quote": "La creación requerirá informe favorable de la Comisión Ministerial de Administración Digital respectiva"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a6",
+       "quote": "que deberá incluir el nombre de dominio de segundo nivel «.gob.es»"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a6",
+       "quote": "deberán estar referenciados en el PAGe de la Administración General del Estado."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a6",
+       "quote": "La supresión de portales requerirá la previa comunicación al Ministerio de Política Territorial y Función Pública y al Ministerio de Asuntos Económicos y Transformación Digital."
+      }
+     ]
+    },
+    {
+     "text": "Cada Administración tiene un **Punto de Acceso General electrónico (PAGe)** que da acceso a sus servicios, trámites e información, con una **sede electrónica** que lleva a **todas sus sedes** y puede tener un **área personalizada** (información, seguimiento de trámites y notificaciones) (art. 7).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "Las Administraciones Públicas contarán con un Punto de Acceso General electrónico (PAGe)."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "facilitará el acceso a los servicios, trámites e información"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "El PAGe dispondrá de una sede electrónica, a través de la cual se podrá acceder a todas las sedes electrónicas y sedes asociadas de la Administración Pública correspondiente."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "esta sede podrá incluir un área personalizada"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "podrá acceder a su información, al seguimiento de los trámites administrativos que le afecten y a las notificaciones y comunicaciones"
+      }
+     ]
+    },
+    {
+     "text": "El **PAGe de la AGE** (**administracion.gob.es**) es un **punto único de acceso** a todas las administraciones (estatal, autonómica, local y de la UE). Lo gestiona el **Ministerio de Política Territorial y Función Pública** con la **SGAD** (según el texto del RD). Su sede **aloja la DEHú** y permite **comprobar la autenticidad e integridad** de documentos del sector público estatal mediante el **CSV** u otro sistema de firma o sello con certificado cualificado (art. 7).",
+     "refs": [
+      {
+       "title": "Punto de Acceso General · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/pag",
+       "quote": "El Punto de Acceso General electrónico (PAGe) es un portal de internet de la Administración General del Estado cuya URL es https://administracion.gob.es."
+      },
+      {
+       "title": "Punto de Acceso General · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/pag",
+       "quote": "Constituye un punto único de acceso para la ciudadanía a todas las administraciones públicas: Estatal, Autonómica, Local y de la Unión Europea (UE)."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "En dicha sede electrónica está alojada la Dirección Electrónica Habilitada única"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "permitirá la comprobación de la autenticidad e integridad de los documentos facilitados por el sector público estatal a través del Código Seguro de Verificación"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "o de cualquier otro sistema de firma o sello basado en certificado electrónico cualificado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a7",
+       "quote": "serán gestionados por el Ministerio de Política Territorial y Función Pública en colaboración con la Secretaría General de Administración Digital"
+      }
+     ]
+    },
+    {
+     "text": "La **Carpeta Ciudadana** es el **área personalizada** del interesado ante el sector público estatal, en la sede del PAGe (art. 8). Además del interesado, acceden sus **representantes legales** y quien tenga un **poder general** inscrito. Permite **seguir sus trámites**, acceder a sus **notificaciones**, **conocer qué datos suyos** tiene el sector público estatal y obtener **certificaciones**. Se accede con los sistemas de identificación del **art. 9.2 de la Ley 39/2015**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a8",
+       "quote": "La Carpeta Ciudadana es el área personalizada de las personas interesadas"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a8",
+       "quote": "a) Sus representantes legales."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a8",
+       "quote": "b) Quien ostente un poder general"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a8",
+       "quote": "a) Permitir el seguimiento del estado de tramitación de los procedimientos en que sea interesado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a8",
+       "quote": "b) Permitir el acceso a sus comunicaciones y notificaciones."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a8",
+       "quote": "c) Conocer qué datos suyos obran en poder del sector público estatal"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a8",
+       "quote": "d) Facilitar la obtención de certificaciones administrativas"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a8",
+       "quote": "El interesado accederá a la Carpeta Ciudadana mediante los sistemas de identificación a los que se refiere el artículo 9.2 de la Ley 39/2015"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sedes electrónicas",
+   "points": [
+    {
+     "text": "**Sede electrónica**: dirección electrónica disponible para los ciudadanos, cuya titularidad corresponde a una Administración u organismo (art. 38.1 Ley 40/2015). En ella se realizan las actuaciones y trámites que requieren **identificar a la Administración** y, en su caso, la **identificación o firma** del interesado (art. 9 RD 203/2021). Siempre debe garantizarse la **identificación del órgano titular** y los medios para **sugerencias y quejas** (art. 38.4 Ley 40/2015).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a38",
+       "quote": "La sede electrónica es aquella dirección electrónica, disponible para los ciudadanos a través de redes de telecomunicaciones, cuya titularidad corresponde a una Administración Pública"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a38",
+       "quote": "En todo caso deberá garantizarse la identificación del órgano titular de la sede, así como los medios disponibles para la formulación de sugerencias y quejas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a9",
+       "quote": "Mediante dicha sede electrónica se realizarán todas las actuaciones y trámites referidos a procedimientos o a servicios que requieran la identificación de la Administración Pública y, en su caso, la identificación o firma electrónica de las personas interesadas."
+      }
+     ]
+    },
+    {
+     "text": "Su titular responde de la **integridad, veracidad y actualización** de la información y servicios (art. 38.2). Su creación se sujeta a los principios de **transparencia, publicidad, responsabilidad, calidad, seguridad, disponibilidad, accesibilidad, neutralidad e interoperabilidad**; se identifica con **certificados reconocidos o cualificados de autenticación de sitio web** o **medio equivalente**; en el ámbito **estatal**, con certificados **cualificados** (art. 38 Ley 40/2015; art. 18 RD 203/2021).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a38",
+       "quote": "conlleva la responsabilidad del titular respecto de la integridad, veracidad y actualización de la información y los servicios"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a38",
+       "quote": "con sujeción a los principios de transparencia, publicidad, responsabilidad, calidad, seguridad, disponibilidad, accesibilidad, neutralidad e interoperabilidad."
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a38",
+       "quote": "Las sedes electrónicas dispondrán de sistemas que permitan el establecimiento de comunicaciones seguras siempre que sean necesarias."
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a38",
+       "quote": "certificados reconocidos o cualificados de autenticación de sitio web o medio equivalente"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-10",
+       "quote": "En el ámbito estatal las sedes electrónicas y sedes electrónicas asociadas se identificarán mediante certificados cualificados de autenticación de sitio web."
+      }
+     ]
+    },
+    {
+     "text": "Pueden crearse **sedes asociadas** por razones **técnicas y organizativas**, que son sede **a todos los efectos**. El acto de creación se publica en el **boletín oficial** (el de la **provincia** para las entidades locales) y en el directorio del PAGe, y fija su **ámbito**, **dirección**, **titular** y **órganos** gestores (art. 10). En el Estado, por **orden o resolución**, con **informe previo favorable** del Ministerio de Política Territorial y Función Pública y del de Asuntos Económicos y Transformación Digital (según el texto) y una **memoria justificativa y económica**. La dirección electrónica lleva el dominio **«.gob.es»** y debe constar de forma **visible e inequívoca** que es sede.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-2",
+       "quote": "La sede electrónica asociada tendrá consideración de sede electrónica a todos los efectos."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-2",
+       "quote": "En el caso de las entidades locales, el boletín oficial será el de la provincia al que pertenezca la entidad."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-2",
+       "quote": "a) El ámbito de aplicación de la sede electrónica o sede electrónica asociada."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-2",
+       "quote": "c) La identificación de su titular."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-2",
+       "quote": "remitirá una memoria justificativa y económica"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-2",
+       "quote": "con el informe previo favorable del Ministerio de Política Territorial y Función Pública y del Ministerio de Asuntos Económicos y Transformación Digital"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-10",
+       "quote": "su dirección electrónica incluirá el nombre de dominio «.gob.es»"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-10",
+       "quote": "deberán hacerlo constar de forma visible e inequívoca."
+      }
+     ]
+    },
+    {
+     "text": "**Contenido mínimo** de toda sede (art. 11.1):",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "Toda sede electrónica o sede electrónica asociada dispondrá del siguiente contenido mínimo a disposición de las personas interesadas:"
+      }
+     ],
+     "items": [
+      {
+       "text": "Identificación de la sede, su **titular** y los órganos competentes; el **acto de creación** (o enlace a su publicación).",
+       "refs": [
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "a) La identificación de la sede electrónica o sede electrónica asociada, así como del órgano u organismo titular de la misma"
+        },
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "b) La identificación del acto o disposición de creación y el acceso al mismo"
+        }
+       ]
+      },
+      {
+       "text": "Información de uso (**mapa** de la sede, propiedad intelectual, protección de datos, **accesibilidad**) y los **sistemas de identificación y firma** admitidos.",
+       "refs": [
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "incluyendo su mapa o información equivalente"
+        },
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "d) La relación de sistemas de identificación y firma electrónica que sean admitidos o utilizados en la misma."
+        }
+       ]
+      },
+      {
+       "text": "La **normativa reguladora del Registro** al que se accede, la **fecha y hora oficial** y el **calendario de días inhábiles**.",
+       "refs": [
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "e) La normativa reguladora del Registro al que se acceda a través de la sede electrónica."
+        },
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "f) La fecha y hora oficial, así como el calendario de días inhábiles"
+        }
+       ]
+      },
+      {
+       "text": "Las **incidencias técnicas** y las ampliaciones de plazo; la relación de **servicios, procedimientos y trámites**; y la de **actuaciones administrativas automatizadas**, con su diseño, funcionamiento y datos de configuración y aprendizaje.",
+       "refs": [
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "g) Información acerca de cualquier incidencia técnica"
+        },
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "h) Relación actualizada de los servicios, procedimientos y trámites disponibles"
+        },
+        {
+         "law": "BOE-A-2021-5032",
+         "section": "a1-3",
+         "quote": "i) Relación actualizada de las actuaciones administrativas automatizadas"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Servicios mínimos** (art. 11.2): acceso a los trámites con sus **plazos máximos**, **sugerencias y quejas**, reclamaciones de **accesibilidad**, **verificación de los certificados de la sede** y de los **sellos** electrónicos, **comprobación de documentos con CSV**, modelos y **presentación masiva**, modelos normalizados y **directorio geográfico de oficinas** de registro. También el listado de **códigos de identificación** de órganos (art. 11.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "con indicación de los plazos máximos de duración de los procedimientos"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "b) Un enlace para la formulación de sugerencias y quejas"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "d) Un sistema de verificación de los certificados de la sede electrónica."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "e) Un sistema de verificación de los sellos electrónicos"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "para los cuales se haya generado un código seguro de verificación."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "sistemas de presentación masiva"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "i) Un servicio de consulta del directorio geográfico de oficinas de asistencia en materia de registros"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-3",
+       "quote": "un listado con los códigos de identificación vigentes de sus órganos, centros o unidades administrativas."
+      }
+     ]
+    },
+    {
+     "text": "Si una sede **enlaza** a otra, responde de su contenido el **titular de la enlazada**; si incluye procedimientos de **otro órgano**, responde el **titular de la competencia**, sin perjuicio de la diligencia del titular de la sede (art. 12).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-4",
+       "quote": "será el titular de esta última el responsable de la integridad, veracidad y actualización"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-4",
+       "quote": "el titular de la competencia será responsable de la integridad, veracidad y actualización"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Identificación y firma de las Administraciones",
+   "points": [
+    {
+     "text": "Las Administraciones se identifican y garantizan el origen e integridad de sus documentos con (art. 15.2 RD 203/2021): la identificación de las **sedes**, el **sello electrónico** cualificado, la **firma para la actuación automatizada**, la **firma de su personal** y el **intercambio en entornos cerrados**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-7",
+       "quote": "a) Sistemas de identificación de las sedes electrónicas y sedes electrónicas asociadas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-7",
+       "quote": "b) Sello electrónico basado en un certificado electrónico cualificado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-7",
+       "quote": "c) Sistemas de firma electrónica para la actuación administrativa automatizada."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-7",
+       "quote": "d) Firma electrónica del personal al servicio de las Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-7",
+       "quote": "e) Intercambio electrónico de datos en entornos cerrados de comunicación"
+      }
+     ]
+    },
+    {
+     "text": "**Sello electrónico** (art. 19): basado en certificado cualificado, con el **NIF** y la **denominación** (y la persona titular en los sellos de órganos). La relación de sellos es **pública**. En el Estado se crean por resolución de la **Subsecretaría** o del presidente o director del organismo, publicada en la sede.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-11",
+       "quote": "Estos certificados electrónicos incluirán el número de identificación fiscal y la denominación correspondiente"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-11",
+       "quote": "deberá ser pública y accesible por medios electrónicos"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-11",
+       "quote": "la creación de sellos electrónicos se realizará mediante resolución de la persona titular de la Subsecretaría del Ministerio"
+      }
+     ]
+    },
+    {
+     "text": "**Actuación administrativa automatizada**: acto o actuación realizada **íntegramente por medios electrónicos** en un procedimiento **sin intervención directa de un empleado público**. Debe fijarse antes el órgano competente para su definición, programación, supervisión y **auditoría** del sistema y de su **código fuente**, y el **responsable a efectos de impugnación** (art. 41 Ley 40/2015).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a41",
+       "quote": "Se entiende por actuación administrativa automatizada, cualquier acto o actuación realizada íntegramente a través de medios electrónicos por una Administración Pública en el marco de un procedimiento administrativo y en la que no haya intervenido de forma directa un empleado público."
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a41",
+       "quote": "auditoría del sistema de información y de su código fuente"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a41",
+       "quote": "Asimismo, se indicará el órgano que debe ser considerado responsable a efectos de impugnación."
+      }
+     ]
+    },
+    {
+     "text": "En el RD 203/2021 (art. 13): en el Estado se autoriza por **resolución** del órgano competente, **publicada en la sede**, que indica los **recursos** procedentes. Se firma con **sello electrónico** o **código seguro de verificación (CSV)** (art. 20).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-5",
+       "quote": "se autorizará por resolución del titular del órgano administrativo competente por razón de la materia"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-5",
+       "quote": "se publicará en la sede electrónica o sede electrónica asociada"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-5",
+       "quote": "La resolución expresará los recursos que procedan contra la actuación"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-2",
+       "quote": "a) Sello electrónico de Administración Pública"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-2",
+       "quote": "b) Código seguro de verificación"
+      }
+     ]
+    },
+    {
+     "text": "**CSV** (art. 21): vincula al órgano (y al firmante) y permite comprobar la integridad **en la sede**, de forma **directa y gratuita**. Garantiza el **origen e integridad**, el **carácter único** del código para cada documento (cualquier cambio genera **otro CSV**) y el **acceso restringido** a quien lo tenga. En el Estado requiere **resolución** previo informe del **CCN** y de la **SGAD**, con un plazo de verificación en sede de **al menos cinco años**. El código se integra **preferentemente en todas las páginas** del documento y, para la interoperabilidad, se le **superpone un sello electrónico**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-3",
+       "quote": "mediante un procedimiento de verificación directo y gratuito para las personas interesadas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-3",
+       "quote": "b) El carácter único del código generado para cada documento."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-3",
+       "quote": "Cualquier modificación del documento generado dará lugar a un nuevo documento con un código seguro de verificación diferente."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-3",
+       "quote": "e) Un acceso restringido al documento a quien disponga del código seguro de verificación"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-3",
+       "quote": "previo informe del Centro Criptológico Nacional y de la Secretaría General de Administración Digital."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-3",
+       "quote": "Este plazo será al menos de cinco años"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-3",
+       "quote": "deberán integrarse preferentemente en todas las páginas del documento firmado con dicho código"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-3",
+       "quote": "la interoperabilidad se garantizará mediante la superposición al código seguro de verificación de un sello electrónico"
+      }
+     ]
+    },
+    {
+     "text": "**Firma del personal** (arts. 22 y 23): con **certificados cualificados de empleado público**; pueden llevar un **número de identificación profesional** si se usan en actuaciones sobre **información clasificada**, **seguridad pública**, **defensa nacional** u otras en que esté legalmente justificado el **anonimato**, limitados a las actuaciones que justificaron su emisión; en el Estado los pide el **Subsecretario** o el presidente o director del organismo. Los jueces y autoridades pueden pedir que se revele la identidad.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-4",
+       "quote": "Los certificados electrónicos de empleado público serán cualificados"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-5",
+       "quote": "podrán consignar un número de identificación profesional en el certificado electrónico de empleado público"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-5",
+       "quote": "a otras actuaciones para cuya realización esté legalmente justificado el anonimato"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-5",
+       "quote": "limitados a las actuaciones que justificaron su emisión"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-5",
+       "quote": "la persona titular de la Subsecretaría del ministerio"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-5",
+       "quote": "podrán solicitar la revelación de la identidad del titular de un certificado de empleado público con número de identificación profesional"
+      }
+     ]
+    },
+    {
+     "text": "**Entornos cerrados de comunicación** (art. 25): los documentos transmitidos en ellos son válidos para **autenticar e identificar** a emisores y receptores. Las condiciones (al menos, **emisores y receptores autorizados** y **naturaleza de los datos**) las fija la propia Administración; entre **distintas** Administraciones, por **convenio**; en el Estado, la **SGAD**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-7",
+       "quote": "serán considerados válidos a efectos de autenticación e identificación de los emisores y receptores"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-7",
+       "quote": "que comprenderán, al menos, la relación de emisores y receptores autorizados y la naturaleza de los datos a intercambiar."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-7",
+       "quote": "las condiciones y garantías citadas en el apartado anterior se establecerán mediante convenio suscrito entre aquellas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-7",
+       "quote": "En el ámbito estatal, las condiciones y garantías a que se refiere el apartado 2 serán establecidas por la Secretaría General de Administración Digital."
+      }
+     ]
+    },
+    {
+     "text": "La AGE dispone de una **plataforma de verificación** de certificados cualificados, **libre y gratuita** para el sector público (previa **adhesión**), a cargo de la **SGAD**; los prestadores cualificados le dan acceso gratuito (art. 16). La **política de firma** estatal la aprueba la **Secretaría de Estado de Digitalización e Inteligencia Artificial** y se publica en el **BOE** y en la sede del PAGe (art. 17).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-8",
+       "quote": "La Administración General del Estado dispondrá de una plataforma para la verificación de la vigencia y del contenido de los certificados cualificados"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-8",
+       "quote": "de forma libre y gratuita, para el sector público."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-8",
+       "quote": "previa formalización del correspondiente instrumento de adhesión"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-8",
+       "quote": "Los prestadores cualificados de servicios de confianza deberán facilitar a esta plataforma el acceso electrónico y gratuito"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-8",
+       "quote": "La Secretaría General de Administración Digital será el órgano responsable de esta plataforma"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a1-9",
+       "quote": "será aprobada por Resolución de la persona titular de la Secretaría de Estado de Digitalización e Inteligencia Artificial y se publicará en el «Boletín Oficial del Estado»"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Identificación, firma y representación de los interesados",
+   "points": [
+    {
+     "text": "Los interesados se identifican con cualquier sistema con **registro previo** (art. 26): certificados cualificados de **firma** o de **sello** de la **lista de confianza**, y sistemas de **clave concertada** u otros, previa **autorización de la SGAD** (que solo puede denegarla por **seguridad pública**, con informe vinculante de la Secretaría de Estado de Seguridad). Siempre debe poder usarse un **certificado** en todo procedimiento.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-8",
+       "quote": "a través de cualquier sistema que cuente con un registro previo como usuario que permita garantizar su identidad."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-8",
+       "quote": "c) Sistemas de clave concertada y cualquier otro sistema que las Administraciones Públicas consideren válido"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-8",
+       "quote": "previa autorización por parte de la Secretaría General de Administración Digital"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-8",
+       "quote": "que solo podrá ser denegada por motivos de seguridad pública"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-8",
+       "quote": "Las Administraciones Públicas deberán garantizar que la utilización de uno de los sistemas previstos en las letras a) y b) sea posible para todo procedimiento"
+      }
+     ]
+    },
+    {
+     "text": "**Atributos mínimos** (arts. 27 y 28): de persona física, **nombre, apellidos y DNI, NIE, número de identificación consular o NIF**; de **representante de persona jurídica**, la **denominación y NIF** de esta y el nombre, apellidos y DNI, NIE o NIF del representante; de **sello**, denominación y NIF. Los **nuevos sistemas de identificación** estatales se aprueban por **orden** ministerial o **resolución** del organismo; si abarcan **toda la AGE**, por **Acuerdo del Consejo de Ministros**, y los de clave concertada deben ser accesibles por la plataforma común (**Cl@ve**).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-9",
+       "quote": "deberán contener como atributos, al menos, su nombre y apellidos y su número de Documento Nacional de Identidad, Número de Identificación de Extranjero, Número de Identificación Consular Central o Número de Identificación Fiscal"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-9",
+       "quote": "Número de Identificación Fiscal de la persona jurídica y el nombre y apellidos y número de Documento Nacional de Identidad, o Número de Identificación de Extranjero o Número de Identificación Fiscal de la persona que actúa como representante"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-9",
+       "quote": "deberán contener, como mínimo, su denominación y su Número de Identificación Fiscal."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-10",
+       "quote": "la creación de los nuevos sistemas de identificación será aprobada por orden de la persona titular del Ministerio"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-10",
+       "quote": "Cuando el nuevo sistema se refiera a la totalidad de la Administración General del Estado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-10",
+       "quote": "se requerirá Acuerdo del Consejo de Ministros"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-10",
+       "quote": "deberá estar accesible a través de la Plataforma común del Sector Público Administrativo Estatal para la identificación, autenticación y firma electrónica mediante el uso de claves concertadas."
+      }
+     ]
+    },
+    {
+     "text": "**Firma de los interesados** (art. 29): firma **cualificada y avanzada** con certificado cualificado, **sello** cualificado y avanzado, u otros sistemas con registro previo (autorizados por la SGAD). Debe poder usarse la firma o el sello cualificado o avanzado en **todos los procedimientos y trámites**. La firma **no exime** de incluir los **datos de identificación**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-11",
+       "quote": "a) Sistemas de firma electrónica reconocida o cualificada y avanzada"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-11",
+       "quote": "b) Sistemas de sello electrónico cualificado y de sello electrónico avanzado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-11",
+       "quote": "c) Cualquier otro sistema que las Administraciones Públicas consideren válido"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-11",
+       "quote": "deberán contar con la previa autorización de la Secretaría General de Administración Digital"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-11",
+       "quote": "para todos los procedimientos en todos sus trámites"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a2-11",
+       "quote": "El uso de la firma electrónica no excluye la obligación de incluir en el documento o comunicación electrónica los datos de identificación del interesado"
+      }
+     ]
+    },
+    {
+     "text": "**Funcionarios habilitados** (arts. 30 y 31): identifican o firman por un interesado **no obligado** que no tenga medios, que se **identifica** ante ellos y da su **consentimiento expreso**, y entregándole la documentación y copia del consentimiento. En la AGE solo pueden hacerlo los **inscritos** y para los trámites que cada ministerio determine. Existe el **Registro de Funcionarios Habilitados**, con los habilitados para **identificación y firma**, para **copias auténticas** y los de las **oficinas de asistencia en materia de registros**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-2",
+       "quote": "estas podrán ser válidamente realizadas por personal funcionario público habilitado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-2",
+       "quote": "si algún interesado no incluido en los apartados 2 y 3 del artículo 14 de la ley no dispusiera de los medios electrónicos necesarios"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-2",
+       "quote": "será necesario que el interesado se identifique ante el funcionario o funcionaria y preste su consentimiento expreso"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-2",
+       "quote": "se realizará necesariamente por un funcionario público inscrito a tal efecto en el Registro de Funcionarios Habilitados"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-2",
+       "quote": "sólo será válida para los trámites y actuaciones que haya determinado con carácter previo cada ministerio"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-2",
+       "quote": "así como una copia del documento de consentimiento expreso cumplimentado y firmado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-3",
+       "quote": "Se crea el Registro de Funcionarios Habilitados"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-3",
+       "quote": "b) El personal funcionario habilitado para la expedición de copias auténticas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-3",
+       "quote": "c) El personal funcionario habilitado que presta servicio en las oficinas de asistencia en materia de registros"
+      }
+     ]
+    },
+    {
+     "text": "**Representación** (art. 32): se puede actuar por medio de representante (persona física con capacidad de obrar o jurídica si sus estatutos lo prevén); los representantes de **obligados** también deben actuar electrónicamente. Se acredita, entre otros, por **apoderamiento apud acta**, inscripción en un **registro de apoderamientos**, **certificado cualificado de representante** (que en persona jurídica abarca **cualquier actuación ante cualquier Administración**) o **documento público notarial** o inscripción mercantil. Pueden **habilitarse** personas físicas o jurídicas para hacer transacciones electrónicas en representación de los interesados. El certificado de representante acredita la representación si se expidió a quien tiene **poder general** ante **cualquier Administración** (art. 34).",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "bien sea una persona física con capacidad de obrar bien sea una persona jurídica cuando así esté previsto en sus Estatutos."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "están obligados a relacionarse electrónicamente en el ejercicio de dicha representación"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "a) Mediante apoderamiento apud acta"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "b) Mediante acreditación de su inscripción en el registro electrónico de apoderamientos"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "c) Mediante un certificado electrónico cualificado de representante."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "o de una inscripción practicada en un registro mercantil"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "d) Mediante documento público cuya matriz conste en un archivo notarial"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "entendiéndose en tal caso que el poder de representación abarca cualquier actuación ante cualquier Administración Pública."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-4",
+       "quote": "podrán habilitar con carácter general o específico a personas físicas o jurídicas autorizadas para la realización de determinadas transacciones por medios electrónicos en representación de las personas interesadas."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-6",
+       "quote": "haya sido expedido a quien tenga un poder general para llevar a cabo cualquier actuación administrativa y ante cualquier Administración."
+      }
+     ]
+    },
+    {
+     "text": "**Registro Electrónico de Apoderamientos de la AGE** (art. 33): inscribe los **poderes generales** apud acta y, si el organismo no tiene registro particular, los poderes ante la AGE o para trámites concretos, con el **bastanteo** de los servicios jurídicos; lo gestiona el **Ministerio de Política Territorial y Función Pública** (según el texto) y es accesible desde la sede del PAGe. **No es público**: solo acceden **poderdante y apoderado**. Los organismos pueden tener **registros particulares**, donde **no** se inscriben poderes generales. Su aplicación es **Apodera**; lo regula hoy la **Orden PCM/1384/2021**.",
+     "refs": [
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-5",
+       "quote": "se inscribirán los apoderamientos de carácter general"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-5",
+       "quote": "será gestionado por el Ministerio de Política Territorial y Función Pública"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-5",
+       "quote": "no cuente con un registro electrónico de apoderamientos particular"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-5",
+       "quote": "Constará en el Registro el bastanteo del poder realizado por los servicios jurídicos correspondientes"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-5",
+       "quote": "será accesible desde la sede electrónica del PAGe de la Administración General del Estado"
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-5",
+       "quote": "no tienen carácter público, por lo que el interesado sólo podrá acceder a la información de los apoderamientos de los que sea poderdante o apoderado."
+      },
+      {
+       "law": "BOE-A-2021-5032",
+       "section": "a3-5",
+       "quote": "En estos registros particulares no podrán inscribirse los poderes previstos en el artículo 6.4.a)"
+      },
+      {
+       "title": "Registro Electrónico de Apoderamientos (Apodera) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/rea",
+       "quote": "Apodera es la aplicación que gestiona el Registro Electrónico de Apoderamientos de la Administración General del Estado."
+      },
+      {
+       "title": "Registro Electrónico de Apoderamientos (Apodera) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/rea",
+       "quote": "Orden PCM/1384/2021, de 9 de diciembre, por la que se regula el Registro Electrónico de apoderamientos en el ámbito de la Administración General del Estado"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "El sistema Cl@ve",
+   "points": [
+    {
+     "text": "**Cl@ve** es el sistema de **identificación, autenticación y firma electrónica** común para todo el **Sector Público Administrativo Estatal**, basado en **claves concertadas** y abierto a todas las Administraciones (que se adhieren mediante **convenio**); **complementa** el acceso con DNIe y certificado. Los organismos estatales están **obligados** a habilitarlo en todos sus trámites dirigidos a los ciudadanos, y cada servicio elige los modos de identificación válidos según el **principio de proporcionalidad**. Lo aprobó el **Consejo de Ministros** (Orden PRE/1838/2014) y fija sus prescripciones técnicas la **Resolución de 14 de diciembre de 2015 de la DTIC**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iii",
+       "quote": "Cl@ve es un sistema de Identificación, Autenticación y Firma Electrónica común para todo el Sector Público Administrativo Estatal, basado en el uso de claves concertadas"
+      },
+      {
+       "title": "Cl@ve Identificación · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/clave",
+       "quote": "Cl@ve Identificación es la plataforma común del Sector Público Administrativo Estatal para la identificación y autenticación electrónicas mediante el uso de claves concertadas, abierta a su utilización por parte de todas las Administraciones Públicas."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "vi",
+       "quote": "mediante la formalización de un convenio al efecto"
+      },
+      {
+       "title": "Cl@ve Identificación · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/clave",
+       "quote": "Orden PRE/1838/2014, de 8 de octubre, por la que se publica el Acuerdo de Consejo de Ministros, de 19 de septiembre de 2014, por el que se aprueba Cl@ve"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iii",
+       "quote": "complementando los actuales sistemas de acceso mediante DNI-e y certificado electrónico reconocido."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "ii",
+       "quote": "obligados a habilitar el sistema Cl@ve en todos los servicios y trámites electrónicos dirigidos a los ciudadanos."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "podrá ser utilizado para seleccionar los modos de identificación válidos para cada procedimiento, en aplicación del principio de proporcionalidad"
+      }
+     ]
+    },
+    {
+     "text": "Requiere **registro previo** de los usuarios: ciudadanos españoles con **DNI** y extranjeros con **TIE** o certificado de ciudadano de la UE, en vigor. **Dos niveles de garantía de registro**: **básico** (datos aportados telemáticamente sin certificado) y **avanzado** (presencialmente ante un empleado habilitado, o telemáticamente con **certificado** reconocido). Hay **tres procedimientos de alta**: telemático **sin certificado** (por **carta de invitación** con un **CSV** enviada al domicilio), telemático con **DNIe o certificado**, y **presencial** (que **no** admite representación). Y **tres de baja**: por **renuncia**, **revocación de oficio** y **fallecimiento**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "la utilización de dicho sistema requiere de un registro previo de los usuarios."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "Se podrán registrar en Cl@ve ciudadanos españoles con Documento Nacional de Identidad (DNI) y ciudadanos extranjeros con Tarjeta de Identidad de Extranjeros (TIE) o Certificado de Ciudadano de la Unión Europea"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "Existirán dos modalidades o niveles de garantía de registro"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "a) Nivel Básico, en el que los datos del registro de usuario son facilitados por el ciudadano de forma telemática, pero sin una autenticación previa mediante certificado electrónico reconocido."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "b) Nivel Avanzado, en el que los datos del registro de usuario son facilitados por el ciudadano, bien de forma presencial en una oficina ante un empleado público habilitado al efecto"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "o bien, son comunicados de forma telemática, previa autenticación del ciudadano mediante un certificado electrónico reconocido"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "ani",
+       "quote": "Existirán tres procedimientos de registro diferenciados en el sistema Cl@ve: registro telemático sin certificado electrónico reconocido, registro telemático con DNI electrónico o certificado electrónico reconocido, y registro presencial."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "ani",
+       "quote": "una carta de invitación al sistema Cl@ve, en la que se incluirá un código seguro de verificación (CSV)."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "ani",
+       "quote": "no se permitirá que el registro presencial sea realizado por una persona en representación de otra."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "ani",
+       "quote": "Se habilitarán tres procedimientos de baja en el sistema Cl@ve"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "ani",
+       "quote": "2.2 Procedimiento de revocación de oficio."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "ani",
+       "quote": "2.3 Procedimiento de baja por fallecimiento."
+      }
+     ]
+    },
+    {
+     "text": "**Dos modalidades de identificación** con claves concertadas:",
+     "refs": [
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "El sistema Cl@ve proporcionará a los usuarios dos modalidades de identificación electrónica basadas en el uso de claves concertadas"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Cl@ve ocasional o Cl@ve PIN**: contraseña de **un solo uso** formada por una clave del usuario y un **código recibido en el móvil** de validez muy limitada; para usuarios **esporádicos**. **Código de acceso = clave de acceso + PIN**; el PIN debe usarse **antes de 10 minutos**. Responsable: la **AEAT**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "iv",
+         "quote": "la contraseña, limitada a un solo uso, está formada por una clave aportada por el usuario más un código que recibe en su dispositivo móvil"
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "iv",
+         "quote": "y que tiene una validez muy limitada en el tiempo"
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "iv",
+         "quote": "Está orientado a usuarios que acceden esporádicamente a los servicios."
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "ani",
+         "quote": "Código de Acceso (Cl@ve PIN) = Clave de Acceso + PIN."
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "ani",
+         "quote": "Se deberá utilizar el PIN que se ha recibido en el teléfono móvil para completar el acceso al sistema antes de 10 minutos."
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "v",
+         "quote": "La AEAT actuará como organismo principal responsable del sistema de acceso basado en Cl@ve ocasional."
+        }
+       ]
+      },
+      {
+       "text": "**Cl@ve permanente**: identificador (**DNI o NIE**) y **contraseña** custodiada por el ciudadano, de validez duradera pero no ilimitada; pensada para usuarios **habituales**; puede dar un nivel superior de garantía con un **código de un solo uso**. Responsable: la **Gerencia de Informática de la Seguridad Social (GISS)**.",
+       "refs": [
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "iv",
+         "quote": "por medio de un identificador (Número de DNI o NIE del usuario) y una contraseña que debe ser custodiada por el ciudadano."
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "iv",
+         "quote": "La validez de la contraseña es duradera en el tiempo, pero no ilimitada."
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "iv",
+         "quote": "Está orientado principalmente para uso por parte de usuarios habituales."
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "iv",
+         "quote": "requerirá la utilización de una verificación de seguridad adicional mediante un código de un solo uso"
+        },
+        {
+         "law": "BOE-A-2015-14215",
+         "section": "v",
+         "quote": "La Gerencia de Informática de la Seguridad Social (GISS) actuará como organismo responsable del funcionamiento del sistema de acceso basado en Cl@ve permanente."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "La **AEAT** es responsable del **registro de usuarios** (también registran las entidades gestoras de la Seguridad Social y las oficinas de información y atención al ciudadano de **Delegaciones y Subdelegaciones del Gobierno**). La **DTIC** gestiona el **punto de acceso**, que **no almacena datos personales** y permite pasar a otro servicio **sin volver a identificarse** si ese servicio lo permite.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "v",
+       "quote": "La Agencia Estatal de Administración Tributaria (AEAT) actuará como organismo principal responsable del sistema de Registro de usuarios de Cl@ve."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "v",
+       "quote": "además de la red de oficinas de la AEAT, las entidades gestoras de la Seguridad Social"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "v",
+       "quote": "Red de oficinas de Información y Atención al Ciudadano de las Delegaciones y Subdelegaciones de Gobierno."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "v",
+       "quote": "La DTIC será responsable del funcionamiento del punto de acceso al sistema Cl@ve"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "el Punto de Acceso del sistema Cl@ve no almacenará ningún dato de carácter personal"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "se le dará la posibilidad de acceder a otro servicio electrónico sin necesidad de identificarse de nuevo"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "siempre que el proveedor de este segundo servicio lo permita"
+      }
+     ]
+    },
+    {
+     "text": "**Firma con certificados centralizados** (**Cl@ve Firma**): el usuario debe **solicitarlos expresamente**, estar registrado en **nivel avanzado** y tener activada la **Cl@ve permanente**, con un **código de un solo uso** al móvil. Los emite y custodia la **Dirección General de la Policía**, con las mismas garantías del **DNI electrónico** y con su infraestructura de clave pública; se **renuevan automáticamente** al firmar desde **2 meses antes** de caducar (si se cumplen los plazos legales); la **GISS** presta el servicio de firma junto con ella.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "El sistema Cl@ve permitirá también el acceso a servicios de firma electrónica, en particular, a servicios de firma de documentos electrónicos mediante certificados electrónicos centralizados"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "el usuario deberá solicitar previa y expresamente la emisión de los certificados electrónicos centralizados"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "será necesario en todo caso que el usuario se haya registrado en Nivel Avanzado y haya activado su Cl@ve permanente."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "Los certificados electrónicos centralizados serán emitidos con las mismas garantías de identificación del DNI electrónico del ciudadano"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "v",
+       "quote": "será, en el ejercicio de sus competencias, la Dirección General de la Policía (DGP)"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "iv",
+       "quote": "Además se requerirá en el momento de la identificación la utilización de una verificación de seguridad adicional mediante un código de un solo uso"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "v",
+       "quote": "será la GISS que actuará como organismo responsable de este servicio, en unión con la DGP"
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "v",
+       "quote": "Para realizar estas funciones, la DGP utilizará la Infraestructura de Clave Pública correspondiente al DNI electrónico actualmente existente."
+      },
+      {
+       "law": "BOE-A-2015-14215",
+       "section": "ani",
+       "quote": "hasta 2 meses antes de la fecha de expiración de su validez."
+      },
+      {
+       "title": "Cl@ve Firma · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/clavefirma",
+       "quote": "Cl@ve Firma es la plataforma de firma electrónica basada en certificados centralizados para las Administraciones Públicas."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nodo eIDAS e identificación transfronteriza",
+   "points": [
+    {
+     "text": "El **nodo eIDAS español** permite el **reconocimiento mutuo de identidades electrónicas** en Europa: que el **DNI electrónico** se acepte en servicios de otras administraciones **europeas** y que los ciudadanos europeos se identifiquen en servicios públicos españoles con medios de **su país**, conforme al **Reglamento eIDAS**.",
+     "refs": [
+      {
+       "title": "Nodo eIDAS · Portal de Administración Electrónica",
+       "url": "https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Identidad_y_firmaelectronica/Nodo-eIDAS.html",
+       "quote": "El nodo eIDAS español es un proyecto que permite el reconocimiento mutuo de identidades electrónicas en Europa."
+      },
+      {
+       "title": "Nodo eIDAS · Portal de Administración Electrónica",
+       "url": "https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Identidad_y_firmaelectronica/Nodo-eIDAS.html",
+       "quote": "facilita la aceptación del DNI electrónico en servicios de Administración Electrónica de otras administraciones europeas"
+      },
+      {
+       "title": "Nodo eIDAS · Portal de Administración Electrónica",
+       "url": "https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Identidad_y_firmaelectronica/Nodo-eIDAS.html",
+       "quote": "así como la identificación de ciudadanos europeos en servicios públicos españoles utilizando un medio de identificación de su país de origen"
+      },
+      {
+       "title": "Nodo eIDAS · Portal de Administración Electrónica",
+       "url": "https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Identidad_y_firmaelectronica/Nodo-eIDAS.html",
+       "quote": "de acuerdo con el Reglamento eIDAS (UE) No 910/2014"
+      }
+     ]
+    },
+    {
+     "text": "Usa mensajes conforme al estándar **SAML 2.0**; las Administraciones se integran con él **a través de Cl@ve**. Desde **septiembre de 2018** es obligatorio reconocer las identidades transfronterizas **notificadas** a la Comisión.",
+     "refs": [
+      {
+       "title": "Nodo eIDAS · Portal de Administración Electrónica",
+       "url": "https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Identidad_y_firmaelectronica/Nodo-eIDAS.html",
+       "quote": "utiliza un sistema de intercambio de mensajes conforme al estándar SAML 2.0."
+      },
+      {
+       "title": "Nodo eIDAS · Portal de Administración Electrónica",
+       "url": "https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Identidad_y_firmaelectronica/Nodo-eIDAS.html",
+       "quote": "Para las Administraciones Públicas, la integración con el nodo eIDAS español se realiza a través del sistema Cl@ve ."
+      },
+      {
+       "title": "Nodo eIDAS · Portal de Administración Electrónica",
+       "url": "https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Identidad_y_firmaelectronica/Nodo-eIDAS.html",
+       "quote": "A partir de Septiembre de 2018 comienza la obligación de reconocimiento mutuo de identidades electrónicas transfronterizas notificadas a la Comisión Europea"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Infraestructuras y servicios comunes",
+   "points": [
+    {
+     "text": "**Red SARA** (Sistemas de Aplicaciones y Redes para las Administraciones): infraestructuras de comunicaciones y servicios básicos que **conecta las redes de las Administraciones españolas e instituciones europeas**.",
+     "refs": [
+      {
+       "title": "Red SARA · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/redsara",
+       "quote": "La Red SARA (Sistemas de Aplicaciones y Redes para las Administraciones) es un conjunto de infraestructuras de comunicaciones y servicios básicos que conecta las redes de las Administraciones Públicas Españolas e Instituciones Europeas"
+      }
+     ]
+    },
+    {
+     "text": "**Registro**: el **SIR** permite el **intercambio de asientos registrales** entre Administraciones con instalaciones certificadas en la norma **SICRES**, eliminando el **tránsito de papel**; las Administraciones deben estar integradas en SIR desde el **2 de abril de 2021**. **GEISER** es una solución integral de registro **en la nube** y **ORVE**, una oficina de registro virtual con libro de registro propio; ambas intercambian por SIR. GEISER es de **uso obligatorio** en la AGE y sus organismos.",
+     "refs": [
+      {
+       "title": "Sistema de Interconexión de Registros (SIR) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/sir",
+       "quote": "Es la infraestructura básica que permite el intercambio de asientos electrónicos de registro entre las AAPP."
+      },
+      {
+       "title": "Sistema de Interconexión de Registros (SIR) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/sir",
+       "quote": "siempre que esté certificada en la Norma SICRES."
+      },
+      {
+       "title": "Sistema de Interconexión de Registros (SIR) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/sir",
+       "quote": "Su implantación permite eliminar el tránsito de papel entre administraciones"
+      },
+      {
+       "title": "Sistema de Interconexión de Registros (SIR) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/sir",
+       "quote": "deben estar integradas en SIR a partir del 2 de abril de 2021"
+      },
+      {
+       "title": "GEISER · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/geiser",
+       "quote": "es una solución integral de registro que funciona en modo nube"
+      },
+      {
+       "title": "ORVE · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/orve",
+       "quote": "ORVE (Oficina de Registro Virtual) es una solución de registro completa que proporciona un servicio en la nube"
+      },
+      {
+       "title": "ORVE · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/orve",
+       "quote": "proporcionando su propio libro de registro"
+      },
+      {
+       "title": "GEISER · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/geiser",
+       "quote": "posibilita el intercambio de registros en formato electrónico con otros organismos conectados a la plataforma SIR"
+      },
+      {
+       "title": "GEISER · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/geiser",
+       "quote": "El servicio GEISER es actualmente de uso obligatorio para toda la AGE y sus OO.PP."
+      }
+     ]
+    },
+    {
+     "text": "**Notificaciones**: **Notifica** (servicio compartido **obligatorio** para los emisores de la AGE) gestiona las notificaciones y comunicaciones de los organismos emisores y las entrega por **comparecencia en la DEHú** y/o en **papel** (opción solo de la AGE), según las condiciones del destinatario.",
+     "refs": [
+      {
+       "title": "Notifica · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/notifica",
+       "quote": "Notifica es un servicio de gestión de Notificaciones"
+      },
+      {
+       "title": "Notifica · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/notifica",
+       "quote": "es de obligado cumplimiento para los organismos emisores de la Administración General del Estado."
+      },
+      {
+       "title": "Notifica · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/notifica",
+       "quote": "mediante comparecencia electrónica en la Dirección Electrónica Habilitada única (dehu.redsara.es) del Punto de Acceso General, y/o en soporte papel."
+      },
+      {
+       "title": "Notifica · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/notifica",
+       "quote": "Opción sólo disponible dentro del ámbito de la AGE."
+      }
+     ]
+    },
+    {
+     "text": "**Intercambio de datos**: la **Plataforma de Intermediación** (**Servicio de Verificación y Consulta de Datos**) permite **verificar o consultar los datos** de un ciudadano, que así **no tiene que aportar documentos** (identidad, residencia, etc.).",
+     "refs": [
+      {
+       "title": "Plataforma de Intermediación (SVD) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/svd",
+       "quote": "Permite verificar o consultar los datos de un ciudadano que ha iniciado un trámite con la entidad."
+      },
+      {
+       "title": "Plataforma de Intermediación (SVD) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/svd",
+       "quote": "el ciudadano no tendrá que aportar documentos acreditativos"
+      }
+     ]
+    },
+    {
+     "text": "**Firma y validación**: **@firma** es una plataforma de **validación y firma electrónica multi-PKI** para las Administraciones (certificados cualificados españoles y de las **listas de confianza (TSL)** europeas); **VALIDe**, un servicio **en línea** para validar **certificados y firmas** y firmar; **Portafirmas**, para la firma en los **flujos de trabajo** (con delegación, sustitución y vistos buenos); y **eVisor** genera **justificantes de firma** y **copias auténticas en papel** de documentos firmados (en **PDF u ODF**).",
+     "refs": [
+      {
+       "title": "@firma · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/afirma",
+       "quote": "@firma es una plataforma de validación y firma electrónica multi-PKI"
+      },
+      {
+       "title": "@firma · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/afirma",
+       "quote": "a todos los certificados europeos incluidos en las Listas de confianza (TSL) de sus Estados Miembros."
+      },
+      {
+       "title": "VALIDe · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/valide",
+       "quote": "VALIDe es un servicio on-line"
+      },
+      {
+       "title": "VALIDe · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/valide",
+       "quote": "para la validación de Firmas y Certificados electrónicos."
+      },
+      {
+       "title": "VALIDe · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/valide",
+       "quote": "y realizar firmas mediante certificado digital del que se disponga de la clave privada correspondiente"
+      },
+      {
+       "title": "Portafirmas · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/portafirmas",
+       "quote": "Componente para la integración de la firma en los flujos de trabajo organizativos."
+      },
+      {
+       "title": "Portafirmas · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/portafirmas",
+       "quote": "Permite crear autorizaciones de firma para firmar por delegación o por sustitución"
+      },
+      {
+       "title": "Portafirmas · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/portafirmas",
+       "quote": "Se pueden incluir \"Visto Bueno\" en el flujo de firma."
+      },
+      {
+       "title": "eVisor · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/evisor",
+       "quote": "El eVisor es una aplicación web que permite la generación de informes y justificantes de firma electrónica en formato PDF u ODF"
+      },
+      {
+       "title": "eVisor · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/evisor",
+       "quote": "u opcionalmente la generación de copias autenticas en papel de documentos electrónicos firmados"
+      }
+     ]
+    },
+    {
+     "text": "**Directorios e inventarios**: el **DIR3** es el inventario **unificado y común** de **unidades orgánicas, organismos y oficinas**; el **SIA** (Sistema de Información Administrativa), el inventario de **procedimientos y servicios** (art. 9 del ENI).",
+     "refs": [
+      {
+       "title": "DIR3 · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/dir3",
+       "quote": "El Directorio Común proporciona un Inventario unificado y común a toda la Administración de las unidades orgánicas / organismos públicos, sus oficinas asociadas"
+      },
+      {
+       "title": "Sistema de Información Administrativa (SIA) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/sia",
+       "quote": "El Sistema de Información Administrativa es el inventario de información administrativa de la AGE, reglado por el artículo 9 del Esquema Nacional de Interoperabilidad"
+      },
+      {
+       "title": "Sistema de Información Administrativa (SIA) · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/sia",
+       "quote": "Contiene la relación de procedimientos y servicios de la AGE y las diferentes Administraciones Públicas participantes."
+      }
+     ]
+    },
+    {
+     "text": "**Documentos y archivo**: **InSide** gestiona **documentos y expedientes electrónicos** conforme al **ENI** (gestión viva del expediente); **Archive** es la aplicación de **archivo definitivo** de expedientes y documentos.",
+     "refs": [
+      {
+       "title": "InSide · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/inside",
+       "quote": "InSide es un sistema para la gestión de documentos y expedientes electrónicos que cumple los requisitos para que ambos puedan almacenarse y/o obtenerse según el ENI"
+      },
+      {
+       "title": "InSide · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/inside",
+       "quote": "Supone la gestión documental íntegramente electrónica de los documentos de la gestión viva del expediente, como paso previo al archivado definitivo"
+      },
+      {
+       "title": "Archive · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/archive",
+       "quote": "Archive es una aplicación web de archivo definitivo de expedientes y documentos electrónicos"
+      }
+     ]
+    },
+    {
+     "text": "**Tramitación**: **ACCEDA** integra una **sede electrónica**, un **gestor de tramitación** de expedientes y una herramienta de **administración** (en la nube para la AGE; **instalable** en el resto de organismos).",
+     "refs": [
+      {
+       "title": "ACCEDA · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/acceda",
+       "quote": "es una plataforma modular que integra tres componentes principales: una sede-e; un completo gestor para la tramitación electrónica de los expedientes que se inician en la sede"
+      },
+      {
+       "title": "ACCEDA · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/acceda",
+       "quote": "y una herramienta para su administración y configuración"
+      },
+      {
+       "title": "ACCEDA · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/acceda",
+       "quote": "Este servicio está disponible en la nube para la Administración General del Estado"
+      },
+      {
+       "title": "ACCEDA · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/acceda",
+       "quote": "para el resto de organismos la versión será instalable on-premise"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Servicios comunes de gestión interna",
+   "points": [
+    {
+     "text": "**Funciona**: portal con información y servicios para el **personal de la AGE**.",
+     "refs": [
+      {
+       "title": "Funciona · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/funciona",
+       "quote": "FUNCIONA es un portal que provee de información y servicios de interés para todo el personal de la Administración General del Estado (AGE)."
+      }
+     ]
+    },
+    {
+     "text": "**NEDAES** (Nómina Estándar de la Administración del Estado): **gestión completa de la nómina** de los empleados públicos (**cálculo, contabilidad y pago**). **Servinómina** permite **consultar la nómina** en el portal Funciona y **eliminar el recibo en papel** (para organismos que usan NEDAES).",
+     "refs": [
+      {
+       "title": "NEDAES · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/nedaes",
+       "quote": "NEDAES (Nómina Estándar de la Administración del Estado), realiza la gestión de nómina de los empleados públicos"
+      },
+      {
+       "title": "NEDAES · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/nedaes",
+       "quote": "NEDAES realiza la gestión completa de nómina, incluye la elaboración de toda la información de las fases de cálculo, contabilidad y pago"
+      },
+      {
+       "title": "Servinómina · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/servinomina",
+       "quote": "permite la consulta de la nómina a través del Portal Funciona y la eliminación del recibo de nómina en papel."
+      },
+      {
+       "title": "Servinómina · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/servinomina",
+       "quote": "Este servicio está dirigido a aquellos organismos que realicen su nómina con Nedaes."
+      }
+     ]
+    },
+    {
+     "text": "**BADARAL**: apoyo a los gestores de **recursos humanos** de la AGE, integrado con el **Registro Central de Personal**. **SOROLLA2** (de la **IGAE**): **gestión económico-presupuestaria** de los centros gestores del gasto.",
+     "refs": [
+      {
+       "title": "BADARAL · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/badaral",
+       "quote": "Es una herramienta de apoyo a los gestores de Recursos Humanos de la AGE, instrumentada en un sistema de información integrado con el Registro Central de Personal"
+      },
+      {
+       "title": "SOROLLA2 · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/sorolla2",
+       "quote": "El sistema SOROLLA2 se orienta a facilitar la gestión económico-presupuestaria que se realiza en los centros gestores del gasto"
+      },
+      {
+       "title": "SOROLLA2 · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/sorolla2",
+       "quote": "Se trata de una solución ofrecida por la Intervención General de la Administración del Estado"
+      }
+     ]
+    },
+    {
+     "text": "**CIRCA**: herramienta de **trabajo en grupo** de fuentes abiertas desarrollada por el **Programa ISA** de la Comisión Europea. **Dejó de prestar servicio en 2025**; como alternativas se proponen **Microsoft 365** (SharePoint y Teams) para la AGE, el **CIRCABC actualizado de la UE** y **Cooper@** (para Conferencias Sectoriales).",
+     "refs": [
+      {
+       "title": "CIRCABC · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/circabc",
+       "quote": "Herramienta de trabajo en grupo basada en tecnologías de Internet y en software de fuentes abiertas"
+      },
+      {
+       "title": "CIRCABC · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/circabc",
+       "quote": "desarrollada por el Programa ISA de la Comisión de la Comunidad Europea"
+      },
+      {
+       "title": "CIRCABC · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/circabc",
+       "quote": "CIRCA ha dejado de prestar servicios en 2025."
+      },
+      {
+       "title": "CIRCABC · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/circabc",
+       "quote": "Microsoft 365: Sharepoint y Teams, disponible para toda la AGE."
+      },
+      {
+       "title": "CIRCABC · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/circabc",
+       "quote": "CIRCABC actualizado de la Unión Europea."
+      },
+      {
+       "title": "CIRCABC · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/circabc",
+       "quote": "Herramienta Cooper@ desarrollada por el Ministerio de Política Territorial para Conferencias Sectoriales y órganos análogos."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,517 @@
+{
+ "topic": "B4-T10",
+ "sections": [
+  {
+   "title": "Normas IEEE 802",
+   "points": [
+    {
+     "text": "Grupos de trabajo IEEE 802: **802.1** protocolos de capa superior de LAN, **802.3 Ethernet**, **802.11 LAN inalámbrica**, **802.15** redes inalámbricas de área personal (WPAN; hoy *Wireless Specialty Network*).",
+     "refs": [
+      {
+       "title": "IEEE 802 LAN/MAN Standards Committee",
+       "url": "https://www.ieee802.org/",
+       "quote": "802.1 Higher Layer LAN Protocols Working Group"
+      },
+      {
+       "title": "IEEE 802 LAN/MAN Standards Committee",
+       "url": "https://www.ieee802.org/",
+       "quote": "802.3 Ethernet Working Group"
+      },
+      {
+       "title": "IEEE 802 LAN/MAN Standards Committee",
+       "url": "https://www.ieee802.org/",
+       "quote": "802.11 Wireless LAN Working Group"
+      },
+      {
+       "title": "IEEE 802 LAN/MAN Standards Committee",
+       "url": "https://www.ieee802.org/",
+       "quote": "802.15 Wireless Specialty Network (WSN) Working Group"
+      },
+      {
+       "title": "IEEE 802.15 Working Group",
+       "url": "https://www.ieee802.org/15/",
+       "quote": "IEEE 802.15 Working Group for Wireless Personal Area Networks (WPANs)"
+      }
+     ]
+    },
+    {
+     "text": "La capa de enlace de las LAN se divide en dos subcapas: **LLC** (*Logical Link Control*, la superior, común a todos los métodos de acceso e independiente del medio; su servicio orientado a conexión (tipo 2) incluye entrega en secuencia y recuperación de errores) y **MAC** (*Medium Access Control*, propia de cada método de acceso). La norma 802.2 (LLC) se retiró en 2010 en favor de ISO/IEC 8802-2.",
+     "refs": [
+      {
+       "title": "ISO/IEC 8802-2:1998 (IEEE 802.2) · Logical Link Control (vista previa)",
+       "url": "https://www.vde-verlag.de/iec-normen/preview-pdf/info_isoiec8802-2%7Bed3.0%7Den.pdf",
+       "quote": "The LLC sublayer constitutes the top sublayer in the data link layer (see figure 1) and is common to the various medium access methods"
+      },
+      {
+       "title": "ISO/IEC 8802-2:1998 (IEEE 802.2) · Logical Link Control (vista previa)",
+       "url": "https://www.vde-verlag.de/iec-normen/preview-pdf/info_isoiec8802-2%7Bed3.0%7Den.pdf",
+       "quote": "Separate International Standards describe each medium access method individually and indicate the additional features and functions that are provided by the Medium Access Control (MAC) sublayer in each case to complete the functionality of the data link layer"
+      },
+      {
+       "title": "ISO/IEC 8802-2:1998 (IEEE 802.2) · Logical Link Control (vista previa)",
+       "url": "https://www.vde-verlag.de/iec-normen/preview-pdf/info_isoiec8802-2%7Bed3.0%7Den.pdf",
+       "quote": "The LLC procedures are independent of the type of medium access method used in the particular LAN."
+      },
+      {
+       "title": "ISO/IEC 8802-2:1998 (IEEE 802.2) · Logical Link Control (vista previa)",
+       "url": "https://www.vde-verlag.de/iec-normen/preview-pdf/info_isoiec8802-2%7Bed3.0%7Den.pdf",
+       "quote": "This service includes support of sequenced delivery of data link layer data units, and a comprehensive set of data link layer errer recovery techniques"
+      },
+      {
+       "title": "IEEE 802.2 Working Group",
+       "url": "https://www.ieee802.org/2/",
+       "quote": "In 2010, Standard 802.2 was withdrawn by the IEEE."
+      },
+      {
+       "title": "IEEE 802.2 Working Group",
+       "url": "https://www.ieee802.org/2/",
+       "quote": "Standards should refer to ISO/IEC 8802-2"
+      }
+     ]
+    },
+    {
+     "text": "**CSMA/CD**: *Carrier Sense Multiple Access with Collision Detection* (acceso múltiple con detección de portadora y de colisiones), el protocolo MAC de Ethernet para medio compartido (semidúplex).",
+     "refs": [
+      {
+       "title": "IEEE SA · IEEE 802.3-2022",
+       "url": "https://standards.ieee.org/ieee/802.3/10422/",
+       "quote": "The Carrier Sense Multiple Access with Collision Detection (CSMA/CD) MAC protocol specifies shared medium (half duplex) operation, as well as full duplex operation."
+      }
+     ]
+    },
+    {
+     "text": "**Tramas jumbo**: mayores que la trama estándar (≈1500 bytes de MTU); **no hay norma** que fije su tamaño; un valor muy extendido es una MTU de **9000 bytes** (p. ej., NFS e iSCSI). Los adaptadores Intel que admiten tramas jumbo llegan a 9216.",
+     "refs": [
+      {
+       "title": "Ethernet Alliance · Ethernet Jumbo Frames",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2011/10/EA-Ethernet-Jumbo-Frames-v0-1.pdf",
+       "quote": "There is no industry standard that defines the size of a Jumbo frame"
+      },
+      {
+       "title": "Ethernet Alliance · Ethernet Jumbo Frames",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2011/10/EA-Ethernet-Jumbo-Frames-v0-1.pdf",
+       "quote": "iSCSI SANs (9000 bytes to reduce the effect of TCP frame overhead)"
+      },
+      {
+       "title": "Ethernet Alliance · Ethernet Jumbo Frames",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2011/10/EA-Ethernet-Jumbo-Frames-v0-1.pdf",
+       "quote": "a single 9000 byte MTU jumbo frame replaces six 1500 byte MTU standard frames"
+      },
+      {
+       "title": "Intel · Ethernet Adapters User Guide: Jumbo Frames",
+       "url": "https://edc.intel.com/content/www/us/en/design/products/ethernet/adapters-and-devices-user-guide/jumbo-frames/",
+       "quote": "Intel adapters that support Jumbo Packets have a frame size limit of 9238 bytes, with a corresponding MTU size limit of 9216 bytes."
+      }
+     ]
+    },
+    {
+     "text": "**SOHO**: *Small Office/Home Office* (oficina pequeña o doméstica).",
+     "refs": [
+      {
+       "title": "NIST CSRC Glossary · small office/home office",
+       "url": "https://csrc.nist.gov/glossary/term/small_office_home_office",
+       "quote": "Small Office/Home Office"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Topologías",
+   "points": [
+    {
+     "text": "**Estrella**: un **nodo central** con la función de control conecta a todos los demás, y toda la comunicación pasa por él.",
+     "refs": [
+      {
+       "title": "IEC Electropedia · IEV 351-56-12 (red en estrella)",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=351-56-12",
+       "quote": "in which one centre with network control function provides connections between all the other participants without network control function and organizes the communication, which is handled exclusively via the control centre"
+      }
+     ]
+    },
+    {
+     "text": "**Anillo**: camino de transmisión **circular**; cada equipo pasa los datos que no son para él a su **vecino siguiente**: los datos circulan de un equipo al siguiente.",
+     "refs": [
+      {
+       "title": "IEC Electropedia · IEV 351-56-11 (red en anillo)",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=351-56-11",
+       "quote": "via a common, circular transmission path, whereby each participant is able to pass on data that do not concern itself to its subsequent neighbour"
+      }
+     ]
+    },
+    {
+     "text": "**POL / POLAN** (LAN óptica pasiva): red **GPON** con **fibra monomodo** hasta un **divisor óptico pasivo** (sin alimentación), entre el equipo central (**OLT**) y los terminales de usuario (**ONT**), que convierten a Ethernet.",
+     "refs": [
+      {
+       "title": "APOLAN · Passive Optical LAN Technical Specification, Division 27.0 (2022)",
+       "url": "https://cdn.ymaws.com/apolanglobal.org/resource/resmgr/division_27/division27.pdf",
+       "quote": "The Passive Optical LAN also referred to as Gigabit Passive Optical Network (GPON)"
+      },
+      {
+       "title": "APOLAN · Passive Optical LAN Technical Specification, Division 27.0 (2022)",
+       "url": "https://cdn.ymaws.com/apolanglobal.org/resource/resmgr/division_27/division27.pdf",
+       "quote": "Optical Line Terminal (OLT) or Headend Equipment: The equipment that connects to the network core, aggregates services, and distributes across the single-mode optical fiber to the Optical Network Terminal"
+      },
+      {
+       "title": "APOLAN · Passive Optical LAN Technical Specification, Division 27.0 (2022)",
+       "url": "https://cdn.ymaws.com/apolanglobal.org/resource/resmgr/division_27/division27.pdf",
+       "quote": "Optical Network Terminal (ONT) or end user device: The equipment that receives communication signals from the OLT and then converts media to Ethernet"
+      },
+      {
+       "title": "APOLAN · Passive Optical LAN Technical Specification, Division 27.0 (2022)",
+       "url": "https://cdn.ymaws.com/apolanglobal.org/resource/resmgr/division_27/division27.pdf",
+       "quote": "Passive: Component that does not require AC/DC power for operation"
+      },
+      {
+       "title": "APOLAN · Passive Optical LAN Technical Specification, Division 27.0 (2022)",
+       "url": "https://cdn.ymaws.com/apolanglobal.org/resource/resmgr/division_27/division27.pdf",
+       "quote": "Optical fiber-based technology that relies on singlemode fiber backhaul to a passive optical splitter"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Dispositivos de interconexión",
+   "points": [
+    {
+     "text": "**Concentrador (hub)**: capa 1 (física); repite la señal por los demás puertos, y todos ellos forman **un único dominio de colisión**.",
+     "refs": [
+      {
+       "title": "Cisco · Troubleshoot LAN Switching Environments",
+       "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+       "quote": "In terms of the OSI model, a hub is considered a layer-one (physical layer) device. It hears an electrical signal on the wire and passes it along to the other ports."
+      },
+      {
+       "title": "Cisco Networking Academy · CCNA2 capítulo 1 (material del curso)",
+       "url": "https://netacad.fit.vutbr.cz/wp-content/uploads/ccna/ccna2/v50/lectures/CCNA2_Chapter1.pdf",
+       "quote": "All ports of a hub belong to the same collision domain."
+      }
+     ]
+    },
+    {
+     "text": "**Conmutador (switch)**: capa 2; funciona como un puente. Cada puerto es **su propio dominio de colisión**, pero reenvía las difusiones a todos los puertos: mantiene **un único dominio de difusión** (salvo que se usen VLAN, cada una un dominio de difusión).",
+     "refs": [
+      {
+       "title": "Cisco · Troubleshoot LAN Switching Environments",
+       "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+       "quote": "A basic switch is considered a layer-two device."
+      },
+      {
+       "title": "Cisco · Troubleshoot LAN Switching Environments",
+       "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+       "quote": "Logically, a switch acts just like a transparent bridge would"
+      },
+      {
+       "title": "Cisco Networking Academy · CCNA2 capítulo 1 (material del curso)",
+       "url": "https://netacad.fit.vutbr.cz/wp-content/uploads/ccna/ccna2/v50/lectures/CCNA2_Chapter1.pdf",
+       "quote": "Every port of a switch is a collision domain on its own."
+      },
+      {
+       "title": "Cisco Networking Academy · CCNA2 capítulo 1 (material del curso)",
+       "url": "https://netacad.fit.vutbr.cz/wp-content/uploads/ccna/ccna2/v50/lectures/CCNA2_Chapter1.pdf",
+       "quote": "Switches forward broadcast frames to all ports; therefore, switches do not break broadcast domains."
+      },
+      {
+       "title": "Cisco · Troubleshoot LAN Switching Environments",
+       "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/ethernet/12006-chapter22.html",
+       "quote": "VLANs are also described as broadcast domains."
+      }
+     ]
+    },
+    {
+     "text": "**Encaminador (router)**: pasarela entre redes en la **capa 3** de OSI; dirige los paquetes de una red a otra.",
+     "refs": [
+      {
+       "title": "NIST CSRC Glossary · router",
+       "url": "https://csrc.nist.gov/glossary/term/router",
+       "quote": "A computer that is a gateway between two networks at OSI layer 3 and that relays and directs data packets through that inter-network."
+      }
+     ]
+    },
+    {
+     "text": "**Pasarela (gateway)**: conecta redes con **arquitecturas y protocolos distintos**.",
+     "refs": [
+      {
+       "title": "IEC Electropedia · IEV 732-01-17 gateway (pasarela)",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-17",
+       "quote": "functional unit that connects two computer networks with different network architectures and protocols"
+      }
+     ]
+    },
+    {
+     "text": "**VLAN** (802.1Q): cada VLAN tiene un identificador único. En los puertos troncales (**tagged**) las tramas llevan la **etiqueta 802.1Q con el VLAN ID**; los puertos de acceso (**untagged**) solo aceptan tramas sin etiqueta. Para pasar de una VLAN a otra hace falta encaminamiento (capa 3): un router o un conmutador con interfaz de capa 3 (IRB en Juniper).",
+     "refs": [
+      {
+       "title": "Juniper · Bridging and VLANs",
+       "url": "https://www.juniper.net/documentation/us/en/software/junos/multicast-l2/topics/topic-map/bridging-and-vlans.html",
+       "quote": "When an Ethernet LAN is divided into VLANs, each VLAN is identified by a unique 802.1Q ID."
+      },
+      {
+       "title": "Juniper · Bridging and VLANs",
+       "url": "https://www.juniper.net/documentation/us/en/software/junos/multicast-l2/topics/topic-map/bridging-and-vlans.html",
+       "quote": "The packet also has a VLAN ID field that includes the unique 802.1Q ID, which identifies the VLAN to which the packet belongs."
+      },
+      {
+       "title": "Juniper · Bridging and VLANs",
+       "url": "https://www.juniper.net/documentation/us/en/software/junos/multicast-l2/topics/topic-map/bridging-and-vlans.html",
+       "quote": "Access interfaces accept only untagged packets."
+      },
+      {
+       "title": "Juniper · Bridging and VLANs",
+       "url": "https://www.juniper.net/documentation/us/en/software/junos/multicast-l2/topics/topic-map/bridging-and-vlans.html",
+       "quote": "Trunk interfaces usually accept only tagged packets and use the VLAN ID tag to determine both the packets’ VLAN origin and VLAN destination."
+      },
+      {
+       "title": "Juniper · Bridging and VLANs",
+       "url": "https://www.juniper.net/documentation/us/en/software/junos/multicast-l2/topics/topic-map/bridging-and-vlans.html",
+       "quote": "Switches perform inter-VLAN routing functions using an integrated routing and bridging (IRB) interface named irb."
+      },
+      {
+       "title": "Juniper · Bridging and VLANs",
+       "url": "https://www.juniper.net/documentation/us/en/software/junos/multicast-l2/topics/topic-map/bridging-and-vlans.html",
+       "quote": "Traditionally, switches sent traffic to hosts that were part of the same broadcast domain (VLAN) but routers were needed to route traffic from one broadcast domain to another."
+      }
+     ]
+    },
+    {
+     "text": "**RSTP** (*Rapid Spanning Tree*) es **IEEE 802.1w**, evolución de 802.1D para reconfigurar el árbol rápidamente; se incorporó a 802.1D-2004.",
+     "refs": [
+      {
+       "title": "Cisco · Understand Rapid Spanning Tree Protocol (802.1w)",
+       "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+       "quote": "Rapid Spanning Tree Protocol (RSTP; IEEE 802.1w) can be seen as an evolution of the 802.1D standard more than a revolution."
+      },
+      {
+       "title": "Cisco · Understand Rapid Spanning Tree Protocol (802.1w)",
+       "url": "https://www.cisco.com/c/en/us/support/docs/lan-switching/spanning-tree-protocol/24062-146.html",
+       "quote": "The new edition of the 802.1D standard, IEEE 802.1D-2004, incorporates IEEE 802.1t-2001 and IEEE 802.1w standards."
+      },
+      {
+       "title": "IEEE 802.1 · 802.1w Rapid Reconfiguration of Spanning Tree",
+       "url": "https://ieee802.org/1/pages/802.1w.html",
+       "quote": "802.1w - Rapid Reconfiguration of Spanning Tree"
+      }
+     ]
+    },
+    {
+     "text": "LED de velocidad de una tarjeta de red, ejemplo de Intel (I210-T1): apagado = 10 Mb/s, verde = 100 Mb/s y **ámbar = 1 Gb/s**; otros fabricantes pueden usar otros códigos. Intel remite a la etiqueta junto a la tarjeta.",
+     "refs": [
+      {
+       "title": "Intel · Status LEDs for Intel Ethernet Server Adapter I210-T1",
+       "url": "https://www.intel.com/content/www/us/en/support/articles/000038520.html",
+       "quote": "Speed LED: Not Illuminated = 10Mb/s Green = 100Mb/s Amber = 1 Gb/s"
+      },
+      {
+       "title": "Intel · Status LEDs for Intel Ethernet Server Adapter I210-T1",
+       "url": "https://www.intel.com/content/www/us/en/support/articles/000038520.html",
+       "quote": "Refer to the label on the Peripheral Component Interconnect (PCI) metal plate next to the network card."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Alimentación por Ethernet (PoE)",
+   "points": [
+    {
+     "text": "Normas PoE: **802.3af** (2003, 13 W en el dispositivo; Tipo 1), **802.3at** (2009, 25,5 W; Tipo 2) y **802.3bt** (2018, la tercera, posterior a af y at; permite usar **los cuatro pares**, obligatorio desde la clase 5, y define los **Tipos 3** (hasta 51 W) **y 4** (hasta **71,3 W** en el dispositivo, 90 W en la fuente)). Para una sonda de unos 70 W hace falta 802.3bt.",
+     "refs": [
+      {
+       "title": "Ethernet Alliance · Overview of 802.3bt - Power over Ethernet standard",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2018/04/WP_EA_Overview8023bt_FINAL.pdf",
+       "quote": "The new Power over Ethernet 802.3bt standard is the third revision to the widely adopted IEEE standard that specifies low voltage power transfer to networked devices."
+      },
+      {
+       "title": "Ethernet Alliance · Overview of 802.3bt - Power over Ethernet standard",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2018/04/WP_EA_Overview8023bt_FINAL.pdf",
+       "quote": "The first IEEE PoE standard, 802.3af (2003), was able to provide 13 W to devices. This was increased to 25.5 W by 802.3at (2009). With 802.3bt, the amount of power available for devices increases nearly threefold, to 71.3 W"
+      },
+      {
+       "title": "Ethernet Alliance · Overview of 802.3bt - Power over Ethernet standard",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2018/04/WP_EA_Overview8023bt_FINAL.pdf",
+       "quote": "Type 1 refers to the 802.3af specification, whereas 802.3at introduced Type 2"
+      },
+      {
+       "title": "Ethernet Alliance · Overview of 802.3bt - Power over Ethernet standard",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2018/04/WP_EA_Overview8023bt_FINAL.pdf",
+       "quote": "For assigned Class 5 and higher, power delivery requires 4 pairs to be used."
+      },
+      {
+       "title": "Ethernet Alliance · Overview of 802.3bt - Power over Ethernet standard",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2018/04/WP_EA_Overview8023bt_FINAL.pdf",
+       "quote": "802.3bt introduces two new Types: Type 3, which supports up to 51 W delivered to a PD, and Type 4, which supports up to 71.3 W delivered to a PD."
+      },
+      {
+       "title": "Ethernet Alliance · 802.3bt (presentación)",
+       "url": "https://ethernetalliance.org/wp-content/uploads/2018/06/BT_Web_Final_20180626.pdf",
+       "quote": "IEEE 802.3bt PSE=90W Type 4 PD=71W"
+      },
+      {
+       "title": "IEEE SA · IEEE 802.3bt-2018",
+       "url": "https://standards.ieee.org/ieee/802.3bt/6749/",
+       "quote": "The maximum Powered Device (PD) power available is increased by this amendment to IEEE Std 802.3-2018 by utilizing all four pairs in the specified structured wiring plant."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Técnicas de transmisión",
+   "points": [
+    {
+     "text": "**Banda base**: banda de frecuencias que ocupa una señal (o varias multiplexadas) en la entrada y la salida de un sistema de transmisión; si hay modulación, es la de la señal que entra en la primera etapa de modulación (en radio, la señal que modula al transmisor).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 702-01-06) · baseband",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-01-06",
+       "quote": "frequency band occupied by one signal or by a number of multiplexed signals at specified input and output points of a transmission system"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-01-06) · baseband",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-01-06",
+       "quote": "When the transmission involves multiple modulation, it is generally considered that the baseband is that frequency band occupied by the signal which is applied to the first modulation stage"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-01-06) · baseband",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-01-06",
+       "quote": "In radiocommunication, the baseband is that frequency band occupied by the signal modulating the radio transmitter."
+      }
+     ]
+    },
+    {
+     "text": "**Modulación** de una portadora: en **amplitud** (AM), en **frecuencia** (FM) o en **fase** (PM). **QAM**: dos portadoras de la misma frecuencia **en cuadratura** moduladas en amplitud y sumadas.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 702-06-17) · amplitude modulation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-17",
+       "quote": "modulation in which the amplitude of a periodic carrier is a given function, generally linear, of the instantaneous values of the modulating signal"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-06-37) · frequency modulation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-37",
+       "quote": "angle modulation in which the instantaneous frequency deviation varies in accordance with a given function"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-06-36) · phase modulation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-36",
+       "quote": "angle modulation in which the instantaneous phase deviation varies in accordance with a given function"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-06-63) · quadrature amplitude modulation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-63",
+       "quote": "amplitude modulation by two separate signals of two sinusoidal carriers having the same amplitude and frequency but being in phase quadrature, the modulated signals being added for transmission in a single channel"
+      }
+     ]
+    },
+    {
+     "text": "**Multiplexación**: juntar señales de varias fuentes en una sola para un canal común (proceso reversible).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 701-03-09) · multiplexing",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-09",
+       "quote": "reversible process for assembling signals from several separate sources into a single composite signal for transmission over a common transmission channel"
+      }
+     ],
+     "items": [
+      {
+       "text": "**TDM** (por división de tiempo): cada señal tiene **intervalos de tiempo** periódicos.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 704-08-07) · time division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-07",
+         "quote": "multiplexing in which several independent signals are allotted separate periodic time intervals"
+        }
+       ]
+      },
+      {
+       "text": "**FDM** (por división de frecuencia): cada señal, una **banda de frecuencias**.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 704-08-05) · frequency division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-05",
+         "quote": "multiplexing in which several independent signals are allotted separate frequency bands"
+        }
+       ]
+      },
+      {
+       "text": "**WDM** (por longitud de onda): cada señal, una **longitud de onda** en la **fibra óptica**; es una forma de FDM. La **DWDM** usa la rejilla de la UIT-T G.694.1, anclada en 193,1 THz, con separaciones de 12,5 a 100 GHz o más.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 704-08-06) · wavelength division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-06",
+         "quote": "multiplexing in which several independent signals are allotted separate wavelengths for transmission over a common optical transmission medium"
+        },
+        {
+         "title": "IEC Electropedia (IEV 704-08-06) · wavelength division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-06",
+         "quote": "Wavelength division multiplexing is a form of frequency division multiplexing."
+        },
+        {
+         "title": "Recomendación UIT-T G.694.1 · Spectral grids for WDM applications: DWDM frequency grid",
+         "url": "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-G.694.1-202010-I!!PDF-E&type=items",
+         "quote": "The frequency grid, anchored to 193.1 THz, supports a variety of channel spacings ranging from 12.5 GHz to 100 GHz and wider."
+        }
+       ]
+      },
+      {
+       "text": "**CDM** (por división de código): cada señal, una señal **ortogonal**.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 704-08-08) · code division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-08",
+         "quote": "multiplexing in which several independent signals are allotted orthogonal signals"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Detección de errores: **paridad** (el número de elementos de un tipo en cada carácter o bloque es siempre **par** o siempre **impar**) y **CRC** (código cíclico: los bits del bloque se dividen en módulo 2 por un **polinomio generador** y el **resto** se añade al bloque). El CRC detecta cambios **accidentales**; no es un hash criptográfico.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 721-08-52) · parity code",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-08-52",
+       "quote": "an error protection code in which each character signal or block signal contains a number of elements of the same type which is always even or always odd"
+      },
+      {
+       "title": "IEC Electropedia (IEV 723-10-100) · cyclic redundancy check",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=723-10-100",
+       "quote": "method of error control using a cyclic code mainly for the purpose of error detection"
+      },
+      {
+       "title": "IEC Electropedia (IEV 723-10-100) · cyclic redundancy check",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=723-10-100",
+       "quote": "The bits of a data block to be protected are used as coefficients of a polynomial, which is modulo-2-divided by a prescribed generator polynomial; the coefficients of the remainder left after division are appended to the data block as a block check sequence."
+      },
+      {
+       "title": "NIST CSRC Glossary · cyclic redundancy check",
+       "url": "https://csrc.nist.gov/glossary/term/cyclic_redundancy_check",
+       "quote": "A type of checksum algorithm that is not a cryptographic hash but is used to implement data integrity service where accidental changes to data are expected."
+      }
+     ]
+    },
+    {
+     "text": "Perturbaciones: **ruido** (fenómeno que no transporta información y se suma a la señal) y **atenuación** (pérdida de potencia entre dos puntos, normalmente en unidades logarítmicas).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 702-08-03) · noise",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-08-03",
+       "quote": "any variable physical phenomenon apparently not conveying information and which may be superimposed on, or combined with, a wanted signal"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-02-10) · attenuation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-02-10",
+       "quote": "a decrease between two points of an electric, electromagnetic or acoustic power"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-02-10) · attenuation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-02-10",
+       "quote": "Attenuation is generally expressed in logarithmic units by a positive value."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

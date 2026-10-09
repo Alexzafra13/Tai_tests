@@ -70,6 +70,56 @@
      ]
     },
     {
+     "text": "**Personal con legislación específica propia** (art. 4): el Estatuto solo se le aplica directamente cuando lo disponga su legislación: funcionarios de las **Cortes** y de las asambleas autonómicas y de los **órganos constitucionales**; **jueces, magistrados y fiscales**; **militares**; **Fuerzas y Cuerpos de Seguridad**; personal retribuido por **arancel**; personal del **CNI** y del **Banco de España**.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Las disposiciones de este Estatuto sólo se aplicarán directamente cuando así lo disponga su legislación específica al siguiente personal:"
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Personal funcionario de las Cortes Generales y de las asambleas legislativas de las comunidades autónomas."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Personal funcionario de los demás Órganos Constitucionales del Estado y de los órganos estatutarios de las comunidades autónomas."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Jueces, Magistrados, Fiscales y demás personal funcionario al servicio de la Administración de Justicia."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Personal militar de las Fuerzas Armadas."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Personal de las Fuerzas y Cuerpos de Seguridad."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Personal retribuido por arancel."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Personal del Centro Nacional de Inteligencia."
+      },
+      {
+       "law": "BOE-A-2015-11719",
+       "section": "a4",
+       "quote": "Personal del Banco de España y del Fondo de Garantía de Depósitos de Entidades de Crédito."
+      }
+     ]
+    },
+    {
      "text": "**Funcionarios de carrera**: vinculados por **nombramiento legal** mediante una **relación estatutaria** de Derecho Administrativo, para servicios **de carácter permanente**. Las funciones que implican **potestades públicas** o la salvaguardia de los intereses generales corresponden **exclusivamente a los funcionarios** (art. 9).",
      "refs": [
       {
@@ -3617,7 +3667,7 @@
      ]
     },
     {
-     "text": "**Funciones del Consejo** (art. 38.1): recomendaciones, asesoramiento, **informar preceptivamente** los proyectos normativos estatales sobre transparencia, **evaluar** la aplicación de la Ley (memoria anual a las Cortes), formación y colaboración con órganos análogos.",
+     "text": "**Funciones del Consejo** (art. 38.1): recomendaciones, asesoramiento, **informar preceptivamente** los proyectos normativos estatales sobre transparencia, **evaluar** la aplicación de la Ley (memoria anual a las Cortes), **promover borradores de recomendaciones, directrices y normas de buenas prácticas**, **promover formación y sensibilización** y colaborar con órganos análogos.",
      "refs": [
       {
        "law": "BOE-A-2013-12887",
@@ -3653,6 +3703,11 @@
        "law": "BOE-A-2013-12887",
        "section": "a38",
        "quote": "Colaborar, en las materias que le son propias, con órganos de naturaleza análoga."
+      },
+      {
+       "law": "BOE-A-2013-12887",
+       "section": "a38",
+       "quote": "Promover la elaboración de borradores de recomendaciones y de directrices y normas de desarrollo de buenas prácticas en materia de transparencia, acceso a la información pública y buen gobierno."
       }
      ]
     },

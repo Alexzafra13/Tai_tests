@@ -1,0 +1,625 @@
+{
+ "topic": "B3-T03",
+ "sections": [
+  {
+   "title": "Tipos de sentencias SQL",
+   "points": [
+    {
+     "text": "**DDL** (lenguaje de definición de datos): **crear, modificar y borrar objetos** del esquema: **CREATE…, ALTER…, DROP…**, TRUNCATE, RENAME… En **Oracle**, que incluye también aquí GRANT y REVOKE, se hace un **COMMIT implícito** antes y después de cada DDL.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "Create, alter, and drop schema objects"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "CREATE ... (All statements beginning with CREATE)"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "ALTER ... (All statements beginning with ALTER"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "DROP ... (All statements beginning with DROP)"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "Grant and revoke privileges and roles"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "Oracle Database implicitly commits the current transaction before and after every DDL statement."
+      }
+     ]
+    },
+    {
+     "text": "**DCL** (lenguaje de control de datos): las sentencias **GRANT** (conceder) y **REVOKE** (retirar) **privilegios o permisos**, por ejemplo sobre tablas. Es la clasificación que usa el examen; Oracle las agrupa dentro de DDL. Con GRANT se conceden **privilegios de sistema** y **privilegios sobre objetos** concretos a usuarios y roles.",
+     "refs": [
+      {
+       "title": "IBM DB2 Application Development Guide · Using Data Control Language (DCL)",
+       "url": "https://public.dhe.ibm.com/ps/products/db2/info/vr7/html/db2a0/db2a0225.htm",
+       "quote": "Using Data Control Language (DCL) Each IBM relational database management system provides different levels of granularity for the GRANT and REVOKE SQL statements."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · GRANT",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/GRANT.html",
+       "quote": "System privileges to users and roles."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · GRANT",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/GRANT.html",
+       "quote": "Object privileges for a particular object to users and roles."
+      }
+     ]
+    },
+    {
+     "text": "**DML** (lenguaje de manipulación de datos): **acceden y manipulan los datos** de objetos existentes: **SELECT, INSERT, UPDATE, DELETE, MERGE** (Oracle añade CALL, EXPLAIN PLAN y LOCK TABLE, y no hace commit implícito). **SELECT** es un DML «limitado»: solo **accede** a los datos.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "Data manipulation language (DML) statements access and manipulate data in existing schema objects. These statements do not implicitly commit the current transaction."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "The SELECT statement is a limited form of DML statement in that it can only access data in the database."
+      }
+     ]
+    },
+    {
+     "text": "**Control de transacciones**: gestionan los cambios hechos con DML: **COMMIT, ROLLBACK, SAVEPOINT**, SET TRANSACTION y SET CONSTRAINT.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · Tipos de sentencias SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Types-of-SQL-Statements.html",
+       "quote": "Transaction control statements manage changes made by DML statements. The transaction control statements are:"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Definición de datos: CREATE, DROP, TRUNCATE y restricciones",
+   "points": [
+    {
+     "text": "**CREATE TABLE** crea una tabla nueva, inicialmente vacía, con sus columnas y restricciones, p. ej. `CREATE TABLE Usuario (idUsuario bigint PRIMARY KEY, nombre varchar(255));`. **PRIMARY KEY**: valores **únicos y no nulos**, y **solo una** por tabla; en PostgreSQL crea automáticamente un **índice único**.",
+     "refs": [
+      {
+       "title": "PostgreSQL · CREATE TABLE",
+       "url": "https://www.postgresql.org/docs/current/sql-createtable.html",
+       "quote": "CREATE TABLE will create a new, initially empty table in the current database."
+      },
+      {
+       "title": "PostgreSQL · CREATE TABLE",
+       "url": "https://www.postgresql.org/docs/current/sql-createtable.html",
+       "quote": "The PRIMARY KEY constraint specifies that a column or columns of a table can contain only unique (non-duplicate), nonnull values. Only one primary key can be specified for a table, whether as a column constraint or a table constraint."
+      },
+      {
+       "title": "PostgreSQL · CREATE TABLE",
+       "url": "https://www.postgresql.org/docs/current/sql-createtable.html",
+       "quote": "Adding a PRIMARY KEY constraint will automatically create a unique btree index on the column or group of columns used in the constraint"
+      }
+     ]
+    },
+    {
+     "text": "En **MySQL**, **AUTO_INCREMENT** genera un **identificador único** para las filas nuevas: si no se da valor a la columna (o se da 0 o NULL), MySQL asigna los números automáticamente (`id INT NOT NULL PRIMARY KEY AUTO_INCREMENT`). El último generado se obtiene con **LAST_INSERT_ID()**.",
+     "refs": [
+      {
+       "title": "MySQL 8.0 Reference Manual · Uso de AUTO_INCREMENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/example-auto-increment.html",
+       "quote": "The AUTO_INCREMENT attribute can be used to generate a unique identity for new rows:"
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · Uso de AUTO_INCREMENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/example-auto-increment.html",
+       "quote": "No value was specified for the AUTO_INCREMENT column, so MySQL assigned sequence numbers automatically."
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · Uso de AUTO_INCREMENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/example-auto-increment.html",
+       "quote": "You can also explicitly assign 0 to the column to generate sequence numbers"
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · Uso de AUTO_INCREMENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/example-auto-increment.html",
+       "quote": "You can retrieve the most recent automatically generated AUTO_INCREMENT value with the LAST_INSERT_ID() SQL function"
+      }
+     ]
+    },
+    {
+     "text": "**UNIQUE** (Oracle): impide que dos filas tengan el **mismo valor** en la columna o combinación de columnas, pero **admite nulos**; Oracle crea **implícitamente un índice** sobre la clave única. Una **PRIMARY KEY** combina **NOT NULL** y **UNIQUE**, y una misma columna no puede ser a la vez clave primaria y única. Ejemplo: `ALTER TABLE ALUMNO ADD CONSTRAINT dni_unique UNIQUE (dni);`.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · Restricciones (constraint)",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/constraint.html",
+       "quote": "A unique constraint prohibits multiple rows from having the same value in the same column or combination of columns but allows some values to be null."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Restricciones (constraint)",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/constraint.html",
+       "quote": "A primary key constraint combines a NOT NULL constraint and a unique constraint in a single declaration."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Restricciones (constraint)",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/constraint.html",
+       "quote": "When you specify a unique constraint on one or more columns, Oracle implicitly creates an index on the unique key."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Restricciones (constraint)",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/constraint.html",
+       "quote": "You cannot designate the same column or combination of columns as both a primary key and a unique key."
+      }
+     ]
+    },
+    {
+     "text": "**DROP TABLE** elimina la **estructura** de la tabla **y todos sus datos**. En **Oracle**, salvo que se use PURGE, la tabla pasa a la **papelera de reciclaje**; además se borran sus índices y disparadores, se invalidan los objetos dependientes y se quitan los privilegios sobre ella.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · DROP TABLE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DROP-TABLE.html",
+       "quote": "Use the DROP TABLE statement to move a table or object table to the recycle bin or to remove the table and all its data from the database entirely."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · DROP TABLE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DROP-TABLE.html",
+       "quote": "All table indexes and domain indexes are dropped, as well as any triggers defined on the table"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · DROP TABLE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DROP-TABLE.html",
+       "quote": "Dropping a table invalidates dependent objects and removes object privileges on the table."
+      }
+     ]
+    },
+    {
+     "text": "**TRUNCATE TABLE** borra **todas las filas** pero **conserva la tabla**. En **Oracle** es DDL, libera por defecto el espacio y **no se puede deshacer** (ni ROLLBACK ni FLASHBACK). Puede ser **más rápido** que un DELETE de todas las filas y no tiene los efectos de borrar y recrear la tabla.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · TRUNCATE TABLE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TRUNCATE-TABLE.html",
+       "quote": "Use the TRUNCATE TABLE statement to remove all rows from a table."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · TRUNCATE TABLE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TRUNCATE-TABLE.html",
+       "quote": "Deallocates all space used by the removed rows except that specified by the MINEXTENTS storage parameter"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · TRUNCATE TABLE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TRUNCATE-TABLE.html",
+       "quote": "You cannot roll back a TRUNCATE TABLE statement, nor can you use a FLASHBACK TABLE statement to retrieve the contents of a table that has been truncated."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · TRUNCATE TABLE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TRUNCATE-TABLE.html",
+       "quote": "Removing rows with the TRUNCATE TABLE statement can be faster than removing all rows with the DELETE statement, especially if the table has numerous triggers, indexes, and other dependencies."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · TRUNCATE TABLE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/TRUNCATE-TABLE.html",
+       "quote": "Truncating has none of these effects."
+      }
+     ]
+    },
+    {
+     "text": "**CREATE SEQUENCE** (Oracle) crea una **secuencia**: un objeto del que varios usuarios obtienen **enteros únicos**, útil para generar **claves primarias** (`CREATE SEQUENCE seq START WITH 1 INCREMENT BY 1;`). Sin opciones, empieza en **1** y sube de **1 en 1** sin límite. Se lee con **CURRVAL** (valor actual) y **NEXTVAL** (incrementa y devuelve el nuevo); con **CYCLE** vuelve a empezar al llegar al máximo.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · CREATE SEQUENCE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-SEQUENCE.html",
+       "quote": "Use the CREATE SEQUENCE statement to create a sequence , which is a database object from which multiple users may generate unique integers. You can use sequences to automatically generate primary key values."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · CREATE SEQUENCE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-SEQUENCE.html",
+       "quote": "then you create an ascending sequence that starts with 1 and increases by 1 with no upper limit."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · CREATE SEQUENCE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-SEQUENCE.html",
+       "quote": "CURRVAL pseudocolumn, which returns the current value of the sequence, or the NEXTVAL pseudocolumn, which increments the sequence and returns the new value."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · CREATE SEQUENCE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-SEQUENCE.html",
+       "quote": "Specify CYCLE to indicate that the sequence continues to generate values after reaching either its maximum or minimum value."
+      }
+     ]
+    },
+    {
+     "text": "**CREATE USER** (Oracle) crea un **usuario** de la base de datos; con **IDENTIFIED BY** *contraseña* es un usuario local que entra con contraseña, que distingue **mayúsculas y minúsculas** (`CREATE USER EDUCA_USER IDENTIFIED BY …;`). Se crea **sin privilegios**: para conectarse necesita al menos **CREATE SESSION**, que se le concede con **GRANT**.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · CREATE USER",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-USER.html",
+       "quote": "Use the CREATE USER statement to create and configure a database user"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · CREATE USER",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-USER.html",
+       "quote": "The BY password clause lets you creates a local user and indicates that the user must specify password to log on to the database. Passwords are case sensitive."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · CREATE USER",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-USER.html",
+       "quote": "When you create a user with the CREATE USER statement, the user’s privilege domain is empty. To log on to Oracle Database, a user must have the CREATE SESSION system privilege."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · CREATE USER",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-USER.html",
+       "quote": "Therefore, after creating a user, you should grant the user at least the CREATE SESSION system privilege."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Manipulación de datos: INSERT, UPDATE, DELETE",
+   "points": [
+    {
+     "text": "**INSERT** inserta filas nuevas, a partir de valores o del resultado de una consulta: `INSERT INTO CuerpoBecado (Codigo, Denominacion) VALUES ('TAI', 'Técnico Auxiliar de Informática');`. Las columnas que no se indican toman su **valor por defecto** (o NULL).",
+     "refs": [
+      {
+       "title": "PostgreSQL · INSERT",
+       "url": "https://www.postgresql.org/docs/current/sql-insert.html",
+       "quote": "INSERT inserts new rows into a table. One can insert one or more rows specified by value expressions, or zero or more rows resulting from a query."
+      },
+      {
+       "title": "PostgreSQL · INSERT",
+       "url": "https://www.postgresql.org/docs/current/sql-insert.html",
+       "quote": "Each column not present in the explicit or implicit column list will be filled with a default value, either its declared default value or null if there is none."
+      }
+     ]
+    },
+    {
+     "text": "**UPDATE** cambia las columnas indicadas en **SET** en las filas que cumplen la condición del **WHERE**; las demás columnas no cambian. Por ejemplo, `UPDATE Customers SET City='PARIS'` o `UPDATE Ejercicio SET Duracion = Duracion * 1.1` (sube un 10 %); sin WHERE, la condición se cumple en todas las filas.",
+     "refs": [
+      {
+       "title": "PostgreSQL · UPDATE",
+       "url": "https://www.postgresql.org/docs/current/sql-update.html",
+       "quote": "UPDATE changes the values of the specified columns in all rows that satisfy the condition. Only the columns to be modified need be mentioned in the SET clause; columns not explicitly modified retain their previous values."
+      },
+      {
+       "title": "PostgreSQL · UPDATE",
+       "url": "https://www.postgresql.org/docs/current/sql-update.html",
+       "quote": "Only rows for which this expression returns true will be updated."
+      }
+     ]
+    },
+    {
+     "text": "**DELETE** borra **filas** de una tabla (o de la tabla base de una vista). Con **WHERE**, solo las que cumplen la condición; **sin WHERE, todas las filas**. La definición de la tabla sigue existiendo: para eliminarla está **DROP TABLE**.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · DELETE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DELETE.html",
+       "quote": "Use the DELETE statement to remove rows from:"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · DELETE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DELETE.html",
+       "quote": "Use the where_clause to delete only rows that satisfy the condition."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · DELETE",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/DELETE.html",
+       "quote": "If you omit the where_clause , then the database deletes all rows of the object."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Consultas: SELECT",
+   "points": [
+    {
+     "text": "**WHERE** filtra **filas** antes de agrupar; **GROUP BY** agrupa las filas con los mismos valores y calcula las **funciones de agregado** (COUNT, SUM…); **HAVING** filtra **grupos**. Ejemplo: `SELECT IdOpositor, COUNT(IdSolicitud) FROM Solicitud GROUP BY IdOpositor HAVING COUNT(IdSolicitud) > 1`.",
+     "refs": [
+      {
+       "title": "PostgreSQL · SELECT",
+       "url": "https://www.postgresql.org/docs/current/sql-select.html",
+       "quote": "the output is combined into groups of rows that match on one or more values, and the results of aggregate functions are computed."
+      },
+      {
+       "title": "PostgreSQL · SELECT",
+       "url": "https://www.postgresql.org/docs/current/sql-select.html",
+       "quote": "HAVING is different from WHERE : WHERE filters individual rows before the application of GROUP BY , while HAVING filters group rows created by GROUP BY ."
+      }
+     ]
+    },
+    {
+     "text": "**ORDER BY** ordena el resultado; cada expresión puede llevar **ASC** (ascendente, **por defecto**) o **DESC**. Sin ORDER BY, el orden no está garantizado.",
+     "refs": [
+      {
+       "title": "PostgreSQL · SELECT",
+       "url": "https://www.postgresql.org/docs/current/sql-select.html",
+       "quote": "If the ORDER BY clause is specified, the returned rows are sorted in the specified order. If ORDER BY is not given, the rows are returned in whatever order the system finds fastest to produce."
+      },
+      {
+       "title": "PostgreSQL · SELECT",
+       "url": "https://www.postgresql.org/docs/current/sql-select.html",
+       "quote": "Optionally one can add the key word ASC (ascending) or DESC (descending) after any expression in the ORDER BY clause. If not specified, ASC is assumed by default."
+      }
+     ]
+    },
+    {
+     "text": "**LIKE**: `_` equivale a **un carácter** cualquiera y `%` a **cualquier secuencia** de cero o más caracteres; el patrón cubre la cadena **entera** (para buscar en cualquier posición, `%` al principio y al final). `WHERE DNI LIKE '3%'` = DNI que **empieza por 3**; `NOT LIKE '%.pdf'` = no termina en .pdf.",
+     "refs": [
+      {
+       "title": "PostgreSQL · Coincidencia de patrones (LIKE)",
+       "url": "https://www.postgresql.org/docs/current/functions-matching.html",
+       "quote": "An underscore ( _ ) in pattern stands for (matches) any single character; a percent sign ( % ) matches any sequence of zero or more characters."
+      },
+      {
+       "title": "PostgreSQL · Coincidencia de patrones (LIKE)",
+       "url": "https://www.postgresql.org/docs/current/functions-matching.html",
+       "quote": "LIKE pattern matching always covers the entire string. Therefore, if it's desired to match a sequence anywhere within a string, the pattern must start and end with a percent sign."
+      }
+     ]
+    },
+    {
+     "text": "**CASE** es la expresión condicional genérica, como un if/else. La forma **simple** compara una expresión con valores: `CASE IdFormaAcceso WHEN 'L' THEN 'Ingreso Libre' WHEN 'P' THEN 'Promocion Interna' END`; si ningún WHEN coincide, devuelve el ELSE o **NULL**.",
+     "refs": [
+      {
+       "title": "PostgreSQL · Expresiones condicionales (CASE)",
+       "url": "https://www.postgresql.org/docs/current/functions-conditional.html",
+       "quote": "The SQL CASE expression is a generic conditional expression, similar to if/else statements in other programming languages:"
+      },
+      {
+       "title": "PostgreSQL · Expresiones condicionales (CASE)",
+       "url": "https://www.postgresql.org/docs/current/functions-conditional.html",
+       "quote": "There is a “ simple ” form of CASE expression that is a variant of the general form above:"
+      },
+      {
+       "title": "PostgreSQL · Expresiones condicionales (CASE)",
+       "url": "https://www.postgresql.org/docs/current/functions-conditional.html",
+       "quote": "If no match is found, the result of the ELSE clause (or a null value) is returned."
+      }
+     ]
+    },
+    {
+     "text": "**Joins**: una **combinación interna (INNER JOIN)** devuelve **solo las filas que cumplen la condición** de combinación (p. ej., solo los alumnos **con** matrículas); una **externa** (LEFT, RIGHT o FULL OUTER JOIN) añade también las filas de una tabla **sin pareja** en la otra, con **nulos** en las columnas de esta.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · Joins",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Joins.html",
+       "quote": "An inner join (sometimes called a simple join ) is a join of two or more tables that returns only those rows that satisfy the join condition."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Joins",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Joins.html",
+       "quote": "An outer join returns all rows that satisfy the join condition and also returns some or all of those rows from one table for which no rows from the other satisfy the join condition."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · Joins",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Joins.html",
+       "quote": "For all rows in A that have no matching rows in B, Oracle Database returns null for any select list expressions containing columns of B."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Transacciones: COMMIT, ROLLBACK, SAVEPOINT",
+   "points": [
+    {
+     "text": "**ROLLBACK** **deshace** el trabajo de la transacción actual (restituye los datos): sin más, deshace la transacción **entera**, la **termina** y borra los savepoints; con **TO SAVEPOINT** deshace solo **lo posterior** a ese punto y la transacción **sigue**. Si un programa termina mal sin COMMIT, Oracle **deshace** la última transacción no confirmada.",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · ROLLBACK",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/ROLLBACK.html",
+       "quote": "Use the ROLLBACK statement to undo work done in the current transaction"
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · ROLLBACK",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/ROLLBACK.html",
+       "quote": "Specify the savepoint to which you want to roll back the current transaction. If you omit this clause, then the ROLLBACK statement rolls back the entire transaction."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · ROLLBACK",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/ROLLBACK.html",
+       "quote": "Rolls back just the portion of the transaction after the savepoint. It does not end the transaction."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · ROLLBACK",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/ROLLBACK.html",
+       "quote": "If you do not explicitly commit the transaction and the program terminates abnormally, then Oracle Database rolls back the last uncommitted transaction."
+      }
+     ]
+    },
+    {
+     "text": "**SAVEPOINT** crea un **punto de salvaguarda con nombre** dentro de la transacción, al que luego se puede volver con `ROLLBACK TO SAVEPOINT nombre`. En Oracle los nombres deben ser **distintos** en la transacción (si se repite, se borra el anterior).",
+     "refs": [
+      {
+       "title": "Oracle SQL Language Reference 19c · SAVEPOINT",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SAVEPOINT.html",
+       "quote": "Use the SAVEPOINT statement to create a name for a system change number (SCN), to which you can later roll back."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · SAVEPOINT",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SAVEPOINT.html",
+       "quote": "After a savepoint has been created, you can either continue processing, commit your work, roll back the entire transaction, or roll back to the savepoint."
+      },
+      {
+       "title": "Oracle SQL Language Reference 19c · SAVEPOINT",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/SAVEPOINT.html",
+       "quote": "Savepoint names must be distinct within a given transaction. If you create a second savepoint with the same identifier as an earlier savepoint, then the earlier savepoint is erased."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Disparadores (triggers) y eventos",
+   "points": [
+    {
+     "text": "Un **disparador** se ejecuta **BEFORE** (antes), **AFTER** (después) o **INSTEAD OF** (en lugar de, en vistas) un **INSERT, UPDATE o DELETE** (PostgreSQL admite también TRUNCATE, como extensión). En UPDATE se pueden indicar columnas: `CREATE TRIGGER Validar_salario BEFORE UPDATE OF Salario ON Empleados …` salta cuando **Salario** figura en el SET.",
+     "refs": [
+      {
+       "title": "PostgreSQL · CREATE TRIGGER",
+       "url": "https://www.postgresql.org/docs/current/sql-createtrigger.html",
+       "quote": "Determines whether the function is called before, after, or instead of the event."
+      },
+      {
+       "title": "PostgreSQL · CREATE TRIGGER",
+       "url": "https://www.postgresql.org/docs/current/sql-createtrigger.html",
+       "quote": "One of INSERT , UPDATE , DELETE , or TRUNCATE ; this specifies the event that will fire the trigger."
+      },
+      {
+       "title": "PostgreSQL · CREATE TRIGGER",
+       "url": "https://www.postgresql.org/docs/current/sql-createtrigger.html",
+       "quote": "The ability to fire triggers for TRUNCATE is a PostgreSQL extension of the SQL standard"
+      },
+      {
+       "title": "PostgreSQL · CREATE TRIGGER",
+       "url": "https://www.postgresql.org/docs/current/sql-createtrigger.html",
+       "quote": "The trigger will only fire if at least one of the listed columns is mentioned as a target of the UPDATE command"
+      }
+     ]
+    },
+    {
+     "text": "**FOR EACH ROW**: se ejecuta **una vez por fila** afectada; **FOR EACH STATEMENT**: **una vez por sentencia** (aunque no afecte a ninguna fila); es el valor **por defecto** en PostgreSQL.",
+     "refs": [
+      {
+       "title": "PostgreSQL · CREATE TRIGGER",
+       "url": "https://www.postgresql.org/docs/current/sql-createtrigger.html",
+       "quote": "A trigger that is marked FOR EACH ROW is called once for every row that the operation modifies."
+      },
+      {
+       "title": "PostgreSQL · CREATE TRIGGER",
+       "url": "https://www.postgresql.org/docs/current/sql-createtrigger.html",
+       "quote": "a trigger that is marked FOR EACH STATEMENT only executes once for any given operation, regardless of how many rows it modifies"
+      },
+      {
+       "title": "PostgreSQL · CREATE TRIGGER",
+       "url": "https://www.postgresql.org/docs/current/sql-createtrigger.html",
+       "quote": "If neither is specified, FOR EACH STATEMENT is the default."
+      }
+     ]
+    },
+    {
+     "text": "En PostgreSQL el disparador se ejecuta **dentro de la misma transacción** que la sentencia: si la sentencia **o el disparador** fallan, se **deshacen los dos**; cualquier disparador puede **abortar la operación** lanzando un error. Uno BEFORE también puede **saltarse** la fila o cambiarla.",
+     "refs": [
+      {
+       "title": "PostgreSQL · Visión general de los disparadores",
+       "url": "https://www.postgresql.org/docs/current/trigger-definition.html",
+       "quote": "In all cases, a trigger is executed as part of the same transaction as the statement that triggered it, so if either the statement or the trigger causes an error, the effects of both will be rolled back."
+      },
+      {
+       "title": "PostgreSQL · Funciones disparadoras en PL/pgSQL",
+       "url": "https://www.postgresql.org/docs/current/plpgsql-trigger.html",
+       "quote": "any of these types of triggers might still abort the entire operation by raising an error."
+      },
+      {
+       "title": "PostgreSQL · CREATE TRIGGER",
+       "url": "https://www.postgresql.org/docs/current/sql-createtrigger.html",
+       "quote": "If the trigger fires before or instead of the event, the trigger can skip the operation for the current row, or change the row being inserted"
+      }
+     ]
+    },
+    {
+     "text": "**Eventos (MySQL)**: `CREATE EVENT` crea y **programa** una tarea, que solo se ejecuta si el **Event Scheduler** está activo; puede ser **única** (`AT`, una sola vez) o **periódica** (`EVERY`). Cuando el evento **caduca** (el único, tras ejecutarse; el periódico, al llegar su fin), **se borra solo**, salvo que se indique **ON COMPLETION PRESERVE**: no hay que eliminarlo a mano.",
+     "refs": [
+      {
+       "title": "MySQL 8.0 Reference Manual · CREATE EVENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/create-event.html",
+       "quote": "This statement creates and schedules a new event. The event does not run unless the Event Scheduler is enabled."
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · CREATE EVENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/create-event.html",
+       "quote": "used for a one-time event."
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · CREATE EVENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/create-event.html",
+       "quote": "To repeat actions at a regular interval, use an EVERY clause."
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · CREATE EVENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/create-event.html",
+       "quote": "Normally, once an event has expired, it is immediately dropped. You can override this behavior by specifying ON COMPLETION PRESERVE ."
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · CREATE EVENT",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/create-event.html",
+       "quote": "Using ON COMPLETION NOT PRESERVE merely makes the default nonpersistent behavior explicit."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Procedimientos almacenados y PL/SQL",
+   "points": [
+    {
+     "text": "**PL/SQL** es la **extensión procedimental de SQL** de Oracle: permite usar en el código todas las sentencias SQL de **manipulación de datos**, cursores y **control de transacciones**. Un bloque se define con **DECLARE, BEGIN, EXCEPTION y END** (solo la parte ejecutable es obligatoria); ante un error se lanza una **excepción**.",
+     "refs": [
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Visión general",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/overview.html",
+       "quote": "PL/SQL, the Oracle procedural extension of SQL, is a portable, high-performance transaction-processing language."
+      },
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Ventajas de PL/SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/advantages-pl-sql.html",
+       "quote": "PL/SQL lets you use all SQL data manipulation, cursor control, and transaction control statements, and all SQL functions, operators, and pseudocolumns."
+      },
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Características principales",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/main-features-pl-sql.html",
+       "quote": "A PL/SQL block is defined by the keywords DECLARE , BEGIN , EXCEPTION , and END ."
+      },
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Características principales",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/main-features-pl-sql.html",
+       "quote": "When an error occurs, PL/SQL raises an exception."
+      }
+     ]
+    },
+    {
+     "text": "Los **subprogramas almacenados** (**procedimientos y funciones**) se guardan **compilados, en forma ejecutable**, en el servidor de base de datos: una sola llamada por red lanza un trabajo grande (menos **tráfico de red**), se **comparten** entre usuarios y hay **una sola copia** que mantener. También en PL/SQL hay **disparadores** (unidades almacenadas que responden a eventos) y **paquetes** (agrupan tipos, variables y subprogramas relacionados).",
+     "refs": [
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Características principales",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/main-features-pl-sql.html",
+       "quote": "PL/SQL has two types of subprograms, procedures and functions."
+      },
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Ventajas de PL/SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/advantages-pl-sql.html",
+       "quote": "PL/SQL subprograms are stored in executable form, which can be invoked repeatedly. Because stored subprograms run in the database server, a single invocation over the network can start a large job."
+      },
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Ventajas de PL/SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/advantages-pl-sql.html",
+       "quote": "Stored subprograms are cached and shared among users"
+      },
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Ventajas de PL/SQL",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/advantages-pl-sql.html",
+       "quote": "PL/SQL stored subprograms increase manageability because you can maintain only one copy of a subprogram, on the database server, rather than one copy on each client system."
+      },
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Características principales",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/main-features-pl-sql.html",
+       "quote": "A trigger is a named PL/SQL unit that is stored in the database and run in response to an event that occurs in the database."
+      },
+      {
+       "title": "Oracle PL/SQL Language Reference 19c · Características principales",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/main-features-pl-sql.html",
+       "quote": "A package is a schema object that groups logically related PL/SQL types, variables, constants, subprograms, cursors, and exceptions."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

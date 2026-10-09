@@ -157,10 +157,16 @@ ley, con su texto completo para validar citas, y se leen en
    General → *Allow GitHub Actions to create and approve pull requests*).
    Si el texto nuevo deja sin respaldo la cita de alguna pregunta, la
    instalación conserva el anterior y lo avisa al arrancar.
+5. Una norma derogada no se descarga: `fetch-law` la rechaza y
+   `refresh-laws` actualiza las demás y termina en error con la norma y la
+   fecha de derogación, así que la tarea mensual sale en rojo. Hay que
+   descargar la norma que la sustituye, cambiarla en `topics.json`, llevar
+   a ella los `articles` del banco (con una `explanation` si la respuesta
+   del examen ya no es la vigente) y borrar el fichero de la derogada.
 
-Hecho, bloque I completo: 29 normas españolas (con los reglamentos de
+Hecho, bloque I completo: 28 normas españolas (con los reglamentos de
 ingreso y provisión, situaciones administrativas y régimen disciplinario,
-la Ley 56/2007, el RD 209/2003 y la resolución de Cl@ve), las 12 Normas
+la Ley 56/2007 y la resolución de Cl@ve), las 12 Normas
 Técnicas de Interoperabilidad vigentes (las dos derogadas se dejan fuera)
 y, de EUR-Lex, el RGPD y el reglamento eIDAS. Comprobado con la web del BOE
 y EUR-Lex: el texto de cada artículo coincide. Las 109 preguntas oficiales
@@ -184,10 +190,14 @@ Un JSON por tema en `data/notes/` (`B1-T01.json`): secciones con puntos y,
 como mucho, un nivel de subpuntos. Cada punto es una frase de estudio
 (`**negrita**` para lo clave) y lleva en `refs` lo que la respalda, con la
 cita literal: `{"law": "BOE-A-1978-31229", "section": "a62", "quote": "…"}`
-o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita.
+o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita. En el
+texto, `` `código` `` se muestra como código (SQL, fragmentos de programa).
 
 1. Escribirlo leyendo el texto vigente de las normas del tema y las
-   preguntas oficiales del banco (dicen qué se pregunta).
+   preguntas oficiales del banco (dicen qué se pregunta). En los temas
+   técnicos, la documentación oficial: Métrica v3 para el análisis y el
+   diseño, y el manual de cada lenguaje o producto (Python, Java,
+   PostgreSQL, Microsoft Learn…).
 2. Contrastar cada punto con su artículo: que diga exactamente lo mismo,
    sin perder matices («en su caso», «previa autorización», «salvo»).
 3. `make test`: un test carga todos los apuntes y exige que cada cita de
@@ -197,8 +207,28 @@ o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita.
 Salen publicados (ver CLAUDE.md). Los avisos de los usuarios llegan a
 Revisión.
 
-Hecho: tema 1 del bloque I (Constitución: título preliminar, derechos y
-deberes, garantías, suspensión y Corona).
+Hecho: el bloque I entero, temas 1 a 9 (Constitución, Gobierno, empleo
+público, igualdad y dependencia, sociedad de la información, firma
+electrónica, DNI, Agenda Digital, protección de datos, administración
+electrónica: registros, notificaciones, ENS, ENI y normas técnicas; sedes
+electrónicas, Cl@ve e infraestructuras y servicios comunes) y el bloque
+III entero, temas 1 a 9 (modelado de datos y normalización con Métrica v3;
+lenguajes de programación; SQL; orientación a objetos y UML; Jakarta EE y
+.NET; cliente/servidor y servicios web; aplicaciones web; accesibilidad,
+con el Real Decreto 1112/2018, usabilidad y seguridad en el desarrollo;
+pruebas, control de versiones y metodologías). Los patrones de diseño
+(GoF, GRASP) quedan fuera: su catálogo no está publicado en una fuente
+oficial en línea. También el bloque IV entero, temas 1 a 10
+(administración de sistemas, bases de datos, almacenamiento y backup,
+correo y contenedores, redes y usuarios, seguridad y CPD, comunicaciones,
+TCP/IP y OSI, Internet y TLS, seguridad en redes y VPN, redes locales),
+con RFC, guías CCN-STIC, NIST y documentación de los fabricantes. Cuando
+un dato depende del fabricante (colores de los LED, tramas jumbo), los
+apuntes dan el ejemplo con su marca. Y el bloque II entero, temas 1 a 5
+(arquitectura y representación de la información, periféricos y
+almacenamiento, estructuras de datos, algoritmos y formatos, sistemas
+operativos y bases de datos), con las fuentes de las preguntas del banco
+y su contexto.
 
 ## Comprobar
 

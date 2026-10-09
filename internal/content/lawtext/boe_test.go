@@ -103,6 +103,14 @@ func TestParseMetadata(t *testing.T) {
 	if err != nil || m.Title != "Ley 39/2015, de 1 de octubre" || m.VersionDate != "2026-09-25" {
 		t.Fatalf("%+v %v", m, err)
 	}
+	if m.Repealed != "" {
+		t.Errorf("in-force law marked repealed: %q", m.Repealed)
+	}
+	m, err = ParseMetadata([]byte(`{"data":[{"titulo":"Real Decreto 1553/2005","fecha_actualizacion":"20251218T210618Z",
+		"estado_consolidacion":{"texto":"Finalizado"},"vigencia_agotada":"S","fecha_derogacion":"20250402"}]}`))
+	if err != nil || m.Repealed != "2025-04-02" {
+		t.Errorf("repealed law: %+v %v", m, err)
+	}
 	if _, err := ParseMetadata([]byte(`{"data":[{"titulo":"x","fecha_actualizacion":"20260925T0","estado_consolidacion":{"texto":"En proceso"}}]}`)); err == nil {
 		t.Error("accepted an unfinished consolidation")
 	}

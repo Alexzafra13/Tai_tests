@@ -1,0 +1,702 @@
+{
+ "topic": "B3-T09",
+ "sections": [
+  {
+   "title": "Pruebas en Métrica v3",
+   "points": [
+    {
+     "text": "Las pruebas las hacen tanto los **desarrolladores** como los **usuarios** y los equipos de operación y mantenimiento. Tipos: **unitarias, de integración, del sistema, de implantación, de aceptación y de regresión**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las diversas pruebas a que debe ser sometido un sistema deben ser realizadas tanto por el equipo de desarrolladores, como por los usuarios, equipos de operación y mantenimiento"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los tipos de pruebas que deben realizarse son:"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Pruebas Unitarias. Pruebas de Integración. Pruebas del Sistema. Pruebas de Implantación. Pruebas de Aceptación. Pruebas de Regresión."
+      }
+     ]
+    },
+    {
+     "text": "**Unitarias**: verifican la funcionalidad y estructura de **cada componente por separado** una vez codificado; son la **prueba inicial**, sobre la que se apoyan las demás. Se diseñan sobre todo con casos de **caja blanca** (estructura interna), complementados con **caja negra** (solo entradas y salidas).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las pruebas unitarias tienen como objetivo verificar la funcionalidad y estructura de cada componente individualmente una vez que ha sido codificado."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las pruebas unitarias constituyen la prueba inicial de un sistema y las demás pruebas deben"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Enfoque estructural o de caja blanca. Se verifica la estructura interna del componente con independencia de la funcionalidad establecida para el mismo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Enfoque funcional o de caja negra."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se consideran exclusivamente las entradas y salidas del sistema sin preocuparse por la estructura interna del mismo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El enfoque que suele adoptarse para una prueba unitaria está claramente orientado al diseño de casos de caja blanca, aunque se complemente con caja negra."
+      }
+     ]
+    },
+    {
+     "text": "**De integración**: verifican el **correcto ensamblaje** entre componentes ya probados, comprobando que **interactúan correctamente a través de sus interfaces**, internas y externas. Estrategias incrementales: **de arriba abajo** (top-down: los componentes inferiores se sustituyen por **auxiliares** que simulan a los invocados; no hacen falta conductores), **de abajo arriba** (bottom-up: **conductores** que simulan a los que llaman) o **combinadas**; o integración no incremental (**Big-Bang**).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo de las pruebas de integración es verificar el correcto ensamblaje entre los distintos componentes una vez que han sido probados unitariamente con el fin de comprobar que interactúan correctamente a través de sus interfaces, tanto internas como externas"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los componentes de nivel más bajo se sustituyen por componentes auxiliares para simular a los componentes invocados. En este caso no son necesarios componentes conductores."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "se crean componentes conductores para simular a los componentes que los llaman"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Estrategias combinadas. A menudo es útil aplicar las estrategias anteriores conjuntamente."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Este tipo de integración se denomina también Big-Bang"
+      }
+     ]
+    },
+    {
+     "text": "**Del sistema**: prueban el sistema **en su conjunto** y con los otros sistemas con los que se relaciona. Tipos: **funcionales**, de **comunicaciones** (interfaces entre componentes), de **rendimiento** (los **tiempos de respuesta** están dentro de lo especificado), de **volumen**, de **sobrecarga** o stress (umbral límite de recursos), de **disponibilidad de datos**, de **facilidad de uso**, de **operación**, de **entorno** y de **seguridad**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "permiten probar el sistema en su conjunto y con otros sistemas con los que se relaciona"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Pruebas de comunicaciones. Determinan que las interfaces entre los componentes del sistema funcionan adecuadamente"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Pruebas de rendimiento. Consisten en determinar que los tiempos de respuesta están dentro de los intervalos establecidos en las especificaciones del sistema."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Pruebas de volumen. Consisten en examinar el funcionamiento del sistema cuando está trabajando con grandes volúmenes de datos"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Pruebas de sobrecarga. Consisten en comprobar el funcionamiento del sistema en el umbral límite de los recursos"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Pruebas de entorno. Consisten en verificar las interacciones del sistema con otros sistemas dentro del mismo entorno."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Pruebas de seguridad. Consisten en verificar los mecanismos de control de acceso al sistema"
+      }
+     ]
+    },
+    {
+     "text": "**De implantación**: comprueban el sistema integrado de hardware y software **en el entorno de operación**, para la aceptación del **usuario de operación**. **De aceptación**: validan que cumple lo esperado para que el **usuario** lo acepte; son de **caja negra**, las **define el usuario**, las prepara el equipo de desarrollo y su ejecución y aprobación final corresponden al **usuario**. **De regresión**: comprueban que los **cambios** en un componente no introducen errores en otros **no modificados**; las hace el equipo de desarrollo con el técnico de mantenimiento.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo de las pruebas de implantación es comprobar el funcionamiento correcto del sistema integrado de hardware y software en el entorno de operación"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "para conseguir la aceptación del usuario de operación"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo de las pruebas de aceptación es validar que un sistema cumple con el funcionamiento esperado y permitir al usuario de dicho sistema que determine su aceptación"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las pruebas de aceptación son definidas por el usuario del sistema y preparadas por el equipo de desarrollo, aunque la ejecución y aprobación final corresponden al usuario."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La validación del sistema se consigue mediante la realización de pruebas de caja negra"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Que los cambios sobre un componente de un sistema de información, no introducen un comportamiento no deseado o errores adicionales en otros componentes no modificados."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El responsable de realizar las pruebas de regresión será el equipo de desarrollo junto al técnico de mantenimiento"
+      }
+     ]
+    },
+    {
+     "text": "En la construcción del sistema (CSI), la tarea **CSI 6.1 Elaboración de los Manuales de Usuario** (usuario final y de explotación) la hace el **Equipo del Proyecto**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "Tarea CSI 6.1: Elaboración de los Manuales de Usuario"
+      },
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "El objetivo de esta tarea es elaborar la documentación de usuario, tanto usuario final como de explotación"
+      },
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "Participantes − Equipo del Proyecto"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Control de versiones y Git",
+   "points": [
+    {
+     "text": "Un **sistema de control de versiones** registra los cambios de uno o varios archivos **a lo largo del tiempo** para poder recuperar versiones concretas. Los **centralizados** (CVS, **Subversion**…) tienen un **único servidor** con todos los archivos; en los **distribuidos** (**Git, Mercurial**…) cada cliente **replica el repositorio completo**, con su historial.",
+     "refs": [
+      {
+       "title": "Pro Git · About Version Control",
+       "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+       "quote": "Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later."
+      },
+      {
+       "title": "Pro Git · About Version Control",
+       "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+       "quote": "These systems (such as CVS, Subversion, and Perforce) have a single server that contains all the versioned files"
+      },
+      {
+       "title": "Pro Git · About Version Control",
+       "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+       "quote": "In a DVCS (such as Git, Mercurial or Darcs), clients don’t just check out the latest snapshot of the files; rather, they fully mirror the repository, including its full history."
+      },
+      {
+       "title": "Apache Subversion",
+       "url": "https://subversion.apache.org/",
+       "quote": "as an open-source, centralized version control system"
+      },
+      {
+       "title": "Mercurial SCM",
+       "url": "https://www.mercurial-scm.org/",
+       "quote": "Mercurial is a free, distributed source control management tool."
+      }
+     ]
+    },
+    {
+     "text": "**Repositorio** (Git): el conjunto de referencias y la **base de datos de objetos** con todo lo alcanzable desde ellas; en un sistema distribuido, cada copia replica el repositorio con **todo su historial**. Un **repositorio bare** no tiene copia de trabajo (suele llamarse `proyecto.git`) y es el que se usa como **repositorio central remoto** en un servidor.",
+     "refs": [
+      {
+       "title": "Git · Glosario (gitglossary)",
+       "url": "https://git-scm.com/docs/gitglossary",
+       "quote": "A collection of refs together with an object database containing all objects which are reachable from the refs"
+      },
+      {
+       "title": "Pro Git · About Version Control",
+       "url": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+       "quote": "they fully mirror the repository, including its full history."
+      },
+      {
+       "title": "Git · Glosario (gitglossary)",
+       "url": "https://git-scm.com/docs/gitglossary",
+       "quote": "A bare repository is normally an appropriately named directory with a .git suffix that does not have a locally checked-out copy of any of the files under revision control."
+      },
+      {
+       "title": "Pro Git · Getting Git on a Server",
+       "url": "https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server",
+       "quote": "you have to export an existing repository into a new bare repository — a repository that doesn’t contain a working directory."
+      },
+      {
+       "title": "Pro Git · Getting Git on a Server",
+       "url": "https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server",
+       "quote": "stick a bare repository somewhere that all those users have read and write access to."
+      }
+     ]
+    },
+    {
+     "text": "**commit**: registra una **instantánea (snapshot)** del proyecto a la que se puede volver o con la que comparar. **git log**: lista los commits en **orden cronológico inverso** (los más recientes primero). **git merge**: **fusiona** otra rama en la rama en la que se está (p. ej., `git merge hotfix` desde master), por ejemplo para juntar el trabajo de dos ramas.",
+     "refs": [
+      {
+       "title": "Pro Git · Recording Changes to the Repository",
+       "url": "https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository",
+       "quote": "Every time you perform a commit, you’re recording a snapshot of your project that you can revert to or compare to later."
+      },
+      {
+       "title": "Pro Git · Viewing the Commit History",
+       "url": "https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History",
+       "quote": "By default, with no arguments, git log lists the commits made in that repository in reverse chronological order; that is, the most recent commits show up first."
+      },
+      {
+       "title": "Pro Git · Basic Branching and Merging",
+       "url": "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging",
+       "quote": "All you have to do is check out the branch you wish to merge into and then run the git merge command:"
+      },
+      {
+       "title": "Pro Git · Basic Branching and Merging",
+       "url": "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging",
+       "quote": "$ git merge hotfix"
+      }
+     ]
+    },
+    {
+     "text": "**README**: el archivo del repositorio que explica **qué hace** el proyecto, **por qué es útil**, **cómo empezar** a usarlo, dónde pedir ayuda y quién lo mantiene.",
+     "refs": [
+      {
+       "title": "GitHub Docs · About READMEs",
+       "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+       "quote": "You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it."
+      },
+      {
+       "title": "GitHub Docs · About READMEs",
+       "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes",
+       "quote": "How users can get started with the project"
+      }
+     ]
+    },
+    {
+     "text": "**git tag**: crea, lista, borra o verifica **etiquetas**; las **anotadas** (`-a`) son para versiones publicadas y guardan fecha, autor y mensaje; las **ligeras**, para marcas privadas o temporales.",
+     "refs": [
+      {
+       "title": "Git · git-tag",
+       "url": "https://git-scm.com/docs/git-tag",
+       "quote": "Create, list, delete or verify tags"
+      },
+      {
+       "title": "Git · git-tag",
+       "url": "https://git-scm.com/docs/git-tag",
+       "quote": "Make an unsigned, annotated tag object"
+      },
+      {
+       "title": "Git · git-tag",
+       "url": "https://git-scm.com/docs/git-tag",
+       "quote": "Annotated tags are meant for release while lightweight tags are meant for private or temporary object labels."
+      },
+      {
+       "title": "Git · git-tag",
+       "url": "https://git-scm.com/docs/git-tag",
+       "quote": "they contain a creation date, the tagger name and e-mail, a tagging message, and an optional cryptographic signature."
+      }
+     ]
+    },
+    {
+     "text": "**git push**: actualiza ramas, etiquetas u otras referencias en el repositorio **remoto** a partir del repositorio **local**; con `--tags` envía todas las etiquetas.",
+     "refs": [
+      {
+       "title": "Git · git-push",
+       "url": "https://git-scm.com/docs/git-push",
+       "quote": "Updates one or more branches, tags, or other references in one or more remote repositories from your local repository"
+      },
+      {
+       "title": "Git · git-push",
+       "url": "https://git-scm.com/docs/git-push",
+       "quote": "All refs under refs/tags are pushed, in addition to refspecs explicitly listed on the command line."
+      }
+     ]
+    },
+    {
+     "text": "**.gitignore**: patrones (uno por línea) de ficheros **sin seguimiento** que Git debe ignorar; no afecta a los que ya tienen seguimiento.",
+     "refs": [
+      {
+       "title": "Git · gitignore",
+       "url": "https://git-scm.com/docs/gitignore",
+       "quote": "A gitignore file specifies intentionally untracked files that Git should ignore."
+      },
+      {
+       "title": "Git · gitignore",
+       "url": "https://git-scm.com/docs/gitignore",
+       "quote": "Files already tracked by Git are not affected"
+      },
+      {
+       "title": "Git · gitignore",
+       "url": "https://git-scm.com/docs/gitignore",
+       "quote": "Each line in a gitignore file specifies a pattern."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Metodologías ágiles",
+   "points": [
+    {
+     "text": "**Manifiesto Ágil**, cuatro valores: **individuos e interacciones** sobre procesos y herramientas; **software funcionando** sobre documentación extensiva; **colaboración con el cliente** sobre negociación contractual; **respuesta ante el cambio** sobre seguir un plan.",
+     "refs": [
+      {
+       "title": "Manifiesto por el Desarrollo Ágil de Software",
+       "url": "https://agilemanifesto.org/iso/es/manifesto.html",
+       "quote": "Individuos e interacciones sobre procesos y herramientas"
+      },
+      {
+       "title": "Manifiesto por el Desarrollo Ágil de Software",
+       "url": "https://agilemanifesto.org/iso/es/manifesto.html",
+       "quote": "Software funcionando sobre documentación extensiva"
+      },
+      {
+       "title": "Manifiesto por el Desarrollo Ágil de Software",
+       "url": "https://agilemanifesto.org/iso/es/manifesto.html",
+       "quote": "Colaboración con el cliente sobre negociación contractual"
+      },
+      {
+       "title": "Manifiesto por el Desarrollo Ágil de Software",
+       "url": "https://agilemanifesto.org/iso/es/manifesto.html",
+       "quote": "Respuesta ante el cambio sobre seguir un plan"
+      }
+     ]
+    },
+    {
+     "text": "Sus **principios** (selección): satisfacer al cliente con **entregas tempranas y continuas** de software con valor; **aceptar que los requisitos cambien**, incluso en etapas tardías; entregar software funcional **frecuentemente** (de dos semanas a dos meses); negocio y desarrolladores **juntos a diario**; la **conversación cara a cara**; el **software funcionando** como medida del progreso; **desarrollo sostenible**; la **simplicidad**, o el arte de **maximizar el trabajo no realizado**; equipos **auto-organizados**, y reflexión a intervalos regulares para mejorar.",
+     "refs": [
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "Nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor."
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "Aceptamos que los requisitos cambien, incluso en etapas tardías del desarrollo."
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "Entregamos software funcional frecuentemente, entre dos semanas y dos meses"
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "Los responsables de negocio y los desarrolladores trabajamos juntos de forma cotidiana durante todo el proyecto."
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "es la conversación cara a cara."
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "El software funcionando es la medida principal de progreso."
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "Los procesos Ágiles promueven el desarrollo sostenible."
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "La simplicidad, o el arte de maximizar la cantidad de trabajo no realizado, es esencial."
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados."
+      },
+      {
+       "title": "Principios del Manifiesto Ágil",
+       "url": "https://agilemanifesto.org/iso/es/principles.html",
+       "quote": "A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo"
+      }
+     ]
+    },
+    {
+     "text": "**Scrum**: los **Sprints** son eventos de duración fija de **un mes o menos** que contienen los demás: **Sprint Planning** (máximo 8 horas para un sprint de un mes), **Daily Scrum** (**15 minutos**), **Sprint Review** y **Sprint Retrospective**, que **cierra el Sprint** (máximo 3 horas) y sirve para **planificar mejoras de calidad y efectividad**: el equipo revisa cómo fue el último Sprint (personas, interacciones, procesos, herramientas), qué fue bien y qué problemas hubo. El **Product Owner** es **una persona**, responsable de maximizar el valor del producto.",
+     "refs": [
+      {
+       "title": "The Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "quote": "They are fixed length events of one month or less to create consistency."
+      },
+      {
+       "title": "The Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "quote": "The Sprint is a container for all other events."
+      },
+      {
+       "title": "The Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "quote": "Sprint Planning is timeboxed to a maximum of eight hours for a one-month Sprint."
+      },
+      {
+       "title": "The Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "quote": "The Daily Scrum is a 15-minute event for the Developers of the Scrum Team."
+      },
+      {
+       "title": "The Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "quote": "The purpose of the Sprint Retrospective is to plan ways to increase quality and effectiveness."
+      },
+      {
+       "title": "The Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "quote": "The Scrum Team discusses what went well during the Sprint, what problems it encountered"
+      },
+      {
+       "title": "The Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "quote": "The Sprint Retrospective concludes the Sprint. It is timeboxed to a maximum of three hours for a one-month Sprint."
+      },
+      {
+       "title": "The Scrum Guide",
+       "url": "https://scrumguides.org/scrum-guide.html",
+       "quote": "The Product Owner is one person, not a committee."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Herramientas de pruebas, calidad e integración continua",
+   "points": [
+    {
+     "text": "**Apache JMeter**: software libre en Java para **pruebas de carga** y medir el **rendimiento**: simula una **carga elevada** sobre servidores o redes (en origen, para aplicaciones web). **Jest**: framework de **pruebas para JavaScript**. **Selenium WebDriver**: **controla un navegador** como lo haría un usuario, para **automatizar** pruebas.",
+     "refs": [
+      {
+       "title": "Apache JMeter",
+       "url": "https://jmeter.apache.org/",
+       "quote": "The Apache JMeter™ application is open source software,"
+      },
+      {
+       "title": "Apache JMeter",
+       "url": "https://jmeter.apache.org/",
+       "quote": "a 100% pure Java application designed to load test functional behavior and measure performance."
+      },
+      {
+       "title": "Apache JMeter",
+       "url": "https://jmeter.apache.org/",
+       "quote": "It can be used to simulate a heavy load on a server, group of servers, network or object to test its strength or to analyze overall performance under different load types."
+      },
+      {
+       "title": "Jest",
+       "url": "https://jestjs.io/",
+       "quote": "Jest is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase."
+      },
+      {
+       "title": "Selenium · WebDriver",
+       "url": "https://www.selenium.dev/documentation/webdriver/",
+       "quote": "WebDriver drives a browser natively, as a user would, either locally or on a remote machine using the Selenium server."
+      },
+      {
+       "title": "Selenium · WebDriver",
+       "url": "https://www.selenium.dev/documentation/webdriver/",
+       "quote": "It marks a leap forward in terms of browser automation."
+      }
+     ]
+    },
+    {
+     "text": "**SonarQube**: revisión automática de **calidad y seguridad del código** mediante **análisis estático**, integrable en el pipeline de integración continua (con **quality gates** que frenan el código con problemas). **Jenkins Pipeline**: plugins para implementar **pipelines de entrega continua**: la expresión automatizada del proceso que lleva el software desde el control de versiones hasta los usuarios.",
+     "refs": [
+      {
+       "title": "SonarQube Server · documentación",
+       "url": "https://docs.sonarsource.com/sonarqube-server/latest/",
+       "quote": "SonarQube Server is an industry-standard on-premises automated code review and static analysis tool"
+      },
+      {
+       "title": "SonarQube Server · documentación",
+       "url": "https://docs.sonarsource.com/sonarqube-server/latest/",
+       "quote": "provides automated code quality and security reviews"
+      },
+      {
+       "title": "SonarQube Server · documentación",
+       "url": "https://docs.sonarsource.com/sonarqube-server/latest/",
+       "quote": "By integrating directly with your CI pipeline"
+      },
+      {
+       "title": "Jenkins · Pipeline",
+       "url": "https://www.jenkins.io/doc/book/pipeline/",
+       "quote": "Jenkins Pipeline (or simply \"Pipeline\" with a capital \"P\") is a suite of plugins which supports implementing and integrating continuous delivery pipelines into Jenkins."
+      },
+      {
+       "title": "Jenkins · Pipeline",
+       "url": "https://www.jenkins.io/doc/book/pipeline/",
+       "quote": "A continuous delivery (CD) pipeline is an automated expression of your process for getting software from version control right through to your users and customers."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Documentación, generación de código y plataformas colaborativas",
+   "points": [
+    {
+     "text": "**Generación de documentación**: **javadoc** genera páginas **HTML** de la API a partir de las declaraciones y los **comentarios de documentación** del código Java. En Python, el **docstring** es la cadena literal que abre un módulo, función, clase o método (por convención, entre triples comillas dobles) y queda en el atributo `__doc__`.",
+     "refs": [
+      {
+       "title": "Java SE 21 · javadoc command",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/man/javadoc.html",
+       "quote": "javadoc - generate HTML pages of API documentation from Java source files"
+      },
+      {
+       "title": "Java SE 21 · javadoc command",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/man/javadoc.html",
+       "quote": "The javadoc tool parses the declarations and documentation comments in a set of Java source files and produces corresponding HTML pages"
+      },
+      {
+       "title": "PEP 257 · Docstring Conventions",
+       "url": "https://peps.python.org/pep-0257/",
+       "quote": "A docstring is a string literal that occurs as the first statement in a module, function, class, or method definition."
+      },
+      {
+       "title": "PEP 257 · Docstring Conventions",
+       "url": "https://peps.python.org/pep-0257/",
+       "quote": "Such a docstring becomes the __doc__ special attribute of that object."
+      },
+      {
+       "title": "PEP 257 · Docstring Conventions",
+       "url": "https://peps.python.org/pep-0257/",
+       "quote": "For consistency, always use \"\"\"triple double quotes\"\"\" around"
+      }
+     ]
+    },
+    {
+     "text": "**Generación de código**: Métrica v3 (proceso CSI) genera el código de los componentes respetando los estándares de nomenclatura, codificación y calidad de la organización; entre los medios del entorno de construcción figuran las **herramientas de generación de código**. Ejemplo: las **plantillas T4** de Visual Studio generan código a partir de un modelo y lo regeneran si este cambia.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "En este proceso se genera el código de los componentes del Sistema de Información"
+      },
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "gestores de bases de datos, bibliotecas de programas, herramientas de generación de código,"
+      },
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "Para generar el código fuente se tienen en cuenta los estándares de nomenclatura, codificación y calidad utilizados por la organización y recogidos en el catálogo de normas."
+      },
+      {
+       "title": "Microsoft Learn · Code Generation and T4 Text Templates",
+       "url": "https://learn.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates",
+       "quote": "In Visual Studio, a T4 text template is a mixture of text blocks and control logic that can generate a text file."
+      },
+      {
+       "title": "Microsoft Learn · Code Generation and T4 Text Templates",
+       "url": "https://learn.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates",
+       "quote": "it's easy to regenerate the code to fit the new model."
+      }
+     ]
+    },
+    {
+     "text": "**Plataformas colaborativas** sobre Git:",
+     "refs": [
+      {
+       "title": "GitHub Docs · About GitHub and Git",
+       "url": "https://docs.github.com/en/get-started/start-your-journey/about-github-and-git",
+       "quote": "Git is a version control system that tracks changes to files."
+      }
+     ],
+     "items": [
+      {
+       "text": "**GitHub**: cubre todo el proceso de desarrollo; su elemento básico es el **repositorio**, y los cambios se proponen con **pull requests** (fusionar una rama en otra).",
+       "refs": [
+        {
+         "title": "GitHub Docs · About GitHub and Git",
+         "url": "https://docs.github.com/en/get-started/start-your-journey/about-github-and-git",
+         "quote": "GitHub is a platform that supports your entire software development process, from planning work to deploying and operating software."
+        },
+        {
+         "title": "GitHub Docs · About repositories",
+         "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+         "quote": "A repository is the most basic element of GitHub."
+        },
+        {
+         "title": "GitHub Docs · About repositories",
+         "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+         "quote": "A request to merge changes from one branch into another."
+        }
+       ]
+      },
+      {
+       "text": "**GitLab**: plataforma **DevSecOps**; revisa con **merge requests** y cada **proyecto** define su CI/CD en un fichero **.gitlab-ci.yml** en su raíz.",
+       "refs": [
+        {
+         "title": "GitLab Docs · The DevSecOps platform",
+         "url": "https://docs.gitlab.com/devsecops/",
+         "quote": "GitLab: The DevSecOps platform"
+        },
+        {
+         "title": "GitLab Docs · Merge requests",
+         "url": "https://docs.gitlab.com/user/project/merge_requests/",
+         "quote": "Merge requests provide a central location for your team to review code, have discussions,"
+        },
+        {
+         "title": "GitLab Docs · CI/CD",
+         "url": "https://docs.gitlab.com/ci/",
+         "quote": "To use GitLab CI/CD, add a .gitlab-ci.yml file to the root of your project."
+        }
+       ]
+      },
+      {
+       "text": "**Azure DevOps** (Microsoft): **Repos** (Git o TFVC), **Pipelines** (CI/CD) y **Boards** (planificación ágil, Kanban).",
+       "refs": [
+        {
+         "title": "Microsoft Learn · What is Azure DevOps?",
+         "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops",
+         "quote": "Azure DevOps is a cloud-based platform that provides integrated tools for software development teams."
+        },
+        {
+         "title": "Microsoft Learn · What is Azure DevOps?",
+         "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops",
+         "quote": "Host unlimited private Git repositories or use Team Foundation Version Control (TFVC) for source code management."
+        },
+        {
+         "title": "Microsoft Learn · What is Azure DevOps?",
+         "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops",
+         "quote": "Build, test, and deploy applications with CI/CD pipelines that work with any language, platform, and cloud."
+        },
+        {
+         "title": "Microsoft Learn · What is Azure DevOps?",
+         "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops",
+         "quote": "Plan and track work using Agile tools, Kanban boards, backlogs, and dashboards."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

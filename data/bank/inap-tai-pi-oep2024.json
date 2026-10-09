@@ -111,10 +111,11 @@
       "status": "published",
       "articles": [
         {
-          "law": "BOE-A-2005-21163",
-          "section": "a12"
+          "law": "BOE-A-2025-6601",
+          "section": "a1-3"
         }
-      ]
+      ],
+      "explanation": "Respuesta según el examen de 2024, que aplicaba el Real Decreto 1553/2005 (art. 12.1: «no podrá ser superior a cinco años»). Ese real decreto lo derogó el Real Decreto 255/2025, de 1 de abril, que fija ahora un plazo de validez de dos años para los certificados del DNI (art. 11.3)."
     },
     {
       "key": "P-6",

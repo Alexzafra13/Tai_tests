@@ -1,0 +1,711 @@
+{
+ "topic": "B2-T03",
+ "sections": [
+  {
+   "title": "Tipos abstractos de datos",
+   "points": [
+    {
+     "text": "Un **TAD** es un conjunto de valores y operaciones definidos **con independencia de la implementación**. En Java, la **interfaz** declara las operaciones y la **clase** que la implementa da el código de cada una (no al revés).",
+     "refs": [
+      {
+       "title": "NIST DADS · abstract data type",
+       "url": "https://xlinux.nist.gov/dads/HTML/abstractDataType.html",
+       "quote": "A set of data values and associated operations that are precisely specified independent of any particular implementation."
+      },
+      {
+       "title": "Oracle · Java Tutorials: Defining an Interface",
+       "url": "https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html",
+       "quote": "When an instantiable class implements an interface, it provides a method body for each of the methods declared in the interface."
+      }
+     ]
+    },
+    {
+     "text": "**Cola** (FIFO): solo se accede al elemento más antiguo; se inserta por el **final (cola)** y se saca por la **cabecera**. Se puede implementar con estructuras dinámicas (listas enlazadas) o con arrays.",
+     "refs": [
+      {
+       "title": "NIST DADS · queue",
+       "url": "https://xlinux.nist.gov/dads/HTML/queue.html",
+       "quote": "A collection of items in which only the earliest added item may be accessed. Basic operations are add (to the tail ) or enqueue and delete (from the head ) or dequeue."
+      },
+      {
+       "title": "NIST DADS · queue",
+       "url": "https://xlinux.nist.gov/dads/HTML/queue.html",
+       "quote": "Also known as \"first-in, first-out\" or FIFO."
+      },
+      {
+       "title": "Oracle Java SE 21 · Queue",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Queue.html",
+       "quote": "In a FIFO queue, all new elements are inserted at the tail of the queue."
+      },
+      {
+       "title": "Oracle Java SE 21 · LinkedList",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/LinkedList.html",
+       "quote": "Doubly-linked list implementation of the List and Deque interfaces."
+      },
+      {
+       "title": "Oracle Java SE 21 · Queue",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Queue.html",
+       "quote": "All Known Implementing Classes: AbstractQueue , ArrayBlockingQueue , ArrayDeque"
+      }
+     ]
+    },
+    {
+     "text": "**Pila** (LIFO): se puede implementar sobre un **array** (en Java, `ArrayDeque`, más rápida que `Stack`).",
+     "refs": [
+      {
+       "title": "Oracle Java SE 21 · ArrayDeque",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayDeque.html",
+       "quote": "Resizable-array implementation of the Deque interface."
+      },
+      {
+       "title": "Oracle Java SE 21 · ArrayDeque",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ArrayDeque.html",
+       "quote": "This class is likely to be faster than Stack when used as a stack"
+      }
+     ]
+    },
+    {
+     "text": "**Lista enlazada simple**: cada elemento apunta al siguiente. En la **circular**, el último está enlazado con el primero.",
+     "refs": [
+      {
+       "title": "NIST DADS · linked list",
+       "url": "https://xlinux.nist.gov/dads/HTML/linkedList.html",
+       "quote": "A list implemented by each item having a link to the next item."
+      },
+      {
+       "title": "NIST DADS · circular list",
+       "url": "https://xlinux.nist.gov/dads/HTML/circularlist.html",
+       "quote": "A variant of a linked list in which the nominal tail is linked to the head ."
+      }
+     ]
+    },
+    {
+     "text": "**Árbol 2-3-4**: árbol B de orden 4; sus nodos internos tienen **2, 3 o 4 hijos**.",
+     "refs": [
+      {
+       "title": "NIST DADS · 2-3-4 tree",
+       "url": "https://xlinux.nist.gov/dads/HTML/two34tree.html",
+       "quote": "A B-tree of order 4, that is, internal nodes have two, three, or four children"
+      }
+     ]
+    },
+    {
+     "text": "Recorrido en **preorden**: raíz, subárbol izquierdo, subárbol derecho.",
+     "refs": [
+      {
+       "title": "NIST DADS · preorder traversal",
+       "url": "https://xlinux.nist.gov/dads/HTML/preorderTraversal.html",
+       "quote": "print(tree.root); preorder(tree.left_subtree); preorder(tree.right_subtree);"
+      }
+     ]
+    },
+    {
+     "text": "Árboles: el **grado de un nodo** es su número de hijos. Una **hoja** es un nodo sin hijos (nodo externo o terminal). La **profundidad** de un nodo es su distancia a la raíz (la raíz tiene 0) y la **altura** del árbol es la distancia máxima de un nodo a la raíz (un árbol de un solo nodo tiene altura 0).",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · degree",
+       "url": "https://xlinux.nist.gov/dads/HTML/degree.html",
+       "quote": "(3) Of a tree node"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · degree",
+       "url": "https://xlinux.nist.gov/dads/HTML/degree.html",
+       "quote": "the number of child nodes it has."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · leaf",
+       "url": "https://xlinux.nist.gov/dads/HTML/leaf.html",
+       "quote": "A node in a tree without any children"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · leaf",
+       "url": "https://xlinux.nist.gov/dads/HTML/leaf.html",
+       "quote": "Also known as external node, terminal node."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · depth",
+       "url": "https://xlinux.nist.gov/dads/HTML/depth.html",
+       "quote": "the distance from the node to the root of the tree"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · depth",
+       "url": "https://xlinux.nist.gov/dads/HTML/depth.html",
+       "quote": "The depth of the root is 0. The depth of a node is one plus the depth of its parent"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · height",
+       "url": "https://xlinux.nist.gov/dads/HTML/height.html",
+       "quote": "If a tree has only one node (the root), the height is zero."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · height",
+       "url": "https://xlinux.nist.gov/dads/HTML/height.html",
+       "quote": "the height is the maximum depth of any node."
+      }
+     ]
+    },
+    {
+     "text": "Árboles binarios:",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · full binary tree",
+       "url": "https://xlinux.nist.gov/dads/HTML/fullBinaryTree.html",
+       "quote": "A binary tree in which each node has exactly zero or two children"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Lleno** (*full*): cada nodo tiene **0 o 2** hijos.",
+       "refs": [
+        {
+         "title": "NIST Dictionary of Algorithms and Data Structures · full binary tree",
+         "url": "https://xlinux.nist.gov/dads/HTML/fullBinaryTree.html",
+         "quote": "In other words, every node is either a leaf or has two children."
+        }
+       ]
+      },
+      {
+       "text": "**Completo** (*complete*): todos los niveles llenos salvo quizá el último, cuyos nodos están **lo más a la izquierda** posible.",
+       "refs": [
+        {
+         "title": "NIST Dictionary of Algorithms and Data Structures · complete binary tree",
+         "url": "https://xlinux.nist.gov/dads/HTML/completeBinaryTree.html",
+         "quote": "A binary tree in which every level (depth), except possibly the deepest, is completely filled."
+        },
+        {
+         "title": "NIST Dictionary of Algorithms and Data Structures · complete binary tree",
+         "url": "https://xlinux.nist.gov/dads/HTML/completeBinaryTree.html",
+         "quote": "At depth n, the height of the tree, all nodes must be as far left as possible."
+        }
+       ]
+      },
+      {
+       "text": "**Perfecto**: todas las hojas a la misma profundidad y todos los nodos internos con grado 2; tiene **2^(h+1) − 1** nodos (h = altura).",
+       "refs": [
+        {
+         "title": "NIST Dictionary of Algorithms and Data Structures · perfect binary tree",
+         "url": "https://xlinux.nist.gov/dads/HTML/perfectBinaryTree.html",
+         "quote": "A binary tree with all leaf nodes at the same depth"
+        },
+        {
+         "title": "NIST Dictionary of Algorithms and Data Structures · perfect binary tree",
+         "url": "https://xlinux.nist.gov/dads/HTML/perfectBinaryTree.html",
+         "quote": "All internal nodes have degree 2."
+        },
+        {
+         "title": "NIST Dictionary of Algorithms and Data Structures · perfect binary tree",
+         "url": "https://xlinux.nist.gov/dads/HTML/perfectBinaryTree.html",
+         "quote": "nodes, where n is the height"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Recorridos: **inorden** (simétrico): subárbol izquierdo, raíz, subárbol derecho. **Postorden**: subárboles y al final la raíz. **Por niveles**: la raíz, luego sus hijos, etc. (equivale a una búsqueda en anchura).",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · in-order traversal",
+       "url": "https://xlinux.nist.gov/dads/HTML/inorderTraversal.html",
+       "quote": "Process all nodes of a tree by recursively processing the left subtree, then processing the root"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · in-order traversal",
+       "url": "https://xlinux.nist.gov/dads/HTML/inorderTraversal.html",
+       "quote": "Also known as symmetric traversal."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · postorder traversal",
+       "url": "https://xlinux.nist.gov/dads/HTML/postorderTraversal.html",
+       "quote": "Process all nodes of a tree by recursively processing all subtrees, then finally processing the root"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · level-order traversal",
+       "url": "https://xlinux.nist.gov/dads/HTML/levelOrderTraversal.html",
+       "quote": "Equivalent to a breadth-first search from the root."
+      }
+     ]
+    },
+    {
+     "text": "**Búsqueda en anchura** (BFS): visita los vecinos antes de profundizar; se implementa con una **cola**. **En profundidad** (DFS): baja por los hijos antes que por los hermanos; se implementa fácilmente con **recursión**; en un árbol puede ser **preorden, inorden o postorden**.",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · breadth-first search",
+       "url": "https://xlinux.nist.gov/dads/HTML/breadthfirst.html",
+       "quote": "Any search algorithm that considers neighbors of a vertex"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · breadth-first search",
+       "url": "https://xlinux.nist.gov/dads/HTML/breadthfirst.html",
+       "quote": "This is typically implemented with a queue"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · depth-first search",
+       "url": "https://xlinux.nist.gov/dads/HTML/depthfirst.html",
+       "quote": "Any search algorithm that considers outgoing edges"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · depth-first search",
+       "url": "https://xlinux.nist.gov/dads/HTML/depthfirst.html",
+       "quote": "This is easily implemented with recursion"
+      }
+     ]
+    },
+    {
+     "text": "**Bicola** (*deque*, *double-ended queue*): se inserta y se saca por **ambos extremos**.",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · deque",
+       "url": "https://xlinux.nist.gov/dads/HTML/deque.html",
+       "quote": "A data structure in which items may be added to or deleted from the head or the tail"
+      },
+      {
+       "title": "Java SE 21 API · Deque",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Deque.html",
+       "quote": "A linear collection that supports element insertion and removal at both ends."
+      }
+     ]
+    },
+    {
+     "text": "**Diccionario** o **mapa**: guarda valores a los que se accede por una **clave**; en Java, `Map` no admite claves duplicadas y `HashMap` no garantiza el orden.",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · dictionary",
+       "url": "https://xlinux.nist.gov/dads/HTML/dictionary.html",
+       "quote": "An abstract data type storing items, or values. A value is accessed by an associated key"
+      },
+      {
+       "title": "Java SE 21 API · Map",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html",
+       "quote": "An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value."
+      },
+      {
+       "title": "Java SE 21 API · Map",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Map.html",
+       "quote": "others, like the HashMap class, do not."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Algoritmos",
+   "points": [
+    {
+     "text": "**Dijkstra**: caminos más cortos desde un vértice origen a todos los demás en un grafo dirigido **ponderado** (pesos no negativos).",
+     "refs": [
+      {
+       "title": "NIST DADS · Dijkstra's algorithm",
+       "url": "https://xlinux.nist.gov/dads/HTML/dijkstraalgo.html",
+       "quote": "An algorithm to find the shortest paths from a single source vertex to all other vertices in a weighted, directed graph . All weights must be nonnegative."
+      }
+     ]
+    },
+    {
+     "text": "**Burbuja**: compara pares **adyacentes** y los intercambia si están desordenados, repitiendo hasta que no haya intercambios; O(n²) en general.",
+     "refs": [
+      {
+       "title": "NIST DADS · bubble sort",
+       "url": "https://xlinux.nist.gov/dads/HTML/bubblesort.html",
+       "quote": "Sort by comparing each adjacent pair of items in a list in turn, swapping the items if necessary, and repeating the pass through the list until no swaps are done."
+      },
+      {
+       "title": "NIST DADS · bubble sort",
+       "url": "https://xlinux.nist.gov/dads/HTML/bubblesort.html",
+       "quote": "Complexity is O(n 2 ) for arbitrary data"
+      }
+     ]
+    },
+    {
+     "text": "**Radix**: ordenación por distribución que reparte los elementos en cubetas según **cada parte de la clave**, una pasada por dígito. Razonamiento: con d pasadas sobre n elementos y k cubetas, el coste es del orden de d·(n+k); con d y k fijos, **lineal** en n. **Heapsort**, en cambio, es O(n log n).",
+     "refs": [
+      {
+       "title": "NIST DADS · radix sort",
+       "url": "https://xlinux.nist.gov/dads/HTML/radixsort.html",
+       "quote": "A multiple pass distribution sort algorithm that distributes each item to a bucket according to part of the item's key beginning with the least significant part of the key."
+      },
+      {
+       "title": "NIST DADS · heapsort",
+       "url": "https://xlinux.nist.gov/dads/HTML/heapSort.html",
+       "quote": "A sort algorithm that builds a heap , then repeatedly extracts the maximum item. Run time is O(n log n) ."
+      }
+     ]
+    },
+    {
+     "text": "**Algoritmo voraz**: toma siempre la **mejor solución inmediata (local)**.",
+     "refs": [
+      {
+       "title": "NIST DADS · greedy algorithm",
+       "url": "https://xlinux.nist.gov/dads/HTML/greedyalgo.html",
+       "quote": "An algorithm that always takes the best immediate, or local, solution while finding an answer."
+      }
+     ]
+    },
+    {
+     "text": "**Quicksort**: elige un **pivote**, parte el resto entre mayores y menores que él y ordena las partes recursivamente. Peor caso **Θ(n²)**, normalmente **O(n log n)**.",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · quicksort",
+       "url": "https://xlinux.nist.gov/dads/HTML/quicksort.html",
+       "quote": "Pick an element from the array (the pivot), partition the remaining elements into those greater than and less than this pivot, and recursively sort the partitions."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · quicksort",
+       "url": "https://xlinux.nist.gov/dads/HTML/quicksort.html",
+       "quote": "Quicksort has running time Θ(n²) in the worst case"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · quicksort",
+       "url": "https://xlinux.nist.gov/dads/HTML/quicksort.html",
+       "quote": "but it is typically O(n log n)"
+      }
+     ]
+    },
+    {
+     "text": "**Kruskal**: calcula el **árbol de expansión mínimo** de un grafo ponderado añadiendo cada vez la arista **más corta** que une dos árboles parciales distintos.",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · Kruskal's algorithm",
+       "url": "https://xlinux.nist.gov/dads/HTML/kruskalsalgo.html",
+       "quote": "It maintains a set of partial minimum spanning trees, and repeatedly adds the shortest edge in the graph whose vertices are in different partial minimum spanning trees."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · minimum spanning tree",
+       "url": "https://xlinux.nist.gov/dads/HTML/minimumSpanningTree.html",
+       "quote": "A minimum-weight tree in a weighted graph which contains all of the graph's vertices"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Organizaciones de ficheros",
+   "points": [
+    {
+     "text": "El **método de acceso** define cómo se organizan los datos de un fichero y cómo se guardan y recuperan. Tipos clásicos (ejemplo: VSAM de IBM):",
+     "refs": [
+      {
+       "title": "IBM z/OS Basic Skills · DFSMSdfp access methods",
+       "url": "https://www.ibm.com/docs/en/zosbasics/com.ibm.zos.zdatamgmt/zsysprogc_dfsmsAccessMethods.htm",
+       "quote": "An access method defines the organization of the data in a data set and the technique by which the data is stored and retrieved."
+      },
+      {
+       "title": "IBM Enterprise PL/I · VSAM organization",
+       "url": "https://www.ibm.com/docs/en/SSY2V3_5.3.0/pg/vsmorg.html",
+       "quote": "Key-sequenced data sets (KSDS) Indexed data set Entry-sequenced data sets (ESDS) Consecutive data set Relative record data sets (RRDS) Regional data set"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Secuencial**: los registros están en el orden en que se grabaron y se leen en ese orden (ESDS).",
+       "refs": [
+        {
+         "title": "IBM CICS TS 5.5 · VSAM data sets: KSDS, ESDS, RRDS",
+         "url": "https://www.ibm.com/docs/en/SSGMCP_5.5.0/applications/designing/dfhp3mk.html",
+         "quote": "Records are held in an ESDS in the order in which they were first loaded into the data set."
+        },
+        {
+         "title": "IBM z/OS XL C/C++ Programming Guide · VSAM types",
+         "url": "https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.cbcpx01/vsam.htm",
+         "quote": "Entry-Sequenced Data Set (ESDS) is used for data that is primarily accessed in the order it was created (or the reverse order)."
+        }
+       ]
+      },
+      {
+       "text": "**Indexada**: se accede por una **clave** del registro (KSDS).",
+       "refs": [
+        {
+         "title": "IBM z/OS XL C/C++ Programming Guide · VSAM types",
+         "url": "https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.cbcpx01/vsam.htm",
+         "quote": "Key-Sequenced Data Set (KSDS) is used when a record is accessed through a key field within the record"
+        }
+       ]
+      },
+      {
+       "text": "**Relativa** o **directa**: se accede por el **número de registro** (RRDS).",
+       "refs": [
+        {
+         "title": "IBM z/OS XL C/C++ Programming Guide · VSAM types",
+         "url": "https://www.ibm.com/docs/en/SSLTBW_2.1.0/com.ibm.zos.v2r1.cbcpx01/vsam.htm",
+         "quote": "It supports direct access by Relative Record Number (RRN), and sequential access."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Dispersión** (*hashing*): una **función hash** convierte la clave en una posición. Hay **colisión** cuando dos claves van a la misma posición; se resuelve con **direccionamiento abierto** (se prueban otras posiciones de la tabla hasta encontrar una libre), **encadenamiento** (listas enlazadas) o un **área de desbordamiento**.",
+     "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · hash function",
+       "url": "https://xlinux.nist.gov/dads/HTML/hash.html",
+       "quote": "A function that maps keys to integers, usually to get an even distribution on a smaller set of values."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · hash table",
+       "url": "https://xlinux.nist.gov/dads/HTML/hashtab.html",
+       "quote": "Having the keys of more than one item map to the same position is called a collision"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · hash table",
+       "url": "https://xlinux.nist.gov/dads/HTML/hashtab.html",
+       "quote": "keeping one special overflow area."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · open addressing",
+       "url": "https://xlinux.nist.gov/dads/HTML/openAddressing.html",
+       "quote": "other positions are computed, giving a probe sequence"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · chaining",
+       "url": "https://xlinux.nist.gov/dads/HTML/chaining.html",
+       "quote": "A class of collision resolution schemes in which linked lists handle collisions in a hash table"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Formatos de información y ficheros",
+   "points": [
+    {
+     "text": "**JSON** (RFC 8259): un valor es objeto, array, número o cadena, o uno de los literales **false, null y true** (en minúsculas). En los objetos, cada miembro es **nombre (cadena entre comillas dobles)** `:` valor.",
+     "refs": [
+      {
+       "title": "RFC 8259 · JSON",
+       "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+       "quote": "A JSON value MUST be an object, array, number, or string, or one of the following three literal names: false null true The literal names MUST be lowercase."
+      },
+      {
+       "title": "RFC 8259 · JSON",
+       "url": "https://www.rfc-editor.org/rfc/rfc8259.html",
+       "quote": "member = string name-separator value"
+      }
+     ]
+    },
+    {
+     "text": "**CSV** (RFC 4180): un registro por línea, separadas por **CRLF**; los campos con saltos de línea, comillas o comas deberían ir **entre comillas dobles**.",
+     "refs": [
+      {
+       "title": "RFC 4180 · CSV",
+       "url": "https://www.rfc-editor.org/rfc/rfc4180.html",
+       "quote": "Each record is located on a separate line, delimited by a line break (CRLF)."
+      },
+      {
+       "title": "RFC 4180 · CSV",
+       "url": "https://www.rfc-editor.org/rfc/rfc4180.html",
+       "quote": "Fields containing line breaks (CRLF), double quotes, and commas should be enclosed in double-quotes."
+      }
+     ]
+    },
+    {
+     "text": "**JPEG** es un estándar internacional (ISO/IEC 10918, 1992-1994). **ODF** 1.0 es la norma **ISO/IEC 26300:2006**.",
+     "refs": [
+      {
+       "title": "JPEG (ISO/IEC JTC 1/SC 29/WG 1) · JPEG 1",
+       "url": "https://jpeg.org/jpeg/index.html",
+       "quote": "The JPEG 1 standard (ISO/IEC 10918) was created in 1992 (latest version, 1994)"
+      },
+      {
+       "title": "OASIS · Comité técnico OpenDocument",
+       "url": "https://www.oasis-open.org/committees/office/",
+       "quote": "Open Document Format v1.0 has been approved by ISO/IEC JTC1 as an International Standard ISO/IEC 26300:2006"
+      }
+     ]
+    },
+    {
+     "text": "Normas PDF: **PDF/A** (archivo, ISO 19005), **PDF/E** (ISO 24517), **PDF/UA** (accesibilidad, ISO 14289) y **PDF/X** (preimpresión, ISO 15930). «PDF/I» no figura entre ellas.",
+     "refs": [
+      {
+       "title": "Library of Congress · PDF family",
+       "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000030.shtml",
+       "quote": "PDF/A standards (ISO 19005), PDF/R (ISO 23504), PDF/E (ISO 24517), PDF/UA (ISO 14289)."
+      },
+      {
+       "title": "Library of Congress · PDF family",
+       "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000030.shtml",
+       "quote": "PDF/A_family , PDF for Long-term Preservation"
+      },
+      {
+       "title": "Library of Congress · PDF family",
+       "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000030.shtml",
+       "quote": "PDF/UA-1, PDF Enhancement for Accessibility"
+      },
+      {
+       "title": "Library of Congress · PDF/X family",
+       "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000124.shtml",
+       "quote": "PDF/X is a family of ISO standards for constrained forms of the PDF_family of format specifications, designed for prepress digital data exchange."
+      }
+     ]
+    },
+    {
+     "text": "**AV1** es un **códec de vídeo** abierto de la Alliance for Open Media.",
+     "refs": [
+      {
+       "title": "Alliance for Open Media · AV1",
+       "url": "https://aomedia.org/specifications/av1/",
+       "quote": "AV1 (AOMedia Video 1) is an open video codec designed to provide high-quality video compression with greater efficiency than previous codecs."
+      }
+     ]
+    },
+    {
+     "text": "Extensiones preguntadas:",
+     "refs": [
+      {
+       "title": "Esri · ESRI Shapefile Technical Description",
+       "url": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf",
+       "quote": "The suffix for the main file is .shp. The suffix for the index file is .shx. The suffix for the dBASE table is .dbf."
+      }
+     ],
+     "items": [
+      {
+       "text": "**.shp**: *shapefile* de Esri, información **geográfica** (formas con sus vértices); va con .shx (índice) y .dbf (atributos).",
+       "refs": [
+        {
+         "title": "Esri · ESRI Shapefile Technical Description",
+         "url": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf",
+         "quote": "An ESRI shapefile consists of a main file, an index file, and a dBASE table."
+        },
+        {
+         "title": "Esri · ESRI Shapefile Technical Description",
+         "url": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf",
+         "quote": "A shapefile stores nontopological geometry and attribute information for the spatial"
+        },
+        {
+         "title": "Esri · ESRI Shapefile Technical Description",
+         "url": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf",
+         "quote": "The main file is a direct access, variable-record-length file in which each record describes a shape with a list of its vertices."
+        }
+       ]
+      },
+      {
+       "text": "**PKCS #12** (estructura **PFX**, *Personal Information Exchange*): intercambio de **claves privadas y certificados**.",
+       "refs": [
+        {
+         "title": "RFC 7292 · PKCS #12: Personal Information Exchange Syntax v1.1",
+         "url": "https://www.rfc-editor.org/rfc/rfc7292.txt",
+         "quote": "PKCS #12 v1.1 describes a transfer syntax for personal identity information, including private keys, certificates, miscellaneous secrets, and extensions."
+        },
+        {
+         "title": "RFC 7292 · PKCS #12: Personal Information Exchange Syntax v1.1",
+         "url": "https://www.rfc-editor.org/rfc/rfc7292.txt",
+         "quote": "The acronym is sometimes expanded as Personal Information Exchange."
+        }
+       ]
+      },
+      {
+       "text": "**.swf**: Flash (*Small Web Format*), **animaciones** y gráficos vectoriales; formato heredado.",
+       "refs": [
+        {
+         "title": "Library of Congress · Flash SWF File Format Family",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000629.shtml",
+         "quote": "SWF is also known as the Small Web Format."
+        },
+        {
+         "title": "Library of Congress · Flash SWF File Format Family",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000629.shtml",
+         "quote": "Delivers vector graphics (especially animations) and other data types"
+        },
+        {
+         "title": "Library of Congress · Flash SWF File Format Family",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000629.shtml",
+         "quote": "is a legacy format for multimedia content"
+        }
+       ]
+      },
+      {
+       "text": "**.ods**: **hoja de cálculo** OpenDocument, basada en XML.",
+       "refs": [
+        {
+         "title": "Library of Congress · OpenDocument Spreadsheet (ODS) 1.2",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000439.shtml",
+         "quote": "is an XML-based format for editable spreadsheet documents."
+        },
+        {
+         "title": "Library of Congress · OpenDocument Spreadsheet (ODS) 1.2",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000439.shtml",
+         "quote": ".ods is the extension used for a spreadsheet file."
+        }
+       ]
+      },
+      {
+       "text": "**.apk**: paquete de una **app Android** (archivo ZIP basado en JAR).",
+       "refs": [
+        {
+         "title": "Library of Congress · Android Package",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000592.shtml",
+         "quote": "An Android package (APK) is an archive file that contains the contents of an Android app required at runtime."
+        },
+        {
+         "title": "Library of Congress · Android Package",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000592.shtml",
+         "quote": "APKs are based on Java's JAR format structure and packaged as a ZIP archive."
+        }
+       ]
+      },
+      {
+       "text": "**.svg**: gráficos **vectoriales** 2D en XML.",
+       "refs": [
+        {
+         "title": "Library of Congress · Scalable Vector Graphics (SVG) 1.1",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000020.shtml",
+         "quote": "SVG is a language for describing two-dimensional graphics in XML."
+        }
+       ]
+      },
+      {
+       "text": "**.ogg**: **contenedor multimedia** de Xiph.org (audio, vídeo y otros flujos).",
+       "refs": [
+        {
+         "title": "Xiph.Org · Ogg",
+         "url": "https://www.xiph.org/ogg/",
+         "quote": "Ogg is a multimedia container format, and the native file and stream format for the Xiph.org multimedia codecs."
+        }
+       ]
+      },
+      {
+       "text": "**.ini**: fichero de **inicialización** (configuración) con secciones `[sección]` y pares `clave=valor`.",
+       "refs": [
+        {
+         "title": "Microsoft Learn · GetPrivateProfileString",
+         "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getprivateprofilestring",
+         "quote": "Retrieves a string from the specified section in an initialization file."
+        },
+        {
+         "title": "Microsoft Learn · GetPrivateProfileString",
+         "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getprivateprofilestring",
+         "quote": "A section in the initialization file must have the following form:"
+        },
+        {
+         "title": "Microsoft Learn · GetPrivateProfileString",
+         "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getprivateprofilestring",
+         "quote": "The system maps most .ini file references to the registry"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Compresión **con pérdida** frente a **sin pérdida**: en JPEG, los procesos basados en la **DCT** (transformada discreta del coseno) son con pérdida; **PNG** es sin pérdida.",
+     "refs": [
+      {
+       "title": "Recomendación UIT-T T.81 (JPEG)",
+       "url": "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+       "quote": "This Specification specifies two classes of encoding and decoding processes, lossy and lossless processes. Those based on the discrete cosine transform (DCT) are lossy"
+      },
+      {
+       "title": "Recomendación UIT-T T.81 (JPEG)",
+       "url": "https://www.w3.org/Graphics/JPEG/itu-t81.pdf",
+       "quote": "However in general, DCT-based processes cannot be used for true lossless coding."
+      },
+      {
+       "title": "Library of Congress · Portable Network Graphics",
+       "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000153.shtml",
+       "quote": "extensible file format for the lossless, portable, well-compressed storage of static and animated raster images."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

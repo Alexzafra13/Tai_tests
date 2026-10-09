@@ -1,0 +1,742 @@
+{
+ "topic": "B3-T02",
+ "sections": [
+  {
+   "title": "Tipos de datos y estructura de un programa",
+   "points": [
+    {
+     "text": "**Tipos primitivos de Java** (8): enteros con signo en complemento a dos **byte** (8 bits), **short** (16), **int** (32) y **long** (64); coma flotante IEEE 754 **float** (32, simple precisión) y **double** (64, doble); **char** (un carácter Unicode de 16 bits) y **boolean**. **String** no es un tipo primitivo.",
+     "refs": [
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The eight primitive data types supported by the Java programming language are:"
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The byte data type is an 8-bit signed two's complement integer."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The short data type is a 16-bit signed two's complement integer."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "By default, the int data type is a 32-bit signed two's complement integer"
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The long data type is a 64-bit two's complement integer."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The float data type is a single-precision 32-bit IEEE 754 floating point."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The double data type is a double-precision 64-bit IEEE 754 floating point."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The char data type is a single 16-bit Unicode character."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The String class is not technically a primitive data type"
+      }
+     ]
+    },
+    {
+     "text": "En **C#**, `byte` es un entero **sin signo** de 8 bits (0 a 255), `int` uno con signo de 32 bits y `long` de 64; las palabras clave son alias de tipos .NET (`int` = `System.Int32`). `void` indica **ausencia de tipo**.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Integral numeric types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types",
+       "quote": "byte 0 to 255 Unsigned 8-bit integer System.Byte"
+      },
+      {
+       "title": "Microsoft Learn · Integral numeric types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types",
+       "quote": "int -2,147,483,648 to 2,147,483,647 Signed 32-bit integer System.Int32"
+      },
+      {
+       "title": "Microsoft Learn · Integral numeric types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types",
+       "quote": "long -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 Signed 64-bit integer System.Int64"
+      },
+      {
+       "title": "Microsoft Learn · Built-in types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types",
+       "quote": "most C# type keywords from the left column are aliases for the corresponding .NET type. They're interchangeable."
+      },
+      {
+       "title": "Microsoft Learn · Built-in types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types",
+       "quote": "The void keyword represents the absence of a type."
+      }
+     ]
+    },
+    {
+     "text": "**Estructura de un programa**: en Java toda aplicación empieza con una **clase** y necesita un método **main**, su punto de entrada. En C#, los programas se construyen con **espacios de nombres**, **tipos** y **sentencias**; el punto de entrada es `Main` o las **instrucciones de nivel superior**. En C, la ejecución empieza en la función **main**.",
+     "refs": [
+      {
+       "title": "The Java Tutorials · The \"Hello World!\" Application",
+       "url": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html",
+       "quote": "every application begins with a class definition."
+      },
+      {
+       "title": "The Java Tutorials · The \"Hello World!\" Application",
+       "url": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html",
+       "quote": "every application must contain a main method whose signature is:"
+      },
+      {
+       "title": "The Java Tutorials · The \"Hello World!\" Application",
+       "url": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html",
+       "quote": "it's the entry point for your application and will subsequently invoke all the other methods required by your program."
+      },
+      {
+       "title": "Microsoft Learn · General structure of a C# program",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/",
+       "quote": "You build C# programs from these core building blocks: namespaces organize your types, types (classes, structs, interfaces, enums, and delegates) define behavior and data, and statements and expressions perform work at run time."
+      },
+      {
+       "title": "Microsoft Learn · General structure of a C# program",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/",
+       "quote": "Top-level statements let you write executable code directly at the top of a file."
+      },
+      {
+       "title": "Microsoft Learn · General structure of a C# program",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/",
+       "quote": "A Main method wraps the entry point in an explicit static method."
+      },
+      {
+       "title": "Microsoft Learn · main function and program execution (C)",
+       "url": "https://learn.microsoft.com/en-us/cpp/c-language/main-function-and-program-execution",
+       "quote": "The main function serves as the starting point for program execution."
+      }
+     ]
+    },
+    {
+     "text": "**Compilación e interpretación**: los lenguajes interpretados suelen tener un ciclo de desarrollo más corto, pero sus programas se ejecutan más despacio.",
+     "refs": [
+      {
+       "title": "Python · Glossary",
+       "url": "https://docs.python.org/3/glossary.html",
+       "quote": "Interpreted languages typically have a shorter development/debug cycle than compiled ones, though their programs generally also run more slowly."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Java**: `javac` compila el código fuente a ficheros **.class** con **bytecode**, el lenguaje máquina de la **JVM**, no del procesador; así el mismo programa corre en varias plataformas.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · About the Java Technology",
+         "url": "https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html",
+         "quote": "Those source files are then compiled into .class files by the javac compiler."
+        },
+        {
+         "title": "The Java Tutorials · About the Java Technology",
+         "url": "https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html",
+         "quote": "A .class file does not contain code that is native to your processor; it instead contains bytecodes — the machine language of the Java Virtual Machine"
+        },
+        {
+         "title": "The Java Tutorials · About the Java Technology",
+         "url": "https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html",
+         "quote": "Through the Java VM, the same application is capable of running on multiple platforms."
+        }
+       ]
+      },
+      {
+       "text": "**.NET**: se compila a **CIL** (lenguaje intermedio) más metadatos; al ejecutar, un compilador **JIT** lo traduce a código nativo. Se despliega en **ensamblados** (.exe o .dll), la unidad de despliegue, versión y reutilización.",
+       "refs": [
+        {
+         "title": "Microsoft Learn · Managed execution process",
+         "url": "https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process",
+         "quote": "Compiling translates your source code into common intermediate language (CIL) and generates the required metadata."
+        },
+        {
+         "title": "Microsoft Learn · Managed execution process",
+         "url": "https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process",
+         "quote": "At execution time, a just-in-time (JIT) compiler translates the CIL into native code."
+        },
+        {
+         "title": "Microsoft Learn · Assemblies in .NET",
+         "url": "https://learn.microsoft.com/en-us/dotnet/standard/assembly/",
+         "quote": "Assemblies are implemented as .exe or .dll files."
+        },
+        {
+         "title": "Microsoft Learn · Assemblies in .NET",
+         "url": "https://learn.microsoft.com/en-us/dotnet/standard/assembly/",
+         "quote": "Assemblies are the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications."
+        }
+       ]
+      },
+      {
+       "text": "**Python** es **interpretado**: los fuentes se ejecutan directamente, sin crear antes un ejecutable (aunque internamente compila a bytecode).",
+       "refs": [
+        {
+         "title": "Python · Glossary",
+         "url": "https://docs.python.org/3/glossary.html",
+         "quote": "Python is an interpreted language, as opposed to a compiled one, though the distinction can be blurry because of the presence of the bytecode compiler."
+        },
+        {
+         "title": "Python · Glossary",
+         "url": "https://docs.python.org/3/glossary.html",
+         "quote": "This means that source files can be run directly without explicitly creating an executable which is then run."
+        }
+       ]
+      },
+      {
+       "text": "**TypeScript** es un superconjunto de JavaScript; su compilador (`tsc`) **transforma** el código en JavaScript normal y **borra** las anotaciones de tipos (coloquialmente se le llama *transpilador*; la documentación habla de compilar).",
+       "refs": [
+        {
+         "title": "TypeScript · TypeScript for the New Programmer",
+         "url": "https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html",
+         "quote": "TypeScript is a language that is a superset of JavaScript: JS syntax is therefore legal TS."
+        },
+        {
+         "title": "TypeScript · The Basics",
+         "url": "https://www.typescriptlang.org/docs/handbook/2/basic-types.html",
+         "quote": "after tsc compiles or transforms it into a plain JavaScript file."
+        },
+        {
+         "title": "TypeScript · The Basics",
+         "url": "https://www.typescriptlang.org/docs/handbook/2/basic-types.html",
+         "quote": "here our type annotations were completely erased."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Bucles: while y do-while",
+   "points": [
+    {
+     "text": "**while** evalúa la condición **antes** de cada vuelta: si es falsa la primera vez, el cuerpo **no se ejecuta nunca** y se sigue con la sentencia posterior. Para varias sentencias se agrupan en un **bloque** `{ … }`. Ejemplo de MDN: `n = 0; x = 0; while (n < 3) { n++; x += n; }` termina con **n = 3 y x = 6**.",
+     "refs": [
+      {
+       "title": "while · MDN Web Docs",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/while",
+       "quote": "Crea un bucle que ejecuta una sentencia especificada mientras cierta condición se evalúe como verdadera. Dicha condición es evaluada antes de ejecutar la sentencia"
+      },
+      {
+       "title": "while · MDN Web Docs",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/while",
+       "quote": "Cuando la condición se evalúa como false, la ejecución continúa con la sentencia posterior al bucle while ."
+      },
+      {
+       "title": "while · MDN Web Docs",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/while",
+       "quote": "Para ejecutar múltiples sentencias dentro de un bucle, utiliza una sentencia block ( { ... } ) para agrupar esas sentencias."
+      },
+      {
+       "title": "while · MDN Web Docs",
+       "url": "https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/while",
+       "quote": "Después del tercer pase: n = 3 y x = 6"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 14, sentencias",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-14.html",
+       "quote": "If the (possibly unboxed) value of the Expression is false the first time it is evaluated, then the Statement is not executed."
+      }
+     ]
+    },
+    {
+     "text": "**do-while** evalúa la condición **después** de cada ejecución, así que el cuerpo se ejecuta **una o más veces** (al menos una). En C++ la expresión es de tipo **aritmético o puntero** (verdadera si es distinta de cero), y el bucle también termina con **break**, **goto** o **return**.",
+     "refs": [
+      {
+       "title": "do-while (instrucción de C++) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/cpp/cpp/do-while-statement-cpp",
+       "quote": "La prueba de la condición de finalización se realiza después de cada ejecución del bucle; por consiguiente, un bucle do-while se ejecuta una o más veces, dependiendo del valor de la expresión de finalización."
+      },
+      {
+       "title": "do-while (instrucción de C++) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/cpp/cpp/do-while-statement-cpp",
+       "quote": "expression debe tener un tipo aritmético o de puntero."
+      },
+      {
+       "title": "do-while (instrucción de C++) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/cpp/cpp/do-while-statement-cpp",
+       "quote": "Si expression es true (distinta de cero), el proceso se repite a partir del paso 1."
+      },
+      {
+       "title": "do-while (instrucción de C++) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/cpp/cpp/do-while-statement-cpp",
+       "quote": "La instrucción do-while también puede finalizar cuando se ejecuta una instrucción break , goto o return dentro del cuerpo de la instrucción."
+      }
+     ]
+    },
+    {
+     "text": "En **Java**, `do Statement while (Expression);` ejecuta **siempre al menos una vez** la sentencia y repite **mientras la expresión sea true**; la expresión debe ser **boolean** o **Boolean**.",
+     "refs": [
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 14, sentencias",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-14.html",
+       "quote": "statement executes a Statement and an Expression repeatedly until the value of the Expression is false ."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 14, sentencias",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-14.html",
+       "quote": "Expression must have type boolean or Boolean , or a compile-time error occurs."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 14, sentencias",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-14.html",
+       "quote": "Executing a do statement always executes the contained Statement at least once."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Python",
+   "points": [
+    {
+     "text": "Los bloques se delimitan con la **sangría**: es la forma que tiene Python de **agrupar sentencias** (el cuerpo de un bucle, de un `if`, etc.). Se recomiendan **4 espacios y no tabuladores**. Como en C, un entero **distinto de cero es verdadero** y el cero, falso.",
+     "refs": [
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "indentation is Python’s way of grouping statements."
+      },
+      {
+       "title": "Tutorial de Python · Control de flujo (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/controlflow.html",
+       "quote": "Use 4-space indentation, and no tabs."
+      },
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "In Python, like in C, any non-zero integer value is true; zero is false."
+      }
+     ]
+    },
+    {
+     "text": "`if … elif … else`: puede haber **cero o más** `elif`, el `else` es **opcional**, y la secuencia sustituye al **switch/case** de otros lenguajes; para comparar un valor con varios patrones existe además la sentencia **match** (bloques `case`).",
+     "refs": [
+      {
+       "title": "Tutorial de Python · Control de flujo (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/controlflow.html",
+       "quote": "There can be zero or more elif parts, and the else part is optional."
+      },
+      {
+       "title": "Tutorial de Python · Control de flujo (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/controlflow.html",
+       "quote": "sequence is a substitute for the switch or case statements found in other languages."
+      },
+      {
+       "title": "Tutorial de Python · Control de flujo (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/controlflow.html",
+       "quote": "A match statement takes an expression and compares its value to successive patterns given as one or more case blocks."
+      }
+     ]
+    },
+    {
+     "text": "**Listas**: como toda secuencia, se **indexan desde 0**, admiten índices **negativos** (empiezan en **-1**, desde la derecha) y **slicing**: `l[i:j]` va de la posición i (**incluida**) a la j (**excluida**); si se omite el primer índice vale 0 y si se omite el segundo, la longitud. Un índice fuera de rango da **error**, pero en un slice se tolera. Las listas son **mutables**; las cadenas, **inmutables**.",
+     "refs": [
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "Strings can be indexed (subscripted), with the first character having index 0."
+      },
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "Note that since -0 is the same as 0, negative indices start from -1."
+      },
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "Like strings (and all other built-in sequence types), lists can be indexed and sliced:"
+      },
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "Note how the start is always included, and the end always excluded."
+      },
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "an omitted first index defaults to zero, an omitted second index defaults to the size of the string being sliced."
+      },
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "Attempting to use an index that is too large will result in an error:"
+      },
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "However, out of range slice indexes are handled gracefully when used for slicing:"
+      },
+      {
+       "title": "Tutorial de Python · Introducción informal (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/introduction.html",
+       "quote": "Unlike strings, which are immutable , lists are a mutable type, i.e. it is possible to change their content:"
+      }
+     ]
+    },
+    {
+     "text": "Un **slice** es un objeto que describe **una porción de una secuencia** (una subestructura); se crea con la notación de subíndice con **dos puntos** entre corchetes, que admite también un paso: `x[1:3:5]`.",
+     "refs": [
+      {
+       "title": "Python · Glosario (documentación oficial)",
+       "url": "https://docs.python.org/3/glossary.html",
+       "quote": "An object of type slice , used to describe a portion of a sequence ."
+      },
+      {
+       "title": "Python · Glosario (documentación oficial)",
+       "url": "https://docs.python.org/3/glossary.html",
+       "quote": "A slice object is created when using the slicing form of subscript notation"
+      },
+      {
+       "title": "Python · Glosario (documentación oficial)",
+       "url": "https://docs.python.org/3/glossary.html",
+       "quote": "with colons inside square brackets, such as in variable_name[1:3:5] ."
+      }
+     ]
+    },
+    {
+     "text": "**Listas por comprensión**: corchetes con una expresión seguida de un `for` y cero o más `for` o `if`. Por ejemplo, `[a*a for a in [3, 2, 1] if a > 1]` da `[9, 4]`.",
+     "refs": [
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "List comprehensions provide a concise way to create lists."
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses."
+      }
+     ]
+    },
+    {
+     "text": "**Diccionarios**: conjuntos de pares **clave: valor** con **claves únicas** (de tipo inmutable), escritos entre **llaves**; se indexan **por clave**, no por posición. Con `d = {'notas': [27, 36, 12]}`, `d['notas'][1]` vale 36. Una clave inexistente con `d[clave]` da **KeyError**; `get()` devuelve **None**. Guardar en una clave ya usada **olvida** el valor anterior.",
+     "refs": [
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by keys"
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "which can be any immutable type"
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "It is best to think of a dictionary as a set of key: value pairs, with the requirement that the keys are unique (within one dictionary)."
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "Placing a comma-separated list of key:value pairs within the braces adds initial key:value pairs to the dictionary"
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "Extracting a value for a non-existent key by subscripting ( d[key] ) raises a KeyError ."
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "use the get() method instead, which returns None (or a specified default value) if the key is not in the dictionary."
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "If you store using a key that is already in use, the old value associated with that key is forgotten."
+      }
+     ]
+    },
+    {
+     "text": "Operadores lógicos: tienen **menos prioridad que las comparaciones**; entre ellos, **not** es el de mayor prioridad y **or** el de menor. **and** y **or** son de **cortocircuito**: se evalúan de izquierda a derecha y **paran en cuanto se conoce el resultado**.",
+     "refs": [
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "These have lower priorities than comparison operators; between them, not has the highest priority and or the lowest"
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "The Boolean operators and and or are so-called short-circuit"
+      },
+      {
+       "title": "Tutorial de Python · Estructuras de datos (documentación oficial)",
+       "url": "https://docs.python.org/3/tutorial/datastructures.html",
+       "quote": "their arguments are evaluated from left to right, and evaluation stops as soon as the outcome is determined."
+      }
+     ]
+    },
+    {
+     "text": "**Keras** es un framework de **aprendizaje profundo** (deep learning) que funciona sobre **JAX, TensorFlow o PyTorch** (y OpenVINO, solo para inferencia); está en PyPI como `keras`.",
+     "refs": [
+      {
+       "title": "Keras · repositorio oficial (keras-team)",
+       "url": "https://github.com/keras-team/keras",
+       "quote": "Keras 3 is a multi-backend deep learning framework, with support for JAX, TensorFlow, PyTorch, and OpenVINO (for inference-only)."
+      },
+      {
+       "title": "Keras · repositorio oficial (keras-team)",
+       "url": "https://github.com/keras-team/keras",
+       "quote": "Keras 3 is available on PyPI as `keras`."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Java",
+   "points": [
+    {
+     "text": "**Identificadores**: secuencia de letras y dígitos Java que **empieza por una letra Java**; estas incluyen las letras ASCII, el **dólar ($)** y el **guion bajo (_)**. El `$` solo debería usarse en código **generado automáticamente** o, rara vez, para nombres heredados. El `_` **solo** no es un identificador válido (es palabra reservada).",
+     "refs": [
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 3, estructura léxica",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html",
+       "quote": "An identifier is an unlimited-length sequence of Java letters and Java digits , the first of which must be a Java letter ."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 3, estructura léxica",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html",
+       "quote": "The \"Java letters\" include uppercase and lowercase ASCII Latin letters A-Z"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 3, estructura léxica",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html",
+       "quote": "the ASCII dollar sign ( $ , or \\u0024 ) and underscore ( _ , or \\u005f )"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 3, estructura léxica",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html",
+       "quote": "The dollar sign should be used only in mechanically generated source code or, rarely, to access pre-existing names on legacy systems."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 3, estructura léxica",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-3.html",
+       "quote": "but it cannot be used as a one-character identifier due to being a keyword."
+      }
+     ]
+    },
+    {
+     "text": "Con operandos enteros, **^** es el **O exclusivo (XOR) bit a bit**, **&** el AND y **|** el OR inclusivo; con booleanos, `^` es verdadero si los valores son **distintos**. Así, con `int x = 6, y = 3`, `x ^ y` vale **5** (110 XOR 011 = 101). `&&` es como `&` pero solo evalúa el operando derecho si el izquierdo es true.",
+     "refs": [
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 15, expresiones",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html",
+       "quote": "are of a type that is convertible ( §5.1.8 ) to a primitive integral type"
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 15, expresiones",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html",
+       "quote": "For ^ , the result value is the bitwise exclusive OR of the operand values."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 15, expresiones",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html",
+       "quote": "value is the bitwise AND of the operand values."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 15, expresiones",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html",
+       "quote": "the bitwise inclusive OR of the operand values."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 15, expresiones",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html",
+       "quote": "For ^ , the result value is true if the operand values are different; otherwise, the result is false ."
+      },
+      {
+       "title": "Java Language Specification SE 17 · Capítulo 15, expresiones",
+       "url": "https://docs.oracle.com/javase/specs/jls/se17/html/jls-15.html",
+       "quote": "but evaluates its right-hand operand only if the value of its left-hand operand is true ."
+      }
+     ]
+    },
+    {
+     "text": "**Colecciones**: un **Set** es una colección **sin elementos duplicados** (y con como mucho un null); una **List** es una colección **ordenada** (secuencia) que normalmente **admite duplicados**.",
+     "refs": [
+      {
+       "title": "Java SE 17 API · Interfaz Set",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html",
+       "quote": "A collection that contains no duplicate elements."
+      },
+      {
+       "title": "Java SE 17 API · Interfaz Set",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html",
+       "quote": "and at most one null element."
+      },
+      {
+       "title": "Java SE 17 API · Interfaz List",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html",
+       "quote": "An ordered collection (also known as a sequence )."
+      },
+      {
+       "title": "Java SE 17 API · Interfaz List",
+       "url": "https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html",
+       "quote": "Unlike sets, lists typically allow duplicate elements."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "C#: matrices y parámetros",
+   "points": [
+    {
+     "text": "Una **matriz (array)** almacena **varias variables del mismo tipo**; se declara indicando el tipo de sus elementos (con `object` admite cualquiera). Se indexa **desde 0** (de 0 a n-1), puede ser **unidimensional, multidimensional o escalonada** y es un **tipo de referencia**. Ejemplo: `int[] array1 = new int[5];`.",
+     "refs": [
+      {
+       "title": "Matrices (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/arrays",
+       "quote": "Puede almacenar varias variables del mismo tipo en una estructura de datos de matriz. Puede declarar una matriz mediante la especificación del tipo de sus elementos."
+      },
+      {
+       "title": "Matrices (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/arrays",
+       "quote": "Si desea que la matriz almacene elementos de cualquier tipo, especifique object como su tipo."
+      },
+      {
+       "title": "Matrices (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/arrays",
+       "quote": "Las matrices se indexan con cero: una matriz con n elementos se indexa de 0 a n-1 ."
+      },
+      {
+       "title": "Matrices (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/arrays",
+       "quote": "Una matriz puede ser unidimensional , multidimensional o escalonada ."
+      },
+      {
+       "title": "Matrices (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/arrays",
+       "quote": "int[] array1 = new int[5];"
+      }
+     ]
+    },
+    {
+     "text": "**Matrices con tipo implícito**: el tipo se **deduce del inicializador**, p. ej. `int[] a = new[] { 1, 10, 100, 1000 };`.",
+     "refs": [
+      {
+       "title": "Matrices (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/arrays",
+       "quote": "Puede crear una matriz con tipo implícito en la que se deduce el tipo de la instancia de matriz de los elementos especificados en el inicializador de matriz."
+      },
+      {
+       "title": "Matrices (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/builtin-types/arrays",
+       "quote": "int[] a = new[] { 1, 10, 100, 1000 }; // int[]"
+      }
+     ]
+    },
+    {
+     "text": "**Paso de parámetros**: por defecto, **por valor**: el método recibe una **copia** (del valor, en los tipos de valor; de la **referencia**, en las clases). Con modificadores se pasa **por referencia**: **ref** (el método puede **leer o escribir** el argumento, que sirve así de entrada y salida), **out** (no hace falta inicializarlo: el método **debe asignarle** un valor), **in** y **ref readonly** (solo lectura).",
+     "refs": [
+      {
+       "title": "Parámetros de método (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/method-parameters",
+       "quote": "De forma predeterminada, C# pasa argumentos a funciones por valor . Este enfoque pasa una copia de la variable al método ."
+      },
+      {
+       "title": "Parámetros de método (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/method-parameters",
+       "quote": "Para los tipos de valor ( struct ), el método obtiene una copia del valor . Para los tipos de referencia ( class ), el método obtiene una copia de la referencia ."
+      },
+      {
+       "title": "Parámetros de método (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/method-parameters",
+       "quote": "Puede usar modificadores de parámetro para pasar argumentos por referencia ."
+      },
+      {
+       "title": "Parámetros de método (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/method-parameters",
+       "quote": "ref significa que el método puede leer o escribir el valor del argumento."
+      },
+      {
+       "title": "Parámetros de método (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/method-parameters",
+       "quote": "out significa que el método establece el valor del argumento."
+      },
+      {
+       "title": "Parámetros de método (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/method-parameters",
+       "quote": "No es necesario inicializar variables pasadas como out argumentos antes de la llamada al método. Sin embargo, el método llamado debe asignar un valor antes de que devuelva."
+      },
+      {
+       "title": "Parámetros de método (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/method-parameters",
+       "quote": "ref readonly significa que el método lee, pero no puede escribir, el valor del argumento."
+      },
+      {
+       "title": "Parámetros de método (referencia de C#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/keywords/method-parameters",
+       "quote": "in significa que el método lee, pero no puede escribir, el valor del argumento."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Otros lenguajes que se preguntan",
+   "points": [
+    {
+     "text": "**F#**: la palabra clave **let** **enlaza un nombre a un valor o a una función** (por ejemplo, `let function1 a = a + 1`).",
+     "refs": [
+      {
+       "title": "Enlaces let (F#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/fsharp/language-reference/functions/let-bindings",
+       "quote": "Un enlace asocia un identificador a un valor o función. Use la let palabra clave para enlazar un nombre a un valor o función."
+      },
+      {
+       "title": "Enlaces let (F#) · Microsoft Learn",
+       "url": "https://learn.microsoft.com/es-es/dotnet/fsharp/language-reference/functions/let-bindings",
+       "quote": "let function1 a = a + 1"
+      }
+     ]
+    },
+    {
+     "text": "**Swift** es un lenguaje de **propósito general**: sirve desde la programación de sistemas hasta apps **móviles y de escritorio** y **servicios en la nube**. Desde el Mac llega a todas las plataformas de Apple (iOS, macOS, watchOS y tvOS), pero también se usa en **Linux** y **Windows**: **no es exclusivo de iOS**.",
+     "refs": [
+      {
+       "title": "About Swift · swift.org",
+       "url": "https://www.swift.org/about/",
+       "quote": "Swift is a general-purpose programming language that’s approachable for newcomers and powerful for experts."
+      },
+      {
+       "title": "About Swift · swift.org",
+       "url": "https://www.swift.org/about/",
+       "quote": "Suitable for everything from systems programming, through mobile and desktop apps, to cloud services."
+      },
+      {
+       "title": "About Swift · swift.org",
+       "url": "https://www.swift.org/about/",
+       "quote": "Open-source Swift can be used on the Mac to target all of the Apple platforms: iOS, macOS, watchOS, and tvOS."
+      },
+      {
+       "title": "About Swift · swift.org",
+       "url": "https://www.swift.org/about/",
+       "quote": "Open-source Swift can be used on Linux to build Swift libraries and applications."
+      },
+      {
+       "title": "About Swift · swift.org",
+       "url": "https://www.swift.org/about/",
+       "quote": "Open source Swift can be used on Windows to build Swift libraries and applications."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,477 @@
+{
+ "topic": "B2-T01",
+ "sections": [
+  {
+   "title": "Representación de la información",
+   "points": [
+    {
+     "text": "Un **nibble** es medio byte: **4 bits**, que equivalen a un dígito **hexadecimal**.",
+     "refs": [
+      {
+       "title": "Journal of Research of NIST, vol. 101 nº 2 (1996)",
+       "url": "https://nvlpubs.nist.gov/nistpubs/jres/101/2/j2anut.pdf",
+       "quote": "A nibble is a half-byte, or 4 bits. Since a nibble corresponds to a hexadecimal digit"
+      }
+     ]
+    },
+    {
+     "text": "Los dígitos hexadecimales son 0-9 y **A-F** (o a-f): una palabra solo es un número hexadecimal válido si usa únicamente esas letras (p. ej., ACCEDA).",
+     "refs": [
+      {
+       "title": "The Open Group · fprintf (POSIX.1-2024)",
+       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/fprintf.html",
+       "quote": "The unsigned argument shall be converted to unsigned hexadecimal format in the style \" dddd \" ; the letters \"abcdef\" are used."
+      },
+      {
+       "title": "The Open Group · fprintf (POSIX.1-2024)",
+       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/functions/fprintf.html",
+       "quote": "except that letters \"ABCDEF\" are used instead of \"abcdef\""
+      }
+     ]
+    },
+    {
+     "text": "Conversión a binario por potencias de 2: 450 = 256 + 128 + 64 + 2 = **111000010** (la función `bin()` de Python hace esta conversión).",
+     "refs": [
+      {
+       "title": "Python docs · Funciones integradas: bin()",
+       "url": "https://docs.python.org/3/library/functions.html",
+       "quote": "Convert an integer number to a binary string prefixed with"
+      }
+     ]
+    },
+    {
+     "text": "**Coma flotante IEEE 754**: precisión **simple** de 32 bits (1 de signo, 8 de exponente, 23 de fracción) y **doble** de **64 bits** (11 de exponente y 52 de fracción); también hay media precisión y formatos extendidos.",
+     "refs": [
+      {
+       "title": "IEEE Technology Navigator · Floating-point arithmetic",
+       "url": "https://technav.ieee.org/topic/floating-point-arithmetic/",
+       "quote": "A 32-bit single-precision value allocates 1 bit for sign, 8 bits for exponent, and 23 bits for the fractional part of the significand"
+      },
+      {
+       "title": "IEEE Technology Navigator · Floating-point arithmetic",
+       "url": "https://technav.ieee.org/topic/floating-point-arithmetic/",
+       "quote": "The 64-bit double-precision format uses 11 exponent bits and 52 fractional bits"
+      },
+      {
+       "title": "IEEE Technology Navigator · Floating-point arithmetic",
+       "url": "https://technav.ieee.org/topic/floating-point-arithmetic/",
+       "quote": "The standard also defines half-precision (binary16) and extended formats"
+      },
+      {
+       "title": "Microsoft Learn · Representación de punto flotante IEEE",
+       "url": "https://learn.microsoft.com/es-es/cpp/build/ieee-floating-point-representation",
+       "quote": "Los formatos de precisión sencilla (4 bytes) y de precisión doble (8 bytes) se usan en MSVC."
+      }
+     ]
+    },
+    {
+     "text": "**Prefijos SI** de múltiplos (potencias de 10), en el orden en que se adoptaron: **mega, giga y tera** (1960); **peta y exa** (1975); **zetta y yotta** (1991); **ronna y quetta** (2022). De menor a mayor: kilo < mega < giga < tera < peta < exa < zetta < yotta < ronna < quetta.",
+     "refs": [
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "Three for forming multiples: mega, giga, and tera."
+      },
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "1975 Two prefixes for forming multiples were added: peta and exa."
+      },
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "1991 Four prefixes were added. Two for forming multiples: zetta and yotta."
+      },
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "2022 Four prefixes were added. Two for forming multiples: ronna and quetta."
+      }
+     ]
+    },
+    {
+     "text": "Los prefijos SI son **solo potencias de 10** (1 kilobit = 1000 bits, no 1024). Para potencias de 2 están los **prefijos binarios** (IEC 80000-13): **kibi** (Ki), mebi (Mi), gibi (Gi)…: 1024 bytes son **1 KiB**. Estos no forman parte del SI.",
+     "refs": [
+      {
+       "title": "BIPM · The International System of Units (SI Brochure, 9th ed.)",
+       "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+       "quote": "The SI prefixes refer strictly to powers of 10. They should not be used to indicate powers of 2 (for example, one kilobit represents 1000 bits and not 1024 bits)."
+      },
+      {
+       "title": "BIPM · The International System of Units (SI Brochure, 9th ed.)",
+       "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+       "quote": "The names and symbols for prefixes corresponding to powers of 2 are the following: kibi (Ki) for"
+      },
+      {
+       "title": "BIPM · The International System of Units (SI Brochure, 9th ed.)",
+       "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+       "quote": "(see IEC 80000-13 for details)"
+      },
+      {
+       "title": "IEC · Prefixes for binary multiples",
+       "url": "https://www.iec.ch/prefixes-binary-multiples",
+       "quote": "1000 bytes are 1 kilobyte (Kbyte), and 1024 bytes are instead 1 kibibyte (Kibyte)."
+      },
+      {
+       "title": "NIST · Prefixes for binary multiples",
+       "url": "https://physics.nist.gov/cuu/Units/binary.html",
+       "quote": "It is important to recognize that the new prefixes for binary multiples are not part of the International System of Units (SI), the modern metric system."
+      }
+     ]
+    },
+    {
+     "text": "Puertas lógicas: **AND**, **OR**, **NOT** (inversor), **NAND**, **NOR**, **XOR** (O exclusivo, Y = A ⊕ B) y **XNOR** (O exclusivo negado).",
+     "refs": [
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC08",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf",
+       "quote": "This device contains four independent 2-input AND gates."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC32",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc32.pdf",
+       "quote": "This device contains four independent 2-input OR gates."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC04",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf",
+       "quote": "This device contains six independent inverters."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC00",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc00.pdf",
+       "quote": "This device contains four independent 2-input NAND gates."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC02",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc02.pdf",
+       "quote": "This device contains four independent 2-input NOR gates."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC86",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc86.pdf",
+       "quote": "Each gate performs the Boolean function Y = A ⊕ B in positive logic."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos CD74HC7266",
+       "url": "https://www.ti.com/lit/ds/symlink/cd74hc7266.pdf",
+       "quote": "This device contains four independent 2-input XNOR gates."
+      }
+     ]
+    },
+    {
+     "text": "**Desbordamiento** (*overflow*): el resultado de una operación con signo es demasiado grande (o demasiado negativo) para caber en el destino; en x86 lo indica el **indicador** (*flag*) **OF**.",
+     "refs": [
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "Overflow flag — Set if the integer result is too large a positive number or too small a negative number (excluding the sign-bit) to fit in the destination operand; cleared otherwise."
+      },
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "This flag indicates an overflow condition for signed-integer (two’s complement) arithmetic."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Arquitectura de ordenadores",
+   "points": [
+    {
+     "text": "**Von Neumann**: programa y datos en la **misma memoria** y por el mismo bus. **Harvard**: memoria de programa y de datos **separadas**, con buses distintos, lo que mejora el ancho de banda.",
+     "refs": [
+      {
+       "title": "Microchip · Arquitectura de la familia PICmicro de gama media (DS31004A)",
+       "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/31004a.pdf",
+       "quote": "Harvard architecture has the program memory and data memory as separate memories and are accessed from separate buses. This improves bandwidth over traditional von Neumann architecture in which program and data are fetched from the same memory using the same bus."
+      }
+     ]
+    },
+    {
+     "text": "La **CPU** ejecuta el ciclo de instrucción (**búsqueda, decodificación, ejecución y almacenamiento**). Sus componentes: **unidad de control**, **ALU** (operaciones aritméticas y lógicas), **registros**, **caché**, reloj y MMU.",
+     "refs": [
+      {
+       "title": "Arm · Glosario: CPU",
+       "url": "https://www.arm.com/glossary/cpu",
+       "quote": "Fetch: Retrieves the next instruction from memory Decode: Interprets the instruction and determines the required resources Execute: Performs the specified operation Store: Writes the result back to memory or a register"
+      },
+      {
+       "title": "Arm · Glosario: CPU",
+       "url": "https://www.arm.com/glossary/cpu",
+       "quote": "Control unit (CU): Directs the operation of the processor by interpreting instructions and coordinating component activity. Arithmetic logic unit (ALU): Executes arithmetic and logical operations. Registers: Ultra-fast memory locations used for temporary data storage and manipulation."
+      },
+      {
+       "title": "Arm · Glosario: CPU",
+       "url": "https://www.arm.com/glossary/cpu",
+       "quote": "Cache (L1, L2, L3): High-speed memory near the processor core that stores frequently accessed instructions and data. Clock: Generates a timing signal that synchronizes all CPU operations. Memory management unit (MMU): Translates virtual memory addresses to physical ones"
+      }
+     ]
+    },
+    {
+     "text": "Registros clave (ejemplo de Microchip): el **contador de programa (PC)** se incrementa en cada ciclo y con él se busca la instrucción en la memoria de programa; esa instrucción se carga en el **registro de instrucción (IR)**, que guarda la instrucción leída para decodificarla y ejecutarla.",
+     "refs": [
+      {
+       "title": "Microchip · Arquitectura de la familia PICmicro de gama media (DS31004A)",
+       "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/31004a.pdf",
+       "quote": "Internally, the program counter (PC) is incremented every Q1, and the instruction is fetched from the program memory and latched into the instruction register in Q4."
+      },
+      {
+       "title": "Microchip · Arquitectura de la familia PICmicro de gama media (DS31004A)",
+       "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/31004a.pdf",
+       "quote": "In the execution cycle, the fetched instruction is latched into the “Instruction Register (IR)” in cycle Q1. This instruction is then decoded and executed"
+      }
+     ]
+    },
+    {
+     "text": "El **bus del sistema** es el camino compartido que lleva **datos, direcciones y señales de control** entre la CPU, la memoria y la E/S.",
+     "refs": [
+      {
+       "title": "IEEE Technology Navigator · System buses",
+       "url": "https://technav.ieee.org/topic/system-buses/",
+       "quote": "System buses are shared communication pathways within a computer that carry data, addresses, and control signals among the central processing unit"
+      }
+     ]
+    },
+    {
+     "text": "Memoria **volátil**: la **DRAM** pierde los datos al cortar la alimentación; la flash NAND, no.",
+     "refs": [
+      {
+       "title": "SNIA · NVDIMM Technical Brief",
+       "url": "https://www.snia.org/sites/default/files/technical-work/whitepapers/SNIA-NVDIMM-Technical-Brief.pdf",
+       "quote": "DRAM loses all of its data instantly when power is removed, so DRAM is referred to as volatile memory."
+      },
+      {
+       "title": "SNIA · NVDIMM Technical Brief",
+       "url": "https://www.snia.org/sites/default/files/technical-work/whitepapers/SNIA-NVDIMM-Technical-Brief.pdf",
+       "quote": "In contrast, NAND flash is non-volatile, meaning that it retains its data when power is removed."
+      }
+     ]
+    },
+    {
+     "text": "Tipos de memoria. Una memoria **no volátil** conserva los datos cuando deja de recibir alimentación:",
+     "refs": [
+      {
+       "title": "JEDEC Dictionary · nonvolatile memory",
+       "url": "https://www.jedec.org/standards-documents/dictionary/terms/nonvolatile-memory",
+       "quote": "A memory in which the data content is retained when power is no longer supplied to it."
+      }
+     ],
+     "items": [
+      {
+       "text": "**RAM** (acceso aleatorio): se accede a cualquier dato en **prácticamente el mismo tiempo**, sea cual sea su posición.",
+       "refs": [
+        {
+         "title": "JEDEC Dictionary · random-access memory (RAM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/random-access-memory-ram",
+         "quote": "A memory in which access to all storage data can be achieved in essentially the same time, independent of the location."
+        }
+       ]
+      },
+      {
+       "text": "**SRAM** (estática): volátil, conserva los datos **sin refresco**. **DRAM** (dinámica): volátil, necesita **refresco** periódico.",
+       "refs": [
+        {
+         "title": "JEDEC Dictionary · static read/write memory",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/static-readwrite-memory",
+         "quote": "A volatile read/write memory in which the data is retained in the absence of control signals generated inside or outside the integrated circuit."
+        },
+        {
+         "title": "JEDEC Dictionary · dynamic read/write memory",
+         "url": "https://www.jedec.org/node/3492",
+         "quote": "A volatile read/write memory in which the cells require the repetitive application of control signals generated inside or outside the integrated circuit to retain stored data."
+        },
+        {
+         "title": "JEDEC Dictionary · dynamic read/write memory",
+         "url": "https://www.jedec.org/node/3492",
+         "quote": "Each repetitive application of the control signals is normally called a refresh operation or cycle."
+        }
+       ]
+      },
+      {
+       "text": "**ROM**: solo lectura en funcionamiento normal. **PROM**: se programa **una sola vez**. **EPROM**: se borra con **luz ultravioleta** y se reprograma eléctricamente. **EEPROM**: se borra y reprograma **eléctricamente**.",
+       "refs": [
+        {
+         "title": "JEDEC Dictionary · read-only memory (ROM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/read-only-memory-rom",
+         "quote": "A memory in which the contents are intended to be read only and not to be altered during normal operation."
+        },
+        {
+         "title": "JEDEC Dictionary · programmable read-only memory (PROM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/programmable-read-only-memory-prom",
+         "quote": "can have the data content of each memory cell altered only once."
+        },
+        {
+         "title": "JEDEC Dictionary · erasable programmable read-only memory (EPROM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/erasable-programmable-read-only-memory-eprom",
+         "quote": "all cells can be simultaneously erased using ultraviolet light, after which the cells at each address can be reprogrammed electrically."
+        },
+        {
+         "title": "JEDEC Dictionary · electrically erasable programmable read-only memory (EEPROM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/electrically-erasable-programmable-read-only-memory-eeprom",
+         "quote": "the cells at each address can be erased electrically and reprogrammed electrically."
+        }
+       ]
+      },
+      {
+       "text": "**NVRAM**: RAM **no volátil**, una SRAM que guarda el estado de sus celdas al cortar la alimentación.",
+       "refs": [
+        {
+         "title": "JEDEC Dictionary · nonvolatile random-access memory (NVRAM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/nonvolatile-random-access-memory-nvram",
+         "quote": "An SRAM in which provisions exist on chip for the state of the cells to be saved when power is removed."
+        }
+       ]
+      },
+      {
+       "text": "**CMOS**: pequeña memoria de la placa base que guarda la **configuración de la BIOS** (borrarla restaura los valores por defecto). La BIOS suele estar en **EEPROM** o flash.",
+       "refs": [
+        {
+         "title": "Intel · Clear CMOS (artículo de soporte 000025368)",
+         "url": "https://www.intel.com/content/www/us/en/support/articles/000025368.html",
+         "quote": "Complementary metal-oxide-semiconductor (CMOS) is a small amount of memory on a computer motherboard that stores the Basic Input/Output System (BIOS) settings."
+        },
+        {
+         "title": "Intel · Clear CMOS (artículo de soporte 000025368)",
+         "url": "https://www.intel.com/content/www/us/en/support/articles/000025368.html",
+         "quote": "clearing CMOS may help recover the boards because that restores the BIOS default settings."
+        },
+        {
+         "title": "NIST SP 800-147 · BIOS Protection Guidelines",
+         "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-147.pdf",
+         "quote": "The system BIOS is typically stored on electrically erasable programmable read-only memory (EEPROM) or other forms of flash memory"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Jerarquía de memoria**: la **caché** es pequeña y rápida y guarda copias de los datos más usados de la **memoria principal**, que es mayor y más lenta; el disco añade otro nivel por debajo.",
+     "refs": [
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Multiprocessor Scheduling",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-multi.pdf",
+       "quote": "Caches are small, fast memories that (in general) hold copies of popular data that is found in the main memory of the system."
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Multiprocessor Scheduling",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-multi.pdf",
+       "quote": "Main memory, in contrast, holds all of the data, but access to this larger memory is slower."
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Beyond Physical Memory: Mechanisms",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf",
+       "quote": "we require an additional level in the memory hierarchy."
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Beyond Physical Memory: Mechanisms",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf",
+       "quote": "In modern systems, this role is usually served by a hard disk drive."
+      }
+     ]
+    },
+    {
+     "text": "**Multinúcleo**: dos o más núcleos de ejecución en un mismo encapsulado (p. ej., Intel Pentium D, con dos núcleos).",
+     "refs": [
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "Multi-core technology enhances hardware multi-threading capability by providing two or more execution cores in a physical package."
+      },
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "The Intel Pentium D processor also features multi-core technology."
+      },
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "This processor provides hardware multithreading support with two processor cores"
+      }
+     ]
+    },
+    {
+     "text": "Los sistemas modernos usan cada vez más **chipsets** especializados e interconexiones punto a punto; p. ej., en Intel la CPU se conecta a un chip de E/S por **DMI** (*Direct Media Interface*).",
+     "refs": [
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "modern systems increasingly use specialized chipsets and faster point-to-point interconnects to improve performance."
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "The CPU connects to an I/O chip via Intel’s proprietary DMI (Direct Media Interface)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "RISC, CISC y paralelismo",
+   "points": [
+    {
+     "text": "**RISC**: instrucciones simples que hacen menos pero se ejecutan más rápido. **ARM** (*Advanced RISC Machine*) es una familia de arquitecturas RISC de Arm Ltd., habitual en móviles, tabletas y portátiles.",
+     "refs": [
+      {
+       "title": "Arm · Glosario: RISC",
+       "url": "https://www.arm.com/glossary/risc",
+       "quote": "a central processing unit (CPU) implements the processor design principle of simplified instructions that can do less but can execute more rapidly."
+      },
+      {
+       "title": "Arm · Glosario: RISC",
+       "url": "https://www.arm.com/glossary/risc",
+       "quote": "ARM, or “Advanced RISC Machine” is a specific family of instruction set architecture that’s based on reduced instruction set architecture developed by Arm Ltd."
+      },
+      {
+       "title": "Arm · Glosario: RISC",
+       "url": "https://www.arm.com/glossary/risc",
+       "quote": "Processors based on this architecture are common in smartphones, tablets, laptops, gaming consoles and desktops"
+      }
+     ]
+    },
+    {
+     "text": "**CISC** se asocia a la **microprogramación** (control microprogramado); con RISC, el control cableado sustituyó a la microprogramación en los procesadores de alto rendimiento. Los x86 actuales traducen las instrucciones CISC a microoperaciones.",
+     "refs": [
+      {
+       "title": "IEEE Technology Navigator · Microprogramming",
+       "url": "https://technav.ieee.org/topic/microprogramming/",
+       "quote": "With the rise of RISC architectures in the 1980s, direct hardwired control replaced microprogramming as the preferred technique for high-performance processors."
+      },
+      {
+       "title": "IEEE Technology Navigator · Microprogramming",
+       "url": "https://technav.ieee.org/topic/microprogramming/",
+       "quote": "However, microprogramming persists in complex instruction set computers: modern x86 processors translate complex CISC instructions into internal micro-operations (uops) at decode time"
+      }
+     ]
+    },
+    {
+     "text": "**Taxonomía de Flynn** (1966): clasifica las arquitecturas **paralelas** según el número de **flujos de instrucciones y de datos**: SISD, SIMD, MISD y MIMD.",
+     "refs": [
+      {
+       "title": "IEEE Computer Society · In Memoriam: Mike Flynn",
+       "url": "https://www.computer.org/publications/tech-news/insider-membership-news/in-memoriam-mike-flynn",
+       "quote": "a pioneering framework for categorizing parallelism in computer architectures based on the number of simultaneous instruction streams and data streams they handle, e.g., SISD, SIMD, MISD, and MIMD."
+      },
+      {
+       "title": "IEEE Technology Navigator · Parallel architectures",
+       "url": "https://technav.ieee.org/topic/parallel-architectures/",
+       "quote": "Flynn's taxonomy, proposed in 1966, provides the foundational classification framework"
+      }
+     ]
+    },
+    {
+     "text": "**FLOPS**: operaciones de **coma flotante por segundo**, métrica habitual para comparar algoritmos y dispositivos de cálculo.",
+     "refs": [
+      {
+       "title": "NVIDIA Nsight · Achieved FLOPs",
+       "url": "https://archive.docs.nvidia.com/gameworks/content/developertools/desktop/analysis/report/cudaexperiments/kernellevel/achievedflops.htm",
+       "quote": "Measuring floating point operations per second is a common metric for comparing different algorithms, variants in implementation, or changes in the compute device"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

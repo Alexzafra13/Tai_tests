@@ -294,6 +294,13 @@ ese artículo. Si algo está mal o falta, **Avisar de un error** lo manda a
 Revisión. Los apuntes están en `data/notes/` y la app comprueba al arrancar
 que cada cita sigue en el texto vigente de su ley.
 
+**Ver como documento** muestra los apuntes del tema de corrido, con índice,
+apartados numerados y la lista de fuentes, sin las barras de la app. Desde
+ahí, **Citas** añade las citas literales bajo cada punto, **PDF** abre la
+impresión del navegador (sale siempre en claro, lista para imprimir o
+guardar como PDF) y **Descargar** guarda el tema en un único `.html` que se
+abre sin conexión, con las mismas letras.
+
 ## Leyes y documentación para estudiar
 
 En **Temario**, los temas con normas tienen el botón **Leyes**: el texto
