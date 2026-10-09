@@ -224,7 +224,11 @@ correo y contenedores, redes y usuarios, seguridad y CPD, comunicaciones,
 TCP/IP y OSI, Internet y TLS, seguridad en redes y VPN, redes locales),
 con RFC, guías CCN-STIC, NIST y documentación de los fabricantes. Cuando
 un dato depende del fabricante (colores de los LED, tramas jumbo), los
-apuntes dan el ejemplo con su marca.
+apuntes dan el ejemplo con su marca. Y el bloque II entero, temas 1 a 5
+(arquitectura y representación de la información, periféricos y
+almacenamiento, estructuras de datos, algoritmos y formatos, sistemas
+operativos y bases de datos), con las fuentes de las preguntas del banco
+y su contexto.
 
 ## Comprobar
 
