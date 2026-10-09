@@ -180,6 +180,168 @@
        "quote": "onclick, ondblclick, onmousedown, onmouseup, onmouseover,"
       }
      ]
+    },
+    {
+     "text": "Elementos **semánticos** de sección (HTML5):",
+     "refs": [
+      {
+       "title": "HTML Living Standard · Sections",
+       "url": "https://html.spec.whatwg.org/multipage/sections.html",
+       "quote": "The section element represents a generic section of a document or application."
+      }
+     ],
+     "items": [
+      {
+       "text": "`article`: composición **independiente**, distribuible o reutilizable por sí sola (p. ej., por sindicación).",
+       "refs": [
+        {
+         "title": "HTML Living Standard · Sections",
+         "url": "https://html.spec.whatwg.org/multipage/sections.html",
+         "quote": "The article element represents a complete, or self-contained, composition in a document, page, application, or site and that is, in principle, independently distributable or reusable, e.g. in syndication."
+        }
+       ]
+      },
+      {
+       "text": "`aside`: contenido **relacionado tangencialmente** con lo que lo rodea.",
+       "refs": [
+        {
+         "title": "HTML Living Standard · Sections",
+         "url": "https://html.spec.whatwg.org/multipage/sections.html",
+         "quote": "The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element"
+        }
+       ]
+      },
+      {
+       "text": "`nav`: sección de **enlaces de navegación**.",
+       "refs": [
+        {
+         "title": "HTML Living Standard · Sections",
+         "url": "https://html.spec.whatwg.org/multipage/sections.html",
+         "quote": "The nav element represents a section of a page that links to other pages or to parts within the page: a section with navigation links."
+        }
+       ]
+      },
+      {
+       "text": "`header` (ayudas introductorias o de navegación) y `footer` (pie de su sección o del `body`).",
+       "refs": [
+        {
+         "title": "HTML Living Standard · Sections",
+         "url": "https://html.spec.whatwg.org/multipage/sections.html",
+         "quote": "The header element represents a group of introductory or navigational aids."
+        },
+        {
+         "title": "HTML Living Standard · Sections",
+         "url": "https://html.spec.whatwg.org/multipage/sections.html",
+         "quote": "The footer element represents a footer for its nearest ancestor sectioning content element, or for the body element if there is no such ancestor."
+        }
+       ]
+      },
+      {
+       "text": "`main`: el contenido **principal**; como mucho uno visible por documento.",
+       "refs": [
+        {
+         "title": "HTML Living Standard · Grouping content",
+         "url": "https://html.spec.whatwg.org/multipage/grouping-content.html",
+         "quote": "The main element represents the dominant contents of the document."
+        },
+        {
+         "title": "HTML Living Standard · Grouping content",
+         "url": "https://html.spec.whatwg.org/multipage/grouping-content.html",
+         "quote": "A document must not have more than one main element that does not have the hidden attribute specified."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Elementos **obsoletos** (no deben usarse): `basefont`, `big`, `blink`, `center`, `font`, `marquee`, `tt`… (se usa CSS); `frame`, `frameset` y `noframes` (se usa `iframe`); `acronym` (se usa `abbr`); `applet` (se usa `embed` u `object`).",
+     "refs": [
+      {
+       "title": "HTML Living Standard · Obsolete features",
+       "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+       "quote": "Elements in the following list are entirely obsolete, and must not be used by authors:"
+      },
+      {
+       "title": "HTML Living Standard · Obsolete features",
+       "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+       "quote": "basefont big blink center font marquee multicol nobr spacer tt Use appropriate elements or CSS instead."
+      },
+      {
+       "title": "HTML Living Standard · Obsolete features",
+       "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+       "quote": "frame frameset noframes Either use iframe and CSS instead"
+      },
+      {
+       "title": "HTML Living Standard · Obsolete features",
+       "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+       "quote": "acronym Use abbr instead."
+      },
+      {
+       "title": "HTML Living Standard · Obsolete features",
+       "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
+       "quote": "applet Use embed or object instead."
+      }
+     ]
+    },
+    {
+     "text": "`abbr`: **abreviatura o acrónimo**; el atributo `title` da su forma completa.",
+     "refs": [
+      {
+       "title": "HTML Living Standard · Text-level semantics",
+       "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html",
+       "quote": "The abbr element represents an abbreviation or acronym, optionally with its expansion."
+      },
+      {
+       "title": "HTML Living Standard · Text-level semantics",
+       "url": "https://html.spec.whatwg.org/multipage/text-level-semantics.html",
+       "quote": "The title attribute may be used to provide an expansion of the abbreviation."
+      }
+     ]
+    },
+    {
+     "text": "`base`: como mucho **uno** por documento; su `target` fija dónde se abren por defecto los enlaces (`_blank`: en un contexto nuevo).",
+     "refs": [
+      {
+       "title": "HTML Living Standard · Document metadata",
+       "url": "https://html.spec.whatwg.org/multipage/semantics.html",
+       "quote": "There must be no more than one base element per document."
+      },
+      {
+       "title": "<base> · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/base",
+       "quote": "Show the result in a new, unnamed browsing context."
+      }
+     ]
+    },
+    {
+     "text": "**Mapas de imagen**: `map` con elementos `area`, enlazado a la imagen con el atributo **usemap** (`usemap=\"#nombre\"`).",
+     "refs": [
+      {
+       "title": "HTML Living Standard · Image maps",
+       "url": "https://html.spec.whatwg.org/multipage/image-maps.html",
+       "quote": "The usemap attribute, if specified, must be a valid hash-name reference to a map element."
+      },
+      {
+       "title": "HTML Living Standard · Image maps",
+       "url": "https://html.spec.whatwg.org/multipage/image-maps.html",
+       "quote": "in conjunction with an img element and any area element descendants, defines an image map"
+      }
+     ]
+    },
+    {
+     "text": "La **sintaxis XML** de HTML se llamaba antes **XHTML**: en ella, un error de sintaxis menor impide mostrar el documento completo, mientras que en la sintaxis HTML se ignoraría.",
+     "refs": [
+      {
+       "title": "HTML Living Standard · Introduction",
+       "url": "https://html.spec.whatwg.org/multipage/introduction.html",
+       "quote": "The XML syntax for HTML was formerly referred to as \"XHTML\""
+      },
+      {
+       "title": "HTML Living Standard · Introduction",
+       "url": "https://html.spec.whatwg.org/multipage/introduction.html",
+       "quote": "even minor syntax errors will prevent a document labeled as XML from being rendered fully, whereas they would be ignored in the HTML syntax."
+      }
+     ]
     }
    ]
   },

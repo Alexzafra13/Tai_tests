@@ -188,6 +188,61 @@
        "quote": "debiéndolo hacer constar por escrito mediante el correspondiente informe. Dicha evaluación deberá revisarse al menos una vez al año"
       }
      ]
+    },
+    {
+     "text": "**Diseño universal** o para todas las personas (RDL 1/2013, art. 2.l): concebir desde el origen entornos, productos, servicios, programas o herramientas que puedan usar **todas las personas**, en la mayor medida posible, **sin adaptación** ni diseño especializado; no excluye los **productos de apoyo**. Es uno de los principios de la ley (art. 3). Sus **7 principios** (Center for Universal Design, 1997): uso **equitativo**, **flexible**, **simple e intuitivo**, información **perceptible**, **tolerancia al error**, **poco esfuerzo físico** y **tamaño y espacio** para el acceso y el uso.",
+     "refs": [
+      {
+       "law": "BOE-A-2013-12632",
+       "section": "a2",
+       "quote": "es la actividad por la que se conciben o proyectan desde el origen, y siempre que ello sea posible, entornos, procesos, bienes, productos, servicios, objetos, instrumentos, programas, dispositivos o herramientas, de tal forma que puedan ser utilizados por todas las personas, en la mayor extensión posible, sin necesidad de adaptación ni diseño especializado."
+      },
+      {
+       "law": "BOE-A-2013-12632",
+       "section": "a2",
+       "quote": "no excluirá los productos de apoyo para grupos particulares de personas con discapacidad, cuando lo necesiten."
+      },
+      {
+       "law": "BOE-A-2013-12632",
+       "section": "a3",
+       "quote": "i) Diseño universal o diseño para todas las personas."
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "PRINCIPLE ONE: Equitable Use"
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "PRINCIPLE TWO: Flexibility in Use"
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "PRINCIPLE THREE: Simple and Intuitive Use"
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "PRINCIPLE FOUR: Perceptible Information"
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "PRINCIPLE FIVE: Tolerance for Error"
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "PRINCIPLE SIX: Low Physical Effort"
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "PRINCIPLE SEVEN: Size and Space for Approach and Use"
+      }
+     ]
     }
    ]
   },
@@ -691,6 +746,161 @@
        "title": "OWASP Top 10:2021 · A03:2021 Injection",
        "url": "https://owasp.org/Top10/2021/A03_2021-Injection/",
        "quote": "to identify introduced injection flaws before production deployment."
+      }
+     ]
+    },
+    {
+     "text": "**Desarrollo seguro** (ENS, mp.sw.1): se desarrolla en un sistema **separado del de producción** y, en el refuerzo R2, con una metodología de desarrollo seguro que contemple la seguridad en **todo el ciclo de vida** y permita **inspeccionar el código fuente**. El CCN recomienda definir los controles **desde el diseño**; OWASP (**DevSecOps**) busca detectar los problemas **lo antes posible**.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "El desarrollo de aplicaciones se realizará sobre un sistema diferente y separado del de producción"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "Se aplicará una metodología de desarrollo seguro reconocida que:"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "a) Tendrá en consideración los aspectos de seguridad a lo largo de todo el ciclo de vida."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "d) Permitirá la inspección del código fuente."
+      },
+      {
+       "title": "CCN-CERT BP/28 · Recomendaciones sobre desarrollo seguro",
+       "url": "https://www.ccn-cert.cni.es/es/informes/informes-de-buenas-practicas-bp/6834-ccn-cert-bp-28-recomendaciones-sobre-desarrollo-seguro/file.html",
+       "quote": "la definición de los controles de seguridad debe comenzar en la etapa de diseño o incluso antes, y continuar durante todo el ciclo de vida de la aplicación"
+      },
+      {
+       "title": "OWASP DevSecOps Guideline",
+       "url": "https://owasp.org/www-project-devsecops-guideline/",
+       "quote": "DevSecOps is all about putting security into DevOps."
+      }
+     ]
+    },
+    {
+     "text": "**DAST**: pruebas de **caja negra** sobre la aplicación **en ejecución**, inyectando datos maliciosos y sin necesitar el código fuente. **IAST**: prueba la aplicación mientras se usa, con **sensores** incluidos en su código; a diferencia del SAST, sirve en tiempo de ejecución.",
+     "refs": [
+      {
+       "title": "OWASP DevSecOps Guideline · Dynamic Application Security Testing",
+       "url": "https://owasp.org/www-project-devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing",
+       "quote": "can find security vulnerabilities and weaknesses in a running application by injecting malicious payloads"
+      },
+      {
+       "title": "OWASP DevSecOps Guideline · Dynamic Application Security Testing",
+       "url": "https://owasp.org/www-project-devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing",
+       "quote": "DAST tools allow for sophisticated scans on the client side and server side without needing the source code or the framework the application is built on."
+      },
+      {
+       "title": "OWASP DevSecOps Guideline · Interactive Application Security Testing",
+       "url": "https://owasp.org/www-project-devsecops-guideline/latest/02c-Interactive-Application-Security-Testing",
+       "quote": "is an application security testing method that tests the application while the app is run by an automated test, human tester, or any activity"
+      },
+      {
+       "title": "OWASP DevSecOps Guideline · Interactive Application Security Testing",
+       "url": "https://owasp.org/www-project-devsecops-guideline/latest/02c-Interactive-Application-Security-Testing",
+       "quote": "The core of an IAST tool is sensor modules, software libraries included in the application code."
+      },
+      {
+       "title": "OWASP DevSecOps Guideline · Interactive Application Security Testing",
+       "url": "https://owasp.org/www-project-devsecops-guideline/latest/02c-Interactive-Application-Security-Testing",
+       "quote": "IASTs are more flexible than SASTs, because they are applicable in production runtime environments (SASTs require direct access to the source code)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Seguridad en el puesto de usuario final",
+   "points": [
+    {
+     "text": "**Puesto despejado** (ENS, mp.eq.1): sin más material que el necesario; después, guardado en lugar cerrado si es posible.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "[mp.eq.1.1] Los puestos de trabajo permanecerán despejados, sin que exista material distinto del necesario en cada momento."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "[mp.eq.1.r1.1] Una vez usado, y siempre que sea factible, el material se almacenará en lugar cerrado."
+      }
+     ]
+    },
+    {
+     "text": "**Bloqueo del puesto** (mp.eq.2): tras un tiempo de **inactividad** se bloquea y pide **autenticarse de nuevo**; pasado más tiempo (refuerzo R1), se cierran las sesiones. En móviles, la **pantalla de bloqueo** es la principal defensa ante el acceso físico.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "[mp.eq.2.1] El puesto de trabajo se bloqueará al cabo de un tiempo prudencial de inactividad, requiriendo una nueva autenticación del usuario para reanudar la actividad en curso."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "[mp.eq.2.r1.1] Pasado un cierto tiempo, superior al anterior, se cancelarán las sesiones abiertas desde dicho puesto de trabajo."
+      },
+      {
+       "title": "CCN-CERT BP/03 · Dispositivos móviles",
+       "url": "https://www.ccn-cert.cni.es/es/informes/informes-de-buenas-practicas-bp/1757-ccn-cert-bp-03-dispositivos-moviles/file.html",
+       "quote": "La pantalla de bloqueo es el principal mecanismo de defensa frente al acceso físico no autorizado al dispositivo móvil por parte de un potencial atacante."
+      }
+     ]
+    },
+    {
+     "text": "**Portátiles** (mp.eq.3): **inventario** con un responsable para cada uno; refuerzos: **cifrado del disco** (R1) y uso fuera de la organización solo en entornos protegidos (R2). El cifrado convierte el texto en ilegible para terceros no autorizados (**confidencialidad**).",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "[mp.eq.3.1] Se llevará un inventario de dispositivos portátiles junto con una identificación de la persona responsable de cada uno de ellos"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "Se protegerá el dispositivo portátil mediante cifrado del disco duro"
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "[mp.eq.3.r2.1] El uso de dispositivos portátiles fuera de las instalaciones de la organización se restringirá a entornos protegidos, donde el acceso sea controlado y a salvo de hurtos y miradas indiscretas."
+      },
+      {
+       "title": "CCN-CERT BP/01 · Principios y recomendaciones básicas en Ciberseguridad",
+       "url": "https://www.ccn-cert.cni.es/es/informes/informes-de-buenas-practicas-bp/2473-ccn-cert-bp-01-principios-y-recomendaciones-basicas-en-ciberseguridad/file.html",
+       "quote": "Cifrar los datos significa convertir texto plano en texto ilegible, denominado texto cifrado, evitando que la información sea accesible por terceros no autorizados."
+      }
+     ]
+    },
+    {
+     "text": "**Copias de seguridad** (mp.info.6), para la **disponibilidad**: permiten recuperar datos perdidos; se prueban regularmente (R1) y al menos una copia se guarda **en otro lugar** (R2). Son la única salida ante un **ransomware**.",
+     "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "[mp.info.6.1] Se realizarán copias de seguridad que permitan recuperar datos perdidos, accidental o intencionadamente."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "[mp.info.6.r1.1] Los procedimientos de copia de seguridad y restauración deben probarse regularmente."
+      },
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "Al menos, una de las copias de seguridad se almacenará de forma separada en lugar diferente"
+      },
+      {
+       "title": "CCN-CERT BP/01 · Principios y recomendaciones básicas en Ciberseguridad",
+       "url": "https://www.ccn-cert.cni.es/es/informes/informes-de-buenas-practicas-bp/2473-ccn-cert-bp-01-principios-y-recomendaciones-basicas-en-ciberseguridad/file.html",
+       "quote": "Realizar copias de seguridad periódicas, no existe otra alternativa en caso de infección de código malicioso tipo ransomware"
       }
      ]
     }

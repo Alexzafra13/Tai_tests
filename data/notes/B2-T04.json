@@ -58,6 +58,56 @@
        "quote": "El sistema asigna segmentos de tiempo de forma round robin a todos los subprocesos con la prioridad más alta."
       }
      ]
+    },
+    {
+     "text": "**Memoria virtual**: separa a las aplicaciones de la memoria física, permite tener en ella solo lo necesario (**paginación bajo demanda**) y protege y comparte datos entre procesos. La memoria física se divide en **marcos de página** o **páginas**.",
+     "refs": [
+      {
+       "title": "Linux Kernel documentation · Concepts overview (memory management)",
+       "url": "https://docs.kernel.org/admin-guide/mm/concepts.html",
+       "quote": "The virtual memory abstracts the details of physical memory from the application software, allows to keep only needed information in the physical memory (demand paging) and provides a mechanism for the protection and controlled sharing of data between processes."
+      },
+      {
+       "title": "Linux Kernel documentation · Concepts overview (memory management)",
+       "url": "https://docs.kernel.org/admin-guide/mm/concepts.html",
+       "quote": "The physical system memory is divided into page frames, or pages."
+      }
+     ]
+    },
+    {
+     "text": "Cuando falta memoria física, el sistema lleva a disco las páginas usadas **menos recientemente** (Windows: al **archivo de paginación**, un fichero de sistema oculto; Linux: al **swap**, que se activa con `swapon`).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Virtual Address Space and Physical Storage",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/memory/virtual-address-space-and-physical-storage",
+       "quote": "If the threads of a process attempt to use more physical memory than is currently available, the system pages some of the memory contents to disk."
+      },
+      {
+       "title": "Microsoft Learn · Virtual Address Space and Physical Storage",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/memory/virtual-address-space-and-physical-storage",
+       "quote": "When the system needs space in physical memory, it moves the least recently used pages of physical memory to the paging file."
+      },
+      {
+       "title": "Microsoft Learn · Introduction to the page file",
+       "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/introduction-to-the-page-file",
+       "quote": "A page file (also known as a \"paging file\") is an optional, hidden system file on a hard disk."
+      },
+      {
+       "title": "swapon(2) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man2/swapon.2.html",
+       "quote": "swapon, swapoff - start/stop swapping to file/device"
+      }
+     ]
+    },
+    {
+     "text": "**Hiperpaginación** (*thrashing*): paginación excesiva; la E/S de disco hunde el rendimiento (guía archivada de Microsoft).",
+     "refs": [
+      {
+       "title": "Microsoft Learn (archivo) · Improving .NET Application Performance, cap. 17",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ff647813(v=pandp.10)",
+       "quote": "If paging becomes excessive, page thrashing occurs and intensive disk I/O decreases overall system performance."
+      }
+     ]
     }
    ]
   },
@@ -123,6 +173,388 @@
        "quote": "A non-negative integer that is used to identify a system user."
       }
      ]
+    },
+    {
+     "text": "Procesos: `fork()` crea un proceso **hijo** duplicando al **padre**. Cada proceso tiene un **PID** único; el **PPID** es el PID del padre que lo creó. Un **demonio** (*daemon*) es un proceso de servicio que corre en **segundo plano**.",
+     "refs": [
+      {
+       "title": "fork(2) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+       "quote": "creates a new process by duplicating the calling process."
+      },
+      {
+       "title": "fork(2) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man2/fork.2.html",
+       "quote": "The new process is referred to as the child process. The calling process is referred to as the parent process."
+      },
+      {
+       "title": "credentials(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/credentials.7.html",
+       "quote": "Each process has a unique nonnegative integer identifier that is assigned when the process is created using fork(2)"
+      },
+      {
+       "title": "credentials(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/credentials.7.html",
+       "quote": "A process's parent process ID identifies the process that created this process using fork(2)"
+      },
+      {
+       "title": "daemon(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/daemon.7.html",
+       "quote": "A daemon is a service process that runs in the background and supervises the system or provides functionality to other"
+      }
+     ]
+    },
+    {
+     "text": "Jerarquía de directorios (**FHS 3.0**):",
+     "refs": [
+      {
+       "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
+       "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+       "quote": "The /etc hierarchy contains configuration files."
+      }
+     ],
+     "items": [
+      {
+       "text": "`/bin`: órdenes para el administrador y los usuarios necesarias aunque no haya otros sistemas de ficheros montados (modo monousuario).",
+       "refs": [
+        {
+         "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
+         "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+         "quote": "/bin contains commands that may be used by both the system administrator and by users, but which are required when no other filesystems are mounted (e.g. in single user mode)."
+        }
+       ]
+      },
+      {
+       "text": "`/boot`: ficheros estáticos del **cargador de arranque**; el **kernel** está en `/` o en `/boot`.",
+       "refs": [
+        {
+         "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
+         "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+         "quote": "/boot : Static files of the boot loader"
+        },
+        {
+         "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
+         "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+         "quote": "The operating system kernel must be located in either / or /boot."
+        }
+       ]
+      },
+      {
+       "text": "`/etc`: configuración; `/home`: directorios personales (opcional); `/tmp`: temporales.",
+       "refs": [
+        {
+         "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
+         "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+         "quote": "/home : User home directories (optional)"
+        },
+        {
+         "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
+         "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+         "quote": "The /tmp directory must be made available for programs that require temporary files."
+        }
+       ]
+      },
+      {
+       "text": "`/var`: datos variables (colas de impresión, registros, temporales).",
+       "refs": [
+        {
+         "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
+         "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+         "quote": "/var contains variable data files. This includes spool directories and files, administrative and logging data, and transient and temporary files."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Sticky bit** en un directorio: un fichero solo lo pueden **renombrar o borrar** su propietario, el del directorio o un proceso privilegiado. Es típico de directorios con escritura para todos como `/tmp`.",
+     "refs": [
+      {
+       "title": "inode(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/inode.7.html",
+       "quote": "on a directory means that a file in that directory can be renamed or deleted only by the owner of the file, by the owner of the directory, and by a privileged process."
+      },
+      {
+       "title": "chmod(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/chmod.1.html",
+       "quote": "this is called the restricted deletion flag for the directory, and is commonly found on world-writable directories like"
+      }
+     ]
+    },
+    {
+     "text": "**Inodo**: guarda los **metadatos** del fichero (permisos, propietario, grupo, tamaño, fechas, número de **enlaces duros**) y los punteros a sus bloques, pero **no su nombre**: el nombre está en el **directorio**, que asocia cada nombre con un número de inodo.",
+     "refs": [
+      {
+       "title": "inode(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/inode.7.html",
+       "quote": "Each file has an inode containing metadata about the file."
+      },
+      {
+       "title": "The Second Extended Filesystem · Linux Kernel documentation",
+       "url": "https://docs.kernel.org/filesystems/ext2.html",
+       "quote": "The inode structure contains pointers to the filesystem blocks which contain the data held in the object and all of the metadata about an object except its name."
+      },
+      {
+       "title": "The Second Extended Filesystem · Linux Kernel documentation",
+       "url": "https://docs.kernel.org/filesystems/ext2.html",
+       "quote": "The metadata about an object includes the permissions, owner, group, flags, size, number of blocks used, access time, change time, modification time, deletion time, number of links"
+      },
+      {
+       "title": "The Second Extended Filesystem · Linux Kernel documentation",
+       "url": "https://docs.kernel.org/filesystems/ext2.html",
+       "quote": "It is a specially formatted file containing records which associate each name with an inode number."
+      }
+     ]
+    },
+    {
+     "text": "**GRUB** (GNU GRUB) es un **cargador de arranque**: el primer programa que se ejecuta al encender el equipo; carga el **kernel** del sistema operativo y le pasa el control.",
+     "refs": [
+      {
+       "title": "GNU GRUB Manual · Overview",
+       "url": "https://www.gnu.org/software/grub/manual/grub/html_node/Overview.html",
+       "quote": "is the first software program that runs when a computer starts."
+      },
+      {
+       "title": "GNU GRUB Manual · Overview",
+       "url": "https://www.gnu.org/software/grub/manual/grub/html_node/Overview.html",
+       "quote": "GNU GRUB is a very powerful boot loader, which can load a wide variety of free operating systems"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Órdenes básicas de Linux",
+   "points": [
+    {
+     "text": "`less`: muestra un fichero en el terminal, como `more` pero con más funciones (permite retroceder). `tac`: concatena e imprime ficheros **al revés** (última línea primero). `tail`: imprime las **10 últimas líneas**.",
+     "refs": [
+      {
+       "title": "less(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/less.1.html",
+       "quote": "less - display the contents of a file in a terminal"
+      },
+      {
+       "title": "less(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/less.1.html",
+       "quote": "Less is a program similar to more(1)"
+      },
+      {
+       "title": "less(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/less.1.html",
+       "quote": "Scroll backward N lines, default one window"
+      },
+      {
+       "title": "tac(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tac.1.html",
+       "quote": "tac - concatenate and print files in reverse"
+      },
+      {
+       "title": "tail(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tail.1.html",
+       "quote": "Print the last 10 lines of each FILE to standard output."
+      }
+     ]
+    },
+    {
+     "text": "`ps -ef`: lista **todos** los procesos en formato completo; la primera columna es el **UID** (propietario), seguida de PID y PPID. `grep -c`: cuenta las líneas que coinciden.",
+     "refs": [
+      {
+       "title": "ps(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/ps.1.html",
+       "quote": "To see every process on the system using standard syntax:"
+      },
+      {
+       "title": "ps(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/ps.1.html",
+       "quote": "Do full-format listing."
+      },
+      {
+       "title": "ps(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/ps.1.html",
+       "quote": "uid,pid,ppid,c,stime,tty,time,cmd"
+      },
+      {
+       "title": "grep(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/grep.1.html",
+       "quote": "Suppress normal output; instead print a count of matching lines for each input file."
+      }
+     ]
+    },
+    {
+     "text": "`du`: estima el **espacio ocupado** por ficheros, recursivamente en directorios. `touch`: actualiza las fechas de acceso y modificación, y **crea el fichero vacío** si no existe.",
+     "refs": [
+      {
+       "title": "du(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/du.1.html",
+       "quote": "du - estimate file space usage"
+      },
+      {
+       "title": "du(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/du.1.html",
+       "quote": "Summarize device usage of the set of FILEs, recursively for directories."
+      },
+      {
+       "title": "touch(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/touch.1.html",
+       "quote": "Update the access and modification times of each FILE to the current time."
+      },
+      {
+       "title": "touch(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/touch.1.html",
+       "quote": "A FILE argument that does not exist is created empty, unless -c or -h is supplied."
+      }
+     ]
+    },
+    {
+     "text": "`ln`: crea **enlaces duros** por defecto; con `-s`, **simbólicos**. `renice`: cambia la **prioridad** de procesos en ejecución.",
+     "refs": [
+      {
+       "title": "ln(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/ln.1.html",
+       "quote": "Create hard links by default"
+      },
+      {
+       "title": "ln(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/ln.1.html",
+       "quote": "make symbolic links instead of hard links"
+      },
+      {
+       "title": "renice(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/renice.1.html",
+       "quote": "renice - alter priority of running processes"
+      }
+     ]
+    },
+    {
+     "text": "`tar tvf fichero.tar`: `-t` **lista** el contenido del archivo, `-v` en modo detallado, `-f` indica el archivo.",
+     "refs": [
+      {
+       "title": "tar(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tar.1.html",
+       "quote": "List the contents of an archive."
+      },
+      {
+       "title": "tar(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tar.1.html",
+       "quote": "Verbosely list files processed."
+      }
+     ]
+    },
+    {
+     "text": "`man`: interfaz a los manuales de referencia, por secciones: **1** órdenes de usuario, **2** llamadas al sistema, **8** administración.",
+     "refs": [
+      {
+       "title": "man(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/man.1.html",
+       "quote": "man - an interface to the system reference manuals"
+      },
+      {
+       "title": "man(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/man.1.html",
+       "quote": "1 Executable programs or shell commands"
+      },
+      {
+       "title": "man(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/man.1.html",
+       "quote": "2 System calls (functions provided by the kernel)"
+      },
+      {
+       "title": "man(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/man.1.html",
+       "quote": "8 System administration commands (usually only for root)"
+      }
+     ]
+    },
+    {
+     "text": "**vi**: `:q!` sale **sin guardar** (sin `!`, salir con cambios sin escribir da error); `dd` **borra la línea** actual (con un número delante, varias).",
+     "refs": [
+      {
+       "title": "ex(1p) · POSIX Programmer's Manual",
+       "url": "https://man7.org/linux/man-pages/man1/ex.1p.html",
+       "quote": "If no '!' is appended to the command name:"
+      },
+      {
+       "title": "ex(1p) · POSIX Programmer's Manual",
+       "url": "https://man7.org/linux/man-pages/man1/ex.1p.html",
+       "quote": "If the edit buffer has been modified since the last complete write, it shall be an error."
+      },
+      {
+       "title": "vi(1p) · POSIX Programmer's Manual",
+       "url": "https://man7.org/linux/man-pages/man1/vi.1p.html",
+       "quote": "If the motion command is the d command repeated:"
+      },
+      {
+       "title": "vi(1p) · POSIX Programmer's Manual",
+       "url": "https://man7.org/linux/man-pages/man1/vi.1p.html",
+       "quote": "The text region shall be from the current line up to and including the next count -1 lines."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sistemas de ficheros",
+   "points": [
+    {
+     "text": "**ext2** es un sistema de ficheros de **Linux** (no de Windows).",
+     "refs": [
+      {
+       "title": "The Second Extended Filesystem · Linux Kernel documentation",
+       "url": "https://docs.kernel.org/filesystems/ext2.html",
+       "quote": "It is currently still (April 2001) the predominant filesystem in use by Linux."
+      }
+     ]
+    },
+    {
+     "text": "Windows usa principalmente **NTFS, exFAT, UDF y FAT32**. Tamaño máximo de fichero: **2^64–1 bytes** en NTFS, exFAT y UDF; **4 GiB** en FAT32.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · File System Functionality Comparison",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/filesystem-functionality-comparison",
+       "quote": "The following tables list functionality and feature support comparisons for the four main Windows file systems, NTFS, exFAT, UDF, and FAT32:"
+      },
+      {
+       "title": "Microsoft Learn · File System Functionality Comparison",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/filesystem-functionality-comparison",
+       "quote": "Maximum file size 2^64–1 bytes 2^64–1 bytes 2^64–1 bytes 4 GiB"
+      }
+     ]
+    },
+    {
+     "text": "**exFAT** sucede a FAT32: usa **64 bits** para el tamaño de fichero y admite clústeres de hasta **32 MB**, para dispositivos de almacenamiento muy grandes.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · exFAT file system specification",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/exfat-specification",
+       "quote": "The exFAT file system is the successor to FAT32 in the FAT family of file systems."
+      },
+      {
+       "title": "Microsoft Learn · exFAT file system specification",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/exfat-specification",
+       "quote": "The exFAT file system uses 64 bits to describe file size, thereby enabling applications which depend on very large files."
+      },
+      {
+       "title": "Microsoft Learn · exFAT file system specification",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/fileio/exfat-specification",
+       "quote": "The exFAT file system also allows for clusters as large as 32MB, effectively enabling very large storage devices."
+      }
+     ]
+    },
+    {
+     "text": "**ReFS** (*Resilient File System*), de Microsoft: busca disponibilidad, escalabilidad e **integridad** de los datos; usa **sumas de comprobación** para detectar corrupción.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Resilient File System (ReFS) overview",
+       "url": "https://learn.microsoft.com/en-us/windows-server/storage/refs/refs-overview",
+       "quote": "The Resilient File System (ReFS) is a modern file system developed by Microsoft to maximize data availability, scale efficiently to large data sets across diverse workloads, and provide data integrity with resiliency to corruption."
+      },
+      {
+       "title": "Microsoft Learn · Resilient File System (ReFS) overview",
+       "url": "https://learn.microsoft.com/en-us/windows-server/storage/refs/refs-overview",
+       "quote": "Integrity-streams - ReFS uses checksums for metadata and optionally for file data, giving ReFS the ability to reliably detect corruptions."
+      }
+     ]
     }
    ]
   },
@@ -161,6 +593,51 @@
        "title": "Apple · Descubre qué versión de macOS usa tu Mac",
        "url": "https://support.apple.com/es-es/109033",
        "quote": "macOS Ventura 13 13.7.8 macOS Monterey 12 12.7.6 macOS Big Sur 11"
+      }
+     ]
+    },
+    {
+     "text": "Registro de Windows: **HKEY_LOCAL_MACHINE** guarda el estado físico del equipo (bus, memoria, hardware y software instalados).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Predefined Keys",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/sysinfo/predefined-keys",
+       "quote": "Registry entries subordinate to this key define the physical state of the computer, including data about the bus type, system memory, and installed hardware and software."
+      }
+     ]
+    },
+    {
+     "text": "`net use` conecta (o desconecta) el equipo a un **recurso compartido**, asignándole una letra de unidad (D: a Z:) o una impresora (LPT1: a LPT3:).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Net use (Windows Server 2012)",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/gg651155(v=ws.11)",
+       "quote": "Connects a computer to or disconnects a computer from a shared resource, or displays information about computer connections."
+      },
+      {
+       "title": "Microsoft Learn · Net use (Windows Server 2012)",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/gg651155(v=ws.11)",
+       "quote": "There are two kinds of device names: disk drives (that is, D: through Z:) and printers (that is, LPT1: through LPT3:)."
+      }
+     ]
+    },
+    {
+     "text": "**msconfig** (Configuración del sistema): ayuda a resolver problemas de arranque iniciando Windows con servicios y programas de inicio desactivados.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · System Configuration utility (Msconfig)",
+       "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/system-configuration-utility-troubleshoot-configuration-errors",
+       "quote": "When you use the System Configuration utility, you can start Windows while common services and startup programs are disabled."
+      }
+     ]
+    },
+    {
+     "text": "**BitLocker** cifra **volúmenes completos** para proteger los datos de equipos perdidos, robados o mal retirados.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · BitLocker overview",
+       "url": "https://learn.microsoft.com/en-us/windows/security/operating-system-security/data-protection/bitlocker/",
+       "quote": "BitLocker is a Windows security feature that provides encryption for entire volumes, addressing the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices."
       }
      ]
     }
@@ -206,6 +683,76 @@
        "title": "Xiaomi · MIUI",
        "url": "https://www.mi.com/global/miui/",
        "quote": "MIUI is one of the most popular custom ROMs for Android."
+      }
+     ]
+    },
+    {
+     "text": "Versiones de Android: **Honeycomb** 3.0 (pensada para **tabletas**), **Jelly Bean** 4.1, **KitKat** 4.4, **Pie** 9.",
+     "refs": [
+      {
+       "title": "Android Open Source Project · Codenames, tags, and build numbers",
+       "url": "https://source.android.com/docs/setup/reference/build-numbers",
+       "quote": "Honeycomb 3.0 API level 11"
+      },
+      {
+       "title": "Android Open Source Project · Codenames, tags, and build numbers",
+       "url": "https://source.android.com/docs/setup/reference/build-numbers",
+       "quote": "Jelly Bean 4.1.x API level 16"
+      },
+      {
+       "title": "Android Open Source Project · Codenames, tags, and build numbers",
+       "url": "https://source.android.com/docs/setup/reference/build-numbers",
+       "quote": "KitKat 4.4 - 4.4.4 API level 19"
+      },
+      {
+       "title": "Android Open Source Project · Codenames, tags, and build numbers",
+       "url": "https://source.android.com/docs/setup/reference/build-numbers",
+       "quote": "Pie 9 API level 28"
+      },
+      {
+       "title": "Android Developers · Android 3.0 Platform Highlights",
+       "url": "https://developer.android.com/about/versions/android-3.0-highlights",
+       "quote": "Android 3.0 is a new version of the Android platform that is specifically optimized for devices with larger screen sizes, particularly tablets."
+      }
+     ]
+    },
+    {
+     "text": "**ART** (*Android runtime*) es el entorno de ejecución de Android; su predecesor fue **Dalvik**. Ambos ejecutan bytecode **DEX**.",
+     "refs": [
+      {
+       "title": "Android Open Source Project · Android runtime and Dalvik",
+       "url": "https://source.android.com/docs/core/runtime",
+       "quote": "Android runtime (ART) is the managed runtime used by apps and some system services on Android."
+      },
+      {
+       "title": "Android Open Source Project · Android runtime and Dalvik",
+       "url": "https://source.android.com/docs/core/runtime",
+       "quote": "ART and its predecessor Dalvik were originally created specifically for the Android project."
+      },
+      {
+       "title": "Android Open Source Project · Android runtime and Dalvik",
+       "url": "https://source.android.com/docs/core/runtime",
+       "quote": "ART and Dalvik are compatible runtimes running DEX bytecode"
+      }
+     ]
+    },
+    {
+     "text": "Las apps se escriben en **Kotlin**, **Java** y **C++**, y se instalan con un paquete **.apk**. Kotlin es un **lenguaje de programación**, no un sistema operativo.",
+     "refs": [
+      {
+       "title": "Android Developers · Application fundamentals",
+       "url": "https://developer.android.com/guide/components/fundamentals",
+       "quote": "Android apps can be written using Kotlin, the Java programming language, and C++ languages."
+      },
+      {
+       "title": "Android Developers · Application fundamentals",
+       "url": "https://developer.android.com/guide/components/fundamentals",
+       "quote": "which is an archive file with an .apk suffix, contains the contents of an Android app required at runtime"
+      },
+      {
+       "title": "Kotlin · FAQ",
+       "url": "https://kotlinlang.org/docs/faq.html",
+       "quote": "Kotlin is an open-source statically typed programming language that targets the JVM, Android, JavaScript, Wasm, and Native."
       }
      ]
     }

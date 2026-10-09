@@ -2,6 +2,198 @@
  "topic": "B3-T02",
  "sections": [
   {
+   "title": "Tipos de datos y estructura de un programa",
+   "points": [
+    {
+     "text": "**Tipos primitivos de Java** (8): enteros con signo en complemento a dos **byte** (8 bits), **short** (16), **int** (32) y **long** (64); coma flotante IEEE 754 **float** (32, simple precisión) y **double** (64, doble); **char** (un carácter Unicode de 16 bits) y **boolean**. **String** no es un tipo primitivo.",
+     "refs": [
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The eight primitive data types supported by the Java programming language are:"
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The byte data type is an 8-bit signed two's complement integer."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The short data type is a 16-bit signed two's complement integer."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "By default, the int data type is a 32-bit signed two's complement integer"
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The long data type is a 64-bit two's complement integer."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The float data type is a single-precision 32-bit IEEE 754 floating point."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The double data type is a double-precision 64-bit IEEE 754 floating point."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The char data type is a single 16-bit Unicode character."
+      },
+      {
+       "title": "The Java Tutorials · Primitive Data Types",
+       "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html",
+       "quote": "The String class is not technically a primitive data type"
+      }
+     ]
+    },
+    {
+     "text": "En **C#**, `byte` es un entero **sin signo** de 8 bits (0 a 255), `int` uno con signo de 32 bits y `long` de 64; las palabras clave son alias de tipos .NET (`int` = `System.Int32`). `void` indica **ausencia de tipo**.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Integral numeric types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types",
+       "quote": "byte 0 to 255 Unsigned 8-bit integer System.Byte"
+      },
+      {
+       "title": "Microsoft Learn · Integral numeric types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types",
+       "quote": "int -2,147,483,648 to 2,147,483,647 Signed 32-bit integer System.Int32"
+      },
+      {
+       "title": "Microsoft Learn · Built-in types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types",
+       "quote": "most C# type keywords from the left column are aliases for the corresponding .NET type. They're interchangeable."
+      },
+      {
+       "title": "Microsoft Learn · Built-in types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types",
+       "quote": "The void keyword represents the absence of a type."
+      }
+     ]
+    },
+    {
+     "text": "**Estructura de un programa**: en Java toda aplicación empieza con una **clase** y necesita un método **main**, su punto de entrada. En C#, los programas se construyen con **espacios de nombres**, **tipos** y **sentencias**; el punto de entrada es `Main` o las **instrucciones de nivel superior**. En C, la ejecución empieza en la función **main**.",
+     "refs": [
+      {
+       "title": "The Java Tutorials · The \"Hello World!\" Application",
+       "url": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html",
+       "quote": "every application begins with a class definition."
+      },
+      {
+       "title": "The Java Tutorials · The \"Hello World!\" Application",
+       "url": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html",
+       "quote": "it's the entry point for your application and will subsequently invoke all the other methods required by your program."
+      },
+      {
+       "title": "Microsoft Learn · General structure of a C# program",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/",
+       "quote": "You build C# programs from these core building blocks: namespaces organize your types, types (classes, structs, interfaces, enums, and delegates) define behavior and data, and statements and expressions perform work at run time."
+      },
+      {
+       "title": "Microsoft Learn · General structure of a C# program",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/",
+       "quote": "Top-level statements let you write executable code directly at the top of a file."
+      },
+      {
+       "title": "Microsoft Learn · main function and program execution (C)",
+       "url": "https://learn.microsoft.com/en-us/cpp/c-language/main-function-and-program-execution",
+       "quote": "The main function serves as the starting point for program execution."
+      }
+     ]
+    },
+    {
+     "text": "**Compilación e interpretación**:",
+     "refs": [
+      {
+       "title": "Python · Glossary",
+       "url": "https://docs.python.org/3/glossary.html",
+       "quote": "Interpreted languages typically have a shorter development/debug cycle than compiled ones, though their programs generally also run more slowly."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Java**: `javac` compila el código fuente a ficheros **.class** con **bytecode**, el lenguaje máquina de la **JVM**, no del procesador; así el mismo programa corre en varias plataformas.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · About the Java Technology",
+         "url": "https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html",
+         "quote": "Those source files are then compiled into .class files by the javac compiler."
+        },
+        {
+         "title": "The Java Tutorials · About the Java Technology",
+         "url": "https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html",
+         "quote": "A .class file does not contain code that is native to your processor; it instead contains bytecodes — the machine language of the Java Virtual Machine"
+        },
+        {
+         "title": "The Java Tutorials · About the Java Technology",
+         "url": "https://docs.oracle.com/javase/tutorial/getStarted/intro/definition.html",
+         "quote": "Through the Java VM, the same application is capable of running on multiple platforms."
+        }
+       ]
+      },
+      {
+       "text": "**.NET**: se compila a **CIL** (lenguaje intermedio) más metadatos; al ejecutar, un compilador **JIT** lo traduce a código nativo. Se despliega en **ensamblados** (.exe o .dll), la unidad de despliegue, versión y reutilización.",
+       "refs": [
+        {
+         "title": "Microsoft Learn · Managed execution process",
+         "url": "https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process",
+         "quote": "Compiling translates your source code into common intermediate language (CIL) and generates the required metadata."
+        },
+        {
+         "title": "Microsoft Learn · Managed execution process",
+         "url": "https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process",
+         "quote": "At execution time, a just-in-time (JIT) compiler translates the CIL into native code."
+        },
+        {
+         "title": "Microsoft Learn · Assemblies in .NET",
+         "url": "https://learn.microsoft.com/en-us/dotnet/standard/assembly/",
+         "quote": "Assemblies are the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications."
+        }
+       ]
+      },
+      {
+       "text": "**Python** es **interpretado**: los fuentes se ejecutan directamente, sin crear antes un ejecutable (aunque internamente compila a bytecode).",
+       "refs": [
+        {
+         "title": "Python · Glossary",
+         "url": "https://docs.python.org/3/glossary.html",
+         "quote": "Python is an interpreted language, as opposed to a compiled one, though the distinction can be blurry because of the presence of the bytecode compiler."
+        },
+        {
+         "title": "Python · Glossary",
+         "url": "https://docs.python.org/3/glossary.html",
+         "quote": "This means that source files can be run directly without explicitly creating an executable which is then run."
+        }
+       ]
+      },
+      {
+       "text": "**TypeScript** es un superconjunto de JavaScript; su compilador (`tsc`) **transforma** el código en JavaScript normal quitando los tipos (por eso se le llama *transpilador*).",
+       "refs": [
+        {
+         "title": "TypeScript · TypeScript for the New Programmer",
+         "url": "https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html",
+         "quote": "TypeScript is a language that is a superset of JavaScript: JS syntax is therefore legal TS."
+        },
+        {
+         "title": "TypeScript · The Basics",
+         "url": "https://www.typescriptlang.org/docs/handbook/2/basic-types.html",
+         "quote": "after tsc compiles or transforms it into a plain JavaScript file."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
    "title": "Bucles: while y do-while",
    "points": [
     {

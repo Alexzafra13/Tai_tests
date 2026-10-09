@@ -33,6 +33,81 @@
        "quote": "The primary disadvantage of layered systems is that they add overhead and latency to the processing of data, reducing user-perceived performance"
       }
      ]
+    },
+    {
+     "text": "La forma más simple de cliente/servidor, con un servidor al que acceden directamente varios clientes, es la arquitectura de **2 niveles**.",
+     "refs": [
+      {
+       "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Architectural Patterns and Styles",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658117(v=pandp.10)",
+       "quote": "The client/server architectural style describes distributed systems that involve a separate client and server system, and a connecting network."
+      },
+      {
+       "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Architectural Patterns and Styles",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658117(v=pandp.10)",
+       "quote": "The simplest form of client/server system involves a server application that is accessed directly by multiple clients, referred to as a 2-Tier architectural style."
+      }
+     ]
+    },
+    {
+     "text": "**N niveles**: la aplicación se divide en **capas** lógicas y **niveles** (*tiers*) físicos, en máquinas separadas. La clásica de **3 niveles**: presentación, intermedio (opcional) y base de datos. En una arquitectura de capas **cerrada**, cada capa solo llama a la inmediatamente inferior.",
+     "refs": [
+      {
+       "title": "Azure Architecture Center · N-tier architecture style",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+       "quote": "An N-tier architecture divides an application into logical layers and physical tiers"
+      },
+      {
+       "title": "Azure Architecture Center · N-tier architecture style",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+       "quote": "A traditional three-tier application has a presentation tier, an optional middle tier, and a database tier."
+      },
+      {
+       "title": "Azure Architecture Center · N-tier architecture style",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+       "quote": "Tiers are physically separated and run on separate machines."
+      },
+      {
+       "title": "Azure Architecture Center · N-tier architecture style",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/n-tier",
+       "quote": "In a closed layer architecture, a layer can only call the next layer immediately down."
+      }
+     ]
+    },
+    {
+     "text": "**Escalado vertical**: más capacidad para un solo recurso (un servidor mayor); suele exigir parar el sistema. **Horizontal**: más instancias para repartir la carga.",
+     "refs": [
+      {
+       "title": "Azure Well-Architected Framework · Scaling and partitioning",
+       "url": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/scale-partition",
+       "quote": "Using vertical scaling, you can increase the capacity of a single resource, such as upgrading to a larger server or instance size."
+      },
+      {
+       "title": "Azure Well-Architected Framework · Scaling and partitioning",
+       "url": "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/scale-partition",
+       "quote": "Using horizontal scaling, you can add more instances or resources to distribute the workload across multiple servers."
+      },
+      {
+       "title": "Azure Architecture Center · Autoscaling",
+       "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/auto-scaling",
+       "quote": "Vertical scaling often requires making the system temporarily unavailable while it's being redeployed."
+      }
+     ]
+    },
+    {
+     "text": "**Cliente ligero** (*thin*) y **pesado** (*thick/fat*): en el ligero, la lógica de negocio está en el sistema del servidor; en el pesado, en el **propio cliente** (guía archivada de Microsoft, 2009).",
+     "refs": [
+      {
+       "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Rich Client Applications",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658087(v=pandp.10)",
+       "quote": "A typical thin rich client acts as the interface to a business system, and the business layer is part of that business system and is usually exposed as a service."
+      },
+      {
+       "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Rich Client Applications",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/msp-n-p/ee658087(v=pandp.10)",
+       "quote": "However, in a typical thick rich client, the business layer is located on the client itself."
+      }
+     ]
     }
    ]
   },

@@ -20,6 +20,58 @@
      ]
     },
     {
+     "text": "**Ventajas** de agrupar el código en objetos:",
+     "refs": [
+      {
+       "title": "The Java Tutorials · What Is an Object?",
+       "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+       "quote": "Bundling code into individual software objects provides a number of benefits, including:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Modularidad**: el código de cada objeto se escribe y mantiene por separado.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · What Is an Object?",
+         "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+         "quote": "Modularity: The source code for an object can be written and maintained independently of the source code for other objects."
+        }
+       ]
+      },
+      {
+       "text": "**Ocultación de información**: fuera solo se ven sus métodos, no su implementación.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · What Is an Object?",
+         "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+         "quote": "Information-hiding: By interacting only with an object's methods, the details of its internal implementation remain hidden from the outside world."
+        }
+       ]
+      },
+      {
+       "text": "**Reutilización** del código: se pueden usar objetos ya escritos por otros.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · What Is an Object?",
+         "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+         "quote": "Code re-use: If an object already exists (perhaps written by another software developer), you can use that object in your program."
+        }
+       ]
+      },
+      {
+       "text": "**Sustitución y depuración** más fáciles: un objeto que falla se reemplaza por otro.",
+       "refs": [
+        {
+         "title": "The Java Tutorials · What Is an Object?",
+         "url": "https://docs.oracle.com/javase/tutorial/java/concepts/object.html",
+         "quote": "Pluggability and debugging ease: If a particular object turns out to be problematic, you can simply remove it from your application and plug in a different object as its replacement."
+        }
+       ]
+      }
+     ]
+    },
+    {
      "text": "Una **clase** es el **plano** (blueprint) a partir del que se crean los objetos; cada objeto es una **instancia** de su clase, con **su propio estado** (sus propias variables de instancia). En Métrica v3: una clase describe un conjunto de objetos con **atributos** similares y **comportamiento común**; un objeto tiene **estado, comportamiento e identidad**.",
      "refs": [
       {

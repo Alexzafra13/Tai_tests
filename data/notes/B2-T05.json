@@ -75,6 +75,46 @@
        ]
       }
      ]
+    },
+    {
+     "text": "Componentes (ejemplo Oracle): el **tablespace** es un contenedor lógico de **segmentos** (tablas, índices) que físicamente se guarda en uno o varios **ficheros de datos**. El **diccionario de datos** es el conjunto de tablas y vistas de solo lectura con los **metadatos** de la base.",
+     "refs": [
+      {
+       "title": "Oracle Database 19c Concepts · Logical Storage Structures",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/logical-storage-structures.html",
+       "quote": "A tablespace is a logical storage container for segments."
+      },
+      {
+       "title": "Oracle Database 19c Concepts · Logical Storage Structures",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/logical-storage-structures.html",
+       "quote": "At the physical level, a tablespace stores data in one or more data files or temp files."
+      },
+      {
+       "title": "Oracle Database 19c Concepts · Logical Storage Structures",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/logical-storage-structures.html",
+       "quote": "The logical units of database space allocation are data blocks, extents, segments, and tablespaces."
+      },
+      {
+       "title": "Oracle Database 19c Concepts · Data Dictionary and Dynamic Performance Views",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/data-dictionary-and-dynamic-performance-views.html",
+       "quote": "its data dictionary, which is a read-only set of tables that provides administrative metadata about the database."
+      }
+     ]
+    },
+    {
+     "text": "Ejemplos: **PostgreSQL** es un SGBD **objeto-relacional** de código abierto; **Amazon Aurora** es un motor **relacional** gestionado compatible con MySQL y PostgreSQL.",
+     "refs": [
+      {
+       "title": "PostgreSQL · About",
+       "url": "https://www.postgresql.org/about/",
+       "quote": "PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language"
+      },
+      {
+       "title": "AWS · What is Amazon Aurora?",
+       "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html",
+       "quote": "Amazon Aurora (Aurora) is a fully managed relational database engine that's compatible with MySQL and PostgreSQL."
+      }
+     ]
     }
    ]
   },
@@ -173,6 +213,128 @@
        "title": "Microsoft Learn · RevoScaleR",
        "url": "https://learn.microsoft.com/es-es/sql/machine-learning/r/ref-r-revoscaler",
        "quote": "También admite la importación de datos, la transformación de datos, el resumen, la visualización y el análisis."
+      }
+     ]
+    },
+    {
+     "text": "El **Manifiesto de las bases de datos orientadas a objetos** (1989) fija las características **obligatorias**: objetos complejos, **identidad** de objeto, **encapsulación**, tipos o clases, **herencia**, sobrecarga con ligadura tardía, extensibilidad, completitud computacional, **persistencia**, gestión del almacenamiento secundario, **concurrencia**, recuperación y consultas *ad hoc*. Son **opcionales**: herencia múltiple, comprobación e inferencia de tipos, distribución, transacciones de diseño y versiones.",
+     "refs": [
+      {
+       "title": "The Object-Oriented Database System Manifesto (Atkinson et al., 1989)",
+       "url": "https://www.cs.cmu.edu/afs/cs/user/clamen/OODBMS/Manifesto/htManifesto/Manifesto.html",
+       "quote": "These are complex objects, object identity, encapsulation, types or classes, inheritance, overriding combined with late binding, extensibility, computational completeness, persistence, secondary storage management, concurrency, recovery and an ad hoc query facility."
+      },
+      {
+       "title": "The Object-Oriented Database System Manifesto (Atkinson et al., 1989)",
+       "url": "https://www.cs.cmu.edu/afs/cs/user/clamen/OODBMS/Manifesto/htManifesto/Manifesto.html",
+       "quote": "These are multiple inheritance, type checking and inferencing, distribution, design transactions and versions."
+      }
+     ]
+    },
+    {
+     "text": "**ZODB** es una base de datos de objetos **nativa para Python**, sin un lenguaje aparte para operar con ella.",
+     "refs": [
+      {
+       "title": "ZODB · a native object database for Python",
+       "url": "https://zodb.org/en/latest/",
+       "quote": "ZODB - a native object database for Python"
+      },
+      {
+       "title": "ZODB · a native object database for Python",
+       "url": "https://zodb.org/en/latest/",
+       "quote": "no separate language for database operations"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Bases de datos NoSQL",
+   "points": [
+    {
+     "text": "Las bases de datos **no relacionales** se llaman **NoSQL**. Suelen seguir **BASE** (disponibilidad básica, estado blando, consistencia eventual) y están limitadas por el **teorema CAP** (consistencia, disponibilidad, tolerancia a particiones).",
+     "refs": [
+      {
+       "title": "NIST SP 1500-1r2 · Big Data Interoperability Framework: Definitions",
+       "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1500-1r2.pdf",
+       "quote": "The new non-relational model databases are typically referred to as NoSQL systems."
+      },
+      {
+       "title": "NIST SP 1500-1r2 · Big Data Interoperability Framework: Definitions",
+       "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1500-1r2.pdf",
+       "quote": "Basic availability, soft-state, and eventual consistency (BASE); and the Consistency, Availability, and Partition (CAP) Tolerance theorem."
+      }
+     ]
+    },
+    {
+     "text": "Tipos:",
+     "refs": [
+      {
+       "title": "NIST SP 1500-1r2 · Big Data Interoperability Framework: Definitions",
+       "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1500-1r2.pdf",
+       "quote": "One storage paradigm is a key-value structure, with a record consisting of a key and a string of data together in the value."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Clave-valor**: pares clave-valor; la clave es el identificador único. Ejemplo: **Redis**.",
+       "refs": [
+        {
+         "title": "AWS · What is NoSQL?",
+         "url": "https://aws.amazon.com/nosql/",
+         "quote": "A key-value database stores data as a collection of key-value pairs in which a key serves as a unique identifier."
+        },
+        {
+         "title": "Redis · What is a Key-Value Database?",
+         "url": "https://redis.io/nosql/key-value-databases/",
+         "quote": "consider storing user profile information in a key-value store, such as Redis."
+        }
+       ]
+      },
+      {
+       "text": "**Documentales**: documentos tipo **JSON** que se pueden indexar y buscar. Ejemplo: **MongoDB**.",
+       "refs": [
+        {
+         "title": "NIST SP 1500-1r2 · Big Data Interoperability Framework: Definitions",
+         "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1500-1r2.pdf",
+         "quote": "A variant on this is the document store, where the document in the value field can be indexed and searched, not just the key."
+        },
+        {
+         "title": "MongoDB Manual · Introduction",
+         "url": "https://www.mongodb.com/docs/manual/introduction/",
+         "quote": "It stores data in flexible, JSON-like documents"
+        }
+       ]
+      },
+      {
+       "text": "**Columnares** (*wide column*): agrupan los datos por **familias de columnas**; cada fila puede tener columnas distintas dentro de una familia. Ejemplo: **Cassandra**.",
+       "refs": [
+        {
+         "title": "NIST SP 1500-6r2 · Big Data Interoperability Framework: Reference Architecture",
+         "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.1500-6r2.pdf",
+         "quote": "That is called the column family. In those implementations, rows have a fixed set of column families but within a column family, each row can have a variable set of columns."
+        },
+        {
+         "title": "Apache Cassandra · Architecture overview",
+         "url": "https://cassandra.apache.org/doc/latest/cassandra/architecture/overview.html",
+         "quote": "It implements a partitioned wide-column storage model with eventually consistent semantics."
+        }
+       ]
+      },
+      {
+       "text": "**De grafos**: **nodos** para las entidades y **aristas** para las relaciones. Ejemplo: **Neo4j**.",
+       "refs": [
+        {
+         "title": "AWS · What is NoSQL?",
+         "url": "https://aws.amazon.com/nosql/",
+         "quote": "They use nodes to store data entities and edges to store relationships between entities."
+        },
+        {
+         "title": "Neo4j · What is a graph database",
+         "url": "https://neo4j.com/docs/getting-started/graph-database/",
+         "quote": "stores data as nodes"
+        }
+       ]
       }
      ]
     }

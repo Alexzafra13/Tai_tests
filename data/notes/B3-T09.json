@@ -293,6 +293,61 @@
        "quote": "How users can get started with the project"
       }
      ]
+    },
+    {
+     "text": "**git tag**: crea, lista, borra o verifica **etiquetas**; las **anotadas** (`-a`) son para versiones publicadas y guardan fecha, autor y mensaje; las **ligeras**, para marcas privadas o temporales.",
+     "refs": [
+      {
+       "title": "Git · git-tag",
+       "url": "https://git-scm.com/docs/git-tag",
+       "quote": "Create, list, delete or verify tags"
+      },
+      {
+       "title": "Git · git-tag",
+       "url": "https://git-scm.com/docs/git-tag",
+       "quote": "Annotated tags are meant for release while lightweight tags are meant for private or temporary object labels."
+      },
+      {
+       "title": "Git · git-tag",
+       "url": "https://git-scm.com/docs/git-tag",
+       "quote": "they contain a creation date, the tagger name and e-mail, a tagging message, and an optional cryptographic signature."
+      }
+     ]
+    },
+    {
+     "text": "**git push**: actualiza ramas, etiquetas u otras referencias en el repositorio **remoto** con lo del local; con `--tags` envía todas las etiquetas.",
+     "refs": [
+      {
+       "title": "Git · git-push",
+       "url": "https://git-scm.com/docs/git-push",
+       "quote": "Updates one or more branches, tags, or other references in one or more remote repositories from your local repository"
+      },
+      {
+       "title": "Git · git-push",
+       "url": "https://git-scm.com/docs/git-push",
+       "quote": "All refs under refs/tags are pushed, in addition to refspecs explicitly listed on the command line."
+      }
+     ]
+    },
+    {
+     "text": "**.gitignore**: patrones (uno por línea) de ficheros **sin seguimiento** que Git debe ignorar; no afecta a los que ya tienen seguimiento.",
+     "refs": [
+      {
+       "title": "Git · gitignore",
+       "url": "https://git-scm.com/docs/gitignore",
+       "quote": "A gitignore file specifies intentionally untracked files that Git should ignore."
+      },
+      {
+       "title": "Git · gitignore",
+       "url": "https://git-scm.com/docs/gitignore",
+       "quote": "Files already tracked by Git are not affected"
+      },
+      {
+       "title": "Git · gitignore",
+       "url": "https://git-scm.com/docs/gitignore",
+       "quote": "Each line in a gitignore file specifies a pattern."
+      }
+     ]
     }
    ]
   },
@@ -491,6 +546,138 @@
        "title": "Jenkins · Pipeline",
        "url": "https://www.jenkins.io/doc/book/pipeline/",
        "quote": "A continuous delivery (CD) pipeline is an automated expression of your process for getting software from version control right through to your users and customers."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Documentación, generación de código y plataformas colaborativas",
+   "points": [
+    {
+     "text": "**Generación de documentación**: **javadoc** genera páginas **HTML** de la API a partir de las declaraciones y los **comentarios de documentación** del código Java. En Python, el **docstring** es la cadena literal que abre un módulo, función, clase o método (entre triples comillas dobles) y queda en el atributo `__doc__`.",
+     "refs": [
+      {
+       "title": "Java SE 21 · javadoc command",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/man/javadoc.html",
+       "quote": "javadoc - generate HTML pages of API documentation from Java source files"
+      },
+      {
+       "title": "Java SE 21 · javadoc command",
+       "url": "https://docs.oracle.com/en/java/javase/21/docs/specs/man/javadoc.html",
+       "quote": "The javadoc tool parses the declarations and documentation comments in a set of Java source files and produces corresponding HTML pages"
+      },
+      {
+       "title": "PEP 257 · Docstring Conventions",
+       "url": "https://peps.python.org/pep-0257/",
+       "quote": "A docstring is a string literal that occurs as the first statement in a module, function, class, or method definition."
+      },
+      {
+       "title": "PEP 257 · Docstring Conventions",
+       "url": "https://peps.python.org/pep-0257/",
+       "quote": "Such a docstring becomes the __doc__ special attribute of that object."
+      }
+     ]
+    },
+    {
+     "text": "**Generación de código**: Métrica v3 (proceso CSI) genera el código de los componentes con **herramientas de generación de código**, respetando los estándares de la organización. Ejemplo: las **plantillas T4** de Visual Studio generan código a partir de un modelo y lo regeneran si este cambia.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "En este proceso se genera el código de los componentes del Sistema de Información"
+      },
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "Para generar el código fuente se tienen en cuenta los estándares de nomenclatura, codificación y calidad utilizados por la organización y recogidos en el catálogo de normas."
+      },
+      {
+       "title": "Microsoft Learn · Code Generation and T4 Text Templates",
+       "url": "https://learn.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates",
+       "quote": "In Visual Studio, a T4 text template is a mixture of text blocks and control logic that can generate a text file."
+      },
+      {
+       "title": "Microsoft Learn · Code Generation and T4 Text Templates",
+       "url": "https://learn.microsoft.com/en-us/visualstudio/modeling/code-generation-and-t4-text-templates",
+       "quote": "it's easy to regenerate the code to fit the new model."
+      }
+     ]
+    },
+    {
+     "text": "**Plataformas colaborativas** sobre Git:",
+     "refs": [
+      {
+       "title": "GitHub Docs · About GitHub and Git",
+       "url": "https://docs.github.com/en/get-started/start-your-journey/about-github-and-git",
+       "quote": "Git is a version control system that tracks changes to files."
+      }
+     ],
+     "items": [
+      {
+       "text": "**GitHub**: cubre todo el proceso de desarrollo; su elemento básico es el **repositorio**, y los cambios se proponen con **pull requests** (fusionar una rama en otra).",
+       "refs": [
+        {
+         "title": "GitHub Docs · About GitHub and Git",
+         "url": "https://docs.github.com/en/get-started/start-your-journey/about-github-and-git",
+         "quote": "GitHub is a platform that supports your entire software development process, from planning work to deploying and operating software."
+        },
+        {
+         "title": "GitHub Docs · About repositories",
+         "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+         "quote": "A repository is the most basic element of GitHub."
+        },
+        {
+         "title": "GitHub Docs · About repositories",
+         "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories",
+         "quote": "A request to merge changes from one branch into another."
+        }
+       ]
+      },
+      {
+       "text": "**GitLab**: plataforma **DevSecOps**; organiza el trabajo en **proyectos**, revisa con **merge requests** y define la CI/CD en el fichero **.gitlab-ci.yml**.",
+       "refs": [
+        {
+         "title": "GitLab Docs · The DevSecOps platform",
+         "url": "https://docs.gitlab.com/devsecops/",
+         "quote": "GitLab: The DevSecOps platform"
+        },
+        {
+         "title": "GitLab Docs · Merge requests",
+         "url": "https://docs.gitlab.com/user/project/merge_requests/",
+         "quote": "Merge requests provide a central location for your team to review code, have discussions,"
+        },
+        {
+         "title": "GitLab Docs · CI/CD",
+         "url": "https://docs.gitlab.com/ci/",
+         "quote": "To use GitLab CI/CD, add a .gitlab-ci.yml file to the root of your project."
+        }
+       ]
+      },
+      {
+       "text": "**Azure DevOps** (Microsoft): **Repos** (Git o TFVC), **Pipelines** (CI/CD) y **Boards** (planificación ágil, Kanban).",
+       "refs": [
+        {
+         "title": "Microsoft Learn · What is Azure DevOps?",
+         "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops",
+         "quote": "Azure DevOps is a cloud-based platform that provides integrated tools for software development teams."
+        },
+        {
+         "title": "Microsoft Learn · What is Azure DevOps?",
+         "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops",
+         "quote": "Host unlimited private Git repositories or use Team Foundation Version Control (TFVC) for source code management."
+        },
+        {
+         "title": "Microsoft Learn · What is Azure DevOps?",
+         "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops",
+         "quote": "Build, test, and deploy applications with CI/CD pipelines that work with any language, platform, and cloud."
+        },
+        {
+         "title": "Microsoft Learn · What is Azure DevOps?",
+         "url": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops",
+         "quote": "Plan and track work using Agile tools, Kanban boards, backlogs, and dashboards."
+        }
+       ]
       }
      ]
     }
