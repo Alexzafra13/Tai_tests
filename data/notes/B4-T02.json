@@ -1,0 +1,584 @@
+{
+ "topic": "B4-T02",
+ "sections": [
+  {
+   "title": "Administración de bases de datos",
+   "points": [
+    {
+     "text": "**Oracle**: la vista `V$VERSION` muestra la **versión de la base de datos** (`SELECT * FROM V$VERSION`).",
+     "refs": [
+      {
+       "title": "Oracle Database 19c Reference · V$VERSION",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/V-VERSION.html",
+       "quote": "V$VERSION displays the version number of Oracle Database."
+      }
+     ]
+    },
+    {
+     "text": "**Oracle**: las copias de seguridad se hacen con **RMAN** (Recovery Manager), el cliente de Oracle Database para copia y recuperación.",
+     "refs": [
+      {
+       "title": "Oracle Database 19c · Getting Started with RMAN",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/getting-started-rman.html",
+       "quote": "Recovery Manager (RMAN) is an Oracle Database client that performs backup and recovery tasks on your databases and automates administration of your backup strategies."
+      }
+     ]
+    },
+    {
+     "text": "**MySQL**: las cuentas de usuario están en la tabla `mysql.user`; las columnas `Host` y `User` de cada fila determinan a qué conexiones (usuario y host de origen) se aplica, así que `SELECT user,host FROM mysql.user` lista los usuarios y desde qué host pueden conectarse.",
+     "refs": [
+      {
+       "title": "MySQL 8.0 Reference Manual · Grant Tables",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/grant-tables.html",
+       "quote": "user : User accounts, static global privileges, and other nonprivilege columns."
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · Grant Tables",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/grant-tables.html",
+       "quote": "a user table row with Host and User values of 'h1.example.net' and 'bob' applies to authenticating"
+      },
+      {
+       "title": "MySQL 8.0 Reference Manual · Grant Tables",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/grant-tables.html",
+       "quote": "The user table scope columns determine whether to reject or permit incoming connections."
+      }
+     ]
+    },
+    {
+     "text": "**MySQL** escucha por defecto en el **puerto TCP 3306** (variable `port`): es el que se abre en el cortafuegos para conectar por TCP/IP.",
+     "refs": [
+      {
+       "title": "MySQL 8.0 Reference Manual · Server System Variables",
+       "url": "https://docs.oracle.com/cd/E17952_01/mysql-8.0-en/server-system-variables.html",
+       "quote": "Type Integer Default Value 3306 Minimum Value 0 Maximum Value 65535 The number of the port on which the server listens for TCP/IP connections."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sistemas de almacenamiento y su virtualización",
+   "points": [
+    {
+     "text": "**NAS** (*Network Attached Storage*): dispositivo conectado a la red que da **acceso a ficheros** a los clientes, con protocolos como **NFS** y **SMB**.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · Network Attached Storage",
+       "url": "https://www.snia.org/education/online-dictionary/term/network-attached-storage",
+       "quote": "A storage device that connects to a network and provides file access services to clients ."
+      },
+      {
+       "title": "SNIA Dictionary · Network Attached Storage",
+       "url": "https://www.snia.org/education/online-dictionary/term/network-attached-storage",
+       "quote": "File services are provided to clients using file access protocols such as NFS and SMB ."
+      }
+     ]
+    },
+    {
+     "text": "**SAN** (*Storage Area Network*): **red** cuyo fin principal es transferir datos entre ordenadores y dispositivos de almacenamiento; se asocia normalmente a servicios **de bloques**.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · Storage Area Network",
+       "url": "https://www.snia.org/education/online-dictionary/term/storage-area-network",
+       "quote": "A network whose primary purpose is the transfer of data between computer systems and storage devices and among storage devices."
+      },
+      {
+       "title": "SNIA Dictionary · Storage Area Network",
+       "url": "https://www.snia.org/education/online-dictionary/term/storage-area-network",
+       "quote": "The term SAN is usually (but not necessarily) identified with block services ."
+      }
+     ]
+    },
+    {
+     "text": "La **virtualización del almacenamiento** es aplicar la virtualización a servicios o dispositivos de almacenamiento.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · storage virtualization",
+       "url": "https://www.snia.org/education/online-dictionary/term/storage-virtualization",
+       "quote": "The application of virtualization to storage services or devices."
+      }
+     ]
+    },
+    {
+     "text": "**Thin provisioning**: la capacidad física se asigna **a medida que se escriben datos**, en lugar de reservarla entera al crear el volumen. En LVM, los bloques de un volumen *thin* salen de un *thin pool* bajo demanda.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · thin provisioning",
+       "url": "https://www.snia.org/education/online-dictionary/term/thin-provisioning",
+       "quote": "A technology that allocates the physical capacity of a volume or file system as applications write data."
+      },
+      {
+       "title": "SNIA Dictionary · thin provisioning",
+       "url": "https://www.snia.org/education/online-dictionary/term/thin-provisioning",
+       "quote": "Thin provisioning is an alternative to preallocating all the physical capacity at the time of provisioning ."
+      },
+      {
+       "title": "lvmthin(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/lvmthin.7.html",
+       "quote": "As a thin LV is written, blocks are allocated from a thin pool to hold the data."
+      }
+     ]
+    },
+    {
+     "text": "**Niveles RAID**:",
+     "refs": [
+      {
+       "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+       "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+       "quote": "RAID uses techniques such as disk striping (RAID Level 0), disk mirroring (RAID Level 1), and disk striping with parity (RAID Levels 4, 5 and 6)"
+      }
+     ],
+     "items": [
+      {
+       "text": "**RAID 0** (*striping*): reparte los datos en franjas entre los discos; rendimiento, **sin protección**.",
+       "refs": [
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "RAID level 0, often called striping, is a performance-oriented striped data mapping technique."
+        },
+        {
+         "title": "IBM Developer · Configuring RAID on AIX",
+         "url": "https://developer.ibm.com/articles/au-aix-raid/",
+         "quote": "RAID 0 2 None Data striping without redundancy"
+        }
+       ]
+      },
+      {
+       "text": "**RAID 1** (espejo): escribe los mismos datos en cada disco; funciona con **dos o más** discos y su capacidad es la del disco más pequeño.",
+       "refs": [
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "RAID level 1, or mirroring, provides redundancy by writing identical data to each member disk of the array"
+        },
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "Level 1 operates with two or more disks"
+        },
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "The storage capacity of the level 1 array is equal to the capacity of the smallest mirrored hard disk"
+        }
+       ]
+      },
+      {
+       "text": "**RAID 4**: paridad concentrada en **un único disco** dedicado, que es un cuello de botella en las escrituras.",
+       "refs": [
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "Level 4 uses parity concentrated on a single disk drive to protect data."
+        },
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "Since the dedicated parity disk represents an inherent bottleneck on all write transactions to the RAID array"
+        }
+       ]
+      },
+      {
+       "text": "**RAID 5**: **paridad distribuida** entre todos los discos (elimina el cuello de botella del 4); mínimo **3 discos**; capacidad = (n − 1) × disco más pequeño.",
+       "refs": [
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "By distributing parity across all the member disk drives of an array, RAID level 5 eliminates the write bottleneck inherent in level 4."
+        },
+        {
+         "title": "IBM Developer · Configuring RAID on AIX",
+         "url": "https://developer.ibm.com/articles/au-aix-raid/",
+         "quote": "RAID 5 3 Single drive Failure Block-level data striping with distributed parity"
+        },
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "The storage capacity of hardware RAID level 4 is equal to the capacity of the smallest member partition multiplied by the number of partitions minus one."
+        },
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "The storage capacity of RAID level 5 is calculated the same way as with level 4."
+        }
+       ]
+      },
+      {
+       "text": "**RAID 6**: como el 5 con **doble paridad**; aguanta la pérdida de **dos discos** y la capacidad resta dos discos: con 5 discos de 6 TB, (5 − 2) × 6 = **18 TB**.",
+       "refs": [
+        {
+         "title": "IBM Developer · Configuring RAID on AIX",
+         "url": "https://developer.ibm.com/articles/au-aix-raid/",
+         "quote": "Same as RAID 5 with double distributed parity across an extra drive"
+        },
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "Level 6 uses a complex parity scheme to be able to recover from the loss of any two drives in the array."
+        },
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "you must subtract two devices instead of one from the device count for the extra parity storage space."
+        }
+       ]
+      },
+      {
+       "text": "**RAID 10** (1+0): combina el reparto del RAID 0 con el espejo del RAID 1; requiere **al menos 4 discos**. (En Linux —RAID por software de RHEL— el nivel 10 admite también configuraciones de 3 discos.)",
+       "refs": [
+        {
+         "title": "IBM Developer · Configuring RAID on AIX",
+         "url": "https://developer.ibm.com/articles/au-aix-raid/",
+         "quote": "RAID 10 4 One disk per mirrored stripe (not same mirror) Combination of RAID 0 (data striping) and RAID 1 (mirroring)"
+        },
+        {
+         "title": "Red Hat Enterprise Linux 9 · Managing RAID",
+         "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_storage_devices/managing-raid_managing-storage-devices",
+         "quote": "With level 10, it is possible, for example, to create a 3-drive array"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**LVM** (*Logical Volume Manager*) crea dispositivos de bloques **virtuales** a partir de los físicos: es gestión de volúmenes, no un software de máquinas virtuales.",
+     "refs": [
+      {
+       "title": "lvm(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/lvm.8.html",
+       "quote": "The Logical Volume Manager (LVM) provides tools to create virtual block devices from physical devices."
+      }
+     ]
+    },
+    {
+     "text": "Para ampliar un sistema de ficheros **XFS** sobre LVM con espacio libre en el grupo de volúmenes: se **extiende el volumen lógico** (`lvextend`, con `-r` amplía a la vez el sistema de ficheros) y se hace crecer el XFS **montado** con `xfs_growfs`.",
+     "refs": [
+      {
+       "title": "lvextend(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/lvextend.8.html",
+       "quote": "lvextend extends the size of an LV."
+      },
+      {
+       "title": "lvextend(8) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man8/lvextend.8.html",
+       "quote": "Resize underlying filesystem together with the LV using fsadm(8) ."
+      },
+      {
+       "title": "Red Hat Enterprise Linux 9 · Increasing the size of an XFS file system",
+       "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/managing_file_systems/increasing-the-size-of-an-xfs-file-system_managing-file-systems",
+       "quote": "While the XFS file system is mounted, use the xfs_growfs utility to increase its size:"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Backup y recuperación",
+   "points": [
+    {
+     "text": "Una **copia de seguridad** es un conjunto de datos guardado en soportes no volátiles para recuperarlo si se pierde el original.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · backup",
+       "url": "https://www.snia.org/education/online-dictionary/term/backup",
+       "quote": "A collection of data stored on (usually removable) non-volatile storage media for purposes of recovery in case the original copy of data is lost or becomes inaccessible"
+      }
+     ]
+    },
+    {
+     "text": "Tipos de copia: **completa**, **diferencial** e **incremental**; las dos últimas parten siempre de una completa.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · full backup",
+       "url": "https://www.snia.org/education/online-dictionary/term/full-backup",
+       "quote": "A full backup is the basis from which incremental backups are taken."
+      },
+      {
+       "title": "Microsoft Learn · Copias de seguridad diferenciales (SQL Server)",
+       "url": "https://learn.microsoft.com/es-es/sql/relational-databases/backup-restore/differential-backups-sql-server",
+       "quote": "Las copias de seguridad completas, a excepción de las de solo copia, pueden servir como base para una serie de copias de seguridad diferenciales"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Completa**: copia **todos** los datos del conjunto, se hayan modificado o no; es la base de las demás.",
+       "refs": [
+        {
+         "title": "SNIA Dictionary · full backup",
+         "url": "https://www.snia.org/education/online-dictionary/term/full-backup",
+         "quote": "A backup in which all of a defined set of data objects are copied, regardless of whether they have been modified since the last backup."
+        },
+        {
+         "title": "SNIA Dictionary · full backup",
+         "url": "https://www.snia.org/education/online-dictionary/term/full-backup",
+         "quote": "A full backup is the basis from which incremental backups are taken."
+        }
+       ]
+      },
+      {
+       "text": "**Diferencial**: copia solo lo que ha cambiado **desde la última copia completa**.",
+       "refs": [
+        {
+         "title": "Microsoft Learn · Copias de seguridad diferenciales (SQL Server)",
+         "url": "https://learn.microsoft.com/es-es/sql/relational-databases/backup-restore/differential-backups-sql-server",
+         "quote": "Una copia de seguridad diferencial captura solo los datos que han cambiado después de la última copia de seguridad completa."
+        },
+        {
+         "title": "SNIA Dictionary · cumulative incremental backup",
+         "url": "https://www.snia.org/education/online-dictionary/term/cumulative-incremental-backup",
+         "quote": "A backup in which all data objects modified since the last full backup are retained as the backup."
+        }
+       ]
+      },
+      {
+       "text": "**Incremental**: copia lo modificado **desde la última copia, sea completa o incremental**. Para restaurar hacen falta la última completa y **todas** las incrementales posteriores.",
+       "refs": [
+        {
+         "title": "SNIA Dictionary · differential incremental backup",
+         "url": "https://www.snia.org/education/online-dictionary/term/differential-incremental-backup",
+         "quote": "A backup in which data objects modified since the last full backup or incremental backup are copied."
+        },
+        {
+         "title": "SNIA Dictionary · differential incremental backup",
+         "url": "https://www.snia.org/education/online-dictionary/term/differential-incremental-backup",
+         "quote": "To restore data when differential incremental backups are in use, the newest full backup and all differential backups newer than the newest full backup are required."
+        }
+       ]
+      },
+      {
+       "text": "Ojo con la terminología: SNIA llama *cumulative incremental* a la que copia todo lo cambiado desde la última completa (la diferencial de arriba) y *differential incremental* a la incremental. Oracle RMAN usa los mismos nombres, tomando como base la última copia de **nivel 0**.",
+       "refs": [
+        {
+         "title": "SNIA Dictionary · cumulative incremental backup",
+         "url": "https://www.snia.org/education/online-dictionary/term/cumulative-incremental-backup",
+         "quote": "A backup in which all data objects modified since the last full backup are retained as the backup."
+        },
+        {
+         "title": "SNIA Dictionary · incremental backup",
+         "url": "https://www.snia.org/education/online-dictionary/term/incremental-backup",
+         "quote": "Incremental backup is a collective term for cumulative incremental backups and differential incremental backups ."
+        },
+        {
+         "title": "Oracle Database 19c · Getting Started with RMAN",
+         "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/bradv/getting-started-rman.html",
+         "quote": "A level 1 backup can be a cumulative incremental backup , which includes all blocks changed since the most recent level 0 backup, or a differential incremental backup , which includes only blocks changed since the most recent incremental backup."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Un **snapshot** es una copia de un conjunto de datos **en un momento dado**. Una copia de seguridad, en cambio, se guarda aparte del original (en otros soportes y lugares, como pide la regla 3-2-1) para poder recuperarlo si se pierde.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · backup",
+       "url": "https://www.snia.org/education/online-dictionary/term/backup",
+       "quote": "A collection of data stored on (usually removable) non-volatile storage media for purposes of recovery in case the original copy of data is lost or becomes inaccessible"
+      },
+      {
+       "title": "SNIA Dictionary · snapshot",
+       "url": "https://www.snia.org/education/online-dictionary/term/snapshot",
+       "quote": "A point in time copy of a defined collection of data ."
+      }
+     ]
+    },
+    {
+     "text": "La **deduplicación** sustituye las copias repetidas de datos por referencias a una copia compartida, para **ahorrar espacio** y datos transferidos.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · data deduplication",
+       "url": "https://www.snia.org/education/online-dictionary/term/data-deduplication",
+       "quote": "The replacement of multiple copies of data, at variable levels of granularity, with references to a shared copy in order to save storage space and/or data transferred."
+      },
+      {
+       "title": "Veeam Backup & Replication · Data Compression and Deduplication",
+       "url": "https://helpcenter.veeam.com/docs/vbr/userguide/compression_deduplication.html",
+       "quote": "Data compression and deduplication let you decrease traffic going over the network and disk space required to store backup files"
+      }
+     ]
+    },
+    {
+     "text": "**Regla 3-2-1**: al menos **3 copias** de los datos (el original y dos copias), en **2 tipos de soporte** distintos y **1 copia fuera** de la sede.",
+     "refs": [
+      {
+       "title": "Veeam Backup & Replication · Backup Copy",
+       "url": "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy.html",
+       "quote": "3: You must have at least three copies of your data: the original production data and two backups."
+      },
+      {
+       "title": "Veeam Backup & Replication · Backup Copy",
+       "url": "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy.html",
+       "quote": "2: You must use at least two different types of media to store the copies of your data, for example, local disk and cloud."
+      },
+      {
+       "title": "Veeam Backup & Replication · Backup Copy",
+       "url": "https://helpcenter.veeam.com/docs/vbr/userguide/backup_copy.html",
+       "quote": "1: You must keep at least one backup off-site, for example, in the cloud or in a remote site."
+      }
+     ]
+    },
+    {
+     "text": "Copia comprimida de un directorio con `tar`: `tar -czf copia.tar.gz /ruta/` (`-c` crea el archivo, `-z` lo pasa por gzip, `-f` indica el fichero).",
+     "refs": [
+      {
+       "title": "tar(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tar.1.html",
+       "quote": "-c , --create Create a new archive."
+      },
+      {
+       "title": "tar(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tar.1.html",
+       "quote": "-z , --gzip , --gunzip , --ungzip Filter the archive through gzip (1)."
+      },
+      {
+       "title": "tar(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tar.1.html",
+       "quote": "-f , --file = ARCHIVE Use archive file or device ARCHIVE ."
+      }
+     ]
+    },
+    {
+     "text": "Si un equipo Windows está cifrado con **BitLocker** y no se desbloquea por su método normal, el acceso se recupera con la **clave (contraseña) de recuperación de BitLocker**, un número de 48 dígitos.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Introducción a la recuperación de BitLocker",
+       "url": "https://learn.microsoft.com/es-es/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+       "quote": "La recuperación de BitLocker es el proceso por el que se puede restaurar el acceso a una unidad protegida por BitLocker si la unidad no se desbloquea mediante su mecanismo de desbloqueo predeterminado."
+      },
+      {
+       "title": "Microsoft Learn · Introducción a la recuperación de BitLocker",
+       "url": "https://learn.microsoft.com/es-es/windows/security/operating-system-security/data-protection/bitlocker/recovery-overview",
+       "quote": "Contraseña de recuperación : número de 48 dígitos que se usa para desbloquear un volumen cuando está en modo de recuperación."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Virtualización de sistemas y de puestos de usuario",
+   "points": [
+    {
+     "text": "La **virtualización** crea varios entornos virtuales desde **una sola máquina física**; varios sistemas operativos comparten el mismo hardware, lo que **mejora el uso de los recursos** y reduce costes de mantenimiento físico.",
+     "refs": [
+      {
+       "title": "Red Hat · ¿Qué es la virtualización?",
+       "url": "https://www.redhat.com/es/topics/virtualization/what-is-virtualization",
+       "quote": "La virtualización es una tecnología que permite crear distintos entornos virtuales simulados desde una sola máquina física."
+      },
+      {
+       "title": "Red Hat · ¿Qué es la virtualización?",
+       "url": "https://www.redhat.com/es/topics/virtualization/what-is-virtualization",
+       "quote": "Como varios sistemas operativos pueden compartir el mismo hardware físico, la virtualización mejora el uso de los recursos, reduce los costos asociados al mantenimiento físico y aumenta la seguridad a través de sistemas aislados."
+      }
+     ]
+    },
+    {
+     "text": "El **hipervisor** reparte los recursos físicos (CPU, memoria, almacenamiento) entre las máquinas virtuales. **Tipo 1** (*bare metal*): se ejecuta directamente sobre el hardware. **Tipo 2** (alojado): se ejecuta sobre un sistema operativo convencional.",
+     "refs": [
+      {
+       "title": "Red Hat · ¿Qué es la virtualización?",
+       "url": "https://www.redhat.com/es/topics/virtualization/what-is-virtualization",
+       "quote": "Toma los recursos físicos (como la CPU, la memoria y el almacenamiento) del hardware y los asigna a varias máquinas virtuales a la vez"
+      },
+      {
+       "title": "Red Hat · ¿Qué es la virtualización?",
+       "url": "https://www.redhat.com/es/topics/virtualization/what-is-virtualization",
+       "quote": "Tipo 1: También conocido como hipervisor original o de servidor dedicado (bare metal), se ejecuta directamente en el hardware del host"
+      },
+      {
+       "title": "Red Hat · ¿Qué es la virtualización?",
+       "url": "https://www.redhat.com/es/topics/virtualization/what-is-virtualization",
+       "quote": "Tipo 2: También conocido como hipervisor alojado, se ejecuta en un sistema operativo convencional como una capa de software o una aplicación."
+      }
+     ]
+    },
+    {
+     "text": "Software de virtualización: **Hyper-V** (Microsoft, hipervisor de tipo 1 integrado en Windows Server y Windows) y **VirtualBox** (Oracle, multiplataforma), entre otros.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Virtualización con Hyper-V",
+       "url": "https://learn.microsoft.com/es-es/windows-server/virtualization/hyper-v/overview",
+       "quote": "Hyper-V es la tecnología de hipervisor de nivel empresarial de Microsoft integrada en Windows Server y Windows."
+      },
+      {
+       "title": "Microsoft Learn · Virtualización con Hyper-V",
+       "url": "https://learn.microsoft.com/es-es/windows-server/virtualization/hyper-v/overview",
+       "quote": "Como hipervisor de tipo 1, Hyper-V se ejecuta directamente en el hardware informático"
+      },
+      {
+       "title": "Oracle VM VirtualBox · User Manual, First Steps",
+       "url": "https://www.virtualbox.org/manual/ch01.html",
+       "quote": "Oracle VM VirtualBox is a cross-platform virtualization application."
+      }
+     ]
+    },
+    {
+     "text": "**Virtualización del puesto de usuario (escritorio)**: los escritorios se despliegan y administran de forma centralizada. Con servicios como Azure Virtual Desktop se ofrecen escritorios completos o aplicaciones sueltas, a los que el usuario se conecta **desde cualquier dispositivo** con una aplicación o un navegador (el escritorio se ejecuta en la nube, no en el equipo del usuario).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · ¿Qué es Azure Virtual Desktop?",
+       "url": "https://learn.microsoft.com/es-es/azure/virtual-desktop/overview",
+       "quote": "Azure Virtual Desktop es un servicio de escritorio y de virtualización de aplicaciones que se ejecuta en Azure."
+      },
+      {
+       "title": "Red Hat · ¿Qué es la virtualización?",
+       "url": "https://www.redhat.com/es/topics/virtualization/what-is-virtualization",
+       "quote": "La virtualización de escritorios permite que un administrador central (o una herramienta de administración automatizada) implemente entornos de escritorios en varias máquinas físicas de forma simultánea."
+      },
+      {
+       "title": "Microsoft Learn · ¿Qué es Azure Virtual Desktop?",
+       "url": "https://learn.microsoft.com/es-es/azure/virtual-desktop/overview",
+       "quote": "Ofrezca escritorios completos o use RemoteApp para entregar aplicaciones individuales."
+      },
+      {
+       "title": "Microsoft Learn · ¿Qué es Azure Virtual Desktop?",
+       "url": "https://learn.microsoft.com/es-es/azure/virtual-desktop/overview",
+       "quote": "Conéctate desde cualquier dispositivo a través de una aplicación nativa en el dispositivo o mediante un explorador web"
+      }
+     ]
+    },
+    {
+     "text": "**Infraestructura convergente** (CI): agrupa recursos de **cómputo, almacenamiento y red** con herramientas de gestión comunes o recursos físicos compartidos. Es un paquete que **diseña e integra un proveedor** con opciones **preconfiguradas**: **hardware preintegrado** con software para gestionarlo como **un sistema unificado** (la misma tecnología de siempre, más fácil de implantar). La **hiperconvergente** (HCI) los consolida en un sistema unificado **definido por software** (hipervisor, almacenamiento y redes definidos por software) gestionado desde una sola interfaz.",
+     "refs": [
+      {
+       "title": "SNIA Dictionary · converged infrastructure",
+       "url": "https://www.snia.org/education/online-dictionary/term/converged-infrastructure",
+       "quote": "The pooling of compute, storage, and networking resources using either common management tools or common (shared) physical resources."
+      },
+      {
+       "title": "Nutanix · Infraestructura convergente frente a hiperconvergente",
+       "url": "https://www.nutanix.com/es/info/converged-vs-hyperconverged-infrastructure",
+       "quote": "Con la infraestructura convergente, los sistemas los diseña e integra un proveedor, y se presentan en un conjunto discreto de opciones preconfiguradas."
+      },
+      {
+       "title": "Nutanix · Infraestructura convergente frente a hiperconvergente",
+       "url": "https://www.nutanix.com/es/info/converged-vs-hyperconverged-infrastructure",
+       "quote": "la infraestructura convergente combina componentes de hardware preintegrados con software para orquestar y suministrar estos recursos a través de un sistema unificado."
+      },
+      {
+       "title": "Nutanix · Infraestructura convergente frente a hiperconvergente",
+       "url": "https://www.nutanix.com/es/info/converged-vs-hyperconverged-infrastructure",
+       "quote": "la infraestructura convergente es la misma tecnología que la infraestructura tradicional, pero se presenta de modo que resulte más fácil de consumir e implementar."
+      },
+      {
+       "title": "Red Hat · ¿Qué es la infraestructura hiperconvergente?",
+       "url": "https://www.redhat.com/es/topics/hyperconverged-infrastructure/what-is-hyperconverged-infrastructure",
+       "quote": "La hiperconvergencia se trata de un enfoque para la infraestructura de TI que consolida los recursos informáticos, de almacenamiento y de redes en un sistema unificado."
+      },
+      {
+       "title": "Red Hat · ¿Qué es la infraestructura hiperconvergente?",
+       "url": "https://www.redhat.com/es/topics/hyperconverged-infrastructure/what-is-hyperconverged-infrastructure",
+       "quote": "Una infraestructura hiperconvergente (HCI) consta de recursos informáticos ( máquinas virtuales ) gestionados con un hipervisor , almacenamiento definido por software y redes definidas por software ."
+      },
+      {
+       "title": "Red Hat · ¿Qué es la infraestructura hiperconvergente?",
+       "url": "https://www.redhat.com/es/topics/hyperconverged-infrastructure/what-is-hyperconverged-infrastructure",
+       "quote": "La hiperconvergencia de los recursos virtualizados te permite gestionarlos desde una sola interfaz unificada."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
