@@ -127,15 +127,12 @@
         "Durante las 24 horas de todos los días del año, excepto los días declarados como inhábiles en cada ámbito territorial y los declarados como inhábiles para todo el territorio nacional."
       ],
       "correct": "a",
+      "explanation": "El artículo 17 que cita la pregunta es el que el Real Decreto 209/2003 (art. 3) añadió al Real Decreto 772/1999; ese artículo lo derogó el Real Decreto 1671/2009 y el Real Decreto 772/1999 entero, la Ley 39/2015. Hoy lo dice el artículo 31.2.a) de la Ley 39/2015: el registro electrónico permite presentar documentos todos los días del año durante las veinticuatro horas.",
       "topics": [
         "B1-T08"
       ],
       "status": "published",
       "articles": [
-        {
-          "law": "BOE-A-2003-4151",
-          "section": "a3"
-        },
         {
           "law": "BOE-A-2015-10565",
           "section": "a31"
