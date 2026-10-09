@@ -1366,6 +1366,46 @@
        "quote": "Los proveedores de navegadores web reconocerán los certificados cualificados de autenticación de sitios web"
       }
      ]
+    },
+    {
+     "text": "**Sello electrónico**: datos electrónicos asociados a otros para garantizar su **origen e integridad** (art. 3.25). El **avanzado** (art. 36) está vinculado al creador **de manera única**, permite **identificarlo**, se crea con datos bajo su **control** con alto nivel de confianza y detecta cualquier **modificación** posterior. El **cualificado** es un sello avanzado creado con dispositivo cualificado y basado en **certificado cualificado** de sello (art. 3.27).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«sello electrónico», datos en formato electrónico anejos a otros datos en formato electrónico, o asociados de manera lógica con ellos, para garantizar el origen y la integridad de estos últimos;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«sello electrónico avanzado», un sello electrónico que cumple los requisitos contemplados en el artículo 36;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_36",
+       "quote": "estar vinculado al creador del sello de manera única;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_36",
+       "quote": "permitir la identificación del creador del sello;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_36",
+       "quote": "haber sido creado utilizando datos de creación del sello electrónico que el creador del sello puede utilizar para la creación de un sello electrónico, con un alto nivel de confianza, bajo su control"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_36",
+       "quote": "estar vinculado con los datos a que se refiere de modo tal que cualquier modificación ulterior de los mismos sea detectable."
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«sello electrónico cualificado», un sello electrónico avanzado que se crea mediante un dispositivo cualificado de creación de sellos electrónicos y que se basa en un certificado cualificado de sello electrónico;"
+      }
+     ]
     }
    ]
   },
@@ -2044,6 +2084,46 @@
       }
      ],
      "items": []
+    },
+    {
+     "text": "**Firmas longevas**: los formatos AdES pueden incorporar información que mantiene la **validez a largo plazo**, aunque caduque el certificado. Niveles: **BES** (básico), **T** (sello de tiempo), **C** (referencias a la cadena de certificados y su estado), **X** (sellos de tiempo sobre esas referencias), **XL** (añade los certificados y la **información de revocación**, para validar a **largo plazo**) y **A** (sellos de tiempo periódicos para el **archivo**).",
+     "refs": [
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "los formatos AdES (forma genérica de llamar a los formatos CAdES, XAdES y PAdES) contemplan la posibilidad de incorporar a las firmas electrónicas información adicional que garantiza la validez de una firma a largo plazo"
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "Firma Básica (AdES - BES), es el formato básico para satisfacer los requisitos de la firma electrónica avanzada."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "se añade un sellado de tiempo (T de TimeStamp) con el fin de situar en el tiempo el instante en que se firma un documento."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "añade un conjunto de referencias a los certificados de la cadena de certificación y su estado, como base para una verificación longeva (C de Cadena)."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "añade sellos de tiempo a las referencias creadas en el paso anterior (X de eXtendida)."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "añade los certificados y la información de revocación de los mismos, para su validación a largo plazo (XL de eXtendido Largo plazo)."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "permite la adición de sellos de tiempo periódicos para garantizar la integridad de la firma archivada o guardada para futuras verificaciones (A de Archivo)."
+      }
+     ]
     }
    ]
   },
