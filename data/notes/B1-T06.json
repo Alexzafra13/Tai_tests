@@ -1,0 +1,2736 @@
+{
+ "topic": "B1-T06",
+ "sections": [
+  {
+   "title": "Sociedad de la información (LSSI): objeto, conceptos y ámbito",
+   "points": [
+    {
+     "text": "La **Ley 34/2002, de 11 de julio**, de servicios de la sociedad de la información y de comercio electrónico (**LSSI**), regula el régimen jurídico de los **servicios de la sociedad de la información** y de la **contratación por vía electrónica**: obligaciones de los prestadores (también los **intermediarios**), comunicaciones comerciales electrónicas, información previa y posterior a los contratos electrónicos y régimen sancionador (art. 1).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a1",
+       "quote": "Es objeto de la presente Ley la regulación del régimen jurídico de los servicios de la sociedad de la información y de la contratación por vía electrónica"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a1",
+       "quote": "incluidos los que actúan como intermediarios en la transmisión de contenidos por las redes de telecomunicaciones, las comunicaciones comerciales por vía electrónica, la información previa y posterior a la celebración de contratos electrónicos"
+      }
+     ]
+    },
+    {
+     "text": "**Servicio de la sociedad de la información**: todo servicio prestado **normalmente a título oneroso**, **a distancia**, **por vía electrónica** y **a petición individual** del destinatario. Incluye los **no remunerados** por sus destinatarios si son una **actividad económica** para el prestador (anexo, a).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "an",
+       "quote": "todo servicio prestado normalmente a título oneroso, a distancia, por vía electrónica y a petición individual del destinatario."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "an",
+       "quote": "El concepto de servicio de la sociedad de la información comprende también los servicios no remunerados por sus destinatarios, en la medida en que constituyan una actividad económica para el prestador de servicios."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Son** servicios de la sociedad de la información, entre otros: la contratación electrónica de bienes o servicios, las **subastas** y centros comerciales virtuales, la gestión de compras en grupo, el envío de **comunicaciones comerciales** y el **suministro de información por vía telemática**.",
+       "refs": [
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "1.º La contratación de bienes o servicios por vía electrónica."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "2.º La organización y gestión de subastas por medios electrónicos o de mercados y centros comerciales virtuales."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "4.º El envío de comunicaciones comerciales."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "5.º El suministro de información por vía telemática."
+        }
+       ]
+      },
+      {
+       "text": "**No lo son**: la **telefonía vocal, fax o télex**; el **correo electrónico para fines ajenos** a la actividad económica de quien lo usa; la **radiodifusión televisiva y sonora**; y el **teletexto** y las guías electrónicas de programas.",
+       "refs": [
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "1.º Los servicios prestados por medio de telefonía vocal, fax o télex."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "2.º El intercambio de información por medio de correo electrónico u otro medio de comunicación electrónica equivalente para fines ajenos a la actividad económica de quienes lo utilizan."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "4.º Los servicios de radiodifusión sonora, y"
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "an",
+         "quote": "5.º El teletexto televisivo y otros servicios equivalentes como las guías electrónicas de programas"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Servicio de intermediación**: el que facilita la prestación o utilización de otros servicios de la sociedad de la información o el acceso a la información: **acceso a Internet**, **transmisión de datos**, **copia temporal** de páginas, **alojamiento** de datos y provisión de **instrumentos de búsqueda** o **enlaces** (anexo, b).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "an",
+       "quote": "servicio de la sociedad de la información por el que se facilita la prestación o utilización de otros servicios de la sociedad de la información o el acceso a la información."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "an",
+       "quote": "Son servicios de intermediación la provisión de servicios de acceso a Internet, la transmisión de datos por redes de telecomunicaciones, la realización de copia temporal de las páginas de Internet solicitadas por los usuarios, el alojamiento en los propios servidores de datos, aplicaciones o servicios suministrados por otros y la provisión de instrumentos de búsqueda, acceso y recopilación de datos o de enlaces a otros sitios de Internet."
+      }
+     ]
+    },
+    {
+     "text": "**Comunicación comercial**: toda forma de comunicación dirigida a la **promoción**, directa o indirecta, de la imagen o de los bienes o servicios de quien realiza una actividad comercial, industrial, artesanal o profesional. **No lo son** el **nombre de dominio** o la **dirección de correo** que permiten acceder a la actividad, ni lo que elabora un **tercero sin contraprestación** (anexo, f). **Contrato electrónico**: aquel en que **oferta y aceptación** se transmiten por equipos electrónicos conectados a una red de telecomunicaciones (anexo, h).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "an",
+       "quote": "toda forma de comunicación dirigida a la promoción, directa o indirecta, de la imagen o de los bienes o servicios de una empresa, organización o persona que realice una actividad comercial, industrial, artesanal o profesional."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "an",
+       "quote": "no tendrán la consideración de comunicación comercial los datos que permitan acceder directamente a la actividad de una persona, empresa u organización, tales como el nombre de dominio o la dirección de correo electrónico, ni las comunicaciones relativas a los bienes, los servicios o la imagen que se ofrezca cuando sean elaboradas por un tercero y sin contraprestación económica."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "an",
+       "quote": "todo contrato en el que la oferta y la aceptación se transmiten por medio de equipos electrónicos de tratamiento y almacenamiento de datos, conectados a una red de telecomunicaciones."
+      }
+     ]
+    },
+    {
+     "text": "Se aplica a los prestadores **establecidos en España**: los que tienen aquí su residencia o domicilio social, si coincide con el lugar donde está **centralizada la gestión administrativa y la dirección** de sus negocios (art. 2.1). También a los servicios que se ofrecen mediante un **establecimiento permanente** en España (art. 2.2). Se **presume** establecido el inscrito en el **Registro Mercantil** u otro registro necesario para adquirir personalidad jurídica; **usar medios tecnológicos situados en España no basta**, por sí solo, para considerarlo establecido (art. 2.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a2",
+       "quote": "Se entenderá que un prestador de servicios está establecido en España cuando su residencia o domicilio social se encuentren en territorio español, siempre que éstos coincidan con el lugar en que esté efectivamente centralizada la gestión administrativa y la dirección de sus negocios."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a2",
+       "quote": "Asimismo, esta Ley será de aplicación a los servicios de la sociedad de la información que los prestadores residentes o domiciliados en otro Estado ofrezcan a través de un establecimiento permanente situado en España."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a2",
+       "quote": "se presumirá que el prestador de servicios está establecido en España cuando el prestador o alguna de sus sucursales se haya inscrito en el Registro Mercantil"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a2",
+       "quote": "La utilización de medios tecnológicos situados en España, para la prestación o el acceso al servicio, no servirá como criterio para determinar, por sí solo, el establecimiento en España del prestador."
+      }
+     ]
+    },
+    {
+     "text": "Se rigen por su **normativa específica** los servicios de **notarios y registradores** en sus funciones públicas y los de **abogados y procuradores** en la representación y defensa en juicio (art. 5.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a5",
+       "quote": "a) Los servicios prestados por notarios y registradores de la propiedad y mercantiles en el ejercicio de sus respectivas funciones públicas."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a5",
+       "quote": "b) Los servicios prestados por abogados y procuradores en el ejercicio de sus funciones de representación y defensa en juicio."
+      }
+     ]
+    },
+    {
+     "text": "La prestación de estos servicios **no está sujeta a autorización previa** (art. 6), y los que vienen de prestadores de la **UE o del EEE** se rigen por la **libre prestación de servicios** (art. 7.1). Solo pueden **interrumpirse** o retirarse datos si atentan contra el **orden público**, la investigación penal, la seguridad pública y la defensa nacional, la **salud pública** o los consumidores, la **dignidad** y la no discriminación, la **juventud y la infancia** o la **propiedad intelectual** (art. 8.1); cuando la ley lo reserve a los jueces, **solo la autoridad judicial** puede adoptar esas medidas.",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a6",
+       "quote": "La prestación de servicios de la sociedad de la información no estará sujeta a autorización previa."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a7",
+       "quote": "se realizará en régimen de libre prestación de servicios"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a8",
+       "quote": "a) La salvaguarda del orden público, la investigación penal, la seguridad pública y la defensa nacional."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a8",
+       "quote": "b) La protección de la salud pública o de las personas físicas o jurídicas que tengan la condición de consumidores o usuarios"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a8",
+       "quote": "c) El respeto a la dignidad de la persona y al principio de no discriminación"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a8",
+       "quote": "d) La protección de la juventud y de la infancia."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a8",
+       "quote": "e) La salvaguarda de los derechos de propiedad intelectual."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a8",
+       "quote": "sólo la autoridad judicial competente podrá adoptar las medidas previstas en este artículo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "LSSI: obligaciones y responsabilidad de los prestadores",
+   "points": [
+    {
+     "text": "**Información general** (art. 10.1): el prestador debe permitir acceder por medios electrónicos, de forma **permanente, fácil, directa y gratuita**, a su **nombre o denominación social**, domicilio, **correo electrónico**, datos de inscripción registral, autorización administrativa si la necesita, datos de la **profesión regulada**, **NIF** y **precios** (con o sin impuestos y gastos de envío).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "acceder por medios electrónicos, de forma permanente, fácil, directa y gratuita, a la siguiente información:"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "a) Su nombre o denominación social; su residencia o domicilio o, en su defecto, la dirección de uno de sus establecimientos permanentes en España; su dirección de correo electrónico"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "b) Los datos de su inscripción en el Registro Mercantil"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "c) En el caso de que su actividad estuviese sujeta a un régimen de autorización administrativa previa"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "d) Si ejerce una profesión regulada deberá indicar:"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "e) El número de identificación fiscal que le corresponda."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a10",
+       "quote": "indicando si incluye o no los impuestos aplicables y, en su caso, sobre los gastos de envío."
+      }
+     ]
+    },
+    {
+     "text": "**Deber de colaboración de los intermediarios** (art. 11): si un órgano competente ordena interrumpir un servicio o retirar contenidos, puede ordenar a los intermediarios que **suspendan** el servicio de intermediación usado. La **autorización del secuestro de páginas de Internet** o su restricción, cuando afecte a la libertad de **expresión e información** (art. 20 CE), solo la pueden decidir los **órganos jurisdiccionales**.",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a11",
+       "quote": "dicho órgano podrá ordenar a los citados prestadores que suspendan el correspondiente servicio de intermediación"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a11",
+       "quote": "la autorización del secuestro de páginas de Internet o de su restricción cuando ésta afecte a los derechos y libertades de expresión e información y demás amparados en los términos establecidos en el artículo 20 de la Constitución solo podrá ser decidida por los órganos jurisdiccionales competentes."
+      }
+     ]
+    },
+    {
+     "text": "Los **proveedores de acceso a Internet** deben informar a sus clientes, de forma permanente, fácil, directa y gratuita, de los medios técnicos que aumentan la **seguridad** (protección frente a **virus y programas espía**, restricción del **correo no solicitado**), de las herramientas de **filtrado** de contenidos nocivos para menores y de las **responsabilidades** por el uso ilícito de Internet; basta con publicarlo en su **página principal** (art. 12 bis).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a12bis",
+       "quote": "la protección frente a virus informáticos y programas espía, y la restricción de los correos electrónicos no solicitados."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a12bis",
+       "quote": "informarán sobre las herramientas existentes para el filtrado y restricción del acceso a determinados contenidos y servicios en Internet no deseados o que puedan resultar nocivos para la juventud y la infancia."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a12bis",
+       "quote": "se darán por cumplidas si el correspondiente proveedor incluye la información exigida en su página o sitio principal de Internet"
+      }
+     ]
+    },
+    {
+     "text": "Los prestadores responden **civil, penal y administrativamente** con carácter general (art. 13.1); por la **intermediación**, la ley fija exenciones de responsabilidad:",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a13",
+       "quote": "están sujetos a la responsabilidad civil, penal y administrativa establecida con carácter general en el ordenamiento jurídico"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a13",
+       "quote": "Para determinar la responsabilidad de los prestadores de servicios por el ejercicio de actividades de intermediación, se estará a lo establecido en los artículos siguientes."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Operadores de redes y proveedores de acceso** (art. 14): no responden de la información transmitida, **salvo** que hayan **originado** la transmisión, **modificado** los datos o **seleccionado** estos o a sus destinatarios. La manipulación estrictamente técnica durante la transmisión no es modificación.",
+       "refs": [
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a14",
+         "quote": "no serán responsables por la información transmitida, salvo que ellos mismos hayan originado la transmisión, modificado los datos o seleccionado éstos o a los destinatarios de dichos datos."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a14",
+         "quote": "No se entenderá por modificación la manipulación estrictamente técnica de los archivos que alberguen los datos, que tiene lugar durante su transmisión."
+        }
+       ]
+      },
+      {
+       "text": "**Copia temporal o caché** (art. 15): no responden si no modifican la información, respetan las condiciones de acceso y las normas del sector, y la **retiran** en cuanto tienen **conocimiento efectivo** de que se retiró del origen o de que un tribunal u órgano competente lo ha ordenado.",
+       "refs": [
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a15",
+         "quote": "con la única finalidad de hacer más eficaz su transmisión ulterior a otros destinatarios que los soliciten, los almacenen en sus sistemas de forma automática, provisional y temporal"
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a15",
+         "quote": "a) No modifican la información."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a15",
+         "quote": "Retiran la información que hayan almacenado o hacen imposible el acceso a ella, en cuanto tengan conocimiento efectivo de:"
+        }
+       ]
+      },
+      {
+       "text": "**Alojamiento o almacenamiento** (art. 16) y **enlaces o buscadores** (art. 17): no responden si **no tienen conocimiento efectivo** de que la información es ilícita o lesiona derechos de un tercero o, si lo tienen, **actúan con diligencia** para retirarla o inutilizar el enlace. Hay conocimiento efectivo cuando un **órgano competente** ha declarado la ilicitud u ordenado la retirada y el prestador **conoce la resolución** (sin perjuicio de otros medios). La exención **no opera** si el destinatario o el proveedor enlazado actúa **bajo la dirección, autoridad o control** del prestador.",
+       "refs": [
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a16",
+         "quote": "No tengan conocimiento efectivo de que la actividad o la información almacenada es ilícita o de que lesiona bienes o derechos de un tercero susceptibles de indemnización, o"
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a16",
+         "quote": "b) Si lo tienen, actúen con diligencia para retirar los datos o hacer imposible el acceso a ellos."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a16",
+         "quote": "cuando un órgano competente haya declarado la ilicitud de los datos, ordenado su retirada o que se imposibilite el acceso a los mismos, o se hubiera declarado la existencia de la lesión, y el prestador conociera la correspondiente resolución"
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a16",
+         "quote": "no operará en el supuesto de que el destinatario del servicio actúe bajo la dirección, autoridad o control de su prestador."
+        },
+        {
+         "law": "BOE-A-2002-13758",
+         "section": "a17",
+         "quote": "b) Si lo tienen, actúen con diligencia para suprimir o inutilizar el enlace correspondiente."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Las Administraciones impulsan **códigos de conducta voluntarios**, accesibles por vía electrónica, que pueden tratar la **detección y retirada de contenidos ilícitos**, la protección frente al **correo comercial no solicitado** y la resolución **extrajudicial** de conflictos (art. 18).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a18",
+       "quote": "la elaboración y aplicación de códigos de conducta voluntarios"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a18",
+       "quote": "Los códigos de conducta podrán tratar, en particular, sobre los procedimientos para la detección y retirada de contenidos ilícitos y la protección de los destinatarios frente al envío por vía electrónica de comunicaciones comerciales no solicitadas"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a18",
+       "quote": "deberán ser accesibles por vía electrónica"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "LSSI: comunicaciones comerciales, cookies y contratos electrónicos",
+   "points": [
+    {
+     "text": "Las comunicaciones comerciales electrónicas deben ser **claramente identificables como tales**, igual que la persona en cuyo nombre se hacen (art. 20.1). Se **prohíben** las que **disimulan u ocultan la identidad del remitente** (art. 20.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a20",
+       "quote": "Las comunicaciones comerciales realizadas por vía electrónica deberán ser claramente identificables como tales, y la persona física o jurídica en nombre de la cual se realizan también deberá ser claramente identificable."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a20",
+       "quote": "queda prohibido el envío de comunicaciones comerciales en las que se disimule o se oculte la identidad del remitente"
+      }
+     ]
+    },
+    {
+     "text": "**Prohibición del spam** (art. 21.1): no se pueden enviar comunicaciones publicitarias o promocionales por **correo electrónico** o medio equivalente que **no se hayan solicitado o autorizado expresamente**. **Excepción** (art. 21.2): con una **relación contractual previa**, si los datos se obtuvieron lícitamente y se usan para **productos o servicios de la propia empresa similares** a los contratados. Siempre debe ofrecerse **oponerse** de forma **sencilla y gratuita**, al recoger los datos y en **cada comunicación**; por correo, con una **dirección electrónica válida** para ello.",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a21",
+       "quote": "Queda prohibido el envío de comunicaciones publicitarias o promocionales por correo electrónico u otro medio de comunicación electrónica equivalente que previamente no hubieran sido solicitadas o expresamente autorizadas por los destinatarios de las mismas."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a21",
+       "quote": "cuando exista una relación contractual previa, siempre que el prestador hubiera obtenido de forma lícita los datos de contacto del destinatario y los empleara para el envío de comunicaciones comerciales referentes a productos o servicios de su propia empresa que sean similares a los que inicialmente fueron objeto de contratación con el cliente."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a21",
+       "quote": "mediante un procedimiento sencillo y gratuito, tanto en el momento de recogida de los datos como en cada una de las comunicaciones comerciales que le dirija."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a21",
+       "quote": "dicho medio deberá consistir necesariamente en la inclusión de una dirección de correo electrónico u otra dirección electrónica válida donde pueda ejercitarse este derecho"
+      }
+     ]
+    },
+    {
+     "text": "El destinatario puede **revocar en cualquier momento** su consentimiento con la simple notificación al remitente (art. 22.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a22",
+       "quote": "El destinatario podrá revocar en cualquier momento el consentimiento prestado a la recepción de comunicaciones comerciales con la simple notificación de su voluntad al remitente."
+      }
+     ]
+    },
+    {
+     "text": "**Cookies** (art. 22.2): los dispositivos de almacenamiento y recuperación de datos en los equipos de los destinatarios requieren su **consentimiento** tras darles **información clara y completa**, en particular de los **fines**; puede darse con los **parámetros del navegador** cuando sea técnicamente posible y eficaz. **No hace falta** para el almacenamiento técnico **solo para transmitir** una comunicación o el **estrictamente necesario** para un servicio **expresamente solicitado**.",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a22",
+       "quote": "a condición de que los mismos hayan dado su consentimiento después de que se les haya facilitado información clara y completa sobre su utilización, en particular, sobre los fines del tratamiento de los datos"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a22",
+       "quote": "podrá facilitarse mediante el uso de los parámetros adecuados del navegador o de otras aplicaciones."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a22",
+       "quote": "Lo anterior no impedirá el posible almacenamiento o acceso de índole técnica al solo fin de efectuar la transmisión de una comunicación por una red de comunicaciones electrónicas o, en la medida que resulte estrictamente necesario, para la prestación de un servicio de la sociedad de la información expresamente solicitado por el destinatario."
+      }
+     ]
+    },
+    {
+     "text": "Los **contratos electrónicos** producen **todos los efectos** cuando concurren el consentimiento y los demás requisitos (art. 23.1); **no hace falta acuerdo previo** sobre el uso de medios electrónicos (art. 23.2), y la exigencia de forma **escrita** se cumple con el **soporte electrónico** (art. 23.3). **No se aplica** a los contratos de **Derecho de familia y sucesiones**, y los que exigen **forma documental pública** o intervención de jueces, notarios, registradores o autoridades se rigen por su legislación (art. 23.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a23",
+       "quote": "Los contratos celebrados por vía electrónica producirán todos los efectos previstos por el ordenamiento jurídico, cuando concurran el consentimiento y los demás requisitos necesarios para su validez."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a23",
+       "quote": "no será necesario el previo acuerdo de las partes sobre la utilización de medios electrónicos."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a23",
+       "quote": "este requisito se entenderá satisfecho si el contrato o la información se contiene en un soporte electrónico."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a23",
+       "quote": "No será de aplicación lo dispuesto en el presente Título a los contratos relativos al Derecho de familia y sucesiones."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a23",
+       "quote": "Los contratos, negocios o actos jurídicos en los que la Ley determine para su validez o para la producción de determinados efectos la forma documental pública"
+      }
+     ]
+    },
+    {
+     "text": "El **soporte electrónico** del contrato es admisible en juicio como **prueba documental** (art. 24.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a24",
+       "quote": "el soporte electrónico en que conste un contrato celebrado por vía electrónica será admisible en juicio como prueba documental."
+      }
+     ]
+    },
+    {
+     "text": "**Antes de contratar** (art. 27.1), el prestador informa de forma permanente, fácil y gratuita de: los **trámites** para celebrar el contrato, si va a **archivar** el documento y si será accesible, los **medios para corregir errores** al introducir datos y la **lengua o lenguas** del contrato. No hace falta si lo acuerdan dos partes **no consumidoras** o si el contrato se celebra **solo por correo electrónico** (art. 27.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a27",
+       "quote": "a) Los distintos trámites que deben seguirse para celebrar el contrato."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a27",
+       "quote": "b) Si el prestador va a archivar el documento electrónico en que se formalice el contrato y si éste va a ser accesible."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a27",
+       "quote": "c) Los medios técnicos que pone a su disposición para identificar y corregir errores en la introducción de los datos, y"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a27",
+       "quote": "d) La lengua o lenguas en que podrá formalizarse el contrato."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a27",
+       "quote": "a) Ambos contratantes así lo acuerden y ninguno de ellos tenga la consideración de consumidor, o"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a27",
+       "quote": "b) El contrato se haya celebrado exclusivamente mediante intercambio de correo electrónico u otro tipo de comunicación electrónica equivalente."
+      }
+     ]
+    },
+    {
+     "text": "**Después** (art. 28.1), el oferente **confirma la recepción de la aceptación** con un **acuse de recibo** por correo electrónico en las **24 horas** siguientes, o por un medio equivalente al usado, en cuanto el aceptante completa el procedimiento, si se puede **archivar**. Se presume recibido el acuse desde que se **almacena en el servidor** de la cuenta de correo del destinatario (art. 28.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a28",
+       "quote": "El oferente está obligado a confirmar la recepción de la aceptación al que la hizo por alguno de los siguientes medios:"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a28",
+       "quote": "en el plazo de las veinticuatro horas siguientes a la recepción de la aceptación, o"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a28",
+       "quote": "tan pronto como el aceptante haya completado dicho procedimiento, siempre que la confirmación pueda ser archivada por su destinatario."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a28",
+       "quote": "se presumirá que su destinatario puede tener la referida constancia desde que aquél haya sido almacenado en el servidor en que esté dada de alta su cuenta de correo electrónico"
+      }
+     ]
+    },
+    {
+     "text": "**Lugar de celebración** (art. 29): con un **consumidor**, donde este tenga su **residencia habitual**; entre **empresarios o profesionales**, a falta de pacto, donde esté **establecido el prestador**.",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a29",
+       "quote": "Los contratos celebrados por vía electrónica en los que intervenga como parte un consumidor se presumirán celebrados en el lugar en que éste tenga su residencia habitual."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a29",
+       "quote": "Los contratos electrónicos entre empresarios o profesionales, en defecto de pacto entre las partes, se presumirán celebrados en el lugar en que esté establecido el prestador de servicios."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "LSSI: supervisión, infracciones y sanciones",
+   "points": [
+    {
+     "text": "Controla el cumplimiento de la ley el **Ministerio de Asuntos Económicos y Transformación Digital**, según el texto vigente de la ley (art. 35.1); sus inspectores son **autoridad pública** (art. 35.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a35",
+       "quote": "El Ministerio de Asuntos Económicos y Transformación Digital controlará:"
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a35",
+       "quote": "tendrán la consideración de autoridad pública en el desempeño de sus cometidos."
+      }
+     ]
+    },
+    {
+     "text": "Las infracciones son **muy graves, graves y leves** (art. 38.1). Entre las **graves**: el **envío masivo** de comunicaciones comerciales por correo, o el **insistente o sistemático** a un mismo destinatario, sin cumplir el art. 21 (art. 38.3.c).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a38",
+       "quote": "Las infracciones de los preceptos de esta Ley se calificarán como muy graves, graves y leves."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a38",
+       "quote": "El envío masivo de comunicaciones comerciales por correo electrónico u otro medio de comunicación electrónica equivalente, o su envío insistente o sistemático a un mismo destinatario del servicio cuando en dichos envíos no se cumplan los requisitos establecidos en el artículo 21."
+      }
+     ]
+    },
+    {
+     "text": "**Multas** (art. 39.1): **muy graves**, de **150.001 a 600.000 €** (y, si se reiteran dos o más en **tres años**, prohibición de actuar en España hasta **dos años**); **graves**, de **30.001 a 150.000 €**; **leves**, **hasta 30.000 €**.",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a39",
+       "quote": "Por la comisión de infracciones muy graves, multa de 150.001 hasta 600.000 euros."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a39",
+       "quote": "a la sanción de prohibición de actuación en España, durante un plazo máximo de dos años."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a39",
+       "quote": "comisión de infracciones graves, multa de 30.001 hasta 150.000 euros."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a39",
+       "quote": "c) Por la comisión de infracciones leves, multa de hasta 30.000 euros."
+      }
+     ]
+    },
+    {
+     "text": "**Competencia sancionadora** (art. 43.1): las **muy graves**, la persona titular del **Ministerio**; las **graves y leves**, la de la **Secretaría de Estado de Digitalización e Inteligencia Artificial**. La **Agencia de Protección de Datos** sanciona las de **comunicaciones comerciales no solicitadas**, **revocación del consentimiento** y **cookies** (arts. 38.3 c), d) e i) y 38.4 d), g) y h)). El procedimiento dura como máximo **nueve meses** (el simplificado, **tres**) (art. 43.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a43",
+       "quote": "en el caso de infracciones muy graves, a la persona titular del Ministerio de Asuntos Económicos y Transformación Digital, y en el de infracciones graves y leves, a la persona titular de la Secretaria de Estado de Digitalización e Inteligencia Artificial."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a38",
+       "quote": "g) Utilizar dispositivos de almacenamiento y recuperación de datos cuando no se hubiera facilitado la información u obtenido el consentimiento del destinatario del servicio en los términos exigidos por el artículo 22.2."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a43",
+       "quote": "corresponderá a la Agencia de Protección de Datos la imposición de sanciones por la comisión de las infracciones tipificadas en los artículos 38.3 c), d) e i) y 38.4 d), g) y h) de esta Ley."
+      },
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a43",
+       "quote": "El procedimiento tendrá una duración máxima de nueve meses a contar desde la fecha del acuerdo de iniciación. El plazo máximo de duración del procedimiento simplificado será de tres meses."
+      }
+     ]
+    },
+    {
+     "text": "**Prescripción** (art. 45): infracciones **muy graves, 3 años**; **graves, 2 años**; **leves, 6 meses**. Sanciones: **muy graves, 3 años**; **graves, 2 años**; **leves, 1 año**.",
+     "refs": [
+      {
+       "law": "BOE-A-2002-13758",
+       "section": "a45",
+       "quote": "Las infracciones muy graves prescribirán a los tres años, las graves a los dos años y las leves a los seis meses; las sanciones impuestas por faltas muy graves prescribirán a los tres años, las impuestas por faltas graves a los dos años y las impuestas por faltas leves al año."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ley 56/2007, de Medidas de Impulso de la Sociedad de la Información",
+   "points": [
+    {
+     "text": "La **factura electrónica** es un **documento electrónico** que cumple los requisitos legales de las facturas y, además, **garantiza la autenticidad de su origen y la integridad de su contenido**, lo que **impide su repudio** por el emisor. En la contratación con el **sector público estatal** es **obligatoria** en los términos de la ley de contratos (art. 1.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a1",
+       "quote": "se entenderá que la factura electrónica es un documento electrónico que cumple con los requisitos legal y reglamentariamente exigibles a las facturas y que, además, garantiza la autenticidad de su origen y la integridad de su contenido, lo que impide el repudio de la factura por su emisor."
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a1",
+       "quote": "La facturación electrónica en el marco de la contratación con el sector público estatal será obligatoria en los términos que se establezcan en la Ley reguladora de la contratación en el sector público"
+      }
+     ]
+    },
+    {
+     "text": "Los **formatos estructurados** de factura electrónica deben permitir **visualizarla y emitirla en las distintas lenguas oficiales** (art. 1.3), y las Administraciones promueven la factura electrónica en otras actuaciones, en particular la **justificación de ayudas y subvenciones** (art. 1.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a1",
+       "quote": "Los formatos estructurados de las facturas electrónicas permitirán su visualización y emisión en las distintas lenguas oficiales existentes, con la finalidad de garantizar los derechos de los usuarios."
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a1",
+       "quote": "en particular, en materia de justificación de ayudas y subvenciones."
+      }
+     ]
+    },
+    {
+     "text": "Las empresas que presten **servicios al público de especial trascendencia económica** deben ofrecer un **medio seguro de interlocución telemática** para, al menos: **contratar** y modificar o rescindir contratos, **consultar sus datos de cliente** (con el **historial de facturación de los últimos tres años**), presentar **quejas y reclamaciones** y ejercer los **derechos de protección de datos** (art. 2.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "deberán facilitar a sus usuarios un medio seguro de interlocución telemática que les permita la realización de, al menos, los siguientes trámites:"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "información sobre su historial de facturación de, al menos, los últimos tres años"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "c) Presentación de quejas, incidencias, sugerencias y, en su caso, reclamaciones"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "d) Ejercicio de sus derechos de acceso, rectificación, cancelación y oposición"
+      }
+     ]
+    },
+    {
+     "text": "Son de **especial trascendencia económica** las que tienen **más de 100 trabajadores** o un volumen anual de operaciones **superior a 6.010.121,04 €** y operan en: **comunicaciones electrónicas**, **servicios financieros**, **agua**, **gas**, **electricidad**, **agencias de viajes**, **transporte de viajeros** y **comercio al por menor** (a este solo le aplican las quejas y los derechos de datos) (art. 2.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "las que agrupen a más de cien trabajadores o su volumen anual de operaciones, calculado conforme a lo establecido en la normativa del Impuesto sobre el Valor Añadido, exceda de 6.010.121,04 euros"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "a) Servicios de comunicaciones electrónicas a consumidores"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "b) Servicios financieros destinados a consumidores"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "c) Servicios de suministro de agua a consumidores"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "d) Servicios de suministro de gas al por menor"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "e) Servicios de suministro eléctrico a consumidores finales"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "f) Servicios de agencia de viajes"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "g) Servicios de transporte de viajeros por carretera, ferrocarril, por vía marítima, o por vía aérea"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "h) Actividades de comercio al por menor"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2",
+       "quote": "a las que serán de aplicación únicamente los apartados c) y d) del apartado 1 del presente artículo."
+      }
+     ]
+    },
+    {
+     "text": "**Factura electrónica entre empresas** (art. 2 bis): **todos los empresarios y profesionales** deben **expedir, remitir y recibir facturas electrónicas** en sus relaciones con otros empresarios y profesionales e **informar de los estados** de la factura. Las plataformas deben garantizar su **interconexión e interoperabilidad gratuitas**, y el receptor **no puede imponer** una solución o proveedor al emisor.",
+     "refs": [
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2bis",
+       "quote": "Todos los empresarios y profesionales deberán expedir, remitir y recibir facturas electrónicas en sus relaciones comerciales con otros empresarios y profesionales. El destinatario y el emisor de las facturas electrónicas deberán proporcionar información sobre los estados de la factura."
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2bis",
+       "quote": "deberán garantizar su interconexión e interoperabilidad gratuitas"
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2bis",
+       "quote": "El receptor de la factura no podrá obligar a su emisor a la utilización de una solución, plataforma o proveedor de servicios de facturación electrónica predeterminado."
+      }
+     ]
+    },
+    {
+     "text": "Durante **cuatro años** desde su emisión, el destinatario puede pedir **copia** de las facturas electrónicas **sin coste** (art. 2 bis.3). Las empresas de especial trascendencia económica deben emitirlas a los **particulares** que acepten recibirlas o las pidan, **sea cual sea su tamaño**; agencias de viaje, transporte y comercio minorista, solo si se contrató **por medios electrónicos** (art. 2 bis.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2bis",
+       "quote": "Durante un plazo de cuatro años desde la emisión de las facturas electrónicas, los destinatarios podrán solicitar copia de las mismas sin incurrir en costes adicionales."
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2bis",
+       "quote": "deberán expedir y remitir facturas electrónicas en sus relaciones con particulares que acepten recibirlas o que las hayan solicitado expresamente. Este deber es independiente del tamaño de su plantilla o de su volumen anual de operaciones."
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2bis",
+       "quote": "solo están obligadas a emitir facturas electrónicas en los términos previstos en el párrafo anterior cuando la contratación se haya llevado a cabo por medios electrónicos."
+      }
+     ]
+    },
+    {
+     "text": "No ofrecer la factura electrónica cuando es obligatorio, o no dejar a los antiguos clientes acceder a sus facturas, se sanciona con **apercibimiento o multa de hasta 10.000 €**, que impone la **Secretaría de Estado de Digitalización e Inteligencia Artificial** (art. 2 bis.9).",
+     "refs": [
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2bis",
+       "quote": "serán sancionadas con apercibimiento o una multa de hasta 10.000 euros."
+      },
+      {
+       "law": "BOE-A-2007-22440",
+       "section": "a2bis",
+       "quote": "Es competente para imponer esta sanción la persona titular de la Secretaría de Estado de Digitalización e Inteligencia Artificial."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Identificación electrónica en la UE (Reglamento eIDAS)",
+   "points": [
+    {
+     "text": "El **Reglamento (UE) 910/2014** (**eIDAS**), de 23 de julio de 2014, regula la **identificación electrónica** y los **servicios de confianza** para las transacciones electrónicas en el mercado interior. Lo modificó el **Reglamento (UE) 2024/1183**, de 11 de abril de 2024, que crea el **marco europeo de identidad digital**. Es de **aplicación directa** en los Estados miembros, y la **Ley 6/2020** lo **complementa** en lo que no armoniza.",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1",
+       "quote": "como complemento del Reglamento (UE) n.º 910/2014 del Parlamento Europeo y del Consejo, de 23 de julio de 2014, relativo a la identificación electrónica y los servicios de confianza para las transacciones electrónicas en el mercado interior"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "pr",
+       "quote": "la elección de un reglamento como instrumento legislativo por el legislador europeo, de aplicación directa en los Estados miembros"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "pr",
+       "quote": "Con la entrada en vigor del Reglamento (UE) 2024/1183 del Parlamento Europeo y del Consejo, de 11 de abril de 2024, por el que se modifica el Reglamento (UE) 910/2014 en lo que respecta al establecimiento del marco europeo de identidad digital"
+      }
+     ]
+    },
+    {
+     "text": "Se aplica a los **sistemas de identificación electrónica notificados**, a las **carteras europeas de identidad digital** y a los **prestadores de servicios de confianza** establecidos en la Unión (art. 2.1); **no** a los servicios usados solo dentro de **sistemas cerrados** (art. 2.2).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_2",
+       "quote": "El presente Reglamento se aplica a los sistemas de identificación electrónica notificados por los Estados miembros, a las carteras europeas de identidad digital proporcionadas por los Estados miembros y a los prestadores de servicios de confianza establecidos en la Unión."
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_2",
+       "quote": "no se aplica a la prestación de servicios de confianza utilizados exclusivamente dentro de sistemas cerrados"
+      }
+     ]
+    },
+    {
+     "text": "**Identificación electrónica**: usar los **datos de identificación** de la persona en formato electrónico que la representan de **manera única**. **Autenticación**: proceso electrónico que **confirma** esa identificación o el **origen e integridad** de unos datos (art. 3, puntos 1 y 5).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«identificación electrónica», proceso consistente en utilizar los datos de identificación de la persona en formato electrónico que representan de manera única a una persona física o jurídica"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«autenticación», proceso electrónico que permite la confirmación de la identificación electrónica de una persona física o jurídica, o la confirmación del origen y la integridad de datos en formato electrónico;"
+      }
+     ]
+    },
+    {
+     "text": "Los sistemas notificados fijan **tres niveles de seguridad** (art. 8): **bajo** (grado **limitado** de confianza en la identidad), **sustancial** (grado **sustancial**) y **alto** (grado **superior** al sustancial; su objetivo es **evitar** el uso indebido o la alteración de la identidad).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_8",
+       "quote": "deberá especificar los niveles de seguridad bajo, sustancial y alto"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_8",
+       "quote": "que establece un grado limitado de confianza en la identidad pretendida o declarada de una persona"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_8",
+       "quote": "que establece un grado sustancial de confianza en la identidad pretendida o declarada de una persona"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_8",
+       "quote": "cuyo objetivo es evitar el uso indebido o alteración de la identidad."
+      }
+     ]
+    },
+    {
+     "text": "**Reconocimiento mutuo** (art. 6): para un servicio público en línea, cada Estado reconoce el medio de identificación de otro Estado si su sistema está en la **lista publicada por la Comisión** y su nivel es **sustancial o alto** e **igual o superior** al exigido. Los de nivel **bajo** **pueden** reconocerse.",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_6",
+       "quote": "se reconocerá en dicho Estado miembro, a efectos de la autenticación transfronteriza en dicho servicio en línea, el medio de identificación electrónica expedido en otro Estado miembro"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_6",
+       "quote": "siempre que el nivel de seguridad de dicho medio de identificación electrónica corresponda a un nivel de seguridad sustancial o alto"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_6",
+       "quote": "que corresponda al nivel de seguridad bajo podrá ser reconocido por los órganos del sector público"
+      }
+     ]
+    },
+    {
+     "text": "**Cartera europea de identidad digital** (art. 3.42 y art. 5 bis): medio de identificación electrónica para **almacenar, gestionar y validar** datos de identidad y **declaraciones electrónicas de atributos**, presentarlos a terceros y **firmar con firma electrónica cualificada**. Cada Estado proporcionará **al menos una** en los **24 meses** siguientes a los actos de ejecución.",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«cartera europea de identidad digital», medio de identificación electrónica que permite al usuario almacenar, gestionar y validar de forma segura datos de identificación de la persona y declaraciones electrónicas de atributos"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_5a",
+       "quote": "cada Estado miembro proporcionará al menos una cartera europea de identidad digital en los veinticuatro meses siguientes a la entrada en vigor de los actos de ejecución"
+      }
+     ],
+     "items": [
+      {
+       "text": "Su código fuente tiene **licencia de código abierto**; funciona con un **nivel de seguridad alto**; respeta la **seguridad desde el diseño**.",
+       "refs": [
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "El código fuente de los componentes de programas informáticos de las carteras europeas de identidad digital tendrá licencia de código abierto."
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "Las carteras europeas de identidad digital se proporcionarán en el marco de un sistema de identificación electrónica con nivel de seguridad alto."
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "Las carteras europeas de identidad digital respetarán el principio de seguridad desde el diseño."
+        }
+       ]
+      },
+      {
+       "text": "Es **gratuita** para las personas físicas (expedición, uso y revocación), que pueden **firmar gratis** con firma cualificada (los Estados pueden limitarlo a **fines no profesionales**). Su uso es **voluntario**: no tenerla no puede restringir el acceso a servicios.",
+       "refs": [
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "La expedición, el uso y la revocación de las carteras europeas de identidad digital serán gratuitos para todas las personas físicas."
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "ofrecerán a todas las personas físicas la posibilidad de firmar, por defecto y de forma gratuita, mediante firmas electrónicas cualificadas."
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "se limite a fines no profesionales."
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_5a",
+         "quote": "La utilización de las carteras europeas de identidad digital será voluntaria."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Servicios de confianza: firma, sello y sello de tiempo (eIDAS)",
+   "points": [
+    {
+     "text": "**Servicio de confianza**: servicio electrónico prestado **habitualmente a cambio de una remuneración** que consiste, entre otras actividades, en **expedir y validar certificados** (de firma, de sello, de autenticación de sitios web), **crear, validar y conservar** firmas y sellos, crear y validar **sellos de tiempo**, la **entrega electrónica certificada**, las **declaraciones electrónicas de atributos**, el **archivo electrónico** y el **libro mayor electrónico** (art. 3.16).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«servicio de confianza», servicio electrónico prestado habitualmente a cambio de una remuneración, consistente en cualquiera de las actividades siguientes:"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "a) la expedición de certificados de firma electrónica, certificados de sello electrónico, certificados de autenticación de sitios web o certificados para la prestación de otros servicios de confianza;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "d) la validación de firmas electrónicas o sellos electrónicos;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "e) la conservación de firmas electrónicas, sellos electrónicos, certificados de firma electrónica o certificados de sello electrónico;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "g) la expedición de declaraciones electrónicas de atributos;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "i) la creación de sellos de tiempo electrónicos;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "m) el archivo electrónico de datos y documentos electrónicos;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "k) la prestación de servicios de entrega electrónica certificada;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "n) la actividad de registro de datos electrónicos en un libro mayor electrónico."
+      }
+     ]
+    },
+    {
+     "text": "**Prestador cualificado**: presta servicios de confianza **cualificados** y el **organismo de supervisión** le ha concedido la cualificación (art. 3.20). Solo puede empezar a prestarlos cuando la cualificación figura en la **lista de confianza** (art. 21.3), que cada Estado publica **firmada o sellada** en forma apta para el tratamiento automático (art. 22). Se audita **al menos cada 24 meses** (art. 20.1) y puede usar la **etiqueta de confianza «UE»** (art. 23).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«prestador cualificado de servicios de confianza», un prestador de servicios de confianza que presta uno o varios servicios de confianza cualificados y al que el organismo de supervisión ha concedido la cualificación;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_21",
+       "quote": "podrán comenzar a prestar el servicio de confianza cualificado una vez que la cualificación haya sido indicada en las listas de confianza"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_22",
+       "quote": "las listas de confianza firmadas o selladas electrónicamente a que se refiere el apartado 1 en una forma apropiada para el tratamiento automático."
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_20",
+       "quote": "serán auditados al menos cada veinticuatro meses"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_23",
+       "quote": "podrán usar la etiqueta de confianza «UE»"
+      }
+     ]
+    },
+    {
+     "text": "**Responsabilidad** (art. 13.1): la **intencionalidad o negligencia** de un prestador **cualificado se presume** (debe probar lo contrario); la de uno **no cualificado** la prueba **quien reclama**. Un prestador cualificado publica la **revocación** de un certificado **en 24 horas** desde la solicitud, y surte efecto **inmediatamente** tras publicarse (art. 24.3).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_13",
+       "quote": "Se presumirá la intencionalidad o la negligencia de un prestador cualificado de servicios de confianza"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_13",
+       "quote": "La carga de la prueba de la intencionalidad o la negligencia de un prestador no cualificado de servicios de confianza corresponderá a la persona física o jurídica que alegue los perjuicios"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_24",
+       "quote": "en todo caso, en un plazo de 24 horas después de la recepción de la solicitud. La revocación será efectiva inmediatamente después de su publicación."
+      }
+     ]
+    },
+    {
+     "text": "**Firma electrónica** (art. 3, puntos 9 a 12): los datos en formato electrónico anejos a otros o asociados lógicamente con ellos que usa el **firmante** (siempre una **persona física**) para firmar. Tres niveles:",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«firmante», una persona física que crea una firma electrónica;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«firma electrónica», los datos en formato electrónico anejos a otros datos electrónicos o asociados de manera lógica con ellos que utiliza el firmante para firmar;"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Avanzada** (art. 26): vinculada al firmante **de manera única**; permite **identificarlo**; creada con datos que el firmante usa, con un alto nivel de confianza, **bajo su control exclusivo**; y vinculada a los datos firmados de modo que **cualquier modificación ulterior sea detectable**.",
+       "refs": [
+        {
+         "law": "32014R0910",
+         "section": "art_26",
+         "quote": "a) estar vinculada al firmante de manera única;"
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_26",
+         "quote": "b) permitir la identificación del firmante;"
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_26",
+         "quote": "c) haber sido creada utilizando datos de creación de la firma electrónica que el firmante puede utilizar, con un alto nivel de confianza, bajo su control exclusivo, y"
+        },
+        {
+         "law": "32014R0910",
+         "section": "art_26",
+         "quote": "d) estar vinculada con los datos firmados por la misma de modo tal que cualquier modificación ulterior de los mismos sea detectable."
+        }
+       ]
+      },
+      {
+       "text": "**Cualificada** (art. 3.12): firma **avanzada** creada con un **dispositivo cualificado de creación de firmas** y basada en un **certificado cualificado** de firma electrónica.",
+       "refs": [
+        {
+         "law": "32014R0910",
+         "section": "art_3",
+         "quote": "«firma electrónica cualificada», una firma electrónica avanzada que se crea mediante un dispositivo cualificado de creación de firmas electrónicas y que se basa en un certificado cualificado de firma electrónica;"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Efectos** (art. 25): **no se niegan efectos jurídicos ni valor como prueba** a una firma por ser electrónica o no ser cualificada; la **cualificada** tiene un **efecto jurídico equivalente al de la firma manuscrita**. La firma y el sello cualificados basados en un certificado de un Estado miembro se **reconocen en todos los demás** (art. 24 bis.1).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_25",
+       "quote": "No se denegarán efectos jurídicos ni admisibilidad como prueba en procedimientos judiciales a una firma electrónica por el mero hecho de ser una firma electrónica o porque no cumpla los requisitos de la firma electrónica cualificada."
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_25",
+       "quote": "Una firma electrónica cualificada tendrá un efecto jurídico equivalente al de una firma manuscrita."
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_24a",
+       "quote": "serán reconocidos, respectivamente, como firmas electrónicas cualificadas y sellos electrónicos cualificados en todos los demás Estados miembros."
+      }
+     ]
+    },
+    {
+     "text": "**Certificado de firma**: declaración electrónica que **vincula los datos de validación** de una firma con una **persona física** y confirma al menos su **nombre o seudónimo** (art. 3.14). Un certificado cualificado **revocado** pierde su validez **desde la revocación** y **no puede recuperarla**; la **suspensión** temporal, si la regula el Estado, le quita validez **mientras dura** (art. 28).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«certificado de firma electrónica», una declaración electrónica que vincula los datos de validación de una firma con una persona física y confirma, al menos, el nombre o el seudónimo de esa persona;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_28",
+       "quote": "perderá su validez desde el momento de su revocación y no podrá en ninguna circunstancia recuperar su estado."
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_28",
+       "quote": "ese certificado perderá su validez durante el período de suspensión."
+      }
+     ]
+    },
+    {
+     "text": "**Sello electrónico**: datos anejos o asociados a otros para **garantizar su origen e integridad**; lo crea una **persona jurídica** (art. 3, puntos 24 y 25). El **cualificado** goza de **presunción de integridad** de los datos y de **corrección de su origen** (art. 35.2).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«creador de un sello», una persona jurídica que crea un sello electrónico;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«sello electrónico», datos en formato electrónico anejos a otros datos en formato electrónico, o asociados de manera lógica con ellos, para garantizar el origen y la integridad de estos últimos;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_35",
+       "quote": "Un sello electrónico cualificado disfrutará de la presunción de integridad de los datos y de la corrección del origen de los datos a los que el sello electrónico cualificado esté vinculado."
+      }
+     ]
+    },
+    {
+     "text": "**Sello de tiempo electrónico**: vincula unos datos con un **instante concreto** y prueba que **existían en ese instante** (art. 3.33). El **cualificado** se basa en una fuente temporal vinculada al **Tiempo Universal Coordinado** (art. 42.1) y goza de **presunción de exactitud** de la fecha y hora y de **integridad** de los datos (art. 41.2).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«sello de tiempo electrónico», datos en formato electrónico que vinculan otros datos en formato electrónico con un instante concreto, aportando la prueba de que estos últimos datos existían en ese instante;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_42",
+       "quote": "b) basarse en una fuente de información temporal vinculada al Tiempo Universal Coordinado, y"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_41",
+       "quote": "Los sellos cualificados de tiempo electrónicos disfrutarán de una presunción de exactitud de la fecha y hora que indican y de la integridad de los datos a los que la fecha y hora estén vinculadas."
+      }
+     ]
+    },
+    {
+     "text": "**Entrega electrónica certificada** cualificada: presume la **integridad** de los datos, el **envío** por el remitente identificado, la **recepción** por el destinatario identificado y la **exactitud de la fecha y hora** (art. 43.2). Y a un **documento electrónico** (todo contenido en formato electrónico) no se le niegan efectos jurídicos por serlo (arts. 3.35 y 46).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_43",
+       "quote": "disfrutarán de la presunción de la integridad de los datos, el envío de dichos datos por el remitente identificado, la recepción por el destinatario identificado y la exactitud de la fecha y hora de envío y recepción de los datos"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«documento electrónico», todo contenido almacenado en formato electrónico, en particular, texto o registro sonoro, visual o audiovisual;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_46",
+       "quote": "No se denegarán efectos jurídicos ni admisibilidad como prueba en procedimientos judiciales a un documento electrónico por el mero hecho de estar en formato electrónico."
+      }
+     ]
+    },
+    {
+     "text": "**Certificado de autenticación de sitio web**: permite **autenticar un sitio web** y lo vincula con la persona a quien se expidió (art. 3.38). Los **navegadores** deben **reconocer** los cualificados y mostrar sus datos de forma fácil de consultar (art. 45.1 bis).",
+     "refs": [
+      {
+       "law": "32014R0910",
+       "section": "art_3",
+       "quote": "«certificado de autenticación de sitio web», declaración electrónica que permite autenticar un sitio web y vincula el sitio web con la persona física o jurídica a quien se ha expedido el certificado;"
+      },
+      {
+       "law": "32014R0910",
+       "section": "art_45",
+       "quote": "Los proveedores de navegadores web reconocerán los certificados cualificados de autenticación de sitios web"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Ley 6/2020, de servicios electrónicos de confianza",
+   "points": [
+    {
+     "text": "La **Ley 6/2020, de 11 de noviembre**, regula **determinados aspectos** de los servicios electrónicos de confianza como **complemento del Reglamento eIDAS** (art. 1). **Derogó la Ley 59/2003, de firma electrónica**, y el **art. 25 de la LSSI** (terceros de confianza).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1",
+       "quote": "La presente Ley tiene por objeto regular determinados aspectos de los servicios electrónicos de confianza, como complemento del Reglamento (UE) n.º 910/2014"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "dd",
+       "quote": "a) La Ley 59/2003, de 19 de diciembre, de firma electrónica."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "dd",
+       "quote": "b) El artículo 25 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico."
+      }
+     ]
+    },
+    {
+     "text": "Se aplica a los **prestadores públicos y privados** establecidos en España y a los de otro Estado con **establecimiento permanente** en España, si sus servicios no los supervisa otro país de la UE (art. 2).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a2",
+       "quote": "Esta Ley se aplicará a los prestadores públicos y privados de servicios electrónicos de confianza establecidos en España."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a2",
+       "quote": "siempre que ofrezcan servicios no supervisados por la autoridad competente de otro país de la Unión Europea."
+      }
+     ]
+    },
+    {
+     "text": "Solo las **personas físicas** firman electrónicamente: no hay certificados de firma de **personas jurídicas**, que usan **sellos electrónicos** (o actúan con la firma de sus representantes) (preámbulo, IV).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "pr",
+       "quote": "únicamente las personas físicas están capacitadas para firmar electrónicamente, por lo que no prevé la emisión de certificados de firma electrónica a favor de personas jurídicas o entidades sin personalidad jurídica. A estas se reservan los sellos electrónicos"
+      }
+     ]
+    },
+    {
+     "text": "**Documentos electrónicos** (art. 3): tienen el valor que corresponda a su naturaleza. Si en un documento privado se usó un servicio de confianza **no cualificado**, su prueba se rige por el **art. 326.3 LEC**; si fue **cualificado**, por el **art. 326.4**.",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a3",
+       "quote": "Los documentos electrónicos públicos, administrativos y privados, tienen el valor y la eficacia jurídica que corresponda a su respectiva naturaleza"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a3",
+       "quote": "se regirá por lo dispuesto en el apartado 3 del artículo 326 de la Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil. Si el servicio fuese cualificado, se estará a lo previsto en el apartado 4 del mismo precepto."
+      }
+     ]
+    },
+    {
+     "text": "Los certificados se extinguen por **caducidad** o por **revocación** (art. 4.1). La vigencia de los **certificados cualificados no puede superar cinco años**, y se fija según la tecnología usada (art. 4.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a4",
+       "quote": "Los certificados electrónicos se extinguen por caducidad a la expiración de su período de vigencia, o mediante revocación"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a4",
+       "quote": "El período de vigencia de los certificados cualificados no será superior a cinco años."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a4",
+       "quote": "Dicho período se fijará en atención a las características y tecnología empleada para generar los datos de creación de firma, sello, o autenticación de sitio web."
+      }
+     ]
+    },
+    {
+     "text": "**Revocación** (art. 5.1), entre otras causas: **solicitud** del firmante o titular; **violación o puesta en peligro** del secreto de los datos de creación; **resolución judicial o administrativa**; **fallecimiento** del firmante o extinción de la persona jurídica; fin de la **representación**; **cese** del prestador (salvo transferencia); **falsedad** de los datos; **criptografía** insuficiente; o causa lícita de la declaración de prácticas.",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "a) Solicitud formulada por el firmante"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "b) Violación o puesta en peligro del secreto de los datos de creación de firma o de sello"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "c) Resolución judicial o administrativa que lo ordene."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "d) Fallecimiento del firmante"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "e) Terminación de la representación en los certificados electrónicos con atributo de representante."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "g) Descubrimiento de la falsedad o inexactitud de los datos aportados para la expedición del certificado"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "i) Cualquier otra causa lícita prevista en la declaración de prácticas del servicio de confianza."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "f) Cese en la actividad del prestador de servicios de confianza salvo que la gestión de los certificados electrónicos expedidos por aquel sea transferida a otro prestador de servicios de confianza."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "h) En caso de que se advierta que los mecanismos criptográficos utilizados para la generación de los certificados no cumplen los estándares de seguridad mínimos necesarios"
+      }
+     ]
+    },
+    {
+     "text": "**Suspensión** (art. 5.2): en los casos de **solicitud**, **resolución** y **criptografía** insuficiente (letras a, c y h), y si hay **duda** sobre la violación del secreto o la falsedad de los datos, **siempre que** la declaración de prácticas la prevea. Si al acabar el plazo no se levanta, el certificado **se extingue** (art. 5.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "suspenderán la vigencia de los certificados electrónicos en los supuestos previstos en las letras a), c) y h) del apartado anterior, así como en los casos de duda sobre la concurrencia de las circunstancias previstas en sus letras b) y g), siempre que sus declaraciones de prácticas de certificación prevean la posibilidad de suspender los certificados."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a5",
+       "quote": "la vigencia del certificado se extinguirá si transcurrido el plazo de duración de la suspensión, el prestador no la hubiera levantado."
+      }
+     ]
+    },
+    {
+     "text": "**Identidad en el certificado cualificado** (art. 6.1): de **persona física**, nombre, apellidos y **DNI, NIE o NIF** (o un **seudónimo** que conste inequívocamente como tal); de **persona jurídica** (sello o web), **denominación y NIF**. El prestador que usa un seudónimo debe **constatar la verdadera identidad** y **revelarla** a jueces y autoridades que la pidan (art. 8).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a6",
+       "quote": "por su nombre y apellidos y su número de Documento Nacional de Identidad, número de identidad de extranjero o número de identificación fiscal, o a través de un pseudónimo que conste como tal de manera inequívoca."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a6",
+       "quote": "por su denominación o razón social y su número de identificación fiscal."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a8",
+       "quote": "deberán constatar la verdadera identidad del titular del certificado y conservar la documentación que la acredite."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a8",
+       "quote": "estarán obligados a revelar la citada identidad cuando lo soliciten los órganos judiciales y otras autoridades públicas"
+      }
+     ]
+    },
+    {
+     "text": "**Comprobación de la identidad** (art. 7): exige la **personación** del solicitante, que se acredita con **DNI, pasaporte** u otros medios admitidos. **No hace falta** si su firma en la solicitud se **legitima ante notario**. Por **orden ministerial** pueden admitirse métodos a distancia como la **videoconferencia o vídeo-identificación**, con seguridad equivalente a la presencia física. Tampoco se exige si ya se le identificó así en una relación previa **hace menos de cinco años**.",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a7",
+       "quote": "La identificación de la persona física que solicite un certificado cualificado exigirá su personación ante los encargados de verificarla y se acreditará mediante el Documento Nacional de Identidad, pasaporte u otros medios admitidos en Derecho."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a7",
+       "quote": "Podrá prescindirse de la personación de la persona física que solicite un certificado cualificado si su firma en la solicitud de expedición de un certificado cualificado ha sido legitimada en presencia notarial."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a7",
+       "quote": "mediante otros métodos de identificación como videoconferencia o vídeo-identificación que aporten una seguridad equivalente en términos de fiabilidad a la presencia física"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a7",
+       "quote": "el período de tiempo transcurrido desde la identificación fuese menor de cinco años."
+      }
+     ]
+    },
+    {
+     "text": "**Obligaciones de todos los prestadores** (art. 9): publicar información **veraz**; **no almacenar ni copiar** los datos de creación de firma, sello o autenticación del titular, **salvo** que los gestionen **en su nombre** (con sistemas fiables y bajo su **control exclusivo**); y, si expiden certificados, un servicio público de **consulta del estado de validez o revocación**.",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a9",
+       "quote": "a) Publicar información veraz y acorde con esta Ley y el Reglamento (UE) 910/2014."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a9",
+       "quote": "b) No almacenar ni copiar, por sí o a través de un tercero, los datos de creación de firma, sello o autenticación de sitio web de la persona física o jurídica a la que hayan prestado sus servicios, salvo en caso de su gestión en nombre del titular."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a9",
+       "quote": "para garantizar que el entorno sea fiable y se utilice bajo el control exclusivo del titular del certificado."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a9",
+       "quote": "deberán disponer de un servicio de consulta sobre el estado de validez o revocación de los certificados emitidos accesible al público."
+      }
+     ]
+    },
+    {
+     "text": "**Obligaciones adicionales de los cualificados** (art. 9.3):",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a9",
+       "quote": "Los prestadores cualificados de servicios electrónicos de confianza deberán cumplir las siguientes obligaciones adicionales:"
+      }
+     ],
+     "items": [
+      {
+       "text": "Conservar la información de los servicios prestados **15 años** desde la extinción del certificado o el fin del servicio.",
+       "refs": [
+        {
+         "law": "BOE-A-2020-14046",
+         "section": "a9",
+         "quote": "será de 15 años desde la extinción del certificado o la finalización del servicio prestado."
+        }
+       ]
+      },
+      {
+       "text": "**Seguro de responsabilidad civil** de al menos **1.500.000 €**, más **500.000 €** por cada tipo de servicio cualificado adicional (**no** para los del **sector público**); puede sustituirse por aval o seguro de caución.",
+       "refs": [
+        {
+         "law": "BOE-A-2020-14046",
+         "section": "a9",
+         "quote": "Constituir un seguro de responsabilidad civil por importe mínimo de 1.500.000 euros, excepto si el prestador pertenece al sector público."
+        },
+        {
+         "law": "BOE-A-2020-14046",
+         "section": "a9",
+         "quote": "se añadirán 500.000 euros más por cada tipo de servicio."
+        }
+       ]
+      },
+      {
+       "text": "Comunicar el **cese** a clientes y al órgano de supervisión con **al menos dos meses** de antelación.",
+       "refs": [
+        {
+         "law": "BOE-A-2020-14046",
+         "section": "a9",
+         "quote": "con una antelación mínima de dos meses al cese efectivo de la actividad"
+        }
+       ]
+      },
+      {
+       "text": "Enviar el **informe de evaluación de la conformidad**; si no, pierde la cualificación y sale de la **lista de confianza**.",
+       "refs": [
+        {
+         "law": "BOE-A-2020-14046",
+         "section": "a9",
+         "quote": "El incumplimiento de esta obligación conllevará la retirada de la cualificación al prestador y al servicio que este presta, y su eliminación de la lista de confianza"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Los **no cualificados** no necesitan verificación previa, pero deben **comunicar su actividad en tres meses** desde que la inician; el Ministerio los publica en una **lista distinta** de la de los cualificados (art. 12).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-4",
+       "quote": "no necesitan verificación administrativa previa de cumplimiento de requisitos para iniciar su actividad, pero deberán comunicar su actividad al Ministerio de Asuntos Económicos y Transformación Digital en el plazo de tres meses desde que la inicien"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-4",
+       "quote": "en una lista diferente a la de los prestadores de servicios de confianza cualificados"
+      }
+     ]
+    },
+    {
+     "text": "**Supervisión**: el **Ministerio de Asuntos Económicos y Transformación Digital** (así lo nombra la ley) controla a los prestadores cualificados y no cualificados (art. 14) y mantiene la **lista de confianza** (art. 16.1). La verificación previa para la cualificación se resuelve en **6 meses**; el silencio es **desestimatorio** (art. 16.2). Los cualificados envían un **informe anual de actividad** antes del **1 de febrero** (art. 17.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-6",
+       "quote": "El Ministerio de Asuntos Económicos y Transformación Digital, como órgano de supervisión, controlará el cumplimiento por los prestadores de servicios electrónicos de confianza cualificados y no cualificados"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-8",
+       "quote": "establecerá, mantendrá y publicará la lista de confianza"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-8",
+       "quote": "será de 6 meses, transcurridos los cuales se podrá entender desestimada la solicitud."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-9",
+       "quote": "A más tardar el 1 de febrero de cada año, los prestadores cualificados de servicios de confianza remitirán"
+      }
+     ]
+    },
+    {
+     "text": "**Infracciones** (art. 18): **muy graves**, entre otras, **reincidir en una grave** en dos años o expedir certificados cualificados **sin las comprobaciones** cuando afecta a la **mayoría** de los expedidos; **graves**, entre otras, **obstruir la inspección**, presentarse como **cualificado sin serlo**, **almacenar o copiar** datos de creación o **no extinguir** certificados cuando procede.",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-10",
+       "quote": "La comisión de una infracción grave en el plazo de dos años desde que hubiese sido sancionado por una infracción grave de la misma naturaleza"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-10",
+       "quote": "cuando ello afecte a la mayoría de los certificados cualificados expedidos en el año anterior al inicio del procedimiento sancionador"
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-10",
+       "quote": "Actuar en el mercado como prestador cualificado de servicios de confianza, ofrecer servicios de confianza como cualificados o utilizar la etiqueta de confianza «UE» sin haber obtenido la cualificación de los citados servicios."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-10",
+       "quote": "n) No extinguir la vigencia de los certificados electrónicos en los supuestos señalados en esta Ley."
+      }
+     ]
+    },
+    {
+     "text": "**Multas** (art. 19.1): **muy graves**, de **150.001 a 300.000 €**; **graves**, de **50.001 a 150.000 €**; **leves**, **hasta 50.000 €**. Para leves y graves cabe **apercibimiento** en lugar de abrir el procedimiento (art. 19 bis). Sanciona las **muy graves** la persona titular del **Ministerio** y las **graves y leves** la de la **Secretaría de Estado de Digitalización e Inteligencia Artificial**; el procedimiento dura como máximo **nueve meses** (art. 20).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-11",
+       "quote": "a) Por la comisión de infracciones muy graves, una multa por importe de 150.001 hasta 300.000 euros."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-11",
+       "quote": "b) Por la comisión de infracciones graves, una multa por importe de 50.001 hasta 150.000 euros."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-11",
+       "quote": "c) Por la comisión de infracciones leves, una multa por importe de hasta 50.000 euros."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a1-12",
+       "quote": "siempre que los hechos fuesen constitutivos de infracción leve o grave conforme a lo dispuesto en esta ley."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a2-2",
+       "quote": "en el caso de infracciones muy graves, a la persona titular del Ministerio de Asuntos Económicos y Transformación Digital, y en el de infracciones graves y leves, a la persona titular de la Secretaría de Estado de Digitalización e Inteligencia Artificial."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "a2-2",
+       "quote": "El procedimiento tendrá una duración máxima de nueve meses"
+      }
+     ]
+    },
+    {
+     "text": "Todos los sistemas de **identificación, firma y sello** de las **Leyes 39/2015 y 40/2015** tienen **plenos efectos jurídicos** (disp. adic. 2.ª). Los órganos del **Ministerio del Interior** que expiden el **DNI** cumplen las obligaciones de los prestadores que expiden **certificados cualificados** (disp. adic. 3.ª).",
+     "refs": [
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "da-2",
+       "quote": "tendrán plenos efectos jurídicos."
+      },
+      {
+       "law": "BOE-A-2020-14046",
+       "section": "da-3",
+       "quote": "Los órganos competentes del Ministerio del Interior para la expedición del Documento Nacional de Identidad cumplirán las obligaciones que la presente Ley impone a los prestadores de servicios electrónicos de confianza que expidan certificados cualificados."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Identificación y firma ante las Administraciones",
+   "points": [
+    {
+     "text": "Las Administraciones **verifican la identidad** de los interesados con su nombre y apellidos o razón social del **DNI** o documento equivalente (art. 9.1 Ley 39/2015). Para identificarse **electrónicamente** valen (art. 9.2): **certificados cualificados de firma** y **de sello** de prestadores de la **lista de confianza**, y **cualquier otro sistema** que las Administraciones consideren válido con **registro previo** del usuario y **comunicación previa** a la Secretaría General de Administración Digital (eficaz a los **dos meses**).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a9",
+       "quote": "Las Administraciones Públicas están obligadas a verificar la identidad de los interesados en el procedimiento administrativo"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a9",
+       "quote": "a) Sistemas basados en certificados electrónicos cualificados de firma electrónica expedidos por prestadores incluidos en la ‘‘Lista de confianza de prestadores de servicios de certificación’’."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a9",
+       "quote": "b) Sistemas basados en certificados electrónicos cualificados de sello electrónico"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a9",
+       "quote": "siempre que cuenten con un registro previo como usuario que permita garantizar su identidad y previa comunicación a la Secretaría General de Administración Digital"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a9",
+       "quote": "habrán de transcurrir dos meses desde dicha comunicación"
+      }
+     ]
+    },
+    {
+     "text": "Los interesados pueden **firmar** por cualquier medio que acredite la **autenticidad** de su voluntad y la **integridad** del documento (art. 10.1). Electrónicamente valen la **firma cualificada y avanzada** con certificado cualificado, el **sello cualificado y avanzado** y otros sistemas admitidos (art. 10.2). Quien firma **ya queda identificado** (art. 10.5).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a10",
+       "quote": "Los interesados podrán firmar a través de cualquier medio que permita acreditar la autenticidad de la expresión de su voluntad y consentimiento, así como la integridad e inalterabilidad del documento."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a10",
+       "quote": "a) Sistemas de firma electrónica cualificada y avanzada basados en certificados electrónicos cualificados de firma electrónica"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a10",
+       "quote": "su identidad se entenderá ya acreditada mediante el propio acto de la firma."
+      }
+     ]
+    },
+    {
+     "text": "Por regla general basta con **identificarse** (art. 11.1). La **firma solo es obligatoria** para (art. 11.2): **formular solicitudes**, presentar **declaraciones responsables o comunicaciones**, **interponer recursos**, **desistir de acciones** y **renunciar a derechos**. (Para **consultar el estado de la tramitación** basta identificarse.)",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "será suficiente con que los interesados acrediten previamente su identidad a través de cualquiera de los medios de identificación previstos en esta Ley."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "Las Administraciones Públicas sólo requerirán a los interesados el uso obligatorio de firma para:"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "a) Formular solicitudes."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "b) Presentar declaraciones responsables o comunicaciones."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "c) Interponer recursos."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "d) Desistir de acciones."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "e) Renunciar a derechos."
+      }
+     ]
+    },
+    {
+     "text": "Si un interesado no obligado a relacionarse electrónicamente no tiene medios, puede identificarle o firmar por él un **funcionario habilitado**, con su **consentimiento expreso** (art. 12.2 Ley 39/2015).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "su identificación o firma electrónica en el procedimiento administrativo podrá ser válidamente realizada por un funcionario público mediante el uso del sistema de firma electrónica del que esté dotado para ello."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a12",
+       "quote": "preste su consentimiento expreso para esta actuación"
+      }
+     ]
+    },
+    {
+     "text": "Las **Administraciones** se identifican con un **sello electrónico** basado en certificado cualificado (art. 40 Ley 40/2015). En la **actuación administrativa automatizada** (sin intervención directa de un empleado público, art. 41) firman con **sello electrónico** o **código seguro de verificación (CSV)** (art. 42). El **personal** firma con su propia firma electrónica (art. 43).",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a40",
+       "quote": "Las Administraciones Públicas podrán identificarse mediante el uso de un sello electrónico basado en un certificado electrónico reconocido o cualificado"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a41",
+       "quote": "en la que no haya intervenido de forma directa un empleado público."
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a42",
+       "quote": "b) Código seguro de verificación vinculado a la Administración Pública"
+      },
+      {
+       "law": "BOE-A-2015-10566",
+       "section": "a43",
+       "quote": "se realizará mediante firma electrónica del titular del órgano o empleado público."
+      }
+     ]
+    },
+    {
+     "text": "**Formatos de firma** admitidos en la Administración (NTI de Política de firma y sello, III.2 y III.4): los de la **Decisión de Ejecución (UE) 2015/1506** y, por compatibilidad, **XAdES** (XML), **CAdES** (CMS) y **PAdES** (**PDF**). El perfil mínimo es **«-EPES»**: clase básica (**BES**) más la información de la **política de firma**.",
+     "refs": [
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "c) los formatos CAdES, XAdES y PAdES"
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "a) XAdES (XML Advanced Electronic Signatures)"
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "b) CAdES (CMS Advanced Electronic Signatures)"
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "c) PAdES (PDF Advanced Electronic Signatures)"
+      },
+      {
+       "law": "BOE-A-2016-10146",
+       "section": "ii-2",
+       "quote": "será «-EPES», esto es, clase básica (BES) añadiendo información sobre la política de firma y sello."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "El DNI (Real Decreto 255/2025)",
+   "points": [
+    {
+     "text": "El **DNI** lo regula hoy el **Real Decreto 255/2025, de 1 de abril**, que **derogó el Real Decreto 1553/2005** y regula su expedición y gestión **en sus versiones física y digital** (art. 1).",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "dd",
+       "quote": "Queda derogado el Real Decreto 1553/2005, de 23 de diciembre, por el que se regula la expedición del documento nacional de identidad y sus certificados de firma electrónica."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1",
+       "quote": "en sus versiones física y digital."
+      }
+     ]
+    },
+    {
+     "text": "Es un documento **personal e intransferible** emitido por el **Ministerio del Interior**, a través de la **Dirección General de la Policía**, con la protección de los **documentos públicos y oficiales**; su número es el **identificador numérico personal de carácter general** (art. 2). Es una **tarjeta inteligente certificada** que permite la identificación **física** (exhibiéndolo) y **digital** (con un dispositivo móvil), presencial o remota.",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a2",
+       "quote": "El Documento Nacional de Identidad es un documento personal e intransferible emitido por el Ministerio del Interior, a través de la Dirección General de la Policía"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a2",
+       "quote": "identificador numérico personal de carácter general."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a2",
+       "quote": "El Documento Nacional de Identidad consiste en una tarjeta inteligente certificada que permite a la ciudadanía la identificación física mediante la exhibición del documento y la identificación digital"
+      }
+     ]
+    },
+    {
+     "text": "Es el **único documento con suficiente valor por sí solo** para acreditar la identidad y los datos personales de su titular; permite la **identificación electrónica** y la **firma electrónica** de documentos (art. 3.1). Todas las personas, públicas o privadas, reconocen su eficacia para acreditar la identidad, la **firma** y la **integridad** de lo firmado con sus certificados (art. 3.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a3",
+       "quote": "El Documento Nacional de Identidad es el único documento con suficiente valor por sí solo para la acreditación, a todos los efectos, de la identidad y los datos personales de su titular."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a3",
+       "quote": "Permite la identificación electrónica de su titular, así como la firma electrónica de documentos"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a3",
+       "quote": "así como su firma y la integridad de los documentos firmados con sus certificados electrónicos."
+      }
+     ]
+    },
+    {
+     "text": "**Derechos y obligaciones** (art. 4): todos los españoles **tienen derecho** a él; es **obligatorio a partir de los 14 años** para los residentes en España y para quienes, residiendo fuera, se trasladen aquí **seis meses o más**. Nadie puede ser privado de él, ni temporalmente, salvo en los casos legales. Hay que **exhibirlo** cuando lo pidan la autoridad o sus agentes, y **denunciar** su sustracción o extravío.",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a4",
+       "quote": "Todas las personas con nacionalidad española tienen derecho a que se les expida el Documento Nacional de Identidad."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a4",
+       "quote": "Su obtención es obligatoria para las personas mayores de catorce años residentes en España y para las de igual edad que, residiendo en el extranjero, se trasladen a España por tiempo no inferior a seis meses."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a4",
+       "quote": "ni siquiera temporalmente, salvo en los casos y forma establecidos por las leyes"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a4",
+       "quote": "De su sustracción o extravío deberá darse cuenta, tan pronto como sea posible"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a4",
+       "quote": "lo están también a exhibirlo cuando fueren requeridas para ello por la autoridad, sus agentes y funcionarios públicos"
+      }
+     ]
+    },
+    {
+     "text": "**Tramitación** (art. 6.2): **presencia física**, con **cita previa**; los menores, con quien ejerza la patria potestad o tutela. Requisitos: **tasa**, documentos recabados **electrónicamente** (registro civil, **empadronamiento** de menos de **tres meses**) y **fotografía** en color de **32 × 26 mm** con fondo blanco. Lleva **imagen facial** y **dos impresiones dactilares** (los **índices**; no a menores de **seis años**) y la **firma manuscrita digitalizada**.",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "se realizará con la presencia física de la persona, a través de los sistemas de cita previa"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "En caso de menores de edad, se llevará a cabo en presencia de quien tenga encomendada la patria potestad o tutela"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "conllevará el abono de la tasa legalmente establecida"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "serán recabados electrónicamente, salvo que la persona interesada se opusiera a ello."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "expedido con una antelación máxima de tres meses a la fecha de la tramitación del Documento Nacional de Identidad."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "tamaño 32 por 26 milímetros, con fondo uniforme blanco y liso"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "Igualmente, se incluirán dos impresiones dactilares en formatos digitales interoperables, a excepción de los menores de seis años. Se tomarán las impresiones dactilares de los dedos índices de ambas manos a la persona interesada."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a6",
+       "quote": "Se recogerá igualmente, la firma manuscrita digitalizada"
+      }
+     ]
+    },
+    {
+     "text": "**Validez** (art. 7.1), desde la expedición o renovación:",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a7",
+       "quote": "Con carácter general el Documento Nacional de Identidad tendrá un período de validez, a contar desde la fecha de la expedición o de cada una de sus renovaciones, de:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Menores de 5 años**: **2 años**.",
+       "refs": [
+        {
+         "law": "BOE-A-2025-6601",
+         "section": "a7",
+         "quote": "a) Dos años cuando la persona titular no haya cumplido los cinco años de edad."
+        }
+       ]
+      },
+      {
+       "text": "**De 5 a 29 años**: **5 años**.",
+       "refs": [
+        {
+         "law": "BOE-A-2025-6601",
+         "section": "a7",
+         "quote": "b) Cinco años, cuando la persona titular haya cumplido los cinco años de edad y no haya alcanzado los treinta al momento de la expedición o renovación."
+        }
+       ]
+      },
+      {
+       "text": "**De 30 a 69 años**: **10 años**.",
+       "refs": [
+        {
+         "law": "BOE-A-2025-6601",
+         "section": "a7",
+         "quote": "c) Diez años, cuando la persona titular haya cumplido los treinta y no haya alcanzado los setenta."
+        }
+       ]
+      },
+      {
+       "text": "**Desde los 70 años**: **más de diez años**, consignando una fecha.",
+       "refs": [
+        {
+         "law": "BOE-A-2025-6601",
+         "section": "a7",
+         "quote": "d) Más de diez años cuando la persona titular haya cumplido los setenta años, consignando una fecha."
+        },
+        {
+         "title": "Validez del DNI · Portal del DNI electrónico",
+         "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1070",
+         "quote": "Más de diez años, cuando la persona titular haya cumplido los setenta años, consignando una fecha."
+        }
+       ]
+      },
+      {
+       "text": "**Excepcionalmente, 1 año**: si es **temporalmente imposible tomar las huellas** o faltan documentos que se acreditan por otros medios (art. 7.2).",
+       "refs": [
+        {
+         "law": "BOE-A-2025-6601",
+         "section": "a7",
+         "quote": "De forma excepcional se podrá otorgar validez de un año"
+        },
+        {
+         "law": "BOE-A-2025-6601",
+         "section": "a7",
+         "quote": "Cuando sea físicamente imposible, con carácter temporal, tomar las impresiones dactilares de cualquier dedo de la persona solicitante."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Renovación** (art. 8): al caducar pierde sus efectos y hay que renovarlo; puede hacerse en los **últimos 180 días** de vigencia, en **persona**, con tasa y fotografía. También al **cambiar los datos**. **Duplicados** (art. 9): por extravío, sustracción, destrucción o deterioro, con **denuncia** en caso de extravío o sustracción; tienen la **misma validez** que el sustituido, salvo en sus **últimos 90 días**, que se expide como una renovación.",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a8",
+       "quote": "La renovación del Documento Nacional de Identidad podrá tramitarse dentro de los últimos 180 días de su vigencia."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a8",
+       "quote": "en los supuestos de variación de los datos que se recogen en el mismo"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a9",
+       "quote": "La validez de estos duplicados será la misma que tenían los documentos de identidad a los que sustituyen, salvo que estos se hallen dentro de los últimos 90 días de su vigencia, en cuyo caso se expedirán con la misma validez que si se tratara de una renovación."
+      }
+     ]
+    },
+    {
+     "text": "**Entrega** personal al titular; si es **menor de 14 años** o tiene una medida de apoyo, a quien ejerza la patria potestad, tutela o apoyo (art. 10). Para los menores, el DNI **no autoriza por sí solo a salir de España** (disp. adic. 2.ª).",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-2",
+       "quote": "La entrega del Documento Nacional de Identidad deberá realizarse personalmente a su titular."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-2",
+       "quote": "Cuando la persona titular sea menor de 14 años"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "da-2",
+       "quote": "no supone, por sí sola, autorización para desplazarse fuera del territorio nacional"
+      }
+     ]
+    },
+    {
+     "text": "**Tarjeta y chip** (art. 11): su diseño lo fija una **orden del Ministerio del Interior**, conforme al **Reglamento (UE) 2019/1157**. El **chip** integra **por separado**: los **certificados electrónicos cualificados** (con dispositivo cualificado de creación de firma, que permiten la firma **avanzada y cualificada**), y la **fotografía**, los **datos personales** y las **dos huellas**.",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-3",
+       "quote": "se determinará por orden de la persona titular del Ministerio del Interior"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-3",
+       "quote": "La tarjeta soporte contiene un chip, como medio de almacenamiento de alta seguridad, donde se integran de forma separada:"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-3",
+       "quote": "a) Los certificados electrónicos cualificados que funcionan con un dispositivo cualificado de creación de firma electrónica"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-3",
+       "quote": "permitiendo la generación de la firma electrónica avanzada y cualificada."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-3",
+       "quote": "b) La fotografía, los datos personales del titular del documento y las dos impresiones dactilares en formatos digitales interoperables."
+      }
+     ]
+    },
+    {
+     "text": "Los **certificados del DNI** valen **dos años** (art. 11.3); con el Real Decreto 1553/2005 podían durar **hasta cinco** (el portal fijaba 24 meses de un máximo de 60). El **Ministerio para la Transformación Digital y de la Función Pública** supervisa lo que corresponde a la Dirección General de la Policía como prestador, que publica su **Declaración de Prácticas y Políticas de Certificación** (art. 11.2 y 11.4).",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-3",
+       "quote": "El plazo de validez de los certificados electrónicos contenidos en el Documento Nacional de Identidad será de dos años."
+      },
+      {
+       "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1028",
+       "quote": "la validez de éstos no puede ser superior a 60 meses para garantizar la seguridad electrónica de los mismos."
+      },
+      {
+       "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1028",
+       "quote": "actualmente el plazo de validez de los certificados electrónicos contenidos en el DNI serán de 24 meses."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-3",
+       "quote": "El Ministerio para la Transformación Digital y de la Función Pública, será el órgano de supervisión del cumplimiento de las obligaciones establecidas a la Dirección General de la Policía."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-3",
+       "quote": "formulará una Declaración de Prácticas y Políticas de Certificación"
+      }
+     ]
+    },
+    {
+     "text": "**Contenido** (art. 12). **Anverso**: número y **carácter de verificación**, apellidos y nombre, fecha de nacimiento, **sexo**, nacionalidad, emisión, validez, **número de soporte**, fotografía y firma digitalizadas. **Reverso**: **domicilio**, lugar de nacimiento, **nombre de los progenitores**, número de equipo, **tres líneas MRZ** de **30 caracteres OCR-B** y el **chip**.",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-4",
+       "quote": "Número y carácter de verificación personal e intransferible del Documento Nacional de Identidad."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-4",
+       "quote": "Número de soporte."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-4",
+       "quote": "Nombre de los progenitores."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-4",
+       "quote": "Tres líneas MRZ que contienen 30 caracteres OCR-B cada una."
+      }
+     ]
+    },
+    {
+     "text": "**Versión digital** (art. 13): la gestiona la Dirección General de la Policía en un **dispositivo móvil**; solo se genera si el titular tiene su **DNI físico vigente**, con los **mismos plazos de validez** y la **misma eficacia jurídica** para identificarse ante autoridades, Administraciones y sector privado. Las entidades públicas y privadas tenían **doce meses** para adaptarse (disp. trans. 3.ª).",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-5",
+       "quote": "se realizará a través de una infraestructura de identificación electrónica con un dispositivo móvil."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-5",
+       "quote": "se generará siempre que la persona titular disponga de su documento físico vigente."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-5",
+       "quote": "La versión digital tendrá los mismos plazos de validez que la versión física"
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "a1-5",
+       "quote": "La utilización del Documento Nacional de Identidad en su versión digital tendrá la misma eficacia jurídica a efectos de identificación."
+      },
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "dt-3",
+       "quote": "deberán adoptar en el plazo de doce meses desde la entrada en vigor de este real decreto"
+      }
+     ]
+    },
+    {
+     "text": "Los DNI expedidos **antes** del Real Decreto 255/2025 **siguen siendo válidos** según la norma vigente cuando se expidieron (disp. trans. 1.ª).",
+     "refs": [
+      {
+       "law": "BOE-A-2025-6601",
+       "section": "dt",
+       "quote": "seguirán siendo válidos y eficaces, de conformidad con la normativa aplicable en el momento de su expedición o renovación."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "El DNI electrónico en la práctica",
+   "points": [
+    {
+     "text": "El **DNI electrónico (DNIe)** se creó en **2006**: tarjeta de **policarbonato** con un **chip** que guarda y procesa información de forma segura. En **enero de 2015** nace el **DNI 3.0**, con chip **dual-interface**: con contacto y **sin contacto (NFC)**.",
+     "refs": [
+      {
+       "title": "El DNI electrónico · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_100",
+       "quote": "en 2006 se creó el Documento Nacional de Identidad electrónico (DNIe)"
+      },
+      {
+       "title": "El DNI electrónico · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_100",
+       "quote": "En enero de 2015 nace el DNI 3.0"
+      },
+      {
+       "title": "El DNI electrónico · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_100",
+       "quote": "al disponer de un chip dual-interface que permite su utilización con contacto y también modo contactlesss"
+      }
+     ]
+    },
+    {
+     "text": "En el **DNIe** el chip está en el **anverso** y necesita **lector físico**; en el **DNI 3.0** está en el **reverso** y puede usarse con lector o por **NFC** con un móvil o tableta.",
+     "refs": [
+      {
+       "title": "Preguntas frecuentes sobre el DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1001",
+       "quote": "En el caso del DNIe, el chip está ubicado en el anverso de la tarjeta y requiere un lector físico para su utilización."
+      },
+      {
+       "title": "Preguntas frecuentes sobre el DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1001",
+       "quote": "El chip del DNI 3.0 está situado en el reverso de la tarjeta, y puede ser utilizado con un lector físico de tarjetas (hardware) pero también de forma inalámbrica a través de la tecnología NFC de un Smartphone o Tablet."
+      }
+     ]
+    },
+    {
+     "text": "El **DNIe 4.0** adapta el documento al **Reglamento (UE) 2019/1157**; se presentó el **2 de junio de 2021** e incorpora la **bandera de la UE** con las siglas del país emisor.",
+     "refs": [
+      {
+       "title": "DNIe 4.0 · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_110",
+       "quote": "El DNIe 4.0 formato europeo nace gracias a que los países miembros de la Unión Europea deben cumplir con el Reglamento UE 2019/1157"
+      },
+      {
+       "title": "DNIe 4.0 · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_110",
+       "quote": "En España tiene su presentación el día 2 de junio de 2021"
+      },
+      {
+       "title": "DNIe 4.0 · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_110",
+       "quote": "Aparición de la bandera de la Unión Europea con las siglas en su interior del país que emite el documento."
+      }
+     ]
+    },
+    {
+     "text": "El **chip** contiene los mismos datos impresos (filiación, **fotografía**, firma digitalizada y **resumen criptográfico de la huella**), los **certificados de autenticación y de firma** y un **certificado de componente**. **No** guarda datos **históricos**, sanitarios, fiscales, penales ni laborales.",
+     "refs": [
+      {
+       "title": "Preguntas frecuentes sobre el DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1001",
+       "quote": "El chip que incorpora el DNI contiene los mismos datos que aparecen impresos en la tarjeta (filiación, fotografía y firma digitalizada y resumen criptográfico de la impresión dactilar) junto con los certificados de autenticación y firma electrónica, además de un certificado de componente propio del DNI."
+      },
+      {
+       "title": "Preguntas frecuentes sobre el DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1001",
+       "quote": "El nuevo DNI no contiene ningún dato histórico del titular como tampoco incorpora dato alguno de carácter sanitarios, fiscal, penal, laboral, etc..."
+      }
+     ]
+    },
+    {
+     "text": "Dos **certificados**: el de **Autenticación** (**Digital Signature**), para **acreditar la identidad** en una transacción telemática, y el de **Firma** (**non Repudiation**), para **firmar** documentos sin que el firmante pueda **repudiarlo**. Solo la **Dirección General de la Policía** emite los certificados del DNI.",
+     "refs": [
+      {
+       "title": "Certificados del DNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_430",
+       "quote": "El Certificado de Autenticación (Digital Signature) asegura que la comunicación electrónica se realiza con la persona que dice que es."
+      },
+      {
+       "title": "Usos del DNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_280",
+       "quote": "Mediante la utilización del Certificado de Firma (non Repudition) , el receptor de un mensaje firmado electrónicamente puede verificar la autenticidad de esa firma, pudiendo de esta forma demostrar la identidad del firmante sin que éste pueda repudiarlo."
+      },
+      {
+       "title": "Preguntas frecuentes sobre el DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1001",
+       "quote": "La Dirección General de la Policía es el único organismo autorizado a emitir los certificados digitales para el DNI."
+      }
+     ]
+    },
+    {
+     "text": "Las operaciones delicadas (verificación de la **huella**, generación de **claves privadas** y de **firmas**) se hacen **siempre dentro del chip**, nunca en el ordenador. El **PIN** se entrega en un **sobre ciego** y **no puede cambiarse por Internet**: se cambia en los **Puntos de Actualización del DNI (PAD)** de las oficinas de expedición, sin cita previa.",
+     "refs": [
+      {
+       "title": "Seguridad del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1010",
+       "quote": "Las operaciones más delicadas, como pueden ser la verificación de la huella dactilar, la generación de claves privadas o de firmas electrónicas, se realizan siempre en el interior del chip del DNI, y nunca se descarga esta responsabilidad a aplicaciones informáticas del ordenador."
+      },
+      {
+       "title": "Cambio de PIN · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_330",
+       "quote": "En el momento de la expedición, se genera un PIN aleatorio que se entrega al ciudadano en forma de \"sobre ciego\""
+      },
+      {
+       "title": "Cambio de PIN · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_330",
+       "quote": "Por motivos de seguridad NO ES POSIBLE cambiar el PIN a través de Internet"
+      },
+      {
+       "title": "Cambio de PIN · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_330",
+       "quote": "Para ello no será necesario pedir cita previa ni esperar cola"
+      }
+     ]
+    },
+    {
+     "text": "La **renovación de los certificados** exige la **presencia física** del titular en la oficina de expedición, en un **Punto de Actualización**, con verificación de identidad por la tarjeta y las **huellas**; es **voluntaria y gratuita**. Si se **pierde o roban** el DNI, hay que comunicarlo para **revocar** los certificados.",
+     "refs": [
+      {
+       "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1028",
+       "quote": "La renovación de los certificados requiere la presencia física del titular del DNI en la Oficina de expedición."
+      },
+      {
+       "title": "Validez de los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1028",
+       "quote": "La renovación de la clave es voluntaria, gratuita y por iniciativa del ciudadano."
+      },
+      {
+       "title": "Preguntas frecuentes sobre el uso del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1005",
+       "quote": "Resulta obligado informar de manera inmediata al órgano competente para la expedición y gestión del DNI cuando exista alguna de las causas de revocación de la vigencia de los certificados (como sustracción o pérdida de la tarjeta)."
+      }
+     ]
+    },
+    {
+     "text": "**Validación** de los certificados (**gratuita**): la presta la **FNMT-RCM** con carácter **universal** y la Administración para el **conjunto de las Administraciones Públicas** (servicio **@firma**).",
+     "refs": [
+      {
+       "title": "Preguntas frecuentes sobre los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1004",
+       "quote": "que prestará sus servicios de validación con carácter universal"
+      },
+      {
+       "title": "Preguntas frecuentes sobre los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1004",
+       "quote": "que prestará los servicios de validación al conjunto de las Administraciones Públicas"
+      },
+      {
+       "title": "Preguntas frecuentes sobre los certificados del DNIe · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_1004",
+       "quote": "Este servicio de validación del DNI es gratuito."
+      },
+      {
+       "title": "Comprobación de los certificados · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_320",
+       "quote": "@FIRMA – VALIDE"
+      }
+     ]
+    },
+    {
+     "text": "Para usarlo hace falta un **lector** de tarjetas que cumpla **ISO 7816** y los **módulos criptográficos** (**PKCS#11**, y en Windows **Minidriver o CardModule**); por **NFC**, un dispositivo que cumpla **ISO 14443** (tipo A o B), a **menos de 1 cm**.",
+     "refs": [
+      {
+       "title": "Uso del DNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_300",
+       "quote": "Un lector de tarjetas inteligentes que cumpla el estándar ISO-7816."
+      },
+      {
+       "title": "Uso del DNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_300",
+       "quote": "En un entorno Microsoft Windows, el equipo debe tener instalado driver denominado Minidriver o CardModule y PKCS#11."
+      },
+      {
+       "title": "Uso del DNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_300",
+       "quote": "Un dispositivo con NFC que cumpla el estándar ISO 14443, tipo A o B"
+      },
+      {
+       "title": "Uso del DNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_300",
+       "quote": "la distancia entre ambos ha de ser menor a 1 cm"
+      }
+     ]
+    },
+    {
+     "text": "La **app MiDNI** (iOS y Android) es la **única app oficial de la Policía Nacional**. Requiere **registrarse antes** con el **DNIe con certificados en vigor** y un **lector**, o en un **PAD** de la comisaría.",
+     "refs": [
+      {
+       "title": "App MiDNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_2150",
+       "quote": "Para poder hacer uso de la App MiDNI para iOS y Android es necesario que se registre previamente en nuestra plataforma oficial."
+      },
+      {
+       "title": "App MiDNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_2150",
+       "quote": "requiere estar en posesión del Documento Nacional de Identidad electrónico (DNIe) con los certificados digitales en vigor y de un lector de tarjetas."
+      },
+      {
+       "title": "App MiDNI · Portal del DNI electrónico",
+       "url": "https://www.dnielectronico.es/PortalDNIe/PRF1_Cons02.action?pag=REF_2150",
+       "quote": "Esta Aplicación es la única App oficial de Policía Nacional"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "La Agenda Digital: España Digital 2025 y 2026",
+   "points": [
+    {
+     "text": "**España Digital 2025** se lanzó en **julio de 2020** como hoja de ruta de transformación digital del país. Recoge medidas, reformas e inversiones **articuladas en diez ejes estratégicos**, alineados con las políticas digitales de la **Comisión Europea**, con unas **50 medidas**.",
+     "refs": [
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "España Digital 2026 es la actualización de la estrategia lanzada en julio de 2020 como hoja de ruta de transformación digital del país."
+      },
+      {
+       "title": "España Digital 2025 (documento de la agenda)",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+       "quote": "España Digital 2025 recoge un conjunto de medidas, reformas e inversiones, articuladas en diez ejes estratégicos, alineados a las políticas digitales marcadas por la"
+      },
+      {
+       "title": "España Digital 2025 (documento de la agenda)",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+       "quote": "concretadas en aproximadamente 50 medidas"
+      }
+     ]
+    },
+    {
+     "text": "Sus **diez ejes** y metas para 2025:",
+     "refs": [
+      {
+       "title": "España Digital 2025 (documento de la agenda)",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+       "quote": "articuladas en diez ejes estratégicos"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Conectividad**: **100 % de la población** con cobertura de **100 Mbps**; **5G**: 100 % del espectro preparado.",
+       "refs": [
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "1. Garantizar una conectividad digital adecuada para el 100% de la población"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "meta 2025: 100% de la población con cobertura 100 Mbps"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "2. Continuar liderando en Europa el despliegue de la tecnología 5G"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "meta 2025: 100% del espectro radioeléctrico preparado para 5G"
+        }
+       ]
+      },
+      {
+       "text": "**Competencias digitales**: **80 %** con competencias básicas (la mitad, mujeres); **ciberseguridad**: **20.000** nuevos especialistas en ciberseguridad, IA y datos.",
+       "refs": [
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "3. Reforzar las competencias digitales de los trabajadores y del conjunto de la ciudadanía"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "4. Reforzar la capacidad española en ciberseguridad"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "(meta 2025: 80% de personas con competencias digitales básicas, de las que el 50% serán mujeres)."
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "(meta 2025: 20.000 nuevos especialistas en ciberseguridad, IA y Datos)."
+        }
+       ]
+      },
+      {
+       "text": "**Administraciones Públicas**: **50 % de los servicios públicos en app móvil**; **empresas**: 25 % del negocio de las pymes por **comercio electrónico**.",
+       "refs": [
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "5. Impulsar la digitalización de las Administraciones Públicas (meta 2025: 50% de los servicios"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "6. Acelerar la digitalización de las empresas, con especial atención a las microPYMEs y las"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "(meta 2025: 25% de contribución del comercio electrónico al volumen de negocio PYME)."
+        }
+       ]
+      },
+      {
+       "text": "**Proyectos tractores sectoriales** (10 % menos de emisiones de CO2), **hub audiovisual** (30 % más de producción), **economía del dato e IA** (**25 % de empresas** con IA y Big Data) y **derechos digitales** (una **carta nacional** de derechos digitales).",
+       "refs": [
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "7. Acelerar la digitalización del modelo productivo mediante proyectos tractores de"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "(meta 2025: 10% reducción de emisiones"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "8. Mejorar el atractivo de España como plataforma europea de negocio, trabajo, e inversión"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "9. Favorecer el tránsito hacia una economía del dato"
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "(meta 2025: 30% de aumento de la producción audiovisual en España)."
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "(meta 2025: 25% de empresas que usan IA y Big Data)."
+        },
+        {
+         "title": "España Digital 2025 (documento de la agenda)",
+         "url": "https://digital.gob.es/content/dam/portal-mtdfp/avance-digital/ministerio/programas/programas-para-avance-digital/espana_digital/agenda_digital_2025.pdf",
+         "quote": "10. Garantizar los derechos de la ciudadanía en el nuevo entorno digital (meta 2025: una carta"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**España Digital 2026** es su **actualización**, presentada el **8 de julio de 2022**. **Mantiene los diez ejes** y añade **dos ejes transversales**: los **PERTE** (Proyectos Estratégicos para la Recuperación y Transformación Económica) y **RETECH** (Redes Territoriales de Especialización Tecnológica, propuestas por las comunidades autónomas). Tiene **cerca de 50 medidas**.",
+     "refs": [
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "La nueva Agenda Digital denominada España Digital 2026, fue presentada el jueves 8 de julio de 2022."
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "La agenda mantiene los diez ejes estratégicos de su versión inicial, añadiendo además dos nuevos ejes transversales"
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "dos nuevos ejes transversales referidos a los Proyectos Estratégicos para la Recuperación y Transformación Económica (PERTE) y la iniciativa Retech"
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "RETECH: Redes Territoriales de Especialización Tecnológica."
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "Esta agenda consta de cerca de 50 medidas que se articulan en torno a diez ejes estratégicos:"
+      }
+     ]
+    },
+    {
+     "text": "Actúa en **tres dimensiones**: **infraestructuras y tecnología**, **economía** y **personas**, que agrupan los ejes:",
+     "refs": [
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "infraestructuras y tecnología, economía y personas"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Infraestructuras y tecnología**: **conectividad digital**, **impulso a la tecnología 5G**, **ciberseguridad** y **economía del dato e inteligencia artificial**.",
+       "refs": [
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "Conectividad digital. Garantizar una conectividad digital adecuada para toda la población"
+        },
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "Impulso a la Tecnología 5G."
+        },
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "Ciberseguridad. El reto para 2026 es incrementar las capacidades de ciberseguridad en España"
+        },
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "Economía del dato e Inteligencia Artificial."
+        }
+       ]
+      },
+      {
+       "text": "**Economía**: transformación digital del **sector público**, de la **empresa y emprendimiento digital**, transformación **sectorial y sostenible** (con los PERTE) y **España, hub audiovisual**.",
+       "refs": [
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "Transformación digital del sector público."
+        },
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "Transformación digital de la empresa y emprendimiento digital."
+        },
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "Transformación digital sectorial y sostenible."
+        },
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "España, hub audiovisual."
+        }
+       ]
+      },
+      {
+       "text": "**Personas**: **competencias digitales** y **derechos digitales**; la **Carta de Derechos Digitales** se aprobó en **julio de 2021**.",
+       "refs": [
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "Competencias digitales. El reto para 2026 es reforzar las competencias digitales"
+        },
+        {
+         "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+         "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+         "quote": "La Carta de Derechos Digitales, aprobada en julio de 2021"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Planes que la desarrollan: el **Plan para la Conectividad y las Infraestructuras Digitales** (primer eje), la **Estrategia de impulso de la tecnología 5G** y la **Estrategia Nacional de Inteligencia Artificial (ENIA)**, con **6 ejes y 30 actuaciones**.",
+     "refs": [
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "desarrolla el primero de los ejes contenidos en la agenda España Digital 2026."
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "La Estrategia de impulso de la tecnología 5G es una de las prioridades de la agenda España Digital 2026."
+      },
+      {
+       "title": "España Digital 2026 · Ministerio para la Transformación Digital y de la Función Pública",
+       "url": "https://digital.gob.es/ministerio/programas/programas-avance-digital/espana-digital-2026",
+       "quote": "La Estrategia Nacional de Inteligencia Artificial (ENIA) es una hoja de ruta vertebrada en 6 ejes y 30 actuaciones"
+      }
+     ]
+    },
+    {
+     "text": "La **Estrategia de Tecnologías Cuánticas de España 2025-2030**, de los Ministerios para la **Transformación Digital y de la Función Pública** y de **Ciencia, Innovación y Universidades**, fija **siete prioridades**; entre ellas, **demostrar el impacto de la sensórica y la metrología cuánticas**, hacer de España un referente en **comunicaciones cuánticas** y reforzar la privacidad en el mundo **postcuántico**.",
+     "refs": [
+      {
+       "title": "Estrategia de Tecnologías Cuánticas de España 2025-2030",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/carruselhome/Estrategia%20Tecnologias%20Cuanticas.pdf",
+       "quote": "Una Estrategia que surge del consenso y el trabajo de dos Ministerios transversales: el Ministerio para la Transformación Digital y de la Función Pública y el Ministerio de Ciencia, Innovación y Universidades."
+      },
+      {
+       "title": "Estrategia de Tecnologías Cuánticas de España 2025-2030",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/carruselhome/Estrategia%20Tecnologias%20Cuanticas.pdf",
+       "quote": "Prioridad 1: Potenciar las empresas españolas en tecnologías cuánticas"
+      },
+      {
+       "title": "Estrategia de Tecnologías Cuánticas de España 2025-2030",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/carruselhome/Estrategia%20Tecnologias%20Cuanticas.pdf",
+       "quote": "Prioridad 4: Demostrar el impacto de la sensórica y la metrología cuánticas"
+      },
+      {
+       "title": "Estrategia de Tecnologías Cuánticas de España 2025-2030",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/carruselhome/Estrategia%20Tecnologias%20Cuanticas.pdf",
+       "quote": "Prioridad 3: Hacer de España un referente en comunicaciones cuánticas"
+      },
+      {
+       "title": "Estrategia de Tecnologías Cuánticas de España 2025-2030",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/carruselhome/Estrategia%20Tecnologias%20Cuanticas.pdf",
+       "quote": "Prioridad 5: Reforzar la privacidad y la confidencialidad de la información en el mundo postcuántico"
+      },
+      {
+       "title": "Estrategia de Tecnologías Cuánticas de España 2025-2030",
+       "url": "https://digital.gob.es/content/dam/portal-mtdfp/carruselhome/Estrategia%20Tecnologias%20Cuanticas.pdf",
+       "quote": "Prioridad 7: Promover un ecosistema español cuántico sólido, coordinado y líder en la UE"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

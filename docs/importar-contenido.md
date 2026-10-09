@@ -203,8 +203,9 @@ o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita.
 Salen publicados (ver CLAUDE.md). Los avisos de los usuarios llegan a
 Revisión.
 
-Hecho: tema 1 del bloque I (Constitución: título preliminar, derechos y
-deberes, garantías, suspensión y Corona).
+Hecho: temas 1 a 6 del bloque I (Constitución, Gobierno, empleo público,
+igualdad y dependencia, sociedad de la información, firma electrónica, DNI
+y Agenda Digital).
 
 ## Comprobar
 
