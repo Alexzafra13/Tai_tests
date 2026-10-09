@@ -5,6 +5,7 @@ import { useResource } from "../../hooks";
 import type { Block, Page, ReviewCounts, ReviewItem, ReviewKind, ReviewState } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
 import { Toast, type ToastMessage } from "../../components/Toast";
+import { NoteReports } from "./NoteReports";
 import { ReviewCard } from "./ReviewCard";
 import "./review.css";
 
@@ -81,6 +82,8 @@ export function ReviewPage() {
           Aceptar en bloque
         </Link>
       </div>
+
+      <NoteReports />
 
       <div className="chips">
         {tabs.map((t) => (

@@ -154,6 +154,8 @@ type Topic struct {
 	// Pages counts the official pages outside the laws that answer its
 	// published questions.
 	Pages int `json:"pages"`
+	// Notes tells whether the topic has a study note.
+	Notes bool `json:"notes"`
 }
 
 // Syllabus returns the active blocks and topics in order, with question
@@ -166,7 +168,8 @@ func (s *Store) Syllabus(ctx context.Context) ([]Block, error) {
 			(SELECT count(DISTINCT qs.url) FROM question_sections qs
 				JOIN question_topics pt ON pt.question_id = qs.question_id AND pt.topic_id = t.id
 				JOIN questions pq ON pq.id = qs.question_id AND pq.status = 'published' AND pq.annulled = 0
-				WHERE qs.url <> '')
+				WHERE qs.url <> ''),
+			EXISTS (SELECT 1 FROM topic_notes n WHERE n.topic_id = t.id)
 		FROM blocks b
 		JOIN topics t ON t.block_id = b.id AND t.active = 1
 		LEFT JOIN question_topics qt ON qt.topic_id = t.id
@@ -184,7 +187,7 @@ func (s *Store) Syllabus(ctx context.Context) ([]Block, error) {
 		var b Block
 		var t Topic
 		if err := rows.Scan(&b.ID, &b.Code, &b.Name, &t.ID, &t.Code, &t.Number, &t.Title, &t.Questions, &t.Published, &t.Laws,
-			&t.Pages); err != nil {
+			&t.Pages, &t.Notes); err != nil {
 			return nil, err
 		}
 		if n := len(blocks); n == 0 || blocks[n-1].ID != b.ID {

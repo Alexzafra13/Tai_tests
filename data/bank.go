@@ -1,6 +1,6 @@
 // Package data embeds the official content into the binary: the syllabus
-// of the current call, the question bank (data/bank) and the study texts
-// of the laws (data/laws).
+// of the current call, the question bank (data/bank), the study texts of
+// the laws (data/laws) and the study notes (data/notes).
 package data
 
 import (
@@ -19,6 +19,9 @@ var syllabus string
 //go:embed laws/*.json
 var laws embed.FS
 
+//go:embed notes/*.json
+var notes embed.FS
+
 // Syllabus returns data/syllabus.json, the syllabus of the current call
 // copied literally from the BOE.
 func Syllabus() io.Reader { return strings.NewReader(syllabus) }
@@ -36,6 +39,15 @@ func Bank() fs.FS {
 // the BOE consolidated legislation, and topics.json linking them to topics.
 func Laws() fs.FS {
 	sub, err := fs.Sub(laws, "laws")
+	if err != nil {
+		panic(err)
+	}
+	return sub
+}
+
+// Notes returns the study notes (data/notes), one file per topic.
+func Notes() fs.FS {
+	sub, err := fs.Sub(notes, "notes")
 	if err != nil {
 		panic(err)
 	}

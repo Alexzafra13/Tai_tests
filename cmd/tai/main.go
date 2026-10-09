@@ -203,6 +203,18 @@ func loadBank(ctx context.Context, log *slog.Logger, cs *content.Store) error {
 		log.Info("laws loaded", "added", lres.Added, "updated", lres.Updated)
 	}
 
+	notes, err := content.ReadNotes(data.Notes())
+	if err != nil {
+		return err
+	}
+	nres, err := cs.LoadNotes(ctx, notes)
+	if err != nil {
+		return err
+	}
+	for _, p := range nres.Problems {
+		log.Warn("study note not loaded", "reason", p)
+	}
+
 	files, err := content.ReadBank(data.Bank())
 	if err != nil {
 		return err

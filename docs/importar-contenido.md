@@ -178,6 +178,28 @@ orientadas a objetos: el estándar ODMG no está publicado en línea).
 
 Es la base para generar después preguntas de ley con cita literal (fase 6).
 
+### 7. Apuntes
+
+Un JSON por tema en `data/notes/` (`B1-T01.json`): secciones con puntos y,
+como mucho, un nivel de subpuntos. Cada punto es una frase de estudio
+(`**negrita**` para lo clave) y lleva en `refs` lo que la respalda, con la
+cita literal: `{"law": "BOE-A-1978-31229", "section": "a62", "quote": "…"}`
+o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita.
+
+1. Escribirlo leyendo el texto vigente de las normas del tema y las
+   preguntas oficiales del banco (dicen qué se pregunta).
+2. Contrastar cada punto con su artículo: que diga exactamente lo mismo,
+   sin perder matices («en su caso», «previa autorización», «salvo»).
+3. `make test`: un test carga todos los apuntes y exige que cada cita de
+   una ley esté en la sección que nombra. Al arrancar, un apunte con una
+   cita que ya no está (porque la ley cambió) no se carga y se avisa.
+
+Salen publicados (ver CLAUDE.md). Los avisos de los usuarios llegan a
+Revisión.
+
+Hecho: tema 1 del bloque I (Constitución: título preliminar, derechos y
+deberes, garantías, suspensión y Corona).
+
 ## Comprobar
 
 - `make test` en verde.

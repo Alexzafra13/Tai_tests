@@ -74,3 +74,25 @@
     margin: 0;
   }
 }
+
+@layer pages {
+  .note-reports {
+    margin-bottom: 1rem;
+  }
+
+  .note-reports summary {
+    cursor: pointer;
+  }
+
+  .note-reports ul {
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .note-reports li p {
+    margin: 0.25rem 0;
+  }
+}

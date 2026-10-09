@@ -5,6 +5,7 @@ import (
 	"strings"
 	"testing"
 	"testing/fstest"
+	"time"
 )
 
 const sampleBank = `{
@@ -169,6 +170,10 @@ func TestLoadBankPublishesCheckedQuestions(t *testing.T) {
 func TestLoadBankUpdatesUneditedQuestions(t *testing.T) {
 	ctx := context.Background()
 	s := newStore(t)
+	// Loading and editing in the same millisecond, as on a fast machine:
+	// timestamps alone cannot tell an edited question.
+	now := time.Date(2026, 10, 8, 10, 0, 0, 0, time.UTC)
+	s.now = func() time.Time { return now }
 	loadTestSyllabus(t, s)
 	file := func(topic, explanation string) BankFile {
 		q := func(key string) BankQuestion {

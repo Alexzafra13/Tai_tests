@@ -4,6 +4,7 @@ import type { StudyTopic } from "../../types";
 import { ErrorBox, Loading } from "../../components/Form";
 import { formatDay, lawOrigin, lawShortName } from "../../format";
 import { AskedQuestion } from "./LawPage";
+import { NoteView } from "./NoteView";
 import "./study.css";
 
 // StudyTopicPage lists the laws of a topic: the literal consolidated text
@@ -29,11 +30,22 @@ export function StudyTopicPage() {
           <h3 className="study-topic">
             {topic.number}. {topic.title}
           </h3>
-          {topic.laws.length === 0 && topic.pages.length === 0 && (
+          {topic.note && (
+            <>
+              <h3 className="study-section">Apuntes</h3>
+              <p className="muted study-note">
+                Cada punto lleva el artículo o la página oficial que lo respalda: ábrelo para leer la cita literal. Las
+                etiquetas marcan cuántas preguntas de examen ha habido sobre ese artículo.
+              </p>
+              <NoteView note={topic.note} topicId={topic.topic_id} />
+            </>
+          )}
+          {topic.laws.length === 0 && topic.pages.length === 0 && !topic.note && (
             <div className="card">
-              <p>Este tema todavía no tiene normas ni documentación para leer.</p>
+              <p>Este tema todavía no tiene apuntes, normas ni documentación para leer.</p>
             </div>
           )}
+          {topic.note && topic.laws.length > 0 && <h3 className="study-section">Normas</h3>}
           <ul className="law-list">
             {topic.laws.map((l) => (
               <li key={l.source_id}>

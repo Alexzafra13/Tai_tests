@@ -18,6 +18,11 @@ hace la app; aquí van las reglas para cambiarla.
   marcadas `"status": "published"` con sus temas, solo si se han
   comprobado contra el cuestionario y la plantilla definitiva. Las que
   dependen de una figura que no se reproduce se quedan sin publicar.
+- Excepción: los apuntes de cada tema (`data/notes`) salen publicados, sin
+  Revisión. Cada punto lleva citas literales de lo que lo respalda (un
+  artículo de `data/laws`, comprobado al cargar, o una página oficial) y se
+  contrastan con el texto antes de subirlos. Los usuarios avisan de errores
+  desde la app (Revisión → Avisos en los apuntes); se corrigen en el fichero.
 - Los textos para estudiar (`data/laws`) son el texto consolidado del BOE
   literal, en la redacción vigente cada día: no se resumen ni se reescriben.
 - Permisos en el servidor, ruta a ruta, en `internal/server/routes.go`.

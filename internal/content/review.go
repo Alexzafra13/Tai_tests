@@ -194,7 +194,7 @@ func (s *Store) setStatus(ctx context.Context, tx *sql.Tx, id int64, st Status) 
 	if !st.valid() {
 		return validate.Errors{"status": "Estado no válido"}
 	}
-	res, err := tx.ExecContext(ctx, `UPDATE questions SET status = ?, updated_at = ? WHERE id = ?`, st, s.timestamp(), id)
+	res, err := tx.ExecContext(ctx, `UPDATE questions SET status = ?, updated_at = ?, edited = 1 WHERE id = ?`, st, s.timestamp(), id)
 	if err != nil {
 		return err
 	}
