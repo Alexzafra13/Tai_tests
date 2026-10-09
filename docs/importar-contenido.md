@@ -193,7 +193,10 @@ cita literal: `{"law": "BOE-A-1978-31229", "section": "a62", "quote": "…"}`
 o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita.
 
 1. Escribirlo leyendo el texto vigente de las normas del tema y las
-   preguntas oficiales del banco (dicen qué se pregunta).
+   preguntas oficiales del banco (dicen qué se pregunta). En los temas
+   técnicos, la documentación oficial: Métrica v3 para el análisis y el
+   diseño, y el manual de cada lenguaje o producto (Python, Java,
+   PostgreSQL, Microsoft Learn…).
 2. Contrastar cada punto con su artículo: que diga exactamente lo mismo,
    sin perder matices («en su caso», «previa autorización», «salvo»).
 3. `make test`: un test carga todos los apuntes y exige que cada cita de
@@ -207,7 +210,9 @@ Hecho: el bloque I entero, temas 1 a 9 (Constitución, Gobierno, empleo
 público, igualdad y dependencia, sociedad de la información, firma
 electrónica, DNI, Agenda Digital, protección de datos, administración
 electrónica: registros, notificaciones, ENS, ENI y normas técnicas; sedes
-electrónicas, Cl@ve e infraestructuras y servicios comunes).
+electrónicas, Cl@ve e infraestructuras y servicios comunes) y los temas 1
+y 2 del bloque III (modelado de datos y normalización con Métrica v3;
+lenguajes de programación).
 
 ## Comprobar
 

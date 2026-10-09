@@ -1,0 +1,1313 @@
+{
+ "topic": "B3-T01",
+ "sections": [
+  {
+   "title": "El modelo de datos y Métrica v3",
+   "points": [
+    {
+     "text": "**Métrica v3** es una metodología que da a los profesionales de sistemas y tecnologías de la información (STIC) un conjunto de **métodos y técnicas** para obtener los productos del **ciclo de vida** de un proyecto informático. Su documento **«Técnicas y Prácticas»** describe, entre otras, las técnicas de **modelo entidad/relación extendido**, **normalización**, **optimización** y paso del **modelo lógico al físico**. Su notación **no es obligatoria** (cada organización puede usar la suya), pero sus **reglas** sí deben aplicarse. Para orientación a objetos sigue la notación **UML**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La metodología MÉTRICA Versión 3 proporciona un conjunto de métodos y técnicas que guía a los distintos profesionales de Sistemas y Tecnologías de la Información y Comunicaciones (STIC) en la obtención de los diversos productos de los procesos del ciclo de vida de un proyecto informático."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Es importante resaltar que la notación que se propone en la aplicación de la técnica en ningún caso se considerará obligatoria."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Cada organización podrá utilizar la notación que desee"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En el caso de desarrollos orientados a objetos se ha seguido la notación de UML."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "las notaciones aquí propuestas no se consideran obligatorias en la metodología MÉTRICA Versión 3, pero sí que se deben aplicar rigurosamente sus reglas y validaciones"
+      }
+     ]
+    },
+    {
+     "text": "Métrica distingue **técnicas** (procedimientos apoyados en **estándares**, con notación propia y criterios de calidad) y **prácticas** (medios para lograr objetivos concretos de forma rápida, **sin reglas preestablecidas**).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se considera técnica al conjunto de heurísticas y procedimientos que se apoyan en estándares"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las prácticas representan un medio para la consecución de unos objetivos específicos de manera rápida, segura y precisa, sin necesidad de cumplir unos criterios o reglas preestablecidas."
+      }
+     ]
+    },
+    {
+     "text": "El **modelo entidad/relación extendido** representa y define **todos los datos** del sistema **sin tener en cuenta la tecnología** ni otras restricciones: es **independiente del entorno físico** y se centra en los datos, no en los procesos ni en la eficiencia.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se trata de una técnica cuyo objetivo es la representación y definición de todos los datos que se introducen, almacenan, transforman y producen dentro de un sistema de información, sin tener en cuenta las necesidades de la tecnología existente, ni otras restricciones."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Este diagrama se centra en los datos, independientemente del procesamiento que los transforma y sin entrar en consideraciones de eficiencia."
+      }
+     ]
+    },
+    {
+     "text": "**Ventajas** de hacer un modelo de datos: **comprender** los datos y el funcionamiento de la organización, obtener estructuras **independientes del entorno físico**, **controlar errores** desde el principio y **mejorar el mantenimiento**. La estructura de datos suele ser **más estable** que la de procesos.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Comprensión de los datos de una organización y del funcionamiento de la organización."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Obtención de estructuras de datos independientes del entorno físico."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Control de los posibles errores desde el principio, o al menos, darse cuenta de las deficiencias lo antes posible."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Mejora del mantenimiento."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "normalmente es mucho más estable que la estructura de procesos."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Entidades, relaciones y atributos",
+   "points": [
+    {
+     "text": "El modelo tiene **dos elementos principales**, **entidades** y **relaciones**; las **extensiones** añaden los **atributos** y la **jerarquía** entre entidades para dar más capacidad expresiva.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Existen dos elementos principales: las entidades y las relaciones. Las extensiones al modelo básico añaden además los atributos de las entidades y la jerarquía entre éstas."
+      }
+     ]
+    },
+    {
+     "text": "**Entidad**: objeto, **real o abstracto**, del que se quiere guardar información; el conjunto de entidades con las mismas características es un **tipo de entidad**. Hay entidades **regulares** (existen por sí mismas) y **débiles** (su existencia **depende de otra**). Toda entidad debe: tener **existencia propia**, poder **distinguir** cada ocurrencia de las demás y tener **los mismos atributos** en todas sus ocurrencias.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Es aquel objeto, real o abstracto, acerca del cual se desea almacenar información en la base de datos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La estructura genérica de un conjunto de entidades con las mismas características se denomina tipo de entidad."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Existen dos clases de entidades: regulares, que tienen existencia por sí mismas, y débiles cuya existencia depende de otra entidad."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Tienen que tener existencia propia."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Cada ocurrencia de un tipo de entidad debe poder distinguirse de las demás."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Todas las ocurrencias de un tipo de entidad deben tener los mismos atributos."
+      }
+     ]
+    },
+    {
+     "text": "**Relación**: asociación o correspondencia entre **una o varias** entidades. Es **regular** si asocia entidades regulares y **débil** si asocia una entidad débil con una regular, con dos variantes: **dependencia en existencia** (la débil no existe sin la regular) y **en identificación** (además, para identificarla hace falta el identificador de la regular). Es **exclusiva** si la existencia de una relación implica que no existen las otras.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Es una asociación o correspondencia existente entre una o varias entidades."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La relación puede ser regular, si asocia tipos de entidad regulares, o débil, si asocia un tipo de entidad débil con un tipo de entidad regular."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se dice que la dependencia es en existencia cuando las ocurrencias de un tipo de entidad débil no pueden existir sin la ocurrencia de la entidad regular de la que dependen."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Dentro de las relaciones débiles se distinguen la dependencia en existencia y la dependencia en identificación."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "se les tiene que añadir el identificador de la ocurrencia de la entidad regular de la cual dependen."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "se dice que una relación es exclusiva cuando la existencia de una relación entre dos tipos de entidades implica la no existencia de las otras relaciones."
+      }
+     ]
+    },
+    {
+     "text": "Una relación tiene un **nombre** único en el modelo y un **tipo de correspondencia**: el **número máximo** de ocurrencias de cada entidad que pueden intervenir en una ocurrencia de la relación: **1:1**, **1:N** o **M:N**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Tipo de correspondencia: es el número máximo de ocurrencias de cada tipo de entidad que pueden intervenir en una ocurrencia de la relación que se está tratando."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Relaciones 1:1: Cada ocurrencia de una entidad se relaciona con una y sólo una ocurrencia de la otra entidad."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Relaciones 1:N: Cada ocurrencia de una entidad puede estar relacionada con cero, una o varias ocurrencias de la otra entidad."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Nombre: que lo distingue unívocamente del resto de relaciones del modelo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "y cada ocurrencia de la otra entidad puede corresponder a cero, una o varias ocurrencias de la primera."
+      }
+     ]
+    },
+    {
+     "text": "**Cardinalidad**: la **participación** de cada entidad en la relación, es decir, el número **mínimo y máximo** de ocurrencias relacionadas. La **cardinalidad máxima coincide con el tipo de correspondencia**. Según la cardinalidad, la relación es **obligatoria** (toda ocurrencia tiene **al menos una** asociada) u **opcional** (puede tener o no).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Cardinalidad: representa la participación en la relación de cada una de las entidades afectadas, es decir, el número máximo y mínimo de ocurrencias de un tipo de entidad que pueden estar interrelacionadas con una ocurrencia de otro tipo de entidad."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La cardinalidad máxima coincide con el tipo de correspondencia."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Según la cardinalidad, una relación es obligatoria, cuando para toda ocurrencia de un tipo de entidad existe al menos una ocurrencia del tipo de entidad asociado, y es opcional cuando, para toda ocurrencia de un tipo de entidad, puede existir o no una o varias ocurrencias del tipo de entidad asociado."
+      }
+     ]
+    },
+    {
+     "text": "**Dominio**: conjunto **con nombre** de valores **homogéneos**; existe con **independencia** de entidades, relaciones y atributos. Un **atributo** es una propiedad de una entidad, la **unidad básica de información**, y se define **sobre un dominio**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Es un conjunto nominado de valores homogéneos. El dominio tiene existencia propia con independencia de cualquier entidad, relación o atributo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Es una propiedad o característica de un tipo de entidad. Se trata de la unidad básica de información que sirve para identificar o describir la entidad. Un atributo se define sobre un dominio."
+      }
+     ]
+    },
+    {
+     "text": "El conjunto **mínimo** de atributos que identifica **unívocamente** cada ocurrencia es el **identificador principal**. Como **restricciones**, un atributo puede ser **univaluado** (un solo valor) y **obligatorio** (al menos un valor).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Cada tipo de entidad ha de tener un conjunto mínimo de atributos que identifiquen unívocamente cada ocurrencia del tipo de entidad."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "identificador principal."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se pueden definir restricciones sobre los atributos, según las cuales un atributo puede ser:"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Univaluado, atributo que sólo puede tomar un valor para todas y cada una de las ocurrencias del tipo de entidad al que pertenece."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Obligatorio, atributo que tiene que tomar al menos un valor para todas y cada una de las ocurrencias del tipo de entidad al que pertenece."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Extensiones del modelo: jerarquías y abstracciones",
+   "points": [
+    {
+     "text": "Mecanismos de abstracción del modelo extendido:",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "existen extensiones del modelo entidad/relación que incorporan determinados conceptos o mecanismos de abstracción"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Generalización**: de varios **subtipos** se abstrae un **supertipo**, al que pasan los atributos y relaciones comunes (profesor y estudiante → persona).",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La generalización, permite abstraer un tipo de entidad de nivel superior (supertipo) a partir de varios tipos de entidad (subtipos)"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "en estos casos los atributos comunes y relaciones de los subtipos se asignan al supertipo."
+        }
+       ]
+      },
+      {
+       "text": "**Especialización**: la inversa; un supertipo se descompone en subtipos que **heredan** sus atributos y relaciones y añaden los suyos.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La especialización es la operación inversa a la generalización"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "los cuales heredan todos los atributos y relaciones del supertipo, además de tener los suyos propios."
+        }
+       ]
+      },
+      {
+       "text": "**Categoría**: subtipo resultado de la **unión** de varios tipos (varios supertipos y un solo subtipo), como propietario a partir de persona y compañía.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Se denomina categoría al subtipo que aparece como resultado de la unión de varios tipos de entidad. En este caso, hay varios supertipos y un sólo subtipo."
+        }
+       ]
+      },
+      {
+       "text": "**Agregación**: construir una entidad nueva como **composición** de otras y su relación, para tratarla a más alto nivel (no se permite relacionar relaciones). La inversa es la **desagregación**.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La agregación, consiste en construir un nuevo tipo de entidad como composición de otros y su tipo de relación"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Como no se permite la relación entre tipos de relación"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "El proceso inverso se denomina desagregación."
+        }
+       ]
+      },
+      {
+       "text": "**Asociación**: relacionar dos entidades de **dominios normalmente independientes** que **coyunturalmente** se asocian.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La asociación, consiste en relacionar dos tipos de entidades que normalmente son de dominios independientes, pero coyunturalmente se asocian."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Los supertipos y subtipos forman una **jerarquía**, que representa una restricción del mundo real. Terminado el modelo hay que buscar **redundancias**, estudiando las **cardinalidades mínimas** y la semántica de las relaciones: los **atributos derivados** de otros por cálculo se **eliminan o se marcan** como redundantes, y las **relaciones redundantes** se eliminan si, sin ellas, se puede seguir pasando entre las dos entidades **en los dos sentidos**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La existencia de supertipos y subtipos, en uno o varios niveles, da lugar a una jerarquía"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los atributos redundantes, los que se derivan de otros elementos mediante algún calculo, deben ser eliminados del modelo entidad/relación o marcarse como redundantes."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "comprobando que al eliminarlas sigue siendo posible el paso, tanto en un sentido como en el inverso, entre las dos entidades que unían."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "se deben estudiar con mucho detenimiento las cardinalidades mínimas de las entidades, así como la semántica de las relaciones."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "que permitirá representar una restricción del mundo real."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Notación del modelo entidad/relación",
+   "points": [
+    {
+     "text": "**Entidad**: **rectángulo** con su nombre; la **débil**, **dos rectángulos concéntricos**. **Relación**: **rombo** unido a las entidades, con el tipo de correspondencia (**1:1, 1:N, M:N**) o las cardinalidades **(0,1), (1,1), (0,n), (1,n)** en cada extremo (si se ponen estas, el tipo de correspondencia sobra).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La representación gráfica de un tipo de entidad regular es un rectángulo etiquetado con el nombre del tipo de entidad. Un tipo de entidad débil se representa con dos rectángulos concéntricos con su nombre en el interior."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se representa por un rombo unido a las entidades relacionadas por dos líneas rectas a los lados."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El tipo de correspondencia se representa gráficamente con una etiqueta 1:1, 1:N o M:N"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "mediante una etiqueta del tipo (0,1), (1,1), (0,n) o (1,n), que se coloca en el extremo de la entidad que corresponda."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Si se representan las cardinalidades, la representación del tipo de correspondencia es redundante."
+      }
+     ]
+    },
+    {
+     "text": "**Atributo**: **elipse** con su nombre unida a la entidad o relación (también círculo o lista). El **identificador** va **subrayado** o marcado, o con el círculo **en negro**. Las relaciones **exclusivas** llevan un **arco** sobre las líneas.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un atributo se representa mediante una elipse, con su nombre dentro, conectada por una línea al tipo de entidad o relación."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En lugar de una elipse puede utilizarse un círculo con el nombre dentro"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "También pueden representarse en una lista asociada a la entidad."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El identificador aparece con el nombre marcado o subrayado, o bien con su círculo en negro."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En la representación de las relaciones exclusivas se incluye un arco sobre las líneas"
+      }
+     ]
+    },
+    {
+     "text": "**Jerarquía**: **triángulo invertido** entre el supertipo y los subtipos, con **d** si son **disjuntos**, **O** (o círculo) si pueden **solaparse** y **U** si es una **categoría** (unión). La jerarquía **total** se marca con **doble línea**, y el **atributo discriminante**, si lo hay, va junto al triángulo.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La representación de las jerarquías se realiza mediante un triángulo invertido"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Si la división en subtipos viene determinada en función de los valores de un atributo discriminante, éste se representará asociado al triángulo que representa la relación."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "con una letra d el hecho de que los subtipos sean disjuntos, con un círculo o una O si los subtipos pueden solaparse y con una U el caso de uniones por categorías. La presencia de una jerarquía total se representa con una doble línea entre el supertipo y el triángulo."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Normalización",
+   "points": [
+    {
+     "text": "Objetivo: **eliminar dependencias** entre atributos que provocan **anomalías en la actualización** y dar una estructura más regular a las tablas; es el **soporte del diseño de bases de datos relacionales** y el resultado es un **modelo lógico normalizado**. Cada forma normal exige más restricciones: una tabla en **3FN** está también en **2FN** y **1FN**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La teoría de la normalización tiene por objetivo la eliminación de dependencias entre atributos que originen anomalías en la actualización de los datos"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Como resultado de la aplicación de esta técnica se obtiene un modelo lógico de datos normalizado."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "constituyendo el soporte para el diseño de bases de datos relacionales."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "una relación en tercera forma normal estará también en segunda y en primera forma normal."
+      }
+     ]
+    },
+    {
+     "text": "**Dependencia funcional** (X → Y): Y depende de X si y solo si **a cada valor de X le corresponde un único valor de Y**. X es el **implicante o determinante**; Y, el **implicado**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un atributo Y se dice que depende funcionalmente de otro X si, y sólo si, a cada valor de X le corresponde un único valor de Y"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "X se denomina implicante o determinante e Y es el implicado."
+      }
+     ]
+    },
+    {
+     "text": "**Dependencia funcional completa**: Y depende de X **en su totalidad**, no de una parte de X. **Dependencia transitiva**: Z depende de X **a través de otro atributo** Y (X → Y, Y no → X, Y → Z).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un atributo Y tiene dependencia funcional completa respecto de otro X, si depende funcionalmente de él en su totalidad, es decir, no depende de ninguno de los posibles atributos que formen parte de X."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un atributo depende transitivamente de otro si, y sólo si, depende de él a través de otro atributo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se dice que X implica a Z a través de Y."
+      }
+     ]
+    },
+    {
+     "text": "Formas normales en Métrica v3:",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "se pueden enunciar las siguientes formas normales:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**1FN**: **sin grupos repetitivos**; cada atributo toma **un único valor** de un dominio simple. Los atributos que no dependen de la clave forman una **nueva entidad**, cuya clave es **uno o varios de sus atributos más la clave de la antigua**. Ejemplo de Métrica: un técnico con varios conocimientos tiene **varios valores** de cod_conoc, así que la entidad **no está en 1FN**.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Una entidad está en 1FN si no tiene grupos repetitivos, es decir, un atributo sólo puede tomar un único valor de un dominio simple."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La clave principal de la nueva entidad estará formada por la concatenación de uno o varios de sus atributos más la clave principal de la antigua entidad."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "habrá varios valores de cod_conoc"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Una vez identificados los atributos que no dependen funcionalmente de la clave principal, se formará con ellos una nueva entidad y se eliminarán de la antigua."
+        }
+       ]
+      },
+      {
+       "text": "**2FN**: en 1FN y todos los atributos **no principales** (los que no forman parte de las claves candidatas) tienen **dependencia funcional completa** de las claves: **cada atributo depende de toda la clave**. Los que dependen solo de una parte van a una nueva entidad cuya clave es **esa parte**.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Una entidad está en 2FN si está en 1FN y todos los atributos que no forman parte de las claves candidatas (atributos no principales) tienen dependencia funcional completa respecto de éstas"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Cada uno de los atributos de una entidad depende de toda la clave."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Una vez identificados los atributos que no dependen funcionalmente de toda la clave, sino sólo de parte de la misma, se formará con ellos una nueva entidad y se eliminarán de la antigua."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La clave principal de la nueva entidad estará formada por la parte de la antigua de la que dependen funcionalmente."
+        }
+       ]
+      },
+      {
+       "text": "**3FN**: en 2FN y **sin dependencias transitivas**: todos los atributos no principales dependen **directamente de la clave primaria**. Los que dependen de otro atributo **distinto de la clave** van a una nueva entidad con ese atributo como clave, que en la antigua queda como **clave ajena**.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Una entidad está en 3FN si está en 2FN y todos sus atributos no principales dependen directamente de la clave primaria, es decir, no hay dependencias funcionales transitivas de atributos no principales respecto de las claves."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Este atributo en la entidad antigua, pasará a ser una clave ajena."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "La clave principal de la nueva entidad será el atributo del cual dependen."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Las dependencias se dibujan en el **grafo o diagrama de dependencias funcionales**: flechas que indican las dependencias **completas**, del **implicante al implicado**, y un **recuadro** cuando el implicante es compuesto.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Una herramienta muy útil para visualizar las dependencias funcionales es el grafo o diagrama de dependencias funcionales"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "las cuales indican las dependencias funcionales completas que existen entre ellos, partiendo del implicante hacia el implicado."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "los atributos que lo componen se encierran en un recuadro y la flecha parte de éste, no de cada atributo."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Del modelo lógico al físico",
+   "points": [
+    {
+     "text": "Las **reglas de obtención del modelo físico** transforman el modelo lógico normalizado **conservando su semántica**: cada **entidad** pasa a ser una **tabla**, cada **atributo** una **columna**, y el **identificador único**, la **clave primaria**. Las restricciones de los atributos se recogen con cláusulas del lenguaje lógico, que serán **disparadores** si el gestor los soporta.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo de esta técnica es obtener un modelo físico de datos a partir del modelo lógico de datos normalizado."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Una entidad se transforma en una tabla."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Para ello es necesario aplicar un conjunto de reglas que conserven la semántica del modelo lógico."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Cada atributo se transforma en una columna de la tabla en la que se transformó la entidad a la que pertenece."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El identificador único se convierte en clave primaria."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "que se convertirán en disparadores cuando éstos sean soportados por el sistema gestor de base de datos."
+      }
+     ]
+    },
+    {
+     "text": "**Relaciones 1:N**: se **propaga el identificador** del lado 1 al lado N. Si es de **asociación**, queda como **clave ajena**; si es de **dependencia**, la clave primaria de la tabla débil es la **concatenación** de ambos identificadores. Las **1:1** son un caso de las 1:N (se propaga en las dos direcciones, evitando nulos); las de **agregación** se transforman como las 1:N. En las **exclusivas**, hay que comprobar que **una y solo una** de las claves propagadas es nula en cada fila.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Relaciones 1:N, se propaga el identificador de la entidad de cardinalidad máxima 1 a la que es N"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Si la relación es de asociación, la clave propagada es clave ajena en la tabla a la que se ha propagado."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Si la relación es de dependencia, la clave primaria de la tabla correspondiente a la entidad débil está formada por la concatenación de los identificadores de ambas entidades."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Relaciones 1:1, es un caso particular de las 1:N y por tanto se propaga la clave en las dos direcciones."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se debe analizar la situación, intentando recoger la mayor semántica posible, y evitar valores nulos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las relaciones de agregación se transforman del mismo modo que las 1:N."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "hay que comprobar que una y sólo una de esas claves es nula en cada ocurrencia."
+      }
+     ]
+    },
+    {
+     "text": "**Relaciones M:N**: dan una **tabla propia** (en el ejemplo de Métrica, las relaciones Poseen y Están asignados acaban en las tablas POSEEN y ASIGNACIONES) cuya clave primaria es la **concatenación** de los identificadores relacionados (cada uno, clave ajena); sus atributos pasan a columnas de esa tabla (así lo dicen las reglas de transformación del **modelo de clases**).",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Relaciones M:N, se transforman en una tabla, cuya clave primaria es la concatenación de los identificadores de las clases asociadas, siendo cada uno de ellos clave ajena de la propia tabla. Si la relación tiene atributos, éstos se transforman en columnas de la tabla."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Pero hay dos tablas más: POSEEN, que surge de la relación del mismo nombre y ASIGNACIONES, que se origina a partir de la relación Están asignados."
+      }
+     ]
+    },
+    {
+     "text": "**Jerarquías**, tres opciones:",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las opciones para tratar la transformación de la jerarquía son:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**a)** Una tabla para el **supertipo** y otra para **cada subtipo** con el identificador del supertipo como clave ajena: la que **mejor conserva la semántica**, adecuada si los subtipos tienen muchos atributos distintos.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Opción a: Consiste en crear una tabla para el supertipo que tenga de clave primaria el identificador y una tabla para cada uno de los subtipos que tengan el identificador del supertipo como clave ajena."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Es la solución que mejor conserva la semántica."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Esta solución es apropiada cuando los subtipos tienen muchos atributos distintos y se quieren conservar los atributos comunes en una tabla."
+        }
+       ]
+      },
+      {
+       "text": "**b)** Una tabla **por subtipo** con los atributos comunes repetidos: mejora la **eficiencia** al acceder a todos los atributos de un subtipo.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Opción b: Se crea una tabla para cada subtipo, los atributos comunes aparecen en todos los subtipos y la clave primaria para cada tabla es el identificador del supertipo."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Esta opción mejora la eficiencia en los accesos a todos los atributos de un subtipo"
+        }
+       ]
+      },
+      {
+       "text": "**c)** **Una sola tabla** con todos los atributos y un **atributo discriminante** del subtipo: si los subtipos se diferencian en **pocos atributos** y tienen **las mismas relaciones** con otras entidades. En una jerarquía **total**, el discriminante **no puede ser nulo**.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Opción c: Agrupar en una tabla todos los atributos de la entidad supertipo y de los subtipos."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Esta solución puede aplicarse cuando los subtipos se diferencien en pocos atributos y las relaciones entre los subtipos y otras entidades sean las mismas."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "el atributo discriminante no podrá tomar valor nulo"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Se añade un atributo que indique a qué subtipo pertenece cada ocurrencia (el atributo discriminante de la jerarquía)."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Optimización: la desnormalización controlada",
+   "points": [
+    {
+     "text": "La **optimización** reestructura el **modelo físico** para cumplir los requisitos de **rendimiento** y lograr una **eficiencia** adecuada: es una **desnormalización controlada** para **reducir o simplificar el número de accesos** a la base de datos.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo de esta técnica es reestructurar el modelo físico de datos con el fin de asegurar que satisface los requisitos de rendimiento establecidos y conseguir una adecuada eficiencia del sistema."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La optimización consiste en una desnormalización controlada del modelo físico de datos que se aplica para reducir o simplificar el número de accesos a la base de datos."
+      }
+     ]
+    },
+    {
+     "text": "Recomendaciones: **introducir elementos redundantes**; **dividir** entidades; **combinar** entidades que se acceden en la misma transacción; **redefinir o añadir relaciones** para un acceso más directo; y definir **claves secundarias o índices**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Introducir elementos redundantes."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Dividir entidades."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Combinar entidades si los accesos son frecuentes dentro de la misma transacción."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Redefinir o añadir relaciones entre entidades para hacer más directo el acceso entre entidades."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Definir claves secundarias o índices para permitir caminos de acceso alternativos."
+      }
+     ]
+    },
+    {
+     "text": "Para decidir se tienen en cuenta, entre otros: los **tiempos de respuesta**, la **tasa de actualizaciones frente a recuperaciones**, las veces que se accede **conjuntamente** a los atributos, su **longitud**, el tipo de aplicación (**en línea o por lotes**), la **frecuencia y tipo** de acceso, su **prioridad**, el **tamaño de las tablas** y los requisitos de **seguridad**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los tiempos de respuesta requeridos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La tasa de actualizaciones respecto a la de recuperaciones."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El tipo de aplicaciones (en línea / por lotes)."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Las veces que se accede conjuntamente a los atributos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La longitud de los mismos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La frecuencia y tipo de acceso."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La prioridad de los accesos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los requisitos de seguridad: accesibilidad, confidencialidad, integridad y disponibilidad que se consideren relevantes."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El tamaño de las tablas."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Integridad en el modelo relacional",
+   "points": [
+    {
+     "text": "**Clave primaria**: identifica de forma única cada fila; sus valores deben ser **únicos y no nulos** (ninguna de sus columnas puede ser nula). Una tabla tiene **como mucho una** clave primaria, y la teoría relacional exige que **toda tabla tenga una** (PostgreSQL no lo impone). Puede haber **varias restricciones UNIQUE**, pero solo una es la clave primaria, que es además el destino por defecto de las claves ajenas.",
+     "refs": [
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "A primary key constraint indicates that a column, or group of columns, can be used as a unique identifier for rows in the table. This requires that the values be both unique and not null."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "A table can have at most one primary key."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "will force the column(s) to be marked NOT NULL ."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "This rule is not enforced by PostgreSQL , but it is usually best to follow it."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "only one can be identified as the primary key."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "the primary key defines the default target column(s) for foreign keys referencing its table."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "Relational database theory dictates that every table must have a primary key."
+      }
+     ]
+    },
+    {
+     "text": "**Clave ajena (foránea)**: columna o columnas cuyos valores deben **coincidir con los de alguna fila de otra tabla** (una **clave primaria** o una columna con restricción **UNIQUE**): mantiene la **integridad referencial**. Todo valor **no nulo** de la clave ajena debe existir en la tabla referenciada; si alguna columna de la clave ajena es **nula**, normalmente no se comprueba (por ejemplo, el nodo raíz de un árbol). Puede referenciar **la propia tabla** (clave ajena **autorreferencial**).",
+     "refs": [
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "A foreign key constraint specifies that the values in a column (or a group of columns) must match the values appearing in some row of another table. We say this maintains the referential integrity between two related tables."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "Now it is impossible to create orders with non-NULL product_no entries that do not appear in the products table."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "A foreign key must reference columns that either are a primary key or form a unique constraint"
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "Normally, a referencing row need not satisfy the foreign key constraint if any of its referencing columns are null."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "this is called a self-referential foreign key."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "A top-level node would have NULL parent_id , while non-NULL parent_id entries would be constrained to reference valid rows of the table."
+      }
+     ]
+    },
+    {
+     "text": "Al **borrar** una fila referenciada (ON DELETE): **NO ACTION** (por defecto: normalmente da error si quedan referencias, aunque la comprobación puede **aplazarse** al final de la transacción), **RESTRICT** (impide el borrado, sin aplazar), **CASCADE** (borra también las filas que la referencian), **SET NULL** y **SET DEFAULT** (ponen la clave ajena a nulo o a su valor por defecto). **CASCADE** encaja cuando la fila que referencia es un **componente** que no existe sin la otra; si son objetos **independientes**, mejor **RESTRICT o NO ACTION**. Hay también **ON UPDATE**, donde CASCADE copia el nuevo valor a las filas que referencian.",
+     "refs": [
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "The default ON DELETE action is ON DELETE NO ACTION ; this does not need to be specified."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "so this operation will usually result in an error. But checking of foreign-key constraints can also be deferred to later in the transaction"
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "RESTRICT is a stricter setting than NO ACTION . It prevents deletion of a referenced row. RESTRICT does not allow the check to be deferred until later in the transaction."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "CASCADE specifies that when a referenced row is deleted, row(s) referencing it should be automatically deleted as well."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "There are two other options: SET NULL and SET DEFAULT . These cause the referencing column(s) in the referencing row(s) to be set to nulls or their default values, respectively, when the referenced row is deleted."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "When the referencing table represents something that is a component of what is represented by the referenced table and cannot exist independently, then CASCADE could be appropriate. If the two tables represent independent objects, then RESTRICT or NO ACTION is more appropriate"
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "Analogous to ON DELETE there is also ON UPDATE which is invoked when a referenced column is changed (updated)."
+      },
+      {
+       "title": "PostgreSQL · Constraints (documentación oficial)",
+       "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+       "quote": "In this case, CASCADE means that the updated values of the referenced column(s) should be copied into the referencing row(s)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Diagramas de flujo de datos (DFD)",
+   "points": [
+    {
+     "text": "El **DFD** obtiene un **modelo lógico de procesos** independiente de las restricciones físicas; muestra los **límites del sistema**, la lógica de los procesos y el **movimiento de los datos**, descomponiendo los procesos de lo general al detalle.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El objetivo del diagrama de flujo de datos es la obtención de un modelo lógico de procesos que represente el sistema, con independencia de las restricciones físicas del entorno."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Permite representar gráficamente los límites del sistema y la lógica de los procesos"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "muestra el flujo o movimiento de los datos a través del sistema y sus transformaciones como resultado de la ejecución de los procesos."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Esta técnica consiste en la descomposición sucesiva de los procesos, desde un nivel general, hasta llegar al nivel de detalle necesario"
+      }
+     ]
+    },
+    {
+     "text": "Elementos:",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El diagrama de flujo de datos se compone de los siguientes elementos:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Entidad externa**: ente **ajeno al sistema** que le da o recibe información; las relaciones entre entidades externas no forman parte del modelo, y puede **repetirse** en un diagrama.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Entidad externa: representa un ente ajeno al sistema que proporciona o recibe información del mismo."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "El estudio de las relaciones entre entidades externas no forma parte del modelo."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Puede aparecer varias veces en un mismo diagrama, así como en los distintos niveles del DFD"
+        }
+       ]
+      },
+      {
+       "text": "**Proceso**: funcionalidad que **transforma** datos; **nunca es origen ni final** de los datos y es **siempre intermediario** entre una entidad externa y un almacén.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "El proceso nunca es el origen ni el final de los datos, puede transformar un flujo de datos de entrada en varios de salida y siempre es necesario como intermediario entre una entidad externa y un almacén de datos."
+        }
+       ]
+      },
+      {
+       "text": "**Almacén de datos**: información **en reposo**; no crea ni transforma datos, **no se comunica** con otro almacén ni con una entidad externa y aparece por primera vez en el nivel en que **dos o más procesos** acceden a él.",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Almacén de datos: representa la información en reposo utilizada por el sistema"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "El almacén no puede crear, transformar o destruir datos, no puede estar comunicado con otro almacén o entidad externa"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "aparecerá por primera vez en aquel nivel en que dos o más procesos accedan a él."
+        }
+       ]
+      },
+      {
+       "text": "**Flujo de datos**: el **movimiento** de los datos. Entre dos procesos solo si la información es **síncrona** (el destino empieza cuando el origen termina). Con almacenes, los flujos son de **consulta**, de **actualización** o de **diálogo** (consulta y actualización).",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Flujo de datos: representa el movimiento de los datos"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Un flujo de datos entre dos procesos sólo es posible cuando la información es síncrona"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "el proceso destino comienza cuando el proceso origen finaliza su función."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "De consulta: representan la utilización de los valores de uno o más campos de un almacén"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "De actualización: representan la alteración de los datos de un almacén"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "De diálogo: es un flujo entre un proceso y un almacén que representa una consulta y una actualización."
+        }
+       ]
+      },
+      {
+       "text": "Para sistemas orientados al **control** se amplía la notación con el **proceso de control**, que **coordina y sincroniza** las actividades de otros procesos. **Flujo de control**: activa o informa a un proceso; no lleva datos con valores, sino **eventos** (señales o interrupciones).",
+       "refs": [
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "Proceso de control: representa procesos que coordinan y sincronizan las actividades de otros procesos del diagrama de flujo de datos."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "se ha ampliado la notación de los diagramas de flujo de datos incorporando los siguientes elementos:"
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "El flujo de control que sale de un proceso de control activa al proceso que lo recibe y el que entra le informa de la situación de un proceso."
+        },
+        {
+         "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+         "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+         "quote": "los flujos de control no representan datos con valores, sino que en cierto modo, se trata de eventos que activan los procesos (señales o interrupciones)."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Descomposición por niveles** (**top-down**): **diagrama de contexto** (**nivel 0**, un único proceso: el sistema), **diagrama 0** (**nivel 1**, procesos principales o **subsistemas**), tantos diagramas 1, 2… como funciones tenga el diagrama 0 (**nivel 2**) y los intermedios necesarios. El de contexto **delimita el ámbito** del sistema y sus interfaces. Hay que evitar la **descomposición desigual**. La entrada y salida de un proceso deben coincidir con las del DFD en que se descompone. El que no se descompone es un **proceso primitivo**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "La descomposición por niveles se realiza de arriba abajo (top-down)"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un diagrama de contexto (Nivel 0)."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Un diagrama 0 (Nivel 1)."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Tantos diagramas 1, 2, 3, ... n como funciones haya en el diagrama 0 (Nivel 2)."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "en el que se representan los procesos principales o subsistemas."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "que la información de entrada y de salida de un proceso cualquiera se corresponde con la información de entrada y de salida del diagrama de flujo de datos en el que se descompone."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El diagrama de contexto tiene como objetivo delimitar el ámbito del sistema con el mundo exterior definiendo sus interfaces."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En la construcción hay que evitar en lo posible la descomposición desigual"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En este diagrama se representa un único proceso que"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "A éste se le denomina Proceso primitivo"
+      }
+     ]
+    },
+    {
+     "text": "**Notación**: entidad externa, **elipse**; proceso, **rectángulo de tres casillas** (número, nombre y localización), con **asterisco** si es de último nivel; proceso de control, igual pero con **trazo discontinuo**. El número indica el **nivel** y **no el orden de ejecución**: el proceso del diagrama de contexto es el **cero**, los del siguiente nivel van **desde 1**, y los inferiores llevan el número del proceso padre seguido del suyo. El nombre suele ser **verbo + sustantivo**. Almacén: **dos líneas paralelas** cerradas en un extremo. **Flujo de control**: flecha de **trazo discontinuo**.",
+     "refs": [
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se representa mediante una elipse con un identificador y un nombre significativo en su interior"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se representa por un rectángulo subdividido en tres casillas donde se indica el nombre del proceso, un número identificativo y la localización."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Si el proceso es de último nivel, se representa con un asterisco en el ángulo inferior derecho"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "el número no indica orden de ejecución alguno entre los procesos"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "El proceso del diagrama de contexto se numera como cero."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se representa por un rectángulo, con trazo discontinuo, subdividido en tres casillas"
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "e indica el nivel del DFD en que se está."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Los procesos del siguiente nivel se enumeran desde 1 y de forma creciente hasta completar el número de procesos del diagrama."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "En los niveles inferiores se forma con el número del proceso en el que está incluido seguido de un número que lo identifica en ese contexto."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Normalmente estará constituido por un verbo más un sustantivo."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se representa por dos líneas paralelas cerradas en un extremo y una línea vertical que las une."
+      },
+      {
+       "title": "Métrica v3 · Técnicas y Prácticas (PAe)",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:da7d91fa-d6bd-467c-be32-a72e27c603b3/METRICA_V3_Tecnicas.pdf",
+       "quote": "Se representa por una flecha con trazo discontinuo"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
