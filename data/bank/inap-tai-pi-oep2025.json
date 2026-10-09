@@ -634,7 +634,13 @@
       "topics": [
         "B3-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2018-12699",
+          "section": "ar-3"
+        }
+      ]
     },
     {
       "key": "P-33",

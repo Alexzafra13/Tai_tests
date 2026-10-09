@@ -212,9 +212,11 @@ público, igualdad y dependencia, sociedad de la información, firma
 electrónica, DNI, Agenda Digital, protección de datos, administración
 electrónica: registros, notificaciones, ENS, ENI y normas técnicas; sedes
 electrónicas, Cl@ve e infraestructuras y servicios comunes) y los temas 1
-a 7 del bloque III (modelado de datos y normalización con Métrica v3;
+a 8 del bloque III (modelado de datos y normalización con Métrica v3;
 lenguajes de programación; SQL; orientación a objetos y UML; Jakarta EE
-y .NET; cliente/servidor y servicios web; aplicaciones web). Los patrones
+y .NET; cliente/servidor y servicios web; aplicaciones web;
+accesibilidad, con el Real Decreto 1112/2018, usabilidad y seguridad en el
+desarrollo). Los patrones
 de diseño (GoF, GRASP) quedan fuera: su catálogo no está publicado en una
 fuente oficial en línea.
 

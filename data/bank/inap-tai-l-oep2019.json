@@ -1063,7 +1063,13 @@
       "topics": [
         "B3-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2018-12699",
+          "section": "ar-17"
+        }
+      ]
     },
     {
       "key": "P-54",

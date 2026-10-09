@@ -1143,7 +1143,13 @@
       "topics": [
         "B3-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2018-12699",
+          "section": "ar-4"
+        }
+      ]
     },
     {
       "key": "P-58",
@@ -1797,7 +1803,13 @@
       "topics": [
         "B3-T08"
       ],
-      "status": "published"
+      "status": "published",
+      "articles": [
+        {
+          "law": "BOE-A-2018-12699",
+          "section": "ar"
+        }
+      ]
     },
     {
       "key": "SI-11",

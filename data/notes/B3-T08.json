@@ -1,0 +1,700 @@
+{
+ "topic": "B3-T08",
+ "sections": [
+  {
+   "title": "Accesibilidad de webs y apps del sector público (RD 1112/2018)",
+   "points": [
+    {
+     "text": "El **Real Decreto 1112/2018, de 7 de septiembre**, garantiza los **requisitos de accesibilidad** de los **sitios web y aplicaciones móviles** del sector público. **Accesibilidad**: principios y técnicas que deben respetarse al diseñar, construir, mantener y actualizar webs y apps para garantizar la **igualdad y no discriminación** en el acceso, en particular de las personas con **discapacidad** y **mayores**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar",
+       "quote": "Este real decreto tiene por objeto garantizar los requisitos de accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar",
+       "quote": "se entiende por accesibilidad el conjunto de principios y técnicas que se deben respetar al diseñar, construir, mantener y actualizar los sitios web y las aplicaciones para dispositivos móviles para garantizar la igualdad y la no discriminación en el acceso de las personas usuarias, en particular de las personas con discapacidad y de las personas mayores."
+      }
+     ]
+    },
+    {
+     "text": "Se aplica (art. 2) a la **AGE**, las **comunidades autónomas**, la **Administración Local**, el **sector público institucional** y las **asociaciones** del sector público, y también a la **Administración de Justicia**. Además, las Administraciones exigen sus criterios a las webs y apps con **financiación pública** (disp. adic. 1.ª).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-2",
+       "quote": "a) La Administración General del Estado."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-2",
+       "quote": "b) Las Administraciones de las comunidades autónomas."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-2",
+       "quote": "c) Las entidades que integran la Administración Local."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-2",
+       "quote": "Lo dispuesto en este real decreto también será de aplicación a la Administración de Justicia."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "da",
+       "quote": "a) Los sitios web y aplicaciones para dispositivos móviles que reciban financiación pública para su diseño o mantenimiento."
+      }
+     ]
+    },
+    {
+     "text": "**Contenido accesible** (art. 3.2): la información **textual y no textual**, los **documentos y formularios descargables**, los contenidos **multimedia pregrabados** de base temporal, las formas de **interacción bidireccional**, el tratamiento de **formularios digitales** y los procesos de **identificación, autenticación, firma y pago**, sea cual sea la plataforma.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "El contenido accesible de los sitios web y de las aplicaciones para dispositivos móviles incluye la información tanto textual como no textual, los documentos y formularios que se pueden descargar, los contenidos multimedia pregrabados de base temporal, las formas de interacción bidireccional, el tratamiento de formularios digitales y la cumplimentación de los procesos de identificación, autenticación, firma y pago con independencia de la plataforma tecnológica"
+      }
+     ]
+    },
+    {
+     "text": "**Excluidos** (art. 3.3 y 3.4), entre otros: el multimedia de los **servicios públicos de radiodifusión**; la **ofimática** anterior a la entrada en vigor (salvo que sea necesaria para tareas administrativas activas) y el **multimedia pregrabado** anterior; el multimedia **en directo**; los **mapas** en línea (si, en los de navegación, la información esencial es accesible); contenidos de **terceros** no controlados; ciertas reproducciones del **patrimonio**; **extranet e intranet** publicadas antes del **23 de septiembre de 2019** (hasta una revisión sustancial), y **archivos** no necesarios para tareas activas ni actualizados después.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "prestadores del servicio público de radiodifusión"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "a) Formatos de archivo de ofimática publicados antes de la entrada en vigor de este real decreto, salvo que los mismos sean necesarios para tareas administrativas activas"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "b) Contenido multimedia pregrabado de base temporal publicado antes de la entrada en vigor de este real decreto."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "c) Contenido multimedia en directo de base temporal"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "siempre y cuando la información esencial se proporcione de manera accesible digitalmente en el caso de mapas destinados a fines de navegación."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "e) Contenidos de terceros que no estén financiados ni desarrollados por el sujeto obligado ni estén bajo su control."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "f) Reproducciones de bienes de colecciones del patrimonio que no puedan hacerse plenamente accesibles"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "publicados antes del 23 de septiembre de 2019, hasta que dichos sitios web sean objeto de una revisión sustancial."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-3",
+       "quote": "siempre que no hayan sido actualizados ni editados con posterioridad a la entrada en vigor de este real decreto."
+      }
+     ]
+    },
+    {
+     "text": "**Cuatro principios** (art. 4): **perceptibilidad** (la información y la interfaz se presentan de forma que se puedan **percibir**), **operabilidad** (los componentes y la **navegación** se pueden **utilizar** por cualquiera), **comprensibilidad** (información y funcionamiento **comprensibles**) y **robustez** (contenidos interpretables de forma fiable por muchos **agentes de usuario**, incluidas las **tecnologías de asistencia**).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-4",
+       "quote": "l) Perceptibilidad: Es el principio de la accesibilidad que exige que la información y los componentes de la interfaz de usuario se presenten a las personas usuarias de manera que pueda percibirlos."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-4",
+       "quote": "m) Operabilidad: Es el principio de la accesibilidad que exige que los componentes y la navegación de la interfaz de usuario se puedan utilizar por cualquier persona usuaria."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-4",
+       "quote": "n) Comprensibilidad: Es el principio de la accesibilidad que exige que la información y el funcionamiento de la interfaz de usuario sean comprensibles por cualquier persona usuaria."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-4",
+       "quote": "ñ) Robustez: Es el principio de la accesibilidad que exige que los contenidos sean suficientemente sólidos para poder ser interpretados de forma fiable por una gran variedad de agentes de usuario, incluidas las tecnologías de asistencia."
+      }
+     ]
+    },
+    {
+     "text": "Las webs y apps deben ser **perceptibles, operables, comprensibles y robustas** (art. 5), y la accesibilidad se tiene en cuenta de forma **integral** en su diseño, gestión, mantenimiento y actualización. Se **presume la conformidad** si cumplen las **normas armonizadas** publicadas en el DOUE; si no las hay, las especificaciones técnicas de la Comisión (apps) o la norma **EN 301 549 V1.1.2** (art. 6).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-5",
+       "quote": "de modo que sus contenidos sean perceptibles, operables, comprensibles y robustos"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-5",
+       "quote": "La accesibilidad se tendrá presente de forma integral en el proceso de diseño, gestión, mantenimiento y actualización de contenidos"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-6",
+       "quote": "Se presumirá que el contenido de los sitios web y aplicaciones para dispositivos móviles que cumpla las normas armonizadas"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-6",
+       "quote": "que la Comisión haya adoptado mediante los correspondientes actos de ejecución"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-6",
+       "quote": "que cumpla los requisitos pertinentes de la norma EN 301 549 V1.1.2 (2015-04)"
+      }
+     ]
+    },
+    {
+     "text": "**Carga desproporcionada** (art. 7): la que supone una carga **financiera y organizativa excesiva** para la entidad. La excepción es **motivada** y limitada a lo estrictamente necesario; **no** la justifican la falta de **prioridad, tiempo o conocimientos**. Exige una **evaluación inicial por escrito**, revisada **al menos una vez al año**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-7",
+       "quote": "Se considera carga desproporcionada aquella que impone a la entidad obligada una carga financiera y organizativa excesiva"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-7",
+       "quote": "La excepción al cumplimiento de los requisitos de accesibilidad deberá ser motivada y se limitará al contenido concreto y a lo estrictamente necesario para reducir la carga."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-7",
+       "quote": "No se consideran motivos que permitan apreciar la excepción de la carga desproporcionada la falta de prioridad, de tiempo o de conocimientos."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-7",
+       "quote": "debiéndolo hacer constar por escrito mediante el correspondiente informe. Dicha evaluación deberá revisarse al menos una vez al año"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Comunicaciones, quejas y reclamaciones (RD 1112/2018)",
+   "points": [
+    {
+     "text": "**Dos modalidades** de comunicación (art. 10): **comunicaciones sobre requisitos de accesibilidad** (informar de incumplimientos, otras dificultades o sugerencias) y **solicitudes de información accesible y quejas** (quejas sobre el cumplimiento y petición de contenidos excluidos o exentos). Las primeras, por **correo o formulario electrónico** y además **teléfono u oficina** (art. 11).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-10",
+       "quote": "Permite a cualquier persona física y jurídica informar sobre cualquier posible incumplimiento"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-10",
+       "quote": "También permite transmitir otras dificultades de acceso al contenido o formular cualquier otra consulta o sugerencia de mejora"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-10",
+       "quote": "Permite a cualquier persona física o jurídica formular quejas relativas al cumplimiento de los requisitos de este real decreto y solicitar la información relativa a contenidos que están excluidos"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-11",
+       "quote": "habilitando una dirección de correo electrónico específica o un formulario que permita la presentación telemática. Adicionalmente, se habilitará al menos uno de los siguientes canales complementarios al electrónico: Un teléfono o una oficina física de atención."
+      }
+     ]
+    },
+    {
+     "text": "**Solicitudes de información accesible y quejas** (art. 12): se presentan y registran conforme a la **Ley 39/2015**; la entidad responde en **20 días hábiles** (plazo suspendible si pide aclaraciones, que el interesado da en **10 días hábiles**). Si no responde a tiempo, la solicitud se entiende **no aceptada** o la queja **no considerada**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-12",
+       "quote": "serán presentadas y registradas conforme a los requisitos establecidos en la Ley 39/2015"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-12",
+       "quote": "Recibidas las solicitudes de información accesible y quejas, la entidad obligada deberá responder a la persona interesada en el plazo de veinte días hábiles."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-12",
+       "quote": "en un plazo de diez días hábiles, formule las aclaraciones necesarias"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-12",
+       "quote": "se entenderá que la solicitud de información accesible no ha sido aceptada o que la queja no ha sido considerada."
+      }
+     ]
+    },
+    {
+     "text": "**Reclamación** (art. 13): si la solicitud o queja se **desestima**, no se está de acuerdo con la decisión, la respuesta no tiene el contenido exigido o **no hay respuesta en 20 días hábiles**. Se dirige a la **Unidad responsable de accesibilidad** (si fue ella quien respondió, a su **superior jerárquico**), que responde en **dos meses**; el silencio es **desestimatorio**. Después caben los **recursos administrativos** (art. 14).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-13",
+       "quote": "ésta hubiera sido desestimada, no se estuviera de acuerdo con la decisión adoptada, o la respuesta no cumpliera los requisitos contemplados en el artículo 12.5"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-13",
+       "quote": "Igualmente se podrá iniciar una reclamación en el caso de que haya trascurrido el plazo de veinte días hábiles sin haber obtenido respuesta."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-13",
+       "quote": "La reclamación deberá dirigirse a la Unidad responsable de accesibilidad de ese ámbito competencial, o si la respuesta se hubiera realizado desde la propia Unidad responsable de accesibilidad, al superior jerárquico de ésta."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-13",
+       "quote": "deberá responder a la persona interesada en el plazo máximo de dos meses."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-13",
+       "quote": "se entenderá que la reclamación ha sido desestimada."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Control y revisión (RD 1112/2018)",
+   "points": [
+    {
+     "text": "**Declaración de accesibilidad** (art. 15): **detallada, exhaustiva y clara**, actualizada **al menos una vez al año** o tras cada revisión; en las webs, enlazada desde **todas las páginas** con el enlace **«Accesibilidad»**. Incluye lo no accesible y por qué, el **mecanismo de comunicación** y el enlace al **procedimiento de reclamación**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-15",
+       "quote": "proporcionarán una declaración de accesibilidad detallada, exhaustiva y clara"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-15",
+       "quote": "Dicha declaración será actualizada periódicamente, como mínimo una vez al año, o cada vez que se realice una revisión de accesibilidad"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-15",
+       "quote": "estando disponible su acceso desde todas las páginas del sitio web con un enlace denominado «Accesibilidad»"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-15",
+       "quote": "a) Una explicación sobre aquellas partes del contenido que no sean accesibles y las razones de dicha inaccesibilidad"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-15",
+       "quote": "b) Un enlace y descripción del mecanismo de comunicación"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-15",
+       "quote": "c) Un enlace al procedimiento de reclamación regulado en el artículo 13"
+      }
+     ]
+    },
+    {
+     "text": "Cada entidad designa una **Unidad responsable de accesibilidad** (en la AGE, en el ámbito de las **Subsecretarías**), que atiende las **reclamaciones**, revisa las evaluaciones de carga desproporcionada y coordina las revisiones (art. 16). El seguimiento ante la **Comisión Europea** corresponde al Ministerio de Política Territorial y Función Pública (según el texto), con un informe **cada tres años** (art. 18); y existe una **Red de Contactos de Accesibilidad Digital** (art. 20).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-16",
+       "quote": "Cada entidad obligada determinará la Unidad responsable de garantizar el cumplimiento de los requisitos de accesibilidad"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-16",
+       "quote": "En la Administración General del Estado se designarán las Unidades responsables de accesibilidad en el ámbito de las Subsecretarías de cada Departamento"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-16",
+       "quote": "b) Atender y dar respuesta a las reclamaciones"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-16",
+       "quote": "c) Revisar las evaluaciones realizadas para acogerse a la excepción"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-16",
+       "quote": "d) Coordinar las revisiones periódicas de accesibilidad establecidas en el artículo 17"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-18",
+       "quote": "El órgano encargado de realizar el seguimiento y presentación de informes ante la Comisión Europea es el Ministerio de Política Territorial y Función Pública."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-18",
+       "quote": "a más tardar el 23 de diciembre de 2021 y posteriormente cada tres años"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-20",
+       "quote": "Se crea la Red de Contactos de Accesibilidad Digital de las Administraciones Públicas"
+      }
+     ]
+    },
+    {
+     "text": "**Revisiones** (art. 17): en el **diseño** y **antes de la puesta en funcionamiento**, y luego **periódicas**; con revisión **automática** y **manual experta**, recogidas en un **informe de revisión**. Se puede **certificar** con una entidad acreditada por **ENAC** (u otro organismo nacional de acreditación). La **primera revisión**: webs, antes de **dos años** desde la entrada en vigor; apps, antes de **tres años**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-17",
+       "quote": "tanto en la fase de diseño de los sitios web y aplicaciones para dispositivos móviles como antes de su puesta en funcionamiento."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-17",
+       "quote": "las entidades obligadas realizarán revisiones periódicas"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-17",
+       "quote": "tendrán en consideración tanto aspectos de revisión automática como aspectos de revisión manual experta. El resultado de éstas deberá quedar recogido en un informe de revisión de la accesibilidad."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-17",
+       "quote": "Entidad Nacional de Acreditación (ENAC) o por otro organismo nacional"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "ar-17",
+       "quote": "la primera revisión de accesibilidad deberá haberse realizado en el caso de los sitios web antes de dos años desde la entrada en vigor de este real decreto, y, en el caso de las aplicaciones móviles, antes de tres años desde la entrada en vigor de este real decreto."
+      }
+     ]
+    },
+    {
+     "text": "Entrada en vigor: el **día siguiente** a su publicación en el BOE, salvo que, para las **webs**, las quejas y reclamaciones (arts. 10.2.b, 12 y 13) se aplican **al año** (y a los **dos años** para las webs ya publicadas), y para las **apps**, todo desde el **23 de junio de 2021**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "df-5",
+       "quote": "El presente real decreto entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado»"
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "df-5",
+       "quote": "Para los sitios web, las disposiciones previstas en los artículos 10.2.b), 12 y 13 serán de aplicación al año de la entrada en vigor de este real decreto, y a los dos años para los sitios web ya publicados."
+      },
+      {
+       "law": "BOE-A-2018-12699",
+       "section": "df-5",
+       "quote": "Todas las disposiciones relativas a aplicaciones para dispositivos móviles serán de aplicación desde el 23 de junio de 2021."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "WCAG y ARIA",
+   "points": [
+    {
+     "text": "**WCAG** (Web Content Accessibility Guidelines): recomendación del grupo **WAI del W3C** con pautas para que el contenido web sea accesible, sobre todo para personas con discapacidad. WCAG 2 tiene **13 pautas** en **cuatro principios**: **perceptible**; **operable** (los elementos de la interfaz se pueden **controlar**: ratón, teclado, voz…); **comprensible**, y **robusto** (estándares que funcionen en distintos navegadores). Niveles de conformidad: **A, AA y AAA**.",
+     "refs": [
+      {
+       "title": "WCAG · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/WCAG",
+       "quote": "Web Content Accessibility Guidelines ( WCAG ) is a recommendation published by the Web Accessibility Initiative (WAI) group at the W3C , outlining a set of guidelines for making content accessible primarily for people with disabilities"
+      },
+      {
+       "title": "WCAG · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/WCAG",
+       "quote": "WCAG 2 consists of 13 guidelines organized under 4 principles (perceivable, operable, understandable, and robust)"
+      },
+      {
+       "title": "Understanding WCAG · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG",
+       "quote": "Perceivable : Users must be able to perceive it in some way, using one or more of their senses."
+      },
+      {
+       "title": "Understanding WCAG · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG",
+       "quote": "Operable : Users must be able to control UI elements"
+      },
+      {
+       "title": "Understanding WCAG · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG",
+       "quote": "Robust : The content must be developed using well-adopted web standards that will work across different browsers"
+      },
+      {
+       "title": "WCAG · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/WCAG",
+       "quote": "Conformance to this level is described as A."
+      }
+     ]
+    },
+    {
+     "text": "Pautas que se preguntan: **1.4 Distinguible** (principio perceptible): facilitar **ver y oír** el contenido, **separando el primer plano del fondo**. Del principio **comprensible**: **3.1 Legible**, **3.2 Predecible** y **3.3 Ayuda a la entrada de datos**.",
+     "refs": [
+      {
+       "title": "Understanding WCAG: Perceivable · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Perceivable",
+       "quote": "Guideline 1.4: Distinguishable: Make it easier for users to see and hear content including separating foreground from background."
+      },
+      {
+       "title": "Understanding WCAG: Understandable · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Understandable",
+       "quote": "Guideline 3.1 — Readable: Make text content readable and understandable"
+      },
+      {
+       "title": "Understanding WCAG: Understandable · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Understandable",
+       "quote": "Guideline 3.2 — Predictable: Make Web pages appear and operate in predictable ways"
+      },
+      {
+       "title": "Understanding WCAG: Understandable · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG/Understandable",
+       "quote": "Guideline 3.3 — Input Assistance: Help users avoid and correct mistakes"
+      }
+     ]
+    },
+    {
+     "text": "**HTML semántico** (`<header>`, `<main>`, `<article>`…): los lectores de pantalla lo usan como **señales** para que las personas con discapacidad visual naveguen por la página.",
+     "refs": [
+      {
+       "title": "Semantics · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics",
+       "quote": "Screen readers can use it as a signpost to help visually impaired users navigate a page"
+      }
+     ]
+    },
+    {
+     "text": "**aria-live**: indica que un elemento **se va a actualizar** (región viva) y qué tipo de cambios pueden esperar las tecnologías de asistencia: con **polite** avisan sin interrumpir; con **assertive**, inmediatamente; **off** es el valor por defecto.",
+     "refs": [
+      {
+       "title": "aria-live · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-live",
+       "quote": "The global aria-live attribute indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region."
+      },
+      {
+       "title": "aria-live · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-live",
+       "quote": "assistive technologies will notify users of updates but generally do not interrupt the current task"
+      },
+      {
+       "title": "aria-live · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-live",
+       "quote": "When set to assertive , assistive technologies immediately notify the user"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Usabilidad",
+   "points": [
+    {
+     "text": "Los **10 principios (heurísticas) de Jakob Nielsen** para el diseño de interacción: 1 **visibilidad del estado** del sistema; 2 **relación entre el sistema y el mundo real**; 3 **control y libertad** del usuario; 4 **consistencia y estándares**; 5 **prevención de errores**; 6 **reconocer mejor que recordar**; 7 **flexibilidad y eficiencia de uso**; 8 **diseño estético y minimalista**; 9 ayudar a **reconocer, diagnosticar y recuperarse** de errores; 10 **ayuda y documentación**.",
+     "refs": [
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "Jakob Nielsen's 10 general principles for interaction design."
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "1: Visibility of System Status"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "2: Match Between the System and the Real World"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "3: User Control and Freedom"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "4: Consistency and Standards"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "5: Error Prevention"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "6: Recognition Rather than Recall"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "7: Flexibility and Efficiency of Use"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "8: Aesthetic and Minimalist Design"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "9: Help Users Recognize, Diagnose, and Recover from Errors"
+      },
+      {
+       "title": "10 Usability Heuristics for User Interface Design · Nielsen Norman Group",
+       "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+       "quote": "10: Help and Documentation"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Seguridad en el desarrollo",
+   "points": [
+    {
+     "text": "**Inyección** (OWASP Top 10:2021, A03): la aplicación es vulnerable cuando los datos del usuario **no se validan, filtran ni sanean**, o se usan **consultas dinámicas** sin escapar directamente en el intérprete (SQL, NoSQL, comandos del sistema, LDAP…). En la **inyección SQL** se inserta una consulta a través de los datos de entrada; p. ej., `OR 'a'='a'` hace que el WHERE sea **siempre verdadero** (igual que `OR 1=1`). Prevenirla exige **separar los datos de los comandos**: mejor una API segura con **consultas parametrizadas**.",
+     "refs": [
+      {
+       "title": "OWASP Top 10:2021 · A03:2021 Injection",
+       "url": "https://owasp.org/Top10/2021/A03_2021-Injection/",
+       "quote": "User-supplied data is not validated, filtered, or sanitized by the application."
+      },
+      {
+       "title": "OWASP Top 10:2021 · A03:2021 Injection",
+       "url": "https://owasp.org/Top10/2021/A03_2021-Injection/",
+       "quote": "Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter."
+      },
+      {
+       "title": "OWASP · SQL Injection",
+       "url": "https://owasp.org/www-community/attacks/SQL_Injection",
+       "quote": "A SQL injection attack consists of insertion or “injection” of a SQL query via the input data from the client to the application."
+      },
+      {
+       "title": "OWASP · SQL Injection",
+       "url": "https://owasp.org/www-community/attacks/SQL_Injection",
+       "quote": "condition causes the where clause to always evaluate to true"
+      },
+      {
+       "title": "OWASP Top 10:2021 · A03:2021 Injection",
+       "url": "https://owasp.org/Top10/2021/A03_2021-Injection/",
+       "quote": "Preventing injection requires keeping data separate from commands and queries:"
+      },
+      {
+       "title": "OWASP Top 10:2021 · A03:2021 Injection",
+       "url": "https://owasp.org/Top10/2021/A03_2021-Injection/",
+       "quote": "The preferred option is to use a safe API, which avoids using the interpreter entirely, provides a parameterized interface"
+      }
+     ]
+    },
+    {
+     "text": "**XSS**: para mostrar datos tal como los escribe el usuario se recomienda **codificar la salida** (output encoding), de forma que se interpreten como **texto y no como código**.",
+     "refs": [
+      {
+       "title": "OWASP · Cross Site Scripting Prevention Cheat Sheet",
+       "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+       "quote": "When you need to safely display data exactly as a user types it in, output encoding is recommended. Variables should not be interpreted as code instead of text."
+      }
+     ]
+    },
+    {
+     "text": "**CSRF** (Cross-Site Request Forgery): el atacante hace que el navegador envíe, desde un sitio malicioso, una petición al sitio objetivo **con las credenciales del usuario**, que el servidor ejecuta como si la hubiera querido el usuario.",
+     "refs": [
+      {
+       "title": "Cross-site request forgery (CSRF) · Glosario de MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Glossary/CSRF",
+       "quote": "In a cross-site request forgery (CSRF) attack, an attacker tricks the browser into making an HTTP request to the target site from a malicious site. The request includes the user's credentials and causes the server to carry out some harmful action, thinking that the user intended it."
+      }
+     ]
+    },
+    {
+     "text": "**Cookies**: **HttpOnly** impide que **JavaScript** acceda a la cookie (mitiga XSS); **Secure**, que se envíe salvo por **HTTPS**; **SameSite** (Strict, Lax o None; por defecto Lax) controla si se envía en peticiones **entre sitios** y protege en parte frente a **CSRF**.",
+     "refs": [
+      {
+       "title": "Using HTTP cookies · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+       "quote": "You can prevent JavaScript from accessing a cookie by specifying the HttpOnly attribute during its creation."
+      },
+      {
+       "title": "Using HTTP cookies · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+       "quote": "A cookie with the Secure attribute is only sent to the server with an encrypted request over the HTTPS protocol."
+      },
+      {
+       "title": "Using HTTP cookies · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+       "quote": "The SameSite attribute lets servers specify whether/when cookies are sent with cross-site requests"
+      },
+      {
+       "title": "Using HTTP cookies · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+       "quote": "providing some protection against cross-site request forgery attacks. It takes three possible values: Strict , Lax , and None :"
+      },
+      {
+       "title": "Using HTTP cookies · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies",
+       "quote": "If no SameSite attribute is set, the cookie is treated as Lax by default."
+      }
+     ]
+    },
+    {
+     "text": "**CORS** (Cross-Origin Resource Sharing): mecanismo de **cabeceras HTTP** con el que el servidor indica **desde qué otros orígenes** puede el navegador cargar sus recursos (por ejemplo, `Access-Control-Allow-Origin: https://foo.example` para aceptar solo ese origen; `*` acepta cualquiera).",
+     "refs": [
+      {
+       "title": "Cross-Origin Resource Sharing (CORS) · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+       "quote": "Cross-Origin Resource Sharing ( CORS ) is an HTTP -header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources."
+      },
+      {
+       "title": "Cross-Origin Resource Sharing (CORS) · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS",
+       "quote": "Access-Control-Allow-Origin: https://foo.example"
+      }
+     ]
+    },
+    {
+     "text": "**SAST** (Static Application Security Testing): herramientas de **análisis del código fuente** (o compilado) para encontrar fallos de seguridad **durante el desarrollo**; según OWASP, conviene incluirlas en la integración continua para detectar inyecciones **antes del despliegue en producción**.",
+     "refs": [
+      {
+       "title": "OWASP · Source Code Analysis Tools",
+       "url": "https://owasp.org/www-community/Source_Code_Analysis_Tools",
+       "quote": "Source code analysis tools, also known as Static Application Security Testing (SAST) Tools, can help analyze source code or compiled versions of code to help find security flaws."
+      },
+      {
+       "title": "OWASP · Source Code Analysis Tools",
+       "url": "https://owasp.org/www-community/Source_Code_Analysis_Tools",
+       "quote": "Such tools can help you detect issues during software development."
+      },
+      {
+       "title": "OWASP Top 10:2021 · A03:2021 Injection",
+       "url": "https://owasp.org/Top10/2021/A03_2021-Injection/",
+       "quote": "to identify introduced injection flaws before production deployment."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
