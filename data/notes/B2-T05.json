@@ -1,0 +1,182 @@
+{
+ "topic": "B2-T05",
+ "sections": [
+  {
+   "title": "Bases de datos relacionales",
+   "points": [
+    {
+     "text": "Un **SGBD relacional** guarda y recupera los datos de forma que las operaciones físicas sean transparentes para las aplicaciones; **Oracle Database** es un SGBD relacional.",
+     "refs": [
+      {
+       "title": "Oracle Database 19c · Introduction to Oracle Database",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/introduction-to-oracle-database.html",
+       "quote": "The RDBMS stores and retrieves data so that physical operations are transparent to database applications. Oracle Database is an RDBMS."
+      }
+     ]
+    },
+    {
+     "text": "**Reglas de Codd** (1985) para que un SGBD sea relacional, entre ellas:",
+     "refs": [
+      {
+       "title": "IBM Support · Definición de base de datos relacional (12 reglas de Codd)",
+       "url": "https://www.ibm.com/support/pages/node/683255",
+       "quote": "Various sources list Ted Codd's \"12 rules for determining whether a DBM is relational,\" which was published in Computerworld, October, 1985."
+      }
+     ],
+     "items": [
+      {
+       "text": "Regla 0: gestionar los datos **solo con sus capacidades relacionales**. 1: **información** como valores en tablas. 2: **acceso garantizado** por tabla, clave primaria y columna. 3: **nulos**. 4: **catálogo** en tablas accesibles.",
+       "refs": [
+        {
+         "title": "IBM Support · Definición de base de datos relacional (12 reglas de Codd)",
+         "url": "https://www.ibm.com/support/pages/node/683255",
+         "quote": "Rule Zero: For any system claimed to be relational, that system must be able to manage data entirely through its relational capabilities. 1. The information rule: All information is represented at the logical level by values in tables. 2. Guaranteed Access Rule: Each (atomic) piece of data is accessible by the combination of table name, primary key value, and column name. 3. Null support: The DBMS systematically supports a distinct null placeholder, regardless of data type. 4. A catalog: The database description is contained in user-accessible tables."
+        }
+       ]
+      },
+      {
+       "text": "5: **sublenguaje** completo. 6: **vistas actualizables**. 7: inserción, actualización y borrado **por conjuntos** de filas (de alto nivel, no de bajo nivel).",
+       "refs": [
+        {
+         "title": "IBM Support · Definición de base de datos relacional (12 reglas de Codd)",
+         "url": "https://www.ibm.com/support/pages/node/683255",
+         "quote": "5. Comprehensive data sub-language: Must have a text-based language that supports base table and view definitions, data manipulation, integrity constraints, and transaction boundaries. 6. Updateable views: All views that are theoretically updateable must be updateable. 7. Set-at-a-time Insert, Update, Delete: The DML must support these operations."
+        }
+       ]
+      },
+      {
+       "text": "8: **independencia física**. 9: **independencia lógica**. 10: **independencia de la integridad**. 11: **independencia de la distribución** (no «dependencia»). 12: **no subversión** (ningún acceso alternativo puede saltarse las restricciones de integridad).",
+       "refs": [
+        {
+         "title": "IBM Support · Definición de base de datos relacional (12 reglas de Codd)",
+         "url": "https://www.ibm.com/support/pages/node/683255",
+         "quote": "8. Physical Data Independence: Applications must still work even when changes are made to (internal) data storage or access methods."
+        },
+        {
+         "title": "IBM Support · Definición de base de datos relacional (12 reglas de Codd)",
+         "url": "https://www.ibm.com/support/pages/node/683255",
+         "quote": "9. Logical Data Independence:"
+        },
+        {
+         "title": "IBM Support · Definición de base de datos relacional (12 reglas de Codd)",
+         "url": "https://www.ibm.com/support/pages/node/683255",
+         "quote": "10. Integrity Independence: The DBMS must support the definition and enforcement of entity integrity (primary keys) and referential integrity (foreign keys)."
+        },
+        {
+         "title": "IBM Support · Definición de base de datos relacional (12 reglas de Codd)",
+         "url": "https://www.ibm.com/support/pages/node/683255",
+         "quote": "11. Distribution Independence: Users should not be aware of whether or not a database is distributed."
+        },
+        {
+         "title": "IBM Support · Definición de base de datos relacional (12 reglas de Codd)",
+         "url": "https://www.ibm.com/support/pages/node/683255",
+         "quote": "12. Nonsubversion: Alternate methods of accessing the data should not be able to bypass integrity constraints."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Transacciones",
+   "points": [
+    {
+     "text": "Propiedades **ACID**: **atomicidad, coherencia (consistencia), aislamiento y durabilidad**. **Aislamiento**: las modificaciones de transacciones simultáneas deben aislarse entre sí.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Guía de bloqueo y versiones de fila de transacciones",
+       "url": "https://learn.microsoft.com/es-es/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide",
+       "quote": "conocidas como propiedades de atomicidad, coherencia, aislamiento y durabilidad (ACID)"
+      },
+      {
+       "title": "Microsoft Learn · Guía de bloqueo y versiones de fila de transacciones",
+       "url": "https://learn.microsoft.com/es-es/sql/relational-databases/sql-server-transaction-locking-and-row-versioning-guide",
+       "quote": "Las modificaciones realizadas por transacciones simultáneas se deben aislar de las modificaciones llevadas a cabo por otras transacciones simultáneas."
+      }
+     ]
+    },
+    {
+     "text": "Anomalías (fenómenos) de concurrencia: **lectura sucia** (lee datos no confirmados), **no repetible** (al releer, otra transacción los ha modificado) y **fantasma** (al repetir la consulta, cambia el conjunto de filas), además de la **anomalía de serialización**. Las «lecturas hundidas» no figuran entre ellas.",
+     "refs": [
+      {
+       "title": "PostgreSQL · Transaction Isolation",
+       "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+       "quote": "dirty read A transaction reads data written by a concurrent uncommitted transaction. nonrepeatable read A transaction re-reads data it has previously read and finds that data has been modified by another transaction (that committed since the initial read). phantom read A transaction re-executes a query returning a set of rows that satisfy a search condition and finds that the set of rows satisfying the condition has changed due to another recently-committed transaction."
+      },
+      {
+       "title": "PostgreSQL · Transaction Isolation",
+       "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+       "quote": "serialization anomaly The result of successfully committing a group of transactions is inconsistent with all possible orderings of running those transactions one at a time"
+      }
+     ]
+    },
+    {
+     "text": "**REPEATABLE READ** (SQL Server y estándar SQL): impide lecturas sucias y no repetibles, pero **permite lecturas fantasma** (otras transacciones pueden insertar filas nuevas).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · SET TRANSACTION ISOLATION LEVEL",
+       "url": "https://learn.microsoft.com/es-es/sql/t-sql/statements/set-transaction-isolation-level-transact-sql",
+       "quote": "Especifica que las instrucciones no pueden leer los datos modificados pero aún no confirmados por otras transacciones y que ninguna otra transacción puede modificar los datos leídos por la transacción actual hasta que se complete la transacción actual."
+      },
+      {
+       "title": "Microsoft Learn · SET TRANSACTION ISOLATION LEVEL",
+       "url": "https://learn.microsoft.com/es-es/sql/t-sql/statements/set-transaction-isolation-level-transact-sql",
+       "quote": "Otras transacciones pueden insertar filas nuevas que coincidan con las condiciones de búsqueda de las instrucciones emitidas por la transacción actual. Si la transacción actual vuelve a intentar la instrucción , recupera las nuevas filas, lo que da como resultado lecturas fantasma."
+      },
+      {
+       "title": "PostgreSQL · Transaction Isolation",
+       "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+       "quote": "Repeatable read Not possible Not possible Allowed, but not in PG Possible"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Bases de datos orientadas a objetos y SQL Server",
+   "points": [
+    {
+     "text": "**OQL** (*Object Query Language*) es un lenguaje de **consulta**, parecido a SQL, que consulta objetos complejos, sus atributos y métodos.",
+     "refs": [
+      {
+       "title": "Apache Geode · Querying with OQL",
+       "url": "https://geode.apache.org/docs/guide/115/developing/querying_basics/chapter_overview.html",
+       "quote": "OQL is very similar to SQL, but OQL allows you to query complex objects, object attributes, and methods."
+      }
+     ]
+    },
+    {
+     "text": "**Matisse** es un SGBD con soporte nativo de lenguajes orientados a objetos (persistencia de objetos, herencia, encapsulación, polimorfismo e identificadores únicos de objeto).",
+     "refs": [
+      {
+       "title": "Matisse Software · Product information",
+       "url": "https://www.matisse.com/product_information/",
+       "quote": "Simplifies development by providing native support for virtually all object-oriented languages and capabilities including: object persistence, inheritance, encapsulation, polymorphism, unique object identifiers"
+      }
+     ]
+    },
+    {
+     "text": "**Machine Learning Services** de SQL Server ejecuta scripts de **Python y R** con datos relacionales. Desde SQL Server 2022 los entornos de R y Python ya no se instalan con el programa de instalación. Su paquete R **RevoScaleR** importa, transforma, resume, visualiza y analiza datos.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · ¿Qué es Machine Learning Services para SQL Server?",
+       "url": "https://learn.microsoft.com/es-es/sql/machine-learning/sql-server-machine-learning-services",
+       "quote": "Machine Learning Services es una característica de SQL Server que proporciona la capacidad de ejecutar scripts de Python y R con datos relacionales."
+      },
+      {
+       "title": "Microsoft Learn · ¿Qué es Machine Learning Services para SQL Server?",
+       "url": "https://learn.microsoft.com/es-es/sql/machine-learning/sql-server-machine-learning-services",
+       "quote": "A partir de SQL Server 2022 (16.x), los entornos de ejecución de R, Python y Java ya no se instalan con el programa de instalación de SQL"
+      },
+      {
+       "title": "Microsoft Learn · RevoScaleR",
+       "url": "https://learn.microsoft.com/es-es/sql/machine-learning/r/ref-r-revoscaler",
+       "quote": "También admite la importación de datos, la transformación de datos, el resumen, la visualización y el análisis."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "topic": "B2-T02",
+ "sections": [
+  {
+   "title": "Conectividad: USB, Thunderbolt y Lightning",
+   "points": [
+    {
+     "text": "**USB4**: en su versión 1.0 (2019) llega a **40 Gbps**; la especificación USB4 actual llega a **80 Gbps**. Es compatible con USB 3.2, USB 2.0 y Thunderbolt 3.",
+     "refs": [
+      {
+       "title": "USB-IF · Anuncio de la especificación USB4 (2019)",
+       "url": "https://www.usb.org/sites/default/files/2019-09/USB-IF_USB4%20spec%20announcement_FINAL.pdf",
+       "quote": "Two-lane operation using existing USB Type-C® cables and up to 40Gbps operation over 40Gbps certified cables"
+      },
+      {
+       "title": "USB-IF · USB4",
+       "url": "https://www.usb.org/usb4",
+       "quote": "Two-lane operation using existing USB Type-C cables and up to 80 Gbps operation over 80 Gbps certified cables"
+      },
+      {
+       "title": "USB-IF · USB4",
+       "url": "https://www.usb.org/usb4",
+       "quote": "Compatibility with existing USB 3.2, USB 2.0, and Thunderbolt 3 hosts and devices is supported"
+      }
+     ]
+    },
+    {
+     "text": "**USB 3.2** usa hasta **dos carriles de 10 Gbps** (20 Gbps) y absorbió las especificaciones 3.x anteriores: velocidades de 20, 10 y 5 Gbps.",
+     "refs": [
+      {
+       "title": "USB-IF · USB 3.2",
+       "url": "https://www.usb.org/usb-32-0",
+       "quote": "allowing for up to two lanes of 10Gbps operation to realize a 20Gbps data transfer rate"
+      },
+      {
+       "title": "USB-IF · USB 3.2",
+       "url": "https://www.usb.org/usb-32-0",
+       "quote": "The USB 3.2 specification absorbed all prior 3.x specifications. USB 3.2 identifies three transfer rates – 20Gbps, 10Gbps, and 5Gbps."
+      }
+     ]
+    },
+    {
+     "text": "**USB Type-C** es la especificación de **cable y conector**; las velocidades las fijan USB 3.x/USB4 (USB 3.2 absorbió las 3.x). Por eso Type-C no es lo mismo que USB 3.1.",
+     "refs": [
+      {
+       "title": "USB-IF · Especificación de cable y conector USB Type-C",
+       "url": "https://www.usb.org/usb-type-cr-cable-and-connector-specification",
+       "quote": "This specification is to establish a new USB connector ecosystem that addresses the evolving needs of platforms and devices"
+      },
+      {
+       "title": "USB-IF · USB 3.2",
+       "url": "https://www.usb.org/usb-32-0",
+       "quote": "USB Type-C ® cables were designed from the outset to support multi-lane operation"
+      }
+     ]
+    },
+    {
+     "text": "**Thunderbolt** es una interfaz de hardware (cables Thunderbolt 3, 4 y 5 para monitores y otros dispositivos). **Lightning** es el conector de Apple para **carga y datos** (sincronizar).",
+     "refs": [
+      {
+       "title": "Apple · Identificar los puertos del Mac",
+       "url": "https://support.apple.com/es-es/109523",
+       "quote": "Puedes utilizar un cable Thunderbolt 5, un cable Thunderbolt 4, un cable Thunderbolt 3 o un cable USB-C para conectar monitores y otros dispositivos."
+      },
+      {
+       "title": "Apple · Cable de USB-C a conector Lightning",
+       "url": "https://support.apple.com/es-es/111752",
+       "quote": "Con un cable de USB-C a conector Lightning, podrás cargar y sincronizar tus AirPods, AirPods Pro, iPhone, iPad o iPod touch"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Almacenamiento",
+   "points": [
+    {
+     "text": "**SSD** (*solid-state drive*): almacena datos en **memoria no volátil** y **no tiene partes móviles**. Formatos: **M.2** (el más común en portátiles y sobremesa), U.2 en servidores y tarjeta PCIe (AIC).",
+     "refs": [
+      {
+       "title": "SNIA · Qué es un SSD",
+       "url": "https://www.snia.org/education/what-is-ssd",
+       "quote": "A solid-state drive (SSD) is a device for storing data on non-volatile memory. SSDs have no moving parts"
+      },
+      {
+       "title": "SNIA · Qué es un SSD",
+       "url": "https://www.snia.org/education/what-is-ssd",
+       "quote": "M.2 is the most popular form factor for laptops and desktop, U.2 for enterprise servers, and AIC (add-in-card) for standard PCIe slots."
+      }
+     ]
+    },
+    {
+     "text": "**SATA** (*Serial ATA*, 2001): bus **serie** que sustituyó a IDE/**ATA paralelo**. **SAS** = *Serial Attached SCSI*.",
+     "refs": [
+      {
+       "title": "IBM · Troubleshooting Serial ATA (SATA) issues",
+       "url": "https://www.ibm.com/support/pages/troubleshooting-serial-ata-sata-issues",
+       "quote": "The Serial ATA (SATA) specification, called Serial ATA 1.0, or SATA150 was introduced in 2001 as an evolutionary replacement for Enhanced IDE (EIDE) or Parallel ATA"
+      },
+      {
+       "title": "Microsoft Learn · Enumeración STORAGE_BUS_TYPE",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/api/winioctl/ne-winioctl-storage_bus_type",
+       "quote": "Serial Attached SCSI (SAS) bus."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Visualización y digitalización",
+   "points": [
+    {
+     "text": "Resoluciones: **WQHD** = 2560 × 1440; **Full HD** = 1920 × 1080 (no «HD»).",
+     "refs": [
+      {
+       "title": "Lenovo · Glosario: WQHD",
+       "url": "https://www.lenovo.com/us/en/glossary/wqhd/",
+       "quote": "WQHD stands for wide quad high definition. It's a display resolution of 2560x1440 pixels, offering clearer and more detailed images compared to full high definition (Full HD) (1920x1080)."
+      }
+     ]
+    },
+    {
+     "text": "**IPS** (*In-Plane Switching*) es un tipo de panel **LCD** con buenos ángulos de visión y color.",
+     "refs": [
+      {
+       "title": "Lenovo · Glosario: IPS Display",
+       "url": "https://www.lenovo.com/us/en/glossary/ips-display/",
+       "quote": "IPS Display, or In-Plane Switching Display, is a type of LCD technology that enhances image quality and color accuracy."
+      },
+      {
+       "title": "Lenovo · Glosario: IPS Display",
+       "url": "https://www.lenovo.com/us/en/glossary/ips-display/",
+       "quote": "It stands out for providing wide viewing angles and consistent color reproduction"
+      }
+     ]
+    },
+    {
+     "text": "Digitalización en la Administración (NTI de Digitalización): resolución mínima de **200 píxeles por pulgada**, en blanco y negro, color o escala de grises.",
+     "refs": [
+      {
+       "law": "BOE-A-2011-13168",
+       "section": "iv",
+       "quote": "El nivel de resolución mínimo para imágenes electrónicas será de 200 píxeles por pulgada, tanto para imágenes obtenidas en blanco y negro, color o escala de grises."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

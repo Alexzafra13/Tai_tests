@@ -1,0 +1,215 @@
+{
+ "topic": "B2-T04",
+ "sections": [
+  {
+   "title": "Sistema operativo y kernel",
+   "points": [
+    {
+     "text": "El **sistema operativo** es **software** que gestiona directamente el hardware y los recursos (CPU, memoria, almacenamiento); no es «el conjunto de hardware y software».",
+     "refs": [
+      {
+       "title": "Red Hat · Qué es Linux",
+       "url": "https://www.redhat.com/es/topics/linux/what-is-linux",
+       "quote": "Un SO es un software que gestiona directamente el hardware y los recursos de un sistema, como la CPU, la memoria y el almacenamiento."
+      }
+     ]
+    },
+    {
+     "text": "El **kernel** es el núcleo del **sistema operativo** (no del procesador): software que reside en memoria e indica a la CPU qué hacer. Tareas: **gestión de memoria**, **gestión de procesos** (quién usa la CPU, cuándo y cuánto), **controladores de dispositivos** (mediador entre hardware y procesos) y **llamadas al sistema**.",
+     "refs": [
+      {
+       "title": "Red Hat · Qué es el kernel de Linux",
+       "url": "https://www.redhat.com/es/topics/linux/what-is-the-linux-kernel",
+       "quote": "Se encuentra justo en el medio y se trata del software que reside en la memoria e indica qué debe hacer la CPU."
+      },
+      {
+       "title": "Red Hat · Qué es el kernel de Linux",
+       "url": "https://www.redhat.com/es/topics/linux/what-is-the-linux-kernel",
+       "quote": "Gestión de la memoria: supervisa cuánta memoria se utiliza para almacenar qué tipo de elementos, así como el lugar en que los guarda. Gestión de los procesos: determina qué procesos pueden usar la unidad central de procesamiento (CPU), cuándo y durante cuánto tiempo. Controladores de dispositivos: actúa como mediador o intérprete entre el hardware y los procesos. Seguridad y llamadas al sistema: recibe solicitudes de servicio por parte de los procesos."
+      }
+     ]
+    },
+    {
+     "text": "**Hilos**: un proceso puede tener **varios hilos** que ejecutan el mismo programa y comparten la memoria global, cada uno con su pila.",
+     "refs": [
+      {
+       "title": "pthreads(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/pthreads.7.html",
+       "quote": "A single process can contain multiple threads, all of which are executing the same program. These threads share the same global memory (data and heap segments), but each thread has its own stack"
+      }
+     ]
+    },
+    {
+     "text": "Planificación: **round robin** (turno rotatorio por segmentos de tiempo) en Linux (`SCHED_RR`) y Windows (entre los hilos de mayor prioridad), y **FIFO** en Linux (`SCHED_FIFO`).",
+     "refs": [
+      {
+       "title": "sched(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/sched.7.html",
+       "quote": "SCHED_RR: Round-robin scheduling"
+      },
+      {
+       "title": "sched(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/sched.7.html",
+       "quote": "SCHED_FIFO: First in-first out scheduling"
+      },
+      {
+       "title": "Microsoft Learn · Prioridades de programación",
+       "url": "https://learn.microsoft.com/es-es/windows/win32/procthread/scheduling-priorities",
+       "quote": "El sistema asigna segmentos de tiempo de forma round robin a todos los subprocesos con la prioridad más alta."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Unix y Linux",
+   "points": [
+    {
+     "text": "`/etc` guarda los **ficheros de configuración** locales de la máquina.",
+     "refs": [
+      {
+       "title": "hier(7) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man7/hier.7.html",
+       "quote": "/etc Contains configuration files which are local to the machine."
+      }
+     ]
+    },
+    {
+     "text": "Permisos en octal: cada dígito son tres bits (**lectura 4, escritura 2, ejecución 1**) para propietario, grupo y otros. `chmod 640` = propietario lectura y escritura, grupo lectura, otros nada. `rwxr-xr--`: el grupo puede **leer y ejecutar**.",
+     "refs": [
+      {
+       "title": "GNU Coreutils · Numeric Modes",
+       "url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+       "quote": "The permissions granted to the user, to other users in the file’s group, and to other users not in the file’s group each require three bits: one bit for read, one for write, and one for execute/search permission."
+      },
+      {
+       "title": "GNU Coreutils · Numeric Modes",
+       "url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+       "quote": "These three bits are represented as one octal digit; for example, if all three are present, the resulting 111 (in binary) is represented as the digit 7 (in octal)."
+      },
+      {
+       "title": "GNU Coreutils · Numeric Modes",
+       "url": "https://www.gnu.org/software/coreutils/manual/html_node/Numeric-Modes.html",
+       "quote": "Other users not in the file's group: 4 Read 2 Write 1 Execute/search"
+      }
+     ]
+    },
+    {
+     "text": "Proceso **zombi**: hijo que ha terminado pero cuyo padre aún no ha recogido su estado (`wait`); el kernel guarda su PID y estado de salida en la tabla de procesos.",
+     "refs": [
+      {
+       "title": "wait(2) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man2/wait.2.html",
+       "quote": "A child that terminates, but has not been waited for becomes a \"zombie\". The kernel maintains a minimal set of information about the zombie process (PID, termination status, resource usage information)"
+      }
+     ]
+    },
+    {
+     "text": "**init** es el **primer proceso** (PID 1), que arranca y mantiene los servicios (en muchas distribuciones Linux, systemd); no es el arranque de un usuario. El **UID** identifica a un usuario del sistema.",
+     "refs": [
+      {
+       "title": "systemd(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/systemd.1.html",
+       "quote": "systemd is a system and service manager for Linux operating systems."
+      },
+      {
+       "title": "systemd(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/systemd.1.html",
+       "quote": "When run as first process on boot (as PID 1), it acts as init system that brings up and maintains userspace services."
+      },
+      {
+       "title": "POSIX.1-2024 · Definitions",
+       "url": "https://pubs.opengroup.org/onlinepubs/9799919799/basedefs/V1_chap03.html",
+       "quote": "A non-negative integer that is used to identify a system user."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Windows y macOS",
+   "points": [
+    {
+     "text": "Windows (referencia de comandos de Windows XP): `net start` sin parámetros **lista los servicios en ejecución**.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Net start",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490713(v=technet.10)",
+       "quote": "Used without parameters, net start displays a list of services that are currently operating."
+      }
+     ]
+    },
+    {
+     "text": "Windows de 64 bits admite **RPC** entre procesos de 64 y 32 bits, tanto en el mismo equipo como entre equipos.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Interoperabilidad de procesos (Windows de 64 bits)",
+       "url": "https://learn.microsoft.com/es-es/windows/win32/winprog64/process-interoperability",
+       "quote": "Sin embargo, Windows de 64 bits admite llamadas a procedimientos remotos (RPC) entre procesos de 64 y 32 bits (tanto en el mismo equipo como en todos los equipos"
+      }
+     ]
+    },
+    {
+     "text": "macOS: **Ventura** es la versión 13, posterior a Monterey (12) y Big Sur (11); después llegaron Sonoma (14), Sequoia (15) y otras. Apple publica la lista ordenada de la más actual a la más antigua.",
+     "refs": [
+      {
+       "title": "Apple · Descubre qué versión de macOS usa tu Mac",
+       "url": "https://support.apple.com/es-es/109033",
+       "quote": "Estas son las versiones más recientes de cada sistema operativo Mac, empezando por la más actual."
+      },
+      {
+       "title": "Apple · Descubre qué versión de macOS usa tu Mac",
+       "url": "https://support.apple.com/es-es/109033",
+       "quote": "macOS Ventura 13 13.7.8 macOS Monterey 12 12.7.6 macOS Big Sur 11"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Sistemas operativos móviles (Android)",
+   "points": [
+    {
+     "text": "El kernel de **Android** se basa en un kernel **Linux** LTS con parches propios.",
+     "refs": [
+      {
+       "title": "Android Open Source Project · Kernel overview",
+       "url": "https://source.android.com/docs/core/architecture/kernel",
+       "quote": "The Android kernel is based on an upstream Linux Long Term Supported (LTS) kernel ."
+      },
+      {
+       "title": "Android Open Source Project · Kernel overview",
+       "url": "https://source.android.com/docs/core/architecture/kernel",
+       "quote": "At Google, LTS kernels are combined with Android-specific patches to form Android Common Kernels (ACKs)"
+      }
+     ]
+    },
+    {
+     "text": "**Android NDK**: herramientas para usar **C y C++** en Android; permite **reutilizar bibliotecas** propias o de otros desarrolladores.",
+     "refs": [
+      {
+       "title": "Android Developers · Introducción al NDK",
+       "url": "https://developer.android.com/ndk/guides?hl=es-419",
+       "quote": "El kit de desarrollo nativo (NDK) es un conjunto de herramientas que te permite usar código C y C++ con Android"
+      },
+      {
+       "title": "Android Developers · Introducción al NDK",
+       "url": "https://developer.android.com/ndk/guides?hl=es-419",
+       "quote": "Volver a usar tus propias bibliotecas C o C++, o las de otros desarrolladores"
+      }
+     ]
+    },
+    {
+     "text": "Capas de personalización (ROM personalizadas) de Android: por ejemplo, **MIUI** de Xiaomi (MIUI 14, según su página).",
+     "refs": [
+      {
+       "title": "Xiaomi · MIUI",
+       "url": "https://www.mi.com/global/miui/",
+       "quote": "MIUI is one of the most popular custom ROMs for Android."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
