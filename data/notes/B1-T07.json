@@ -1,0 +1,3615 @@
+{
+ "topic": "B1-T07",
+ "sections": [
+  {
+   "title": "Marco jurídico y ámbito de aplicación",
+   "points": [
+    {
+     "text": "El **Reglamento (UE) 2016/679** (**RGPD**), de 27 de abril de 2016, regula la protección de las **personas físicas** en el tratamiento de sus datos y la **libre circulación** de esos datos, que no puede restringirse por motivos de protección de datos (art. 1). Entró en vigor a los **20 días** de su publicación y es **aplicable desde el 25 de mayo de 2018** (art. 99).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1",
+       "quote": "Reglamento (UE) 2016/679 del Parlamento Europeo y el Consejo, de 27 de abril de 2016"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_1",
+       "quote": "El presente Reglamento establece las normas relativas a la protección de las personas físicas en lo que respecta al tratamiento de los datos personales y las normas relativas a la libre circulación de tales datos."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_1",
+       "quote": "La libre circulación de los datos personales en la Unión no podrá ser restringida ni prohibida por motivos relacionados con la protección de las personas físicas"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_99",
+       "quote": "El presente Reglamento entrará en vigor a los veinte días de su publicación en el Diario Oficial de la Unión Europea."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_99",
+       "quote": "Será aplicable a partir del 25 de mayo de 2018."
+      }
+     ]
+    },
+    {
+     "text": "La **Ley Orgánica 3/2018, de 5 de diciembre**, de Protección de Datos Personales y garantía de los derechos digitales (**LOPDGDD**), **adapta** el ordenamiento español al RGPD y **completa** sus disposiciones, y **garantiza los derechos digitales**; el derecho fundamental a la protección de datos está amparado por el **art. 18.4 de la Constitución** (art. 1).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1",
+       "quote": "Adaptar el ordenamiento jurídico español al Reglamento (UE) 2016/679"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1",
+       "quote": "y completar sus disposiciones."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1",
+       "quote": "El derecho fundamental de las personas físicas a la protección de datos personales, amparado por el artículo 18.4 de la Constitución"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1",
+       "quote": "b) Garantizar los derechos digitales de la ciudadanía conforme al mandato establecido en el artículo 18.4 de la Constitución."
+      }
+     ]
+    },
+    {
+     "text": "**Ámbito material** (art. 2.1 RGPD): el tratamiento **total o parcialmente automatizado** y el **no automatizado** de datos contenidos o destinados a un **fichero**. **No se aplica** (art. 2.2) a actividades fuera del Derecho de la Unión, a las del capítulo 2 del título V del TUE, a las actividades **exclusivamente personales o domésticas** ni a las autoridades con fines de **prevención, investigación o enjuiciamiento penal**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_2",
+       "quote": "El presente Reglamento se aplica al tratamiento total o parcialmente automatizado de datos personales, así como al tratamiento no automatizado de datos personales contenidos o destinados a ser incluidos en un fichero."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_2",
+       "quote": "a) en el ejercicio de una actividad no comprendida en el ámbito de aplicación del Derecho de la Unión;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_2",
+       "quote": "comprendidas en el ámbito de aplicación del capítulo 2 del título V del TUE;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_2",
+       "quote": "c) efectuado por una persona física en el ejercicio de actividades exclusivamente personales o domésticas;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_2",
+       "quote": "d) por parte de las autoridades competentes con fines de prevención, investigación, detección o enjuiciamiento de infracciones penales"
+      }
+     ]
+    },
+    {
+     "text": "La LOPDGDD **tampoco se aplica** a los datos de **personas fallecidas** (salvo su art. 3) ni a las **materias clasificadas** (art. 2.2). Lo que queda fuera del Derecho de la Unión (entre otros, régimen **electoral**, **instituciones penitenciarias**, **Registro Civil**, de la Propiedad y Mercantil) se rige por su ley específica y, **supletoriamente**, por el RGPD y la LOPDGDD (art. 2.3).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2",
+       "quote": "b) A los tratamientos de datos de personas fallecidas, sin perjuicio de lo establecido en el artículo 3."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2",
+       "quote": "c) A los tratamientos sometidos a la normativa sobre protección de materias clasificadas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2",
+       "quote": "se regirán por lo dispuesto en su legislación específica si la hubiere y supletoriamente por lo establecido en el citado reglamento y en la presente ley orgánica."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2",
+       "quote": "los tratamientos realizados al amparo de la legislación orgánica del régimen electoral general, los tratamientos realizados en el ámbito de instituciones penitenciarias y los tratamientos derivados del Registro Civil, los Registros de la Propiedad y Mercantiles."
+      }
+     ]
+    },
+    {
+     "text": "**Ámbito territorial** (art. 3 RGPD): se aplica a los tratamientos en el contexto de un **establecimiento en la Unión**, se hagan donde se hagan; y a responsables o encargados **no establecidos** en la Unión cuando **ofrecen bienes o servicios** a interesados en la Unión (paguen o no) o **controlan su comportamiento** en ella. Salvo excepciones (tratamiento ocasional de bajo riesgo, autoridades públicas), designan por escrito un **representante en la Unión** (art. 27).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_3",
+       "quote": "en el contexto de las actividades de un establecimiento del responsable o del encargado en la Unión, independientemente de que el tratamiento tenga lugar en la Unión o no."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_3",
+       "quote": "a) la oferta de bienes o servicios a dichos interesados en la Unión, independientemente de si a estos se les requiere su pago, o"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_3",
+       "quote": "b) el control de su comportamiento, en la medida en que este tenga lugar en la Unión."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_27",
+       "quote": "el responsable o el encargado del tratamiento designará por escrito un representante en la Unión."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_27",
+       "quote": "a) al tratamiento que sea ocasional"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_27",
+       "quote": "b) a las autoridades u organismos públicos."
+      }
+     ]
+    },
+    {
+     "text": "**Datos de personas fallecidas** (art. 3 LOPDGDD): las personas vinculadas por razones **familiares o de hecho** y los **herederos** pueden pedir el acceso, la rectificación o la supresión, **salvo** que el fallecido lo **prohibiera expresamente** o lo diga una ley (la prohibición no impide a los herederos acceder a los datos **patrimoniales**). También las personas o instituciones **designadas** por el fallecido, según sus instrucciones; si era **menor**, sus representantes legales o el **Ministerio Fiscal**; y si tenía **discapacidad**, quienes ejercían sus **funciones de apoyo**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3",
+       "quote": "Las personas vinculadas al fallecido por razones familiares o de hecho así como sus herederos podrán dirigirse al responsable o encargado del tratamiento al objeto de solicitar el acceso a los datos personales de aquella y, en su caso, su rectificación o supresión."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3",
+       "quote": "cuando la persona fallecida lo hubiese prohibido expresamente o así lo establezca una ley. Dicha prohibición no afectará al derecho de los herederos a acceder a los datos de carácter patrimonial del causante."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3",
+       "quote": "Las personas o instituciones a las que el fallecido hubiese designado expresamente para ello"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3",
+       "quote": "podrán también solicitar, con arreglo a las instrucciones recibidas"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3",
+       "quote": "por quienes hubiesen sido designados para el ejercicio de funciones de apoyo"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3",
+       "quote": "En caso de fallecimiento de menores, estas facultades podrán ejercerse también por sus representantes legales o, en el marco de sus competencias, por el Ministerio Fiscal"
+      }
+     ]
+    },
+    {
+     "text": "**Cómputo de plazos** (disp. adic. 3.ª LOPDGDD), para los del RGPD y la LOPDGDD: los de **días** son **hábiles** (sin sábados, domingos ni festivos); los de **semanas, meses o años** acaban el **mismo día** (o el último del mes si no lo hay); si el último es inhábil, pasa al siguiente hábil.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da-3",
+       "quote": "Cuando los plazos se señalen por días, se entiende que estos son hábiles, excluyéndose del cómputo los sábados, los domingos y los declarados festivos."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da-3",
+       "quote": "Si el plazo se fija en semanas, concluirá el mismo día de la semana"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da-3",
+       "quote": "Si el plazo se fija en meses o años, concluirá el mismo día en que se produjo el hecho que determina su iniciación"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da-3",
+       "quote": "Cuando el último día del plazo sea inhábil, se entenderá prorrogado al primer día hábil siguiente."
+      }
+     ]
+    },
+    {
+     "text": "**Publicación de actos administrativos** (disp. adic. 7.ª LOPDGDD): se identifica al afectado con **nombre y apellidos** y **cuatro cifras aleatorias** del DNI, NIE, pasaporte o equivalente (alternándolas si son varios). En las **notificaciones por anuncios**, **solo** con el **número completo** del documento. **Nunca** se publican juntos el nombre y apellidos y el número completo.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da-7",
+       "quote": "se identificará al mismo mediante su nombre y apellidos, añadiendo cuatro cifras numéricas aleatorias del documento nacional de identidad"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da-7",
+       "quote": "Cuando la publicación se refiera a una pluralidad de afectados estas cifras aleatorias deberán alternarse."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da-7",
+       "quote": "se identificará al afectado exclusivamente mediante el número completo de su documento nacional de identidad"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da-7",
+       "quote": "En ningún caso debe publicarse el nombre y apellidos de manera conjunta con el número completo"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Conceptos básicos (art. 4 RGPD)",
+   "points": [
+    {
+     "text": "**Dato personal**: toda información sobre una **persona física identificada o identificable** (el **interesado**), es decir, cuya identidad puede determinarse directa o indirectamente, por ejemplo con un nombre, un número de identificación, datos de localización o un **identificador en línea**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "«datos personales» : toda información sobre una persona física identificada o identificable («el interesado»)"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "en particular mediante un identificador, como por ejemplo un nombre, un número de identificación, datos de localización, un identificador en línea"
+      }
+     ]
+    },
+    {
+     "text": "**Tratamiento**: cualquier operación sobre datos personales, automatizada o no (recogida, registro, conservación, consulta, utilización, **comunicación**, **difusión**, cotejo, limitación, **supresión o destrucción**). **Fichero**: todo conjunto **estructurado** de datos personales accesibles con arreglo a criterios determinados.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "cualquier operación o conjunto de operaciones realizadas sobre datos personales o conjuntos de datos personales, ya sea por procedimientos automatizados o no"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "comunicación por transmisión, difusión o cualquier otra forma de habilitación de acceso, cotejo o interconexión, limitación, supresión o destrucción;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "«fichero» : todo conjunto estructurado de datos personales, accesibles con arreglo a criterios determinados"
+      }
+     ]
+    },
+    {
+     "text": "**Responsable**: quien, solo o con otros, **determina los fines y medios** del tratamiento. **Encargado**: quien trata datos **por cuenta del responsable**. **Destinatario**: aquel a quien se comunican datos, sea o no un tercero. **Tercero**: distinto del interesado, el responsable, el encargado y las personas autorizadas bajo su autoridad.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "que, solo o junto con otros, determine los fines y medios del tratamiento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "que trate datos personales por cuenta del responsable del tratamiento;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "al que se comuniquen datos personales, se trate o no de un tercero."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "distinto del interesado, del responsable del tratamiento, del encargado del tratamiento y de las personas autorizadas para tratar los datos personales bajo la autoridad directa del responsable o del encargado;"
+      }
+     ]
+    },
+    {
+     "text": "**Consentimiento**: manifestación de voluntad **libre, específica, informada e inequívoca** por la que el interesado acepta, mediante una **declaración o una clara acción afirmativa**, el tratamiento de sus datos (art. 4.11 RGPD; art. 6.1 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "toda manifestación de voluntad libre, específica, informada e inequívoca por la que el interesado acepta, ya sea mediante una declaración o una clara acción afirmativa, el tratamiento de datos personales que le conciernen;"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6",
+       "quote": "se entiende por consentimiento del afectado toda manifestación de voluntad libre, específica, informada e inequívoca"
+      }
+     ]
+    },
+    {
+     "text": "**Seudonimización**: tratar los datos de forma que **ya no puedan atribuirse** a un interesado **sin información adicional**, que se guarda **por separado** y protegida. **Limitación del tratamiento**: el **marcado** de los datos conservados para limitar su tratamiento futuro. **Elaboración de perfiles**: tratamiento automatizado para **evaluar o predecir** aspectos personales (rendimiento, situación económica, salud, preferencias, ubicación…).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "el tratamiento de datos personales de manera tal que ya no puedan atribuirse a un interesado sin utilizar información adicional, siempre que dicha información adicional figure por separado"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "el marcado de los datos de carácter personal conservados con el fin de limitar su tratamiento en el futuro;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "para analizar o predecir aspectos relativos al rendimiento profesional, situación económica, salud, preferencias personales, intereses, fiabilidad, comportamiento, ubicación o movimientos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "toda forma de tratamiento automatizado de datos personales consistente en utilizar datos personales para evaluar determinados aspectos personales de una persona física"
+      }
+     ]
+    },
+    {
+     "text": "**Violación de la seguridad**: la que ocasiona la **destrucción, pérdida o alteración** accidental o ilícita de datos, o su **comunicación o acceso no autorizados**. **Datos biométricos**: los obtenidos de un tratamiento técnico específico de características físicas, fisiológicas o conductuales que permiten o confirman la **identificación única** (imagen facial, huellas). **Datos genéticos** y **datos relativos a la salud** también se definen.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "toda violación de la seguridad que ocasione la destrucción, pérdida o alteración accidental o ilícita de datos personales transmitidos, conservados o tratados de otra forma, o la comunicación o acceso no autorizados a dichos datos;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "relativos a las características físicas, fisiológicas o conductuales de una persona física que permitan o confirmen la identificación única de dicha persona, como imágenes faciales o datos dactiloscópicos;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "«datos genéticos» : datos personales relativos a las características genéticas heredadas o adquiridas"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_4",
+       "quote": "«datos relativos a la salud» : datos personales relativos a la salud física o mental de una persona física"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Principios del tratamiento (art. 5 RGPD)",
+   "points": [
+    {
+     "text": "Los datos personales serán:",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_5",
+       "quote": "Los datos personales serán:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Licitud, lealtad y transparencia**: tratados de manera lícita, leal y transparente.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "a) tratados de manera lícita, leal y transparente en relación con el interesado («licitud, lealtad y transparencia»);"
+        }
+       ]
+      },
+      {
+       "text": "**Limitación de la finalidad**: recogidos con fines **determinados, explícitos y legítimos**, y no tratados después de forma incompatible (el tratamiento posterior con fines de **archivo** en interés público, **investigación** científica o histórica o **estadísticos** no se considera incompatible).",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "recogidos con fines determinados, explícitos y legítimos, y no serán tratados ulteriormente de manera incompatible con dichos fines"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "no se considerará incompatible con los fines iniciales («limitación de la finalidad»);"
+        }
+       ]
+      },
+      {
+       "text": "**Minimización de datos**: **adecuados, pertinentes y limitados a lo necesario** para los fines.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "c) adecuados, pertinentes y limitados a lo necesario en relación con los fines para los que son tratados («minimización de datos»);"
+        }
+       ]
+      },
+      {
+       "text": "**Exactitud**: exactos y, si es necesario, **actualizados**, suprimiendo o rectificando sin dilación los inexactos.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "d) exactos y, si fuera necesario, actualizados; se adoptarán todas las medidas razonables para que se supriman o rectifiquen sin dilación los datos personales que sean inexactos"
+        }
+       ]
+      },
+      {
+       "text": "**Limitación del plazo de conservación**: que permitan identificar al interesado **no más tiempo del necesario** (más tiempo, solo con fines de archivo, investigación o estadística).",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "mantenidos de forma que se permita la identificación de los interesados durante no más tiempo del necesario para los fines del tratamiento de los datos personales"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "(«limitación del plazo de conservación»);"
+        }
+       ]
+      },
+      {
+       "text": "**Integridad y confidencialidad**: con una **seguridad adecuada**, incluida la protección frente al tratamiento no autorizado o ilícito y la pérdida, destrucción o daño accidental.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "tratados de tal manera que se garantice una seguridad adecuada de los datos personales"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_5",
+         "quote": "(«integridad y confidencialidad»)."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Responsabilidad proactiva** (art. 5.2): el responsable cumple estos principios y debe ser **capaz de demostrarlo**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_5",
+       "quote": "El responsable del tratamiento será responsable del cumplimiento de lo dispuesto en el apartado 1 y capaz de demostrarlo («responsabilidad proactiva»)."
+      }
+     ]
+    },
+    {
+     "text": "**Exactitud** en la LOPDGDD (art. 4): no se imputa al responsable la inexactitud si adoptó medidas razonables y los datos los obtuvo **del propio afectado**, de un **mediador** previsto en su sector, por **portabilidad** o de un **registro público**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4",
+       "quote": "no será imputable al responsable del tratamiento, siempre que este haya adoptado todas las medidas razonables para que se supriman o rectifiquen sin dilación"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4",
+       "quote": "a) Hubiesen sido obtenidos por el responsable directamente del afectado."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4",
+       "quote": "b) Hubiesen sido obtenidos por el responsable de un mediador o intermediario"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4",
+       "quote": "en virtud del ejercicio por el afectado del derecho a la portabilidad"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4",
+       "quote": "d) Fuesen obtenidos de un registro público por el responsable."
+      }
+     ]
+    },
+    {
+     "text": "**Deber de confidencialidad** (art. 5 LOPDGDD): obliga a responsables, encargados y **todas las personas que intervengan** en cualquier fase; es **complementario del secreto profesional** y **se mantiene aunque haya terminado** la relación con el responsable o encargado.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a5",
+       "quote": "Los responsables y encargados del tratamiento de datos así como todas las personas que intervengan en cualquier fase de este estarán sujetas al deber de confidencialidad"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a5",
+       "quote": "será complementaria de los deberes de secreto profesional"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a5",
+       "quote": "se mantendrán aun cuando hubiese finalizado la relación del obligado con el responsable o encargado del tratamiento."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Licitud del tratamiento y consentimiento",
+   "points": [
+    {
+     "text": "El tratamiento solo es **lícito** si se cumple **al menos una** de estas bases (art. 6.1 RGPD):",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_6",
+       "quote": "El tratamiento solo será lícito si se cumple al menos una de las siguientes condiciones:"
+      }
+     ],
+     "items": [
+      {
+       "text": "a) **Consentimiento** del interesado para uno o varios fines específicos.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_6",
+         "quote": "a) el interesado dio su consentimiento para el tratamiento de sus datos personales para uno o varios fines específicos;"
+        }
+       ]
+      },
+      {
+       "text": "b) Ejecución de un **contrato** en que el interesado es parte, o **medidas precontractuales** a petición suya.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_6",
+         "quote": "b) el tratamiento es necesario para la ejecución de un contrato en el que el interesado es parte o para la aplicación a petición de este de medidas precontractuales;"
+        }
+       ]
+      },
+      {
+       "text": "c) Cumplimiento de una **obligación legal** del responsable.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_6",
+         "quote": "c) el tratamiento es necesario para el cumplimiento de una obligación legal aplicable al responsable del tratamiento;"
+        }
+       ]
+      },
+      {
+       "text": "d) Proteger **intereses vitales** del interesado o de otra persona física.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_6",
+         "quote": "d) el tratamiento es necesario para proteger intereses vitales del interesado o de otra persona física;"
+        }
+       ]
+      },
+      {
+       "text": "e) Cumplimiento de una **misión en interés público** o ejercicio de **poderes públicos**.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_6",
+         "quote": "e) el tratamiento es necesario para el cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos conferidos al responsable del tratamiento;"
+        }
+       ]
+      },
+      {
+       "text": "f) **Intereses legítimos** del responsable o de un tercero, si no prevalecen los derechos del interesado (en particular si es un **niño**). **No vale** para las **autoridades públicas** en el ejercicio de sus funciones.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_6",
+         "quote": "f) el tratamiento es necesario para la satisfacción de intereses legítimos perseguidos por el responsable del tratamiento o por un tercero"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_6",
+         "quote": "en particular cuando el interesado sea un niño."
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_6",
+         "quote": "Lo dispuesto en la letra f) del párrafo primero no será de aplicación al tratamiento realizado por las autoridades públicas en el ejercicio de sus funciones."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "En España, la **obligación legal** (c) solo ampara el tratamiento si la prevé una norma de la **UE o con rango de ley**; el **interés público o poderes públicos** (e), si deriva de una **competencia atribuida por norma con rango de ley** (art. 8 LOPDGDD).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a8",
+       "quote": "cuando así lo prevea una norma de Derecho de la Unión Europea o una norma con rango de ley"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a8",
+       "quote": "cuando derive de una competencia atribuida por una norma con rango de ley."
+      }
+     ]
+    },
+    {
+     "text": "**Condiciones del consentimiento** (art. 7 RGPD): el responsable debe poder **demostrar** que se dio; si va en un escrito con otros asuntos, se distingue **claramente**; se puede **retirar en cualquier momento**, sin afectar a lo hecho antes, y debe ser **tan fácil retirarlo como darlo**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_7",
+       "quote": "el responsable deberá ser capaz de demostrar que aquel consintió el tratamiento de sus datos personales."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_7",
+       "quote": "la solicitud de consentimiento se presentará de tal forma que se distinga claramente de los demás asuntos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_7",
+       "quote": "El interesado tendrá derecho a retirar su consentimiento en cualquier momento. La retirada del consentimiento no afectará a la licitud del tratamiento basada en el consentimiento previo a su retirada."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_7",
+       "quote": "Será tan fácil retirar el consentimiento como darlo."
+      }
+     ]
+    },
+    {
+     "text": "Si el consentimiento ampara **varias finalidades**, debe constar de manera específica e inequívoca **para todas ellas**, y **no puede supeditarse la ejecución del contrato** a consentir tratamientos **ajenos** a la relación contractual (art. 6 LOPDGDD).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6",
+       "quote": "será preciso que conste de manera específica e inequívoca que dicho consentimiento se otorga para todas ellas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6",
+       "quote": "No podrá supeditarse la ejecución del contrato a que el afectado consienta el tratamiento de los datos personales para finalidades que no guarden relación con el mantenimiento, desarrollo o control de la relación contractual."
+      }
+     ]
+    },
+    {
+     "text": "**Menores**: el RGPD fija para los servicios de la sociedad de la información **16 años**, y permite a los Estados bajarlo **hasta 13** (art. 8). En España, el menor puede consentir **por sí solo** si es **mayor de 14 años** (salvo que la ley exija la asistencia de sus padres o tutores para el acto); por debajo de esa edad hace falta el consentimiento de quien ejerza la **patria potestad o tutela** (art. 7 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_8",
+       "quote": "el tratamiento de los datos personales de un niño se considerará lícito cuando tenga como mínimo 16 años."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_8",
+       "quote": "Los Estados miembros podrán establecer por ley una edad inferior a tales fines, siempre que esta no sea inferior a 13 años."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7",
+       "quote": "El tratamiento de los datos personales de un menor de edad únicamente podrá fundarse en su consentimiento cuando sea mayor de catorce años."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7",
+       "quote": "Se exceptúan los supuestos en que la ley exija la asistencia de los titulares de la patria potestad o tutela"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7",
+       "quote": "solo será lícito si consta el del titular de la patria potestad o tutela"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Categorías especiales, datos penales e infracciones administrativas",
+   "points": [
+    {
+     "text": "**Se prohíbe** tratar datos que revelen el **origen étnico o racial**, las **opiniones políticas**, las **convicciones religiosas o filosóficas** o la **afiliación sindical**, y los datos **genéticos**, **biométricos** para identificar unívocamente a una persona, de **salud** o de **vida u orientación sexual** (art. 9.1 RGPD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "Quedan prohibidos el tratamiento de datos personales que revelen el origen étnico o racial, las opiniones políticas, las convicciones religiosas o filosóficas, o la afiliación sindical, y el tratamiento de datos genéticos, datos biométricos dirigidos a identificar de manera unívoca a una persona física, datos relativos a la salud o datos relativos a la vida sexual o la orientación sexual de una persona física."
+      }
+     ]
+    },
+    {
+     "text": "**Excepciones** (art. 9.2): **consentimiento explícito** (salvo que el Derecho impida levantar así la prohibición); obligaciones en el ámbito **laboral y de la seguridad social**; **intereses vitales** si el interesado no puede consentir; fundaciones, asociaciones u organismos **sin ánimo de lucro** de finalidad **política, filosófica, religiosa o sindical**, respecto de sus miembros; datos **hechos manifiestamente públicos** por el interesado; **reclamaciones** (o tribunales en su función judicial); **interés público esencial**; **medicina** preventiva o laboral y asistencia sanitaria; **salud pública**; y fines de **archivo, investigación o estadística**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "a) el interesado dio su consentimiento explícito para el tratamiento de dichos datos personales"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "en el ámbito del Derecho laboral y de la seguridad y protección social"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "c) el tratamiento es necesario para proteger intereses vitales del interesado o de otra persona física, en el supuesto de que el interesado no esté capacitado"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "cuya finalidad sea política, filosófica, religiosa o sindical, siempre que el tratamiento se refiera exclusivamente a los miembros actuales o antiguos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "excepto cuando el Derecho de la Unión o de los Estados miembros establezca que la prohibición mencionada en el apartado 1 no puede ser levantada por el interesado"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "o cuando los tribunales actúen en ejercicio de su función judicial"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "por una fundación, una asociación o cualquier otro organismo sin ánimo de lucro"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "f) el tratamiento es necesario para la formulación, el ejercicio o la defensa de reclamaciones"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "i) el tratamiento es necesario por razones de interés público en el ámbito de la salud pública"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "j) el tratamiento es necesario con fines de archivo en interés público"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "e) el tratamiento se refiere a datos personales que el interesado ha hecho manifiestamente públicos;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "g) el tratamiento es necesario por razones de un interés público esencial"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_9",
+       "quote": "h) el tratamiento es necesario para fines de medicina preventiva o laboral"
+      }
+     ]
+    },
+    {
+     "text": "En España, el **solo consentimiento no basta** para tratar datos cuya finalidad principal sea identificar la **ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico**, aunque sí pueden tratarse con las **demás excepciones** del art. 9.2 RGPD (art. 9.1 LOPDGDD). Los de las letras **g), h) e i)** necesitan una **norma con rango de ley** (art. 9.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9",
+       "quote": "el solo consentimiento del afectado no bastará para levantar la prohibición del tratamiento de datos cuya finalidad principal sea identificar su ideología, afiliación sindical, religión, orientación sexual, creencias u origen racial o étnico."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9",
+       "quote": "no impedirá el tratamiento de dichos datos al amparo de los restantes supuestos contemplados en el artículo 9.2"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9",
+       "quote": "deberán estar amparados en una norma con rango de ley"
+      }
+     ]
+    },
+    {
+     "text": "**Datos penales** (condenas e infracciones): solo bajo la **supervisión de autoridades públicas** o si lo autoriza el Derecho con garantías; el **registro completo de condenas** solo bajo control público (art. 10 RGPD). En España, para fines no penales necesitan norma de la UE, la LOPDGDD u otra con **rango legal**; fuera de eso, solo **abogados y procuradores** con la información de sus clientes (art. 10 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_10",
+       "quote": "sólo podrá llevarse a cabo bajo la supervisión de las autoridades públicas o cuando lo autorice el Derecho de la Unión o de los Estados miembros"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_10",
+       "quote": "Solo podrá llevarse un registro completo de condenas penales bajo el control de las autoridades públicas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-2",
+       "quote": "solo podrá llevarse a cabo cuando se encuentre amparado en una norma de Derecho de la Unión, en esta ley orgánica o en otras normas de rango legal."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-2",
+       "quote": "solo serán posibles cuando sean llevados a cabo por abogados y procuradores"
+      }
+     ]
+    },
+    {
+     "text": "**Infracciones y sanciones administrativas** (art. 27 LOPDGDD): su tratamiento exige que lo haga el **órgano competente** del procedimiento sancionador y limitarlo a los **datos estrictamente necesarios**; si no, hace falta **consentimiento** o **norma con rango de ley**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-9",
+       "quote": "Que los responsables de dichos tratamientos sean los órganos competentes para la instrucción del procedimiento sancionador"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-9",
+       "quote": "Que el tratamiento se limite a los datos estrictamente necesarios para la finalidad perseguida por aquel."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-9",
+       "quote": "habrán de contar con el consentimiento del interesado o estar autorizados por una norma con rango de ley"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Transparencia e información al interesado",
+   "points": [
+    {
+     "text": "La información y las comunicaciones al interesado deben ser **concisas, transparentes, inteligibles y de fácil acceso**, con **lenguaje claro y sencillo** (en especial si se dirigen a un **niño**); por escrito, por medios electrónicos o, si lo pide, **verbalmente**, siempre que se demuestre su identidad por otros medios (art. 12.1 RGPD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "en forma concisa, transparente, inteligible y de fácil acceso, con un lenguaje claro y sencillo, en particular cualquier información dirigida específicamente a un niño."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "La información será facilitada por escrito o por otros medios, inclusive, si procede, por medios electrónicos."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "Cuando lo solicite el interesado, la información podrá facilitarse verbalmente siempre que se demuestre la identidad del interesado por otros medios."
+      }
+     ]
+    },
+    {
+     "text": "**Si los datos se obtienen del interesado** (art. 13), **en el momento de obtenerlos** se le informa, entre otras cosas, de: la **identidad** y contacto del responsable, el contacto del **delegado de protección de datos**, los **fines** y la **base jurídica**, los **destinatarios**, las **transferencias internacionales**, el **plazo de conservación**, sus **derechos**, el derecho a **retirar el consentimiento**, a **reclamar ante la autoridad de control** y la existencia de **decisiones automatizadas**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "el responsable del tratamiento, en el momento en que estos se obtengan, le facilitará toda la información indicada a continuación:"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "a) la identidad y los datos de contacto del responsable y, en su caso, de su representante;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "b) los datos de contacto del delegado de protección de datos, en su caso;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "e) los destinatarios o las categorías de destinatarios de los datos personales, en su caso;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "la intención del responsable de transferir datos personales a un tercer país u organización internacional"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "b) la existencia del derecho a solicitar al responsable del tratamiento el acceso a los datos personales"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "la existencia del derecho a retirar el consentimiento en cualquier momento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "f) la existencia de decisiones automatizadas, incluida la elaboración de perfiles"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "c) los fines del tratamiento a que se destinan los datos personales y la base jurídica del tratamiento;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "a) el plazo durante el cual se conservarán los datos personales o, cuando no sea posible, los criterios utilizados para determinar este plazo;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_13",
+       "quote": "d) el derecho a presentar una reclamación ante una autoridad de control;"
+      }
+     ]
+    },
+    {
+     "text": "**Si no se obtienen del interesado** (art. 14), se añaden las **categorías de datos** y la **fuente**, y se informa en un **plazo razonable** y **a más tardar en un mes**, o en la **primera comunicación** con el interesado o la primera vez que se comuniquen a otro destinatario. No hace falta si ya la tiene, si es **imposible o desproporcionado**, si la obtención la impone el Derecho o por **secreto profesional**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "d) las categorías de datos personales de que se trate;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "f) la fuente de la que proceden los datos personales y, en su caso, si proceden de fuentes de acceso público;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "dentro de un plazo razonable, una vez obtenidos los datos personales, y a más tardar dentro de un mes"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "a más tardar en el momento de la primera comunicación a dicho interesado"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "a) el interesado ya disponga de la información;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "c) la obtención o la comunicación esté expresamente establecida por el Derecho de la Unión o de los Estados miembros"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "sobre la base de una obligación de secreto profesional"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "c) si está previsto comunicarlos a otro destinatario, a más tardar en el momento en que los datos personales sean comunicados por primera vez."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_14",
+       "quote": "b) la comunicación de dicha información resulte imposible o suponga un esfuerzo desproporcionado"
+      }
+     ]
+    },
+    {
+     "text": "**Información por capas** (art. 11 LOPDGDD): basta con dar una **información básica** e indicar una **dirección electrónica** u otro medio para acceder de forma sencilla e inmediata al resto. Incluye al menos la **identidad del responsable**, la **finalidad** y la posibilidad de ejercer los **derechos** de los arts. 15 a 22 RGPD (y, si hay **perfiles**, esa circunstancia). Si los datos no proceden del afectado, también las **categorías** y las **fuentes**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-3",
+       "quote": "facilitando al afectado la información básica a la que se refiere el apartado siguiente e indicándole una dirección electrónica u otro medio que permita acceder de forma sencilla e inmediata a la restante información."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-3",
+       "quote": "a) La identidad del responsable del tratamiento y de su representante, en su caso."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-3",
+       "quote": "b) La finalidad del tratamiento."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-3",
+       "quote": "c) La posibilidad de ejercer los derechos establecidos en los artículos 15 a 22 del Reglamento (UE) 2016/679."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-3",
+       "quote": "Si los datos obtenidos del afectado fueran a ser tratados para la elaboración de perfiles, la información básica comprenderá asimismo esta circunstancia."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-3",
+       "quote": "a) Las categorías de datos objeto de tratamiento."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-3",
+       "quote": "b) Las fuentes de las que procedieran los datos."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Derechos del interesado: ejercicio y plazos",
+   "points": [
+    {
+     "text": "El responsable responde a las solicitudes **sin dilación indebida** y como máximo en **un mes**, prorrogable **otros dos meses** según la complejidad y el número de solicitudes (avisando de la prórroga en el primer mes). Si no actúa, informa en **un mes** de los motivos y de la posibilidad de **reclamar ante la autoridad de control** y de **ejercitar acciones judiciales** (art. 12.3 y 12.4 RGPD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "sin dilación indebida y, en cualquier caso, en el plazo de un mes a partir de la recepción de la solicitud. Dicho plazo podrá prorrogarse otros dos meses en caso necesario, teniendo en cuenta la complejidad y el número de solicitudes."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "El responsable informará al interesado de cualquiera de dichas prórrogas en el plazo de un mes a partir de la recepción de la solicitud"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "y de ejercitar acciones judiciales."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "a más tardar transcurrido un mes de la recepción de la solicitud, de las razones de su no actuación y de la posibilidad de presentar una reclamación ante una autoridad de control"
+      }
+     ]
+    },
+    {
+     "text": "Es **gratuito**. Si las solicitudes son **manifiestamente infundadas o excesivas** (sobre todo por **repetitivas**), puede cobrar un **canon razonable** o **negarse**, y **debe probarlo** él (art. 12.5). En España se puede considerar **repetitivo** el acceso **más de una vez en seis meses**, salvo causa legítima (art. 13.3 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "serán a título gratuito. Cuando las solicitudes sean manifiestamente infundadas o excesivas, especialmente debido a su carácter repetitivo"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "a) cobrar un canon razonable en función de los costes administrativos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "b) negarse a actuar respecto de la solicitud."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_12",
+       "quote": "El responsable del tratamiento soportará la carga de demostrar el carácter manifiestamente infundado o excesivo de la solicitud."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-5",
+       "quote": "se podrá considerar repetitivo el ejercicio del derecho de acceso en más de una ocasión durante el plazo de seis meses, a menos que exista causa legítima para ello."
+      }
+     ]
+    },
+    {
+     "text": "Los derechos pueden ejercerse **directamente o mediante representante** legal o voluntario; el responsable informa de los medios, que deben ser **fácilmente accesibles**, y **no puede denegar** el derecho porque el afectado use otro medio; **la prueba** de haber respondido es del **responsable** (art. 12 LOPDGDD). Los titulares de la **patria potestad** pueden ejercerlos por los **menores de 14 años**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-4",
+       "quote": "podrán ejercerse directamente o por medio de representante legal o voluntario."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-4",
+       "quote": "El ejercicio del derecho no podrá ser denegado por el solo motivo de optar el afectado por otro medio."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-4",
+       "quote": "La prueba del cumplimiento del deber de responder a la solicitud de ejercicio de sus derechos formulado por el afectado recaerá sobre el responsable."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-4",
+       "quote": "los titulares de la patria potestad podrán ejercitar en nombre y representación de los menores de catorce años"
+      }
+     ]
+    },
+    {
+     "text": "**Acceso** (art. 15 RGPD): confirmación de si se tratan sus datos, acceso a ellos e información sobre **fines, categorías, destinatarios, plazo**, sus demás derechos, la reclamación ante la autoridad, el **origen** y las decisiones automatizadas. Se da una **copia gratis**; por las **demás** puede cobrarse un canon razonable. En España se entiende otorgado con un **sistema de acceso remoto, directo y seguro** que garantice **de modo permanente el acceso a la totalidad** de los datos (art. 13.2 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "derecho a obtener del responsable del tratamiento confirmación de si se están tratando o no datos personales que le conciernen"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "a) los fines del tratamiento;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "b) las categorías de datos personales de que se trate;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "c) los destinatarios o las categorías de destinatarios"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "d) de ser posible, el plazo previsto de conservación de los datos personales"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "El responsable del tratamiento facilitará una copia de los datos personales objeto de tratamiento. El responsable podrá percibir por cualquier otra copia solicitada por el interesado un canon razonable basado en los costes administrativos."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "e) la existencia del derecho a solicitar del responsable la rectificación o supresión"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "f) el derecho a presentar una reclamación ante una autoridad de control;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "g) cuando los datos personales no se hayan obtenido del interesado, cualquier información disponible sobre su origen;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_15",
+       "quote": "h) la existencia de decisiones automatizadas"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-5",
+       "quote": "que garantice, de modo permanente, el acceso a su totalidad."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-5",
+       "quote": "El derecho de acceso se entenderá otorgado si el responsable del tratamiento facilitara al afectado un sistema de acceso remoto, directo y seguro a los datos personales"
+      }
+     ]
+    },
+    {
+     "text": "**Rectificación** (art. 16 RGPD): de los datos **inexactos** sin dilación indebida, y a **completar** los incompletos. Hay que indicar qué datos y la corrección, con la **documentación justificativa** si hace falta (art. 14 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_16",
+       "quote": "El interesado tendrá derecho a obtener sin dilación indebida del responsable del tratamiento la rectificación de los datos personales inexactos que le conciernan."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_16",
+       "quote": "el interesado tendrá derecho a que se completen los datos personales que sean incompletos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-6",
+       "quote": "la documentación justificativa de la inexactitud o carácter incompleto de los datos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-6",
+       "quote": "el afectado deberá indicar en su solicitud a qué datos se refiere y la corrección que haya de realizarse."
+      }
+     ]
+    },
+    {
+     "text": "**Supresión** («**derecho al olvido**», art. 17 RGPD): cuando los datos **ya no son necesarios**; se **retira el consentimiento** y no hay otra base jurídica; hay **oposición** (por su situación particular, si no prevalecen otros motivos legítimos, o a la **mercadotecnia directa**); el tratamiento es **ilícito**; lo exige una **obligación legal**; o se obtuvieron de un **menor** en servicios de la sociedad de la información. **No procede** si el tratamiento es necesario para la **libertad de expresión e información**, una obligación legal o misión de interés público, la **salud pública**, fines de archivo o investigación, o **reclamaciones**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "a) los datos personales ya no sean necesarios en relación con los fines para los que fueron recogidos o tratados de otro modo;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "d) los datos personales hayan sido tratados ilícitamente;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "b) el interesado retire el consentimiento en que se basa el tratamiento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "y este no se base en otro fundamento jurídico;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "y no prevalezcan otros motivos legítimos para el tratamiento, o el interesado se oponga al tratamiento con arreglo al artículo 21, apartado 2;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "c) el interesado se oponga al tratamiento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "e) los datos personales deban suprimirse para el cumplimiento de una obligación legal"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "o para el cumplimiento de una misión realizada en interés público o en el ejercicio de poderes públicos conferidos al responsable;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "c) por razones de interés público en el ámbito de la salud pública"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "d) con fines de archivo en interés público, fines de investigación científica o histórica o fines estadísticos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "f) los datos personales se hayan obtenido en relación con la oferta de servicios de la sociedad de la información mencionados en el artículo 8, apartado 1."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "a) para ejercer el derecho a la libertad de expresión e información;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_17",
+       "quote": "e) para la formulación, el ejercicio o la defensa de reclamaciones."
+      }
+     ]
+    },
+    {
+     "text": "**Limitación del tratamiento** (art. 18 RGPD): mientras se verifica la **exactitud** impugnada; si el tratamiento es **ilícito** y el interesado prefiere limitar a suprimir; si el responsable ya no los necesita pero el interesado sí para **reclamaciones**; o mientras se resuelve su **oposición**. Los datos limitados solo se **conservan** (salvo consentimiento u otras excepciones), y debe **constar claramente** en los sistemas (art. 16 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_18",
+       "quote": "a) el interesado impugne la exactitud de los datos personales en un plazo que permita al responsable verificar la exactitud de los mismos;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_18",
+       "quote": "c) el responsable ya no necesite los datos personales para los fines del tratamiento, pero el interesado los necesite para la formulación, el ejercicio o la defensa de reclamaciones;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_18",
+       "quote": "d) el interesado se haya opuesto al tratamiento en virtud del artículo 21, apartado 1, mientras se verifica"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_18",
+       "quote": "b) el tratamiento sea ilícito y el interesado se oponga a la supresión de los datos personales y solicite en su lugar la limitación de su uso;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_18",
+       "quote": "dichos datos solo podrán ser objeto de tratamiento, con excepción de su conservación, con el consentimiento del interesado"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-8",
+       "quote": "debe constar claramente en los sistemas de información del responsable."
+      }
+     ]
+    },
+    {
+     "text": "El responsable **comunica** cada rectificación, supresión o limitación a los **destinatarios** de los datos, salvo que sea imposible o desproporcionado, e informa al interesado de quiénes son si lo pide (art. 19 RGPD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_19",
+       "quote": "a cada uno de los destinatarios a los que se hayan comunicado los datos personales, salvo que sea imposible o exija un esfuerzo desproporcionado."
+      }
+     ]
+    },
+    {
+     "text": "**Portabilidad** (art. 20 RGPD): recibir los datos que **él facilitó** en un formato **estructurado, de uso común y lectura mecánica** y transmitirlos a otro responsable (directamente si es técnicamente posible), cuando el tratamiento se basa en el **consentimiento o un contrato** y se hace por **medios automatizados**. **No se aplica** a misiones de interés público o poderes públicos.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_20",
+       "quote": "en un formato estructurado, de uso común y lectura mecánica, y a transmitirlos a otro responsable del tratamiento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_20",
+       "quote": "a) el tratamiento esté basado en el consentimiento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_20",
+       "quote": "o en un contrato con arreglo al artículo 6, apartado 1, letra b)"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_20",
+       "quote": "b) el tratamiento se efectúe por medios automatizados."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_20",
+       "quote": "Tal derecho no se aplicará al tratamiento que sea necesario para el cumplimiento de una misión realizada en interés público"
+      }
+     ]
+    },
+    {
+     "text": "**Oposición** (art. 21 RGPD): por motivos de su situación particular frente a tratamientos basados en el **interés público** o el **interés legítimo** (e, f), salvo **motivos legítimos imperiosos** del responsable; y **en todo momento** frente a la **mercadotecnia directa**, que debe cesar. Se menciona **explícitamente** a más tardar en la **primera comunicación**. Si la supresión deriva de oponerse a la mercadotecnia, pueden conservarse los datos identificativos **para no volver a enviarla** (art. 15.2 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_21",
+       "quote": "a que datos personales que le conciernan sean objeto de un tratamiento basado en lo dispuesto en el artículo 6, apartado 1, letras e) o f)"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_21",
+       "quote": "salvo que acredite motivos legítimos imperiosos para el tratamiento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_21",
+       "quote": "Cuando el tratamiento de datos personales tenga por objeto la mercadotecnia directa, el interesado tendrá derecho a oponerse en todo momento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_21",
+       "quote": "A más tardar en el momento de la primera comunicación con el interesado, el derecho indicado en los apartados 1 y 2 será mencionado explícitamente al interesado"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-7",
+       "quote": "el responsable podrá conservar los datos identificativos del afectado necesarios con el fin de impedir tratamientos futuros para fines de mercadotecnia directa."
+      }
+     ]
+    },
+    {
+     "text": "**Decisiones individuales automatizadas** (art. 22 RGPD): derecho a **no ser objeto** de una decisión basada **únicamente** en el tratamiento automatizado (incluidos **perfiles**) con efectos jurídicos o significativos. **Excepto** si es necesaria para un **contrato**, la autoriza el **Derecho** o hay **consentimiento explícito**; en el primer y el último caso, con derecho al menos a **intervención humana**, a **expresar su punto de vista** y a **impugnarla**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_22",
+       "quote": "Todo interesado tendrá derecho a no ser objeto de una decisión basada únicamente en el tratamiento automatizado, incluida la elaboración de perfiles, que produzca efectos jurídicos en él o le afecte significativamente de modo similar."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_22",
+       "quote": "a) es necesaria para la celebración o la ejecución de un contrato entre el interesado y un responsable del tratamiento;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_22",
+       "quote": "b) está autorizada por el Derecho de la Unión o de los Estados miembros"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_22",
+       "quote": "c) se basa en el consentimiento explícito del interesado."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_22",
+       "quote": "como mínimo el derecho a obtener intervención humana por parte del responsable, a expresar su punto de vista y a impugnar la decisión."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Tratamientos concretos en la LOPDGDD",
+   "points": [
+    {
+     "text": "Se **presume** amparado en el **interés legítimo**, salvo prueba en contrario, el tratamiento de los **datos de contacto** profesionales de quienes trabajan en una persona jurídica (solo los necesarios para su **localización profesional** y para relacionarse con la entidad), y los de **empresarios individuales y profesionales liberales** cuando se refieran a ellos **solo en esa condición** (art. 19).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-11",
+       "quote": "Salvo prueba en contrario, se presumirá amparado en lo dispuesto en el artículo 6.1.f) del Reglamento (UE) 2016/679 el tratamiento de los datos de contacto"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-11",
+       "quote": "a) Que el tratamiento se refiera únicamente a los datos necesarios para su localización profesional."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-11",
+       "quote": "b) Que la finalidad del tratamiento sea únicamente mantener relaciones de cualquier índole con la persona jurídica en la que el afectado preste sus servicios."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-11",
+       "quote": "La misma presunción operará para el tratamiento de los datos relativos a los empresarios individuales y a los profesionales liberales"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-11",
+       "quote": "cuando se refieran a ellos únicamente en dicha condición"
+      }
+     ]
+    },
+    {
+     "text": "**Sistemas de información crediticia** (ficheros de morosos, art. 20): deudas **ciertas, vencidas y exigibles** no reclamadas por el deudor, comunicadas por el acreedor que **avisó** antes; el sistema **notifica** la inclusión y los datos quedan **bloqueados 30 días**; se mantienen mientras dure el impago, con un máximo de **cinco años** desde el vencimiento.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-2",
+       "quote": "a) Que los datos hayan sido facilitados por el acreedor"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-2",
+       "quote": "c) Que el acreedor haya informado al afectado en el contrato o en el momento de requerir el pago acerca de la posibilidad de inclusión en dichos sistemas"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-2",
+       "quote": "deberá notificar al afectado la inclusión de tales datos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-2",
+       "quote": "b) Que los datos se refieran a deudas ciertas, vencidas y exigibles, cuya existencia o cuantía no hubiese sido objeto de reclamación administrativa o judicial por el deudor"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-2",
+       "quote": "dentro de los treinta días siguientes a la notificación de la deuda al sistema, permaneciendo bloqueados los datos durante ese plazo."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-2",
+       "quote": "con el límite máximo de cinco años desde la fecha de vencimiento de la obligación dineraria, financiera o de crédito."
+      }
+     ]
+    },
+    {
+     "text": "**Videovigilancia** (art. 22): para la **seguridad de personas, bienes e instalaciones**; de la **vía pública**, solo lo **imprescindible** (más, si lo exige la seguridad de instalaciones **estratégicas** o del **transporte**), y nunca el **interior de un domicilio privado**. Las imágenes se **suprimen en un mes** como máximo, salvo que acrediten actos contra la integridad de personas, bienes o instalaciones: entonces se entregan a la autoridad en **72 horas**. A estos tratamientos **no se les aplica la obligación de bloqueo**. Se informa con un **cartel visible** con la existencia del tratamiento, el responsable y los derechos. Grabar **solo el interior del propio domicilio** queda fuera del RGPD.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "con la finalidad de preservar la seguridad de las personas y bienes, así como de sus instalaciones."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "Solo podrán captarse imágenes de la vía pública en la medida en que resulte imprescindible"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "cuando fuese necesario para garantizar la seguridad de bienes o instalaciones estratégicos o de infraestructuras vinculadas al transporte"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "sin que en ningún caso pueda suponer la captación de imágenes del interior de un domicilio privado."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "Los datos serán suprimidos en el plazo máximo de un mes desde su captación"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "en un plazo máximo de setenta y dos horas desde que se tuviera conocimiento de la existencia de la grabación."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "No será de aplicación a estos tratamientos la obligación de bloqueo prevista en el artículo 32 de esta ley orgánica."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "mediante la colocación de un dispositivo informativo en lugar suficientemente visible identificando, al menos, la existencia del tratamiento, la identidad del responsable y la posibilidad de ejercitar los derechos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-4",
+       "quote": "el tratamiento por una persona física de imágenes que solamente capten el interior de su propio domicilio."
+      }
+     ]
+    },
+    {
+     "text": "**Sistemas de exclusión publicitaria** (art. 23): quien vaya a hacer **mercadotecnia directa** debe **consultarlos antes** y excluir a quienes se opusieron, salvo que el afectado le haya **dado su consentimiento**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-5",
+       "quote": "Quienes pretendan realizar comunicaciones de mercadotecnia directa, deberán previamente consultar los sistemas de exclusión publicitaria"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-5",
+       "quote": "No será necesario realizar la consulta a la que se refiere el párrafo anterior cuando el afectado hubiera prestado"
+      }
+     ]
+    },
+    {
+     "text": "También son lícitos los tratamientos para proteger a quienes **informen sobre infracciones normativas** (art. 24) y los de las Administraciones con fines de **archivo en interés público** (art. 26).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-6",
+       "quote": "Serán lícitos los tratamientos de datos personales necesarios para garantizar la protección de las personas que informen sobre infracciones normativas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-8",
+       "quote": "Será lícito el tratamiento por las Administraciones Públicas de datos con fines de archivo en interés público"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Responsable, encargado y responsabilidad proactiva",
+   "points": [
+    {
+     "text": "El **responsable** aplica **medidas técnicas y organizativas apropiadas**, según la naturaleza, el ámbito, el contexto, los fines y los **riesgos**, para **garantizar y poder demostrar** que cumple; las revisa cuando sea necesario (art. 24 RGPD). La adhesión a **códigos de conducta** o **certificaciones** ayuda a demostrarlo.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_24",
+       "quote": "el responsable del tratamiento aplicará medidas técnicas y organizativas apropiadas a fin de garantizar y poder demostrar que el tratamiento es conforme con el presente Reglamento."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_24",
+       "quote": "La adhesión a códigos de conducta aprobados a tenor del artículo 40 o a un mecanismo de certificación aprobado a tenor del artículo 42 podrán ser utilizados como elementos para demostrar el cumplimiento"
+      }
+     ]
+    },
+    {
+     "text": "**Protección de datos desde el diseño** (art. 25.1): medidas como la **seudonimización** para aplicar los principios (como la **minimización**), tanto al **determinar los medios** como **durante el tratamiento**. **Por defecto** (art. 25.2): solo se tratan los datos **necesarios para cada fin** (cantidad, extensión, plazo y accesibilidad), y no son accesibles **a un número indeterminado de personas** sin intervención del interesado.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_25",
+       "quote": "tanto en el momento de determinar los medios de tratamiento como en el momento del propio tratamiento, medidas técnicas y organizativas apropiadas, como la seudonimización"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_25",
+       "quote": "por defecto, solo sean objeto de tratamiento los datos personales que sean necesarios para cada uno de los fines específicos del tratamiento."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_25",
+       "quote": "Esta obligación se aplicará a la cantidad de datos personales recogidos, a la extensión de su tratamiento, a su plazo de conservación y a su accesibilidad."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_25",
+       "quote": "no sean accesibles, sin la intervención de la persona, a un número indeterminado de personas físicas."
+      }
+     ]
+    },
+    {
+     "text": "La LOPDGDD obliga a valorar los **mayores riesgos** (art. 28.2): discriminación, usurpación de identidad o fraude; privar de derechos; categorías especiales no incidentales; **perfiles**; colectivos **vulnerables** (menores, personas con discapacidad); tratamientos **masivos**; y **transferencias habituales** a países sin nivel adecuado.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-10",
+       "quote": "a) Cuando el tratamiento pudiera generar situaciones de discriminación, usurpación de identidad o fraude"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-10",
+       "quote": "b) Cuando el tratamiento pudiese privar a los afectados de sus derechos y libertades"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-10",
+       "quote": "c) Cuando se produjese el tratamiento no meramente incidental o accesorio de las categorías especiales de datos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-10",
+       "quote": "d) Cuando el tratamiento implicase una evaluación de aspectos personales de los afectados con el fin de crear o utilizar perfiles"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-10",
+       "quote": "g) Cuando los datos personales fuesen a ser objeto de transferencia, con carácter habitual, a terceros Estados"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-10",
+       "quote": "e) Cuando se lleve a cabo el tratamiento de datos de grupos de afectados en situación de especial vulnerabilidad y, en particular, de menores de edad y personas con discapacidad."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a2-10",
+       "quote": "f) Cuando se produzca un tratamiento masivo que implique a un gran número de afectados"
+      }
+     ]
+    },
+    {
+     "text": "**Corresponsables** (art. 26 RGPD): dos o más que determinan **conjuntamente** objetivos y medios; fijan **de mutuo acuerdo** sus responsabilidades y ponen a disposición del interesado los **aspectos esenciales** del acuerdo, pero el interesado puede ejercer sus derechos **frente a cada uno**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_26",
+       "quote": "Cuando dos o más responsables determinen conjuntamente los objetivos y los medios del tratamiento serán considerados corresponsables del tratamiento."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_26",
+       "quote": "de modo transparente y de mutuo acuerdo"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_26",
+       "quote": "Se pondrán a disposición del interesado los aspectos esenciales del acuerdo."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_26",
+       "quote": "los interesados podrán ejercer los derechos que les reconoce el presente Reglamento frente a, y en contra de, cada uno de los responsables."
+      }
+     ]
+    },
+    {
+     "text": "**Encargado** (art. 28 RGPD): el responsable solo elige uno con **garantías suficientes**; el encargado **no subcontrata** sin **autorización previa por escrito** (específica o general) del responsable. El encargo se rige por un **contrato u otro acto jurídico por escrito** (también electrónico) que fija objeto, duración, naturaleza, finalidad, tipos de datos y categorías de interesados.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_28",
+       "quote": "este elegirá únicamente un encargado que ofrezca garantías suficientes para aplicar medidas técnicas y organizativas apropiadas"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_28",
+       "quote": "El encargado del tratamiento no recurrirá a otro encargado sin la autorización previa por escrito, específica o general, del responsable."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_28",
+       "quote": "se regirá por un contrato u otro acto jurídico"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_28",
+       "quote": "establezca el objeto, la duración, la naturaleza y la finalidad del tratamiento, el tipo de datos personales y categorías de interesados"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_28",
+       "quote": "El contrato u otro acto jurídico a que se refieren los apartados 3 y 4 constará por escrito, inclusive en formato electrónico."
+      }
+     ],
+     "items": [
+      {
+       "text": "Trata los datos solo según **instrucciones documentadas** del responsable; garantiza la **confidencialidad** de su personal; aplica la **seguridad**; ayuda al responsable con los derechos y con los arts. 32 a 36; al acabar, **suprime o devuelve** los datos a elección del responsable; y permite **auditorías**. Avisa **inmediatamente** si una instrucción infringe la normativa.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "a) tratará los datos personales únicamente siguiendo instrucciones documentadas del responsable"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "b) garantizará que las personas autorizadas para tratar datos personales se hayan comprometido a respetar la confidencialidad"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "c) tomará todas las medidas necesarias de conformidad con el artículo 32;"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "e) asistirá al responsable"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "f) ayudará al responsable a garantizar el cumplimiento de las obligaciones establecidas en los artículos 32 a 36"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "para permitir y contribuir a la realización de auditorías"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "g) a elección del responsable, suprimirá o devolverá todos los datos personales una vez finalice la prestación de los servicios de tratamiento"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "el encargado informará inmediatamente al responsable si, en su opinión, una instrucción infringe el presente Reglamento"
+        }
+       ]
+      },
+      {
+       "text": "Si el encargado **determina los fines y medios** infringiendo el RGPD, se le considera **responsable** de ese tratamiento (art. 28.10); también lo es quien, figurando como encargado, usa los datos **para sus propios fines** (art. 33.2 LOPDGDD). El acceso del encargado **no es comunicación de datos** (art. 33.1).",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_28",
+         "quote": "si un encargado del tratamiento infringe el presente Reglamento al determinar los fines y medios del tratamiento, será considerado responsable del tratamiento con respecto a dicho tratamiento."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a3-5",
+         "quote": "Tendrá asimismo la consideración de responsable del tratamiento quien figurando como encargado utilizase los datos para sus propias finalidades."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a3-5",
+         "quote": "no se considerará comunicación de datos"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Registro de actividades de tratamiento** (art. 30 RGPD): lo llevan responsable y encargado, **por escrito** (también electrónico), y lo ponen a disposición de la **autoridad de control** que lo pida. El **del responsable** contiene, entre otros, su nombre y el del DPD, los **fines**, las categorías de interesados y de datos, los destinatarios, las transferencias, los **plazos de supresión** y las medidas de seguridad; el **del encargado**, las categorías de tratamientos por cuenta de cada responsable, las transferencias y las medidas de seguridad. **No obliga** a quien emplee a **menos de 250 personas**, salvo que el tratamiento entrañe riesgo, **no sea ocasional** o incluya **categorías especiales** o datos penales.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "Cada responsable y, en su caso, su representante llevarán un registro de las actividades de tratamiento efectuadas bajo su responsabilidad."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "b) los fines del tratamiento;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "a) el nombre y los datos de contacto del responsable"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "c) una descripción de las categorías de interesados y de las categorías de datos personales;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "d) las categorías de destinatarios"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "e) en su caso, las transferencias de datos personales a un tercer país"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "g) cuando sea posible, una descripción general de las medidas técnicas y organizativas de seguridad"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "Cada encargado y, en su caso, el representante del encargado, llevará un registro"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "b) las categorías de tratamientos efectuados por cuenta de cada responsable;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "Los registros a que se refieren los apartados 1 y 2 constarán por escrito, inclusive en formato electrónico."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "f) cuando sea posible, los plazos previstos para la supresión de las diferentes categorías de datos;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "pondrán el registro a disposición de la autoridad de control que lo solicite."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_30",
+       "quote": "no se aplicarán a ninguna empresa ni organización que emplee a menos de 250 personas, a menos que el tratamiento que realice pueda entrañar un riesgo para los derechos y libertades de los interesados, no sea ocasional, o incluya categorías especiales"
+      }
+     ]
+    },
+    {
+     "text": "Las **Administraciones** y demás entidades del art. 77.1 LOPDGDD **publican un inventario** de sus actividades de tratamiento, accesible por medios electrónicos, con su **base legal** (art. 31.2 LOPDGDD).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-3",
+       "quote": "harán público un inventario de sus actividades de tratamiento accesible por medios electrónicos en el que constará la información establecida en el artículo 30 del Reglamento (UE) 2016/679 y su base legal."
+      }
+     ]
+    },
+    {
+     "text": "**Bloqueo** (art. 32 LOPDGDD): al **rectificar o suprimir**, el responsable **bloquea** los datos: los identifica y reserva para impedir su tratamiento, salvo para ponerlos a disposición de **jueces, Ministerio Fiscal o Administraciones** (en especial las autoridades de protección de datos) durante el **plazo de prescripción** de las responsabilidades; después, se **destruyen**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-4",
+       "quote": "El responsable del tratamiento estará obligado a bloquear los datos cuando proceda a su rectificación o supresión."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-4",
+       "quote": "El bloqueo de los datos consiste en la identificación y reserva de los mismos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-4",
+       "quote": "y solo por el plazo de prescripción de las mismas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-4",
+       "quote": "Transcurrido ese plazo deberá procederse a la destrucción de los datos."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Seguridad, violaciones de seguridad y evaluación de impacto",
+   "points": [
+    {
+     "text": "**Seguridad del tratamiento** (art. 32 RGPD): responsable y encargado aplican medidas para un **nivel de seguridad adecuado al riesgo**, que en su caso incluyan, **entre otras**:",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_32",
+       "quote": "aplicarán medidas técnicas y organizativas apropiadas para garantizar un nivel de seguridad adecuado al riesgo, que en su caso incluya, entre otros:"
+      }
+     ],
+     "items": [
+      {
+       "text": "La **seudonimización y el cifrado**.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_32",
+         "quote": "a) la seudonimización y el cifrado de datos personales;"
+        }
+       ]
+      },
+      {
+       "text": "Garantizar la **confidencialidad, integridad, disponibilidad y resiliencia** permanentes de los sistemas.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_32",
+         "quote": "b) la capacidad de garantizar la confidencialidad, integridad, disponibilidad y resiliencia permanentes de los sistemas y servicios de tratamiento;"
+        }
+       ]
+      },
+      {
+       "text": "**Restaurar** rápidamente la disponibilidad y el acceso tras un incidente.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_32",
+         "quote": "c) la capacidad de restaurar la disponibilidad y el acceso a los datos personales de forma rápida en caso de incidente físico o técnico;"
+        }
+       ]
+      },
+      {
+       "text": "**Verificar y evaluar regularmente** la eficacia de las medidas.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_32",
+         "quote": "d) un proceso de verificación, evaluación y valoración regulares de la eficacia de las medidas técnicas y organizativas"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "En el **sector público**, las medidas de seguridad son las del **Esquema Nacional de Seguridad** (disp. adic. 1.ª LOPDGDD), también para quien preste el servicio por concesión, encomienda o contrato.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da",
+       "quote": "deberán aplicar a los tratamientos de datos personales las medidas de seguridad que correspondan de las previstas en el Esquema Nacional de Seguridad"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "da",
+       "quote": "las medidas de seguridad se corresponderán con las de la Administración pública de origen y se ajustarán al Esquema Nacional de Seguridad."
+      }
+     ]
+    },
+    {
+     "text": "**Notificación a la autoridad** (art. 33 RGPD): el responsable notifica la violación **sin dilación indebida** y, si es posible, **en 72 horas** desde que tenga constancia, **salvo** que sea **improbable que entrañe un riesgo**; si tarda más, explica el motivo. El **encargado** avisa al responsable sin dilación. Toda violación se **documenta**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_33",
+       "quote": "sin dilación indebida y, de ser posible, a más tardar 72 horas después de que haya tenido constancia de ella, a menos que sea improbable que dicha violación de la seguridad constituya un riesgo para los derechos y las libertades de las personas físicas."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_33",
+       "quote": "deberá ir acompañada de indicación de los motivos de la dilación."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_33",
+       "quote": "El encargado del tratamiento notificará sin dilación indebida al responsable del tratamiento las violaciones de la seguridad de los datos personales de las que tenga conocimiento."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_33",
+       "quote": "El responsable del tratamiento documentará cualquier violación de la seguridad de los datos personales"
+      }
+     ]
+    },
+    {
+     "text": "**Comunicación al interesado** (art. 34): cuando sea probable un **alto riesgo**, sin dilación indebida y en lenguaje claro. **No hace falta** si los datos estaban protegidos (p. ej., **cifrados**), si se ha eliminado el alto riesgo o si es **desproporcionado** (entonces, **comunicación pública**).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_34",
+       "quote": "Cuando sea probable que la violación de la seguridad de los datos personales entrañe un alto riesgo para los derechos y libertades de las personas físicas, el responsable del tratamiento la comunicará al interesado sin dilación indebida."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_34",
+       "quote": "en particular aquellas que hagan ininteligibles los datos personales para cualquier persona que no esté autorizada a acceder a ellos, como el cifrado;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_34",
+       "quote": "se optará en su lugar por una comunicación pública"
+      }
+     ]
+    },
+    {
+     "text": "**Evaluación de impacto (EIPD)** (art. 35): **antes** del tratamiento, cuando sea probable un **alto riesgo** (sobre todo con **nuevas tecnologías**), con el asesoramiento del **DPD**, si lo hay. Se exige en particular para la **evaluación sistemática** con perfiles que produzca efectos jurídicos, el tratamiento **a gran escala de categorías especiales** o datos penales, y la **observación sistemática a gran escala de una zona de acceso público**. La autoridad publica la **lista** de tratamientos que la requieren.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_35",
+       "quote": "el responsable del tratamiento realizará, antes del tratamiento, una evaluación del impacto de las operaciones de tratamiento en la protección de datos personales."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_35",
+       "quote": "El responsable del tratamiento recabará el asesoramiento del delegado de protección de datos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_35",
+       "quote": "a) evaluación sistemática y exhaustiva de aspectos personales de personas físicas que se base en un tratamiento automatizado"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_35",
+       "quote": "b) tratamiento a gran escala de las categorías especiales de datos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_35",
+       "quote": "c) observación sistemática a gran escala de una zona de acceso público."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_35",
+       "quote": "La autoridad de control establecerá y publicará una lista de los tipos de operaciones de tratamiento que requieran una evaluación de impacto"
+      }
+     ]
+    },
+    {
+     "text": "**Consulta previa** (art. 36): si la EIPD muestra un **alto riesgo** que el responsable **no mitiga**, consulta a la autoridad **antes** de tratar; si esta considera que podría infringir el RGPD, asesora por escrito en **ocho semanas**, prorrogables **seis** más.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_36",
+       "quote": "cuando una evaluación de impacto relativa a la protección de los datos en virtud del artículo 35 muestre que el tratamiento entrañaría un alto riesgo si el responsable no toma medidas para mitigarlo."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_36",
+       "quote": "Cuando la autoridad de control considere que el tratamiento previsto a que se refiere el apartado 1 podría infringir el presente Reglamento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_36",
+       "quote": "en un plazo de ocho semanas desde la solicitud de la consulta"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_36",
+       "quote": "Dicho plazo podrá prorrogarse seis semanas"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Delegado de protección de datos (DPD)",
+   "points": [
+    {
+     "text": "Es **obligatorio** designarlo (art. 37.1 RGPD) cuando el tratamiento lo hace una **autoridad u organismo público** (salvo los **tribunales** en su función judicial), o las actividades principales consisten en la **observación habitual y sistemática a gran escala** o en tratar **a gran escala categorías especiales** o datos penales. Un **grupo empresarial** puede tener **uno solo** si es **fácilmente accesible** desde cada establecimiento, y varios organismos públicos también pueden compartirlo.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_37",
+       "quote": "a) el tratamiento lo lleve a cabo una autoridad u organismo público, excepto los tribunales que actúen en ejercicio de su función judicial;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_37",
+       "quote": "requieran una observación habitual y sistemática de interesados a gran escala"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_37",
+       "quote": "c) las actividades principales del responsable o del encargado consistan en el tratamiento a gran escala de categorías especiales de datos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_37",
+       "quote": "Un grupo empresarial podrá nombrar un único delegado de protección de datos siempre que sea fácilmente accesible desde cada establecimiento."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_37",
+       "quote": "se podrá designar un único delegado de protección de datos para varias de estas autoridades u organismos"
+      }
+     ]
+    },
+    {
+     "text": "La LOPDGDD lo exige **en todo caso**, entre otros, a: **colegios profesionales**; **centros docentes** y **universidades**; operadores de **comunicaciones electrónicas** que traten datos **a gran escala** y prestadores de la sociedad de la información que hagan **perfiles a gran escala**; **entidades de crédito**, aseguradoras y empresas de inversión; distribuidoras y comercializadoras de **electricidad y gas**; ficheros de **solvencia** y fraude; **publicidad** con perfiles; **centros sanitarios** con historias clínicas (no los profesionales individuales); **juego** en línea; **seguridad privada**; y **federaciones deportivas** que traten datos de menores (art. 34.1).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "a) Los colegios profesionales y sus consejos generales."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "así como las Universidades públicas y privadas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "c) Las entidades que exploten redes y presten servicios de comunicaciones electrónicas"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "cuando traten habitual y sistemáticamente datos personales a gran escala."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "e) Las entidades incluidas en el artículo 1 de la Ley 10/2014"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "g) Las entidades aseguradoras y reaseguradoras."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "h) Las empresas de servicios de inversión"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "j) Las entidades responsables de ficheros comunes para la evaluación de la solvencia patrimonial y crédito o de los ficheros comunes para la gestión y prevención del fraude"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "k) Las entidades que desarrollen actividades de publicidad y prospección comercial"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "n) Los operadores que desarrollen la actividad de juego a través de canales electrónicos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "d) Los prestadores de servicios de la sociedad de la información cuando elaboren a gran escala perfiles de los usuarios del servicio."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "i) Los distribuidores y comercializadores de energía eléctrica y los distribuidores y comercializadores de gas natural."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "l) Los centros sanitarios legalmente obligados al mantenimiento de las historias clínicas de los pacientes."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "Se exceptúan los profesionales de la salud que, aun estando legalmente obligados al mantenimiento de las historias clínicas de los pacientes, ejerzan su actividad a título individual."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "ñ) Las empresas de seguridad privada."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "o) Las federaciones deportivas cuando traten datos de menores de edad."
+      }
+     ]
+    },
+    {
+     "text": "Su **designación, nombramiento y cese** se comunican a la **AEPD** (o autoridad autonómica) en **diez días**, tanto si es obligatorio como **voluntario**; puede tener dedicación **completa o parcial** (art. 34 LOPDGDD). El responsable **publica** sus datos de contacto (art. 37.7 RGPD).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "comunicarán en el plazo de diez días a la Agencia Española de Protección de Datos o, en su caso, a las autoridades autonómicas de protección de datos, las designaciones, nombramientos y ceses de los delegados de protección de datos tanto en los supuestos en que se encuentren obligadas a su designación como en el caso en que sea voluntaria."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-6",
+       "quote": "podrán establecer la dedicación completa o a tiempo parcial del delegado"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_37",
+       "quote": "El responsable o el encargado del tratamiento publicarán los datos de contacto del delegado de protección de datos y los comunicarán a la autoridad de control."
+      }
+     ]
+    },
+    {
+     "text": "Se designa por sus **cualidades profesionales**, en particular sus **conocimientos de Derecho y práctica** de protección de datos (art. 37.5 RGPD); puede ser de la **plantilla** o actuar con un **contrato de servicios** (art. 37.6), y puede ser **persona física o jurídica** (art. 35 LOPDGDD).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_37",
+       "quote": "El delegado de protección de datos será designado atendiendo a sus cualidades profesionales y, en particular, a sus conocimientos especializados del Derecho y la práctica en materia de protección de datos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_37",
+       "quote": "podrá formar parte de la plantilla del responsable o del encargado del tratamiento o desempeñar sus funciones en el marco de un contrato de servicios."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-7",
+       "quote": "sea persona física o jurídica"
+      }
+     ]
+    },
+    {
+     "text": "**Posición** (art. 38 RGPD): participa **en todas las cuestiones** de protección de datos; **no recibe instrucciones**; **no puede ser destituido ni sancionado** por desempeñar sus funciones (en la LOPDGDD, si es una persona física de la organización, salvo **dolo o negligencia grave**); rinde cuentas al **más alto nivel jerárquico**; los interesados pueden **contactarle** directamente; y está sujeto a **secreto**. Puede tener **otras funciones** sin conflicto de intereses.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_38",
+       "quote": "participe de forma adecuada y en tiempo oportuno en todas las cuestiones relativas a la protección de datos personales."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_38",
+       "quote": "garantizarán que el delegado de protección de datos no reciba ninguna instrucción en lo que respecta al desempeño de dichas funciones. No será destituido ni sancionado por el responsable o el encargado por desempeñar sus funciones."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_38",
+       "quote": "El delegado de protección de datos rendirá cuentas directamente al más alto nivel jerárquico del responsable o encargado."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_38",
+       "quote": "Los interesados podrán ponerse en contacto con el delegado de protección de datos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_38",
+       "quote": "El delegado de protección de datos estará obligado a mantener el secreto o la confidencialidad"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-8",
+       "quote": "Cuando se trate de una persona física integrada en la organización del responsable o encargado del tratamiento"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-8",
+       "quote": "salvo que incurriera en dolo o negligencia grave en su ejercicio."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_38",
+       "quote": "El delegado de protección de datos podrá desempeñar otras funciones y cometidos."
+      }
+     ]
+    },
+    {
+     "text": "**Funciones** mínimas (art. 39 RGPD): **informar y asesorar**; **supervisar** el cumplimiento (con formación y auditorías); asesorar sobre la **EIPD**; **cooperar** con la autoridad de control y ser su **punto de contacto**. En la LOPDGDD es el **interlocutor** ante la AEPD, tiene **acceso** a los datos sin que se le oponga deber de secreto, y el afectado puede dirigirse a él **antes de reclamar**: responde en **dos meses** (o en **un mes** si la AEPD le remite la reclamación) (arts. 36 y 37).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_39",
+       "quote": "a) informar y asesorar al responsable o al encargado del tratamiento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_39",
+       "quote": "b) supervisar el cumplimiento de lo dispuesto en el presente Reglamento"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_39",
+       "quote": "d) cooperar con la autoridad de control;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_39",
+       "quote": "la concienciación y formación del personal que participa en las operaciones de tratamiento, y las auditorías correspondientes;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_39",
+       "quote": "c) ofrecer el asesoramiento que se le solicite acerca de la evaluación de impacto"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_39",
+       "quote": "e) actuar como punto de contacto de la autoridad de control"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-8",
+       "quote": "El delegado de protección de datos actuará como interlocutor del responsable o encargado del tratamiento ante la Agencia Española de Protección de Datos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-8",
+       "quote": "no pudiendo oponer a este acceso el responsable o el encargado del tratamiento la existencia de cualquier deber de confidencialidad o secreto"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-9",
+       "quote": "comunicará al afectado la decisión que se hubiera adoptado en el plazo máximo de dos meses a contar desde la recepción de la reclamación."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-9",
+       "quote": "a fin de que este responda en el plazo de un mes."
+      }
+     ]
+    },
+    {
+     "text": "Al DPD **no se le aplica el régimen sancionador** de la LOPDGDD (art. 70.2).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-2",
+       "quote": "No será de aplicación al delegado de protección de datos el régimen sancionador establecido en este Título."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Transferencias internacionales",
+   "points": [
+    {
+     "text": "Solo se transfieren datos a un **tercer país u organización internacional** si se cumplen las condiciones del capítulo V, también para las **transferencias ulteriores** (art. 44 RGPD):",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_44",
+       "quote": "Solo se realizarán transferencias de datos personales que sean objeto de tratamiento o vayan a serlo tras su transferencia a un tercer país u organización internacional si"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Decisión de adecuación** de la **Comisión**: el país, territorio, sector u organización garantiza un nivel adecuado; **no requiere autorización** específica y se **revisa al menos cada cuatro años** (art. 45).",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_45",
+         "quote": "cuando la Comisión haya decidido que el tercer país, un territorio o uno o varios sectores específicos de ese tercer país, o la organización internacional de que se trate garantizan un nivel de protección adecuado. Dicha transferencia no requerirá ninguna autorización específica."
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_45",
+         "quote": "un mecanismo de revisión periódica, al menos cada cuatro años"
+        }
+       ]
+      },
+      {
+       "text": "**Garantías adecuadas** sin autorización (art. 46.2): instrumento vinculante entre autoridades públicas, **normas corporativas vinculantes**, **cláusulas tipo** de la Comisión o de una autoridad aprobadas por la Comisión, **códigos de conducta** o **certificaciones** con compromisos vinculantes. **Con autorización** de la autoridad: cláusulas contractuales ad hoc o acuerdos administrativos (art. 46.3).",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_46",
+         "quote": "sin que se requiera ninguna autorización expresa de una autoridad de control, por:"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_46",
+         "quote": "b) normas corporativas vinculantes de conformidad con el artículo 47;"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_46",
+         "quote": "c) cláusulas tipo de protección de datos adoptadas por la Comisión"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_46",
+         "quote": "Siempre que exista autorización de la autoridad de control competente"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_46",
+         "quote": "a) cláusulas contractuales entre el responsable o el encargado y el responsable, encargado o destinatario de los datos personales en el tercer país u organización internacional, o"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_46",
+         "quote": "b) disposiciones que se incorporen en acuerdos administrativos entre las autoridades u organismos públicos"
+        }
+       ]
+      },
+      {
+       "text": "**Excepciones** (art. 49): **consentimiento explícito** tras informar de los riesgos, ejecución de un **contrato**, **interés público** importante, **reclamaciones**, **intereses vitales** o **registro público**. Si nada de esto cabe, solo si **no es repetitiva**, afecta a **pocos interesados** y la exigen **intereses legítimos imperiosos**, informando a la autoridad (en España, **antes** de hacerla, art. 43 LOPDGDD).",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_49",
+         "quote": "a) el interesado haya dado explícitamente su consentimiento a la transferencia propuesta, tras haber sido informado de los posibles riesgos"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_49",
+         "quote": "d) la transferencia sea necesaria por razones importantes de interés público;"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_49",
+         "quote": "b) la transferencia sea necesaria para la ejecución de un contrato entre el interesado y el responsable del tratamiento"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_49",
+         "quote": "e) la transferencia sea necesaria para la formulación, el ejercicio o la defensa de reclamaciones;"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_49",
+         "quote": "f) la transferencia sea necesaria para proteger los intereses vitales del interesado o de otras personas"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_49",
+         "quote": "g) la transferencia se realice desde un registro público"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_49",
+         "quote": "solo se podrá llevar a cabo si no es repetitiva, afecta solo a un número limitado de interesados, es necesaria a los fines de intereses legítimos imperiosos"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a4-5",
+         "quote": "Esta información deberá facilitarse con carácter previo a la realización de la transferencia."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "La **AEPD** y las autoridades autonómicas pueden adoptar **cláusulas contractuales tipo** (con dictamen previo del Comité Europeo) y aprobar **normas corporativas vinculantes** (procedimiento de **nueve meses**). Necesitan su **autorización previa** (procedimiento de **seis meses**) las transferencias sin adecuación ni garantías del art. 46.2 que se basen en **cláusulas contractuales distintas de las tipo** o, para las entidades del art. 77.1, en **acuerdos internacionales no normativos** (arts. 41 y 42 LOPDGDD).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-3",
+       "quote": "podrán adoptar, conforme a lo dispuesto en el artículo 46.2.c) del Reglamento (UE) 2016/679, cláusulas contractuales tipo"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-3",
+       "quote": "podrán aprobar normas corporativas vinculantes"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-3",
+       "quote": "tendrá una duración máxima de nueve meses."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-4",
+       "quote": "requerirán una previa autorización de la Agencia Española de Protección de Datos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-4",
+       "quote": "cláusulas contractuales que no correspondan a las cláusulas tipo"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-4",
+       "quote": "acuerdos internacionales no normativos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-4",
+       "quote": "El procedimiento tendrá una duración máxima de seis meses."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Autoridades de control: la AEPD",
+   "points": [
+    {
+     "text": "Cada Estado tiene una o varias **autoridades de control independientes** (art. 51 RGPD), que actúan con **total independencia** y sin recibir **instrucciones** (art. 52). En tratamientos **transfronterizos**, la autoridad del **establecimiento principal** es la **autoridad principal** y el **único interlocutor** del responsable (art. 56).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_51",
+       "quote": "una o varias autoridades públicas independientes (en adelante «autoridad de control»)"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_52",
+       "quote": "Cada autoridad de control actuará con total independencia en el desempeño de sus funciones"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_52",
+       "quote": "no solicitarán ni admitirán ninguna instrucción."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_56",
+       "quote": "la autoridad de control del establecimiento principal o del único establecimiento del responsable o del encargado del tratamiento será competente para actuar como autoridad de control principal"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_56",
+       "quote": "La autoridad de control principal será el único interlocutor del responsable o del encargado"
+      }
+     ]
+    },
+    {
+     "text": "El **Comité Europeo de Protección de Datos** es un **organismo de la Unión con personalidad jurídica**, formado por el director de una autoridad de cada Estado y el **Supervisor Europeo de Protección de Datos**; la **Comisión** participa **sin voto** (art. 68).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_68",
+       "quote": "Se crea el Comité Europeo de Protección de Datos («Comité»), como organismo de la Unión, que gozará de personalidad jurídica."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_68",
+       "quote": "El Comité estará compuesto por el director de una autoridad de control de cada Estado miembro y por el Supervisor Europeo de Protección de Datos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_68",
+       "quote": "La Comisión tendrá derecho a participar en las actividades y reuniones del Comité, sin derecho a voto."
+      }
+     ]
+    },
+    {
+     "text": "La **Agencia Española de Protección de Datos (AEPD)** es una **autoridad administrativa independiente de ámbito estatal**, con personalidad jurídica, que actúa con **plena independencia**; se relaciona con el Gobierno a través del **Ministerio de Justicia** y es el **representante común** de las autoridades españolas en el Comité Europeo (art. 44 LOPDGDD).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-6",
+       "quote": "La Agencia Española de Protección de Datos es una autoridad administrativa independiente de ámbito estatal"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-6",
+       "quote": "con personalidad jurídica y plena capacidad pública y privada, que actúa con plena independencia de los poderes públicos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-6",
+       "quote": "Se relaciona con el Gobierno a través del Ministerio de Justicia."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-6",
+       "quote": "tendrá la condición de representante común de las autoridades de protección de datos del Reino de España en el Comité Europeo de Protección de Datos."
+      }
+     ]
+    },
+    {
+     "text": "La **Presidencia** la dirige y dicta sus resoluciones, **circulares** y directrices, auxiliada por un **Adjunto**. Ambos los propone el **Gobierno** (a propuesta del Ministerio de Justicia) tras convocatoria pública, los **ratifica la Comisión de Justicia del Congreso** (tres quintos en primera votación o mayoría absoluta en segunda) y los nombra el **Consejo de Ministros**; mandato de **cinco años**, renovable **una vez**. Sus actos **ponen fin a la vía administrativa** y se recurren ante la **Audiencia Nacional** (art. 48).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-10",
+       "quote": "La Presidencia de la Agencia Española de Protección de Datos la dirige, ostenta su representación y dicta sus resoluciones, circulares y directrices."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-10",
+       "quote": "estará auxiliada por un Adjunto"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-10",
+       "quote": "serán nombrados por el Gobierno, a propuesta del Ministerio de Justicia"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-10",
+       "quote": "convocatoria pública de candidatos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-10",
+       "quote": "deberá ser ratificada por la Comisión de Justicia en votación pública por mayoría de tres quintos de sus miembros en primera votación o, de no alcanzarse ésta, por mayoría absoluta en segunda votación"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-10",
+       "quote": "serán nombrados por el Consejo de Ministros mediante real decreto."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-10",
+       "quote": "tiene una duración de cinco años y puede ser renovado para otro período de igual duración."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-10",
+       "quote": "ponen fin a la vía administrativa, siendo recurribles, directamente, ante la Sala de lo Contencioso-administrativo de la Audiencia Nacional."
+      }
+     ]
+    },
+    {
+     "text": "La asesora un **Consejo Consultivo** (con, entre otros, un **Diputado**, un **Senador**, representantes del CGPJ, la AGE, las comunidades con autoridad propia, expertos y sindicatos), que se reúne al menos **una vez al semestre** y cuyas decisiones **no son vinculantes** (art. 49).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-11",
+       "quote": "a) Un Diputado, propuesto por el Congreso de los Diputados."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-11",
+       "quote": "b) Un Senador, propuesto por el Senado."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-11",
+       "quote": "c) Un representante designado por el Consejo General del Poder Judicial."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-11",
+       "quote": "d) Un representante de la Administración General del Estado con experiencia en la materia"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-11",
+       "quote": "e) Un representante de cada Comunidad Autónoma que haya creado una Autoridad de protección de datos en su ámbito territorial"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-11",
+       "quote": "ñ) Dos expertos propuestos por las organizaciones sindicales más representativas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-11",
+       "quote": "y, en todo caso, una vez al semestre."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a4-11",
+       "quote": "Las decisiones tomadas por el Consejo Consultivo no tendrán en ningún caso carácter vinculante."
+      }
+     ]
+    },
+    {
+     "text": "Las **autoridades autonómicas** pueden ejercer esas funciones sobre los tratamientos del **sector público autonómico y local** de su territorio y los que se hagan para **funciones públicas** de competencia autonómica o local (art. 57).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a5-9",
+       "quote": "podrán ejercer, las funciones y potestades"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a5-9",
+       "quote": "b) Tratamientos llevados a cabo por personas físicas o jurídicas para el ejercicio de las funciones públicas"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a5-9",
+       "quote": "a) Tratamientos de los que sean responsables las entidades integrantes del sector público de la correspondiente Comunidad Autónoma o de las Entidades Locales incluidas en su ámbito territorial"
+      }
+     ]
+    },
+    {
+     "text": "**Poderes correctivos** de la autoridad (art. 58.2 RGPD), entre otros: **advertencia** si un tratamiento **previsto** puede infringir el RGPD; **apercibimiento** si ya lo **ha infringido**; órdenes de atender derechos o ajustar el tratamiento; **limitación o prohibición** del tratamiento; y **multas**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_58",
+       "quote": "a) dirigir a todo responsable o encargado del tratamiento una advertencia cuando las operaciones de tratamiento previstas puedan infringir"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_58",
+       "quote": "b) dirigir a todo responsable o encargado del tratamiento un apercibimiento cuando las operaciones de tratamiento hayan infringido"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_58",
+       "quote": "c) ordenar al responsable o encargado del tratamiento que atiendan las solicitudes de ejercicio de los derechos"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_58",
+       "quote": "f) imponer una limitación temporal o definitiva del tratamiento, incluida su prohibición;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_58",
+       "quote": "i) imponer una multa administrativa con arreglo al artículo 83"
+      }
+     ]
+    },
+    {
+     "text": "Los **códigos de conducta** son **vinculantes** para quienes se adhieren y pueden tener mecanismos de **resolución extrajudicial**; los aprueba la **AEPD** o la autoridad autonómica (art. 38 LOPDGDD).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-10",
+       "quote": "serán vinculantes para quienes se adhieran a los mismos."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-10",
+       "quote": "Dichos códigos podrán dotarse de mecanismos de resolución extrajudicial de conflictos."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a3-10",
+       "quote": "Los códigos de conducta serán aprobados por la Agencia Española de Protección de Datos o, en su caso, por la autoridad autonómica de protección de datos competente."
+      }
+     ]
+    },
+    {
+     "text": "**Procedimiento** (arts. 64, 65 y 67): la decisión de **admitir o inadmitir** una reclamación se notifica en **tres meses**; si no, se entiende que **prosigue** la tramitación. Si solo se trata de **no haber atendido un derecho**, se resuelve en **seis meses** desde que se notifica la admisión (si no, se entiende **estimada**); si se trata de una **posible infracción**, dura como máximo **doce meses** desde el acuerdo de inicio y luego **caduca**; el de **apercibimiento**, **seis meses**. Las **actuaciones previas de investigación** no pueden durar más de **dieciocho meses**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-7",
+       "quote": "La decisión sobre la admisión o inadmisión a trámite"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-7",
+       "quote": "se entenderá que prosigue la tramitación de la reclamación"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-7",
+       "quote": "deberá notificarse al reclamante en el plazo de tres meses."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-6",
+       "quote": "a contar desde la fecha en que hubiera sido notificado al reclamante el acuerdo de admisión a trámite"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-6",
+       "quote": "podrá dirigir un apercibimiento"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-6",
+       "quote": "El procedimiento tendrá una duración máxima de seis meses a contar desde la fecha del acuerdo de inicio."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-9",
+       "quote": "no podrán tener una duración superior a dieciocho meses"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-6",
+       "quote": "el plazo para resolver el procedimiento será de seis meses"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-6",
+       "quote": "Transcurrido ese plazo, el interesado podrá considerar estimada su reclamación."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a6-6",
+       "quote": "El procedimiento tendrá una duración máxima de doce meses a contar desde la fecha del acuerdo de inicio. Transcurrido ese plazo se producirá su caducidad"
+      }
+     ]
+    },
+    {
+     "text": "La AEPD ofrece **Facilita RGPD**, una herramienta **gratuita** para empresas y profesionales que hacen **tratamientos de escaso riesgo** (clientes, proveedores, recursos humanos): genera cláusulas informativas, contratos de encargado, el **registro de actividades** y medidas de seguridad mínimas. **No sirve** para tratamientos de **alto riesgo** (datos de salud, tratamientos masivos) y no supone el cumplimiento automático.",
+     "refs": [
+      {
+       "title": "Facilita RGPD · Agencia Española de Protección de Datos",
+       "url": "https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd",
+       "quote": "Herramienta de ayuda para empresas que realicen un tratamiento de datos personales de escaso riesgo para el cumplimiento del Reglamento General de Protección de Datos"
+      },
+      {
+       "title": "Facilita RGPD · Agencia Española de Protección de Datos",
+       "url": "https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd",
+       "quote": "Facilita RGPD es una herramienta fácil y gratuita."
+      },
+      {
+       "title": "Facilita RGPD · Agencia Española de Protección de Datos",
+       "url": "https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd",
+       "quote": "como por ejemplo, datos personales de clientes, proveedores o recursos humanos."
+      },
+      {
+       "title": "Facilita RGPD · Agencia Española de Protección de Datos",
+       "url": "https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd",
+       "quote": "cláusulas informativas que debe incluir en sus formularios de recogida de datos personales, cláusulas contractuales para anexar a los contratos de encargado de tratamiento"
+      },
+      {
+       "title": "Facilita RGPD · Agencia Española de Protección de Datos",
+       "url": "https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd",
+       "quote": "el registro de actividades de tratamiento, y un anexo con medidas de seguridad orientativas consideradas mínimas."
+      },
+      {
+       "title": "Facilita RGPD · Agencia Española de Protección de Datos",
+       "url": "https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd",
+       "quote": "Facilita RGPD no podrá utilizarse para tratamientos que impliquen un alto riesgo para los derechos y libertades de las personas, como datos de salud o tratamientos masivos de datos, entre otros."
+      },
+      {
+       "title": "Facilita RGPD · Agencia Española de Protección de Datos",
+       "url": "https://www.aepd.es/guias-y-herramientas/herramientas/facilita-rgpd",
+       "quote": "La obtención de los documentos no implica el cumplimiento automático del RGPD."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Recursos, responsabilidad y régimen sancionador",
+   "points": [
+    {
+     "text": "El interesado puede **reclamar ante una autoridad de control**, en particular la de su **residencia habitual**, **lugar de trabajo** o lugar de la infracción (art. 77 RGPD); tiene **tutela judicial** contra la autoridad (también si no le informa en **tres meses**, art. 78) y contra el responsable o encargado (art. 79), y puede dar **mandato** a una entidad sin ánimo de lucro (art. 80).",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_77",
+       "quote": "todo interesado tendrá derecho a presentar una reclamación ante una autoridad de control, en particular en el Estado miembro en el que tenga su residencia habitual, lugar de trabajo o lugar de la supuesta infracción"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_78",
+       "quote": "no informe al interesado en el plazo de tres meses sobre el curso o el resultado de la reclamación"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_79",
+       "quote": "todo interesado tendrá derecho a la tutela judicial efectiva cuando considere que sus derechos en virtud del presente Reglamento han sido vulnerados"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_80",
+       "quote": "El interesado tendrá derecho a dar mandato a una entidad, organización o asociación sin ánimo de lucro"
+      }
+     ]
+    },
+    {
+     "text": "**Indemnización** (art. 82): quien sufra daños **materiales o inmateriales** tiene derecho a ser indemnizado por el responsable o el encargado; el **encargado** responde solo si incumple sus obligaciones específicas o las instrucciones; se exime quien demuestre que **no es en modo alguno responsable**.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_82",
+       "quote": "Toda persona que haya sufrido daños y perjuicios materiales o inmateriales como consecuencia de una infracción del presente Reglamento tendrá derecho a recibir del responsable o el encargado del tratamiento una indemnización"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_82",
+       "quote": "Un encargado únicamente responderá de los daños y perjuicios causados por el tratamiento cuando no haya cumplido con las obligaciones del presente Reglamento dirigidas específicamente a los encargados"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_82",
+       "quote": "o haya actuado al margen o en contra de las instrucciones legales del responsable."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_82",
+       "quote": "si demuestra que no es en modo alguno responsable del hecho que haya causado los daños y perjuicios."
+      }
+     ]
+    },
+    {
+     "text": "**Multas del RGPD** (art. 83): **efectivas, proporcionadas y disuasorias**, graduadas según la naturaleza, gravedad y duración, la intencionalidad, la cooperación, las categorías de datos, etc.",
+     "refs": [
+      {
+       "law": "32016R0679",
+       "section": "art_83",
+       "quote": "sean en cada caso individual efectivas, proporcionadas y disuasorias."
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_83",
+       "quote": "a) la naturaleza, gravedad y duración de la infracción"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_83",
+       "quote": "b) la intencionalidad o negligencia en la infracción;"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_83",
+       "quote": "f) el grado de cooperación con la autoridad de control"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_83",
+       "quote": "g) las categorías de los datos de carácter personal afectados por la infracción;"
+      }
+     ],
+     "items": [
+      {
+       "text": "Hasta **10 millones €** o el **2 %** del volumen de negocio anual global (la mayor): obligaciones del responsable y encargado (arts. **8, 11, 25 a 39**, 42 y 43), de los organismos de certificación y de supervisión.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "con multas administrativas de 10 000 000 EUR como máximo o, tratándose de una empresa, de una cuantía equivalente al 2 % como máximo del volumen de negocio total anual global del ejercicio financiero anterior, optándose por la de mayor cuantía:"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "a) las obligaciones del responsable y del encargado a tenor de los artículos 8, 11, 25 a 39, 42 y 43;"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "b) las obligaciones de los organismos de certificación a tenor de los artículos 42 y 43;"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "c) las obligaciones del organismo de supervisión a tenor del artículo 41, apartado 4."
+        }
+       ]
+      },
+      {
+       "text": "Hasta **20 millones €** o el **4 %**: **principios** y consentimiento (arts. 5, 6, 7 y 9), **derechos** de los interesados (arts. 12 a 22), **transferencias internacionales** y el incumplimiento de resoluciones de la autoridad.",
+       "refs": [
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "con multas administrativas de 20 000 000 EUR como máximo o, tratándose de una empresa, de una cuantía equivalente al 4 % como máximo del volumen de negocio total anual global"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "a) los principios básicos para el tratamiento, incluidas las condiciones para el consentimiento a tenor de los artículos 5, 6, 7 y 9;"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "b) los derechos de los interesados a tenor de los artículos 12 a 22;"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "El incumplimiento de las resoluciones de la autoridad de control a tenor del artículo 58, apartado 2, se sancionará"
+        },
+        {
+         "law": "32016R0679",
+         "section": "art_83",
+         "quote": "c) las transferencias de datos personales a un destinatario en un tercer país o una organización internacional a tenor de los artículos 44 a 49;"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Sujetos responsables** en España (art. 70 LOPDGDD): responsables, encargados, representantes de los no establecidos en la UE, entidades de certificación y entidades de supervisión de códigos de conducta (**no** el DPD).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-2",
+       "quote": "a) Los responsables de los tratamientos."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-2",
+       "quote": "b) Los encargados de los tratamientos."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-2",
+       "quote": "c) Los representantes de los responsables o encargados de los tratamientos no establecidos en el territorio de la Unión Europea."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-2",
+       "quote": "d) Las entidades de certificación."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-2",
+       "quote": "e) Las entidades acreditadas de supervisión de los códigos de conducta."
+      }
+     ]
+    },
+    {
+     "text": "**Infracciones y su prescripción** (arts. 72 a 74 LOPDGDD): muy graves y graves son las que suponen una **vulneración sustancial**; leves, las **meramente formales**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-3",
+       "quote": "Constituyen infracciones los actos y conductas a las que se refieren los apartados 4, 5 y 6 del artículo 83 del Reglamento (UE) 2016/679"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Muy graves**, a los **tres años**: entre otras, vulnerar los **principios**, tratar **sin base de licitud**, incumplir los requisitos del **consentimiento**, tratar **categorías especiales** sin amparo, **no informar**, vulnerar la **confidencialidad**, impedir o no atender **reiteradamente** los derechos, **transferencias** sin garantías, no **bloquear**, obstruir la **inspección** y **revertir deliberadamente una anonimización**.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "se consideran muy graves y prescribirán a los tres años las infracciones que supongan una vulneración sustancial de los artículos mencionados en aquel"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "a) El tratamiento de datos personales vulnerando los principios y garantías establecidos en el artículo 5 del Reglamento (UE) 2016/679."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "b) El tratamiento de datos personales sin que concurra alguna de las condiciones de licitud del tratamiento"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "c) El incumplimiento de los requisitos exigidos por el artículo 7 del Reglamento (UE) 2016/679 para la validez del consentimiento."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "e) El tratamiento de datos personales de las categorías a las que se refiere el artículo 9"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "i) La vulneración del deber de confidencialidad establecido en el artículo 5 de esta ley orgánica."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "l) La transferencia internacional de datos personales a un destinatario que se encuentre en un tercer país"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "n) El incumplimiento de la obligación de bloqueo de los datos"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "o) La resistencia u obstrucción del ejercicio de la función inspectora"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "h) La omisión del deber de informar al afectado acerca del tratamiento de sus datos personales"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "k) El impedimento o la obstaculización o la no atención reiterada del ejercicio de los derechos"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-4",
+         "quote": "p) La reversión deliberada de un procedimiento de anonimización a fin de permitir la reidentificación de los afectados."
+        }
+       ]
+      },
+      {
+       "text": "**Graves**, a los **dos años**: entre otras, tratar datos de **menores sin consentimiento** válido, no aplicar la protección **desde el diseño y por defecto** o la **seguridad** adecuada, encargar sin **contrato**, no tener el **registro de actividades**, no **notificar** una violación a la autoridad, no hacer la **EIPD** o no designar **DPD** cuando sea obligatorio.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "se consideran graves y prescribirán a los dos años"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "a) El tratamiento de datos personales de un menor de edad sin recabar su consentimiento"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "d) La falta de adopción de aquellas medidas técnicas y organizativas que resulten apropiadas para aplicar de forma efectiva los principios de protección de datos desde el diseño"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "f) La falta de adopción de aquellas medidas técnicas y organizativas que resulten apropiadas para garantizar un nivel de seguridad adecuado al riesgo"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "k) Encargar el tratamiento de datos a un tercero sin la previa formalización de un contrato"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "t) El tratamiento de datos personales sin haber llevado a cabo la evaluación del impacto"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "n) No disponer del registro de actividades de tratamiento establecido en el artículo 30 del Reglamento (UE) 2016/679."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "r) El incumplimiento del deber de notificación a la autoridad de protección de datos de una violación de seguridad"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-5",
+         "quote": "v) El incumplimiento de la obligación de designar un delegado de protección de datos"
+        }
+       ]
+      },
+      {
+       "text": "**Leves**, **al año**: las restantes **de carácter meramente formal**; entre otras, no dar **toda** la información, no atender (sin reiteración) los derechos, un registro **incompleto** o notificar una violación de forma **incompleta o tardía**.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-6",
+         "quote": "Se consideran leves y prescribirán al año las restantes infracciones de carácter meramente formal"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-6",
+         "quote": "a) El incumplimiento del principio de transparencia de la información o el derecho de información del afectado por no facilitar toda la información"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-6",
+         "quote": "l) Disponer de un Registro de actividades de tratamiento que no incorpore toda la información"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-6",
+         "quote": "c) No atender las solicitudes de ejercicio de los derechos establecidos en los artículos 15 a 22"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a7-6",
+         "quote": "m) La notificación incompleta, tardía o defectuosa a la autoridad de protección de datos"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Prescripción de las sanciones** (art. 78 LOPDGDD): hasta **40.000 €**, **un año**; de **40.001 a 300.000 €**, **dos años**; **más de 300.000 €**, **tres años**. Se cuenta desde que la resolución es **ejecutable** o vence el plazo para recurrirla.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-10",
+       "quote": "a) Las sanciones por importe igual o inferior a 40.000 euros, prescriben en el plazo de un año."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-10",
+       "quote": "b) Las sanciones por importe comprendido entre 40.001 y 300.000 euros prescriben a los dos años."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-10",
+       "quote": "c) Las sanciones por un importe superior a 300.000 euros prescriben a los tres años."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-10",
+       "quote": "comenzará a contarse desde el día siguiente a aquel en que sea ejecutable la resolución por la que se impone la sanción o haya transcurrido el plazo para recurrirla."
+      }
+     ]
+    },
+    {
+     "text": "Para graduar las sanciones, además de los criterios del RGPD, pueden tenerse en cuenta (art. 76.2 LOPDGDD), entre otros: el carácter **continuado**, los **beneficios** obtenidos, la afectación a **menores**, **disponer de un DPD sin estar obligado** y someterse voluntariamente a **resolución alternativa de conflictos**.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-8",
+       "quote": "a) El carácter continuado de la infracción."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-8",
+       "quote": "c) Los beneficios obtenidos como consecuencia de la comisión de la infracción."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-8",
+       "quote": "f) La afectación a los derechos de los menores."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-8",
+       "quote": "g) Disponer, cuando no fuere obligatorio, de un delegado de protección de datos."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-8",
+       "quote": "h) El sometimiento por parte del responsable o encargado, con carácter voluntario, a mecanismos de resolución alternativa de conflictos"
+      }
+     ]
+    },
+    {
+     "text": "Se **publican en el BOE** las sanciones de la AEPD **superiores a un millón de euros** a **personas jurídicas** (art. 76.4). A las entidades del **art. 77.1** (Administraciones, órganos constitucionales y jurisdiccionales, organismos públicos, autoridades independientes, **Banco de España**, **universidades públicas**, fundaciones del sector público, consorcios, **grupos parlamentarios**…) **no se les imponen multas**: la autoridad **declara la infracción** y las medidas para corregirla, puede proponer **actuaciones disciplinarias** y, si las cometieron autoridades o directivos que desatendieron informes técnicos, incluye una **amonestación** publicada en el boletín oficial.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-8",
+       "quote": "cuando la autoridad competente sea la Agencia Española de Protección de Datos, la sanción fuese superior a un millón de euros y el infractor sea una persona jurídica."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "b) Los órganos jurisdiccionales."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "f) El Banco de España."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "i) Las Universidades Públicas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "j) Los consorcios."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "k) Los grupos parlamentarios de las Cortes Generales"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "la autoridad de protección de datos que resulte competente dictará resolución declarando la infracción y estableciendo, en su caso, las medidas que proceda adoptar"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "con excepción de la prevista en el artículo 58.2.i del Reglamento (UE) 2016/679"
+      },
+      {
+       "law": "32016R0679",
+       "section": "art_58",
+       "quote": "i) imponer una multa administrativa con arreglo al artículo 83"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "la autoridad de protección de datos propondrá también la iniciación de actuaciones disciplinarias cuando existan indicios suficientes para ello."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-9",
+       "quote": "se incluirá una amonestación con denominación del cargo responsable y se ordenará la publicación en el Boletín Oficial del Estado o autonómico que corresponda."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Derechos digitales (título X de la LOPDGDD)",
+   "points": [
+    {
+     "text": "Los derechos y libertades de la Constitución y los tratados son **plenamente aplicables en Internet** (art. 79). Derechos generales:",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a7-11",
+       "quote": "Los derechos y libertades consagrados en la Constitución y en los Tratados y Convenios Internacionales en que España sea parte son plenamente aplicables en Internet."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Neutralidad de Internet** (art. 80): oferta transparente **sin discriminación** por motivos técnicos o económicos.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-2",
+         "quote": "Los usuarios tienen derecho a la neutralidad de Internet. Los proveedores de servicios de Internet proporcionarán una oferta transparente de servicios sin discriminación por motivos técnicos o económicos."
+        }
+       ]
+      },
+      {
+       "text": "**Acceso universal** (art. 81): asequible, de calidad y no discriminatorio, superando las brechas de **género** y **generacional** y atendiendo a los **entornos rurales**.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-3",
+         "quote": "Se garantizará un acceso universal, asequible, de calidad y no discriminatorio para toda la población."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-3",
+         "quote": "procurará la superación de la brecha de género"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-3",
+         "quote": "procurará la superación de la brecha generacional"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-3",
+         "quote": "atenderá la realidad específica de los entornos rurales."
+        }
+       ]
+      },
+      {
+       "text": "**Seguridad digital** (art. 82) de las comunicaciones, y **educación digital** (art. 83): el sistema educativo garantiza la inserción en la sociedad digital, y las Administraciones incluyen los derechos digitales y la protección de datos en los **temarios de acceso** a los cuerpos superiores y a los que traten datos personales.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-4",
+         "quote": "Los usuarios tienen derecho a la seguridad de las comunicaciones que transmitan y reciban a través de Internet."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-5",
+         "quote": "El sistema educativo garantizará la plena inserción del alumnado en la sociedad digital"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-5",
+         "quote": "incorporarán a los temarios de las pruebas de acceso a los cuerpos superiores"
+        }
+       ]
+      },
+      {
+       "text": "**Protección de los menores en Internet** (art. 84): si la difusión de su imagen o información en redes puede ser una intromisión ilegítima, interviene el **Ministerio Fiscal**.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-6",
+         "quote": "determinará la intervención del Ministerio Fiscal"
+        }
+       ]
+      },
+      {
+       "text": "**Rectificación en Internet** (art. 85) y **actualización de informaciones** en medios digitales (art. 86): las redes adoptan protocolos para rectificar, y cualquiera puede pedir un **aviso de actualización** junto a noticias que ya no reflejan su situación y le perjudican.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-7",
+         "quote": "adoptarán protocolos adecuados para posibilitar el ejercicio del derecho de rectificación"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-8",
+         "quote": "la inclusión de un aviso de actualización suficientemente visible junto a las noticias que le conciernan"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Derechos en el ámbito laboral** (trabajadores y **empleados públicos**):",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a8-9",
+       "quote": "Los trabajadores y los empleados públicos tendrán derecho a la protección de su intimidad en el uso de los dispositivos digitales puestos a su disposición por su empleador."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Intimidad en el uso de dispositivos digitales** (art. 87): el empleador accede a sus contenidos **solo** para controlar el cumplimiento de las obligaciones y la integridad de los dispositivos, con **criterios de uso** en cuya elaboración participan los representantes de los trabajadores.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-9",
+         "quote": "a los solos efectos de controlar el cumplimiento de las obligaciones laborales o estatutarias y de garantizar la integridad de dichos dispositivos."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-9",
+         "quote": "En su elaboración deberán participar los representantes de los trabajadores."
+        }
+       ]
+      },
+      {
+       "text": "**Desconexión digital** (art. 88): fuera del tiempo de trabajo, para respetar descanso, permisos, vacaciones e intimidad; el empleador elabora una **política interna**, previa audiencia de los representantes, que evite la **fatiga informática**.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-10",
+         "quote": "Los trabajadores y los empleados públicos tendrán derecho a la desconexión digital"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-10",
+         "quote": "fuera del tiempo de trabajo legal o convencionalmente establecido"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-10",
+         "quote": "elaborará una política interna"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-10",
+         "quote": "el respeto de su tiempo de descanso, permisos y vacaciones, así como de su intimidad personal y familiar."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-10",
+         "quote": "previa audiencia de los representantes de los trabajadores"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-10",
+         "quote": "evite el riesgo de fatiga informática"
+        }
+       ]
+      },
+      {
+       "text": "**Videovigilancia y grabación de sonidos** en el trabajo (art. 89): para el control laboral, **informando antes** de forma expresa, clara y concisa (si se capta un **acto ilícito flagrante**, basta el **cartel** del art. 22.4); **nunca** en lugares de **descanso o esparcimiento** (vestuarios, aseos, comedores y análogos); el **sonido**, solo ante **riesgos relevantes** para la seguridad. **Geolocalización** (art. 90): informando antes de su existencia y características.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-11",
+         "quote": "Los empleadores habrán de informar con carácter previo, y de forma expresa, clara y concisa"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-11",
+         "quote": "se entenderá cumplido el deber de informar cuando existiese al menos el dispositivo al que se refiere el artículo 22.4 de esta ley orgánica."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-11",
+         "quote": "En ningún caso se admitirá la instalación de sistemas de grabación de sonidos ni de videovigilancia en lugares destinados al descanso o esparcimiento de los trabajadores o los empleados públicos, tales como vestuarios, aseos, comedores y análogos."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a8-11",
+         "quote": "se admitirá únicamente cuando resulten relevantes los riesgos para la seguridad de las instalaciones, bienes y personas"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-2",
+         "quote": "habrán de informar de forma expresa, clara e inequívoca a los trabajadores o los empleados públicos y, en su caso, a sus representantes, acerca de la existencia y características de estos dispositivos."
+        }
+       ]
+      },
+      {
+       "text": "Los **convenios colectivos** pueden añadir garantías (art. 91).",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-3",
+         "quote": "Los convenios colectivos podrán establecer garantías adicionales"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Datos de menores en Internet** (art. 92): centros educativos y quienes organicen actividades con menores protegen su interés superior; para publicarlos en **redes sociales** necesitan el **consentimiento** del menor o de sus representantes (según el art. 7).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-4",
+       "quote": "Los centros educativos y cualesquiera personas físicas o jurídicas que desarrollen actividades en las que participen menores de edad"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-4",
+       "quote": "deberán contar con el consentimiento del menor o sus representantes legales"
+      }
+     ]
+    },
+    {
+     "text": "**Derecho al olvido en búsquedas** (art. 93): que los **buscadores** eliminen de los resultados por su **nombre** los enlaces con información **inadecuada, inexacta, no pertinente, no actualizada o excesiva**, aunque sea lícito conservarla en la web de origen; la información sigue accesible con **otros criterios** de búsqueda.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-5",
+       "quote": "Toda persona tiene derecho a que los motores de búsqueda en Internet eliminen de las listas de resultados que se obtuvieran tras una búsqueda efectuada a partir de su nombre"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-5",
+       "quote": "cuando fuesen inadecuados, inexactos, no pertinentes, no actualizados o excesivos"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-5",
+       "quote": "Este derecho subsistirá aun cuando fuera lícita la conservación de la información publicada en el sitio web"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-5",
+       "quote": "no impedirá el acceso a la información publicada en el sitio web a través de la utilización de otros criterios de búsqueda distintos del nombre"
+      }
+     ]
+    },
+    {
+     "text": "**Derecho al olvido en redes sociales** (art. 94): supresión, **a su simple solicitud**, de los datos que **él mismo** facilitó; de los facilitados por **terceros**, si son inadecuados, inexactos, excesivos, etc. (salvo los de actividades **personales o domésticas**). Si se facilitaron cuando era **menor**, se suprimen **sin dilación** a su simple solicitud.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-6",
+       "quote": "Toda persona tiene derecho a que sean suprimidos, a su simple solicitud, los datos personales que hubiese facilitado para su publicación por servicios de redes sociales"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-6",
+       "quote": "Se exceptúan de lo dispuesto en este apartado los datos que hubiesen sido facilitados por personas físicas en el ejercicio de actividades personales o domésticas."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-6",
+       "quote": "durante su minoría de edad, el prestador deberá proceder sin dilación a su supresión por su simple solicitud"
+      }
+     ]
+    },
+    {
+     "text": "**Portabilidad en redes sociales** (art. 95): recibir y transmitir los **contenidos** facilitados, o que el prestador los envíe a otro, si es técnicamente posible.",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-7",
+       "quote": "tendrán derecho a recibir y transmitir los contenidos que hubieran facilitado a los prestadores de dichos servicios"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-7",
+       "quote": "así como a que los prestadores los transmitan directamente a otro prestador designado por el usuario, siempre que sea técnicamente posible."
+      }
+     ]
+    },
+    {
+     "text": "**Testamento digital** (art. 96): el **acceso a contenidos** gestionados por prestadores de servicios de la sociedad de la información **sobre personas fallecidas**. Pueden acceder:",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-8",
+       "quote": "El acceso a contenidos gestionados por prestadores de servicios de la sociedad de la información sobre personas fallecidas se regirá por las siguientes reglas:"
+      }
+     ],
+     "items": [
+      {
+       "text": "Las personas vinculadas por razones **familiares o de hecho** y los **herederos**, que pueden además dar **instrucciones** sobre su utilización, destino o supresión, **salvo** que el fallecido lo **prohibiera** o lo diga una ley (los herederos conservan el acceso a lo que forme parte del **caudal relicto**).",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "Las personas vinculadas al fallecido por razones familiares o de hecho, así como sus herederos podrán dirigirse a los prestadores de servicios de la sociedad de la información"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "impartirles las instrucciones que estimen oportunas sobre su utilización, destino o supresión."
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "Dicha prohibición no afectará al derecho de los herederos a acceder a los contenidos que pudiesen formar parte del caudal relicto."
+        }
+       ]
+      },
+      {
+       "text": "El **albacea** testamentario y la persona o institución **designada** por el fallecido, para **cumplir sus instrucciones**.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "El albacea testamentario así como aquella persona o institución a la que el fallecido hubiese designado expresamente para ello"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "con vistas a dar cumplimiento a tales instrucciones."
+        }
+       ]
+      },
+      {
+       "text": "Si el fallecido era **menor de edad**, también sus **representantes legales** o el **Ministerio Fiscal** (de oficio o a instancia de parte); si tenía **discapacidad**, también quienes ejercían sus **funciones de apoyo**.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "c) En caso de personas fallecidas menores de edad, estas facultades podrán ejercerse también por sus representantes legales o, en el marco de sus competencias, por el Ministerio Fiscal"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "por quienes hubiesen sido designados para el ejercicio de funciones de apoyo"
+        }
+       ]
+      },
+      {
+       "text": "Deciden sobre **mantener o eliminar los perfiles** en redes, salvo que el fallecido decidiera otra cosa; pedida la eliminación, el servicio la hace **sin dilación**.",
+       "refs": [
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "podrán decidir acerca del mantenimiento o eliminación de los perfiles personales de personas fallecidas en redes sociales"
+        },
+        {
+         "law": "BOE-A-2018-16673",
+         "section": "a9-8",
+         "quote": "deberá proceder sin dilación a la misma."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "El Gobierno elaborará un **Plan de Acceso a Internet** (con un **bono social** de acceso), un **Plan de Actuación** para el uso responsable de los menores y un **informe anual** al Congreso (art. 97).",
+     "refs": [
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-9",
+       "quote": "elaborará un Plan de Acceso a Internet"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-9",
+       "quote": "un bono social de acceso a Internet"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-9",
+       "quote": "se aprobará un Plan de Actuación dirigido a promover las acciones de formación, difusión y concienciación necesarias para lograr que los menores de edad hagan un uso equilibrado y responsable"
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a9-9",
+       "quote": "El Gobierno presentará un informe anual ante la comisión parlamentaria correspondiente del Congreso de los Diputados"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

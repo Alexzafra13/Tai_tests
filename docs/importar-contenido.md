@@ -203,9 +203,9 @@ o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita.
 Salen publicados (ver CLAUDE.md). Los avisos de los usuarios llegan a
 Revisión.
 
-Hecho: temas 1 a 6 del bloque I (Constitución, Gobierno, empleo público,
-igualdad y dependencia, sociedad de la información, firma electrónica, DNI
-y Agenda Digital).
+Hecho: temas 1 a 7 del bloque I (Constitución, Gobierno, empleo público,
+igualdad y dependencia, sociedad de la información, firma electrónica, DNI,
+Agenda Digital y protección de datos).
 
 ## Comprobar
 
