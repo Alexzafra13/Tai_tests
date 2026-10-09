@@ -1,0 +1,739 @@
+{
+ "topic": "B4-T05",
+ "sections": [
+  {
+   "title": "Conceptos de seguridad",
+   "points": [
+    {
+     "text": "Dimensiones de la seguridad (ENS): **confidencialidad** (la información no se revela a quien no está autorizado), **integridad** (no se ha alterado de forma no autorizada), **disponibilidad** (los autorizados acceden cuando lo necesitan), **autenticidad** (la entidad es quien dice ser) y **trazabilidad** (las actuaciones se pueden imputar a quien las hizo).",
+     "refs": [
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Propiedad o característica consistente en que la información ni se pone a disposición, ni se revela a individuos, entidades o procesos no autorizados."
+      },
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Propiedad o característica consistente en que el activo de información no ha sido alterado de manera no autorizada."
+      },
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Propiedad o característica de los activos consistente en que las entidades o procesos autorizados tienen acceso a los mismos cuando lo requieren."
+      },
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Propiedad o característica consistente en que una entidad es quien dice ser o bien que garantiza la fuente de la que proceden los datos."
+      },
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Propiedad o característica consistente en que las actuaciones de una entidad pueden ser imputadas exclusivamente a dicha entidad."
+      }
+     ]
+    },
+    {
+     "text": "Ejemplo: una base de datos **corrupta** e **inaccesible** afecta a la **integridad** (información alterada o destruida) y a la **disponibilidad** (no hay acceso).",
+     "refs": [
+      {
+       "title": "NIST CSRC Glossary · integrity",
+       "url": "https://csrc.nist.gov/glossary/term/integrity",
+       "quote": "Guarding against improper information modification or destruction"
+      },
+      {
+       "title": "NIST CSRC Glossary · availability",
+       "url": "https://csrc.nist.gov/glossary/term/availability",
+       "quote": "Ensuring timely and reliable access to and use of information."
+      }
+     ]
+    },
+    {
+     "text": "**AAA**: Autenticación, Autorización y Contabilización (*Accounting*).",
+     "refs": [
+      {
+       "title": "NIST CSRC Glossary · Authentication, Authorization, and Accounting",
+       "url": "https://csrc.nist.gov/glossary/term/authentication_authorization_and_accounting",
+       "quote": "Authentication, Authorization, and Accounting"
+      }
+     ]
+    },
+    {
+     "text": "**Autenticación multifactor (MFA)**: combina factores de **distintas categorías** (algo que se sabe, algo que se tiene, algo que se es). Dos rasgos **biométricos** (iris y huella) son de la **misma** categoría —«algo que se es»—, así que no forman MFA.",
+     "refs": [
+      {
+       "title": "CCN · Recomendaciones de seguridad para autenticación multifactor (Píldora PYTEC)",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/353-pildorapytec-oct2020-autenticacion-multifactor",
+       "quote": "Se trata de autenticar a un usuario utilizando una combinación de dos (2) factores pertenecientes a distintas categorías."
+      },
+      {
+       "title": "CCN · Recomendaciones de seguridad para autenticación multifactor (Píldora PYTEC)",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/353-pildorapytec-oct2020-autenticacion-multifactor",
+       "quote": "cualquiera de las 3 categorías: algo que se sabe, algo que se tiene o algo que se es."
+      },
+      {
+       "title": "CCN · Recomendaciones de seguridad para autenticación multifactor (Píldora PYTEC)",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/353-pildorapytec-oct2020-autenticacion-multifactor",
+       "quote": "Algo que se es. La evidencia es algo que solo el solicitante puede ser. En general, se trata de alguna característica biométrica, ya que se trata de información inherente al usuario."
+      }
+     ]
+    },
+    {
+     "text": "**Contraseñas** (CCN-STIC-821): contraseñas largas concatenando varias palabras (*passphrases*); también valen **frases cortas sin sentido**.",
+     "refs": [
+      {
+       "title": "CCN-STIC-821 Apéndice V · Normas de creación y uso de contraseñas",
+       "url": "https://www.ccn-cert.cni.es/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/534-ccn-stic-821-normas-de-seguridad-en-el-ens-anexo-v/file.html",
+       "quote": "Utilizar la concatenación de varias palabras para construir contraseñas largas (passphrases) cuya deducción, automática o no, no sea simple."
+      },
+      {
+       "title": "CCN-STIC-821 Apéndice V · Normas de creación y uso de contraseñas",
+       "url": "https://www.ccn-cert.cni.es/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/534-ccn-stic-821-normas-de-seguridad-en-el-ens-anexo-v/file.html",
+       "quote": "También pueden utilizarse frases cortas sin sentido"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Amenazas y ataques",
+   "points": [
+    {
+     "text": "**Ingeniería social**: técnicas basadas en **engaños** para dirigir la conducta de una persona u obtener información sensible. Variantes:",
+     "refs": [
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Son técnicas basadas en engaños que se emplean para dirigir la conducta de una persona u obtener información sensible."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Phishing**: suplanta la identidad digital de una entidad de confianza para obtener información personal o confidencial.",
+       "refs": [
+        {
+         "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+         "quote": "Método de ataque que busca obtener información personal o confidencial de los usuarios por medio del engaño o la picaresca, recurriendo a la suplantación de la identidad digital de una entidad de confianza en el ciberespacio."
+        }
+       ]
+      },
+      {
+       "text": "**Vishing**: ingeniería social por **voz** (llamadas telefónicas).",
+       "refs": [
+        {
+         "title": "CISA · Avoiding Social Engineering and Phishing Attacks",
+         "url": "https://www.cisa.gov/news-events/news/avoiding-social-engineering-and-phishing-attacks",
+         "quote": "Vishing is the social engineering approach that leverages voice communication."
+        }
+       ]
+      },
+      {
+       "text": "**Tailgating o piggybacking**: una persona no autorizada **entra detrás de una autorizada** en una zona de acceso controlado (se evita con esclusas de doble puerta).",
+       "refs": [
+        {
+         "title": "NIST SP 800-53 Rev. 5 · Security and Privacy Controls",
+         "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf",
+         "quote": "Vestibules are designed to prevent unauthorized individuals from following authorized individuals into facilities with controlled access. This activity, also known as piggybacking or tailgating, results in unauthorized access to the facility."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Sniffing**: programas que **monitorizan y capturan** el tráfico que circula por la red.",
+     "refs": [
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Programas que monitorizan la información que circula por la red con el objeto de capturar información."
+      },
+      {
+       "title": "NIST CSRC Glossary · packet sniffer",
+       "url": "https://csrc.nist.gov/glossary/term/packet_sniffer",
+       "quote": "Software that observes and records network traffic."
+      }
+     ]
+    },
+    {
+     "text": "**Spoofing (suplantación)**: el atacante usa una **dirección falseada** para simular la identidad de otra máquina.",
+     "refs": [
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Técnica basada en la creación de tramas TCP/IP( Transmission Control Protocol / Internet Protocol) utilizando una dirección IP falseada; desde su equipo, un atacante simula la identidad de otra máquina de la red"
+      }
+     ]
+    },
+    {
+     "text": "**DDoS**: denegación de servicio desde **muchos puntos de ataque a la vez** (no desde uno solo).",
+     "refs": [
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Ataque de denegación de servicio que se realiza utilizando múltiples puntos de ataque simultáneamente."
+      },
+      {
+       "title": "NIST CSRC Glossary · distributed denial of service",
+       "url": "https://csrc.nist.gov/glossary/term/distributed_denial_of_service",
+       "quote": "A denial of service technique that uses numerous hosts to perform the attack."
+      }
+     ]
+    },
+    {
+     "text": "**Escaneo de puertos**: averiguar en remoto qué puertos de un sistema están **abiertos** y qué **servicios** ofrece.",
+     "refs": [
+      {
+       "title": "NIST CSRC Glossary · port scanning",
+       "url": "https://csrc.nist.gov/glossary/term/port_scanning",
+       "quote": "Using a program to remotely determine which ports on a system are open"
+      },
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Herramienta de seguridad cuyo objetivo es la detección de los sistemas conectados a la red, así como los servicios que estos puedan estar prestando."
+      }
+     ]
+    },
+    {
+     "text": "**Ransomware**: código dañino que **cifra los datos** de la víctima y **exige un pago** por la clave. **Ryuk** es un ransomware (desplegado a menudo a través del troyano TrickBot).",
+     "refs": [
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "el atacante cifra los datos de la víctima y exige un pago por la clave de descifrado."
+      },
+      {
+       "title": "CISA · AA20-302A Ransomware Activity Targeting the Healthcare and Public Health Sector",
+       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-302a",
+       "quote": "Ryuk first appeared in August 2018 as a derivative of Hermes 2.1 ransomware"
+      },
+      {
+       "title": "CISA · AA20-302A Ransomware Activity Targeting the Healthcare and Public Health Sector",
+       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-302a",
+       "quote": "Typically Ryuk has been deployed as a payload from banking Trojans such as TrickBot."
+      }
+     ]
+    },
+    {
+     "text": "**APT** (amenaza persistente avanzada): ataque selectivo de **ciberespionaje o cibersabotaje** bajo el auspicio o la dirección de un **país**, por razones que van más allá de las financieras o de protesta política.",
+     "refs": [
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Un ataque selectivo de ciberespionaje o cibersabotaje, llevado a cabo bajo el auspicio o la dirección de un país, por razones que van más allá de las meramente financieras/delictivas o de protesta política."
+      }
+     ]
+    },
+    {
+     "text": "**KRACK** (*Key Reinstallation Attack*): ataca el **handshake de 4 vías** de WPA2; engaña a la víctima para **reinstalar una clave ya en uso**, lo que reinicia el **nonce** y hace que se reutilice con la misma clave. Afecta a **WPA1 y WPA2**.",
+     "refs": [
+      {
+       "title": "KRACK Attacks: Breaking WPA2",
+       "url": "https://www.krackattacks.com/",
+       "quote": "All our attacks against WPA2 use a novel technique called a key reinstallation attack (KRACK):"
+      },
+      {
+       "title": "KRACK Attacks: Breaking WPA2",
+       "url": "https://www.krackattacks.com/",
+       "quote": "Our main attack is against the 4-way handshake of the WPA2 protocol."
+      },
+      {
+       "title": "KRACK Attacks: Breaking WPA2",
+       "url": "https://www.krackattacks.com/",
+       "quote": "As a result, the same encryption key is used with nonce values that have already been used in the past"
+      },
+      {
+       "title": "KRACK Attacks: Breaking WPA2",
+       "url": "https://www.krackattacks.com/",
+       "quote": "In a key reinstallation attack, the adversary tricks a victim into reinstalling an already-in-use key."
+      },
+      {
+       "title": "KRACK Attacks: Breaking WPA2",
+       "url": "https://www.krackattacks.com/",
+       "quote": "When the victim reinstalls the key, associated parameters such as the incremental transmit packet number (i.e. nonce) and receive packet number (i.e. replay counter) are reset to their initial value."
+      },
+      {
+       "title": "KRACK Attacks: Breaking WPA2",
+       "url": "https://www.krackattacks.com/",
+       "quote": "The attack works against both WPA1 and WPA2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Técnicas criptográficas y protocolos seguros",
+   "points": [
+    {
+     "text": "**Asimétricos (clave pública)**: RSA, ElGamal, DSA, ECDSA… **ECDSA** es un algoritmo de **firma** con curvas elípticas. **GOST 28147-89** es, en cambio, un cifrado **simétrico** por bloques (estándar ruso, clave secreta de 256 bits).",
+     "refs": [
+      {
+       "title": "RFC 4880 · OpenPGP Message Format",
+       "url": "https://www.rfc-editor.org/rfc/rfc4880.txt",
+       "quote": "1 - RSA (Encrypt or Sign) [HAC] 2 - RSA Encrypt-Only [HAC] 3 - RSA Sign-Only [HAC] 16 - Elgamal (Encrypt-Only) [ELGAMAL] [HAC] 17 - DSA (Digital Signature Algorithm) [FIPS186] [HAC]"
+      },
+      {
+       "title": "NIST CSRC Glossary · RSA",
+       "url": "https://csrc.nist.gov/glossary/term/rsa",
+       "quote": "Algorithm developed by Rivest, Shamir and Adelman"
+      },
+      {
+       "title": "NIST CSRC Glossary · Elliptic Curve Digital Signature Algorithm",
+       "url": "https://csrc.nist.gov/glossary/term/elliptic_curve_digital_signature_algorithm",
+       "quote": "Elliptic Curve Digital Signature Algorithm specified in ANSI X9.62 and approved in FIPS 186."
+      },
+      {
+       "title": "RFC 5830 · GOST 28147-89",
+       "url": "https://www.rfc-editor.org/rfc/rfc5830.txt",
+       "quote": "Russian Federal standard for electronic encryption, decryption, and message authentication algorithms (GOST 28147-89)"
+      },
+      {
+       "title": "RFC 5830 · GOST 28147-89",
+       "url": "https://www.rfc-editor.org/rfc/rfc5830.txt",
+       "quote": "The same 256-bit key that was used for encryption is loaded into the KDS, the encrypted data to be deciphered is divided into 64-bit blocks."
+      },
+      {
+       "title": "RFC 5830 · GOST 28147-89",
+       "url": "https://www.rfc-editor.org/rfc/rfc5830.txt",
+       "quote": "Key: a defined secret state of some parameters of a cryptographic"
+      }
+     ]
+    },
+    {
+     "text": "Una **función hash** da una salida de longitud fija; las aprobadas (FIPS 180 y 202) se diseñan para ser **resistentes a colisiones**: cualquier cambio en el fichero cambia el resumen. Por eso el hash publicado junto a una descarga sirve para comprobar su **integridad**.",
+     "refs": [
+      {
+       "title": "NIST CSRC Glossary · hash function",
+       "url": "https://csrc.nist.gov/glossary/term/hash_function",
+       "quote": "A function on bit strings in which the length of the output is fixed."
+      },
+      {
+       "title": "NIST CSRC Glossary · hash function",
+       "url": "https://csrc.nist.gov/glossary/term/hash_function",
+       "quote": "Approved hash functions (such as those specified in FIPS 180 and FIPS 202) are designed to satisfy the following properties"
+      },
+      {
+       "title": "NIST CSRC Glossary · hash function",
+       "url": "https://csrc.nist.gov/glossary/term/hash_function",
+       "quote": "(Collision-resistant) It is computationally infeasible to find any two distinct inputs that map to the same output."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · ¿Qué es la firma electrónica?",
+       "url": "https://firmaelectronica.gob.es/ciudadanos/cosas-deberias-saber/firma-electronica",
+       "quote": "Este resumen es único y cualquier modificación del documento implica también una modificación del resumen."
+      }
+     ]
+    },
+    {
+     "text": "CCN-STIC-807: en SSH solo se autorizan métodos de intercambio de claves (*Key Exchange*) con una fortaleza de **al menos 112 bits**.",
+     "refs": [
+      {
+       "title": "CCN-STIC-807 · Criptología de empleo en el ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/513-ccn-stic-807-criptologia-de-empleo-en-el-ens/file?format=html",
+       "quote": "Solo se autorizan los métodos de Key Exchange que utilicen mecanismos de acuerdo de clave de los autorizados en el apartado 3.5, y que proporcionen una fortaleza de seguridad de, al menos, 112 bits."
+      }
+     ]
+    },
+    {
+     "text": "**SFTP** es el protocolo de transferencia de ficheros de **SSH** (puerto **22**), que da transferencia de ficheros y acceso al sistema de ficheros por un único flujo seguro. **FTPS** es FTP protegido con **TLS**: la sesión va por el puerto de control normal y el cliente decide si protege también las conexiones de datos. Autenticación: SSH exige soportar **clave pública** y admite contraseña; en FTPS se envía USER/PASS y puede usarse **certificado de cliente**. Así que no es cierto que SFTP use solo certificado y FTPS solo usuario y contraseña.",
+     "refs": [
+      {
+       "title": "IETF · SSH File Transfer Protocol (borrador draft-ietf-secsh-filexfer-13, 2006)",
+       "url": "https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13",
+       "quote": "The SSH File Transfer Protocol provides secure file transfer functionality over any reliable, bidirectional octect stream. It is the standard file transfer protocol for use with the SSH2 protocol."
+      },
+      {
+       "title": "IETF · SSH File Transfer Protocol (borrador draft-ietf-secsh-filexfer-13, 2006)",
+       "url": "https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13",
+       "quote": "This protocol provides secure file transfer (and more generally file system access)"
+      },
+      {
+       "title": "RFC 4253 · The SSH Transport Layer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc4253.txt",
+       "quote": "When used over TCP/IP, the server normally listens for connections on port 22."
+      },
+      {
+       "title": "RFC 4217 · Securing FTP with TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc4217.txt",
+       "quote": "This document describes a mechanism that can be used by FTP clients and servers to implement security and authentication using the TLS protocol"
+      },
+      {
+       "title": "RFC 4217 · Securing FTP with TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc4217.txt",
+       "quote": "an FTP session is established on the normal control port. A client requests TLS with the AUTH command and then decides if it wishes to secure the data connections by use of the PBSZ and PROT commands."
+      },
+      {
+       "title": "RFC 4252 · The SSH Authentication Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc4252.txt",
+       "quote": "\"publickey\" REQUIRED \"password\" OPTIONAL"
+      },
+      {
+       "title": "RFC 4217 · Securing FTP with TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc4217.txt",
+       "quote": "Although the TLS negotiation may be providing authentication information, the USER command MUST still be issued by the client."
+      },
+      {
+       "title": "RFC 4217 · Securing FTP with TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc4217.txt",
+       "quote": "15.1.2. Client Certificates"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Firma digital",
+   "points": [
+    {
+     "text": "Proceso: la aplicación hace un **resumen (hash)** del documento, lo **cifra con la clave privada** del firmante y crea otro documento con ese resumen cifrado: **la firma**. Se cifra el resumen, no el documento: la firma aporta **identificación del firmante, integridad y no repudio**, no confidencialidad. Lo que cifra una clave solo lo descifra la otra.",
+     "refs": [
+      {
+       "title": "Firma Electrónica (Gobierno de España) · ¿Qué es la firma electrónica?",
+       "url": "https://firmaelectronica.gob.es/ciudadanos/cosas-deberias-saber/firma-electronica",
+       "quote": "La aplicación o dispositivo digital utilizados para la firma realiza un resumen del documento."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · ¿Qué es la firma electrónica?",
+       "url": "https://firmaelectronica.gob.es/ciudadanos/cosas-deberias-saber/firma-electronica",
+       "quote": "La aplicación utiliza la clave privada para codificar el resumen."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · ¿Qué es la firma electrónica?",
+       "url": "https://firmaelectronica.gob.es/ciudadanos/cosas-deberias-saber/firma-electronica",
+       "quote": "La aplicación crea otro documento electrónico que contiene ese resumen codificado. Este nuevo documento es la firma electrónica."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · ¿Qué es la firma electrónica?",
+       "url": "https://firmaelectronica.gob.es/ciudadanos/cosas-deberias-saber/firma-electronica",
+       "quote": "Aporta tres características en la comunicación por Internet: identificación del firmante, integridad de los datos y no repudio."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Certificados electrónicos",
+       "url": "https://firmaelectronica.gob.es/ciudadanos/cosas-deberias-saber/certificados-electronicos",
+       "quote": "Lo que cifra o codifica una clave sólo lo puede descifrar o decodificar la otra."
+      }
+     ]
+    },
+    {
+     "text": "Formatos:",
+     "refs": [
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "Estructura de la firma: CAdES, XAdES, PAdES, OOXML, ODF…"
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "CAdES (CMS Avanzado) XAdES (XML Avanzado) PAdES (PDF Avanzado)"
+      }
+     ],
+     "items": [
+      {
+       "text": "**CAdES** (CMS avanzado): binario; apropiado para **ficheros grandes**, sobre todo si la firma incluye el documento, porque optimiza el espacio.",
+       "refs": [
+        {
+         "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+         "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+         "quote": "Es apropiado para firmar ficheros grandes, especialmente si la firma contiene el documento original porque optimiza el espacio de la información. Tras firmar, no podrás ver la información firmada, porque la información se guarda de forma binaria."
+        }
+       ]
+      },
+      {
+       "text": "**XAdES** (XML avanzado): el resultado es un **XML**, más grande que CAdES, por lo que no es adecuado para ficheros muy grandes. Firmas **despegadas (detached), envolventes (enveloping) y envueltas (enveloped)** según dónde quede el documento.",
+       "refs": [
+        {
+         "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+         "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+         "quote": "El resultado es un fichero de texto XML, un formato de texto muy similar al HTML que utiliza etiquetas. Los documentos obtenidos suelen ser más grandes que en el caso de CAdES, por eso no es adecuado cuando el fichero original es muy grande."
+        },
+        {
+         "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+         "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+         "quote": "Hablamos de firmas despegadas (detached), envolventes (enveloping) y envueltas (enveloped) según en qué sitio del propio fichero de firma se guarde el documento original."
+        }
+       ]
+      },
+      {
+       "text": "**PAdES** (PDF avanzado): el más adecuado cuando el original es un **PDF**. Los de **Microsoft Office** y **OpenOffice** son **OOXML** y **ODF**.",
+       "refs": [
+        {
+         "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+         "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+         "quote": "Este es el formato más adecuado cuando el documento original es un pdf."
+        },
+        {
+         "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+         "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+         "quote": "Son los formatos de firma que utilizan Microsoft Office y Open Office, respectivamente."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Firmas múltiples: **cofirma** (todos al mismo nivel, el orden no importa) y **contrafirma** (en cascada: cada firma refrenda la anterior).",
+     "refs": [
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "Co-firma o firma en línea. Es la firma múltiple en la que todos los firmantes están al mismo nivel y en la que no importa el orden en el que se firma."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Formatos de firma",
+       "url": "https://firmaelectronica.gob.es/empresas/cosas-deberias-saber/formatos-firma",
+       "quote": "Contra-firma o firma en cascada. Firma múltiple en la que el orden en el que se firma es importante, ya que cada firma debe refrendar o certificar la firma del firmante anterior."
+      }
+     ]
+    },
+    {
+     "text": "**AutoFirma** elige el formato más apropiado al documento. En la versión **1.8.2**, el **algoritmo de huella** se elige entre **SHA1, SHA512, SHA384 y SHA256**.",
+     "refs": [
+      {
+       "title": "Suite Cliente de @firma · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/clienteafirma",
+       "quote": "Autoselecciona el formato de firma más apropiado al documento a firmar"
+      },
+      {
+       "title": "Código fuente de AutoFirma 1.8.2 (textos) · Centro de Transferencia de Tecnología",
+       "url": "https://github.com/ctt-gob-es/clienteafirma/blob/v1.8.2/afirma-simple/src/main/resources/properties/simpleafirmamessages.properties",
+       "quote": "PreferencesPanel.18=Algoritmo de huella para la firma:"
+      },
+      {
+       "title": "Código fuente de AutoFirma 1.8.2 · Centro de Transferencia de Tecnología",
+       "url": "https://github.com/ctt-gob-es/clienteafirma/blob/v1.8.2/afirma-simple/src/main/java/es/gob/afirma/standalone/ui/preferences/PreferencesPanelGeneral.java",
+       "quote": "\"SHA1\", //$NON-NLS-1$ \"SHA512\", //$NON-NLS-1$ \"SHA384\", //$NON-NLS-1$ \"SHA256\" //$NON-NLS-1$"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Herramientas del CCN-CERT",
+   "points": [
+    {
+     "text": "**ELENA**: simulador de técnicas de **cibervigilancia**.",
+     "refs": [
+      {
+       "title": "CCN-CERT · ELENA",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad/elena.html",
+       "quote": "ELENA, Simulador de Técnicas de Cibervigilancia"
+      }
+     ]
+    },
+    {
+     "text": "**ADA**: plataforma de **análisis avanzado de malware**. Integra el análisis estático de **MARIA** (multiantivirus: análisis estático de código dañino con varios motores, para Windows y Linux), que desde julio de 2022 solo es accesible desde ADA.",
+     "refs": [
+      {
+       "title": "CCN-CERT · ADA",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad/ada.html",
+       "quote": "ADA es una plataforma de análisis avanzado de malware"
+      },
+      {
+       "title": "CCN-CERT BP/01 · Principios y recomendaciones básicas en ciberseguridad",
+       "url": "https://www.ccn-cert.cni.es/es/informes/informes-de-buenas-practicas-bp/2473-ccn-cert-bp-01-principios-y-recomendaciones-basicas-en-ciberseguridad/file.html",
+       "quote": "la plataforma multiantivirus MARIA para el análisis estático de código dañino a través de múltiples motores antivirus y antimalware para plataformas Windows y Linux"
+      },
+      {
+       "title": "CCN · El CCN-CERT integra las capacidades de la solución MARÍA en ADA",
+       "url": "https://www.ccn.cni.es/index.php/es/actualidad-ccn/920-el-ccn-cert-integra-las-capacidades-de-la-solucion-maria-en-ada",
+       "quote": "Publicado: 01 Julio 2022"
+      },
+      {
+       "title": "CCN · El CCN-CERT integra las capacidades de la solución MARÍA en ADA",
+       "url": "https://www.ccn.cni.es/index.php/es/actualidad-ccn/920-el-ccn-cert-integra-las-capacidades-de-la-solucion-maria-en-ada",
+       "quote": "desde hoy, la solución MARÍA solo es accesible desde ADA"
+      }
+     ]
+    },
+    {
+     "text": "**LUCIA**: herramienta de **gestión de ciberincidentes** (sistema de tickets) para las entidades del ámbito del **ENS**.",
+     "refs": [
+      {
+       "title": "CCN-CERT · LUCIA",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad/lucia.html",
+       "quote": "es una herramienta desarrollada por el CCN-CERT para la Gestión de Ciberincidentes en las entidades del ámbito de aplicación del Esquema Nacional de Seguridad."
+      },
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "LUCIA Sistemas de Gestión Federada de Tickets"
+      }
+     ]
+    },
+    {
+     "text": "**CLAUDIA**: detección de **malware complejo y movimiento lateral** relacionado con **APT** en el puesto de usuario.",
+     "refs": [
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "CLAUDIA Herramienta para la detección de amenazas complejas en el puesto de usuario"
+      },
+      {
+       "title": "CCN-CERT · CLAUDIA",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad/claudia.html",
+       "quote": "siendo su objetivo principal la detección de malware complejo y movimiento lateral relacionado con APT."
+      }
+     ]
+    },
+    {
+     "text": "Otras herramientas del CCN-CERT: **CLARA** (auditoría de cumplimiento ENS/STIC en Windows), **GLORIA** (gestor de logs), **MÓNICA** (gestión de eventos e información de seguridad), **PILAR** (análisis y gestión de riesgos), **CARMEN** (defensa ante APT), **INES** (informe del estado de seguridad en el ENS).",
+     "refs": [
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "CLARA Auditoría de Cumplimiento ENS/STIC en Sistemas Windows"
+      },
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "GLORIA Gestor de logs para responder ante incidentes y amenazas"
+      },
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "MÓNICA Gestión de eventos e información de seguridad"
+      },
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "PILAR Análisis y Gestión de Riesgos"
+      },
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "CARMEN Defensa de ataques avanzados/APT"
+      },
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "INES Informe de Estado de Seguridad en el ENS"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gestión de incidencias",
+   "points": [
+    {
+     "text": "**ITIL** es el marco de **buenas prácticas** de referencia para la gestión de servicios de TI.",
+     "refs": [
+      {
+       "title": "PeopleCert · ITIL framework",
+       "url": "https://www.peoplecert.org/Frameworks-Professionals/ITIL-framework",
+       "quote": "ITIL is the global best practice framework for digital product and service management"
+      }
+     ]
+    },
+    {
+     "text": "**osTicket** es un sistema de tickets de soporte **de código abierto**.",
+     "refs": [
+      {
+       "title": "osTicket",
+       "url": "https://osticket.com/",
+       "quote": "osTicket is a widely used and trusted open source support ticketing system."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Infraestructura física de un CPD",
+   "points": [
+    {
+     "text": "**ANSI/TIA-942** clasifica los CPD en **cuatro niveles**, de menor a mayor redundancia y protección: Rated-1 (básico), Rated-2 (componentes redundantes), Rated-3 (mantenible en concurrencia) y Rated-4 (**tolerante a fallos**).",
+     "refs": [
+      {
+       "title": "TIA · TIA-942 Certifications & Ratings",
+       "url": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/",
+       "quote": "The ANSI/TIA-942 standard describes the following four rating levels in which data centers can be classified."
+      },
+      {
+       "title": "TIA · TIA-942 Certifications & Ratings",
+       "url": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/",
+       "quote": "Rated-1: Basic Site Infrastructure"
+      },
+      {
+       "title": "TIA · TIA-942 Certifications & Ratings",
+       "url": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/",
+       "quote": "It has limited protection against physical events."
+      },
+      {
+       "title": "TIA · TIA-942 Certifications & Ratings",
+       "url": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/",
+       "quote": "It has improved protection against physical events."
+      },
+      {
+       "title": "TIA · TIA-942 Certifications & Ratings",
+       "url": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/",
+       "quote": "Rated-2: Redundant Capacity Component Site Infrastructure"
+      },
+      {
+       "title": "TIA · TIA-942 Certifications & Ratings",
+       "url": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/",
+       "quote": "Rated-3: Concurrently Maintainable Site Infrastructure"
+      },
+      {
+       "title": "TIA · TIA-942 Certifications & Ratings",
+       "url": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/",
+       "quote": "Rated-4: Fault Tolerant Site Infrastructure"
+      }
+     ]
+    },
+    {
+     "text": "Espacios de TIA-942: la **EDA** (*Equipment Distribution Area*) es donde están los **armarios y racks de los equipos**.",
+     "refs": [
+      {
+       "title": "IEEE 802.3 Tutorial · Telecommunications Infrastructure Standard for Data Centers (TIA TR42)",
+       "url": "https://grouper.ieee.org/groups/802/802_tutorials/03-July/tutorial_1_0703.pdf",
+       "quote": "Equipment Distribution Area (EDA) – location of equipment cabinets and racks"
+      }
+     ]
+    },
+    {
+     "text": "**PUE** (*Power Usage Effectiveness*) = energía **total** del CPD / energía de los **equipos de TI**.",
+     "refs": [
+      {
+       "title": "Reglamento Delegado (UE) 2024/1364 · centros de datos",
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32024R1364",
+       "quote": "Para calcular la eficacia en el uso de la energía en el centro de datos se utilizarán EDC y EIT, tal y como se definen en el anexo II: PUE = EDC/EIT;"
+      },
+      {
+       "title": "Reglamento Delegado (UE) 2024/1364 · centros de datos",
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32024R1364",
+       "quote": "Consumo total de energía («EDC», en kWh) del centro de datos notificante"
+      },
+      {
+       "title": "Reglamento Delegado (UE) 2024/1364 · centros de datos",
+       "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:32024R1364",
+       "quote": "Consumo total de energía de los equipos de tecnologías de la información («EIT», en kWh)"
+      }
+     ]
+    },
+    {
+     "text": "La climatización del CPD debe ser **independiente** de la del edificio: no se climatiza con aire acondicionado **de confort**, porque las necesidades de los equipos y de las personas son distintas (las personas aportan humedad; los equipos no).",
+     "refs": [
+      {
+       "title": "RedIRIS · Climatización en los Centros de Proceso de Datos (Boletín 76)",
+       "url": "https://www.rediris.es/difusion/publicaciones/boletin/76/enfoque2.pdf",
+       "quote": "El aire acondicionado de la sala del CPD debe ser independiente del aire general del edificio."
+      },
+      {
+       "title": "RedIRIS · Climatización en los Centros de Proceso de Datos (Boletín 76)",
+       "url": "https://www.rediris.es/difusion/publicaciones/boletin/76/enfoque2.pdf",
+       "quote": "No se debe climatizar un CPD por pequeño que sea, con un sistema de aire acondicionado de confort."
+      },
+      {
+       "title": "RedIRIS · Climatización en los Centros de Proceso de Datos (Boletín 76)",
+       "url": "https://www.rediris.es/difusion/publicaciones/boletin/76/enfoque2.pdf",
+       "quote": "Para empezar, la gente agrega humedad al ambiente de una habitación y los equipos no."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
