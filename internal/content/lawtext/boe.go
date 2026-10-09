@@ -29,6 +29,9 @@ func PageURL(ref string) string { return "https://www.boe.es/buscar/act.php?id="
 type Metadata struct {
 	Title       string
 	VersionDate string // YYYY-MM-DD
+	// Repealed is the day the law stopped being in force (YYYY-MM-DD),
+	// empty while it is.
+	Repealed string
 }
 
 // ParseMetadata reads the JSON answer of the metadata endpoint.
@@ -40,6 +43,8 @@ func ParseMetadata(b []byte) (Metadata, error) {
 			EstadoConsolidacion struct {
 				Texto string `json:"texto"`
 			} `json:"estado_consolidacion"`
+			VigenciaAgotada string `json:"vigencia_agotada"` // "S" once repealed
+			FechaDerogacion string `json:"fecha_derogacion"` // YYYYMMDD
 		} `json:"data"`
 	}
 	if err := json.Unmarshal(b, &r); err != nil {
@@ -56,7 +61,14 @@ func ParseMetadata(b []byte) (Metadata, error) {
 	if err != nil {
 		return Metadata{}, fmt.Errorf("metadata: fecha_actualizacion %q", d.FechaActualizacion)
 	}
-	return Metadata{Title: strings.TrimSuffix(d.Titulo, "."), VersionDate: t.Format("2006-01-02")}, nil
+	m := Metadata{Title: strings.TrimSuffix(d.Titulo, "."), VersionDate: t.Format("2006-01-02")}
+	if d.VigenciaAgotada == "S" {
+		m.Repealed = "unknown date"
+		if r, err := time.Parse("20060102", d.FechaDerogacion); err == nil {
+			m.Repealed = r.Format("2006-01-02")
+		}
+	}
+	return m, nil
 }
 
 type textDoc struct {

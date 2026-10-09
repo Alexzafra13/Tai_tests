@@ -157,6 +157,12 @@ ley, con su texto completo para validar citas, y se leen en
    General → *Allow GitHub Actions to create and approve pull requests*).
    Si el texto nuevo deja sin respaldo la cita de alguna pregunta, la
    instalación conserva el anterior y lo avisa al arrancar.
+5. Una norma derogada no se descarga: `fetch-law` la rechaza y
+   `refresh-laws` actualiza las demás y termina en error con la norma y la
+   fecha de derogación, así que la tarea mensual sale en rojo. Hay que
+   descargar la norma que la sustituye, cambiarla en `topics.json`, llevar
+   a ella los `articles` del banco (con una `explanation` si la respuesta
+   del examen ya no es la vigente) y borrar el fichero de la derogada.
 
 Hecho, bloque I completo: 29 normas españolas (con los reglamentos de
 ingreso y provisión, situaciones administrativas y régimen disciplinario,
