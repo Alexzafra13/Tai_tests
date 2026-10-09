@@ -92,12 +92,17 @@
       {
        "title": "Oracle Database 19c Concepts · Logical Storage Structures",
        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/logical-storage-structures.html",
-       "quote": "The logical units of database space allocation are data blocks, extents, segments, and tablespaces."
+       "quote": "Segments are database objects, such as tables and indexes, that consume storage space."
       },
       {
        "title": "Oracle Database 19c Concepts · Data Dictionary and Dynamic Performance Views",
        "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/data-dictionary-and-dynamic-performance-views.html",
        "quote": "its data dictionary, which is a read-only set of tables that provides administrative metadata about the database."
+      },
+      {
+       "title": "Oracle Database 19c Concepts · Data Dictionary and Dynamic Performance Views",
+       "url": "https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/data-dictionary-and-dynamic-performance-views.html",
+       "quote": "The data dictionary consists of base tables and views."
       }
      ]
     },
@@ -217,15 +222,15 @@
      ]
     },
     {
-     "text": "El **Manifiesto de las bases de datos orientadas a objetos** (1989) fija las características **obligatorias**: objetos complejos, **identidad** de objeto, **encapsulación**, tipos o clases, **herencia**, sobrecarga con ligadura tardía, extensibilidad, completitud computacional, **persistencia**, gestión del almacenamiento secundario, **concurrencia**, recuperación y consultas *ad hoc*. Son **opcionales**: herencia múltiple, comprobación e inferencia de tipos, distribución, transacciones de diseño y versiones.",
+     "text": "El **Manifiesto de las bases de datos orientadas a objetos** (1989) fija las características **obligatorias**: objetos complejos, **identidad** de objeto, **encapsulación**, tipos o clases, **herencia**, **redefinición** (*overriding*) con ligadura tardía, extensibilidad, completitud computacional, **persistencia**, gestión del almacenamiento secundario, **concurrencia**, recuperación y consultas *ad hoc*. Son **opcionales**: herencia múltiple, comprobación e inferencia de tipos, distribución, transacciones de diseño y versiones.",
      "refs": [
       {
-       "title": "The Object-Oriented Database System Manifesto (Atkinson et al., 1989)",
+       "title": "The Object-Oriented Database System Manifesto (Atkinson et al., 1989) · copia en CMU",
        "url": "https://www.cs.cmu.edu/afs/cs/user/clamen/OODBMS/Manifesto/htManifesto/Manifesto.html",
        "quote": "These are complex objects, object identity, encapsulation, types or classes, inheritance, overriding combined with late binding, extensibility, computational completeness, persistence, secondary storage management, concurrency, recovery and an ad hoc query facility."
       },
       {
-       "title": "The Object-Oriented Database System Manifesto (Atkinson et al., 1989)",
+       "title": "The Object-Oriented Database System Manifesto (Atkinson et al., 1989) · copia en CMU",
        "url": "https://www.cs.cmu.edu/afs/cs/user/clamen/OODBMS/Manifesto/htManifesto/Manifesto.html",
        "quote": "These are multiple inheritance, type checking and inferencing, distribution, design transactions and versions."
       }
@@ -252,7 +257,7 @@
    "title": "Bases de datos NoSQL",
    "points": [
     {
-     "text": "Las bases de datos **no relacionales** se llaman **NoSQL**. Suelen seguir **BASE** (disponibilidad básica, estado blando, consistencia eventual) y están limitadas por el **teorema CAP** (consistencia, disponibilidad, tolerancia a particiones).",
+     "text": "Las bases de datos **no relacionales** se llaman **NoSQL**. Conceptos asociados: **ACID**, **BASE** (disponibilidad básica, estado blando, consistencia eventual) y el **teorema CAP** (consistencia, disponibilidad, tolerancia a particiones).",
      "refs": [
       {
        "title": "NIST SP 1500-1r2 · Big Data Interoperability Framework: Definitions",

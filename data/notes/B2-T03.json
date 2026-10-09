@@ -115,7 +115,17 @@
       {
        "title": "NIST Dictionary of Algorithms and Data Structures · leaf",
        "url": "https://xlinux.nist.gov/dads/HTML/leaf.html",
+       "quote": "A node in a tree without any children"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · leaf",
+       "url": "https://xlinux.nist.gov/dads/HTML/leaf.html",
        "quote": "Also known as external node, terminal node."
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · depth",
+       "url": "https://xlinux.nist.gov/dads/HTML/depth.html",
+       "quote": "the distance from the node to the root of the tree"
       },
       {
        "title": "NIST Dictionary of Algorithms and Data Structures · depth",
@@ -175,6 +185,11 @@
         {
          "title": "NIST Dictionary of Algorithms and Data Structures · perfect binary tree",
          "url": "https://xlinux.nist.gov/dads/HTML/perfectBinaryTree.html",
+         "quote": "A binary tree with all leaf nodes at the same depth"
+        },
+        {
+         "title": "NIST Dictionary of Algorithms and Data Structures · perfect binary tree",
+         "url": "https://xlinux.nist.gov/dads/HTML/perfectBinaryTree.html",
          "quote": "All internal nodes have degree 2."
         },
         {
@@ -212,8 +227,13 @@
      ]
     },
     {
-     "text": "**Búsqueda en anchura** (BFS): visita los vecinos antes de profundizar; se implementa con una **cola**. **En profundidad** (DFS): baja por los hijos antes que por los hermanos; se implementa con **recursión** (preorden, inorden o postorden).",
+     "text": "**Búsqueda en anchura** (BFS): visita los vecinos antes de profundizar; se implementa con una **cola**. **En profundidad** (DFS): baja por los hijos antes que por los hermanos; se implementa fácilmente con **recursión**; en un árbol puede ser **preorden, inorden o postorden**.",
      "refs": [
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · breadth-first search",
+       "url": "https://xlinux.nist.gov/dads/HTML/breadthfirst.html",
+       "quote": "Any search algorithm that considers neighbors of a vertex"
+      },
       {
        "title": "NIST Dictionary of Algorithms and Data Structures · breadth-first search",
        "url": "https://xlinux.nist.gov/dads/HTML/breadthfirst.html",
@@ -247,7 +267,7 @@
      ]
     },
     {
-     "text": "**Diccionario** o **mapa**: guarda valores a los que se accede por una **clave**; en Java, `Map` no admite claves duplicadas y `HashMap` no garantiza ningún orden.",
+     "text": "**Diccionario** o **mapa**: guarda valores a los que se accede por una **clave**; en Java, `Map` no admite claves duplicadas y `HashMap` no garantiza el orden.",
      "refs": [
       {
        "title": "NIST Dictionary of Algorithms and Data Structures · dictionary",
@@ -333,6 +353,11 @@
        "title": "NIST Dictionary of Algorithms and Data Structures · quicksort",
        "url": "https://xlinux.nist.gov/dads/HTML/quicksort.html",
        "quote": "Quicksort has running time Θ(n²) in the worst case"
+      },
+      {
+       "title": "NIST Dictionary of Algorithms and Data Structures · quicksort",
+       "url": "https://xlinux.nist.gov/dads/HTML/quicksort.html",
+       "quote": "but it is typically O(n log n)"
       }
      ]
     },
@@ -544,12 +569,17 @@
         {
          "title": "Esri · ESRI Shapefile Technical Description",
          "url": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf",
+         "quote": "A shapefile stores nontopological geometry and attribute information for the spatial"
+        },
+        {
+         "title": "Esri · ESRI Shapefile Technical Description",
+         "url": "https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf",
          "quote": "The main file is a direct access, variable-record-length file in which each record describes a shape with a list of its vertices."
         }
        ]
       },
       {
-       "text": "**.pfx / .p12**: PKCS #12, intercambio de **claves privadas y certificados**.",
+       "text": "**PKCS #12** (estructura **PFX**, *Personal Information Exchange*): intercambio de **claves privadas y certificados**.",
        "refs": [
         {
          "title": "RFC 7292 · PKCS #12: Personal Information Exchange Syntax v1.1",
@@ -575,6 +605,11 @@
          "title": "Library of Congress · Flash SWF File Format Family",
          "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000629.shtml",
          "quote": "Delivers vector graphics (especially animations) and other data types"
+        },
+        {
+         "title": "Library of Congress · Flash SWF File Format Family",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000629.shtml",
+         "quote": "is a legacy format for multimedia content"
         }
        ]
       },
@@ -585,6 +620,11 @@
          "title": "Library of Congress · OpenDocument Spreadsheet (ODS) 1.2",
          "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000439.shtml",
          "quote": "is an XML-based format for editable spreadsheet documents."
+        },
+        {
+         "title": "Library of Congress · OpenDocument Spreadsheet (ODS) 1.2",
+         "url": "https://www.loc.gov/preservation/digital/formats/fdd/fdd000439.shtml",
+         "quote": ".ods is the extension used for a spreadsheet file."
         }
        ]
       },
@@ -635,6 +675,11 @@
          "title": "Microsoft Learn · GetPrivateProfileString",
          "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getprivateprofilestring",
          "quote": "A section in the initialization file must have the following form:"
+        },
+        {
+         "title": "Microsoft Learn · GetPrivateProfileString",
+         "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-getprivateprofilestring",
+         "quote": "The system maps most .ini file references to the registry"
         }
        ]
       }

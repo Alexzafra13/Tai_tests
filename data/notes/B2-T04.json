@@ -75,7 +75,7 @@
      ]
     },
     {
-     "text": "Cuando falta memoria física, el sistema lleva a disco las páginas usadas **menos recientemente** (Windows: al **archivo de paginación**, un fichero de sistema oculto; Linux: al **swap**, que se activa con `swapon`).",
+     "text": "En Windows, cuando falta memoria física, el sistema lleva las páginas usadas **menos recientemente** al **archivo de paginación** (un fichero de sistema oculto). En Linux se usa la zona de **intercambio** (*swap*), que se activa con la llamada al sistema `swapon()`.",
      "refs": [
       {
        "title": "Microsoft Learn · Virtual Address Space and Physical Storage",
@@ -245,6 +245,11 @@
         {
          "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
          "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+         "quote": "The /etc hierarchy contains configuration files."
+        },
+        {
+         "title": "Filesystem Hierarchy Standard 3.0 · Linux Foundation",
+         "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
          "quote": "/home : User home directories (optional)"
         },
         {
@@ -318,6 +323,11 @@
        "title": "GNU GRUB Manual · Overview",
        "url": "https://www.gnu.org/software/grub/manual/grub/html_node/Overview.html",
        "quote": "GNU GRUB is a very powerful boot loader, which can load a wide variety of free operating systems"
+      },
+      {
+       "title": "GNU GRUB Manual · Overview",
+       "url": "https://www.gnu.org/software/grub/manual/grub/html_node/Overview.html",
+       "quote": "It is responsible for loading and transferring control to an operating system"
       }
      ]
     }
@@ -348,6 +358,11 @@
        "title": "tac(1) · Linux manual page",
        "url": "https://man7.org/linux/man-pages/man1/tac.1.html",
        "quote": "tac - concatenate and print files in reverse"
+      },
+      {
+       "title": "tac(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tac.1.html",
+       "quote": "Write each FILE to standard output, last line first."
       },
       {
        "title": "tail(1) · Linux manual page",
@@ -438,6 +453,11 @@
        "title": "tar(1) · Linux manual page",
        "url": "https://man7.org/linux/man-pages/man1/tar.1.html",
        "quote": "Verbosely list files processed."
+      },
+      {
+       "title": "tar(1) · Linux manual page",
+       "url": "https://man7.org/linux/man-pages/man1/tar.1.html",
+       "quote": "Use archive file or device ARCHIVE"
       }
      ]
     },
@@ -607,7 +627,7 @@
      ]
     },
     {
-     "text": "`net use` conecta (o desconecta) el equipo a un **recurso compartido**, asignándole una letra de unidad (D: a Z:) o una impresora (LPT1: a LPT3:).",
+     "text": "`net use` conecta el equipo a un **recurso compartido** (o lo desconecta) con un nombre de dispositivo: **unidad de disco** (D: a Z:) o **impresora** (LPT1: a LPT3:).",
      "refs": [
       {
        "title": "Microsoft Learn · Net use (Windows Server 2012)",
@@ -737,7 +757,7 @@
      ]
     },
     {
-     "text": "Las apps se escriben en **Kotlin**, **Java** y **C++**, y se instalan con un paquete **.apk**. Kotlin es un **lenguaje de programación**, no un sistema operativo.",
+     "text": "Las apps se pueden escribir en **Kotlin**, **Java** y **C++**, y se instalan con un paquete **.apk**. Kotlin es un **lenguaje de programación**, no un sistema operativo.",
      "refs": [
       {
        "title": "Android Developers · Application fundamentals",
