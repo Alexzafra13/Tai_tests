@@ -1,0 +1,407 @@
+{
+ "topic": "B4-T09",
+ "sections": [
+  {
+   "title": "Seguridad perimetral",
+   "points": [
+    {
+     "text": "**DMZ** (zona desmilitarizada): segmento perimetral **entre la red interna y la externa**; da a las fuentes externas acceso restringido a la información publicable y **protege la red interna** de ataques externos. Es habitual poner ahí los servidores públicos (web, correo).",
+     "refs": [
+      {
+       "title": "NIST CSRC Glossary · demilitarized zone",
+       "url": "https://csrc.nist.gov/glossary/term/demilitarized_zone",
+       "quote": "Perimeter network segment that is logically between internal and external networks."
+      },
+      {
+       "title": "NIST CSRC Glossary · demilitarized zone",
+       "url": "https://csrc.nist.gov/glossary/term/demilitarized_zone",
+       "quote": "to provide external, untrusted sources with restricted access to releasable information while shielding the internal networks from outside attacks."
+      },
+      {
+       "title": "NIST SP 800-41 Rev. 1 · Guidelines on Firewalls and Firewall Policy",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-41r1.pdf",
+       "quote": "It is common to put public-facing servers, such as web and email servers, on the DMZ."
+      }
+     ]
+    },
+    {
+     "text": "**WAF** (*Web Application Firewall*): cortafuegos de aplicación para **HTTP**; aplica reglas a la conversación HTTP contra ataques como XSS o inyección SQL.",
+     "refs": [
+      {
+       "title": "OWASP · Web Application Firewall",
+       "url": "https://owasp.org/www-community/Web_Application_Firewall",
+       "quote": "is an application firewall for HTTP applications. It applies a set of rules to an HTTP conversation. Generally, these rules cover common attacks such as Cross-site Scripting (XSS) and SQL Injection"
+      }
+     ]
+    },
+    {
+     "text": "Tipos de **IDPS** (NIST SP 800-94): de red, inalámbricos, **NBA** (*Network Behavior Analysis*: analiza el tráfico en busca de **flujos inusuales**, como DDoS o cierto malware) y **de host** (HIDS: vigila un solo equipo). **OSSEC** es un HIDS de código abierto.",
+     "refs": [
+      {
+       "title": "NIST SP 800-94 · Guide to Intrusion Detection and Prevention Systems",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-94.pdf",
+       "quote": "The four primary types of IDPS technologies—network-based, wireless, NBA, and host-based—each offer fundamentally different information gathering, logging, detection, and prevention capabilities."
+      },
+      {
+       "title": "NIST SP 800-94 · Guide to Intrusion Detection and Prevention Systems",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-94.pdf",
+       "quote": "Network Behavior Analysis (NBA), which examines network traffic to identify threats that generate unusual traffic flows, such as distributed denial of service (DDoS) attacks, certain forms of malware, and policy violations"
+      },
+      {
+       "title": "NIST SP 800-94 · Guide to Intrusion Detection and Prevention Systems",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-94.pdf",
+       "quote": "Host-Based, which monitors the characteristics of a single host and the events occurring within that host for suspicious activity."
+      },
+      {
+       "title": "OSSEC",
+       "url": "https://www.ossec.net/",
+       "quote": "OSSEC is a free, open-source host-based intrusion detection system (HIDS)."
+      }
+     ]
+    },
+    {
+     "text": "**Honeypot**: sistema o recurso diseñado para **atraer a los atacantes** (como la miel a los osos).",
+     "refs": [
+      {
+       "title": "NIST CSRC Glossary · honeypot",
+       "url": "https://csrc.nist.gov/glossary/term/honeypot",
+       "quote": "A system (e.g., a web server) or system resource (e.g., a file on a server) that is designed to be attractive to potential crackers and intruders, like honey is attractive to bears."
+      }
+     ]
+    },
+    {
+     "text": "Herramienta del CCN **EMMA**: visibilidad y control sobre la red. **CLAUDIA**: detección de amenazas complejas en el puesto de usuario.",
+     "refs": [
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "EMMA Visibilidad y control sobre la red"
+      },
+      {
+       "title": "CCN-CERT · Soluciones de seguridad",
+       "url": "https://www.ccn-cert.cni.es/es/soluciones-seguridad.html",
+       "quote": "CLAUDIA Herramienta para la detección de amenazas complejas en el puesto de usuario"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Cortafuegos en Windows y Linux",
+   "points": [
+    {
+     "text": "Windows (referencia de Windows Server 2008 R2): `netsh advfirewall set allprofiles state on` activa el cortafuegos en **todos los perfiles** (o `currentprofile`, `domainprofile`, `privateprofile`, `publicprofile`). Para abrir un puerto: `netsh advfirewall firewall add rule name=\"...\" dir=in action=allow protocol=TCP localport=<puerto>`.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Netsh Commands for Windows Firewall with Advanced Security",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771920(v=ws.10)",
+       "quote": "Required . Can be any one of the following: allprofiles currentprofile domainprofile privateprofile publicprofile"
+      },
+      {
+       "title": "Microsoft Learn · Netsh Commands for Windows Firewall with Advanced Security",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771920(v=ws.10)",
+       "quote": "To turn Windows Firewall with Advanced Security on for all profiles: set allprofiles state on"
+      },
+      {
+       "title": "Microsoft Learn · Use netsh advfirewall firewall context",
+       "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/netsh-advfirewall-firewall-control-firewall-behavior",
+       "quote": "netsh advfirewall firewall add rule name= \"Open Port 80\" dir=in action=allow protocol=TCP localport=80"
+      }
+     ]
+    },
+    {
+     "text": "RHEL (firewalld): `firewall-cmd --permanent --zone=<zona> --add-rich-rule='rule family=\"ipv4\" source address=\"<red>\" port protocol=\"tcp\" port=\"<puerto>\" accept'`. Con `--permanent` el cambio se guarda pero **no se aplica hasta recargar o reiniciar** el servicio. En la regla, el elemento `port` lleva el puerto y el protocolo (el examen los escribe en orden `protocol` y luego `port`).",
+     "refs": [
+      {
+       "title": "firewalld · firewall-cmd(1)",
+       "url": "https://firewalld.org/documentation/man-pages/firewall-cmd.html",
+       "quote": "[ --permanent ] [ --zone = zone ] [ --permanent ] [ --policy = policy ] --add-rich-rule =' rule '"
+      },
+      {
+       "title": "firewalld · firewall-cmd(1)",
+       "url": "https://firewalld.org/documentation/man-pages/firewall-cmd.html",
+       "quote": "The permanent option --permanent can be used to set options permanently. These changes are not effective immediately, only after service restart/reload or system reboot."
+      },
+      {
+       "title": "firewalld · firewalld.richlanguage(5)",
+       "url": "https://firewalld.org/documentation/man-pages/firewalld.richlanguage.html",
+       "quote": "rule family=\"ipv4\" source address=\"192.168.2.2\" accept"
+      },
+      {
+       "title": "firewalld · firewalld.richlanguage(5)",
+       "url": "https://firewalld.org/documentation/man-pages/firewalld.richlanguage.html",
+       "quote": "port port=\"port value\" protocol=\"tcp|udp|sctp|dccp\""
+      }
+     ]
+    },
+    {
+     "text": "Contra el **IP spoofing**, el kernel de Linux filtra por **ruta inversa**: `net.ipv4.conf.all.rp_filter=1` (modo estricto de RFC 3704).",
+     "refs": [
+      {
+       "title": "Linux kernel documentation · IP sysctl",
+       "url": "https://docs.kernel.org/networking/ip-sysctl.html",
+       "quote": "1 - Strict mode as defined in RFC3704 Strict Reverse Path"
+      },
+      {
+       "title": "Linux kernel documentation · IP sysctl",
+       "url": "https://docs.kernel.org/networking/ip-sysctl.html",
+       "quote": "Current recommended practice in RFC3704 is to enable strict mode to prevent IP spoofing from DDos attacks."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Acceso remoto seguro",
+   "points": [
+    {
+     "text": "**SSH** escucha normalmente en el **puerto 22**; **scp**: el actual de OpenSSH usa SFTP sobre ssh (con `-O`, el protocolo SCP heredado); en ambos casos va sobre SSH y usa el mismo puerto.",
+     "refs": [
+      {
+       "title": "RFC 4253 · The SSH Transport Layer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc4253.txt",
+       "quote": "When used over TCP/IP, the server normally listens for connections on port 22."
+      },
+      {
+       "title": "OpenBSD manual · scp(1)",
+       "url": "https://man.openbsd.org/scp.1",
+       "quote": "scp copies files between hosts on a network. scp uses the SFTP protocol over an ssh(1)"
+      },
+      {
+       "title": "OpenBSD manual · scp(1)",
+       "url": "https://man.openbsd.org/scp.1",
+       "quote": "Use the legacy SCP protocol for file transfers instead of the SFTP protocol."
+      }
+     ]
+    },
+    {
+     "text": "**Doble factor**: un código por SMS al móvil, además de la contraseña, combina factores de **categorías distintas** (algo que se sabe y algo que se tiene).",
+     "refs": [
+      {
+       "title": "CCN · Recomendaciones de seguridad para autenticación multifactor (Píldora PYTEC)",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/353-pildorapytec-oct2020-autenticacion-multifactor",
+       "quote": "Se trata de autenticar a un usuario utilizando una combinación de dos (2) factores pertenecientes a distintas categorías."
+      },
+      {
+       "title": "CCN · Recomendaciones de seguridad para autenticación multifactor (Píldora PYTEC)",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/353-pildorapytec-oct2020-autenticacion-multifactor",
+       "quote": "cualquiera de las 3 categorías: algo que se sabe, algo que se tiene o algo que se es."
+      },
+      {
+       "title": "CCN · Recomendaciones de seguridad para autenticación multifactor (Píldora PYTEC)",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/353-pildorapytec-oct2020-autenticacion-multifactor",
+       "quote": "Token out-of-band. Normalmente, se trata de móviles que se comunican con el verificador utilizando un canal fuera de banda (out-of-band), como puede ser un SMS"
+      }
+     ]
+    },
+    {
+     "text": "Teletrabajo (NIST SP 800-46): **niveles de acceso remoto** según el tipo de dispositivo, para limitar el riesgo (los más controlados, más acceso; los menos, el mínimo). En el PC de teletrabajo, una cuenta de **privilegios limitados** para el trabajo diario y otra de administrador aparte.",
+     "refs": [
+      {
+       "title": "NIST SP 800-46 Rev. 2 · Guide to Enterprise Telework, Remote Access, and BYOD Security",
+       "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-46r2.pdf",
+       "quote": "an organization may choose to have tiered levels of remote access"
+      },
+      {
+       "title": "NIST SP 800-46 Rev. 2 · Guide to Enterprise Telework, Remote Access, and BYOD Security",
+       "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-46r2.pdf",
+       "quote": "Having tiered levels of remote access allows an organization to limit the risk it incurs by permitting the most-controlled devices to have the most access and the least-controlled devices to have minimal access."
+      },
+      {
+       "title": "NIST SP 800-46 Rev. 2 · Guide to Enterprise Telework, Remote Access, and BYOD Security",
+       "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-46r2.pdf",
+       "quote": "Teleworkers should use their limited privilege accounts for regular work and use a separate administrative account only for tasks that require administrator-level access"
+      }
+     ]
+    },
+    {
+     "text": "**Mínimo privilegio** (ENS): cada sujeto accede **solo a lo que necesita** para su trabajo.",
+     "refs": [
+      {
+       "title": "CCN-STIC-800 · Glosario de términos y abreviaturas del ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/499-ccn-stic-800-glosario-de-terminos-y-abreviaturas-del-ens/file.html",
+       "quote": "Principio según el cual los sujetos deben acceder exclusivamente a aquellos objetos que precisen inexcusablemente para ejecutar sus trabajos o procesos."
+      }
+     ]
+    },
+    {
+     "text": "**Portal cautivo**: red en la que el acceso queda **limitado hasta cumplir unos requisitos**, normalmente desde el **navegador** (aceptar condiciones, dar credenciales…); usa un servidor web.",
+     "refs": [
+      {
+       "title": "RFC 8952 · Captive Portal Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc8952.txt",
+       "quote": "\"Captive Portal\" is used to describe a network to which a device may be voluntarily attached, such that network access is limited until some requirements have been fulfilled."
+      },
+      {
+       "title": "RFC 8952 · Captive Portal Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc8952.txt",
+       "quote": "Typically, a user is required to use a web browser to fulfill requirements imposed by the network operator, such as reading advertisements, accepting an acceptable-use policy, or providing some form of credentials."
+      },
+      {
+       "title": "RFC 8952 · Captive Portal Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc8952.txt",
+       "quote": "Implementations of captive portals generally require a web server"
+      }
+     ]
+    },
+    {
+     "text": "Redes Wi-Fi **empresariales**: WPA3-Enterprise ofrece protocolos de mayor nivel. En las redes empresariales 802.11i (NIST, 2007), el servidor de autenticación suele ser un **servidor AAA con RADIUS**, el protocolo que transporta los mensajes **EAP**, y se recomienda **EAP-TLS** siempre que sea posible.",
+     "refs": [
+      {
+       "title": "Wi-Fi Alliance · Security",
+       "url": "https://www.wi-fi.org/discover-wi-fi/security",
+       "quote": "WPA3-Enterprise users can now take advantage of higher-grade security protocols for sensitive data networks."
+      },
+      {
+       "title": "NIST SP 800-97 · Establishing Wireless Robust Security Networks",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-97.pdf",
+       "quote": "A AAA server running RADIUS is commonly used as the AS"
+      },
+      {
+       "title": "NIST SP 800-97 · Establishing Wireless Robust Security Networks",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-97.pdf",
+       "quote": "RADIUS is the protocol most commonly used to transport EAP messages between the authenticator and the AS."
+      },
+      {
+       "title": "NIST SP 800-97 · Establishing Wireless Robust Security Networks",
+       "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-97.pdf",
+       "quote": "Organizations should use the EAP-TLS method whenever possible."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Redes privadas virtuales (VPN)",
+   "points": [
+    {
+     "text": "La guía del CCN sobre VPN es la **CCN-STIC-836** (Seguridad en Redes Privadas Virtuales, 2022).",
+     "refs": [
+      {
+       "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+       "quote": "CCN-STIC-836 Seguridad en Redes Privadas Virtuales (VPN) Febrero 2022"
+      }
+     ]
+    },
+    {
+     "text": "Por nivel:",
+     "refs": [
+      {
+       "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+       "quote": "4.4.5 COMPARATIVA DE VPN SEGÚN SU NIVEL DE OPERACIÓN"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Transporte**: protegen cualquier aplicación sin modificarla; el protocolo más usado es **TLS**.",
+       "refs": [
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "Las VPN de nivel de transporte implementan mecanismos de seguridad para proteger las comunicaciones de cualquier tipo de aplicación. Esto permite establecer comunicaciones seguras sin necesidad de realizar ninguna modificación en el software de aplicación."
+        },
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "El protocolo de seguridad más empleado por las VPN de nivel de transporte es TLS"
+        }
+       ]
+      },
+      {
+       "text": "**Red**: protegen datos y cabeceras IP; se basan en **IPsec** (modos túnel y transporte) o WireGuard.",
+       "refs": [
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "las VPN de nivel de red pueden proteger tanto los datos como las cabeceras IP"
+        },
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "Las VPN de nivel de red se basan principalmente en el estándar IPsec"
+        },
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "b) WireGuard, que está compuesto de un conjunto de protocolos y primitivas criptográficas modernas"
+        },
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "Cuentan con dos (2) modos de funcionamiento: modo túnel y modo transporte."
+        }
+       ]
+      },
+      {
+       "text": "**Enlace**: funcionan con cualquier protocolo de red; hoy se basan en **MACsec** (IEEE 802.1AE) y se recomienda evitar **PPTP, L2F o L2TP**.",
+       "refs": [
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "Las VPN de nivel de enlace implementan mecanismos de seguridad en la capa de enlace."
+        },
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "estas VPN pueden funcionar con cualquier otro protocolo de red, no solo IP."
+        },
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "En la actualidad, las VPN de nivel de enlace se basan en el estándar MACsec"
+        },
+        {
+         "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+         "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+         "quote": "se recomienda el uso MACsec y evitar protocolos vulnerables como PPTP, L2F o L2TP."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Protocolos de VPN de **nivel de enlace**: **PPTP** (RFC 2637, túnel de PPP sobre IP; se cifra con **MPPE**), **L2F** (Cisco, RFC 2341) y **L2TP** (RFC 2661), que se protege con **IPsec**.",
+     "refs": [
+      {
+       "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+       "quote": "PPTP (Point-to-Point Tunneling Protocol). Protocolo de nivel de enlace utilizado para soportar VPN, sobre protocolo PPP."
+      },
+      {
+       "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+       "quote": "L2F (Layer 2 Forwarding). Protocolo de nivel de enlace diseñado por Cisco, utilizado para soportar VPN. Está definido en la RFC 2341."
+      },
+      {
+       "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+       "quote": "L2TP (Layer 2 Tunneling Protocol). Protocolo de nivel de enlace utilizado para soportar VPN."
+      },
+      {
+       "title": "CCN-STIC-836 · Seguridad en Redes Privadas Virtuales (VPN)",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/guias/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/2299-ccn-stic-836-seguridad-en-vpn-en-el-marco-del-ens/file.html",
+       "quote": "MPPE (Microsoft Point-to-Point Encryption). Versión Microsoft de un mecanismo de cifrado para utilizar en las implementaciones del protocolo PPTP para VPN."
+      },
+      {
+       "title": "RFC 2661 · Layer Two Tunneling Protocol (L2TP)",
+       "url": "https://www.rfc-editor.org/rfc/rfc2661.txt",
+       "quote": "The packet level encryption and authentication provided by IPsec tunnel mode and that provided by L2TP secured with IPsec provide an equivalent level of security for these requirements."
+      },
+      {
+       "title": "RFC 2637 · Point-to-Point Tunneling Protocol (PPTP)",
+       "url": "https://www.rfc-editor.org/rfc/rfc2637.txt",
+       "quote": "This document specifies a protocol which allows the Point to Point Protocol (PPP) to be tunneled through an IP network."
+      },
+      {
+       "title": "RFC 2661 · Layer Two Tunneling Protocol (L2TP)",
+       "url": "https://www.rfc-editor.org/rfc/rfc2661.txt",
+       "quote": "This document describes the Layer Two Tunneling Protocol (L2TP)."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
