@@ -190,7 +190,8 @@ Un JSON por tema en `data/notes/` (`B1-T01.json`): secciones con puntos y,
 como mucho, un nivel de subpuntos. Cada punto es una frase de estudio
 (`**negrita**` para lo clave) y lleva en `refs` lo que la respalda, con la
 cita literal: `{"law": "BOE-A-1978-31229", "section": "a62", "quote": "…"}`
-o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita.
+o `{"title": "…", "url": "https://…", "quote": "…"}`. Nada sin cita. En el
+texto, `` `código` `` se muestra como código (SQL, fragmentos de programa).
 
 1. Escribirlo leyendo el texto vigente de las normas del tema y las
    preguntas oficiales del banco (dicen qué se pregunta). En los temas
@@ -211,8 +212,10 @@ público, igualdad y dependencia, sociedad de la información, firma
 electrónica, DNI, Agenda Digital, protección de datos, administración
 electrónica: registros, notificaciones, ENS, ENI y normas técnicas; sedes
 electrónicas, Cl@ve e infraestructuras y servicios comunes) y los temas 1
-a 3 del bloque III (modelado de datos y normalización con Métrica v3;
-lenguajes de programación; SQL).
+a 4 del bloque III (modelado de datos y normalización con Métrica v3;
+lenguajes de programación; SQL; orientación a objetos y UML). Los patrones
+de diseño (GoF, GRASP) quedan fuera: su catálogo no está publicado en una
+fuente oficial en línea.
 
 ## Comprobar
 

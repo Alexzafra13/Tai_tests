@@ -81,6 +81,15 @@
     font-weight: 650;
   }
 
+  .doc code {
+    padding: 0.05em 0.3em;
+    border-radius: 4px;
+    background: var(--surface-2);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.85em;
+    overflow-wrap: anywhere;
+  }
+
   /* Cover */
 
   .doc-cover {

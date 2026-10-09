@@ -4,11 +4,20 @@ import { api, errorMessage } from "../../api";
 import type { NotePoint, NoteRef, TopicNote } from "../../types";
 import "../../components/QuestionView.css";
 
-// Bold renders the **marked** words of a note's text.
-export function Bold({ text }: { text: string }) {
+function Strong({ text }: { text: string }) {
   return (
     <>
       {text.split("**").map((part, i) => (i % 2 === 1 ? <strong key={i}>{part}</strong> : <Fragment key={i}>{part}</Fragment>))}
+    </>
+  );
+}
+
+// Bold renders the **marked** words of a note's text, and `code` (SQL,
+// program fragments) as code, where asterisks are literal.
+export function Bold({ text }: { text: string }) {
+  return (
+    <>
+      {text.split("`").map((part, i) => (i % 2 === 1 ? <code key={i}>{part}</code> : <Strong key={i} text={part} />))}
     </>
   );
 }
@@ -51,7 +60,7 @@ function ReportPoint({ topicId, point }: { topicId: number; point: NotePoint }) 
     try {
       await api(`/study/topics/${topicId}/report`, {
         method: "POST",
-        body: { point: point.path, excerpt: point.text.replaceAll("**", ""), note },
+        body: { point: point.path, excerpt: point.text.replaceAll("**", "").replaceAll("`", ""), note },
       });
       setState("sent");
       setOpen(false);
