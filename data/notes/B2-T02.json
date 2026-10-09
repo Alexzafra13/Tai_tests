@@ -68,6 +68,91 @@
        "quote": "Con un cable de USB-C a conector Lightning, podrás cargar y sincronizar tus AirPods, AirPods Pro, iPhone, iPad o iPod touch"
       }
      ]
+    },
+    {
+     "text": "Velocidades de **Thunderbolt**: **Thunderbolt 3** y **4**, **40 Gbps** (USB 3.1 nativo: 10 Gbps); **Thunderbolt 5**, **80 Gbps** bidireccionales y hasta **120 Gbps** con *Bandwidth Boost*.",
+     "refs": [
+      {
+       "title": "Thunderbolt Technology · Difference between USB-C and Thunderbolt 3",
+       "url": "https://www.thunderbolttechnology.net/blog/difference-between-usb-c-and-thunderbolt-3",
+       "quote": "At 40 Gbps, Thunderbolt 3 is the fastest connection available. By comparison, native USB 3.1 operates at 10 Gbps."
+      },
+      {
+       "title": "Intel · Thunderbolt 4 announcement",
+       "url": "https://www.thunderbolttechnology.net/sites/default/files/intel-thunderbolt4-announcement-press-deck.pdf",
+       "quote": "Thunderbolt is Always 40Gb/s"
+      },
+      {
+       "title": "Intel Newsroom · Intel Introduces Thunderbolt 5 Connectivity Standard",
+       "url": "https://www.intel.com/content/www/us/en/newsroom/news/intel-introduces-thunderbolt-5-standard.html",
+       "quote": "Thunderbolt 5 will deliver 80 gigabits per second (Gbps) of bi-directional bandwidth, and with Bandwidth Boost it will provide up to 120 Gbps for the best display experience."
+      }
+     ]
+    },
+    {
+     "text": "Otras conexiones: **HDMI** (interfaz digital de vídeo, audio y datos), **FireWire** (IEEE 1394) y **eSATA** (SATA externo).",
+     "refs": [
+      {
+       "title": "HDMI Licensing Administrator · HDMI Specification",
+       "url": "https://www.hdmi.org/spec/index",
+       "quote": "HDMI technology continues as the leading digital video, audio and data interface"
+      },
+      {
+       "title": "Intel · Thunderbolt 5 Technology Brief",
+       "url": "https://www.thunderbolttechnology.net/sites/default/files/Thunderbolt_5_TechBrief_2023_09_12.pdf",
+       "quote": "As compared to other PC I/O connection technologies including eSATA, USB, and IEEE 1394 Firewire."
+      },
+      {
+       "title": "OSTEP · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "now eSATA (for external SATA) represent an evolution of storage interfaces over the past decades"
+      }
+     ]
+    },
+    {
+     "text": "**USB Power Delivery**: hasta la revisión 3.1 estaba limitado a **100 W** (20 V, 5 A); USB PD 3.1 llega a **240 W** (nuevas tensiones de 28, 36 y 48 V) con cable USB Type-C.",
+     "refs": [
+      {
+       "title": "USB-IF · USB Charger (USB Power Delivery)",
+       "url": "https://www.usb.org/usb-charger-pd",
+       "quote": "Prior to this update, USB PD was limited to 100W using a solution based on 20V using USB Type-C cables rated at 5A."
+      },
+      {
+       "title": "USB-IF · USB Charger (USB Power Delivery)",
+       "url": "https://www.usb.org/usb-charger-pd",
+       "quote": "the USB PD Revision 3.1 specification is a major update to enable delivering up to 240W of power over full featured USB Type-C"
+      },
+      {
+       "title": "USB-IF · USB Charger (USB Power Delivery)",
+       "url": "https://www.usb.org/usb-charger-pd",
+       "quote": "New 28V, 36V, and 48V fixed voltages enable up to 140W, 180W and 240W power levels, respectively."
+      }
+     ]
+    },
+    {
+     "text": "Un dispositivo tiene una **interfaz de hardware** que permite controlarlo (el **controlador** del dispositivo, p. ej., el controlador de host USB) y su estructura interna. El **driver** es el **software** del sistema operativo que sabe cómo funciona el dispositivo y se comunica con él.",
+     "refs": [
+      {
+       "title": "OSTEP · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "hardware must also present some kind of interface that allows the system software to control its operation."
+      },
+      {
+       "title": "OSTEP · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "At the lowest level, a piece of software in the OS must know in detail how a device works. We call this piece of software a device driver"
+      },
+      {
+       "title": "Microsoft Learn · What is a driver?",
+       "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/what-is-a-driver-",
+       "quote": "A driver is a software component that lets the operating system and a device communicate."
+      },
+      {
+       "title": "Microsoft Learn · What is a driver?",
+       "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/what-is-a-driver-",
+       "quote": "The function driver for the USB host controller then communicates directly with the USB host controller hardware, which communicates with the toaster."
+      }
+     ]
     }
    ]
   },
@@ -101,6 +186,141 @@
        "title": "Microsoft Learn · Enumeración STORAGE_BUS_TYPE",
        "url": "https://learn.microsoft.com/en-us/windows/win32/api/winioctl/ne-winioctl-storage_bus_type",
        "quote": "Serial Attached SCSI (SAS) bus."
+      }
+     ]
+    },
+    {
+     "text": "**Disco duro** (HDD): **platos** magnéticos; en cada superficie, **pistas** concéntricas divididas en **sectores**, con una **cabeza** por superficie montada en un brazo; las pistas a la misma distancia del eje forman un **cilindro**. Tiempo de acceso = **búsqueda** (mover el brazo a la pista) + **latencia rotacional** (esperar a que el sector pase bajo la cabeza) + **transferencia**.",
+     "refs": [
+      {
+       "title": "OSTEP · Hard Disk Drives",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
+       "quote": "We start with a platter, a circular hard surface on which data is stored persistently by inducing magnetic changes to it."
+      },
+      {
+       "title": "OSTEP · Hard Disk Drives",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
+       "quote": "Data is encoded on each surface in concentric circles of sectors; we call one such concentric circle a track."
+      },
+      {
+       "title": "OSTEP · Hard Disk Drives",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
+       "quote": "This process of reading and writing is accomplished by the disk head; there is one such head per surface of the drive."
+      },
+      {
+       "title": "OSTEP · Hard Disk Drives",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
+       "quote": "in a process known as a seek."
+      },
+      {
+       "title": "OSTEP · Hard Disk Drives",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
+       "quote": "must just wait for the desired sector to rotate under the disk head"
+      },
+      {
+       "title": "OSTEP · Hard Disk Drives",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
+       "quote": "first a seek, then waiting for the rotational delay, and finally the transfer."
+      },
+      {
+       "title": "Microsoft Learn · DISK_GEOMETRY structure",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/api/winioctl/ns-winioctl-disk_geometry",
+       "quote": "The number of tracks per cylinder."
+      },
+      {
+       "title": "Microsoft Learn · DISK_GEOMETRY structure",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/api/winioctl/ns-winioctl-disk_geometry",
+       "quote": "The number of sectors per track."
+      }
+     ]
+    },
+    {
+     "text": "**SSD frente a HDD**: el SSD no tiene piezas mecánicas y hace muchas más operaciones de E/S aleatorias por segundo. **NVMe** usa **PCIe** y se diseñó para SSD y memoria no volátil (SATA y SAS se diseñaron para discos duros): un SSD NVMe PCIe 3.0 x4 es **6-7 veces** más rápido que uno SATA.",
+     "refs": [
+      {
+       "title": "OSTEP · Flash-based SSDs",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf",
+       "quote": "Unlike hard disk drives, flash-based SSDs have no mechanical components"
+      },
+      {
+       "title": "OSTEP · Flash-based SSDs",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf",
+       "quote": "while a typical disk drive can only perform a few hundred random I/Os per second, SSDs can do much better."
+      },
+      {
+       "title": "NVM Express · FAQ",
+       "url": "https://nvmexpress.org/faq/",
+       "quote": "The NVMe specifications use the PCIe interface for low latency and scalable performance."
+      },
+      {
+       "title": "NVM Express · FAQ",
+       "url": "https://nvmexpress.org/faq/",
+       "quote": "previous storage protocols that were designed for hard disk drives, for instance, SATA and SAS."
+      },
+      {
+       "title": "NVM Express · FAQ",
+       "url": "https://nvmexpress.org/faq/",
+       "quote": "Current PCIe 3.0 x4 NVMe SSDs are 6-7x faster than a SATA SSD"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Impresión",
+   "points": [
+    {
+     "text": "**Impacto** (matricial): una cabeza de agujas golpea la cinta; p. ej., impresoras de **24 agujas** como la Epson LQ-590.",
+     "refs": [
+      {
+       "title": "Epson · LQ-590 Impact Printer",
+       "url": "https://epson.com/For-Work/Printers/Impact-Dot-Matrix/LQ-590-Impact-Printer/p/C11C558001",
+       "quote": "24-pin, serial impact dot matrix"
+      }
+     ]
+    },
+    {
+     "text": "**Inyección de tinta**: boquillas que forman puntos de color en el papel. **Láser** (electrofotografía): un láser recorre el **tambor** según los datos y la imagen se forma con **tóner**.",
+     "refs": [
+      {
+       "title": "Image Permanence Institute (RIT) · Preservation of Digitally-Printed Images",
+       "url": "https://s3.cad.rit.edu/ipi-assets/publications/dp3_guide.pdf",
+       "quote": "nozzle to create colored dot patterns on paper"
+      },
+      {
+       "title": "Image Permanence Institute (RIT) · Preservation of Digitally-Printed Images",
+       "url": "https://s3.cad.rit.edu/ipi-assets/publications/dp3_guide.pdf",
+       "quote": "an electronic file containing the print data controls a laser which sweeps back and forth across the drum"
+      },
+      {
+       "title": "Image Permanence Institute (RIT) · Preservation of Digitally-Printed Images",
+       "url": "https://s3.cad.rit.edu/ipi-assets/publications/dp3_guide.pdf",
+       "quote": "The image material used in electrophotographic systems is called toner."
+      }
+     ]
+    },
+    {
+     "text": "**Sublimación de tinta**: transferencia térmica por difusión del tinte; los colorantes pasan al papel desde una **cinta donante** de color.",
+     "refs": [
+      {
+       "title": "Image Permanence Institute (RIT) · Preservation of Digitally-Printed Images",
+       "url": "https://s3.cad.rit.edu/ipi-assets/publications/dp3_guide.pdf",
+       "quote": "is dye diffusion thermal transfer."
+      },
+      {
+       "title": "Image Permanence Institute (RIT) · Preservation of Digitally-Printed Images",
+       "url": "https://s3.cad.rit.edu/ipi-assets/publications/dp3_guide.pdf",
+       "quote": "the image-forming colorants are transferred to the print paper from a colored donor ribbon."
+      }
+     ]
+    },
+    {
+     "text": "Impresión **3D por inyección de aglutinante** (*binder jetting*): se deposita un **agente aglutinante líquido** que une un material en **polvo**.",
+     "refs": [
+      {
+       "title": "Image Permanence Institute (RIT) · 3D Printing Glossary (definiciones de ISO/ASTM 52900)",
+       "url": "https://www.rit.edu/ipi/sites/rit.edu.ipi/files/2025-08/3D%20Glossary%20Text%20August%202025%20FINAL.pdf",
+       "quote": "additive manufacturing process in which a liquid bonding agent is selectively deposited to join powder materials."
       }
      ]
     }
@@ -141,6 +361,101 @@
        "law": "BOE-A-2011-13168",
        "section": "iv",
        "quote": "El nivel de resolución mínimo para imágenes electrónicas será de 200 píxeles por pulgada, tanto para imágenes obtenidas en blanco y negro, color o escala de grises."
+      }
+     ]
+    },
+    {
+     "text": "**Escáneres**: los **de tambor** sujetan el original a un tambor y dan la **mayor calidad** de imagen; los **planetarios** (cenitales) capturan libros desde arriba, con el sensor o el objeto en movimiento.",
+     "refs": [
+      {
+       "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
+       "url": "https://www.digitizationguidelines.gov/guidelines/FADGI%20Technical%20Guidelines%20for%20Digitizing%20Cultural%20Heritage%20Materials_3rd%20Edition_05092023.pdf",
+       "quote": "Drum scanners function by securing either reflection or transmission originals to the surface of a"
+      },
+      {
+       "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
+       "url": "https://www.digitizationguidelines.gov/guidelines/FADGI%20Technical%20Guidelines%20for%20Digitizing%20Cultural%20Heritage%20Materials_3rd%20Edition_05092023.pdf",
+       "quote": "To this day, drum scanners provide the highest image quality of all imaging devices"
+      },
+      {
+       "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
+       "url": "https://www.digitizationguidelines.gov/guidelines/FADGI%20Technical%20Guidelines%20for%20Digitizing%20Cultural%20Heritage%20Materials_3rd%20Edition_05092023.pdf",
+       "quote": "Manually operated planetary book scanners with or without glass or plastic platens"
+      }
+     ]
+    },
+    {
+     "text": "Interfaces de escáner: **TWAIN** (estándar abierto entre aplicaciones y dispositivos, de 1992), **WIA** (plataforma de adquisición de imágenes de Windows, compatible con aplicaciones TWAIN) e **ISIS** (*Image and Scanner Interface Specification*, driver que suele dar el fabricante).",
+     "refs": [
+      {
+       "title": "TWAIN Working Group",
+       "url": "https://www.twain.org/",
+       "quote": "whose purpose is to provide open, royalty-free communication standards between applications and devices."
+      },
+      {
+       "title": "TWAIN Working Group",
+       "url": "https://www.twain.org/",
+       "quote": "The original standard that unified document imaging in 1992."
+      },
+      {
+       "title": "Microsoft Learn · Windows Image Acquisition",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/wia/-wia-startpage",
+       "quote": "Windows Image Acquisition (WIA) is the still image acquisition platform in the Windows family of operating systems"
+      },
+      {
+       "title": "Microsoft Learn · Windows Image Acquisition",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/wia/-wia-startpage",
+       "quote": "The WIA subsystem also includes a transparent compatibility layer which allows TWAIN compatible applications to employ and use WIA-driver-based devices."
+      },
+      {
+       "title": "IBM Support · Setting up a scanner for the ImagePlus Workstation Program",
+       "url": "https://www.ibm.com/support/pages/setting-scanner-imageplus-workstation-program-windows-7-or-vista",
+       "quote": "Image and Scanner Interface Specification (ISIS) scanner driver"
+      },
+      {
+       "title": "IBM Support · Setting up a scanner for the ImagePlus Workstation Program",
+       "url": "https://www.ibm.com/support/pages/setting-scanner-imageplus-workstation-program-windows-7-or-vista",
+       "quote": "The ISIS driver is usually provided with the scanner from the manufacturer."
+      }
+     ]
+    },
+    {
+     "text": "**Profundidad de color**: con **1 bit** por píxel solo hay **2** valores (blanco o negro, imagen bitonal).",
+     "refs": [
+      {
+       "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
+       "url": "https://www.digitizationguidelines.gov/guidelines/FADGI%20Technical%20Guidelines%20for%20Digitizing%20Cultural%20Heritage%20Materials_3rd%20Edition_05092023.pdf",
+       "quote": "In a 1-bit file each pixel is represented by a single binary digit (either a 0 or 1), so the pixel can be either black or white."
+      }
+     ]
+    },
+    {
+     "text": "Vídeo: las imágenes se definen para captura **progresiva** (**p**, p. ej. 1080p) o **entrelazada** (**i**, 1080i).",
+     "refs": [
+      {
+       "title": "Recomendación UIT-R BT.709-6",
+       "url": "https://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.709-6-201506-I!!PDF-E.pdf",
+       "quote": "Pictures are defined for progressive (P) capture and interlace (I) capture."
+      }
+     ]
+    },
+    {
+     "text": "**GPU integrada** (junto a la CPU, sin tarjeta propia) frente a **discreta** o **dedicada** (chip en su propia placa, normalmente en una ranura **PCI Express**).",
+     "refs": [
+      {
+       "title": "Intel · What Is a GPU?",
+       "url": "https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html",
+       "quote": "An integrated GPU does not come on its own separate card at all and is instead embedded alongside the CPU."
+      },
+      {
+       "title": "Intel · What Is a GPU?",
+       "url": "https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html",
+       "quote": "A discrete GPU is a distinct chip that is mounted on its own circuit board and is typically attached to a PCI Express slot."
+      },
+      {
+       "title": "Intel · What Is a GPU?",
+       "url": "https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-gpu.html",
+       "quote": "a discrete GPU (sometimes called a dedicated graphics card)"
       }
      ]
     }

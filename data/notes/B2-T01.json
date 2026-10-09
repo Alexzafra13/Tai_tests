@@ -63,6 +63,111 @@
        "quote": "Los formatos de precisión sencilla (4 bytes) y de precisión doble (8 bytes) se usan en MSVC."
       }
      ]
+    },
+    {
+     "text": "**Prefijos SI** (potencias de 10): kilo, mega, giga, tera, **peta** (10^15), **exa** (10^18), **zetta** (10^21), **yotta** (10^24); en 2022 se añadieron **ronna** (10^27) y **quetta** (10^30). Así, 1 EB = 1000 PB.",
+     "refs": [
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "peta P 10 15 quadrillion"
+      },
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "exa E 10 18 quintillion"
+      },
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "zetta Z 10 21 sextillion"
+      },
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "yotta Y 10 24 septillion"
+      },
+      {
+       "title": "NIST · Metric (SI) Prefixes",
+       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
+       "quote": "2022 Four prefixes were added. Two for forming multiples: ronna and quetta."
+      }
+     ]
+    },
+    {
+     "text": "Los prefijos SI son **solo potencias de 10** (1 kilobit = 1000 bits, no 1024). Para potencias de 2 están los **prefijos binarios** (IEC 80000-13): **kibi** (Ki), mebi (Mi), gibi (Gi)…: 1024 bytes son **1 KiB**. No forman parte del SI.",
+     "refs": [
+      {
+       "title": "BIPM · The International System of Units (SI Brochure, 9th ed.)",
+       "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+       "quote": "The SI prefixes refer strictly to powers of 10. They should not be used to indicate powers of 2 (for example, one kilobit represents 1000 bits and not 1024 bits)."
+      },
+      {
+       "title": "BIPM · The International System of Units (SI Brochure, 9th ed.)",
+       "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+       "quote": "The names and symbols for prefixes corresponding to powers of 2 are the following: kibi (Ki) for"
+      },
+      {
+       "title": "IEC · Prefixes for binary multiples",
+       "url": "https://www.iec.ch/prefixes-binary-multiples",
+       "quote": "1000 bytes are 1 kilobyte (Kbyte), and 1024 bytes are instead 1 kibibyte (Kibyte)."
+      },
+      {
+       "title": "NIST · Prefixes for binary multiples",
+       "url": "https://physics.nist.gov/cuu/Units/binary.html",
+       "quote": "It is important to recognize that the new prefixes for binary multiples are not part of the International System of Units (SI), the modern metric system."
+      }
+     ]
+    },
+    {
+     "text": "Puertas lógicas: **AND**, **OR**, **NOT** (inversor), **NAND**, **NOR**, **XOR** (O exclusivo, Y = A ⊕ B: 1 si las entradas son distintas) y **XNOR** (su negación).",
+     "refs": [
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC08",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf",
+       "quote": "This device contains four independent 2-input AND gates."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC04",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf",
+       "quote": "This device contains six independent inverters."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC00",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc00.pdf",
+       "quote": "This device contains four independent 2-input NAND gates."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC02",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc02.pdf",
+       "quote": "This device contains four independent 2-input NOR gates."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC86",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc86.pdf",
+       "quote": "Each gate performs the Boolean function Y = A ⊕ B in positive logic."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos CD74HC7266",
+       "url": "https://www.ti.com/lit/ds/symlink/cd74hc7266.pdf",
+       "quote": "This device contains four independent 2-input XNOR gates."
+      }
+     ]
+    },
+    {
+     "text": "**Desbordamiento** (*overflow*): el resultado de una operación con signo es demasiado grande (o demasiado negativo) para caber en el destino; en x86 lo indica el **flag OF**.",
+     "refs": [
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "Overflow flag — Set if the integer result is too large a positive number or too small a negative number (excluding the sign-bit) to fit in the destination operand; cleared otherwise."
+      },
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "This flag indicates an overflow condition for signed-integer (two’s complement) arithmetic."
+      }
+     ]
     }
    ]
   },
@@ -136,6 +241,143 @@
        "title": "SNIA · NVDIMM Technical Brief",
        "url": "https://www.snia.org/sites/default/files/technical-work/whitepapers/SNIA-NVDIMM-Technical-Brief.pdf",
        "quote": "In contrast, NAND flash is non-volatile, meaning that it retains its data when power is removed."
+      }
+     ]
+    },
+    {
+     "text": "Tipos de memoria (JEDEC):",
+     "refs": [
+      {
+       "title": "JEDEC Dictionary · nonvolatile memory",
+       "url": "https://www.jedec.org/standards-documents/dictionary/terms/nonvolatile-memory",
+       "quote": "A memory in which the data content is retained when power is no longer supplied to it."
+      }
+     ],
+     "items": [
+      {
+       "text": "**RAM** (acceso aleatorio): se accede a cualquier dato en **el mismo tiempo**, sea cual sea su posición.",
+       "refs": [
+        {
+         "title": "JEDEC Dictionary · random-access memory (RAM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/random-access-memory-ram",
+         "quote": "A memory in which access to all storage data can be achieved in essentially the same time, independent of the location."
+        }
+       ]
+      },
+      {
+       "text": "**SRAM** (estática): volátil, conserva los datos **sin refresco**. **DRAM** (dinámica): volátil, necesita **refresco** periódico.",
+       "refs": [
+        {
+         "title": "JEDEC Dictionary · static read/write memory",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/static-readwrite-memory",
+         "quote": "A volatile read/write memory in which the data is retained in the absence of control signals generated inside or outside the integrated circuit."
+        },
+        {
+         "title": "JEDEC Dictionary · dynamic read/write memory",
+         "url": "https://www.jedec.org/node/3492",
+         "quote": "A volatile read/write memory in which the cells require the repetitive application of control signals generated inside or outside the integrated circuit to retain stored data."
+        },
+        {
+         "title": "JEDEC Dictionary · dynamic read/write memory",
+         "url": "https://www.jedec.org/node/3492",
+         "quote": "Each repetitive application of the control signals is normally called a refresh operation or cycle."
+        }
+       ]
+      },
+      {
+       "text": "**ROM**: solo lectura en funcionamiento normal. **PROM**: se programa **una sola vez**. **EPROM**: se borra con **luz ultravioleta** y se reprograma eléctricamente. **EEPROM**: se borra y reprograma **eléctricamente**.",
+       "refs": [
+        {
+         "title": "JEDEC Dictionary · read-only memory (ROM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/read-only-memory-rom",
+         "quote": "A memory in which the contents are intended to be read only and not to be altered during normal operation."
+        },
+        {
+         "title": "JEDEC Dictionary · programmable read-only memory (PROM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/programmable-read-only-memory-prom",
+         "quote": "can have the data content of each memory cell altered only once."
+        },
+        {
+         "title": "JEDEC Dictionary · erasable programmable read-only memory (EPROM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/erasable-programmable-read-only-memory-eprom",
+         "quote": "all cells can be simultaneously erased using ultraviolet light, after which the cells at each address can be reprogrammed electrically."
+        },
+        {
+         "title": "JEDEC Dictionary · electrically erasable programmable read-only memory (EEPROM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/electrically-erasable-programmable-read-only-memory-eeprom",
+         "quote": "the cells at each address can be erased electrically and reprogrammed electrically."
+        }
+       ]
+      },
+      {
+       "text": "**NVRAM**: RAM **no volátil**, una SRAM que guarda el estado de sus celdas al cortar la alimentación.",
+       "refs": [
+        {
+         "title": "JEDEC Dictionary · nonvolatile random-access memory (NVRAM)",
+         "url": "https://www.jedec.org/standards-documents/dictionary/terms/nonvolatile-random-access-memory-nvram",
+         "quote": "An SRAM in which provisions exist on chip for the state of the cells to be saved when power is removed."
+        }
+       ]
+      },
+      {
+       "text": "**CMOS**: pequeña memoria de la placa base que guarda la **configuración de la BIOS** (borrarla restaura los valores por defecto). La BIOS suele estar en **EEPROM** o flash.",
+       "refs": [
+        {
+         "title": "Intel · Clear CMOS (artículo de soporte 000025368)",
+         "url": "https://www.intel.com/content/www/us/en/support/articles/000025368.html",
+         "quote": "Complementary metal-oxide-semiconductor (CMOS) is a small amount of memory on a computer motherboard that stores the Basic Input/Output System (BIOS) settings."
+        },
+        {
+         "title": "Intel · Clear CMOS (artículo de soporte 000025368)",
+         "url": "https://www.intel.com/content/www/us/en/support/articles/000025368.html",
+         "quote": "clearing CMOS may help recover the boards because that restores the BIOS default settings."
+        },
+        {
+         "title": "NIST SP 800-147 · BIOS Protection Guidelines",
+         "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-147.pdf",
+         "quote": "The system BIOS is typically stored on electrically erasable programmable read-only memory (EEPROM) or other forms of flash memory"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Jerarquía de memoria**: la **caché** es pequeña y rápida y guarda copias de los datos más usados de la **memoria principal**, que es mayor y más lenta; el disco añade otro nivel por debajo.",
+     "refs": [
+      {
+       "title": "OSTEP · Multiprocessor Scheduling",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-multi.pdf",
+       "quote": "Caches are small, fast memories that (in general) hold copies of popular data that is found in the main memory of the system."
+      },
+      {
+       "title": "OSTEP · Multiprocessor Scheduling",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-multi.pdf",
+       "quote": "Main memory, in contrast, holds all of the data, but access to this larger memory is slower."
+      },
+      {
+       "title": "OSTEP · Beyond Physical Memory: Mechanisms",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf",
+       "quote": "we require an additional level in the memory hierarchy."
+      }
+     ]
+    },
+    {
+     "text": "**Multinúcleo**: dos o más núcleos de ejecución en un mismo encapsulado (p. ej., Intel Pentium D, con dos núcleos). La CPU se comunica con la E/S a través de **chipsets** especializados.",
+     "refs": [
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "Multi-core technology enhances hardware multi-threading capability by providing two or more execution cores in a physical package."
+      },
+      {
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "This processor provides hardware multithreading support with two processor cores"
+      },
+      {
+       "title": "OSTEP · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "modern systems increasingly use specialized chipsets and faster point-to-point interconnects to improve performance."
       }
      ]
     }
