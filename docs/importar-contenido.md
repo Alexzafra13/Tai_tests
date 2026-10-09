@@ -218,7 +218,13 @@ lenguajes de programación; SQL; orientación a objetos y UML; Jakarta EE y
 con el Real Decreto 1112/2018, usabilidad y seguridad en el desarrollo;
 pruebas, control de versiones y metodologías). Los patrones de diseño
 (GoF, GRASP) quedan fuera: su catálogo no está publicado en una fuente
-oficial en línea.
+oficial en línea. También el bloque IV entero, temas 1 a 10
+(administración de sistemas, bases de datos, almacenamiento y backup,
+correo y contenedores, redes y usuarios, seguridad y CPD, comunicaciones,
+TCP/IP y OSI, Internet y TLS, seguridad en redes y VPN, redes locales),
+con RFC, guías CCN-STIC, NIST y documentación de los fabricantes. Cuando
+un dato depende del fabricante (colores de los LED, tramas jumbo), los
+apuntes dan el ejemplo con su marca.
 
 ## Comprobar
 
