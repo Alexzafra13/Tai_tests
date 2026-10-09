@@ -1,0 +1,300 @@
+{
+ "topic": "B4-T04",
+ "sections": [
+  {
+   "title": "Gestión de red: SNMP y CMIP",
+   "points": [
+    {
+     "text": "**SNMP** es el protocolo de **gestión de dispositivos de red**: un gestor accede a la información de los nodos gestionados, cada uno con su **agente**. **SNMPv3** es la **tercera versión** del marco; parte de SNMPv1 y SNMPv2, se recomienda **usarla en lugar de ellas** y retirar las anteriores (pasan a «históricas»).",
+     "refs": [
+      {
+       "title": "RFC 3410 · Introduction to SNMPv3",
+       "url": "https://www.rfc-editor.org/rfc/rfc3410.txt",
+       "quote": "The purpose of this document is to provide an overview of the third version of the Internet-Standard Management Framework, termed the SNMP version 3 Framework (SNMPv3)."
+      },
+      {
+       "title": "RFC 3410 · Introduction to SNMPv3",
+       "url": "https://www.rfc-editor.org/rfc/rfc3410.txt",
+       "quote": "The document explains why using SNMPv3 instead of SNMPv1 or SNMPv2 is strongly recommended."
+      },
+      {
+       "title": "RFC 3410 · Introduction to SNMPv3",
+       "url": "https://www.rfc-editor.org/rfc/rfc3410.txt",
+       "quote": "The document also recommends that RFCs 1157, 1441, 1901, 1909 and 1910 be retired by moving them to Historic status."
+      },
+      {
+       "title": "RFC 3410 · Introduction to SNMPv3",
+       "url": "https://www.rfc-editor.org/rfc/rfc3410.txt",
+       "quote": "several (typically many) managed nodes, each with an SNMP entity which provides remote access to management instrumentation (traditionally called an agent);"
+      }
+     ]
+    },
+    {
+     "text": "La operación **GetBulk** (`GetBulkRequest`) pide **grandes cantidades de datos**, por ejemplo **tablas grandes**, de forma eficiente.",
+     "refs": [
+      {
+       "title": "RFC 3416 · Protocol Operations for SNMP",
+       "url": "https://www.rfc-editor.org/rfc/rfc3416.txt",
+       "quote": "The purpose of the GetBulkRequest-PDU is to request the transfer of a potentially large amount of data, including, but not limited to, the efficient and rapid retrieval of large tables."
+      }
+     ]
+    },
+    {
+     "text": "**CMIP** (*Common Management Information Protocol*) es el protocolo de **gestión de red de ISO**: intercambia información de **control y monitorización** entre un gestor y un **elemento de red remoto**.",
+     "refs": [
+      {
+       "title": "RFC 1189 · CMOT and CMIP",
+       "url": "https://www.rfc-editor.org/rfc/rfc1189.txt",
+       "quote": "This memo defines a network management architecture that uses the International Organization for Standardization's (ISO) Common Management Information Services/Common Management Information Protocol (CMIS/CMIP) in the Internet."
+      },
+      {
+       "title": "RFC 1189 · CMOT and CMIP",
+       "url": "https://www.rfc-editor.org/rfc/rfc1189.txt",
+       "quote": "This architecture provides a means by which control and monitoring information can be exchanged between a manager and a remote network element."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Monitorización y control de tráfico",
+   "points": [
+    {
+     "text": "`tcpdump -i eth1 -w fichero.out` **captura** el tráfico de la interfaz `eth1` y guarda los **paquetes en bruto** en el fichero; luego se leen con `-r`.",
+     "refs": [
+      {
+       "title": "tcpdump(1) · tcpdump.org",
+       "url": "https://www.tcpdump.org/manpages/tcpdump.1.html",
+       "quote": "-i interface --interface= interface Listen, report the list of link-layer types, report the list of time stamp types, or report the results of compiling a filter expression on interface ."
+      },
+      {
+       "title": "tcpdump(1) · tcpdump.org",
+       "url": "https://www.tcpdump.org/manpages/tcpdump.1.html",
+       "quote": "-w file Write the raw packets to file rather than parsing and printing them out. They can later be printed with the -r option."
+      }
+     ]
+    },
+    {
+     "text": "Para comprobar si un puerto de otro equipo está abierto se usa **netcat**: `nc -v <host> <puerto>` abre una conexión TCP a ese puerto y `-v` muestra el resultado (con `-z` solo comprueba si hay un servicio escuchando). **Ncat**, del proyecto Nmap, es la versión moderna de la familia Netcat, con la misma sintaxis `[host] [puerto]`.",
+     "refs": [
+      {
+       "title": "nc(1) · Debian Manpages (netcat-openbsd)",
+       "url": "https://manpages.debian.org/bookworm/netcat-openbsd/nc.1.en.html",
+       "quote": "nc — arbitrary TCP and UDP connections and listens"
+      },
+      {
+       "title": "nc(1) · Debian Manpages (netcat-openbsd)",
+       "url": "https://manpages.debian.org/bookworm/netcat-openbsd/nc.1.en.html",
+       "quote": "-v Produce more verbose output."
+      },
+      {
+       "title": "nc(1) · Debian Manpages (netcat-openbsd)",
+       "url": "https://manpages.debian.org/bookworm/netcat-openbsd/nc.1.en.html",
+       "quote": "-z Only scan for listening daemons, without sending any data to them."
+      },
+      {
+       "title": "nc(1) · Debian Manpages (netcat-openbsd)",
+       "url": "https://manpages.debian.org/bookworm/netcat-openbsd/nc.1.en.html",
+       "quote": "It may be useful to know which ports are open and running services on a target machine."
+      },
+      {
+       "title": "Ncat Reference Guide",
+       "url": "https://nmap.org/book/ncat-man.html",
+       "quote": "Ncat was written for the Nmap Project and is the culmination of the currently splintered family of Netcat incarnations."
+      },
+      {
+       "title": "Ncat Reference Guide",
+       "url": "https://nmap.org/book/ncat-man.html",
+       "quote": "Usage: ncat [options] [hostname] [port]"
+      }
+     ]
+    },
+    {
+     "text": "**Nagios**: tras cambiar la configuración, se comprueba **antes de (re)arrancar** con `nagios -v /usr/local/nagios/etc/nagios.cfg`; si hay errores, Nagios no arrancaría.",
+     "refs": [
+      {
+       "title": "Nagios Core · Verifying Your Configuration",
+       "url": "https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/verifyconfig.html",
+       "quote": "Every time you modify your configuration files , you should run a sanity check on them. It is important to do this before you (re)start Nagios Core, since it will shut down if your configuration contains errors."
+      },
+      {
+       "title": "Nagios Core · Verifying Your Configuration",
+       "url": "https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/4/en/verifyconfig.html",
+       "quote": "/usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg"
+      }
+     ]
+    },
+    {
+     "text": "**Checkmk** (Check_MK) es software de **monitorización**; su edición libre lleva **Nagios** como núcleo.",
+     "refs": [
+      {
+       "title": "Checkmk · Setting up Checkmk",
+       "url": "https://docs.checkmk.com/latest/en/intro_setup.html",
+       "quote": "Checkmk Community is free, 100 % open-source software and incorporates Nagios as its core. You can use it to comprehensively monitor small IT infrastructures."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Dispositivos de red (Cisco)",
+   "points": [
+    {
+     "text": "En un switch Cisco, `switchport mode access` convierte el puerto en **puerto de acceso** y `switchport access vlan <n>` lo **asigna a la VLAN** n.",
+     "refs": [
+      {
+       "title": "Cisco · Common CLI Commands in Catalyst 1200 and 1300 Switches",
+       "url": "https://www.cisco.com/c/en/us/support/docs/smb/switches/Catalyst-switches/kmgmt3622-overview-common-cli-commands-catalyst-1200-1300-switches.html",
+       "quote": "Create an access port by typing switchport mode access ."
+      },
+      {
+       "title": "Cisco · Common CLI Commands in Catalyst 1200 and 1300 Switches",
+       "url": "https://www.cisco.com/c/en/us/support/docs/smb/switches/Catalyst-switches/kmgmt3622-overview-common-cli-commands-catalyst-1200-1300-switches.html",
+       "quote": "To assign it to a VLAN, type switchport access followed by the VLAN number."
+      }
+     ]
+    },
+    {
+     "text": "`ip helper-address <servidor>` (en la interfaz, p. ej. la SVI de la VLAN) **reenvía a la dirección indicada los broadcast UDP** de ciertos puertos (por defecto, entre otros, BOOTP/DHCP). Para el **DHCP relay** se configura en la interfaz conectada a los clientes, apuntando al servidor DHCP.",
+     "refs": [
+      {
+       "title": "Cisco IOS IP Application Services Command Reference · ip helper-address",
+       "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp/command/iap-cr-book/iap-i1.html",
+       "quote": "To enable forwarding of User Datagram Protocol (UDP) broadcasts, including Bootstrap Protocol (BOOTP), received on an interface, use the ip helper-address command in interface configuration mode."
+      },
+      {
+       "title": "Cisco IOS IP Application Services Command Reference · ip helper-address",
+       "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp/command/iap-cr-book/iap-i1.html",
+       "quote": "address Destination broadcast or host address to be used when forwarding UDP broadcasts."
+      },
+      {
+       "title": "Cisco IOS IP Application Services Command Reference · ip helper-address",
+       "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp/command/iap-cr-book/iap-i1.html",
+       "quote": "If a helper address is specified and UDP forwarding is enabled, broadcast packets destined to the following port numbers are forwarded by default:"
+      },
+      {
+       "title": "Cisco IOS IP Application Services Command Reference · ip helper-address",
+       "url": "https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp/command/iap-cr-book/iap-i1.html",
+       "quote": "To enable BOOTP or DHCP broadcast forwarding for a set of clients, configure a helper address on the router interface connected to the client. The helper address must specify the address of the BOOTP or DHCP server."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gestión de usuarios: Active Directory",
+   "points": [
+    {
+     "text": "Un **directorio** almacena información sobre los **objetos de la red**; **AD DS** usa un **almacén de datos estructurado** para organizarla y facilitar su búsqueda y uso a administradores y usuarios.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Introducción a Active Directory Domain Services",
+       "url": "https://learn.microsoft.com/es-es/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+       "quote": "Un directorio es una estructura jerárquica que almacena información sobre los objetos de una red."
+      },
+      {
+       "title": "Microsoft Learn · Introducción a Active Directory Domain Services",
+       "url": "https://learn.microsoft.com/es-es/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+       "quote": "AD DS almacena información sobre los objetos de la red y facilita a los administradores y usuarios la búsqueda y uso de esta información. AD DS usa un almacén de datos estructurado como base para una organización lógica jerárquica de información de directorio."
+      }
+     ]
+    },
+    {
+     "text": "Las **unidades organizativas (OU)** sirven para delegar administración y **aplicar directivas de grupo**: para aplicar una GPO a un grupo de usuarios, se ponen en una OU y la GPO se **vincula a esa OU** (afecta a sus usuarios y equipos y, por herencia, a las OU hijas).",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Reviewing OU Design Concepts",
+       "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/reviewing-ou-design-concepts",
+       "quote": "OUs are created for a specific purpose, such as the delegation of administration, the application of Group Policy, or to limit the visibility of objects."
+      },
+      {
+       "title": "Microsoft Learn · Reviewing OU Design Concepts",
+       "url": "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/reviewing-ou-design-concepts",
+       "quote": "if you need to apply Group Policy to a select group of users or resources, you can add those users or resources to an OU, and then apply Group Policy to that OU."
+      },
+      {
+       "title": "Microsoft Learn · Linking GPOs to Active Directory Containers",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/linking-gpos-to-active-directory-containers",
+       "quote": "A GPO applied to an organizational unit applies directly to all users and computers in the organizational unit and, by inheritance, to all users and computers in child organizational units."
+      }
+     ]
+    },
+    {
+     "text": "La consola gráfica **Usuarios y equipos de Active Directory** se abre desde el Administrador del servidor (Herramientas) o ejecutando `dsa.msc`; en ella se gestionan los usuarios (sus propiedades) y están los grupos predeterminados del dominio.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Preparación de un dominio no enrutable para la sincronización de directorios",
+       "url": "https://learn.microsoft.com/es-es/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization",
+       "quote": "En el controlador de dominio de AD DS, en el Administrador del servidor elija Herramientas > Usuarios y equipos de Active Directory ."
+      },
+      {
+       "title": "Microsoft Learn · Preparación de un dominio no enrutable para la sincronización de directorios",
+       "url": "https://learn.microsoft.com/es-es/microsoft-365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization",
+       "quote": "escriba Dsa.msc y, a continuación, seleccione Aceptar . Seleccione un usuario, haga clic con el botón derecho y, a continuación, elija Propiedades ."
+      },
+      {
+       "title": "Microsoft Learn · Grupos de seguridad de Active Directory",
+       "url": "https://learn.microsoft.com/es-es/windows-server/identity/ad-ds/manage/understand-security-groups",
+       "quote": "Los grupos predeterminados se encuentran en el contenedor Builtin o en el contenedor Users en la herramienta Usuarios y equipos de Active Directory."
+      }
+     ]
+    },
+    {
+     "text": "En la línea de comandos de Windows: `net localgroup <grupo>` lista los **miembros de un grupo local** (p. ej., `administradores`), y `net accounts` muestra la **directiva de contraseñas e inicio de sesión** actual.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Net localgroup",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc725622(v=ws.11)",
+       "quote": "displays a list of users or global groups in a local group."
+      },
+      {
+       "title": "Microsoft Learn · Net accounts",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-xp/bb490698(v=technet.10)",
+       "quote": "Used without parameters, net accounts displays the current settings for password, logon limitations, and domain information."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Gestión de dispositivos móviles (MDM)",
+   "points": [
+    {
+     "text": "**BYOD** (*bring your own device*): los empleados y alumnos usan sus **dispositivos personales** para tareas profesionales o educativas; se pueden inscribir en el MDM.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Guía de inscripción de dispositivos para Microsoft Intune",
+       "url": "https://learn.microsoft.com/es-es/intune/intune-service/fundamentals/deployment-guide-enrollment",
+       "quote": "Los dispositivos en escenarios de bring-your-own-device (BYOD) pueden ser inscritos en MDM en Intune. Los métodos de inscripción admitidos permiten a los empleados y alumnos usar sus dispositivos personales para tareas profesionales o educativas."
+      }
+     ]
+    },
+    {
+     "text": "La **inscripción (enrolamiento)** registra el dispositivo, asociado a su usuario, en el sistema **MDM** de la organización. En Intune, usuarios y dispositivos se registran en Microsoft Entra ID, el usuario completa la inscripción y se instala un certificado MDM con el que se empiezan a **aplicar las directivas**.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Guía de inscripción de dispositivos para Microsoft Intune",
+       "url": "https://learn.microsoft.com/es-es/intune/intune-service/fundamentals/deployment-guide-enrollment",
+       "quote": "Una vez que los usuarios y los dispositivos están registrados en su Microsoft Entra ID (también denominado inquilino ), puede utilizar Intune para sus capacidades de administración de puntos de conexión."
+      },
+      {
+       "title": "Microsoft Learn · Guía de inscripción de dispositivos para Microsoft Intune",
+       "url": "https://learn.microsoft.com/es-es/intune/intune-service/fundamentals/deployment-guide-enrollment",
+       "quote": "En la aplicación Portal de empresa de Intune, el usuario del dispositivo inicia y completa la inscripción."
+      },
+      {
+       "title": "Microsoft Learn · Guía de inscripción de dispositivos para Microsoft Intune",
+       "url": "https://learn.microsoft.com/es-es/intune/intune-service/fundamentals/deployment-guide-enrollment",
+       "quote": "El proceso que habilita la administración de dispositivos para un dispositivo se denomina inscripción de dispositivos"
+      },
+      {
+       "title": "Microsoft Learn · Guía de inscripción de dispositivos para Microsoft Intune",
+       "url": "https://learn.microsoft.com/es-es/intune/intune-service/fundamentals/deployment-guide-enrollment",
+       "quote": "Durante la inscripción, Intune instala un certificado de Administración de dispositivos móviles (MDM) en el dispositivo de inscripción. El certificado MDM se comunica con el servicio de Intune y permite a Intune empezar a aplicar las directivas de la organización"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
