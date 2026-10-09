@@ -1,0 +1,300 @@
+{
+ "topic": "B4-T08",
+ "sections": [
+  {
+   "title": "Internet: organismos y servicios",
+   "points": [
+    {
+     "text": "El **IETF** es la principal organización de **estándares de Internet**: elabora documentos técnicos (incluidos los estándares de protocolos, las RFC) con procesos abiertos y los publica gratis.",
+     "refs": [
+      {
+       "title": "IETF · Introduction to the IETF",
+       "url": "https://www.ietf.org/about/introduction/",
+       "quote": "The IETF is the premier Internet standards organization. It follows open and well-documented processes for setting these standards. Once published, those standards are made freely available."
+      },
+      {
+       "title": "RFC 3935 · A Mission Statement for the IETF",
+       "url": "https://www.rfc-editor.org/rfc/rfc3935.txt",
+       "quote": "The mission of the IETF is to produce high quality, relevant technical and engineering documents that influence the way people design, use, and manage the Internet"
+      },
+      {
+       "title": "RFC 3935 · A Mission Statement for the IETF",
+       "url": "https://www.rfc-editor.org/rfc/rfc3935.txt",
+       "quote": "These documents include protocol standards, best current practices, and informational documents of various kinds."
+      },
+      {
+       "title": "IETF · Introduction to the IETF",
+       "url": "https://www.ietf.org/about/introduction/",
+       "quote": "The IETF publishes its technical documentation as RFCs"
+      }
+     ]
+    },
+    {
+     "text": "**DNS**: permite usar **nombres** para obtener las **direcciones** de los equipos (y otros datos), con registros de distintos tipos: **A** (dirección de un host), **CNAME** (alias), **MX** (intercambiador de correo), **NS** (servidor autoritativo), **PTR** (puntero a otro nombre; se usa en la resolución inversa de direcciones) y **SOA**, que marca el **inicio de una zona de autoridad** (servidor primario, responsable, número de serie…).",
+     "refs": [
+      {
+       "title": "RFC 1034 · Domain Names - Concepts and Facilities",
+       "url": "https://www.rfc-editor.org/rfc/rfc1034.txt",
+       "quote": "We should be able to use names to retrieve host addresses, mailbox data, and other as yet undetermined information."
+      },
+      {
+       "title": "RFC 1034 · Domain Names - Concepts and Facilities",
+       "url": "https://www.rfc-editor.org/rfc/rfc1034.txt",
+       "quote": "A a host address CNAME identifies the canonical name of an alias"
+      },
+      {
+       "title": "RFC 1034 · Domain Names - Concepts and Facilities",
+       "url": "https://www.rfc-editor.org/rfc/rfc1034.txt",
+       "quote": "MX identifies a mail exchange for the domain."
+      },
+      {
+       "title": "RFC 1034 · Domain Names - Concepts and Facilities",
+       "url": "https://www.rfc-editor.org/rfc/rfc1034.txt",
+       "quote": "NS the authoritative name server for the domain"
+      },
+      {
+       "title": "RFC 1034 · Domain Names - Concepts and Facilities",
+       "url": "https://www.rfc-editor.org/rfc/rfc1034.txt",
+       "quote": "PTR a pointer to another part of the domain name space"
+      },
+      {
+       "title": "RFC 1035 · Domain Names - Implementation and Specification",
+       "url": "https://www.rfc-editor.org/rfc/rfc1035.txt",
+       "quote": "The intent of this domain is to provide a guaranteed method to perform host address to host name mapping"
+      },
+      {
+       "title": "RFC 1035 · Domain Names - Implementation and Specification",
+       "url": "https://www.rfc-editor.org/rfc/rfc1035.txt",
+       "quote": "SOA 6 marks the start of a zone of authority"
+      },
+      {
+       "title": "RFC 1035 · Domain Names - Implementation and Specification",
+       "url": "https://www.rfc-editor.org/rfc/rfc1035.txt",
+       "quote": "SERIAL The unsigned 32 bit version number of the original copy of the zone."
+      },
+      {
+       "title": "RFC 1035 · Domain Names - Implementation and Specification",
+       "url": "https://www.rfc-editor.org/rfc/rfc1035.txt",
+       "quote": "MNAME The <domain-name> of the name server that was the original or primary source of data for this zone."
+      },
+      {
+       "title": "RFC 1035 · Domain Names - Implementation and Specification",
+       "url": "https://www.rfc-editor.org/rfc/rfc1035.txt",
+       "quote": "RNAME A <domain-name> which specifies the mailbox of the person responsible for this zone."
+      }
+     ]
+    },
+    {
+     "text": "**FTP**: el tipo **ASCII** es el predeterminado y está pensado para **ficheros de texto**; el tipo **IMAGE** (binario) envía los bits tal cual.",
+     "refs": [
+      {
+       "title": "RFC 959 · File Transfer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc959.txt",
+       "quote": "This is the default type and must be accepted by all FTP implementations. It is intended primarily for the transfer of text files"
+      },
+      {
+       "title": "RFC 959 · File Transfer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc959.txt",
+       "quote": "Image type is intended for the efficient storage and retrieval of files and for the transfer of binary data."
+      },
+      {
+       "title": "RFC 959 · File Transfer Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc959.txt",
+       "quote": "The data are sent as contiguous bits which, for transfer, are packed into the 8-bit transfer bytes."
+      }
+     ]
+    },
+    {
+     "text": "**Squid** es un **proxy caché** para la web compatible con HTTP, HTTPS, FTP y otros.",
+     "refs": [
+      {
+       "title": "Squid: Optimising Web Delivery",
+       "url": "https://www.squid-cache.org/",
+       "quote": "Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "HTTP",
+   "points": [
+    {
+     "text": "Clases de códigos de estado: **3xx redirección** (el agente de usuario debe hacer algo más para completar la petición) y **4xx error del cliente**.",
+     "refs": [
+      {
+       "title": "RFC 9110 · HTTP Semantics",
+       "url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+       "quote": "The 3xx (Redirection) class of status code indicates that further action needs to be taken by the user agent in order to fulfill the request."
+      },
+      {
+       "title": "RFC 9110 · HTTP Semantics",
+       "url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+       "quote": "The 4xx (Client Error) class of status code indicates that the client seems to have erred."
+      }
+     ]
+    },
+    {
+     "text": "**401 Unauthorized**: faltan credenciales de autenticación válidas. **403 Forbidden**: el servidor entiende la petición pero **se niega** a atenderla (si se dieron credenciales, no bastan para ese acceso). **503 Service Unavailable**: el servidor no puede atenderla ahora por **sobrecarga o mantenimiento** temporal.",
+     "refs": [
+      {
+       "title": "RFC 9110 · HTTP Semantics",
+       "url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+       "quote": "The 401 (Unauthorized) status code indicates that the request has not been applied because it lacks valid authentication credentials for the target resource."
+      },
+      {
+       "title": "RFC 9110 · HTTP Semantics",
+       "url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+       "quote": "The 403 (Forbidden) status code indicates that the server understood the request but refuses to fulfill it."
+      },
+      {
+       "title": "RFC 9110 · HTTP Semantics",
+       "url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+       "quote": "If authentication credentials were provided in the request, the server considers them insufficient to grant access."
+      },
+      {
+       "title": "RFC 9110 · HTTP Semantics",
+       "url": "https://www.rfc-editor.org/rfc/rfc9110.txt",
+       "quote": "The 503 (Service Unavailable) status code indicates that the server is currently unable to handle the request due to a temporary overload or scheduled maintenance"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "HTTPS, SSL/TLS y certificados",
+   "points": [
+    {
+     "text": "**HTTPS** es HTTP protegido con **TLS** (antes, SSL).",
+     "refs": [
+      {
+       "title": "RFC 2818 · HTTP Over TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc2818.txt",
+       "quote": "This memo describes how to use TLS to secure HTTP connections over the Internet. Current practice is to layer HTTP over SSL (the predecessor to TLS)"
+      }
+     ]
+    },
+    {
+     "text": "**TLS 1.3** (RFC 8446, agosto de 2018) es la versión actual (CCN, 2020): sustituye a la especificación de las anteriores (incluida la de TLS 1.2, RFC 5246) y protege contra escuchas, manipulación y falsificación de mensajes.",
+     "refs": [
+      {
+       "title": "RFC 8446 · The Transport Layer Security (TLS) Protocol Version 1.3",
+       "url": "https://www.rfc-editor.org/rfc/rfc8446.txt",
+       "quote": "This document specifies version 1.3 of the Transport Layer Security (TLS) protocol. TLS allows client/server applications to communicate over the Internet in a way that is designed to prevent eavesdropping, tampering, and message forgery."
+      },
+      {
+       "title": "RFC 8446 · The Transport Layer Security (TLS) Protocol Version 1.3",
+       "url": "https://www.rfc-editor.org/rfc/rfc8446.txt",
+       "quote": "This document supersedes and obsoletes previous versions of TLS"
+      },
+      {
+       "title": "CCN · Píldora PYTEC: Requisitos de seguridad para TLS",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/378-pildorapytec-nov2020-seguridad-tls/file",
+       "quote": "La versión actual es TLS 1.3 especificada en la RFC 8446, de agosto 2018."
+      }
+     ]
+    },
+    {
+     "text": "El **certificado** del sitio lleva su **clave pública** (y el sujeto al que pertenece); en TLS el navegador usa esa clave pública para **verificar la firma** del servidor. La **clave privada no** va en el certificado público: queda siempre bajo control del titular.",
+     "refs": [
+      {
+       "title": "RFC 8446 · The Transport Layer Security (TLS) Protocol Version 1.3",
+       "url": "https://www.rfc-editor.org/rfc/rfc8446.txt",
+       "quote": "The public key contained in the end-entity certificate found in the associated Certificate message"
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Certificados electrónicos",
+       "url": "https://firmaelectronica.gob.es/ciudadanos/cosas-deberias-saber/certificados-electronicos",
+       "quote": "del Certificado Público para referirse al certificado que sólo contiene la clave pública"
+      },
+      {
+       "title": "RFC 5280 · Internet X.509 Public Key Infrastructure Certificate and CRL Profile",
+       "url": "https://www.rfc-editor.org/rfc/rfc5280.txt",
+       "quote": "This field is used to carry the public key and identify the algorithm with which the key is used"
+      },
+      {
+       "title": "RFC 5280 · Internet X.509 Public Key Infrastructure Certificate and CRL Profile",
+       "url": "https://www.rfc-editor.org/rfc/rfc5280.txt",
+       "quote": "The subject field identifies the entity associated with the public key stored in the subject public key field."
+      },
+      {
+       "title": "Firma Electrónica (Gobierno de España) · Certificados electrónicos",
+       "url": "https://firmaelectronica.gob.es/ciudadanos/cosas-deberias-saber/certificados-electronicos",
+       "quote": "la clave privada está pensada para que nunca salga del certificado y esté siempre bajo el control del firmante. En cambio, la clave pública se puede repartir o enviar a otros usuarios."
+      }
+     ]
+    },
+    {
+     "text": "CCN (Píldora PYTEC, nov. 2020): se debe usar **TLS 1.2 o superior** y deshabilitar las anteriores; **TLS 1.3** es la más segura. CCN-STIC-807 (mayo 2022) solo autoriza **TLS 1.2 y 1.3**.",
+     "refs": [
+      {
+       "title": "CCN · Píldora PYTEC: Requisitos de seguridad para TLS",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/378-pildorapytec-nov2020-seguridad-tls/file",
+       "quote": "Requisito 1: Se deberá usar la versión del protocolo TLS 1.2 o superior y deshabilitar el uso de cualquier versión inferior"
+      },
+      {
+       "title": "CCN · Píldora PYTEC: Requisitos de seguridad para TLS",
+       "url": "https://www.ccn.cni.es/index.php/es/docman/documentos-publicos/boletines-pytec/378-pildorapytec-nov2020-seguridad-tls/file",
+       "quote": "A día de hoy, TLS 1.3 es la versión de TLS considerada más segura"
+      },
+      {
+       "title": "CCN-STIC-807 · Criptología de empleo en el ENS",
+       "url": "https://www.ccn-cert.cni.es/es/series-ccn-stic/800-guia-esquema-nacional-de-seguridad/513-ccn-stic-807-criptologia-de-empleo-en-el-ens/file?format=html",
+       "quote": "Deberán utilizarse versiones de TLS 1.2 y 1.3 y no se autoriza el uso de versiones TLS inferiores."
+      }
+     ]
+    },
+    {
+     "text": "CCN-CERT BP/07: en un servidor HTTPS conviene tener también abierto el **puerto TCP/80**, configurado para **redirigir automáticamente** (301) de HTTP a HTTPS.",
+     "refs": [
+      {
+       "title": "CCN-CERT BP/07 · Recomendaciones de implementación de HTTPS",
+       "url": "https://www.ccn-cert.cni.es/es/informes/informes-de-buenas-practicas-bp/2109-ccn-cert-bp-07-recomendaciones-implementacion-https-1/file.html",
+       "quote": "Disponer del puerto TCP/80 también abierto, pero configurar el servidor o aplicación web para que se lleve a cabo una redirección automática de tipo 301 (\"301 Moved Permanently\") desde HTTP hacia HTTPS ante cualquier petición en el puerto TCP/80"
+      }
+     ]
+    },
+    {
+     "text": "**SFTP** va sobre un canal seguro como SSH, que ya ha autenticado al cliente (SSH exige soportar autenticación por **clave pública** y admite contraseña); **FTPS** es FTP con TLS, donde USER y PASS van protegidos por TLS y el servidor puede usar además el **certificado de cliente**. No es cierto que SFTP use solo certificado y FTPS solo usuario y contraseña.",
+     "refs": [
+      {
+       "title": "IETF · SSH File Transfer Protocol (borrador draft-ietf-secsh-filexfer-13, 2006)",
+       "url": "https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13",
+       "quote": "It is the standard file transfer protocol for use with the SSH2 protocol."
+      },
+      {
+       "title": "IETF · SSH File Transfer Protocol (borrador draft-ietf-secsh-filexfer-13, 2006)",
+       "url": "https://datatracker.ietf.org/doc/html/draft-ietf-secsh-filexfer-13",
+       "quote": "This protocol assumes that it runs over a secure channel, such as a channel in [ RFC4251 ], that the server has already authenticated the client"
+      },
+      {
+       "title": "RFC 4252 · The SSH Authentication Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc4252.txt",
+       "quote": "\"publickey\" REQUIRED \"password\" OPTIONAL"
+      },
+      {
+       "title": "RFC 4217 · Securing FTP with TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc4217.txt",
+       "quote": "This document describes a mechanism that can be used by FTP clients and servers to implement security and authentication using the TLS protocol"
+      },
+      {
+       "title": "RFC 4217 · Securing FTP with TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc4217.txt",
+       "quote": "Although the TLS negotiation may be providing authentication information, the USER command MUST still be issued by the client."
+      },
+      {
+       "title": "RFC 4217 · Securing FTP with TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc4217.txt",
+       "quote": "Typically the AUTH, USER, PASS, PBSZ, and PROT commands would be protected within the TLS protocol"
+      },
+      {
+       "title": "RFC 4217 · Securing FTP with TLS",
+       "url": "https://www.rfc-editor.org/rfc/rfc4217.txt",
+       "quote": "what consistency checks to make between the client cert used and the parameter on the USER command"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
