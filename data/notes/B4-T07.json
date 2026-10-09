@@ -1,0 +1,507 @@
+{
+ "topic": "B4-T07",
+ "sections": [
+  {
+   "title": "Modelo OSI",
+   "points": [
+    {
+     "text": "El modelo de referencia OSI de ISO es la norma **ISO/IEC 7498-1:1994**, con el mismo texto que la Recomendación **ITU-T X.200** (1994).",
+     "refs": [
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "The text of ITU-T Recommendation X.200 was approved on 1st of July 1994. The identical text is also published as ISO/IEC International Standard 7498-1."
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "ISO/IEC 7498-1 : 1994(E)"
+      }
+     ]
+    },
+    {
+     "text": "Tiene **siete capas**; en orden ascendente: **física (1), enlace (2), red (3), transporte (4), sesión (5), presentación (6) y aplicación (7)**.",
+     "refs": [
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "The Reference Model contains seven layers:"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "the Application Layer (layer 7);"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "the Presentation Layer (layer 6);"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "the Session Layer (layer 5);"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "the Transport Layer (layer 4);"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "the Network Layer (layer 3);"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "the Data Link Layer (layer 2); and"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "the Physical Layer (layer 1)."
+      }
+     ]
+    },
+    {
+     "text": "Cada capa (N) da servicio a las entidades de la capa **superior (N+1)**, no al revés.",
+     "refs": [
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "Except for the highest layer, each (N)-layer provides (N+1)-entities in the (N+1)-layer with an (N)-service"
+      }
+     ]
+    },
+    {
+     "text": "La **capa de presentación** se ocupa de la representación común de los datos: identifica, selecciona y **negocia la sintaxis de transferencia**, e incluye transformaciones de formato como la **compresión** de datos.",
+     "refs": [
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "The Presentation Layer provides for common representation of the data transferred between applicationentities."
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "The Presentation Layer provides the following facilities:"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "identification of a set of transfer syntaxes;"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "selection of transfer syntax; and"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "negotiation and re-negotiation of transfer syntax;"
+      },
+      {
+       "title": "ITU-T X.200 (07/1994) · Modelo de referencia OSI (= ISO/IEC 7498-1)",
+       "url": "https://www.itu.int/rec/T-REC-X.200-199407-I/en",
+       "quote": "including format and special purpose transformations (for example, data compression);"
+      }
+     ]
+    },
+    {
+     "text": "**Primitivas de servicio**: *request* y *response* (las emite el usuario que pide y el que acepta) e *indication* y *confirm* (las recibe cada uno). Un servicio **confirmado** usa las cuatro.",
+     "refs": [
+      {
+       "title": "ITU-T X.210 (11/1993) · Convenciones de definición de servicios OSI",
+       "url": "https://www.itu.int/rec/T-REC-X.210-199311-I/en",
+       "quote": "a requestor.submit primitive is called a request primitive;"
+      },
+      {
+       "title": "ITU-T X.210 (11/1993) · Convenciones de definición de servicios OSI",
+       "url": "https://www.itu.int/rec/T-REC-X.210-199311-I/en",
+       "quote": "an acceptor.submit primitive is called a response primitive;"
+      },
+      {
+       "title": "ITU-T X.210 (11/1993) · Convenciones de definición de servicios OSI",
+       "url": "https://www.itu.int/rec/T-REC-X.210-199311-I/en",
+       "quote": "a requestor.deliver primitive is called a confirm primitive;"
+      },
+      {
+       "title": "ITU-T X.210 (11/1993) · Convenciones de definición de servicios OSI",
+       "url": "https://www.itu.int/rec/T-REC-X.210-199311-I/en",
+       "quote": "an acceptor.deliver primitive is called an indication primitive;"
+      },
+      {
+       "title": "ITU-T X.210 (11/1993) · Convenciones de definición de servicios OSI",
+       "url": "https://www.itu.int/rec/T-REC-X.210-199311-I/en",
+       "quote": "OSI-confirmed-facility: An OSI-facility in the operation of which an explicit confirmation is given from the OSI-service-provider to the initiating OSI-service-user."
+      },
+      {
+       "title": "ITU-T X.210 (11/1993) · Convenciones de definición de servicios OSI",
+       "url": "https://www.itu.int/rec/T-REC-X.210-199311-I/en",
+       "quote": "The normal sequence of OSI-service primitives is: connection request (at initiating station), connection indication (at the responding station), connection response (at the responding station), connection confirmation (at the initiating station)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Modelo TCP/IP",
+   "points": [
+    {
+     "text": "Capas de la arquitectura de Internet: **aplicación, transporte, Internet y enlace**. La de **enlace** es el protocolo para comunicarse en la **red conectada directamente**; la que se corresponde con la capa de **red** de OSI es la de **Internet** (IP fue el modelo del protocolo de red sin conexión de OSI). La de **aplicación** reúne las funciones de las capas de presentación y aplicación de OSI.",
+     "refs": [
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "The protocol layers used in the Internet architecture are as follows"
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "To communicate on its directly-connected network, a host must implement the communication protocol used to interface to that network. We call this a link layer or media-access layer protocol."
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "The application layer is the top layer of the Internet protocol suite."
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "The transport layer provides end-to-end communication services for applications."
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "Internet IP was the model for the OSI Connectionless Network Protocol"
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "The application layer of the Internet suite essentially combines the functions of the top two layers -- Presentation and Application -- of the OSI reference model."
+      }
+     ]
+    },
+    {
+     "text": "Capa de **aplicación**: protocolos **de usuario** (dan servicio directo a los usuarios: Telnet, **FTP**, SMTP) y protocolos **de soporte** (funciones comunes del sistema: **DNS**, SNMP, BOOTP…).",
+     "refs": [
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "We distinguish two categories of application layer protocols: user protocols that provide service directly to users, and support protocols that provide common system functions."
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "The most common Internet user protocols are: o Telnet (remote login) o FTP (file transfer) o SMTP (electronic mail delivery)"
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "Support protocols, used for host name mapping, booting, and management, include SNMP, BOOTP, RARP, and the Domain Name System (DNS) protocols."
+      }
+     ]
+    },
+    {
+     "text": "Capa de **transporte**: **TCP** (orientado a conexión y fiable) y **UDP** (sin conexión). UDP **no garantiza** la entrega ni evita duplicados; quien necesite fiabilidad debe usar TCP.",
+     "refs": [
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "TCP is a reliable connection-oriented transport service that provides end-to-end reliability, resequencing, and flow control. UDP is a connectionless (\"datagram\") transport service."
+      },
+      {
+       "title": "RFC 768 · User Datagram Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc768.txt",
+       "quote": "The protocol is transaction oriented, and delivery and duplicate protection are not guaranteed. Applications requiring ordered reliable delivery of streams of data should use the Transmission Control Protocol (TCP)"
+      }
+     ]
+    },
+    {
+     "text": "Capa **Internet**: **IP** (sin conexión, sin garantías de entrega), **ICMP** (control: informes de error, congestión, redirecciones) e **IGMP**. FTP no es de esta capa.",
+     "refs": [
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "IP is a connectionless or datagram internetwork service, providing no end-to-end delivery guarantees."
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "ICMP provides error reporting, congestion reporting, and first-hop gateway redirection."
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "The Internet layer protocols IP, ICMP, and IGMP are"
+      }
+     ]
+    },
+    {
+     "text": "Saludo de tres vías de TCP: **SYN** → **SYN+ACK** → **ACK**.",
+     "refs": [
+      {
+       "title": "RFC 9293 · Transmission Control Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc9293.txt",
+       "quote": "The \"three-way handshake\" is the procedure used to establish a connection."
+      },
+      {
+       "title": "RFC 9293 · Transmission Control Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc9293.txt",
+       "quote": "2. SYN-SENT --> <SEQ=100><CTL=SYN> --> SYN-RECEIVED 3. ESTABLISHED <-- <SEQ=300><ACK=101><CTL=SYN,ACK> <-- SYN-RECEIVED 4. ESTABLISHED --> <SEQ=101><ACK=301><CTL=ACK> --> ESTABLISHED"
+      }
+     ]
+    },
+    {
+     "text": "**ARP** obtiene la dirección física (MAC) a partir de la lógica (IP). En Windows, `arp -d` borra entradas de la caché ARP (`*` para todas) e `ipconfig /flushdns` vacía la caché DNS.",
+     "refs": [
+      {
+       "title": "RFC 826 · Ethernet Address Resolution Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc826.txt",
+       "quote": "Converting Network Protocol Addresses to 48.bit Ethernet Address"
+      },
+      {
+       "title": "Microsoft Learn · arp",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/arp",
+       "quote": "-d Elimina la entrada ARP para el inet_addr archivo . Úselo * como comodín para eliminar todas las entradas."
+      },
+      {
+       "title": "Microsoft Learn · ipconfig",
+       "url": "https://learn.microsoft.com/es-es/windows-server/administration/windows-commands/ipconfig",
+       "quote": "/flushdns Vacía y restablece el contenido de la caché de resolución del cliente DNS."
+      }
+     ]
+    },
+    {
+     "text": "**Telnet** usa el puerto **23**.",
+     "refs": [
+      {
+       "title": "IANA · Service Name and Transport Protocol Port Number Registry",
+       "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+       "quote": "telnet,23,tcp,Telnet"
+      }
+     ]
+    },
+    {
+     "text": "**RSVP** (RFC 2205): protocolo de **reserva de recursos** para una Internet de **servicios integrados**; la reserva la inicia el **receptor**.",
+     "refs": [
+      {
+       "title": "RFC 2205 · RSVP",
+       "url": "https://www.rfc-editor.org/rfc/rfc2205.txt",
+       "quote": "This memo describes version 1 of RSVP, a resource reservation setup protocol designed for an integrated services Internet. RSVP provides receiver-initiated setup of resource reservations for multicast or unicast data flows"
+      }
+     ]
+    },
+    {
+     "text": "**SIP y NAT**: en la negociación (SDP) cada cliente anuncia la IP y el puerto donde recibirá el audio (RTP); si es una dirección **privada detrás de NAT**, no es accesible desde fuera y el audio no llega. Además, el NAT puede cerrar las conexiones tras un tiempo de inactividad.",
+     "refs": [
+      {
+       "title": "RFC 6314 · NAT Traversal Practices for Client-Server SIP",
+       "url": "https://www.rfc-editor.org/rfc/rfc6314.txt",
+       "quote": "Media associated with SIP calls also has problems traversing NAT."
+      },
+      {
+       "title": "RFC 6314 · NAT Traversal Practices for Client-Server SIP",
+       "url": "https://www.rfc-editor.org/rfc/rfc6314.txt",
+       "quote": "Negotiation of RTP occurs with a SIP session establishment using the Session Description Protocol (SDP) [RFC4566] and a SIP offer/answer exchange [RFC3264]. During a SIP offer/answer exchange, an IP address and port combination are specified by each client in a session as a means of receiving media such as RTP."
+      },
+      {
+       "title": "RFC 6314 · NAT Traversal Practices for Client-Server SIP",
+       "url": "https://www.rfc-editor.org/rfc/rfc6314.txt",
+       "quote": "NAT policy can dictate that connections should be closed after a period of inactivity."
+      },
+      {
+       "title": "RFC 6314 · NAT Traversal Practices for Client-Server SIP",
+       "url": "https://www.rfc-editor.org/rfc/rfc6314.txt",
+       "quote": "The problem arises when a client advertises its address to receive media and it exists in a private network that is not accessible from outside the NAT."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Direccionamiento IPv4 y subredes",
+   "points": [
+    {
+     "text": "Clases: en la **clase A** el primer bit es 0 (7 bits de red y 24 de host). La red **10.0.0.0** es de clase A y es **privada** (10/8).",
+     "refs": [
+      {
+       "title": "RFC 791 · Internet Protocol",
+       "url": "https://www.rfc-editor.org/rfc/rfc791.txt",
+       "quote": "in class a, the high order bit is zero, the next 7 bits are the network, and the last 24 bits are the local address"
+      },
+      {
+       "title": "RFC 1918 · Address Allocation for Private Internets",
+       "url": "https://www.rfc-editor.org/rfc/rfc1918.txt",
+       "quote": "10.0.0.0 - 10.255.255.255 (10/8 prefix)"
+      }
+     ]
+    },
+    {
+     "text": "El **prefijo** /n indica cuántos bits de la máscara son unos: /16 = 255.255.0.0; /25 = 255.255.255.128; /26 = 255.255.255.192.",
+     "refs": [
+      {
+       "title": "RFC 4632 · CIDR",
+       "url": "https://www.rfc-editor.org/rfc/rfc4632.txt",
+       "quote": "the \"/16\" indicating that the mask to extract the network portion of the prefix is a 32-bit value where the most significant 16 bits are ones and the least significant 16 bits are zeros."
+      }
+     ]
+    },
+    {
+     "text": "La parte de host **no puede ser todo ceros ni todo unos**: todo unos es la difusión (**broadcast**) de esa red o subred. Por eso los hosts útiles son **2^(bits de host) − 2**.",
+     "refs": [
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "IP addresses are not permitted to have the value 0 or -1 for any of the <Host-number>, <Network-number>, or <Subnet- number> fields"
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "and the notation \"-1\" for a field that contains all 1 bits."
+      },
+      {
+       "title": "RFC 1122 · Requirements for Internet Hosts",
+       "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+       "quote": "Directed broadcast to the specified subnet."
+      }
+     ],
+     "items": [
+      {
+       "text": "/21 → 11 bits de host → 2^11 − 2 = **2046** hosts; 10.0.0.0/21 va de **10.0.0.1 a 10.0.7.254**.",
+       "refs": [
+        {
+         "title": "RFC 1122 · Requirements for Internet Hosts",
+         "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+         "quote": "IP addresses are not permitted to have the value 0 or -1 for any of the <Host-number>"
+        }
+       ]
+      },
+      {
+       "text": "/20 → 12 bits → **4094** hosts. /24 → **254**.",
+       "refs": [
+        {
+         "title": "RFC 1122 · Requirements for Internet Hosts",
+         "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+         "quote": "IP addresses are not permitted to have the value 0 or -1 for any of the <Host-number>"
+        }
+       ]
+      },
+      {
+       "text": "10.20.30.0/26: red **10.20.30.0**, broadcast **10.20.30.63**. Para 4 subredes en una /24 hacen falta 2 bits más: **/26 = 255.255.255.192**. 10.30.16.0/25: red 10.30.16.0 y broadcast **10.30.16.127**.",
+       "refs": [
+        {
+         "title": "RFC 1122 · Requirements for Internet Hosts",
+         "url": "https://www.rfc-editor.org/rfc/rfc1122.txt",
+         "quote": "Directed broadcast to the specified subnet."
+        }
+       ]
+      },
+      {
+       "text": "Con máscara 255.255.255.192 (bloques de 64), 192.168.123.71 está en la subred .64 y 192.168.123.133 en la .128: **no** están en la misma red.",
+       "refs": [
+        {
+         "title": "RFC 4632 · CIDR",
+         "url": "https://www.rfc-editor.org/rfc/rfc4632.txt",
+         "quote": "the \"/16\" indicating that the mask to extract the network portion of the prefix"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "IPv6 e ICMPv6",
+   "points": [
+    {
+     "text": "Las direcciones **multicast** IPv6 empiezan por 11111111: prefijo **FF00::/8**.",
+     "refs": [
+      {
+       "title": "RFC 4291 · IPv6 Addressing Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+       "quote": "Multicast 11111111 FF00::/8"
+      },
+      {
+       "title": "RFC 4291 · IPv6 Addressing Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+       "quote": "binary 11111111 at the start of the address identifies the address"
+      }
+     ]
+    },
+    {
+     "text": "**Hop Limit** (RFC 8200): cada nodo que reenvía el paquete lo **decrementa en 1** y el paquete se **descarta** al llegar a cero; equivale al TTL de IPv4.",
+     "refs": [
+      {
+       "title": "RFC 8200 · IPv6 Specification",
+       "url": "https://www.rfc-editor.org/rfc/rfc8200.txt",
+       "quote": "Hop Limit 8-bit unsigned integer. Decremented by 1 by each node that forwards the packet. When forwarding, the packet is discarded if Hop Limit was zero when received or is decremented to zero."
+      },
+      {
+       "title": "RFC 8200 · IPv6 Specification",
+       "url": "https://www.rfc-editor.org/rfc/rfc8200.txt",
+       "quote": "the IPv4 \"Time-to-Live\" field was renamed \"Hop Limit\" in IPv6."
+      }
+     ]
+    },
+    {
+     "text": "ICMPv6 **Packet Too Big** («paquete demasiado grande») es el **tipo 2**; lleva la MTU del siguiente enlace.",
+     "refs": [
+      {
+       "title": "RFC 4443 · ICMPv6",
+       "url": "https://www.rfc-editor.org/rfc/rfc4443.txt",
+       "quote": "3.2. Packet Too Big Message"
+      },
+      {
+       "title": "RFC 4443 · ICMPv6",
+       "url": "https://www.rfc-editor.org/rfc/rfc4443.txt",
+       "quote": "ICMPv6 Fields: Type 2 Code Set to 0 (zero) by the originator and ignored by the receiver. MTU The Maximum Transmission Unit of the next-hop link."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Enrutamiento",
+   "points": [
+    {
+     "text": "**IGRP** (Cisco) es un protocolo de **vector de distancia**: cada router intercambia información de rutas solo con sus vecinos.",
+     "refs": [
+      {
+       "title": "Cisco · An Introduction to IGRP",
+       "url": "https://www.cisco.com/c/en/us/support/docs/ip/interior-gateway-routing-protocol-igrp/26825-5.html",
+       "quote": "IGRP is a distance vector protocol. In such a protocol, gateways exchange routing information only with adjacent gateways."
+      }
+     ]
+    },
+    {
+     "text": "Contra los bucles y la «cuenta a infinito»: **actualizaciones disparadas**, **split horizon**, **envenenamiento de rutas** y **hold down**: al eliminar una ruta, durante un **tiempo** no se acepta otra nueva para ese destino, para que las actualizaciones lleguen a todos.",
+     "refs": [
+      {
+       "title": "Cisco · An Introduction to IGRP",
+       "url": "https://www.cisco.com/c/en/us/support/docs/ip/interior-gateway-routing-protocol-igrp/26825-5.html",
+       "quote": "These features are intended to prevent routing loops and \"counting to infinity,\""
+      },
+      {
+       "title": "Cisco · An Introduction to IGRP",
+       "url": "https://www.cisco.com/c/en/us/support/docs/ip/interior-gateway-routing-protocol-igrp/26825-5.html",
+       "quote": "This section describes holddowns, triggered updates, split horizon, and poisoning."
+      },
+      {
+       "title": "Cisco · An Introduction to IGRP",
+       "url": "https://www.cisco.com/c/en/us/support/docs/ip/interior-gateway-routing-protocol-igrp/26825-5.html",
+       "quote": "This gives the triggered updates time to get to all other gateways"
+      },
+      {
+       "title": "Cisco · An Introduction to IGRP",
+       "url": "https://www.cisco.com/c/en/us/support/docs/ip/interior-gateway-routing-protocol-igrp/26825-5.html",
+       "quote": "The holddown rule says that when a route is removed, no new route will be accepted for the same destination for some period of time."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
