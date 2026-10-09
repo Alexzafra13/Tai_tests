@@ -211,8 +211,8 @@ público, igualdad y dependencia, sociedad de la información, firma
 electrónica, DNI, Agenda Digital, protección de datos, administración
 electrónica: registros, notificaciones, ENS, ENI y normas técnicas; sedes
 electrónicas, Cl@ve e infraestructuras y servicios comunes) y los temas 1
-y 2 del bloque III (modelado de datos y normalización con Métrica v3;
-lenguajes de programación).
+a 3 del bloque III (modelado de datos y normalización con Métrica v3;
+lenguajes de programación; SQL).
 
 ## Comprobar
 
