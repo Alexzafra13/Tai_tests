@@ -1,0 +1,392 @@
+/* A topic's notes as a document to read, print or download. This file is
+   also inlined in the downloaded HTML (with tokens.css), so it must stand
+   on its own: no styles from base.css or ui.css besides what it repeats. */
+@layer base, components, pages;
+
+@layer pages {
+  .doc-page {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-ui);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .doc-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: calc(0.5rem + env(safe-area-inset-top)) 1rem 0.5rem;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .doc-back {
+    flex: none;
+    color: var(--accent-ink);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .doc-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+  }
+
+  .doc-actions .chip {
+    min-height: 36px;
+    margin: 0;
+    padding: 0 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .doc-status {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .doc {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 4rem;
+    font-family: var(--font-read);
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .doc h1,
+  .doc h2,
+  .doc h3 {
+    font-family: var(--font-read);
+    line-height: 1.25;
+    letter-spacing: -0.005em;
+  }
+
+  .doc a {
+    color: var(--accent-ink);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+
+  .doc strong {
+    font-weight: 650;
+  }
+
+  /* Cover */
+
+  .doc-cover {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary);
+  }
+
+  .doc-kicker {
+    margin: 0;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .doc-number {
+    margin: 1rem 0 0.25rem;
+    font-size: 2.75rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--accent-ink);
+  }
+
+  .doc-title {
+    margin: 0.5rem 0 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .doc-meta,
+  .doc-legend {
+    margin: 0.25rem 0 0;
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  /* Contents */
+
+  .doc-toc {
+    margin-bottom: 2.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 14px;
+    background: var(--surface);
+  }
+
+  .doc-toc h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .doc-toc ol {
+    margin: 0;
+    padding-left: 1.5rem;
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+  }
+
+  .doc-toc li {
+    padding: 0.2rem 0;
+  }
+
+  .doc-toc li::marker {
+    color: var(--accent-ink);
+    font-weight: 700;
+  }
+
+  .doc-toc a {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  /* Sections and points */
+
+  .doc-section {
+    margin-top: 2.5rem;
+    scroll-margin-top: 4.5rem;
+  }
+
+  .doc-section h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.35rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .doc-secnum {
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--primary-text);
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    font-weight: 700;
+    transform: translateY(-0.15rem);
+  }
+
+  .doc-points,
+  .doc-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .doc-point {
+    position: relative;
+    margin: 0 0 1.125rem;
+    padding-left: 1.125rem;
+  }
+
+  .doc-point::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.7em;
+    width: 0.375rem;
+    height: 0.375rem;
+    border-radius: 50%;
+    background: var(--muted);
+  }
+
+  /* Points on articles the INAP has asked about. */
+  .doc-point.asked::before {
+    top: 0.2em;
+    width: 3px;
+    height: calc(100% - 0.4em);
+    border-radius: 2px;
+    background: var(--primary);
+  }
+
+  .doc-items {
+    margin-top: 0.625rem;
+  }
+
+  .doc-items .doc-point {
+    margin-bottom: 0.75rem;
+  }
+
+  .doc-text {
+    margin: 0;
+  }
+
+  .doc-src {
+    margin: 0.25rem 0 0;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    line-height: 1.45;
+    color: var(--muted);
+  }
+
+  .doc-asked {
+    color: var(--accent-ink);
+    font-weight: 600;
+  }
+
+  .doc-src .doc-asked {
+    margin-left: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .doc-quotes figure {
+    margin: 0.5rem 0 0;
+    padding: 0.625rem 0.75rem;
+    border-radius: 10px;
+    background: var(--surface);
+  }
+
+  .doc-quotes blockquote {
+    margin: 0 0 0.375rem;
+    padding: 0.125rem 0 0.125rem 0.75rem;
+    border-left: 2px solid var(--primary);
+    font-family: var(--font-read);
+    font-size: 0.9rem;
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .doc-quotes figcaption {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  /* Sources */
+
+  .doc-bib {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--primary);
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+  }
+
+  .doc-bib h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  .doc-bib h3 {
+    margin: 1rem 0 0.375rem;
+    font-family: var(--font-ui);
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .doc-bib ul {
+    margin: 0;
+    padding-left: 1.125rem;
+  }
+
+  .doc-bib li {
+    padding: 0.15rem 0;
+  }
+
+  .doc-colophon {
+    margin: 2rem 0 0;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  @media (min-width: 720px) {
+    .doc {
+      padding-top: 3rem;
+      font-size: 1.0625rem;
+    }
+
+    .doc-number {
+      font-size: 3.5rem;
+    }
+
+    .doc-title {
+      font-size: 1.85rem;
+    }
+  }
+
+  /* Paper: no toolbar, cover and contents on the first page, points not
+     split across pages. tokens.css switches to the light colours. */
+  @page {
+    margin: 18mm 16mm;
+  }
+
+  @media print {
+    .doc-toolbar,
+    .doc-status {
+      display: none;
+    }
+
+    .doc-page {
+      min-height: 0;
+    }
+
+    .doc {
+      max-width: none;
+      padding: 0;
+      font-size: 10.5pt;
+      line-height: 1.5;
+    }
+
+    .doc-toc {
+      break-after: page;
+      background: none;
+      padding: 0;
+    }
+
+    .doc-section {
+      margin-top: 1.75rem;
+    }
+
+    .doc-section h2 {
+      break-after: avoid;
+    }
+
+    .doc-point {
+      break-inside: avoid;
+    }
+
+    .doc-point:has(.doc-items) {
+      break-inside: auto;
+    }
+
+    .doc-quotes figure {
+      background: none;
+    }
+
+    .doc-bib {
+      break-before: page;
+    }
+
+    .doc-secnum,
+    .doc-point::before {
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+  }
+}

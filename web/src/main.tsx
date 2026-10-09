@@ -24,6 +24,7 @@ import { ReviewPage } from "./pages/review/ReviewPage";
 import { BatchReviewPage } from "./pages/review/BatchReviewPage";
 import { StudyTopicPage } from "./pages/study/StudyTopicPage";
 import { LawPage } from "./pages/study/LawPage";
+import { StudyDocumentPage } from "./pages/study/StudyDocumentPage";
 import { StatsPage } from "./pages/stats/StatsPage";
 import { SearchPage } from "./pages/SearchPage";
 import { ExamsPage } from "./pages/exams/ExamsPage";
@@ -76,6 +77,8 @@ function App() {
   }
   return (
     <Routes>
+      {/* Full screen, without the app bars: it is read, printed and downloaded. */}
+      <Route path="study/:topicId/document" element={<StudyDocumentPage />} />
       <Route element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="tests" element={<TestsPage />} />
