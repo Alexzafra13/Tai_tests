@@ -65,27 +65,22 @@
      ]
     },
     {
-     "text": "**Prefijos SI** (potencias de 10): kilo, mega, giga, tera, **peta** (10^15), **exa** (10^18), **zetta** (10^21), **yotta** (10^24); en 2022 se añadieron **ronna** (10^27) y **quetta** (10^30). Así, 1 EB = 1000 PB.",
+     "text": "**Prefijos SI** de múltiplos (potencias de 10), en el orden en que se adoptaron: **mega, giga y tera** (1960); **peta y exa** (1975); **zetta y yotta** (1991); **ronna y quetta** (2022). De menor a mayor: kilo < mega < giga < tera < peta < exa < zetta < yotta < ronna < quetta.",
      "refs": [
       {
        "title": "NIST · Metric (SI) Prefixes",
        "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
-       "quote": "peta P 10 15 quadrillion"
+       "quote": "Three for forming multiples: mega, giga, and tera."
       },
       {
        "title": "NIST · Metric (SI) Prefixes",
        "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
-       "quote": "exa E 10 18 quintillion"
+       "quote": "1975 Two prefixes for forming multiples were added: peta and exa."
       },
       {
        "title": "NIST · Metric (SI) Prefixes",
        "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
-       "quote": "zetta Z 10 21 sextillion"
-      },
-      {
-       "title": "NIST · Metric (SI) Prefixes",
-       "url": "https://www.nist.gov/pml/owm/metric-si-prefixes",
-       "quote": "yotta Y 10 24 septillion"
+       "quote": "1991 Four prefixes were added. Two for forming multiples: zetta and yotta."
       },
       {
        "title": "NIST · Metric (SI) Prefixes",
@@ -95,7 +90,7 @@
      ]
     },
     {
-     "text": "Los prefijos SI son **solo potencias de 10** (1 kilobit = 1000 bits, no 1024). Para potencias de 2 están los **prefijos binarios** (IEC 80000-13): **kibi** (Ki), mebi (Mi), gibi (Gi)…: 1024 bytes son **1 KiB**. No forman parte del SI.",
+     "text": "Los prefijos SI son **solo potencias de 10** (1 kilobit = 1000 bits, no 1024). Para potencias de 2 están los **prefijos binarios** (IEC 80000-13): **kibi** (Ki), mebi (Mi), gibi (Gi)…: 1024 bytes son **1 KiB**. Estos no forman parte del SI.",
      "refs": [
       {
        "title": "BIPM · The International System of Units (SI Brochure, 9th ed.)",
@@ -106,6 +101,11 @@
        "title": "BIPM · The International System of Units (SI Brochure, 9th ed.)",
        "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
        "quote": "The names and symbols for prefixes corresponding to powers of 2 are the following: kibi (Ki) for"
+      },
+      {
+       "title": "BIPM · The International System of Units (SI Brochure, 9th ed.)",
+       "url": "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf",
+       "quote": "(see IEC 80000-13 for details)"
       },
       {
        "title": "IEC · Prefixes for binary multiples",
@@ -120,12 +120,17 @@
      ]
     },
     {
-     "text": "Puertas lógicas: **AND**, **OR**, **NOT** (inversor), **NAND**, **NOR**, **XOR** (O exclusivo, Y = A ⊕ B: 1 si las entradas son distintas) y **XNOR** (su negación).",
+     "text": "Puertas lógicas: **AND**, **OR**, **NOT** (inversor), **NAND**, **NOR**, **XOR** (O exclusivo, Y = A ⊕ B) y **XNOR** (O exclusivo negado).",
      "refs": [
       {
        "title": "Texas Instruments · hoja de datos SN74HC08",
        "url": "https://www.ti.com/lit/ds/symlink/sn74hc08.pdf",
        "quote": "This device contains four independent 2-input AND gates."
+      },
+      {
+       "title": "Texas Instruments · hoja de datos SN74HC32",
+       "url": "https://www.ti.com/lit/ds/symlink/sn74hc32.pdf",
+       "quote": "This device contains four independent 2-input OR gates."
       },
       {
        "title": "Texas Instruments · hoja de datos SN74HC04",
@@ -155,7 +160,7 @@
      ]
     },
     {
-     "text": "**Desbordamiento** (*overflow*): el resultado de una operación con signo es demasiado grande (o demasiado negativo) para caber en el destino; en x86 lo indica el **flag OF**.",
+     "text": "**Desbordamiento** (*overflow*): el resultado de una operación con signo es demasiado grande (o demasiado negativo) para caber en el destino; en x86 lo indica el **indicador** (*flag*) **OF**.",
      "refs": [
       {
        "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
@@ -245,7 +250,7 @@
      ]
     },
     {
-     "text": "Tipos de memoria (JEDEC):",
+     "text": "Tipos de memoria. Una memoria **no volátil** conserva los datos cuando deja de recibir alimentación:",
      "refs": [
       {
        "title": "JEDEC Dictionary · nonvolatile memory",
@@ -255,7 +260,7 @@
      ],
      "items": [
       {
-       "text": "**RAM** (acceso aleatorio): se accede a cualquier dato en **el mismo tiempo**, sea cual sea su posición.",
+       "text": "**RAM** (acceso aleatorio): se accede a cualquier dato en **prácticamente el mismo tiempo**, sea cual sea su posición.",
        "refs": [
         {
          "title": "JEDEC Dictionary · random-access memory (RAM)",
@@ -345,24 +350,29 @@
      "text": "**Jerarquía de memoria**: la **caché** es pequeña y rápida y guarda copias de los datos más usados de la **memoria principal**, que es mayor y más lenta; el disco añade otro nivel por debajo.",
      "refs": [
       {
-       "title": "OSTEP · Multiprocessor Scheduling",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Multiprocessor Scheduling",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-multi.pdf",
        "quote": "Caches are small, fast memories that (in general) hold copies of popular data that is found in the main memory of the system."
       },
       {
-       "title": "OSTEP · Multiprocessor Scheduling",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Multiprocessor Scheduling",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-multi.pdf",
        "quote": "Main memory, in contrast, holds all of the data, but access to this larger memory is slower."
       },
       {
-       "title": "OSTEP · Beyond Physical Memory: Mechanisms",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Beyond Physical Memory: Mechanisms",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf",
        "quote": "we require an additional level in the memory hierarchy."
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Beyond Physical Memory: Mechanisms",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-beyondphys.pdf",
+       "quote": "In modern systems, this role is usually served by a hard disk drive."
       }
      ]
     },
     {
-     "text": "**Multinúcleo**: dos o más núcleos de ejecución en un mismo encapsulado (p. ej., Intel Pentium D, con dos núcleos). La CPU se comunica con la E/S a través de **chipsets** especializados.",
+     "text": "**Multinúcleo**: dos o más núcleos de ejecución en un mismo encapsulado (p. ej., Intel Pentium D, con dos núcleos).",
      "refs": [
       {
        "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
@@ -372,12 +382,27 @@
       {
        "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
        "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
-       "quote": "This processor provides hardware multithreading support with two processor cores"
+       "quote": "The Intel Pentium D processor also features multi-core technology."
       },
       {
-       "title": "OSTEP · I/O Devices",
+       "title": "Intel 64 and IA-32 Architectures Software Developer's Manual, vol. 1",
+       "url": "https://cdrdv2.intel.com/v1/dl/getContent/671436",
+       "quote": "This processor provides hardware multithreading support with two processor cores"
+      }
+     ]
+    },
+    {
+     "text": "Los sistemas modernos usan cada vez más **chipsets** especializados e interconexiones punto a punto; p. ej., en Intel la CPU se conecta a un chip de E/S por **DMI** (*Direct Media Interface*).",
+     "refs": [
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
        "quote": "modern systems increasingly use specialized chipsets and faster point-to-point interconnects to improve performance."
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "The CPU connects to an I/O chip via Intel’s proprietary DMI (Direct Media Interface)"
       }
      ]
     }

@@ -80,7 +80,7 @@
       {
        "title": "Intel · Thunderbolt 4 announcement",
        "url": "https://www.thunderbolttechnology.net/sites/default/files/intel-thunderbolt4-announcement-press-deck.pdf",
-       "quote": "Thunderbolt is Always 40Gb/s"
+       "quote": "Same industry leading 40Gb/s performance and more"
       },
       {
        "title": "Intel Newsroom · Intel Introduces Thunderbolt 5 Connectivity Standard",
@@ -103,14 +103,14 @@
        "quote": "As compared to other PC I/O connection technologies including eSATA, USB, and IEEE 1394 Firewire."
       },
       {
-       "title": "OSTEP · I/O Devices",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
        "quote": "now eSATA (for external SATA) represent an evolution of storage interfaces over the past decades"
       }
      ]
     },
     {
-     "text": "**USB Power Delivery**: hasta la revisión 3.1 estaba limitado a **100 W** (20 V, 5 A); USB PD 3.1 llega a **240 W** (nuevas tensiones de 28, 36 y 48 V) con cable USB Type-C.",
+     "text": "**USB Power Delivery**: antes de la revisión 3.1 estaba limitado a **100 W** (20 V, 5 A); USB PD 3.1 llega a **240 W** (nuevas tensiones de 28, 36 y 48 V) con cable y conector USB Type-C completos (*full featured*).",
      "refs": [
       {
        "title": "USB-IF · USB Charger (USB Power Delivery)",
@@ -130,15 +130,25 @@
      ]
     },
     {
-     "text": "Un dispositivo tiene una **interfaz de hardware** que permite controlarlo (el **controlador** del dispositivo, p. ej., el controlador de host USB) y su estructura interna. El **driver** es el **software** del sistema operativo que sabe cómo funciona el dispositivo y se comunica con él.",
+     "text": "Un dispositivo tiene dos partes: la **interfaz de hardware** que presenta al sistema para que el software lo controle, y su **estructura interna**. El **driver** (controlador de dispositivo) es el **software** del sistema operativo que sabe cómo funciona el dispositivo y se comunica con él. P. ej., un dispositivo USB se conecta a un adaptador, el **controlador de host USB**, y cada uno tiene su propio driver.",
      "refs": [
       {
-       "title": "OSTEP · I/O Devices",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "that a device has two important components."
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
        "quote": "hardware must also present some kind of interface that allows the system software to control its operation."
       },
       {
-       "title": "OSTEP · I/O Devices",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
+       "quote": "The second part of any device is its internal structure."
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · I/O Devices",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-devices.pdf",
        "quote": "At the lowest level, a piece of software in the OS must know in detail how a device works. We call this piece of software a device driver"
       },
@@ -150,7 +160,12 @@
       {
        "title": "Microsoft Learn · What is a driver?",
        "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/what-is-a-driver-",
-       "quote": "The function driver for the USB host controller then communicates directly with the USB host controller hardware, which communicates with the toaster."
+       "quote": "a USB toaster connects to a host bus adapter, called a USB host controller"
+      },
+      {
+       "title": "Microsoft Learn · What is a driver?",
+       "url": "https://learn.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/what-is-a-driver-",
+       "quote": "The USB toaster has a function driver and the USB host controller also has a function driver."
       }
      ]
     }
@@ -190,35 +205,40 @@
      ]
     },
     {
-     "text": "**Disco duro** (HDD): **platos** magnéticos; en cada superficie, **pistas** concéntricas divididas en **sectores**, con una **cabeza** por superficie montada en un brazo; las pistas a la misma distancia del eje forman un **cilindro**. Tiempo de acceso = **búsqueda** (mover el brazo a la pista) + **latencia rotacional** (esperar a que el sector pase bajo la cabeza) + **transferencia**.",
+     "text": "**Disco duro** (HDD): **platos** magnéticos; en cada superficie, **pistas** concéntricas divididas en **sectores**, con una **cabeza** por superficie montada en un **brazo**; la geometría se expresa en **cilindros**, **pistas por cilindro** y **sectores por pista**. Tiempo de acceso = **búsqueda** (mover el brazo a la pista) + **latencia rotacional** (esperar a que el sector pase bajo la cabeza) + **transferencia**.",
      "refs": [
       {
-       "title": "OSTEP · Hard Disk Drives",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Hard Disk Drives",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
        "quote": "We start with a platter, a circular hard surface on which data is stored persistently by inducing magnetic changes to it."
       },
       {
-       "title": "OSTEP · Hard Disk Drives",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Hard Disk Drives",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
        "quote": "Data is encoded on each surface in concentric circles of sectors; we call one such concentric circle a track."
       },
       {
-       "title": "OSTEP · Hard Disk Drives",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Hard Disk Drives",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
        "quote": "This process of reading and writing is accomplished by the disk head; there is one such head per surface of the drive."
       },
       {
-       "title": "OSTEP · Hard Disk Drives",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Hard Disk Drives",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
-       "quote": "in a process known as a seek."
+       "quote": "The disk head is attached to a single disk arm, which moves across the surface to position the head over the desired track."
       },
       {
-       "title": "OSTEP · Hard Disk Drives",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Hard Disk Drives",
+       "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
+       "quote": "the drive has to first move the disk arm to the correct track"
+      },
+      {
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Hard Disk Drives",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
        "quote": "must just wait for the desired sector to rotate under the disk head"
       },
       {
-       "title": "OSTEP · Hard Disk Drives",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Hard Disk Drives",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-disks.pdf",
        "quote": "first a seek, then waiting for the rotational delay, and finally the transfer."
       },
@@ -231,6 +251,11 @@
        "title": "Microsoft Learn · DISK_GEOMETRY structure",
        "url": "https://learn.microsoft.com/en-us/windows/win32/api/winioctl/ns-winioctl-disk_geometry",
        "quote": "The number of sectors per track."
+      },
+      {
+       "title": "Microsoft Learn · DISK_GEOMETRY structure",
+       "url": "https://learn.microsoft.com/en-us/windows/win32/api/winioctl/ns-winioctl-disk_geometry",
+       "quote": "The number of cylinders."
       }
      ]
     },
@@ -238,12 +263,12 @@
      "text": "**SSD frente a HDD**: el SSD no tiene piezas mecánicas y hace muchas más operaciones de E/S aleatorias por segundo. **NVMe** usa **PCIe** y se diseñó para SSD y memoria no volátil (SATA y SAS se diseñaron para discos duros): un SSD NVMe PCIe 3.0 x4 es **6-7 veces** más rápido que uno SATA.",
      "refs": [
       {
-       "title": "OSTEP · Flash-based SSDs",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Flash-based SSDs",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf",
        "quote": "Unlike hard disk drives, flash-based SSDs have no mechanical components"
       },
       {
-       "title": "OSTEP · Flash-based SSDs",
+       "title": "OSTEP (libro de texto, Univ. of Wisconsin) · Flash-based SSDs",
        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/file-ssd.pdf",
        "quote": "while a typical disk drive can only perform a few hundred random I/Os per second, SSDs can do much better."
       },
@@ -255,7 +280,7 @@
       {
        "title": "NVM Express · FAQ",
        "url": "https://nvmexpress.org/faq/",
-       "quote": "previous storage protocols that were designed for hard disk drives, for instance, SATA and SAS."
+       "quote": "The NVMe specification was developed from the ground up for SSDs and non-volatile memory to be more scalable, higher performance, lower latency, and more efficient than previous storage protocols that were designed for hard disk drives, for instance, SATA and SAS."
       },
       {
        "title": "NVM Express · FAQ",
@@ -270,7 +295,7 @@
    "title": "Impresión",
    "points": [
     {
-     "text": "**Impacto** (matricial): una cabeza de agujas golpea la cinta; p. ej., impresoras de **24 agujas** como la Epson LQ-590.",
+     "text": "**Impacto** (matricial de agujas): p. ej., la Epson LQ-590, de **24 agujas**.",
      "refs": [
       {
        "title": "Epson · LQ-590 Impact Printer",
@@ -280,7 +305,7 @@
      ]
     },
     {
-     "text": "**Inyección de tinta**: boquillas que forman puntos de color en el papel. **Láser** (electrofotografía): un láser recorre el **tambor** según los datos y la imagen se forma con **tóner**.",
+     "text": "**Inyección de tinta**: gotas de tinta expulsadas por **boquillas** forman puntos de color en el papel. **Láser** (electrofotografía): un láser recorre el **tambor** según los datos y la imagen se forma con **tóner**.",
      "refs": [
       {
        "title": "Image Permanence Institute (RIT) · Preservation of Digitally-Printed Images",
@@ -305,7 +330,7 @@
       {
        "title": "Image Permanence Institute (RIT) · Preservation of Digitally-Printed Images",
        "url": "https://s3.cad.rit.edu/ipi-assets/publications/dp3_guide.pdf",
-       "quote": "is dye diffusion thermal transfer."
+       "quote": "The technical name for the process, however, is dye diffusion thermal transfer."
       },
       {
        "title": "Image Permanence Institute (RIT) · Preservation of Digitally-Printed Images",
@@ -370,7 +395,7 @@
       {
        "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
        "url": "https://www.digitizationguidelines.gov/guidelines/FADGI%20Technical%20Guidelines%20for%20Digitizing%20Cultural%20Heritage%20Materials_3rd%20Edition_05092023.pdf",
-       "quote": "Drum scanners function by securing either reflection or transmission originals to the surface of a"
+       "quote": "Drum scanners function by securing either reflection or transmission originals to the surface of a “drum,” generally with tape."
       },
       {
        "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
@@ -381,11 +406,16 @@
        "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
        "url": "https://www.digitizationguidelines.gov/guidelines/FADGI%20Technical%20Guidelines%20for%20Digitizing%20Cultural%20Heritage%20Materials_3rd%20Edition_05092023.pdf",
        "quote": "Manually operated planetary book scanners with or without glass or plastic platens"
+      },
+      {
+       "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
+       "url": "https://www.digitizationguidelines.gov/guidelines/FADGI%20Technical%20Guidelines%20for%20Digitizing%20Cultural%20Heritage%20Materials_3rd%20Edition_05092023.pdf",
+       "quote": "Either the sensor moves in the camera head capturing the image one line at a time or the sensor remains stationary and the object moves under the camera"
       }
      ]
     },
     {
-     "text": "Interfaces de escáner: **TWAIN** (estándar abierto entre aplicaciones y dispositivos, de 1992), **WIA** (plataforma de adquisición de imágenes de Windows, compatible con aplicaciones TWAIN) e **ISIS** (*Image and Scanner Interface Specification*, driver que suele dar el fabricante).",
+     "text": "Interfaces de escáner: **TWAIN** (estándar abierto entre aplicaciones y dispositivos, de 1992), **WIA** (plataforma de adquisición de imágenes fijas de Windows, compatible con aplicaciones TWAIN) e **ISIS** (*Image and Scanner Interface Specification*, driver que suele dar el fabricante).",
      "refs": [
       {
        "title": "TWAIN Working Group",
@@ -420,7 +450,7 @@
      ]
     },
     {
-     "text": "**Profundidad de color**: con **1 bit** por píxel solo hay **2** valores (blanco o negro, imagen bitonal).",
+     "text": "**Profundidad de color**: con **1 bit** por píxel solo hay **2** valores (blanco o negro).",
      "refs": [
       {
        "title": "FADGI · Technical Guidelines for Digitizing Cultural Heritage Materials, 3rd ed.",
@@ -430,12 +460,17 @@
      ]
     },
     {
-     "text": "Vídeo: las imágenes se definen para captura **progresiva** (**p**, p. ej. 1080p) o **entrelazada** (**i**, 1080i).",
+     "text": "Vídeo HDTV (UIT-R BT.709): las imágenes se definen para captura **progresiva** (**P**) o **entrelazada** (**I**); las progresivas pueden transportarse como P o como segmentadas (PsF).",
      "refs": [
       {
        "title": "Recomendación UIT-R BT.709-6",
        "url": "https://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.709-6-201506-I!!PDF-E.pdf",
        "quote": "Pictures are defined for progressive (P) capture and interlace (I) capture."
+      },
+      {
+       "title": "Recomendación UIT-R BT.709-6",
+       "url": "https://www.itu.int/dms_pubrec/itu-r/rec/bt/R-REC-BT.709-6-201506-I!!PDF-E.pdf",
+       "quote": "Progressive captured pictures can be transported with progressive (P) transport or progressive segmented frame (PsF) transport."
       }
      ]
     },
