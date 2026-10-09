@@ -1334,7 +1334,7 @@
      ]
     },
     {
-     "text": "**Oposición** (art. 21 RGPD): por motivos de su situación particular frente a tratamientos basados en el **interés público** o el **interés legítimo** (e, f), salvo **motivos legítimos imperiosos** del responsable; y **en todo momento** frente a la **mercadotecnia directa**, que debe cesar. Se menciona **explícitamente** a más tardar en la **primera comunicación**. Si la supresión deriva de oponerse a la mercadotecnia, pueden conservarse los datos identificativos **para no volver a enviarla** (art. 15.2 LOPDGDD).",
+     "text": "**Oposición** (art. 21 RGPD): por motivos de su situación particular frente a tratamientos basados en el **interés público** o el **interés legítimo** (e, f), salvo **motivos legítimos imperiosos** del responsable; y **en todo momento** frente a la **mercadotecnia directa**, que debe cesar. Se menciona **explícitamente** a más tardar en la **primera comunicación**. Si la supresión deriva de oponerse a la mercadotecnia, pueden conservarse los datos identificativos **para no volver a enviarla** (art. 15.2 LOPDGDD). La LOPDGDD (art. 18) remite el ejercicio de la oposición y de los derechos sobre **decisiones automatizadas** (incluida la elaboración de **perfiles**) a los arts. **21 y 22 RGPD**.",
      "refs": [
       {
        "law": "32016R0679",
@@ -1360,6 +1360,11 @@
        "law": "BOE-A-2018-16673",
        "section": "a1-7",
        "quote": "el responsable podrá conservar los datos identificativos del afectado necesarios con el fin de impedir tratamientos futuros para fines de mercadotecnia directa."
+      },
+      {
+       "law": "BOE-A-2018-16673",
+       "section": "a1-10",
+       "quote": "El derecho de oposición, así como los derechos relacionados con las decisiones individuales automatizadas, incluida la realización de perfiles, se ejercerán de acuerdo con lo establecido, respectivamente, en los artículos 21 y 22 del Reglamento (UE) 2016/679."
       }
      ]
     },

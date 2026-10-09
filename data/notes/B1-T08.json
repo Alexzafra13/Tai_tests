@@ -210,6 +210,47 @@
        "quote": "el poderdante podrá revocar o prorrogar el poder."
       }
      ]
+    },
+    {
+     "text": "**Identificación y firma** (art. 11 Ley 39/2015): por regla general basta con que los interesados **acrediten su identidad**. La **firma** solo es obligatoria para **formular solicitudes**, presentar **declaraciones responsables o comunicaciones**, **interponer recursos**, **desistir de acciones** y **renunciar a derechos** (no, por ejemplo, para acceder a las notificaciones). Más detalle en el tema 6.",
+     "refs": [
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "será suficiente con que los interesados acrediten previamente su identidad a través de cualquiera de los medios de identificación previstos en esta Ley."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "Las Administraciones Públicas sólo requerirán a los interesados el uso obligatorio de firma para:"
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "a) Formular solicitudes."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "b) Presentar declaraciones responsables o comunicaciones."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "c) Interponer recursos."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "d) Desistir de acciones."
+      },
+      {
+       "law": "BOE-A-2015-10565",
+       "section": "a11",
+       "quote": "e) Renunciar a derechos."
+      }
+     ],
+     "items": []
     }
    ]
   },
@@ -2137,6 +2178,56 @@
        "law": "BOE-A-2010-1331",
        "section": "a23",
        "quote": "Cuando exista riesgo de obsolescencia del formato"
+      }
+     ]
+    },
+    {
+     "text": "La **Guía de auditoría de cumplimiento del ENI** (DTIC, 2016) ayuda a demostrar la conformidad con el ENI. Agrupa sus controles en **tres categorías**:",
+     "refs": [
+      {
+       "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+       "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+       "quote": "El objetivo de esta Guía es proporcionar un instrumento que facilite que se pueda realizar una valoración del cumplimiento de las medidas de interoperabilidad"
+      },
+      {
+       "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+       "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+       "quote": "Esta Guía contiene un conjunto de controles apropiados para evaluar el cumplimiento de lo previsto en el ENI, agrupados en tres categorías:"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Marco organizativo**: medidas **horizontales** (aspectos jurídicos, políticas, decisiones), a menudo de **gobernanza** de la interoperabilidad.",
+       "refs": [
+        {
+         "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+         "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+         "quote": "Marco organizativo, referido a aquellos controles cuyo cumplimiento exige medidas horizontales, como los aspectos jurídicos, de políticas de actuación o determinadas decisiones, frecuentemente referidas a la gobernanza de la interoperabilidad."
+        }
+       ],
+       "items": []
+      },
+      {
+       "text": "**Marco operacional**: **prácticas, procedimientos y medidas** para administrar la interoperabilidad (diseño, implementación, configuración y explotación de sistemas).",
+       "refs": [
+        {
+         "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+         "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+         "quote": "Marco operacional, referido a aquellos controles cuyo cumplimiento requiere la adopción de prácticas, procedimientos y medidas alineadas con la administración de la interoperabilidad como un conjunto"
+        }
+       ],
+       "items": []
+      },
+      {
+       "text": "**Medidas técnicas**: requisitos concretos como **formatos, vocabularios o protocolos**.",
+       "refs": [
+        {
+         "title": "Guía de auditoría del Esquema Nacional de Interoperabilidad · PAe",
+         "url": "https://administracionelectronica.gob.es/pae_Home/va/dam/jcr:a859d9ac-9519-4cf9-b525-cc7238b5271b/Guia_auditoria_ENI_PDF_1ed_2016.pdf",
+         "quote": "Medidas técnicas, que suponen requisitos concretos que permiten garantizar la interoperabilidad, incluyendo formatos, vocabularios o protocolos."
+        }
+       ],
+       "items": []
       }
      ]
     }

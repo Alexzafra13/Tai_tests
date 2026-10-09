@@ -140,12 +140,17 @@
        ]
       },
       {
-       "text": "**VIII**: De la Organización Territorial del Estado.",
+       "text": "**VIII**: De la Organización Territorial del Estado: el Estado se organiza en **municipios**, **provincias** y **Comunidades Autónomas** (art. 137).",
        "refs": [
         {
          "law": "BOE-A-1978-31229",
          "section": "tviii",
          "quote": "TÍTULO VIII. De la Organización Territorial del Estado"
+        },
+        {
+         "law": "BOE-A-1978-31229",
+         "section": "a137",
+         "quote": "El Estado se organiza territorialmente en municipios, en provincias y en las Comunidades Autónomas que se constituyan."
         }
        ]
       },

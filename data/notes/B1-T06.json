@@ -2023,6 +2023,27 @@
        "quote": "iv. CAdES attached/implicit signature."
       }
      ]
+    },
+    {
+     "text": "**AutoFirma** es la aplicación de escritorio de la Administración para firmar: elige sola el formato de firma más apropiado al documento y muestra los firmantes de una firma. En la versión **1.8.2**, el **algoritmo de huella para la firma** se elige entre **SHA1, SHA512, SHA384 y SHA256** (no admite MD5).",
+     "refs": [
+      {
+       "title": "Suite Cliente de @firma · Centro de Transferencia de Tecnología",
+       "url": "https://administracionelectronica.gob.es/ctt/clienteafirma",
+       "quote": "Autofirma: Sencilla aplicación de escritorio, para usuarios sin conocimientos de firma electrónica. Autoselecciona el formato de firma más apropiado al documento a firmar, y permite visualizar los firmantes y documento firmado en caso de que se le introduzca una firma."
+      },
+      {
+       "title": "Código fuente de AutoFirma 1.8.2 (textos) · Centro de Transferencia de Tecnología",
+       "url": "https://github.com/ctt-gob-es/clienteafirma/blob/v1.8.2/afirma-simple/src/main/resources/properties/simpleafirmamessages.properties",
+       "quote": "PreferencesPanel.18=Algoritmo de huella para la firma:"
+      },
+      {
+       "title": "Código fuente de AutoFirma 1.8.2 · Centro de Transferencia de Tecnología",
+       "url": "https://github.com/ctt-gob-es/clienteafirma/blob/v1.8.2/afirma-simple/src/main/java/es/gob/afirma/standalone/ui/preferences/PreferencesPanelGeneral.java",
+       "quote": "\"SHA1\", //$NON-NLS-1$ \"SHA512\", //$NON-NLS-1$ \"SHA384\", //$NON-NLS-1$ \"SHA256\" //$NON-NLS-1$"
+      }
+     ],
+     "items": []
     }
    ]
   },
