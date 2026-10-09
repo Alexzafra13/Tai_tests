@@ -5,7 +5,7 @@
    "title": "Origen y evolución de Internet",
    "points": [
     {
-     "text": "**Conmutación de paquetes**: Leonard **Kleinrock** publicó el primer artículo sobre su teoría en **1961**.",
+     "text": "**Conmutación de paquetes**: Leonard **Kleinrock** publicó el primer artículo sobre la teoría de la conmutación de paquetes, en julio de **1961**.",
      "refs": [
       {
        "title": "Internet Society · Brief History of the Internet",
@@ -40,7 +40,7 @@
      ]
     },
     {
-     "text": "El **1 de enero de 1983** ARPANET pasó de NCP a **TCP/IP** de golpe (*flag day*), y se separó **MILNET** (uso militar) de ARPANET (investigación). En **1995** dejó de financiarse la red troncal **NSFNET**.",
+     "text": "El **1 de enero de 1983** ARPANET pasó de NCP a **TCP/IP** de golpe (*flag day*: todos los equipos a la vez), y se separó **MILNET** (necesidades operativas) de ARPANET (investigación). En **1995** dejó de financiarse la red troncal **NSFNET**.",
      "refs": [
       {
        "title": "Internet Society · Brief History of the Internet",
@@ -55,6 +55,11 @@
       {
        "title": "Internet Society · Brief History of the Internet",
        "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "style transition, requiring all hosts to convert simultaneously"
+      },
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
        "quote": "The transition of ARPANET from NCP to TCP/IP permitted it to be split into a MILNET supporting operational requirements and an ARPANET supporting research needs."
       },
       {
@@ -65,12 +70,22 @@
      ]
     },
     {
-     "text": "**IANA** mantiene los registros de referencia de Internet (direcciones, protocolos, raíz del DNS) y reparte bloques de direcciones a los **RIR**; hoy la gestiona PTI, filial de **ICANN** (creada en **1998**), que coordina la zona raíz del DNS y las funciones IANA.",
+     "text": "**IANA** mantiene los registros de referencia de Internet (nombres de dominio, direcciones IP, protocolos) y reparte bloques de direcciones a los **RIR**; hoy la gestiona PTI, filial de **ICANN** (creada en **1998**), que coordina la zona raíz del DNS y las funciones IANA.",
      "refs": [
       {
        "title": "IANA · About us",
        "url": "https://www.iana.org/about",
        "quote": "maintains the authoritative public registries that record these allocations and definitions, providing a common global point of reference."
+      },
+      {
+       "title": "IANA · About us",
+       "url": "https://www.iana.org/about",
+       "quote": "Today, the functions are performed by Public Technical Identifiers"
+      },
+      {
+       "title": "IANA · About us",
+       "url": "https://www.iana.org/about",
+       "quote": "a purpose-built affiliate of ICANN dedicated exclusively to delivering the IANA services."
       },
       {
        "title": "IANA · Number Resources",
@@ -96,6 +111,16 @@
        "title": "NRO · Regional Internet Registries",
        "url": "https://www.nro.net/about/rirs/",
        "quote": "There are five Regional Internet Registries (RIRs) in the world."
+      },
+      {
+       "title": "NRO · Regional Internet Registries",
+       "url": "https://www.nro.net/about/rirs/",
+       "quote": "RIRs manage, distribute, and register Internet number resources"
+      },
+      {
+       "title": "NRO · Regional Internet Registries",
+       "url": "https://www.nro.net/about/rirs/",
+       "quote": "Autonomous System (AS) Numbers) within their respective regions"
       },
       {
        "title": "NRO · Regional Internet Registries",

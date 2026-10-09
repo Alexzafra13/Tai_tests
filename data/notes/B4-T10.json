@@ -360,12 +360,17 @@
    "title": "Técnicas de transmisión",
    "points": [
     {
-     "text": "**Banda base**: banda de frecuencias que ocupa la señal (o varias multiplexadas) sin modular; en radio, la de la señal que modula al transmisor.",
+     "text": "**Banda base**: banda de frecuencias que ocupa una señal (o varias multiplexadas) en la entrada y la salida de un sistema de transmisión; si hay modulación, es la de la señal que entra en la primera etapa de modulación (en radio, la señal que modula al transmisor).",
      "refs": [
       {
        "title": "IEC Electropedia (IEV 702-01-06) · baseband",
        "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-01-06",
        "quote": "frequency band occupied by one signal or by a number of multiplexed signals at specified input and output points of a transmission system"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-01-06) · baseband",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-01-06",
+       "quote": "When the transmission involves multiple modulation, it is generally considered that the baseband is that frequency band occupied by the signal which is applied to the first modulation stage"
       },
       {
        "title": "IEC Electropedia (IEV 702-01-06) · baseband",
@@ -395,7 +400,7 @@
       {
        "title": "IEC Electropedia (IEV 702-06-63) · quadrature amplitude modulation",
        "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-63",
-       "quote": "amplitude modulation by two separate signals of two sinusoidal carriers having the same amplitude and frequency but being in phase quadrature"
+       "quote": "amplitude modulation by two separate signals of two sinusoidal carriers having the same amplitude and frequency but being in phase quadrature, the modulated signals being added for transmission in a single channel"
       }
      ]
     },

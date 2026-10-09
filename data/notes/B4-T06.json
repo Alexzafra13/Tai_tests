@@ -30,10 +30,10 @@
      ],
      "items": [
       {
-       "text": "**Símplex** (en el uso habitual de los temarios): en **un solo sentido**. La IEC lo llama *unidirectional* y desaconseja el término *simplex* para esto.",
+       "text": "**Símplex** (en el uso habitual de los temarios): en **un solo sentido**. La IEC lo llama *unidirectional* (en francés marca *simplex* como desaconsejado aquí), porque reserva *simplex* para el semidúplex.",
        "refs": [
         {
-         "title": "IEC Electropedia (IEV 701-03-18) · unidirectional",
+         "title": "IEC Electropedia (IEV 701-03-18) · unidirectional (entrada francesa)",
          "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-18",
          "quote": "DÉCONSEILLÉ: simplex, adj"
         }
@@ -72,7 +72,7 @@
      ]
     },
     {
-     "text": "**Transmisión síncrona**: emisor y receptor funcionan de forma continua con una **diferencia de tiempo constante**. **Asíncrona** (*arranque-parada*): cada carácter o bloque va precedido de una señal de **arranque** y seguido de una de **parada** (la IEC desaconseja «asynchronous» y prefiere *anisochronous*).",
+     "text": "**Transmisión síncrona**: emisor y receptor funcionan de forma continua con una **diferencia de tiempo constante**. **Arranque-parada** (*start-stop*, lo que suele llamarse transmisión asíncrona): cada carácter o bloque va precedido de una señal de **arranque** y seguido de una de **parada** (la IEC desaconseja «asynchronous» y prefiere *anisochronous*).",
      "refs": [
       {
        "title": "IEC Electropedia (IEV 721-03-05) · synchronous transmission",
@@ -97,7 +97,7 @@
       {
        "title": "RFC 4291 · IP Version 6 Addressing Architecture",
        "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
-       "quote": "A packet sent to a unicast address is delivered to the interface identified by that address."
+       "quote": "It includes the basic formats for the various types of IPv6 addresses (unicast, anycast, and multicast)."
       }
      ],
      "items": [
@@ -164,7 +164,7 @@
    "title": "Redes de comunicaciones: conmutación y difusión",
    "points": [
     {
-     "text": "Por extensión: **LAN** (red local, en las instalaciones del usuario y en un área limitada), **MAN** (une redes locales de una misma **ciudad**), **WAN** (área mayor que una ciudad; típicamente, un país) y **WPAN** (red personal inalámbrica, de corto alcance, para pocos dispositivos en una sala).",
+     "text": "Por extensión: **LAN** (red local, en las instalaciones del usuario y en un área limitada), **MAN** (une redes locales de una misma **zona urbana**), **WAN** (área mayor que una ciudad; típicamente, un país) y **WPAN** (red personal inalámbrica, de corto alcance, para pocos dispositivos en una sala).",
      "refs": [
       {
        "title": "IEC Electropedia (IEV 732-01-04) · local area network",
@@ -190,11 +190,16 @@
        "title": "NIST CSRC Glossary · wireless personal area network",
        "url": "https://csrc.nist.gov/glossary/term/wireless_personal_area_network",
        "quote": "A small-scale wireless network that requires little or no infrastructure and operates within a short range."
+      },
+      {
+       "title": "NIST CSRC Glossary · wireless personal area network",
+       "url": "https://csrc.nist.gov/glossary/term/wireless_personal_area_network",
+       "quote": "A WPAN is typically used by a few devices in a single room instead of connecting the devices with cables."
       }
      ]
     },
     {
-     "text": "**Conmutación de circuitos**: se establece una conexión de **uso exclusivo** durante toda la llamada o servicio (telefonía clásica).",
+     "text": "**Conmutación de circuitos**: se establece una conexión de **uso exclusivo** durante toda la llamada o servicio.",
      "refs": [
       {
        "title": "IEC Electropedia (IEV 714-05-08) · circuit switching",
@@ -204,7 +209,7 @@
      ]
     },
     {
-     "text": "**Conmutación de paquetes**: el mensaje se divide en **paquetes con dirección** que los nodos reciben, almacenan y reenvían, y se reconstruye en el destino; un paquete ocupa el canal **solo mientras se transmite**. Variantes: **circuito virtual** (simula una conexión de circuitos) y **datagrama** (cada paquete va por su cuenta a la dirección que lleva).",
+     "text": "**Conmutación de paquetes**: el mensaje se divide en **paquetes con dirección** que los nodos reciben, almacenan y reenvían, y se reconstruye en el destino; un paquete ocupa el canal **solo mientras se transmite**. Servicios de la red: **circuito virtual** (simula una conexión de circuitos) y **datagrama** (un mensaje que cabe en un solo paquete se envía al destino que indica la dirección del paquete).",
      "refs": [
       {
        "title": "IEC Electropedia (IEV 714-05-09) · packet switching",
@@ -239,7 +244,7 @@
      ]
     },
     {
-     "text": "**MPLS** (*Multiprotocol Label Switching*): al **entrar** en la red, cada paquete se asigna una sola vez a una clase (**FEC**) y recibe una **etiqueta** corta de longitud fija; en los saltos siguientes no se analiza la cabecera de red, sino que la etiqueta indica el siguiente salto y la nueva etiqueta. Los nodos son **LSR** (*label switching routers*).",
+     "text": "**MPLS** (*Multiprotocol Label Switching*): al **entrar** en la red, cada paquete se asigna una sola vez a una clase (**FEC**) y recibe una **etiqueta** corta de longitud fija; en los saltos siguientes no se analiza la cabecera de red, sino que la etiqueta indica el siguiente salto y la nueva etiqueta. Los routers que soportan MPLS son **LSR** (*label switching routers*).",
      "refs": [
       {
        "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
@@ -259,7 +264,7 @@
       {
        "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
        "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
-       "quote": "label switching router an MPLS node which is capable of forwarding native L3 packets"
+       "quote": "A router which supports MPLS is known as a \"Label Switching Router\", or LSR."
       }
      ]
     },

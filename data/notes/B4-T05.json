@@ -739,7 +739,7 @@
    "title": "Control remoto de puestos de usuario",
    "points": [
     {
-     "text": "**Escritorio remoto** (**RDP**, *Remote Desktop Protocol*): escucha por defecto en el puerto **3389** (registrado en IANA como `ms-wbt-server`); va encapsulado y cifrado dentro de **TCP** y ofrece hasta 64 000 canales de datos.",
+     "text": "**Escritorio remoto** (**RDP**, *Remote Desktop Protocol*): escucha por defecto en el puerto **3389** (registrado en IANA como `ms-wbt-server`, TCP y UDP). Según el artículo clásico de Microsoft (KB 186607), va encapsulado y cifrado dentro de **TCP** y ofrece 64 000 canales de datos.",
      "refs": [
       {
        "title": "Microsoft Learn · Cambiar el puerto de escucha de Escritorio remoto",
@@ -752,12 +752,17 @@
        "quote": "ms-wbt-server,3389,tcp,MS WBT Server"
       },
       {
-       "title": "Microsoft Learn · Understanding the Remote Desktop Protocol (RDP)",
+       "title": "IANA · Service Name and Transport Protocol Port Number Registry",
+       "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+       "quote": "ms-wbt-server,3389,udp,MS WBT Server"
+      },
+      {
+       "title": "Microsoft Learn · Understanding the Remote Desktop Protocol (RDP) (KB 186607, artículo antiguo)",
        "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/understanding-remote-desktop-protocol",
        "quote": "RDP is encapsulated and encrypted within TCP."
       },
       {
-       "title": "Microsoft Learn · Understanding the Remote Desktop Protocol (RDP)",
+       "title": "Microsoft Learn · Understanding the Remote Desktop Protocol (RDP) (KB 186607, artículo antiguo)",
        "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/understanding-remote-desktop-protocol",
        "quote": "RDP provides 64,000 separate channels for data transmission."
       }
@@ -809,7 +814,7 @@
      ]
     },
     {
-     "text": "Seguridad (CCN-STIC 570A25): el escritorio remoto **no se considera seguro fuera de una red local**; para el acceso remoto hay que añadir medidas como una **VPN**, y solo se habilita si hace falta.",
+     "text": "Seguridad (CCN-STIC 570A25): el escritorio remoto **no se considera seguro fuera de una red local**; para el acceso remoto hay que añadir medidas como una **VPN**, y el anexo que lo habilita solo se aplica si hace falta.",
      "refs": [
       {
        "title": "CCN-STIC 570A25 · Perfilado de seguridad para Windows Server (Anexo G, escritorio remoto)",
