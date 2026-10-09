@@ -182,15 +182,25 @@
      ]
     },
     {
-     "text": "Elementos **semánticos** de sección (HTML5):",
+     "text": "Elementos **semánticos** de estructura (HTML5):",
      "refs": [
       {
        "title": "HTML Living Standard · Sections",
        "url": "https://html.spec.whatwg.org/multipage/sections.html",
-       "quote": "The section element represents a generic section of a document or application."
+       "quote": "The article element represents a complete"
       }
      ],
      "items": [
+      {
+       "text": "`section`: sección **genérica** de un documento o aplicación.",
+       "refs": [
+        {
+         "title": "HTML Living Standard · Sections",
+         "url": "https://html.spec.whatwg.org/multipage/sections.html",
+         "quote": "The section element represents a generic section of a document or application."
+        }
+       ]
+      },
       {
        "text": "`article`: composición **independiente**, distribuible o reutilizable por sí sola (p. ej., por sindicación).",
        "refs": [
@@ -254,7 +264,7 @@
      ]
     },
     {
-     "text": "Elementos **obsoletos** (no deben usarse): `basefont`, `big`, `blink`, `center`, `font`, `marquee`, `tt`… (se usa CSS); `frame`, `frameset` y `noframes` (se usa `iframe`); `acronym` (se usa `abbr`); `applet` (se usa `embed` u `object`).",
+     "text": "Elementos **obsoletos** (no deben usarse): `basefont`, `big`, `blink`, `center`, `font`, `marquee`, `tt`… (se usa CSS); `frame`, `frameset` y `noframes` (se usa `iframe` y CSS, o inclusiones en el servidor); `acronym` (se usa `abbr`); `applet` (se usa `embed` u `object`).",
      "refs": [
       {
        "title": "HTML Living Standard · Obsolete features",
@@ -264,22 +274,22 @@
       {
        "title": "HTML Living Standard · Obsolete features",
        "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
-       "quote": "basefont big blink center font marquee multicol nobr spacer tt Use appropriate elements or CSS instead."
+       "quote": "Use appropriate elements or CSS instead."
       },
       {
        "title": "HTML Living Standard · Obsolete features",
        "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
-       "quote": "frame frameset noframes Either use iframe and CSS instead"
+       "quote": "Either use iframe and CSS instead, or use server-side includes to generate complete pages"
       },
       {
        "title": "HTML Living Standard · Obsolete features",
        "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
-       "quote": "acronym Use abbr instead."
+       "quote": "Use abbr instead."
       },
       {
        "title": "HTML Living Standard · Obsolete features",
        "url": "https://html.spec.whatwg.org/multipage/obsolete.html",
-       "quote": "applet Use embed or object instead."
+       "quote": "Use embed or object instead."
       }
      ]
     },
@@ -305,6 +315,11 @@
        "title": "HTML Living Standard · Document metadata",
        "url": "https://html.spec.whatwg.org/multipage/semantics.html",
        "quote": "There must be no more than one base element per document."
+      },
+      {
+       "title": "<base> · MDN",
+       "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/base",
+       "quote": "A keyword or author-defined name of the default browsing context to show the results of navigation from"
       },
       {
        "title": "<base> · MDN",

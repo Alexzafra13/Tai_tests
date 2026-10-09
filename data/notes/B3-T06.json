@@ -35,7 +35,7 @@
      ]
     },
     {
-     "text": "La forma más simple de cliente/servidor, con un servidor al que acceden directamente varios clientes, es la arquitectura de **2 niveles**.",
+     "text": "La forma más simple de cliente/servidor, con un servidor al que acceden directamente varios clientes, es la arquitectura de **2 niveles** (guía archivada de Microsoft, 2009).",
      "refs": [
       {
        "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Architectural Patterns and Styles",
@@ -75,7 +75,7 @@
      ]
     },
     {
-     "text": "**Escalado vertical**: más capacidad para un solo recurso (un servidor mayor); suele exigir parar el sistema. **Horizontal**: más instancias para repartir la carga.",
+     "text": "**Escalado vertical**: más capacidad para un solo recurso (un servidor mayor); suele exigir dejar el sistema **temporalmente sin servicio** mientras se redespliega. **Horizontal**: más instancias para repartir la carga.",
      "refs": [
       {
        "title": "Azure Well-Architected Framework · Scaling and partitioning",
@@ -95,7 +95,7 @@
      ]
     },
     {
-     "text": "**Cliente ligero** (*thin*) y **pesado** (*thick/fat*): en el ligero, la lógica de negocio está en el sistema del servidor; en el pesado, en el **propio cliente** (guía archivada de Microsoft, 2009).",
+     "text": "En las aplicaciones de **cliente enriquecido** (*rich client*), el cliente **ligero** (*thin*) es la interfaz de un sistema de negocio, que contiene la capa de negocio (normalmente expuesta como servicio); en el **pesado** (*thick*), la capa de negocio está en el **propio cliente** (guía archivada de Microsoft, 2009).",
      "refs": [
       {
        "title": "Microsoft Application Architecture Guide 2.0 (archivo) · Rich Client Applications",

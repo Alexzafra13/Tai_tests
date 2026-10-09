@@ -305,6 +305,11 @@
       {
        "title": "Git · git-tag",
        "url": "https://git-scm.com/docs/git-tag",
+       "quote": "Make an unsigned, annotated tag object"
+      },
+      {
+       "title": "Git · git-tag",
+       "url": "https://git-scm.com/docs/git-tag",
        "quote": "Annotated tags are meant for release while lightweight tags are meant for private or temporary object labels."
       },
       {
@@ -315,7 +320,7 @@
      ]
     },
     {
-     "text": "**git push**: actualiza ramas, etiquetas u otras referencias en el repositorio **remoto** con lo del local; con `--tags` envía todas las etiquetas.",
+     "text": "**git push**: actualiza ramas, etiquetas u otras referencias en el repositorio **remoto** a partir del repositorio **local**; con `--tags` envía todas las etiquetas.",
      "refs": [
       {
        "title": "Git · git-push",
@@ -555,7 +560,7 @@
    "title": "Documentación, generación de código y plataformas colaborativas",
    "points": [
     {
-     "text": "**Generación de documentación**: **javadoc** genera páginas **HTML** de la API a partir de las declaraciones y los **comentarios de documentación** del código Java. En Python, el **docstring** es la cadena literal que abre un módulo, función, clase o método (entre triples comillas dobles) y queda en el atributo `__doc__`.",
+     "text": "**Generación de documentación**: **javadoc** genera páginas **HTML** de la API a partir de las declaraciones y los **comentarios de documentación** del código Java. En Python, el **docstring** es la cadena literal que abre un módulo, función, clase o método (por convención, entre triples comillas dobles) y queda en el atributo `__doc__`.",
      "refs": [
       {
        "title": "Java SE 21 · javadoc command",
@@ -576,16 +581,26 @@
        "title": "PEP 257 · Docstring Conventions",
        "url": "https://peps.python.org/pep-0257/",
        "quote": "Such a docstring becomes the __doc__ special attribute of that object."
+      },
+      {
+       "title": "PEP 257 · Docstring Conventions",
+       "url": "https://peps.python.org/pep-0257/",
+       "quote": "For consistency, always use \"\"\"triple double quotes\"\"\" around"
       }
      ]
     },
     {
-     "text": "**Generación de código**: Métrica v3 (proceso CSI) genera el código de los componentes con **herramientas de generación de código**, respetando los estándares de la organización. Ejemplo: las **plantillas T4** de Visual Studio generan código a partir de un modelo y lo regeneran si este cambia.",
+     "text": "**Generación de código**: Métrica v3 (proceso CSI) genera el código de los componentes respetando los estándares de nomenclatura, codificación y calidad de la organización; entre los medios del entorno de construcción figuran las **herramientas de generación de código**. Ejemplo: las **plantillas T4** de Visual Studio generan código a partir de un modelo y lo regeneran si este cambia.",
      "refs": [
       {
        "title": "Métrica v3 · Construcción del Sistema de Información",
        "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
        "quote": "En este proceso se genera el código de los componentes del Sistema de Información"
+      },
+      {
+       "title": "Métrica v3 · Construcción del Sistema de Información",
+       "url": "https://administracionelectronica.gob.es/pae_Home/dam/jcr:19993efa-8c88-4205-b1a5-fb7fc0bd94de/METRICA_V3_Construccion_del_Sistema_de_Informacion.pdf",
+       "quote": "gestores de bases de datos, bibliotecas de programas, herramientas de generación de código,"
       },
       {
        "title": "Métrica v3 · Construcción del Sistema de Información",
@@ -635,7 +650,7 @@
        ]
       },
       {
-       "text": "**GitLab**: plataforma **DevSecOps**; organiza el trabajo en **proyectos**, revisa con **merge requests** y define la CI/CD en el fichero **.gitlab-ci.yml**.",
+       "text": "**GitLab**: plataforma **DevSecOps**; revisa con **merge requests** y cada **proyecto** define su CI/CD en un fichero **.gitlab-ci.yml** en su raíz.",
        "refs": [
         {
          "title": "GitLab Docs · The DevSecOps platform",

@@ -190,7 +190,7 @@
      ]
     },
     {
-     "text": "**Diseño universal** o para todas las personas (RDL 1/2013, art. 2.l): concebir desde el origen entornos, productos, servicios, programas o herramientas que puedan usar **todas las personas**, en la mayor medida posible, **sin adaptación** ni diseño especializado; no excluye los **productos de apoyo**. Es uno de los principios de la ley (art. 3). Sus **7 principios** (Center for Universal Design, 1997): uso **equitativo**, **flexible**, **simple e intuitivo**, información **perceptible**, **tolerancia al error**, **poco esfuerzo físico** y **tamaño y espacio** para el acceso y el uso.",
+     "text": "**Diseño universal** o para todas las personas (RDL 1/2013, art. 2.l): concebir desde el origen entornos, productos, servicios, programas o herramientas que puedan usar **todas las personas**, en la mayor medida posible, **sin adaptación** ni diseño especializado; no excluye los **productos de apoyo**. Es uno de los principios de la ley (art. 3). Los **7 principios** clásicos del diseño universal (Center for Universal Design, NC State, 1997): uso **equitativo**, **flexible**, **simple e intuitivo**, información **perceptible**, **tolerancia al error**, **poco esfuerzo físico** y **tamaño y espacio** para el acceso y el uso.",
      "refs": [
       {
        "law": "BOE-A-2013-12632",
@@ -241,6 +241,16 @@
        "title": "NC State University · The Center for Universal Design",
        "url": "https://design.ncsu.edu/research/center-for-universal-design/",
        "quote": "PRINCIPLE SEVEN: Size and Space for Approach and Use"
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "These seven principles may be applied to evaluate existing designs, guide the design process"
+      },
+      {
+       "title": "NC State University · The Center for Universal Design",
+       "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+       "quote": "Copyright 1997 NC State University, The Center for Universal Design"
       }
      ]
     }
@@ -750,7 +760,7 @@
      ]
     },
     {
-     "text": "**Desarrollo seguro** (ENS, mp.sw.1): se desarrolla en un sistema **separado del de producción** y, en el refuerzo R2, con una metodología de desarrollo seguro que contemple la seguridad en **todo el ciclo de vida** y permita **inspeccionar el código fuente**. El CCN recomienda definir los controles **desde el diseño**; OWASP (**DevSecOps**) busca detectar los problemas **lo antes posible**.",
+     "text": "**Desarrollo seguro** (ENS, mp.sw.1; no aplica en categoría BÁSICA): se desarrolla en un sistema **separado del de producción** y, en el refuerzo R2, con una metodología de desarrollo seguro que contemple la seguridad en **todo el ciclo de vida** y permita **inspeccionar el código fuente**. El CCN recomienda definir los controles **desde el diseño**; OWASP (**DevSecOps**) pide introducir la seguridad **pronto** al escribir y probar el software.",
      "refs": [
       {
        "law": "BOE-A-2022-7191",
@@ -773,6 +783,11 @@
        "quote": "d) Permitirá la inspección del código fuente."
       },
       {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "Categoría MEDIA: mp.sw.1 + R1 + R2 + R3 + R4."
+      },
+      {
        "title": "CCN-CERT BP/28 · Recomendaciones sobre desarrollo seguro",
        "url": "https://www.ccn-cert.cni.es/es/informes/informes-de-buenas-practicas-bp/6834-ccn-cert-bp-28-recomendaciones-sobre-desarrollo-seguro/file.html",
        "quote": "la definición de los controles de seguridad debe comenzar en la etapa de diseño o incluso antes, y continuar durante todo el ciclo de vida de la aplicación"
@@ -781,12 +796,22 @@
        "title": "OWASP DevSecOps Guideline",
        "url": "https://owasp.org/www-project-devsecops-guideline/",
        "quote": "DevSecOps is all about putting security into DevOps."
+      },
+      {
+       "title": "OWASP DevSecOps Guideline",
+       "url": "https://owasp.org/www-project-devsecops-guideline/",
+       "quote": "But to keep up with the pace of CI/CD, security has to be injected early into software writing and testing."
       }
      ]
     },
     {
-     "text": "**DAST**: pruebas de **caja negra** sobre la aplicación **en ejecución**, inyectando datos maliciosos y sin necesitar el código fuente. **IAST**: prueba la aplicación mientras se usa, con **sensores** incluidos en su código; a diferencia del SAST, sirve en tiempo de ejecución.",
+     "text": "**DAST**: pruebas de **caja negra** sobre la aplicación **en ejecución**, inyectando datos maliciosos y sin necesitar el código fuente. **IAST**: prueba la aplicación mientras se usa, con **sensores** incluidos en su código; a diferencia del SAST, sirve **en producción, en ejecución** (el SAST necesita el código fuente).",
      "refs": [
+      {
+       "title": "OWASP DevSecOps Guideline · Dynamic Application Security Testing",
+       "url": "https://owasp.org/www-project-devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing",
+       "quote": "DAST is a “Black-Box” testing"
+      },
       {
        "title": "OWASP DevSecOps Guideline · Dynamic Application Security Testing",
        "url": "https://owasp.org/www-project-devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing",
@@ -820,7 +845,7 @@
    "title": "Seguridad en el puesto de usuario final",
    "points": [
     {
-     "text": "**Puesto despejado** (ENS, mp.eq.1): sin más material que el necesario; después, guardado en lugar cerrado si es posible.",
+     "text": "**Puesto despejado** (ENS, mp.eq.1): sin más material que el necesario; después, guardado en lugar cerrado si es posible (refuerzo R1).",
      "refs": [
       {
        "law": "BOE-A-2022-7191",
@@ -880,8 +905,13 @@
      ]
     },
     {
-     "text": "**Copias de seguridad** (mp.info.6), para la **disponibilidad**: permiten recuperar datos perdidos; se prueban regularmente (R1) y al menos una copia se guarda **en otro lugar** (R2). Son la única salida ante un **ransomware**.",
+     "text": "**Copias de seguridad** (mp.info.6), para la **disponibilidad**: permiten recuperar datos perdidos; se prueban regularmente (R1) y al menos una copia se guarda **en otro lugar** (R2). Según el CCN-CERT, no hay otra alternativa ante un **ransomware**.",
      "refs": [
+      {
+       "law": "BOE-A-2022-7191",
+       "section": "ai-2",
+       "quote": "Su frecuencia dependerá de la criticidad de los datos y del impacto que cause la falta de disponibilidad."
+      },
       {
        "law": "BOE-A-2022-7191",
        "section": "ai-2",

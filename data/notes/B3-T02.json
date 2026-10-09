@@ -68,6 +68,11 @@
        "quote": "int -2,147,483,648 to 2,147,483,647 Signed 32-bit integer System.Int32"
       },
       {
+       "title": "Microsoft Learn · Integral numeric types (C#)",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types",
+       "quote": "long -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 Signed 64-bit integer System.Int64"
+      },
+      {
        "title": "Microsoft Learn · Built-in types (C#)",
        "url": "https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types",
        "quote": "most C# type keywords from the left column are aliases for the corresponding .NET type. They're interchangeable."
@@ -90,6 +95,11 @@
       {
        "title": "The Java Tutorials · The \"Hello World!\" Application",
        "url": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html",
+       "quote": "every application must contain a main method whose signature is:"
+      },
+      {
+       "title": "The Java Tutorials · The \"Hello World!\" Application",
+       "url": "https://docs.oracle.com/javase/tutorial/getStarted/application/index.html",
        "quote": "it's the entry point for your application and will subsequently invoke all the other methods required by your program."
       },
       {
@@ -103,6 +113,11 @@
        "quote": "Top-level statements let you write executable code directly at the top of a file."
       },
       {
+       "title": "Microsoft Learn · General structure of a C# program",
+       "url": "https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/program-structure/",
+       "quote": "A Main method wraps the entry point in an explicit static method."
+      },
+      {
        "title": "Microsoft Learn · main function and program execution (C)",
        "url": "https://learn.microsoft.com/en-us/cpp/c-language/main-function-and-program-execution",
        "quote": "The main function serves as the starting point for program execution."
@@ -110,7 +125,7 @@
      ]
     },
     {
-     "text": "**Compilación e interpretación**:",
+     "text": "**Compilación e interpretación**: los lenguajes interpretados suelen tener un ciclo de desarrollo más corto, pero sus programas se ejecutan más despacio.",
      "refs": [
       {
        "title": "Python · Glossary",
@@ -155,6 +170,11 @@
         {
          "title": "Microsoft Learn · Assemblies in .NET",
          "url": "https://learn.microsoft.com/en-us/dotnet/standard/assembly/",
+         "quote": "Assemblies are implemented as .exe or .dll files."
+        },
+        {
+         "title": "Microsoft Learn · Assemblies in .NET",
+         "url": "https://learn.microsoft.com/en-us/dotnet/standard/assembly/",
          "quote": "Assemblies are the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications."
         }
        ]
@@ -175,7 +195,7 @@
        ]
       },
       {
-       "text": "**TypeScript** es un superconjunto de JavaScript; su compilador (`tsc`) **transforma** el código en JavaScript normal quitando los tipos (por eso se le llama *transpilador*).",
+       "text": "**TypeScript** es un superconjunto de JavaScript; su compilador (`tsc`) **transforma** el código en JavaScript normal y **borra** las anotaciones de tipos (coloquialmente se le llama *transpilador*; la documentación habla de compilar).",
        "refs": [
         {
          "title": "TypeScript · TypeScript for the New Programmer",
@@ -186,6 +206,11 @@
          "title": "TypeScript · The Basics",
          "url": "https://www.typescriptlang.org/docs/handbook/2/basic-types.html",
          "quote": "after tsc compiles or transforms it into a plain JavaScript file."
+        },
+        {
+         "title": "TypeScript · The Basics",
+         "url": "https://www.typescriptlang.org/docs/handbook/2/basic-types.html",
+         "quote": "here our type annotations were completely erased."
         }
        ]
       }
