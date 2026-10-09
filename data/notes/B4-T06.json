@@ -17,6 +17,270 @@
    ]
   },
   {
+   "title": "Modos de comunicación",
+   "points": [
+    {
+     "text": "Según el sentido de la transmisión:",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 701-03-18) · unidirectional",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-18",
+       "quote": "pertaining to a transmission link where the transfer of users' information is possible in one pre-assigned direction only"
+      }
+     ],
+     "items": [
+      {
+       "text": "**Símplex** (en el uso habitual de los temarios): en **un solo sentido**. La IEC lo llama *unidirectional* y desaconseja el término *simplex* para esto.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 701-03-18) · unidirectional",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-18",
+         "quote": "DÉCONSEILLÉ: simplex, adj"
+        }
+       ]
+      },
+      {
+       "text": "**Semidúplex** (*half-duplex*): en **los dos sentidos, pero no a la vez**. Ojo: la IEC llama a esto *simplex* y desaconseja *half-duplex*.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 701-03-161) · simplex",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-161",
+         "quote": "pertaining to a method of operation in which information can be transmitted in either direction, but not simultaneously, between two points"
+        },
+        {
+         "title": "IEC Electropedia (IEV 701-03-162) · simplex",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-162",
+         "quote": "DEPRECATED: half-duplex, noun"
+        }
+       ]
+      },
+      {
+       "text": "**Dúplex** (*full duplex*): en **los dos sentidos a la vez**.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 701-03-171) · duplex",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-171",
+         "quote": "pertaining to a mode of operation in which information can be transmitted in both directions simultaneously between two points"
+        },
+        {
+         "title": "IEC Electropedia (IEV 701-03-172) · duplex",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-172",
+         "quote": "DEPRECATED: full duplex, noun"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "**Transmisión síncrona**: emisor y receptor funcionan de forma continua con una **diferencia de tiempo constante**. **Asíncrona** (*arranque-parada*): cada carácter o bloque va precedido de una señal de **arranque** y seguido de una de **parada** (la IEC desaconseja «asynchronous» y prefiere *anisochronous*).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 721-03-05) · synchronous transmission",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-03-05",
+       "quote": "transmission using isochronous signals in which the sending and receiving instruments are operating continuously in a constant time difference between homologous significant instants"
+      },
+      {
+       "title": "IEC Electropedia (IEV 721-03-07) · start-stop transmission",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-03-07",
+       "quote": "each equal length group of signal elements representing a character or a block is preceded by a start signal and is followed by a stop signal"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-04-15) · anisochronous",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-04-15",
+       "quote": "DEPRECATED: asynchronous, adj"
+      }
+     ]
+    },
+    {
+     "text": "Según los destinatarios:",
+     "refs": [
+      {
+       "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+       "quote": "A packet sent to a unicast address is delivered to the interface identified by that address."
+      }
+     ],
+     "items": [
+      {
+       "text": "**Unidifusión** (*unicast*): a **un único** destino.",
+       "refs": [
+        {
+         "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+         "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+         "quote": "A packet sent to a unicast address is delivered to the interface identified by that address."
+        }
+       ]
+      },
+      {
+       "text": "**Multidifusión** (*multicast*): a **todos los miembros de un grupo** identificado por una sola dirección.",
+       "refs": [
+        {
+         "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+         "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+         "quote": "A packet sent to a multicast address is delivered to all interfaces identified by that address."
+        },
+        {
+         "title": "RFC 1112 · Host Extensions for IP Multicasting",
+         "url": "https://www.rfc-editor.org/rfc/rfc1112.txt",
+         "quote": "IP multicasting is the transmission of an IP datagram to a \"host group\", a set of zero or more hosts identified by a single IP destination address."
+        }
+       ]
+      },
+      {
+       "text": "**Difusión** (*broadcast*): a **todos** los equipos de la red local (en IPv4, 255.255.255.255, que no se reenvía). **IPv6 no tiene broadcast**: lo sustituye la multidifusión.",
+       "refs": [
+        {
+         "title": "RFC 919 · Broadcasting Internet Datagrams",
+         "url": "https://www.rfc-editor.org/rfc/rfc919.txt",
+         "quote": "The address 255.255.255.255 denotes a broadcast on a local hardware network, which must not be forwarded."
+        },
+        {
+         "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+         "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+         "quote": "There are no broadcast addresses in IPv6, their function being superseded by multicast addresses."
+        }
+       ]
+      },
+      {
+       "text": "**Anycast**: a **uno** de los destinos que comparten la dirección, el **más cercano** según el enrutamiento.",
+       "refs": [
+        {
+         "title": "RFC 4291 · IP Version 6 Addressing Architecture",
+         "url": "https://www.rfc-editor.org/rfc/rfc4291.txt",
+         "quote": "A packet sent to an anycast address is delivered to one of the interfaces identified by that address (the \"nearest\" one, according to the routing protocols' measure of distance)."
+        },
+        {
+         "title": "RFC 4786 · Operation of Anycast Services",
+         "url": "https://www.rfc-editor.org/rfc/rfc4786.txt",
+         "quote": "Anycast is the name given to the practice of making a Service Address available to a routing system at Anycast Nodes in two or more discrete locations."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Redes de comunicaciones: conmutación y difusión",
+   "points": [
+    {
+     "text": "Por extensión: **LAN** (red local, en las instalaciones del usuario y en un área limitada), **MAN** (une redes locales de una misma **ciudad**), **WAN** (área mayor que una ciudad; típicamente, un país) y **WPAN** (red personal inalámbrica, de corto alcance, para pocos dispositivos en una sala).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 732-01-04) · local area network",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-04",
+       "quote": "computer network located on a user’s premises within a limited geographical area"
+      },
+      {
+       "title": "IEC Electropedia (IEV 732-01-06) · metropolitan area network",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-06",
+       "quote": "network for connecting local area networks located in the same urban area"
+      },
+      {
+       "title": "IEC Electropedia (IEV 732-01-07) · wide area network",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-07",
+       "quote": "network that provides communication services to a geographic area larger than a single urban area"
+      },
+      {
+       "title": "IEC Electropedia (IEV 732-01-07) · wide area network",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=732-01-07",
+       "quote": "Typically a wide area network covers a single country."
+      },
+      {
+       "title": "NIST CSRC Glossary · wireless personal area network",
+       "url": "https://csrc.nist.gov/glossary/term/wireless_personal_area_network",
+       "quote": "A small-scale wireless network that requires little or no infrastructure and operates within a short range."
+      }
+     ]
+    },
+    {
+     "text": "**Conmutación de circuitos**: se establece una conexión de **uso exclusivo** durante toda la llamada o servicio (telefonía clásica).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 714-05-08) · circuit switching",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=714-05-08",
+       "quote": "to provide a connection for exclusive use of the users for the duration of a call or service"
+      }
+     ]
+    },
+    {
+     "text": "**Conmutación de paquetes**: el mensaje se divide en **paquetes con dirección** que los nodos reciben, almacenan y reenvían, y se reconstruye en el destino; un paquete ocupa el canal **solo mientras se transmite**. Variantes: **circuito virtual** (simula una conexión de circuitos) y **datagrama** (cada paquete va por su cuenta a la dirección que lleva).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 714-05-09) · packet switching",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=714-05-09",
+       "quote": "the messages are first cut into addressed packets; in certain nodes of the network, these packets are received, stored and forwarded onto the appropriate transmission channels; at the receiving end, the message is reconstituted from the received packets"
+      },
+      {
+       "title": "IEC Electropedia (IEV 714-05-09) · packet switching",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=714-05-09",
+       "quote": "A packet occupies a channel only for its duration of transmission"
+      },
+      {
+       "title": "IEC Electropedia (IEV 721-16-27) · virtual circuit",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-16-27",
+       "quote": "that simulate facilities provided by a circuit switched connection"
+      },
+      {
+       "title": "IEC Electropedia (IEV 721-19-23) · datagram service",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-19-23",
+       "quote": "a message short enough to be contained in one packet is sent to the destination identified by the packet address"
+      }
+     ]
+    },
+    {
+     "text": "**Conmutación de mensajes**: se encamina el **mensaje completo**, que se recibe, se almacena si hace falta y se reenvía.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 714-05-10) · message switching",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=714-05-10",
+       "quote": "the process of routing complete messages within a telecommunication network by receiving, storing if necessary and forwarding the messages"
+      }
+     ]
+    },
+    {
+     "text": "**MPLS** (*Multiprotocol Label Switching*): al **entrar** en la red, cada paquete se asigna una sola vez a una clase (**FEC**) y recibe una **etiqueta** corta de longitud fija; en los saltos siguientes no se analiza la cabecera de red, sino que la etiqueta indica el siguiente salto y la nueva etiqueta. Los nodos son **LSR** (*label switching routers*).",
+     "refs": [
+      {
+       "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
+       "quote": "A label is a short, fixed length, locally significant identifier which is used to identify a FEC."
+      },
+      {
+       "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
+       "quote": "In MPLS, the assignment of a particular packet to a particular FEC is done just once, as the packet enters the network."
+      },
+      {
+       "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
+       "quote": "At subsequent hops, there is no further analysis of the packet's network layer header. Rather, the label is used as an index into a table which specifies the next hop, and a new label."
+      },
+      {
+       "title": "RFC 3031 · Multiprotocol Label Switching Architecture",
+       "url": "https://www.rfc-editor.org/rfc/rfc3031.txt",
+       "quote": "label switching router an MPLS node which is capable of forwarding native L3 packets"
+      }
+     ]
+    },
+    {
+     "text": "**Difusión** (radio y televisión): comunicación **unidireccional** para muchos usuarios con receptores adecuados, por radio o cable; es **punto a zona**.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 701-01-32) · broadcasting",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-01-32",
+       "quote": "unidirectional telecommunication intended for a large number of users having appropriate receiving facilities, and carried out by means of radio or by cable networks"
+      },
+      {
+       "title": "IEC Electropedia (IEV 701-01-32) · broadcasting",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-01-32",
+       "quote": "Broadcasting is a point-to-area communication."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "title": "Medios de transmisión y degradación de la señal",
    "points": [
     {

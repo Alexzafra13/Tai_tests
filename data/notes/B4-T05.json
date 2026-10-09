@@ -734,6 +734,101 @@
      ]
     }
    ]
+  },
+  {
+   "title": "Control remoto de puestos de usuario",
+   "points": [
+    {
+     "text": "**Escritorio remoto** (**RDP**, *Remote Desktop Protocol*): escucha por defecto en el puerto **3389** (registrado en IANA como `ms-wbt-server`); va encapsulado y cifrado dentro de **TCP** y ofrece hasta 64 000 canales de datos.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Cambiar el puerto de escucha de Escritorio remoto",
+       "url": "https://learn.microsoft.com/es-es/windows-server/remote/remote-desktop-services/clients/change-listening-port",
+       "quote": "a través del Protocolo de escritorio remoto (RDP) escuchando en el puerto 3389 de forma predeterminada"
+      },
+      {
+       "title": "IANA · Service Name and Transport Protocol Port Number Registry",
+       "url": "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.csv",
+       "quote": "ms-wbt-server,3389,tcp,MS WBT Server"
+      },
+      {
+       "title": "Microsoft Learn · Understanding the Remote Desktop Protocol (RDP)",
+       "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/understanding-remote-desktop-protocol",
+       "quote": "RDP is encapsulated and encrypted within TCP."
+      },
+      {
+       "title": "Microsoft Learn · Understanding the Remote Desktop Protocol (RDP)",
+       "url": "https://learn.microsoft.com/en-us/troubleshoot/windows-server/remote/understanding-remote-desktop-protocol",
+       "quote": "RDP provides 64,000 separate channels for data transmission."
+      }
+     ]
+    },
+    {
+     "text": "**Asistencia rápida** (Windows): permite **compartir el dispositivo** con otra persona por una conexión remota; usa el puerto **443** (HTTPS) y RDP, cifra con **TLS 1.2** y genera un **código de seguridad** de validez limitada.",
+     "refs": [
+      {
+       "title": "Microsoft Learn · Usar Asistencia rápida para ayudar a los usuarios",
+       "url": "https://learn.microsoft.com/es-es/windows/client-management/client-tools/quick-assist",
+       "quote": "Asistencia rápida es una aplicación que permite a una persona compartir su dispositivo Windows o macOS con otra persona a través de una conexión remota."
+      },
+      {
+       "title": "Microsoft Learn · Usar Asistencia rápida para ayudar a los usuarios",
+       "url": "https://learn.microsoft.com/es-es/windows/client-management/client-tools/quick-assist",
+       "quote": "Asistencia rápida se comunica a través del puerto 443 (https)"
+      },
+      {
+       "title": "Microsoft Learn · Usar Asistencia rápida para ayudar a los usuarios",
+       "url": "https://learn.microsoft.com/es-es/windows/client-management/client-tools/quick-assist",
+       "quote": "mediante el Protocolo de escritorio remoto (RDP). El tráfico se cifra con TLS 1.2."
+      },
+      {
+       "title": "Microsoft Learn · Usar Asistencia rápida para ayudar a los usuarios",
+       "url": "https://learn.microsoft.com/es-es/windows/client-management/client-tools/quick-assist",
+       "quote": "Asistencia rápida genera un código de seguridad que solo se puede utilizar por un tiempo limitado."
+      }
+     ]
+    },
+    {
+     "text": "**Asistencia remota** de Windows (`msra.exe`): **solicitada** (el usuario pide ayuda con una invitación) u **ofrecida** (el técnico la inicia).",
+     "refs": [
+      {
+       "title": "Microsoft Learn (archivo, Windows Server 2008 R2) · Remote Assistance Overview",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753881(v=ws.10)",
+       "quote": "It can also be launched from a command prompt by typing msra.exe"
+      },
+      {
+       "title": "Microsoft Learn (archivo, Windows Server 2008 R2) · Remote Assistance Overview",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753881(v=ws.10)",
+       "quote": "In Solicited RA (also known as Escalated RA) the User requests assistance from the Helper by initiating the RA session using e-mail, instant messaging, or by providing the Helper with a saved copy of an invitation file"
+      },
+      {
+       "title": "Microsoft Learn (archivo, Windows Server 2008 R2) · Remote Assistance Overview",
+       "url": "https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753881(v=ws.10)",
+       "quote": "In Unsolicited RA (also known as Offer RA) the Helper offers help to the User by initiating the RA session."
+      }
+     ]
+    },
+    {
+     "text": "Seguridad (CCN-STIC 570A25): el escritorio remoto **no se considera seguro fuera de una red local**; para el acceso remoto hay que añadir medidas como una **VPN**, y solo se habilita si hace falta.",
+     "refs": [
+      {
+       "title": "CCN-STIC 570A25 · Perfilado de seguridad para Windows Server (Anexo G, escritorio remoto)",
+       "url": "https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/guias-de-acceso-publico-ccn-stic/7343-ccn-stic-570a25-perfilado-de-seguridad-para-windows-server-dc-o-ms/file.html",
+       "quote": "no se considera en ningún caso seguro cuando se hace uso de él fuera de un entorno o red local."
+      },
+      {
+       "title": "CCN-STIC 570A25 · Perfilado de seguridad para Windows Server (Anexo G, escritorio remoto)",
+       "url": "https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/guias-de-acceso-publico-ccn-stic/7343-ccn-stic-570a25-perfilado-de-seguridad-para-windows-server-dc-o-ms/file.html",
+       "quote": "deberán utilizarse elementos adicionales de comunicación y seguridad como una VPN cuando se esté configurando un acceso remoto"
+      },
+      {
+       "title": "CCN-STIC 570A25 · Perfilado de seguridad para Windows Server (Anexo G, escritorio remoto)",
+       "url": "https://www.ccn-cert.cni.es/es/pdf/guias/series-ccn-stic/guias-de-acceso-publico-ccn-stic/7343-ccn-stic-570a25-perfilado-de-seguridad-para-windows-server-dc-o-ms/file.html",
+       "quote": "solamente debe aplicarse en caso de necesidad explícita de la funcionalidad."
+      }
+     ]
+    }
+   ]
   }
  ]
 }

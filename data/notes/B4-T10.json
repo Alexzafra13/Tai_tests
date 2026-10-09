@@ -355,6 +355,158 @@
      ]
     }
    ]
+  },
+  {
+   "title": "Técnicas de transmisión",
+   "points": [
+    {
+     "text": "**Banda base**: banda de frecuencias que ocupa la señal (o varias multiplexadas) sin modular; en radio, la de la señal que modula al transmisor.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 702-01-06) · baseband",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-01-06",
+       "quote": "frequency band occupied by one signal or by a number of multiplexed signals at specified input and output points of a transmission system"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-01-06) · baseband",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-01-06",
+       "quote": "In radiocommunication, the baseband is that frequency band occupied by the signal modulating the radio transmitter."
+      }
+     ]
+    },
+    {
+     "text": "**Modulación** de una portadora: en **amplitud** (AM), en **frecuencia** (FM) o en **fase** (PM). **QAM**: dos portadoras de la misma frecuencia **en cuadratura** moduladas en amplitud y sumadas.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 702-06-17) · amplitude modulation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-17",
+       "quote": "modulation in which the amplitude of a periodic carrier is a given function, generally linear, of the instantaneous values of the modulating signal"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-06-37) · frequency modulation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-37",
+       "quote": "angle modulation in which the instantaneous frequency deviation varies in accordance with a given function"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-06-36) · phase modulation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-36",
+       "quote": "angle modulation in which the instantaneous phase deviation varies in accordance with a given function"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-06-63) · quadrature amplitude modulation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-06-63",
+       "quote": "amplitude modulation by two separate signals of two sinusoidal carriers having the same amplitude and frequency but being in phase quadrature"
+      }
+     ]
+    },
+    {
+     "text": "**Multiplexación**: juntar señales de varias fuentes en una sola para un canal común (proceso reversible).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 701-03-09) · multiplexing",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=701-03-09",
+       "quote": "reversible process for assembling signals from several separate sources into a single composite signal for transmission over a common transmission channel"
+      }
+     ],
+     "items": [
+      {
+       "text": "**TDM** (por división de tiempo): cada señal tiene **intervalos de tiempo** periódicos.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 704-08-07) · time division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-07",
+         "quote": "multiplexing in which several independent signals are allotted separate periodic time intervals"
+        }
+       ]
+      },
+      {
+       "text": "**FDM** (por división de frecuencia): cada señal, una **banda de frecuencias**.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 704-08-05) · frequency division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-05",
+         "quote": "multiplexing in which several independent signals are allotted separate frequency bands"
+        }
+       ]
+      },
+      {
+       "text": "**WDM** (por longitud de onda): cada señal, una **longitud de onda** en la **fibra óptica**; es una forma de FDM. La **DWDM** usa la rejilla de la UIT-T G.694.1, anclada en 193,1 THz, con separaciones de 12,5 a 100 GHz o más.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 704-08-06) · wavelength division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-06",
+         "quote": "multiplexing in which several independent signals are allotted separate wavelengths for transmission over a common optical transmission medium"
+        },
+        {
+         "title": "IEC Electropedia (IEV 704-08-06) · wavelength division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-06",
+         "quote": "Wavelength division multiplexing is a form of frequency division multiplexing."
+        },
+        {
+         "title": "Recomendación UIT-T G.694.1 · Spectral grids for WDM applications: DWDM frequency grid",
+         "url": "https://www.itu.int/rec/dologin_pub.asp?lang=e&id=T-REC-G.694.1-202010-I!!PDF-E&type=items",
+         "quote": "The frequency grid, anchored to 193.1 THz, supports a variety of channel spacings ranging from 12.5 GHz to 100 GHz and wider."
+        }
+       ]
+      },
+      {
+       "text": "**CDM** (por división de código): cada señal, una señal **ortogonal**.",
+       "refs": [
+        {
+         "title": "IEC Electropedia (IEV 704-08-08) · code division multiplexing",
+         "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=704-08-08",
+         "quote": "multiplexing in which several independent signals are allotted orthogonal signals"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "text": "Detección de errores: **paridad** (el número de elementos de un tipo en cada carácter o bloque es siempre **par** o siempre **impar**) y **CRC** (código cíclico: los bits del bloque se dividen en módulo 2 por un **polinomio generador** y el **resto** se añade al bloque). El CRC detecta cambios **accidentales**; no es un hash criptográfico.",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 721-08-52) · parity code",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=721-08-52",
+       "quote": "an error protection code in which each character signal or block signal contains a number of elements of the same type which is always even or always odd"
+      },
+      {
+       "title": "IEC Electropedia (IEV 723-10-100) · cyclic redundancy check",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=723-10-100",
+       "quote": "method of error control using a cyclic code mainly for the purpose of error detection"
+      },
+      {
+       "title": "IEC Electropedia (IEV 723-10-100) · cyclic redundancy check",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=723-10-100",
+       "quote": "The bits of a data block to be protected are used as coefficients of a polynomial, which is modulo-2-divided by a prescribed generator polynomial; the coefficients of the remainder left after division are appended to the data block as a block check sequence."
+      },
+      {
+       "title": "NIST CSRC Glossary · cyclic redundancy check",
+       "url": "https://csrc.nist.gov/glossary/term/cyclic_redundancy_check",
+       "quote": "A type of checksum algorithm that is not a cryptographic hash but is used to implement data integrity service where accidental changes to data are expected."
+      }
+     ]
+    },
+    {
+     "text": "Perturbaciones: **ruido** (fenómeno que no transporta información y se suma a la señal) y **atenuación** (pérdida de potencia entre dos puntos, normalmente en unidades logarítmicas).",
+     "refs": [
+      {
+       "title": "IEC Electropedia (IEV 702-08-03) · noise",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-08-03",
+       "quote": "any variable physical phenomenon apparently not conveying information and which may be superimposed on, or combined with, a wanted signal"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-02-10) · attenuation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-02-10",
+       "quote": "a decrease between two points of an electric, electromagnetic or acoustic power"
+      },
+      {
+       "title": "IEC Electropedia (IEV 702-02-10) · attenuation",
+       "url": "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-02-10",
+       "quote": "Attenuation is generally expressed in logarithmic units by a positive value."
+      }
+     ]
+    }
+   ]
   }
  ]
 }

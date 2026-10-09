@@ -2,6 +2,151 @@
  "topic": "B4-T08",
  "sections": [
   {
+   "title": "Origen y evolución de Internet",
+   "points": [
+    {
+     "text": "**Conmutación de paquetes**: Leonard **Kleinrock** publicó el primer artículo sobre su teoría en **1961**.",
+     "refs": [
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "Leonard Kleinrock at MIT published the first paper on packet switching theory in July 1961 and the first book on the subject in 1964."
+      }
+     ]
+    },
+    {
+     "text": "**ARPANET**: en septiembre de **1969** se instaló el primer IMP en la **UCLA**; a finales de 1969 había **cuatro** ordenadores conectados. Su primer protocolo fue **NCP** y en **1972** llegó el **correo electrónico**.",
+     "refs": [
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "All this came together in September 1969 when BBN installed the first IMP at UCLA and the first host computer was connected."
+      },
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "Thus, by the end of 1969, four host computers were connected together into the initial ARPANET"
+      },
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "Crocker finished the initial ARPANET Host-to-Host protocol, called the Network Control Protocol (NCP)."
+      },
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "It was also in 1972 that the initial “hot” application, electronic mail, was introduced."
+      }
+     ]
+    },
+    {
+     "text": "El **1 de enero de 1983** ARPANET pasó de NCP a **TCP/IP** de golpe (*flag day*), y se separó **MILNET** (uso militar) de ARPANET (investigación). En **1995** dejó de financiarse la red troncal **NSFNET**.",
+     "refs": [
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "One of the more interesting challenges was the transition of the ARPANET host protocol from NCP to TCP/IP as of January 1, 1983."
+      },
+      {
+       "title": "RFC 801 · NCP/TCP Transition Plan",
+       "url": "https://www.rfc-editor.org/rfc/rfc801.txt",
+       "quote": "The goal is to make a complete switch over from the NCP to IP/TCP by 1 January 1983."
+      },
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "The transition of ARPANET from NCP to TCP/IP permitted it to be split into a MILNET supporting operational requirements and an ARPANET supporting research needs."
+      },
+      {
+       "title": "Internet Society · Brief History of the Internet",
+       "url": "https://www.internetsociety.org/internet/history-internet/brief-history-internet/",
+       "quote": "culminated in April, 1995, with the defunding of the NSFNET Backbone."
+      }
+     ]
+    },
+    {
+     "text": "**IANA** mantiene los registros de referencia de Internet (direcciones, protocolos, raíz del DNS) y reparte bloques de direcciones a los **RIR**; hoy la gestiona PTI, filial de **ICANN** (creada en **1998**), que coordina la zona raíz del DNS y las funciones IANA.",
+     "refs": [
+      {
+       "title": "IANA · About us",
+       "url": "https://www.iana.org/about",
+       "quote": "maintains the authoritative public registries that record these allocations and definitions, providing a common global point of reference."
+      },
+      {
+       "title": "IANA · Number Resources",
+       "url": "https://www.iana.org/numbers",
+       "quote": "Our primary role for IP addresses is to allocate pools of unallocated addresses to the RIRs according to their needs"
+      },
+      {
+       "title": "ICANN · Welcome",
+       "url": "https://www.icann.org/resources/pages/welcome-2012-02-25-en",
+       "quote": "ICANN coordinates the root zone of the Domain Name System (DNS) and performs IANA functions, specifically, the management of Internet domain names, numbers, and protocol assignments."
+      },
+      {
+       "title": "ICANN · Welcome",
+       "url": "https://www.icann.org/resources/pages/welcome-2012-02-25-en",
+       "quote": "ICANN was formed in 1998"
+      }
+     ]
+    },
+    {
+     "text": "Hay **cinco RIR** que gestionan direcciones IPv4/IPv6 y números de sistema autónomo en su región; el de **Europa** (y Oriente Medio y parte de Asia Central) es el **RIPE NCC**, asociación sin ánimo de lucro.",
+     "refs": [
+      {
+       "title": "NRO · Regional Internet Registries",
+       "url": "https://www.nro.net/about/rirs/",
+       "quote": "There are five Regional Internet Registries (RIRs) in the world."
+      },
+      {
+       "title": "NRO · Regional Internet Registries",
+       "url": "https://www.nro.net/about/rirs/",
+       "quote": "Europe, the Middle East and parts of Central Asia"
+      },
+      {
+       "title": "RIPE NCC · Regional Internet Registry",
+       "url": "https://www.ripe.net/about-us/what-we-do/regional-internet-registry/",
+       "quote": "We're a not-for-profit membership association, a Regional Internet Registry and the secretariat for the RIPE community supporting the Internet."
+      }
+     ]
+    },
+    {
+     "text": "**RedIRIS**: la red académica y de investigación española, pionera de Internet en España; nació del Programa IRIS y desde **2004** es un departamento de **Red.es**.",
+     "refs": [
+      {
+       "title": "RedIRIS · About RedIRIS",
+       "url": "https://www.rediris.es/rediris/",
+       "quote": "RedIRIS is the Spanish academic and research network that provides advanced communication services to the scientific community and national universities."
+      },
+      {
+       "title": "RedIRIS · Historia",
+       "url": "https://www.rediris.es/rediris/historia/index.html.es",
+       "quote": "Fue pionera en España en la introducción de Internet y de diversos servicios telemáticos"
+      },
+      {
+       "title": "RedIRIS · Historia",
+       "url": "https://www.rediris.es/rediris/historia/index.html.es",
+       "quote": "A partir de 1991, cuando se considera finalizada una etapa de promoción y lanzamiento, el Programa IRIS se transforma en RedIRIS."
+      },
+      {
+       "title": "RedIRIS · Historia",
+       "url": "https://www.rediris.es/rediris/historia/index.html.es",
+       "quote": "En enero de 2004 RedIRIS se integra como un departamento con autonomía e identidad propias en el seno de la entidad pública empresarial Red.es"
+      }
+     ]
+    },
+    {
+     "text": "**Red SARA** (*Sistemas de Aplicaciones y Redes para las Administraciones*): infraestructura de comunicaciones y servicios que **conecta las redes de las Administraciones Públicas** españolas y las instituciones europeas.",
+     "refs": [
+      {
+       "title": "PAe · Red SARA",
+       "url": "https://administracionelectronica.gob.es/ctt/redsara",
+       "quote": "es un conjunto de infraestructuras de comunicaciones y servicios básicos que conecta las redes de las Administraciones Públicas Españolas e Instituciones Europeas facilitando el intercambio de información y el acceso a los servicios."
+      }
+     ]
+    }
+   ]
+  },
+  {
    "title": "Internet: organismos y servicios",
    "points": [
     {
