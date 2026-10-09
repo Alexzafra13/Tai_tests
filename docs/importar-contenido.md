@@ -212,8 +212,9 @@ público, igualdad y dependencia, sociedad de la información, firma
 electrónica, DNI, Agenda Digital, protección de datos, administración
 electrónica: registros, notificaciones, ENS, ENI y normas técnicas; sedes
 electrónicas, Cl@ve e infraestructuras y servicios comunes) y los temas 1
-a 4 del bloque III (modelado de datos y normalización con Métrica v3;
-lenguajes de programación; SQL; orientación a objetos y UML). Los patrones
+a 5 del bloque III (modelado de datos y normalización con Métrica v3;
+lenguajes de programación; SQL; orientación a objetos y UML; Jakarta EE
+y .NET). Los patrones
 de diseño (GoF, GRASP) quedan fuera: su catálogo no está publicado en una
 fuente oficial en línea.
 
